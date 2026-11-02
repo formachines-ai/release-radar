@@ -626,10 +626,22 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
 # ----------------------------------------------------------------------------------------------------------
 # HTML rendering
 # ----------------------------------------------------------------------------------------------------------
-def layout(title: str, body: str, built: str, description: str = "", canonical: str = "", noindex: bool = False) -> str:
+def layout(title: str, body: str, built: str, description: str = "", canonical: str = "", noindex: bool = False,
+           jsonld: dict | None = None, og_type: str = "website") -> str:
     desc = description or "Daily feed of PyPI and npm releases with verbatim breaking-change quotes and links to verified Errata corrections."
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     canon = f'<link rel="canonical" href="{esc(canonical)}">\n' if canonical else ""
+    og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
+          f'<meta property="og:type" content="{esc(og_type)}">\n'
+          + (f'<meta property="og:url" content="{esc(canonical)}">\n' if canonical else "")
+          + f'<meta property="og:site_name" content="{esc(SITE_NAME)}">\n')
+    ld = ""
+    if jsonld is None:
+        jsonld = {"@type": "WebPage", "name": title, "description": desc, "inLanguage": "en"}
+        if canonical:
+            jsonld["url"] = canonical
+    data = json.dumps({"@context": "https://schema.org", **jsonld}, ensure_ascii=True, indent=1).replace("</", "<\\/")
+    ld = f'<script type="application/ld+json">\n{data}\n</script>\n'
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -637,7 +649,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<meta name="generator" content="Release Radar build.py (agent-team)">
+{og}{ld}<meta name="generator" content="Release Radar build.py (agent-team)">
 {robots}{canon}<link rel="stylesheet" href="/style.css">
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)} RSS" href="/feed.xml">
 </head>
@@ -777,7 +789,16 @@ def render_index(model: dict, errata_count: int) -> str:
                 '<a href="/feed.xml">/feed.xml</a> — RSS · <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code> — per package · '
                 '<a href="/llms.txt">/llms.txt</a> · <a href="/build.json">/build.json</a>. Want a package added? It is one line in '
                 '<code>config/packages.txt</code> of the public repository.</p>')
-    return layout(f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes", "\n".join(body), model["built"], canonical=SITE_BASE + "/")
+    title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
+    desc = (f"{len(rels)} releases across {len(model['packages'])} tracked PyPI and npm packages in the last {WINDOW_DAYS} days. "
+            f"Built {model['built'][:10]}.")
+    ld = {"@type": ["WebSite", "Dataset"], "name": SITE_NAME, "description": desc, "url": SITE_BASE + "/",
+          "dateModified": model["built"], "inLanguage": "en", "license": LICENSE_URL,
+          "isAccessibleForFree": True,
+          "distribution": [
+              {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"},
+              {"@type": "DataDownload", "encodingFormat": "application/rss+xml", "contentUrl": SITE_BASE + "/feed.xml"}]}
+    return layout(title, "\n".join(body), model["built"], description=desc, canonical=SITE_BASE + "/", jsonld=ld)
 
 
 def render_package(p: dict, model: dict) -> str:
@@ -805,9 +826,17 @@ def render_package(p: dict, model: dict) -> str:
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
     body.append('<p class="note"><a href="/">← all packages</a></p>')
+    n = len(p["releases"])
+    desc = (f"{p['name']} ({p['ecosystem']}): {n} release{'' if n == 1 else 's'} in the last {WINDOW_DAYS} days. "
+            f"Built {model['built'][:10]}.")
+    ld = {"@type": ["WebPage", "Dataset"], "name": f"{p['name']} ({p['ecosystem']})", "description": desc,
+          "url": SITE_BASE + p["path"], "dateModified": model["built"], "inLanguage": "en",
+          "license": LICENSE_URL, "keywords": [p["name"], p["ecosystem"]],
+          "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_BASE + "/"},
+          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
+                            "contentUrl": SITE_BASE + p["path"] + "index.json"}]}
     return layout(f"{p['name']} ({p['ecosystem']}) — {SITE_NAME}", "\n".join(body), model["built"],
-                  description=f"Recent releases of {p['name']} ({p['ecosystem']}) with verbatim breaking-change quotes.",
-                  canonical=SITE_BASE + p["path"])
+                  description=desc, canonical=SITE_BASE + p["path"], jsonld=ld)
 
 
 def render_go(url: str, built: str, vote: bool = False) -> str:
@@ -859,7 +888,8 @@ def render_legal(built: str) -> str:
             f"these logs are not shared.</p>"
             f"<p><strong>Removal.</strong> If you maintain a package and do not want it listed or quoted, write to the address on the page above; "
             f"one line in the public configuration removes it.</p>")
-    return layout(f"Legal — {SITE_NAME}", body, built, canonical=SITE_BASE + "/legal/")
+    return layout(f"Legal — {SITE_NAME}", body, built, canonical=SITE_BASE + "/legal/",
+                  description=f"Responsible person, data sources, license and no-tracking statement of {SITE_NAME}. Built {built[:10]}.")
 
 
 # ----------------------------------------------------------------------------------------------------------
