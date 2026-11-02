@@ -1,0 +1,104 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "classic": "5.3.4",
+  "experimental": "0.0.0-experimental-f1bb8ea3f",
+  "latest": "8.5.1",
+  "nightly": "0.0.0-nightly-4547c8015-20260410",
+  "pre": "8.0.0-pre.1",
+  "pre-v6": "6.30.3-pre-v6.0",
+  "previous": "3.2.6",
+  "version-6": "6.30.6",
+  "version-7": "7.18.5"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:45Z",
+ "homepage": "",
+ "latest": "8.5.1",
+ "name": "react-router",
+ "page": "https://www.npmjs.com/package/react-router",
+ "repo": "remix-run/react-router",
+ "summary": "Declarative routing for React",
+ "versions": [
+  {
+   "date": "2026-10-27T21:39:14Z",
+   "deprecated": false,
+   "version": "8.5.1"
+  },
+  {
+   "date": "2026-10-27T21:13:38Z",
+   "deprecated": false,
+   "version": "7.18.5"
+  },
+  {
+   "date": "2026-10-19T13:49:03Z",
+   "deprecated": false,
+   "version": "8.5.0"
+  },
+  {
+   "date": "2026-10-14T20:57:50Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-f1bb8ea3f"
+  },
+  {
+   "date": "2026-09-15T15:23:42Z",
+   "deprecated": false,
+   "version": "8.4.0"
+  },
+  {
+   "date": "2026-09-15T15:10:40Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-f20bcf6de"
+  },
+  {
+   "date": "2026-09-15T15:08:29Z",
+   "deprecated": false,
+   "version": "7.18.4"
+  },
+  {
+   "date": "2026-09-02T18:44:59Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-7aea711dd"
+  },
+  {
+   "date": "2026-08-28T14:47:42Z",
+   "deprecated": false,
+   "version": "8.3.1"
+  },
+  {
+   "date": "2026-08-28T14:30:10Z",
+   "deprecated": false,
+   "version": "7.18.3"
+  },
+  {
+   "date": "2026-08-27T20:31:42Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-917e6fdc0"
+  },
+  {
+   "date": "2026-08-18T14:55:47Z",
+   "deprecated": false,
+   "version": "6.30.6"
+  },
+  {
+   "date": "2026-08-18T14:51:16Z",
+   "deprecated": false,
+   "version": "6.30.5"
+  },
+  {
+   "date": "2026-08-07T16:34:10Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-320d16107"
+  },
+  {
+   "date": "2026-08-07T15:56:56Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-2a01b6fd8"
+  },
+  {
+   "date": "2026-08-05T17:29:57Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-479e73b7b"
+  }
+ ]
+}

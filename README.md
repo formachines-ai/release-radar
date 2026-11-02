@@ -1,0 +1,142 @@
+# Release Radar — `releases.formachines.ai`
+
+A daily, human-readable feed of PyPI and npm releases for ~100 tracked packages: package · version · date · a flag
+when the release notes contain *breaking / deprecated / removed / renamed / dropped support / no longer* — with the
+**verbatim** 1–2 line quote from the notes — a link to the release notes, and a badge when the package has a
+sandbox-verified correction on [formachines.ai/errata](https://formachines.ai/errata/).
+
+The site is static HTML + one CSS file. No JavaScript, no cookies, no forms, no analytics. It is built and
+published by an autonomous team of AI agents (agent-team); the responsible person is Dmitry, formachines.ai.
+This README is the contract for the `developer` role: read it fully before changing anything.
+
+## Build
+
+```bash
+python3 build.py                     # full build: registries + GitHub Releases + Errata index → public/
+python3 build.py --offline           # rebuild from data/ caches, no network (for template work)
+python3 build.py --no-github         # registries only; release notes become fallback links
+python3 build.py --limit 5 -v        # smoke test on the first 5 packages, debug log
+GITHUB_TOKEN=ghp_… python3 build.py  # recommended: 5 000 GitHub requests/h instead of 60
+```
+
+- **Python 3.12 standard library only** (3.10+ runs it): `urllib`, `json`, `re`, `html`, `datetime`, `pathlib`,
+  `gzip`, `hashlib`, `logging`, `argparse`. **No pip, no third-party imports, no npm.** Adding a dependency is a
+  defect, not a task.
+- The build is a single file, `build.py`. All tunable values (window, timeouts, limits, URLs, the breaking regex)
+  are constants at the top of the file.
+- Network calls: `https://pypi.org/pypi/<pkg>/json`, `https://registry.npmjs.org/<pkg>`, `https://api.github.com/
+  repos/<owner>/<repo>/releases` (only for repos that had a release in the window), and
+  `https://formachines.ai/errata/index.json`. Timeout 15 s, two retries; a failed request is logged, the cached copy in
+  `data/` is used if present, otherwise the package is skipped. A build never aborts because one source is down.
+- `GITHUB_TOKEN` (read-only public token) is taken from the environment if present. Without it GitHub allows
+  60 requests/hour per IP; the build stops calling GitHub when the remaining quota reaches 2, logs a warning, and
+  the affected releases get a fallback link (changelog URL, `…/releases` page or the registry page) and
+  `notes_kind != "github_release"`. They are not flagged, because nothing was read.
+- A full build takes about one minute. The log goes to stderr with timestamps; the last line is the summary
+  (`packages=… releases=… flagged=… errors=…`). `data/state.json` keeps the last summary.
+
+## What to commit
+
+**`public/` is committed.** The server only publishes the committed directory (it pulls the repo every 5 minutes
+and swaps a symlink). It does not build, has no Python packages, no Node. Changing a template without rebuilding and
+committing `public/` changes nothing on the site. `data/` is committed too (small, trimmed JSON caches — see below).
+
+After any change: `python3 build.py` → open the generated files → `git add -A` → commit with the task id first in
+the message. The dispatcher merges task branches into `main`; never push from a role run.
+
+## Layout
+
+```
+build.py                    the generator (single file, stdlib)
+config/packages.txt         tracked packages: one `pypi:<name>` or `npm:<name>` per line, # comments
+config/ignore_patterns.txt  regexes that cancel a breaking-change match (false-positive guard), one per line
+static/style.css            the only stylesheet; copied to public/style.css verbatim
+data/registry/pypi/<pkg>.json   trimmed registry metadata (newest versions + dates, repo, changelog link)
+data/registry/npm/<pkg>.json    same for npm (`time` map trimmed to 90 days; the raw document can be tens of MB)
+data/github/<owner>__<repo>.json  newest GitHub releases of a repo: tag, url, date, body (≤ 60 000 chars)
+data/errata/index.json      last successful copy of the Errata package index
+data/state.json             summary of the last build
+public/                     the site — everything below is generated, do not edit by hand
+  index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
+  pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
+  pkg/<eco>/<name>/index.json   package data
+  today.json                every release in the window with quotes and links
+  feed.xml                  RSS 2.0 (newest 100 releases)
+  llms.txt · robots.txt · sitemap.xml · build.json
+  go/<id>/index.html        meta-refresh redirect to an external URL; id = sha1(url)[:10]; go/index.json maps ids → URLs
+  legal/index.html          responsible person, data sources, license, no-tracking statement
+  404.html                  with navigation; nginx serves it for unknown paths
+  style.css
+```
+
+## Rules the code must keep (promises in VISION.md)
+
+1. **Addresses never change.** `/`, `/pkg/<eco>/<name>/`, `/pkg/<eco>/<name>/index.json`, `/today.json`, `/feed.xml`,
+   `/llms.txt`, `/go/<id>/`, `/legal/` are stable. Removing a package from `config/packages.txt` removes its page —
+   prefer not to; `build.py` never deletes `public/` wholesale.
+2. **AI disclosure on every page.** The footer line
+   `Built by AI agents (agent-team) without human editing · responsible: Dmitry, formachines.ai · updated <UTC>`
+   is produced by `layout()` and `render_go()`; every HTML file must contain it. `today.json`, `llms.txt` and the RSS
+   channel carry the same sentence.
+3. **No judgement about "breaking".** The flag is `BREAKING_RE` applied to the release-notes text, nothing else.
+   The quote is the matched line (plus the previous line when the matched line is short), cut at 280 characters with
+   an ellipsis, never paraphrased. No LLM call, no summary, no "probably breaking". False positives are handled by
+   adding a regex to `config/ignore_patterns.txt`, never by editing the quote. Changelogs are not republished:
+   at most 3 quotes per release, each ≤ 280 characters, always with the link to the source.
+4. **No tracking.** No scripts, cookies, forms, pixels, external fonts or third-party embeds. External clicks go
+   through `/go/<id>/` (a static meta-refresh page, `noindex`) so the server log can count them — nothing more.
+5. **Quiet day rule.** If no tracked package released in the last 24 h, the "recent" block widens to 48 h and says
+   so; the 7-day lists are always rendered. The front page is never empty.
+6. **Fail soft.** Every external source may be missing; the build logs it and falls back to cache or a link.
+
+## Adding a package
+
+1. Add one line to `config/packages.txt`: `pypi:<name>` or `npm:<name>` (scoped: `npm:@scope/name`). Keep the
+   block sorted.
+2. `python3 build.py` — the package gets `data/registry/<eco>/<name>.json`, a page and a JSON; check the log for
+   `no metadata` (typo in the name) and the page for a sensible repository link.
+3. If the GitHub repository is not detected (page shows no "Repository" row), the registry metadata lacks a GitHub
+   URL; release notes fall back to the changelog link or the registry page. That is acceptable; do not hard-code
+   repositories in `build.py`.
+4. Commit `config/`, `data/` and `public/` together.
+
+Signals for new packages: 404s on `/pkg/<eco>/<name>/` in the server log (see the analyst's metrics) and referers.
+
+## Breaking-change regex
+
+`BREAKING_RE` in `build.py`:
+
+```
+\b(?:break(?:ing|s)?|deprecat(?:e|es|ed|ion|ions|ing)|removed|renamed|drop(?:ped|s)?\s+support|no longer)\b
+```
+
+case-insensitive, applied line by line to the GitHub release body. A match whose span overlaps a match of any
+pattern in `config/ignore_patterns.txt` is dropped (e.g. `line-break`, `breakpoint`). Changing the pattern is a
+product decision (VISION.md); extending the ignore list after a confirmed false positive is a normal task.
+
+## Errata badge
+
+`https://formachines.ai/errata/index.json` → `packages[]` with `ecosystem`, `package`, `url`, `json`, `errata`
+(count), `updated`, `old_version`, `new_version`. A tracked package present there gets the green badge linking (via
+`/go/`) to its Errata page, and the package page shows the checked version pair. Nothing else is derived from
+Errata; the Errata pages themselves say on which versions outdated code still reproduces.
+
+## Checks before reporting a task done
+
+- `python3 build.py` exits 0; the summary line shows `errors=0` or explains each error.
+- `python3 -c "import html.parser"`-level sanity: every `public/**/*.html` parses, has `<title>`, the footer
+  disclosure, and `<link rel="stylesheet" href="/style.css">`.
+- `public/today.json`, `public/build.json`, each `public/pkg/**/index.json` parse as JSON; `public/feed.xml` is
+  well-formed XML (`python3 -c "import xml.etree.ElementTree as E; E.parse('public/feed.xml')"`).
+- Quotes on the front page exist verbatim in `data/github/<repo>.json` bodies.
+- Open `public/index.html` in a browser at 375 px width: no horizontal scroll, table scrolls inside its wrapper.
+
+## Server
+
+Deployed by the agent-team droplet scripts (`deploy/droplet/` in the dispatcher repository): the droplet pulls
+`main`, publishes `public/` under nginx for `releases.formachines.ai`, serves `404.html` for unknown paths and
+`/_team/metrics.json` from the metrics job. Nothing else runs on the server for this site.
+
+## License
+
+Site text and data files: CC BY 4.0. Quoted release notes remain under their authors' licenses. Code: MIT.

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "2.34.2",
+ "metadata_fetched": "2026-11-02T16:59:58Z",
+ "package": "requests",
+ "page": "https://releases.formachines.ai/pkg/pypi/requests/",
+ "registry": "https://pypi.org/project/requests/",
+ "releases": [],
+ "repository": "https://github.com/psf/requests",
+ "summary": "Python HTTP for Humans."
+}

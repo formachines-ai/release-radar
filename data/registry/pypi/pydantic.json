@@ -1,0 +1,213 @@
+{
+ "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:55Z",
+ "homepage": "https://github.com/pydantic/pydantic",
+ "latest": "2.14.2",
+ "name": "pydantic",
+ "page": "https://pypi.org/project/pydantic/",
+ "repo": "pydantic/pydantic",
+ "summary": "Data validation using Python type hints",
+ "versions": [
+  {
+   "date": "2026-10-29T16:37:10Z",
+   "version": "2.14.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-29T15:35:33Z",
+   "version": "1.10.27",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-11T18:37:53Z",
+   "version": "2.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-08T14:34:46Z",
+   "version": "2.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-09T21:55:04Z",
+   "version": "2.14.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-28T14:03:59Z",
+   "version": "2.13.5",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-06T14:29:28Z",
+   "version": "2.14.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-22T13:23:40Z",
+   "version": "2.14.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-06T13:43:02Z",
+   "version": "2.13.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-20T14:46:41Z",
+   "version": "2.13.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-17T09:31:57Z",
+   "version": "2.13.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-15T14:57:17Z",
+   "version": "2.13.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-13T10:51:33Z",
+   "version": "2.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-31T06:51:50Z",
+   "version": "2.13.0b3",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-24T17:07:42Z",
+   "version": "2.13.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-23T17:58:19Z",
+   "version": "2.13.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-18T15:46:28Z",
+   "version": "1.10.26",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-18T10:13:07Z",
+   "version": "1.10.25",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-26T15:11:44Z",
+   "version": "2.12.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-05T10:50:06Z",
+   "version": "2.12.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-17T15:04:19Z",
+   "version": "2.12.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-14T15:02:19Z",
+   "version": "2.12.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-13T21:00:38Z",
+   "version": "2.12.1",
+   "yanked": true
+  },
+  {
+   "date": "2025-10-07T15:58:01Z",
+   "version": "2.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-04T10:40:39Z",
+   "version": "2.11.10",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-02T22:07:41Z",
+   "version": "2.12.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-25T01:35:02Z",
+   "version": "1.10.24",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-13T11:26:36Z",
+   "version": "2.11.9",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-13T02:38:05Z",
+   "version": "1.10.23",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-13T01:39:30Z",
+   "version": "2.11.8",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-26T18:28:52Z",
+   "version": "2.12.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-14T08:33:14Z",
+   "version": "2.11.7",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-13T09:00:27Z",
+   "version": "2.11.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-22T21:18:06Z",
+   "version": "2.11.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-29T20:38:52Z",
+   "version": "2.11.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-24T13:36:55Z",
+   "version": "1.10.22",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-08T13:27:03Z",
+   "version": "2.11.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-03T13:12:47Z",
+   "version": "2.11.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-28T21:14:55Z",
+   "version": "2.11.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-27T18:00:52Z",
+   "version": "2.11.0",
+   "yanked": false
+  }
+ ]
+}

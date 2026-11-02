@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "4.6.7",
+ "metadata_fetched": "2026-11-02T17:00:54Z",
+ "package": "zod",
+ "page": "https://releases.formachines.ai/pkg/npm/zod/",
+ "registry": "https://www.npmjs.com/package/zod",
+ "releases": [],
+ "repository": "https://github.com/colinhacks/zod",
+ "summary": "TypeScript-first schema declaration and validation library with static type inference"
+}

@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:49Z",
+ "homepage": "https://github.com/openai/openai-python",
+ "latest": "3.42.1",
+ "name": "openai",
+ "page": "https://pypi.org/project/openai/",
+ "repo": "openai/openai-python",
+ "summary": "The official Python library for the openai API",
+ "versions": [
+  {
+   "date": "2026-11-01T20:57:00Z",
+   "version": "3.42.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-31T00:27:24Z",
+   "version": "3.42.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-28T22:27:50Z",
+   "version": "3.41.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-27T15:38:52Z",
+   "version": "3.40.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-26T19:19:10Z",
+   "version": "3.39.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-26T16:36:00Z",
+   "version": "3.38.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-22T20:04:37Z",
+   "version": "3.37.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-22T03:33:14Z",
+   "version": "3.36.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-21T15:54:31Z",
+   "version": "3.36.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-18T01:06:36Z",
+   "version": "3.35.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-17T23:14:39Z",
+   "version": "3.35.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-17T20:34:45Z",
+   "version": "3.34.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-17T00:30:18Z",
+   "version": "3.33.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-16T20:18:12Z",
+   "version": "3.32.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-14T05:39:31Z",
+   "version": "3.31.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-14T04:01:07Z",
+   "version": "3.30.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-11T17:39:39Z",
+   "version": "3.29.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-09T20:50:12Z",
+   "version": "3.28.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-09T13:48:33Z",
+   "version": "3.27.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-08T08:54:21Z",
+   "version": "3.26.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-06T21:31:16Z",
+   "version": "3.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-06T18:04:03Z",
+   "version": "3.25.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-02T15:55:16Z",
+   "version": "3.24.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-01T23:03:50Z",
+   "version": "3.23.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-30T00:25:53Z",
+   "version": "3.22.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-29T19:07:31Z",
+   "version": "3.22.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-29T17:41:15Z",
+   "version": "3.21.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-28T16:05:00Z",
+   "version": "3.20.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T00:06:05Z",
+   "version": "3.19.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-23T19:16:36Z",
+   "version": "3.19.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-23T00:08:45Z",
+   "version": "3.19.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-22T18:26:29Z",
+   "version": "3.18.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-22T02:37:15Z",
+   "version": "3.17.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-18T21:27:20Z",
+   "version": "3.16.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-18T19:01:50Z",
+   "version": "3.16.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-18T14:53:37Z",
+   "version": "3.16.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-18T00:53:02Z",
+   "version": "3.15.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-15T23:13:33Z",
+   "version": "3.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-14T23:29:08Z",
+   "version": "3.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-10T19:38:25Z",
+   "version": "3.13.0",
+   "yanked": false
+  }
+ ]
+}

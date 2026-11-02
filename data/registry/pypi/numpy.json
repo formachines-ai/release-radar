@@ -1,0 +1,213 @@
+{
+ "changelog": "https://numpy.org/doc/stable/release",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:55Z",
+ "homepage": "",
+ "latest": "2.5.4",
+ "name": "numpy",
+ "page": "https://pypi.org/project/numpy/",
+ "repo": "numpy/numpy",
+ "summary": "Fundamental package for array computing in Python",
+ "versions": [
+  {
+   "date": "2026-10-10T20:02:40Z",
+   "version": "2.5.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-06T16:24:29Z",
+   "version": "2.5.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-09T13:44:51Z",
+   "version": "2.5.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-04T17:06:12Z",
+   "version": "2.5.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-21T20:56:16Z",
+   "version": "2.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-02T12:56:22Z",
+   "version": "2.5.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-18T23:33:13Z",
+   "version": "2.4.6",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-15T20:22:23Z",
+   "version": "2.4.5",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-29T13:18:15Z",
+   "version": "2.4.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-09T07:55:57Z",
+   "version": "2.4.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-31T23:10:25Z",
+   "version": "2.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-10T06:42:14Z",
+   "version": "2.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-20T16:15:43Z",
+   "version": "2.4.0",
+   "yanked": true
+  },
+  {
+   "date": "2025-12-03T08:06:57Z",
+   "version": "2.4.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-16T22:49:19Z",
+   "version": "2.3.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-15T16:15:19Z",
+   "version": "2.3.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-09T15:56:02Z",
+   "version": "2.3.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-24T20:24:35Z",
+   "version": "2.3.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-21T11:47:47Z",
+   "version": "2.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-07T14:36:52Z",
+   "version": "2.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-17T21:27:58Z",
+   "version": "2.2.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-19T22:31:01Z",
+   "version": "2.2.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-16T18:02:13Z",
+   "version": "2.2.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-13T16:41:34Z",
+   "version": "2.2.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-18T22:56:28Z",
+   "version": "2.2.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-21T20:29:57Z",
+   "version": "2.2.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-08T15:20:47Z",
+   "version": "2.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-02T17:30:37Z",
+   "version": "2.1.3",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-05T18:28:18Z",
+   "version": "2.1.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-09-03T15:01:06Z",
+   "version": "2.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-26T20:04:14Z",
+   "version": "2.0.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-18T21:39:07Z",
+   "version": "2.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-21T13:29:55Z",
+   "version": "2.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-16T13:06:46Z",
+   "version": "2.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-05T23:48:01Z",
+   "version": "1.26.4",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-02T22:20:37Z",
+   "version": "1.26.3",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-12T22:51:49Z",
+   "version": "1.26.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-14T19:39:25Z",
+   "version": "1.26.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-16T19:58:18Z",
+   "version": "1.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-07-31T14:50:49Z",
+   "version": "1.25.2",
+   "yanked": false
+  }
+ ]
+}

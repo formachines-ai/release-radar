@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://uvicorn.dev/release-notes",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "0.54.0",
+ "metadata_fetched": "2026-11-02T17:00:01Z",
+ "package": "uvicorn",
+ "page": "https://releases.formachines.ai/pkg/pypi/uvicorn/",
+ "registry": "https://pypi.org/project/uvicorn/",
+ "releases": [],
+ "repository": "https://github.com/Kludex/uvicorn",
+ "summary": "The lightning-fast ASGI server."
+}

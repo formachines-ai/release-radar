@@ -1,0 +1,106 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "alpha": "1.0.0-alpha.9",
+  "dev": "1.5.1-dev-1781824996270",
+  "latest": "1.6.0",
+  "next": "1.0.0-alpha.9",
+  "rc": "1.5.11-rc.0",
+  "tag-for-publishing-older-releases": "0.2.20"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:17Z",
+ "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/libs/langchain/",
+ "latest": "1.6.0",
+ "name": "langchain",
+ "page": "https://www.npmjs.com/package/langchain",
+ "repo": "langchain-ai/langchainjs",
+ "summary": "Typescript bindings for langchain",
+ "versions": [
+  {
+   "date": "2026-10-28T00:55:53Z",
+   "deprecated": false,
+   "version": "1.6.0"
+  },
+  {
+   "date": "2026-10-27T01:38:52Z",
+   "deprecated": false,
+   "version": "1.5.20"
+  },
+  {
+   "date": "2026-10-22T11:26:50Z",
+   "deprecated": false,
+   "version": "1.5.19"
+  },
+  {
+   "date": "2026-10-16T00:07:39Z",
+   "deprecated": false,
+   "version": "1.5.18"
+  },
+  {
+   "date": "2026-10-15T21:47:08Z",
+   "deprecated": false,
+   "version": "1.5.17"
+  },
+  {
+   "date": "2026-10-08T13:45:45Z",
+   "deprecated": false,
+   "version": "1.5.16"
+  },
+  {
+   "date": "2026-10-01T01:17:31Z",
+   "deprecated": false,
+   "version": "1.5.15"
+  },
+  {
+   "date": "2026-09-27T06:12:48Z",
+   "deprecated": false,
+   "version": "1.5.14"
+  },
+  {
+   "date": "2026-09-22T00:01:40Z",
+   "deprecated": false,
+   "version": "1.5.12"
+  },
+  {
+   "date": "2026-09-09T20:43:09Z",
+   "deprecated": false,
+   "version": "1.5.11"
+  },
+  {
+   "date": "2026-09-06T02:59:47Z",
+   "deprecated": false,
+   "version": "1.5.11-rc.0"
+  },
+  {
+   "date": "2026-08-20T01:18:36Z",
+   "deprecated": false,
+   "version": "1.5.10"
+  },
+  {
+   "date": "2026-08-14T16:41:02Z",
+   "deprecated": false,
+   "version": "1.5.9"
+  },
+  {
+   "date": "2026-08-13T16:49:34Z",
+   "deprecated": false,
+   "version": "1.5.8"
+  },
+  {
+   "date": "2026-08-13T07:16:27Z",
+   "deprecated": false,
+   "version": "1.5.7"
+  },
+  {
+   "date": "2026-08-12T21:26:10Z",
+   "deprecated": false,
+   "version": "1.5.6"
+  },
+  {
+   "date": "2026-08-05T22:02:05Z",
+   "deprecated": false,
+   "version": "1.5.5"
+  }
+ ]
+}

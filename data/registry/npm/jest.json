@@ -1,0 +1,32 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "latest": "30.5.2",
+  "next": "30.0.0-rc.1"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:33Z",
+ "homepage": "https://jestjs.io/",
+ "latest": "30.5.2",
+ "name": "jest",
+ "page": "https://www.npmjs.com/package/jest",
+ "repo": "jestjs/jest",
+ "summary": "Delightful JavaScript Testing.",
+ "versions": [
+  {
+   "date": "2026-09-18T13:58:07Z",
+   "deprecated": false,
+   "version": "30.5.2"
+  },
+  {
+   "date": "2026-09-01T07:59:10Z",
+   "deprecated": false,
+   "version": "30.5.1"
+  },
+  {
+   "date": "2026-08-28T08:29:25Z",
+   "deprecated": false,
+   "version": "30.5.0"
+  }
+ ]
+}

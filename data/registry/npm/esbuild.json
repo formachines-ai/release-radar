@@ -1,0 +1,21 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "latest": "0.28.2"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:28Z",
+ "homepage": "https://github.com/evanw/esbuild#readme",
+ "latest": "0.28.2",
+ "name": "esbuild",
+ "page": "https://www.npmjs.com/package/esbuild",
+ "repo": "evanw/esbuild",
+ "summary": "An extremely fast JavaScript and CSS bundler and minifier.",
+ "versions": [
+  {
+   "date": "2026-08-08T20:00:55Z",
+   "deprecated": false,
+   "version": "0.28.2"
+  }
+ ]
+}

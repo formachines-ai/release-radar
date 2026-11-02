@@ -1,0 +1,1172 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "ai-v5": "5.0.283",
+  "ai-v6": "6.0.320",
+  "alpha": "5.0.0-alpha.15",
+  "beta": "7.0.0-beta.187",
+  "canary": "7.0.0-canary.176",
+  "latest": "7.0.159",
+  "snapshot": "0.0.0-f1630544-20260811180950"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:11Z",
+ "homepage": "https://ai-sdk.dev/docs",
+ "latest": "7.0.159",
+ "name": "ai",
+ "page": "https://www.npmjs.com/package/ai",
+ "repo": "vercel/ai",
+ "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider.",
+ "versions": [
+  {
+   "date": "2026-10-30T22:18:53Z",
+   "deprecated": false,
+   "version": "7.0.159"
+  },
+  {
+   "date": "2026-10-30T19:32:42Z",
+   "deprecated": false,
+   "version": "5.0.283"
+  },
+  {
+   "date": "2026-10-30T19:30:52Z",
+   "deprecated": false,
+   "version": "6.0.320"
+  },
+  {
+   "date": "2026-10-30T15:38:30Z",
+   "deprecated": false,
+   "version": "7.0.158"
+  },
+  {
+   "date": "2026-10-29T18:48:13Z",
+   "deprecated": false,
+   "version": "6.0.319"
+  },
+  {
+   "date": "2026-10-29T17:10:09Z",
+   "deprecated": false,
+   "version": "7.0.157"
+  },
+  {
+   "date": "2026-10-29T17:04:09Z",
+   "deprecated": false,
+   "version": "6.0.318"
+  },
+  {
+   "date": "2026-10-28T18:35:30Z",
+   "deprecated": false,
+   "version": "7.0.156"
+  },
+  {
+   "date": "2026-10-27T19:37:45Z",
+   "deprecated": false,
+   "version": "7.0.155"
+  },
+  {
+   "date": "2026-10-27T19:32:13Z",
+   "deprecated": false,
+   "version": "6.0.317"
+  },
+  {
+   "date": "2026-10-26T18:56:48Z",
+   "deprecated": false,
+   "version": "6.0.316"
+  },
+  {
+   "date": "2026-10-26T18:56:08Z",
+   "deprecated": false,
+   "version": "7.0.154"
+  },
+  {
+   "date": "2026-10-26T18:55:15Z",
+   "deprecated": false,
+   "version": "5.0.282"
+  },
+  {
+   "date": "2026-10-24T17:57:40Z",
+   "deprecated": false,
+   "version": "7.0.153"
+  },
+  {
+   "date": "2026-10-23T19:41:25Z",
+   "deprecated": false,
+   "version": "6.0.315"
+  },
+  {
+   "date": "2026-10-23T19:41:13Z",
+   "deprecated": false,
+   "version": "7.0.152"
+  },
+  {
+   "date": "2026-10-23T19:40:24Z",
+   "deprecated": false,
+   "version": "5.0.281"
+  },
+  {
+   "date": "2026-10-23T17:24:53Z",
+   "deprecated": false,
+   "version": "7.0.151"
+  },
+  {
+   "date": "2026-10-22T21:20:55Z",
+   "deprecated": false,
+   "version": "7.0.150"
+  },
+  {
+   "date": "2026-10-22T21:16:44Z",
+   "deprecated": false,
+   "version": "6.0.314"
+  },
+  {
+   "date": "2026-10-22T18:58:40Z",
+   "deprecated": false,
+   "version": "6.0.313"
+  },
+  {
+   "date": "2026-10-22T18:54:11Z",
+   "deprecated": false,
+   "version": "5.0.280"
+  },
+  {
+   "date": "2026-10-22T18:53:25Z",
+   "deprecated": false,
+   "version": "7.0.149"
+  },
+  {
+   "date": "2026-10-21T03:17:29Z",
+   "deprecated": false,
+   "version": "5.0.279"
+  },
+  {
+   "date": "2026-10-21T02:22:48Z",
+   "deprecated": false,
+   "version": "7.0.148"
+  },
+  {
+   "date": "2026-10-21T02:18:38Z",
+   "deprecated": false,
+   "version": "6.0.312"
+  },
+  {
+   "date": "2026-10-20T18:38:23Z",
+   "deprecated": false,
+   "version": "7.0.147"
+  },
+  {
+   "date": "2026-10-20T04:12:11Z",
+   "deprecated": false,
+   "version": "7.0.146"
+  },
+  {
+   "date": "2026-10-19T19:20:28Z",
+   "deprecated": false,
+   "version": "7.0.145"
+  },
+  {
+   "date": "2026-10-19T19:16:53Z",
+   "deprecated": false,
+   "version": "6.0.311"
+  },
+  {
+   "date": "2026-10-19T17:58:14Z",
+   "deprecated": false,
+   "version": "7.0.144"
+  },
+  {
+   "date": "2026-10-19T17:54:01Z",
+   "deprecated": false,
+   "version": "5.0.278"
+  },
+  {
+   "date": "2026-10-19T17:53:18Z",
+   "deprecated": false,
+   "version": "6.0.310"
+  },
+  {
+   "date": "2026-10-16T20:10:34Z",
+   "deprecated": false,
+   "version": "7.0.143"
+  },
+  {
+   "date": "2026-10-16T19:04:22Z",
+   "deprecated": false,
+   "version": "6.0.309"
+  },
+  {
+   "date": "2026-10-15T18:15:38Z",
+   "deprecated": false,
+   "version": "6.0.308"
+  },
+  {
+   "date": "2026-10-15T18:11:40Z",
+   "deprecated": false,
+   "version": "7.0.142"
+  },
+  {
+   "date": "2026-10-15T03:19:34Z",
+   "deprecated": false,
+   "version": "5.0.277"
+  },
+  {
+   "date": "2026-10-15T03:19:27Z",
+   "deprecated": false,
+   "version": "6.0.307"
+  },
+  {
+   "date": "2026-10-15T02:22:36Z",
+   "deprecated": false,
+   "version": "7.0.141"
+  },
+  {
+   "date": "2026-10-14T04:20:12Z",
+   "deprecated": false,
+   "version": "5.0.276"
+  },
+  {
+   "date": "2026-10-14T04:19:32Z",
+   "deprecated": false,
+   "version": "7.0.140"
+  },
+  {
+   "date": "2026-10-14T04:17:57Z",
+   "deprecated": false,
+   "version": "6.0.306"
+  },
+  {
+   "date": "2026-10-13T16:10:54Z",
+   "deprecated": false,
+   "version": "7.0.139"
+  },
+  {
+   "date": "2026-10-13T16:09:25Z",
+   "deprecated": false,
+   "version": "5.0.275"
+  },
+  {
+   "date": "2026-10-13T16:09:18Z",
+   "deprecated": false,
+   "version": "6.0.305"
+  },
+  {
+   "date": "2026-10-12T17:50:00Z",
+   "deprecated": false,
+   "version": "6.0.304"
+  },
+  {
+   "date": "2026-10-12T17:49:30Z",
+   "deprecated": false,
+   "version": "7.0.138"
+  },
+  {
+   "date": "2026-10-12T17:47:18Z",
+   "deprecated": false,
+   "version": "5.0.274"
+  },
+  {
+   "date": "2026-10-09T18:54:12Z",
+   "deprecated": false,
+   "version": "6.0.303"
+  },
+  {
+   "date": "2026-10-09T14:54:45Z",
+   "deprecated": false,
+   "version": "7.0.137"
+  },
+  {
+   "date": "2026-10-09T00:39:31Z",
+   "deprecated": false,
+   "version": "7.0.136"
+  },
+  {
+   "date": "2026-10-08T21:40:53Z",
+   "deprecated": false,
+   "version": "7.0.135"
+  },
+  {
+   "date": "2026-10-08T16:50:57Z",
+   "deprecated": false,
+   "version": "7.0.134"
+  },
+  {
+   "date": "2026-10-08T00:30:36Z",
+   "deprecated": false,
+   "version": "7.0.133"
+  },
+  {
+   "date": "2026-10-07T23:52:59Z",
+   "deprecated": false,
+   "version": "7.0.132"
+  },
+  {
+   "date": "2026-10-07T18:31:25Z",
+   "deprecated": false,
+   "version": "7.0.131"
+  },
+  {
+   "date": "2026-10-07T18:30:36Z",
+   "deprecated": false,
+   "version": "5.0.273"
+  },
+  {
+   "date": "2026-10-07T18:30:30Z",
+   "deprecated": false,
+   "version": "6.0.302"
+  },
+  {
+   "date": "2026-10-07T01:47:26Z",
+   "deprecated": false,
+   "version": "7.0.130"
+  },
+  {
+   "date": "2026-10-06T22:23:58Z",
+   "deprecated": false,
+   "version": "7.0.129"
+  },
+  {
+   "date": "2026-10-05T18:32:52Z",
+   "deprecated": false,
+   "version": "6.0.301"
+  },
+  {
+   "date": "2026-10-05T18:25:30Z",
+   "deprecated": false,
+   "version": "7.0.128"
+  },
+  {
+   "date": "2026-10-05T18:24:26Z",
+   "deprecated": false,
+   "version": "5.0.272"
+  },
+  {
+   "date": "2026-10-01T19:23:47Z",
+   "deprecated": false,
+   "version": "6.0.300"
+  },
+  {
+   "date": "2026-10-01T19:20:23Z",
+   "deprecated": false,
+   "version": "7.0.127"
+  },
+  {
+   "date": "2026-09-30T23:00:02Z",
+   "deprecated": false,
+   "version": "7.0.126"
+  },
+  {
+   "date": "2026-09-30T20:54:25Z",
+   "deprecated": false,
+   "version": "6.0.299"
+  },
+  {
+   "date": "2026-09-30T17:50:26Z",
+   "deprecated": false,
+   "version": "7.0.124"
+  },
+  {
+   "date": "2026-09-30T17:46:47Z",
+   "deprecated": false,
+   "version": "6.0.298"
+  },
+  {
+   "date": "2026-09-30T17:46:07Z",
+   "deprecated": false,
+   "version": "5.0.271"
+  },
+  {
+   "date": "2026-09-30T02:21:23Z",
+   "deprecated": false,
+   "version": "7.0.123"
+  },
+  {
+   "date": "2026-09-30T01:21:52Z",
+   "deprecated": false,
+   "version": "5.0.270"
+  },
+  {
+   "date": "2026-09-30T01:21:23Z",
+   "deprecated": false,
+   "version": "6.0.297"
+  },
+  {
+   "date": "2026-09-28T21:59:45Z",
+   "deprecated": false,
+   "version": "7.0.122"
+  },
+  {
+   "date": "2026-09-28T21:08:54Z",
+   "deprecated": false,
+   "version": "6.0.296"
+  },
+  {
+   "date": "2026-09-28T21:07:43Z",
+   "deprecated": false,
+   "version": "5.0.269"
+  },
+  {
+   "date": "2026-09-28T18:46:09Z",
+   "deprecated": false,
+   "version": "6.0.295"
+  },
+  {
+   "date": "2026-09-28T18:45:09Z",
+   "deprecated": false,
+   "version": "7.0.120"
+  },
+  {
+   "date": "2026-09-28T18:41:27Z",
+   "deprecated": false,
+   "version": "5.0.268"
+  },
+  {
+   "date": "2026-09-28T17:17:26Z",
+   "deprecated": false,
+   "version": "6.0.294"
+  },
+  {
+   "date": "2026-09-28T17:16:19Z",
+   "deprecated": false,
+   "version": "7.0.119"
+  },
+  {
+   "date": "2026-09-27T06:08:49Z",
+   "deprecated": false,
+   "version": "7.0.118"
+  },
+  {
+   "date": "2026-09-27T03:28:18Z",
+   "deprecated": false,
+   "version": "7.0.117"
+  },
+  {
+   "date": "2026-09-27T03:22:47Z",
+   "deprecated": false,
+   "version": "6.0.293"
+  },
+  {
+   "date": "2026-09-25T20:41:56Z",
+   "deprecated": false,
+   "version": "7.0.116"
+  },
+  {
+   "date": "2026-09-25T19:47:09Z",
+   "deprecated": false,
+   "version": "5.0.267"
+  },
+  {
+   "date": "2026-09-25T19:47:03Z",
+   "deprecated": false,
+   "version": "6.0.292"
+  },
+  {
+   "date": "2026-09-24T18:52:58Z",
+   "deprecated": false,
+   "version": "7.0.114"
+  },
+  {
+   "date": "2026-09-24T18:51:31Z",
+   "deprecated": false,
+   "version": "6.0.291"
+  },
+  {
+   "date": "2026-09-24T18:50:22Z",
+   "deprecated": false,
+   "version": "5.0.266"
+  },
+  {
+   "date": "2026-09-23T22:02:02Z",
+   "deprecated": false,
+   "version": "5.0.265"
+  },
+  {
+   "date": "2026-09-23T21:57:26Z",
+   "deprecated": false,
+   "version": "6.0.290"
+  },
+  {
+   "date": "2026-09-23T21:46:53Z",
+   "deprecated": false,
+   "version": "7.0.113"
+  },
+  {
+   "date": "2026-09-23T11:23:18Z",
+   "deprecated": false,
+   "version": "6.0.289"
+  },
+  {
+   "date": "2026-09-23T08:38:49Z",
+   "deprecated": false,
+   "version": "7.0.112"
+  },
+  {
+   "date": "2026-09-23T08:33:50Z",
+   "deprecated": false,
+   "version": "5.0.264"
+  },
+  {
+   "date": "2026-09-22T18:11:20Z",
+   "deprecated": false,
+   "version": "7.0.111"
+  },
+  {
+   "date": "2026-09-22T17:23:26Z",
+   "deprecated": false,
+   "version": "7.0.110"
+  },
+  {
+   "date": "2026-09-22T17:22:55Z",
+   "deprecated": false,
+   "version": "6.0.288"
+  },
+  {
+   "date": "2026-09-22T17:21:01Z",
+   "deprecated": false,
+   "version": "5.0.263"
+  },
+  {
+   "date": "2026-09-22T03:23:06Z",
+   "deprecated": false,
+   "version": "7.0.109"
+  },
+  {
+   "date": "2026-09-21T19:35:11Z",
+   "deprecated": false,
+   "version": "5.0.262"
+  },
+  {
+   "date": "2026-09-21T19:31:59Z",
+   "deprecated": false,
+   "version": "6.0.287"
+  },
+  {
+   "date": "2026-09-21T19:20:56Z",
+   "deprecated": false,
+   "version": "7.0.108"
+  },
+  {
+   "date": "2026-09-18T22:30:31Z",
+   "deprecated": false,
+   "version": "7.0.107"
+  },
+  {
+   "date": "2026-09-18T22:28:08Z",
+   "deprecated": false,
+   "version": "5.0.261"
+  },
+  {
+   "date": "2026-09-18T05:00:46Z",
+   "deprecated": false,
+   "version": "7.0.106"
+  },
+  {
+   "date": "2026-09-18T04:57:23Z",
+   "deprecated": false,
+   "version": "6.0.286"
+  },
+  {
+   "date": "2026-09-18T04:54:32Z",
+   "deprecated": false,
+   "version": "5.0.260"
+  },
+  {
+   "date": "2026-09-16T22:47:17Z",
+   "deprecated": false,
+   "version": "6.0.285"
+  },
+  {
+   "date": "2026-09-16T22:47:10Z",
+   "deprecated": false,
+   "version": "7.0.105"
+  },
+  {
+   "date": "2026-09-16T21:41:12Z",
+   "deprecated": false,
+   "version": "7.0.104"
+  },
+  {
+   "date": "2026-09-16T21:38:40Z",
+   "deprecated": false,
+   "version": "6.0.284"
+  },
+  {
+   "date": "2026-09-16T21:38:00Z",
+   "deprecated": false,
+   "version": "5.0.259"
+  },
+  {
+   "date": "2026-09-16T18:36:07Z",
+   "deprecated": false,
+   "version": "7.0.103"
+  },
+  {
+   "date": "2026-09-15T17:26:52Z",
+   "deprecated": false,
+   "version": "7.0.102"
+  },
+  {
+   "date": "2026-09-15T04:23:25Z",
+   "deprecated": false,
+   "version": "7.0.101"
+  },
+  {
+   "date": "2026-09-14T19:55:37Z",
+   "deprecated": false,
+   "version": "6.0.283"
+  },
+  {
+   "date": "2026-09-14T19:54:18Z",
+   "deprecated": false,
+   "version": "7.0.100"
+  },
+  {
+   "date": "2026-09-14T19:48:44Z",
+   "deprecated": false,
+   "version": "5.0.258"
+  },
+  {
+   "date": "2026-09-12T01:48:32Z",
+   "deprecated": false,
+   "version": "5.0.257"
+  },
+  {
+   "date": "2026-09-12T01:41:57Z",
+   "deprecated": false,
+   "version": "6.0.282"
+  },
+  {
+   "date": "2026-09-12T01:25:13Z",
+   "deprecated": false,
+   "version": "7.0.99"
+  },
+  {
+   "date": "2026-09-11T18:56:42Z",
+   "deprecated": false,
+   "version": "5.0.256"
+  },
+  {
+   "date": "2026-09-11T18:56:10Z",
+   "deprecated": false,
+   "version": "7.0.98"
+  },
+  {
+   "date": "2026-09-11T18:55:08Z",
+   "deprecated": false,
+   "version": "6.0.281"
+  },
+  {
+   "date": "2026-09-09T20:28:23Z",
+   "deprecated": false,
+   "version": "7.0.97"
+  },
+  {
+   "date": "2026-09-09T18:16:57Z",
+   "deprecated": false,
+   "version": "7.0.96"
+  },
+  {
+   "date": "2026-09-09T18:14:44Z",
+   "deprecated": false,
+   "version": "6.0.280"
+  },
+  {
+   "date": "2026-09-09T18:14:15Z",
+   "deprecated": false,
+   "version": "5.0.255"
+  },
+  {
+   "date": "2026-09-09T13:48:43Z",
+   "deprecated": false,
+   "version": "6.0.279"
+  },
+  {
+   "date": "2026-09-09T13:47:18Z",
+   "deprecated": false,
+   "version": "7.0.95"
+  },
+  {
+   "date": "2026-09-09T13:44:52Z",
+   "deprecated": false,
+   "version": "5.0.254"
+  },
+  {
+   "date": "2026-09-08T20:37:10Z",
+   "deprecated": false,
+   "version": "6.0.278"
+  },
+  {
+   "date": "2026-09-08T19:31:47Z",
+   "deprecated": false,
+   "version": "7.0.94"
+  },
+  {
+   "date": "2026-09-04T21:43:24Z",
+   "deprecated": false,
+   "version": "7.0.93"
+  },
+  {
+   "date": "2026-09-04T21:41:17Z",
+   "deprecated": false,
+   "version": "5.0.253"
+  },
+  {
+   "date": "2026-09-04T21:40:10Z",
+   "deprecated": false,
+   "version": "6.0.277"
+  },
+  {
+   "date": "2026-09-03T17:30:55Z",
+   "deprecated": false,
+   "version": "7.0.92"
+  },
+  {
+   "date": "2026-09-03T17:29:53Z",
+   "deprecated": false,
+   "version": "6.0.276"
+  },
+  {
+   "date": "2026-09-03T17:29:07Z",
+   "deprecated": false,
+   "version": "5.0.252"
+  },
+  {
+   "date": "2026-09-02T20:28:38Z",
+   "deprecated": false,
+   "version": "7.0.91"
+  },
+  {
+   "date": "2026-09-02T03:17:20Z",
+   "deprecated": false,
+   "version": "6.0.275"
+  },
+  {
+   "date": "2026-09-02T03:17:15Z",
+   "deprecated": false,
+   "version": "7.0.90"
+  },
+  {
+   "date": "2026-09-02T03:10:16Z",
+   "deprecated": false,
+   "version": "5.0.251"
+  },
+  {
+   "date": "2026-09-01T18:54:59Z",
+   "deprecated": false,
+   "version": "6.0.274"
+  },
+  {
+   "date": "2026-09-01T18:30:47Z",
+   "deprecated": false,
+   "version": "7.0.89"
+  },
+  {
+   "date": "2026-09-01T17:01:56Z",
+   "deprecated": false,
+   "version": "7.0.88"
+  },
+  {
+   "date": "2026-08-31T21:30:37Z",
+   "deprecated": false,
+   "version": "7.0.87"
+  },
+  {
+   "date": "2026-08-31T19:24:13Z",
+   "deprecated": false,
+   "version": "7.0.86"
+  },
+  {
+   "date": "2026-08-31T19:21:25Z",
+   "deprecated": false,
+   "version": "6.0.273"
+  },
+  {
+   "date": "2026-08-31T19:20:58Z",
+   "deprecated": false,
+   "version": "5.0.250"
+  },
+  {
+   "date": "2026-08-30T08:53:26Z",
+   "deprecated": false,
+   "version": "6.0.272"
+  },
+  {
+   "date": "2026-08-30T08:04:53Z",
+   "deprecated": false,
+   "version": "7.0.85"
+  },
+  {
+   "date": "2026-08-28T17:30:33Z",
+   "deprecated": false,
+   "version": "7.0.84"
+  },
+  {
+   "date": "2026-08-27T18:41:14Z",
+   "deprecated": false,
+   "version": "6.0.271"
+  },
+  {
+   "date": "2026-08-27T18:21:07Z",
+   "deprecated": false,
+   "version": "5.0.249"
+  },
+  {
+   "date": "2026-08-26T22:50:47Z",
+   "deprecated": false,
+   "version": "7.0.83"
+  },
+  {
+   "date": "2026-08-26T22:49:26Z",
+   "deprecated": false,
+   "version": "5.0.248"
+  },
+  {
+   "date": "2026-08-26T22:48:42Z",
+   "deprecated": false,
+   "version": "6.0.270"
+  },
+  {
+   "date": "2026-08-26T19:46:56Z",
+   "deprecated": false,
+   "version": "7.0.82"
+  },
+  {
+   "date": "2026-08-26T18:09:59Z",
+   "deprecated": false,
+   "version": "6.0.268"
+  },
+  {
+   "date": "2026-08-25T03:21:00Z",
+   "deprecated": false,
+   "version": "7.0.79"
+  },
+  {
+   "date": "2026-08-25T03:13:03Z",
+   "deprecated": false,
+   "version": "6.0.266"
+  },
+  {
+   "date": "2026-08-24T18:32:44Z",
+   "deprecated": false,
+   "version": "5.0.245"
+  },
+  {
+   "date": "2026-08-24T18:31:17Z",
+   "deprecated": false,
+   "version": "7.0.78"
+  },
+  {
+   "date": "2026-08-24T18:21:02Z",
+   "deprecated": false,
+   "version": "6.0.265"
+  },
+  {
+   "date": "2026-08-22T05:57:45Z",
+   "deprecated": false,
+   "version": "7.0.77"
+  },
+  {
+   "date": "2026-08-21T21:00:32Z",
+   "deprecated": false,
+   "version": "7.0.76"
+  },
+  {
+   "date": "2026-08-21T20:56:29Z",
+   "deprecated": false,
+   "version": "6.0.264"
+  },
+  {
+   "date": "2026-08-21T17:55:22Z",
+   "deprecated": false,
+   "version": "6.0.263"
+  },
+  {
+   "date": "2026-08-21T17:54:30Z",
+   "deprecated": false,
+   "version": "5.0.244"
+  },
+  {
+   "date": "2026-08-21T16:09:02Z",
+   "deprecated": false,
+   "version": "5.0.243"
+  },
+  {
+   "date": "2026-08-21T16:03:38Z",
+   "deprecated": false,
+   "version": "6.0.262"
+  },
+  {
+   "date": "2026-08-21T15:58:59Z",
+   "deprecated": false,
+   "version": "7.0.74"
+  },
+  {
+   "date": "2026-08-21T03:38:15Z",
+   "deprecated": false,
+   "version": "7.0.73"
+  },
+  {
+   "date": "2026-08-20T20:10:25Z",
+   "deprecated": false,
+   "version": "6.0.261"
+  },
+  {
+   "date": "2026-08-20T20:09:33Z",
+   "deprecated": false,
+   "version": "5.0.242"
+  },
+  {
+   "date": "2026-08-20T20:07:53Z",
+   "deprecated": false,
+   "version": "7.0.71"
+  },
+  {
+   "date": "2026-08-20T16:03:12Z",
+   "deprecated": false,
+   "version": "6.0.260"
+  },
+  {
+   "date": "2026-08-20T16:00:38Z",
+   "deprecated": false,
+   "version": "5.0.241"
+  },
+  {
+   "date": "2026-08-19T22:20:55Z",
+   "deprecated": false,
+   "version": "7.0.70"
+  },
+  {
+   "date": "2026-08-19T18:01:59Z",
+   "deprecated": false,
+   "version": "5.0.240"
+  },
+  {
+   "date": "2026-08-19T18:01:51Z",
+   "deprecated": false,
+   "version": "6.0.259"
+  },
+  {
+   "date": "2026-08-19T17:59:07Z",
+   "deprecated": false,
+   "version": "7.0.69"
+  },
+  {
+   "date": "2026-08-18T22:50:18Z",
+   "deprecated": false,
+   "version": "7.0.68"
+  },
+  {
+   "date": "2026-08-18T18:05:46Z",
+   "deprecated": false,
+   "version": "5.0.239"
+  },
+  {
+   "date": "2026-08-18T17:54:31Z",
+   "deprecated": false,
+   "version": "6.0.258"
+  },
+  {
+   "date": "2026-08-18T16:56:41Z",
+   "deprecated": false,
+   "version": "7.0.67"
+  },
+  {
+   "date": "2026-08-18T03:59:58Z",
+   "deprecated": false,
+   "version": "5.0.238"
+  },
+  {
+   "date": "2026-08-18T03:59:18Z",
+   "deprecated": false,
+   "version": "6.0.257"
+  },
+  {
+   "date": "2026-08-14T19:54:53Z",
+   "deprecated": false,
+   "version": "5.0.237"
+  },
+  {
+   "date": "2026-08-14T19:54:47Z",
+   "deprecated": false,
+   "version": "6.0.256"
+  },
+  {
+   "date": "2026-08-14T18:41:57Z",
+   "deprecated": false,
+   "version": "7.0.66"
+  },
+  {
+   "date": "2026-08-14T06:32:37Z",
+   "deprecated": false,
+   "version": "6.0.255"
+  },
+  {
+   "date": "2026-08-13T18:58:15Z",
+   "deprecated": false,
+   "version": "7.0.65"
+  },
+  {
+   "date": "2026-08-13T18:55:22Z",
+   "deprecated": false,
+   "version": "5.0.236"
+  },
+  {
+   "date": "2026-08-12T17:41:44Z",
+   "deprecated": false,
+   "version": "5.0.235"
+  },
+  {
+   "date": "2026-08-12T17:41:32Z",
+   "deprecated": false,
+   "version": "6.0.253"
+  },
+  {
+   "date": "2026-08-12T17:40:07Z",
+   "deprecated": false,
+   "version": "7.0.64"
+  },
+  {
+   "date": "2026-08-12T16:01:08Z",
+   "deprecated": false,
+   "version": "6.0.252"
+  },
+  {
+   "date": "2026-08-12T15:59:10Z",
+   "deprecated": false,
+   "version": "7.0.63"
+  },
+  {
+   "date": "2026-08-12T15:57:39Z",
+   "deprecated": false,
+   "version": "5.0.234"
+  },
+  {
+   "date": "2026-08-11T22:50:23Z",
+   "deprecated": false,
+   "version": "7.0.62"
+  },
+  {
+   "date": "2026-08-11T22:49:55Z",
+   "deprecated": false,
+   "version": "5.0.233"
+  },
+  {
+   "date": "2026-08-11T20:32:02Z",
+   "deprecated": false,
+   "version": "5.0.232"
+  },
+  {
+   "date": "2026-08-11T20:31:19Z",
+   "deprecated": false,
+   "version": "7.0.61"
+  },
+  {
+   "date": "2026-08-11T20:30:58Z",
+   "deprecated": false,
+   "version": "6.0.250"
+  },
+  {
+   "date": "2026-08-11T18:25:11Z",
+   "deprecated": false,
+   "version": "0.0.0-f1630544-20260811180950"
+  },
+  {
+   "date": "2026-08-11T17:35:47Z",
+   "deprecated": false,
+   "version": "7.0.60"
+  },
+  {
+   "date": "2026-08-11T17:34:35Z",
+   "deprecated": false,
+   "version": "6.0.249"
+  },
+  {
+   "date": "2026-08-11T17:33:34Z",
+   "deprecated": false,
+   "version": "5.0.231"
+  },
+  {
+   "date": "2026-08-11T05:03:41Z",
+   "deprecated": false,
+   "version": "6.0.248"
+  },
+  {
+   "date": "2026-08-10T20:27:00Z",
+   "deprecated": false,
+   "version": "6.0.247"
+  },
+  {
+   "date": "2026-08-10T20:22:26Z",
+   "deprecated": false,
+   "version": "7.0.59"
+  },
+  {
+   "date": "2026-08-10T20:21:25Z",
+   "deprecated": false,
+   "version": "5.0.230"
+  },
+  {
+   "date": "2026-08-10T17:07:44Z",
+   "deprecated": false,
+   "version": "5.0.229"
+  },
+  {
+   "date": "2026-08-07T23:46:30Z",
+   "deprecated": false,
+   "version": "7.0.58"
+  },
+  {
+   "date": "2026-08-07T18:08:04Z",
+   "deprecated": false,
+   "version": "7.0.57"
+  },
+  {
+   "date": "2026-08-07T02:59:18Z",
+   "deprecated": false,
+   "version": "6.0.246"
+  },
+  {
+   "date": "2026-08-07T02:27:54Z",
+   "deprecated": false,
+   "version": "7.0.56"
+  },
+  {
+   "date": "2026-08-06T05:21:51Z",
+   "deprecated": false,
+   "version": "7.0.55"
+  },
+  {
+   "date": "2026-08-06T03:16:44Z",
+   "deprecated": false,
+   "version": "6.0.244"
+  },
+  {
+   "date": "2026-08-06T01:05:31Z",
+   "deprecated": false,
+   "version": "7.0.54"
+  },
+  {
+   "date": "2026-08-05T19:20:08Z",
+   "deprecated": false,
+   "version": "6.0.243"
+  },
+  {
+   "date": "2026-08-05T19:16:10Z",
+   "deprecated": false,
+   "version": "5.0.228"
+  },
+  {
+   "date": "2026-08-05T17:05:06Z",
+   "deprecated": false,
+   "version": "5.0.227"
+  },
+  {
+   "date": "2026-08-04T23:28:16Z",
+   "deprecated": false,
+   "version": "7.0.52"
+  },
+  {
+   "date": "2026-08-04T23:24:27Z",
+   "deprecated": false,
+   "version": "6.0.242"
+  }
+ ]
+}

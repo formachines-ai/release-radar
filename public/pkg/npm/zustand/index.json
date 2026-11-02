@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "5.0.16",
+ "metadata_fetched": "2026-11-02T17:00:54Z",
+ "package": "zustand",
+ "page": "https://releases.formachines.ai/pkg/npm/zustand/",
+ "registry": "https://www.npmjs.com/package/zustand",
+ "releases": [],
+ "repository": "https://github.com/pmndrs/zustand",
+ "summary": "🐻 Bear necessities for state management in React"
+}

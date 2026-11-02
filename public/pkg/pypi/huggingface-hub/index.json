@@ -1,0 +1,61 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": {
+  "errata": 1,
+  "json": "https://formachines.ai/errata/pypi/huggingface-hub/index.json",
+  "new_version": "2.2.0",
+  "old_version": "1.8.0",
+  "updated": "2026-10-30",
+  "url": "https://formachines.ai/errata/pypi/huggingface-hub/"
+ },
+ "latest": "2.4.0",
+ "metadata_fetched": "2026-11-02T16:59:45Z",
+ "package": "huggingface-hub",
+ "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
+ "registry": "https://pypi.org/project/huggingface-hub/",
+ "releases": [
+  {
+   "date": "2026-10-29T15:30:10Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/huggingface-hub/",
+   "flagged": true,
+   "id": "pypi/huggingface-hub/2.4.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7253e2420b/",
+   "notes_url": "https://github.com/huggingface/huggingface_hub/releases/tag/v2.4.0",
+   "package": "huggingface-hub",
+   "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "`hf extensions update` also repairs Python extensions that no longer start. After a Homebrew upgrade removed the Python an extension was installed with, running it failed with `dyld: Library not loaded`, and `hf extensions update` said it was already up to date. It now recreates…"
+    }
+   ],
+   "version": "2.4.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-29T14:11:26Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/huggingface-hub/",
+   "flagged": false,
+   "id": "pypi/huggingface-hub/2.4.0rc0",
+   "json": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/5442300f7a/",
+   "notes_url": "https://github.com/huggingface/huggingface_hub/releases",
+   "package": "huggingface-hub",
+   "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "2.4.0rc0",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/huggingface/huggingface_hub",
+ "summary": "Client library to download and publish models, datasets and other repos on the huggingface.co hub"
+}

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/ijl/orjson/blob/master/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "3.13.0",
+ "metadata_fetched": "2026-11-02T16:59:55Z",
+ "package": "orjson",
+ "page": "https://releases.formachines.ai/pkg/pypi/orjson/",
+ "registry": "https://pypi.org/project/orjson/",
+ "releases": [],
+ "repository": "https://github.com/ijl/orjson",
+ "summary": "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy"
+}

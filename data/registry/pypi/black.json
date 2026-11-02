@@ -1,0 +1,213 @@
+{
+ "changelog": "https://github.com/psf/black/blob/main/CHANGES.md",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:51Z",
+ "homepage": "",
+ "latest": "26.10.1",
+ "name": "black",
+ "page": "https://pypi.org/project/black/",
+ "repo": "psf/black",
+ "summary": "The uncompromising code formatter.",
+ "versions": [
+  {
+   "date": "2026-10-10T04:13:38Z",
+   "version": "26.10.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-04T16:52:27Z",
+   "version": "26.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-18T16:53:33Z",
+   "version": "26.5.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-16T17:57:10Z",
+   "version": "26.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-12T03:36:01Z",
+   "version": "26.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-06T17:42:31Z",
+   "version": "26.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-18T04:50:09Z",
+   "version": "26.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-08T01:46:39Z",
+   "version": "26.1a1",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-08T01:40:50Z",
+   "version": "25.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-10T01:53:48Z",
+   "version": "25.11.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-19T00:27:35Z",
+   "version": "25.9.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-29T04:15:38Z",
+   "version": "25.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-07T19:20:48Z",
+   "version": "24.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-02T17:43:15Z",
+   "version": "24.8.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-26T00:32:12Z",
+   "version": "24.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-24T15:17:55Z",
+   "version": "24.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-12T20:14:18Z",
+   "version": "24.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-15T19:35:41Z",
+   "version": "24.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-12T20:21:17Z",
+   "version": "24.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-28T05:28:45Z",
+   "version": "24.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-26T05:12:30Z",
+   "version": "24.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-22T23:06:14Z",
+   "version": "23.12.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-12T06:28:28Z",
+   "version": "23.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-12T06:12:48Z",
+   "version": "24.1a1",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-08T05:41:28Z",
+   "version": "23.11.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-23T19:24:27Z",
+   "version": "23.10.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-17T16:14:25Z",
+   "version": "23.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-11T00:38:59Z",
+   "version": "23.9.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-09T03:30:31Z",
+   "version": "23.9.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-07-11T00:21:20Z",
+   "version": "23.7.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-03-29T01:00:52Z",
+   "version": "23.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-02-01T02:54:29Z",
+   "version": "23.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-12-18T15:42:34Z",
+   "version": "23.1a1",
+   "yanked": false
+  },
+  {
+   "date": "2022-12-09T15:57:02Z",
+   "version": "22.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-10-06T22:44:46Z",
+   "version": "22.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-08-31T22:47:17Z",
+   "version": "22.8.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-06-28T00:39:54Z",
+   "version": "22.6.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-03-28T19:10:42Z",
+   "version": "22.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-29T20:37:49Z",
+   "version": "22.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-12-05T22:42:08Z",
+   "version": "21.12b0",
+   "yanked": false
+  }
+ ]
+}

@@ -1,0 +1,105 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "ai": "1.0.0-rc.3-e9dfa4b",
+  "alternation-engine": "1.0.0-beta.2-6565b14",
+  "beelink": "1.0.0-beta.9-c26fd2f",
+  "beta": "1.0.0-beta.22",
+  "beta-fixes": "1.0.0-beta.6-7419dcb",
+  "beta-next-pack": "1.0.0-beta.1-140e6cc",
+  "beta.16": "1.0.0-beta.16-2ffd1a5",
+  "beta.17": "1.0.0-beta.17-160831b",
+  "beta21": "1.0.0-beta.21-b0c345d",
+  "bun-timestampstring-patch": "1.0.0-beta.10-4a698ad",
+  "casing-rework": "1.0.0-beta.21-3269112",
+  "codecs": "1.0.0-beta.23-5d05836",
+  "conditions-wrap": "1.0.0-beta.19-c49995f",
+  "data-migrator": "1.0.0-beta.11-c3fb442",
+  "drizzle-effect": "1.0.0-beta.13-f16bdca",
+  "drizzle-seed/bug-fixes": "1.0.0-beta.10-7f0f68a",
+  "effect": "1.0.0-beta.1-cdf226f",
+  "effect-cache-fix": "1.0.0-beta.11-88ca292",
+  "effect-fixes": "1.0.0-beta.10-9f1399e",
+  "effect-validator": "1.0.0-beta.14-56118cc",
+  "effect3": "1.0.0-beta.9-635dfc2",
+  "fix-duckdb": "1.0.0-beta.17-c09bdc5",
+  "fix-jiti-tsconfig-paths": "1.0.0-beta.18-905b79a",
+  "issues": "1.0.0-beta.11-165921d",
+  "issues2": "1.0.0-beta.22-17a476d",
+  "jiti-import-fix": "1.0.0-rc.2-67a3509",
+  "kit-cli-wrong-config-hints": "1.0.0-beta.2-a1a6b39",
+  "kit-duckdb": "1.0.0-beta.3-d4ff358",
+  "kit-introspect": "1.0.0-beta.13-ba3365d",
+  "kit/node-sqlite": "1.0.0-beta.17-8a36f93",
+  "latest": "0.45.4",
+  "mysql-blob-rqb-v2-fix": "1.0.0-beta.5-e0482ac",
+  "mysql-update": "1.0.0-rc.2-2be6d1e",
+  "netlify-constructor": "1.0.0-beta.22-d23690d",
+  "node-sqlite": "1.0.0-beta.16-c2458b2",
+  "numeric-modes": "1.0.0-beta.1-867d080",
+  "pg-introspect": "1.0.0-rc.1-929a083",
+  "pg-prepare-nameless": "1.0.0-beta.13-4ef3fca",
+  "postgres": "1.0.0-rc.4-fb12281",
+  "query-comments": "1.0.0-beta.19-dca1773",
+  "rc": "1.0.0-rc.5",
+  "rc1-fixes": "1.0.0-rc.2-8feace6",
+  "rc4": "1.0.0-rc.4-5d5b77c",
+  "rc5": "1.0.0-rc.5-5935859",
+  "revert-netlify": "1.0.0-beta.23-c10d10c",
+  "rqb-perf-patch": "1.0.0-beta.2-f9236e3",
+  "rqb-typeperf": "1.0.0-beta.1-69a2ca0",
+  "rqb-v1-schema-fix": "1.0.0-beta.1-b96a4f8",
+  "sql-explicit-origin": "1.0.0-beta.15-90d1d1a",
+  "sqlite-cloud-studio": "1.0.0-beta.1-bc61bbe",
+  "sqlite-indexes": "1.0.0-beta.16-501e9b2",
+  "studio-benchmark": "1.0.0-beta.2-01787d6",
+  "turso-sls": "1.0.0-rc.2-640c81e",
+  "update/migrator-strategy": "1.0.0-beta.12-5845444",
+  "workflows": "1.0.0-beta.1-37e2608"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:28Z",
+ "homepage": "https://orm.drizzle.team",
+ "latest": "0.45.4",
+ "name": "drizzle-orm",
+ "page": "https://www.npmjs.com/package/drizzle-orm",
+ "repo": "drizzle-team/drizzle-orm",
+ "summary": "Drizzle ORM package for SQL databases",
+ "versions": [
+  {
+   "date": "2026-10-21T17:59:58Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.5"
+  },
+  {
+   "date": "2026-10-08T10:50:41Z",
+   "deprecated": false,
+   "version": "0.45.4"
+  },
+  {
+   "date": "2026-09-21T10:06:39Z",
+   "deprecated": false,
+   "version": "0.45.3"
+  },
+  {
+   "date": "2026-09-09T10:25:53Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.5-5935859"
+  },
+  {
+   "date": "2026-08-12T14:59:58Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.5-169397b"
+  },
+  {
+   "date": "2026-08-11T00:34:12Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.5-ab785fc"
+  },
+  {
+   "date": "2026-08-05T17:04:14Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.4-fb12281"
+  }
+ ]
+}

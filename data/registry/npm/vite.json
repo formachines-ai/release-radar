@@ -1,0 +1,94 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "alpha": "6.0.0-alpha.24",
+  "beta": "8.3.0-beta.1",
+  "latest": "8.3.5",
+  "previous": "6.4.5"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:52Z",
+ "homepage": "https://vite.dev",
+ "latest": "8.3.5",
+ "name": "vite",
+ "page": "https://www.npmjs.com/package/vite",
+ "repo": "vitejs/vite",
+ "summary": "Native-ESM powered web dev build tool",
+ "versions": [
+  {
+   "date": "2026-10-21T06:38:54Z",
+   "deprecated": false,
+   "version": "8.3.5"
+  },
+  {
+   "date": "2026-10-21T05:35:48Z",
+   "deprecated": false,
+   "version": "6.4.5"
+  },
+  {
+   "date": "2026-10-08T12:07:04Z",
+   "deprecated": false,
+   "version": "8.3.4"
+  },
+  {
+   "date": "2026-10-06T05:49:07Z",
+   "deprecated": false,
+   "version": "6.4.4"
+  },
+  {
+   "date": "2026-10-06T05:11:19Z",
+   "deprecated": false,
+   "version": "7.3.7"
+  },
+  {
+   "date": "2026-10-06T04:51:51Z",
+   "deprecated": false,
+   "version": "8.1.6"
+  },
+  {
+   "date": "2026-10-06T04:48:20Z",
+   "deprecated": false,
+   "version": "8.2.4"
+  },
+  {
+   "date": "2026-10-06T04:10:19Z",
+   "deprecated": false,
+   "version": "8.3.3"
+  },
+  {
+   "date": "2026-10-01T10:17:44Z",
+   "deprecated": false,
+   "version": "8.3.2"
+  },
+  {
+   "date": "2026-09-24T12:26:19Z",
+   "deprecated": false,
+   "version": "8.3.1"
+  },
+  {
+   "date": "2026-09-10T11:30:26Z",
+   "deprecated": false,
+   "version": "8.3.0"
+  },
+  {
+   "date": "2026-09-07T11:40:50Z",
+   "deprecated": false,
+   "version": "8.3.0-beta.1"
+  },
+  {
+   "date": "2026-09-02T08:44:39Z",
+   "deprecated": false,
+   "version": "8.3.0-beta.0"
+  },
+  {
+   "date": "2026-08-20T04:14:39Z",
+   "deprecated": false,
+   "version": "8.2.2"
+  },
+  {
+   "date": "2026-08-06T13:47:48Z",
+   "deprecated": false,
+   "version": "8.2.1"
+  }
+ ]
+}

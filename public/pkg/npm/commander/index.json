@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "15.0.0",
+ "metadata_fetched": "2026-11-02T17:00:23Z",
+ "package": "commander",
+ "page": "https://releases.formachines.ai/pkg/npm/commander/",
+ "registry": "https://www.npmjs.com/package/commander",
+ "releases": [],
+ "repository": "https://github.com/tj/commander.js",
+ "summary": "the complete solution for node.js command-line programs"
+}

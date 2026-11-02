@@ -1,0 +1,213 @@
+{
+ "changelog": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T17:00:01Z",
+ "homepage": "",
+ "latest": "26.1.0",
+ "name": "structlog",
+ "page": "https://pypi.org/project/structlog/",
+ "repo": "hynek/structlog",
+ "summary": "Structured Logging for Python",
+ "versions": [
+  {
+   "date": "2026-06-06T07:33:38Z",
+   "version": "26.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-27T08:28:21Z",
+   "version": "25.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-02T08:21:11Z",
+   "version": "25.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-25T16:00:37Z",
+   "version": "25.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-11T17:41:09Z",
+   "version": "25.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-16T13:04:06Z",
+   "version": "25.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-17T12:38:41Z",
+   "version": "24.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-17T11:19:13Z",
+   "version": "24.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-27T21:43:01Z",
+   "version": "24.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-08T09:52:50Z",
+   "version": "24.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-29T14:02:31Z",
+   "version": "23.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-09T14:56:16Z",
+   "version": "23.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-04-06T12:20:28Z",
+   "version": "23.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-11-24T07:44:07Z",
+   "version": "22.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-11-19T11:51:37Z",
+   "version": "22.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-07-20T11:20:08Z",
+   "version": "22.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-12-16T12:48:09Z",
+   "version": "21.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-11-25T15:36:28Z",
+   "version": "21.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-11-20T14:49:16Z",
+   "version": "21.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-10-12T13:29:37Z",
+   "version": "21.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-02-18T16:06:29Z",
+   "version": "21.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-12-31T11:28:04Z",
+   "version": "20.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-01-28T11:43:55Z",
+   "version": "20.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2019-10-16T10:34:23Z",
+   "version": "19.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2019-02-02T13:29:10Z",
+   "version": "19.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-09-05T09:45:11Z",
+   "version": "18.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-01-27T08:11:29Z",
+   "version": "18.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2017-05-15T15:51:52Z",
+   "version": "17.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2017-04-24T11:59:11Z",
+   "version": "17.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2016-05-24T14:56:24Z",
+   "version": "16.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2016-01-28T12:49:38Z",
+   "version": "16.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-09-25T11:27:13Z",
+   "version": "15.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-06-10T12:19:09Z",
+   "version": "15.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-02-24T12:31:26Z",
+   "version": "15.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-01-23T15:43:29Z",
+   "version": "15.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2014-07-26T12:42:00Z",
+   "version": "0.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2013-12-19T20:20:11Z",
+   "version": "0.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2013-11-10T14:13:58Z",
+   "version": "0.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2013-09-27T09:35:29Z",
+   "version": "0.3.2",
+   "yanked": false
+  },
+  {
+   "date": "2013-09-26T07:12:10Z",
+   "version": "0.3.1",
+   "yanked": false
+  }
+ ]
+}

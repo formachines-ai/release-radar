@@ -1,0 +1,151 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "BundlePrerelease": "8.1.2-BundlePrerelease.b662f8c0a",
+  "auth-redirect-credentials": "11.6.0-auth-redirect-credentials.b424e5897",
+  "beta": "9.0.0-beta.8",
+  "caching-fdc": "12.3.0-cache-caching-fdc.9f17eac6e",
+  "canary": "12.11.0-canary.bfb9accdc",
+  "dataconnect-preview": "10.12.4-dataconnect-preview.d986d4bf2",
+  "eap-ai-hybridinference": "11.7.1-eap-ai-hybridinference.58d92df33",
+  "eap-auth-emulator": "7.21.1-eap-auth-emulator.df41ee388",
+  "eap-crashlytics": "13.1.0-eap-crashlytics.d474e7535",
+  "eap-firestore-backfiller": "10.12.2-eap-firestore-backfiller.87babf60c",
+  "eap-firestore-debug": "8.1.1-1.0.0-eap-firestore-debug.9c6096f43",
+  "eap-firestore-pipelines": "12.5.0-eap-firestore-pipelines.2.e4cdd2e06",
+  "eap-storage-emulator": "8.2.9-eap-storage-emulator.ed256f582",
+  "eap-vertexai-hybgoog": "11.6.0-eap-vertexai-hybgoog.31261ca31",
+  "eap-vertexai-hybridinference": "11.6.0-eap-vertexai-hybridinference.e83974308",
+  "exp": "9.0.0-beta.8",
+  "exp-types-exploration": "8.9.1-8.9.1-exp-types-exploration.635c9e3fd",
+  "firebase-studio-sdk-integration": "12.1.0-firebase-studio-sdk-integration.556d1bed2",
+  "firestore-bundles-alpha": "7.22.1-alpha.96ae6a5fe",
+  "latest": "13.1.0",
+  "longpoll": "8.2.2-longpoll.66863f547",
+  "next": "13.2.0-20261030160918",
+  "passkey-preview": "10.11.0-passkey-preview.103ead202",
+  "pr5646": "9.1.3-pr5646.2abc5e854",
+  "ssl-check": "11.6.0-ssl-check.4f23f3343",
+  "vertexai-preview": "10.13.2-vertexai-preview.6b035b7d3"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:31Z",
+ "homepage": "https://firebase.google.com/",
+ "latest": "13.1.0",
+ "name": "firebase",
+ "page": "https://www.npmjs.com/package/firebase",
+ "repo": "firebase/firebase-js-sdk",
+ "summary": "Firebase JavaScript library for web and Node.js",
+ "versions": [
+  {
+   "date": "2026-10-30T16:25:33Z",
+   "deprecated": false,
+   "version": "13.2.0-20261030160918"
+  },
+  {
+   "date": "2026-10-26T17:35:01Z",
+   "deprecated": false,
+   "version": "13.1.0-eap-crashlytics.d474e7535"
+  },
+  {
+   "date": "2026-10-21T21:16:54Z",
+   "deprecated": false,
+   "version": "13.0.0-eap-crashlytics.fd9b1e1d0"
+  },
+  {
+   "date": "2026-10-21T15:03:52Z",
+   "deprecated": false,
+   "version": "13.1.0"
+  },
+  {
+   "date": "2026-10-20T14:04:22Z",
+   "deprecated": false,
+   "version": "13.1.0-20261020134659"
+  },
+  {
+   "date": "2026-10-07T19:36:35Z",
+   "deprecated": false,
+   "version": "13.0.0"
+  },
+  {
+   "date": "2026-10-07T16:51:45Z",
+   "deprecated": false,
+   "version": "13.0.0-20261007162724"
+  },
+  {
+   "date": "2026-10-06T21:53:43Z",
+   "deprecated": false,
+   "version": "13.0.0-20261006213730"
+  },
+  {
+   "date": "2026-10-06T01:30:27Z",
+   "deprecated": false,
+   "version": "13.0.0-20261006011744"
+  },
+  {
+   "date": "2026-10-01T22:16:11Z",
+   "deprecated": false,
+   "version": "12.17.0-eap-crashlytics.64ada57eb"
+  },
+  {
+   "date": "2026-09-29T20:54:56Z",
+   "deprecated": false,
+   "version": "13.0.0-20260929204201"
+  },
+  {
+   "date": "2026-09-29T20:30:30Z",
+   "deprecated": false,
+   "version": "13.0.0-20260929201704"
+  },
+  {
+   "date": "2026-09-29T18:05:56Z",
+   "deprecated": false,
+   "version": "13.0.0-20260929175154"
+  },
+  {
+   "date": "2026-09-29T16:51:06Z",
+   "deprecated": false,
+   "version": "13.0.0-20260929163754"
+  },
+  {
+   "date": "2026-09-11T19:11:54Z",
+   "deprecated": false,
+   "version": "12.17.0-eap-crashlytics.e21972d2a"
+  },
+  {
+   "date": "2026-09-11T18:29:11Z",
+   "deprecated": false,
+   "version": "12.19.0-crashlytics2.142b40983"
+  },
+  {
+   "date": "2026-09-09T19:20:03Z",
+   "deprecated": false,
+   "version": "12.19.0"
+  },
+  {
+   "date": "2026-09-09T16:00:45Z",
+   "deprecated": false,
+   "version": "12.19.0-20260909154321"
+  },
+  {
+   "date": "2026-08-19T20:24:53Z",
+   "deprecated": false,
+   "version": "12.18.0"
+  },
+  {
+   "date": "2026-08-18T17:38:59Z",
+   "deprecated": false,
+   "version": "12.18.0-20260818172054"
+  },
+  {
+   "date": "2026-08-04T22:44:27Z",
+   "deprecated": false,
+   "version": "12.17.1"
+  },
+  {
+   "date": "2026-08-04T21:06:12Z",
+   "deprecated": false,
+   "version": "12.17.1-20260804205512"
+  }
+ ]
+}

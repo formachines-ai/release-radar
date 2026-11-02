@@ -1,0 +1,568 @@
+{
+ "by_tag": {
+  "@ai-sdk/openai@2.0.137": {
+   "body": "### Patch Changes\n\n- 6a87db5: Fix `gpt-transcribe` REST transcription. Requests with OpenAI provider options now use `response_format: 'json'` for `gpt-transcribe` and dated `gpt-4o-mini-transcribe` snapshots, which reject `verbose_json`. `durationInSeconds` is read from `usage.seconds` when a duration-billed response has no top-level `duration`.",
+   "date": "2026-10-27T19:23:05Z",
+   "name": "@ai-sdk/openai@2.0.137",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@2.0.137",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.137"
+  },
+  "@ai-sdk/openai@2.0.138": {
+   "body": "### Patch Changes\n\n- 1ff7951: fix(openai): report unfinished web searches as tool errors\n- 1ff7951: Report failed and incomplete web searches as tool errors instead of successful tool results in OpenAI Responses API calls.",
+   "date": "2026-10-27T23:11:05Z",
+   "name": "@ai-sdk/openai@2.0.138",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@2.0.138",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.138"
+  },
+  "@ai-sdk/openai@2.0.139": {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43",
+   "date": "2026-10-30T19:35:17Z",
+   "name": "@ai-sdk/openai@2.0.139",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@2.0.139",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.139"
+  },
+  "@ai-sdk/openai@3.0.132": {
+   "body": "### Patch Changes\n\n- 766eebd: add azure.tools.toolSearch and support azure provider options on responses function tools",
+   "date": "2026-10-26T18:56:17Z",
+   "name": "@ai-sdk/openai@3.0.132",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@3.0.132",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.132"
+  },
+  "@ai-sdk/openai@3.0.133": {
+   "body": "### Patch Changes\n\n- 90fad7b: feat(openai): add GPT-6.1 Terra model support\n- 529492f: Fix `gpt-transcribe` REST transcription. Requests with OpenAI provider options now use `response_format: 'json'` for `gpt-transcribe` and dated `gpt-4o-mini-transcribe` snapshots, which reject `verbose_json`. `durationInSeconds` is read from `usage.seconds` when a duration-billed response has no top-level `duration`.",
+   "date": "2026-10-27T19:28:43Z",
+   "name": "@ai-sdk/openai@3.0.133",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@3.0.133",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.133"
+  },
+  "@ai-sdk/openai@3.0.134": {
+   "body": "### Patch Changes\n\n- 84a2231: fix(openai): report unfinished web searches as tool errors\n- 84a2231: Report failed and incomplete web searches as tool errors instead of successful tool results in OpenAI Responses API calls.",
+   "date": "2026-10-27T21:24:47Z",
+   "name": "@ai-sdk/openai@3.0.134",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@3.0.134",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.134"
+  },
+  "@ai-sdk/openai@3.0.135": {
+   "body": "### Patch Changes\n\n- Updated dependencies [28252da]\n  - @ai-sdk/provider-utils@4.0.63",
+   "date": "2026-10-29T17:05:33Z",
+   "name": "@ai-sdk/openai@3.0.135",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@3.0.135",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.135"
+  },
+  "@ai-sdk/openai@4.0.103": {
+   "body": "### Patch Changes\n\n- 02dbab1: add azure.tools.toolSearch and support azure provider options on responses function tools\n- 27a53b4: Fix string interpolation in Amazon Bedrock unsupported provider tool warnings and OpenAI / OpenAI-compatible completion errors for unexpected system messages.\n- Updated dependencies [e64ed82]\n  - @ai-sdk/provider-utils@5.0.69",
+   "date": "2026-10-26T18:59:53Z",
+   "name": "@ai-sdk/openai@4.0.103",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@4.0.103",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.103"
+  },
+  "@ai-sdk/openai@4.0.104": {
+   "body": "### Patch Changes\n\n- 01d7a03: feat(openai): add GPT-6.1 Terra model support\n- 599a97f: fix(openai): read transcription duration from `usage` for duration-billed `json` responses\n\n  `durationInSeconds` now falls back to `usage.seconds` when `usage.type` is `duration` and the response has no top-level `duration` (e.g. `gpt-transcribe` with the default `json` response format).\n\n- 8375141: Support streaming transcription with `gpt-live-transcribe` and `gpt-transcribe`. For these models the `language` provider option is sent as a single-entry `languages` list. `gpt-transcribe` warns about and omits `streaming.delay`, which it does not support. `gpt-live-transcribe` rejects non-streaming transcription, since it has no REST endpoint.\n- 7eac057: fix(openai): strip `propertyNames` schemas that omit `type: 'string'` (e.g. Zod 3 records with constrained keys) instead of throwing an unsupported functionality error\n- 436374e: fix(openai): report unfinished web searches as tool errors\n- 9026c7d: fix(openai): only send transcription response format and timestamp defaults when needed\n\n  Transcription requests no longer send `response_format=verbose_json` or `timestamp_granularities[]=segment` unless the caller sets them or the model needs them. Previously, any `providerOptions.openai` value (such as a `prompt`) caused `verbose_json` to be sent for models like `gpt-transcribe`, which rejected the request.\n\n- Updated dependencies [57086ff]\n- Updated dependencies [95348b3]\n  - @ai-sdk/provider-utils@5.0.70",
+   "date": "2026-10-27T19:36:11Z",
+   "name": "@ai-sdk/openai@4.0.104",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@4.0.104",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.104"
+  },
+  "@ai-sdk/openai@4.0.105": {
+   "body": "### Patch Changes\n\n- 47b1d8b: feat(openai): send native JSON input and prompt cache keys to Decisions\n- d07b475: fix(openai): map top-level `reasoning` to efforts supported by GPT-5.x models instead of sending unsupported values that OpenAI rejects with a 400. `max` is now only sent on the Responses API, and GPT-5.6 on Chat Completions sends `reasoning_effort: 'none'` when function tools are used, since it rejects function tools with reasoning. A warning is emitted when a reasoning level was requested.\n- 61a315e: fix: map the top-level `reasoning` option consistently across providers\n\n  Providers now resolve reasoning the same way:\n\n  1. A provider-specific reasoning setting in `providerOptions` is sent unchanged. OpenAI no longer drops `providerOptions.openai.reasoningEffort` values that are not in its list for the model, and Fireworks no longer rewrites `providerOptions.fireworks.reasoningEffort`. Fireworks also sends top-level `reasoning` values directly instead of rounding them to `'high'` at most, except for model families known to reject `'none'` (GPT-OSS, GLM-5.3, Muse Spark) or `'minimal'` (Nemotron, Inkling).\n  2. Otherwise, `reasoning` maps to the closest level the model supports, rounding down, and rounds up only when there is no lower level. For example, `'xhigh'` now maps to `'high'` instead of `'max'` on Anthropic and Bedrock models without `xhigh` effort, and `'medium'` maps to `'low'` instead of `'high'` on DeepSeek, Kimi K3, and Mistral GLM-5.3 models.\n  3. `'none'` on a model that cannot disable reasoning maps to the model's lowest level with a compatibility warning, instead of being dropped or sending a request the API rejects. This affects GPT-6 models without `'none'`, xAI grok-4.5 and later, Groq GPT-OSS, Kimi K3, Perplexity, QuiverAI, Bedrock OpenAI `gpt-oss` models, and Gemini 2.5 Pro (minimum thinking budget). Gemini 3 and Anthropic and Bedrock `between_tools` mappings now emit the compatibility warning too.\n\n  `mapReasoningToProviderEffort` now accepts any `reasoning` value, returns an optional `providerOptionsEffort` unchanged, and rounds levels that are missing from the effort map to the closest supported level. `mapReasoningToProviderBudget` maps `'none'` to the minimum reasoning budget, always returns a budget, and uses the default percentage for levels missing from `budgetPercentages`. `OpenAICompatibleChatConfig` adds an optional `mapReasoning` function for mapping the top-level `reasoning` option.\n\n- Updated dependencies [61a315e]\n  - @ai-sdk/provider-utils@5.0.71",
+   "date": "2026-10-29T17:13:13Z",
+   "name": "@ai-sdk/openai@4.0.105",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@4.0.105",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.105"
+  },
+  "@ai-sdk/openai@4.0.106": {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- dcd2f8d: Introduce a model entry contract with named capability sections and request configuration. Consolidate the OpenAI and Anthropic model catalogs so existing request behavior and generated capability documentation use the same source of truth. Catalogs also declare the provider options each provider accepts and which models support them.\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:42:19Z",
+   "name": "@ai-sdk/openai@4.0.106",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@4.0.106",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.106"
+  },
+  "ai@5.0.282": {
+   "body": "### Patch Changes\n\n- Updated dependencies [ab8e7fe]\n  - @ai-sdk/gateway@2.0.173",
+   "date": "2026-10-26T18:54:41Z",
+   "name": "ai@5.0.282",
+   "prerelease": false,
+   "tag": "ai@5.0.282",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.282"
+  },
+  "ai@6.0.316": {
+   "body": "### Patch Changes\n\n- Updated dependencies [fe96bb3]\n  - @ai-sdk/gateway@3.0.222",
+   "date": "2026-10-26T18:55:47Z",
+   "name": "ai@6.0.316",
+   "prerelease": false,
+   "tag": "ai@6.0.316",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.316"
+  },
+  "ai@6.0.317": {
+   "body": "### Patch Changes\n\n- Updated dependencies [90fad7b]\n  - @ai-sdk/gateway@3.0.223",
+   "date": "2026-10-27T19:28:22Z",
+   "name": "ai@6.0.317",
+   "prerelease": false,
+   "tag": "ai@6.0.317",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.317"
+  },
+  "ai@6.0.318": {
+   "body": "### Patch Changes\n\n- Updated dependencies [52988b9]\n- Updated dependencies [28252da]\n  - @ai-sdk/gateway@3.0.224\n  - @ai-sdk/provider-utils@4.0.63",
+   "date": "2026-10-29T17:03:39Z",
+   "name": "ai@6.0.318",
+   "prerelease": false,
+   "tag": "ai@6.0.318",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.318"
+  },
+  "ai@6.0.319": {
+   "body": "### Patch Changes\n\n- Updated dependencies [7313ce2]\n  - @ai-sdk/gateway@3.0.225",
+   "date": "2026-10-29T18:47:08Z",
+   "name": "ai@6.0.319",
+   "prerelease": false,
+   "tag": "ai@6.0.319",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.319"
+  },
+  "ai@7.0.154": {
+   "body": "### Patch Changes\n\n- 47236dd: add onStepError callback to generateText, streamText, ToolLoopAgent and telemetry integrations, and onError and onAbort to ToolLoopAgent\n- c8e8866: Add `aiVersion` to telemetry events so tracing-channel subscribers and telemetry integrations can identify the emitting `ai` package version, including in bundled applications and applications with multiple SDK versions.\n- 1cf95c6: add experimental steering to generateText, streamText and ToolLoopAgent\n- Updated dependencies [e64ed82]\n  - @ai-sdk/provider-utils@5.0.69\n  - @ai-sdk/gateway@4.0.127",
+   "date": "2026-10-26T18:57:14Z",
+   "name": "ai@7.0.154",
+   "prerelease": false,
+   "tag": "ai@7.0.154",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.154"
+  },
+  "ai@7.0.155": {
+   "body": "### Patch Changes\n\n- b6b9dca: chore(ai): remove runtime validation of inputs that TypeScript types already guarantee\n\n  `streamText`, `generateText`, `generateObject` and `streamObject` no longer validate messages against the `ModelMessage` schema. This removes a cost that grew linearly with message history and was paid on every `streamText` step. Type checks on call settings, steering messages, tool caller configuration, `smoothStream` chunking, `experimental_streamSpeech` text input, the shape of `decide` state and questions, and the batch reference version have also been removed. Value constraints that types cannot express, such as integer ranges, non-empty collections, unknown keys, and non-finite numbers or cycles in `decide` JSON input, are still validated.\n\n- Updated dependencies [57086ff]\n- Updated dependencies [01d7a03]\n- Updated dependencies [95348b3]\n  - @ai-sdk/provider-utils@5.0.70\n  - @ai-sdk/gateway@4.0.128",
+   "date": "2026-10-27T19:33:32Z",
+   "name": "ai@7.0.155",
+   "prerelease": false,
+   "tag": "ai@7.0.155",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.155"
+  },
+  "ai@7.0.156": {
+   "body": "### Patch Changes\n\n- Updated dependencies [9f19c79]\n  - @ai-sdk/gateway@4.0.129",
+   "date": "2026-10-28T18:34:27Z",
+   "name": "ai@7.0.156",
+   "prerelease": false,
+   "tag": "ai@7.0.156",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.156"
+  },
+  "ai@7.0.157": {
+   "body": "### Patch Changes\n\n- 0cc4921: graduate LanguageModelStreamPart to stable and deprecate Experimental_LanguageModelStreamPart\n- 077cfb3: feat(ai): Graduate `filterActiveTools` from experimental. It is now exported as `filterActiveTools`; `experimental_filterActiveTools` remains as a deprecated alias.\n- eb768e2: Fix Next.js Edge Runtime warnings from Node.js runtime detection used by telemetry tracing.\n- Updated dependencies [9ca8bcf]\n- Updated dependencies [61a315e]\n  - @ai-sdk/gateway@4.0.130\n  - @ai-sdk/provider-utils@5.0.71",
+   "date": "2026-10-29T17:10:34Z",
+   "name": "ai@7.0.157",
+   "prerelease": false,
+   "tag": "ai@7.0.157",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.157"
+  }
+ },
+ "fetched": "2026-11-02T17:00:03Z",
+ "releases": [
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [cbc9ac0]\n  - @ai-sdk/gateway@4.0.132",
+   "date": "2026-10-30T22:18:02Z",
+   "name": "ai@7.0.159",
+   "prerelease": false,
+   "tag": "ai@7.0.159",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.159"
+  },
+  {
+   "body": "### Patch Changes\n\n- 8ba3a5c: fix(ai): repair partial JSON that ends with a minus sign at the start of an array\n- 5c247e9: feat(sandbox): add `stat`, `listDirectory`, and `deleteFile` to `Experimental_SandboxSession`, and specify that relative paths in every method resolve against the directory `run` and `spawn` start in\n\n  The just-bash and Vercel Sandbox adapters implement the new methods. Both now resolve a relative `workingDirectory` for `run` and `spawn` against the sandbox's working directory, and the just-bash adapter rejects writes to a directory instead of replacing it with a file.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [f850782]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/gateway@4.0.131\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:39:40Z",
+   "name": "ai@7.0.158",
+   "prerelease": false,
+   "tag": "ai@7.0.158",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.158"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [e161391]\n  - @ai-sdk/gateway@3.0.226",
+   "date": "2026-10-30T19:29:45Z",
+   "name": "ai@6.0.320",
+   "prerelease": false,
+   "tag": "ai@6.0.320",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.320"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [f912b4e]\n- Updated dependencies [4968d4a]\n- Updated dependencies [a1a772f]\n  - @ai-sdk/gateway@2.0.174\n  - @ai-sdk/provider-utils@3.0.43",
+   "date": "2026-10-30T19:33:44Z",
+   "name": "ai@5.0.283",
+   "prerelease": false,
+   "tag": "ai@5.0.283",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.283"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/openai-compatible@3.0.82\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:43Z",
+   "name": "@ai-sdk/zai@3.0.44",
+   "prerelease": false,
+   "tag": "@ai-sdk/zai@3.0.44",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.44"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - @ai-sdk/openai-compatible@1.0.60",
+   "date": "2026-10-30T19:36:02Z",
+   "name": "@ai-sdk/zai@1.0.9",
+   "prerelease": false,
+   "tag": "@ai-sdk/zai@1.0.9",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%401.0.9"
+  },
+  {
+   "body": "### Patch Changes\n\n- 89b76ce: Centralize xAI language, image, speech, transcription, and realtime capabilities in a shared model catalog, preserving request policies and generating capability tables from the same declarations.",
+   "date": "2026-10-30T22:19:56Z",
+   "name": "@ai-sdk/xai@5.0.35",
+   "prerelease": false,
+   "tag": "@ai-sdk/xai@5.0.35",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.35"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:40Z",
+   "name": "@ai-sdk/xai@5.0.34",
+   "prerelease": false,
+   "tag": "@ai-sdk/xai@5.0.34",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.34"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - @ai-sdk/openai-compatible@1.0.60",
+   "date": "2026-10-30T19:35:56Z",
+   "name": "@ai-sdk/xai@2.0.101",
+   "prerelease": false,
+   "tag": "@ai-sdk/xai@2.0.101",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%402.0.101"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:50Z",
+   "name": "@ai-sdk/workflow@2.0.91",
+   "prerelease": false,
+   "tag": "@ai-sdk/workflow@2.0.91",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.91"
+  },
+  {
+   "body": "### Patch Changes\n\n- 5c247e9: feat(sandbox): add `stat`, `listDirectory`, and `deleteFile` to `Experimental_SandboxSession`, and specify that relative paths in every method resolve against the directory `run` and `spawn` start in\n\n  The just-bash and Vercel Sandbox adapters implement the new methods. Both now resolve a relative `workingDirectory` for `run` and `spawn` against the sandbox's working directory, and the just-bash adapter rejects writes to a directory instead of replacing it with a file.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:34Z",
+   "name": "@ai-sdk/workflow@2.0.90",
+   "prerelease": false,
+   "tag": "@ai-sdk/workflow@2.0.90",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow%402.0.90"
+  },
+  {
+   "body": "### Patch Changes\n\n- @ai-sdk/harness@1.0.170",
+   "date": "2026-10-30T22:19:53Z",
+   "name": "@ai-sdk/workflow-harness@1.0.170",
+   "prerelease": false,
+   "tag": "@ai-sdk/workflow-harness@1.0.170",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.170"
+  },
+  {
+   "body": "### Patch Changes\n\n- @ai-sdk/harness@1.0.169",
+   "date": "2026-10-30T15:43:37Z",
+   "name": "@ai-sdk/workflow-harness@1.0.169",
+   "prerelease": false,
+   "tag": "@ai-sdk/workflow-harness@1.0.169",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/workflow-harness%401.0.169"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:47Z",
+   "name": "@ai-sdk/vue@4.0.159",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@4.0.159",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%404.0.159"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158",
+   "date": "2026-10-30T15:43:31Z",
+   "name": "@ai-sdk/vue@4.0.158",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@4.0.158",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%404.0.158"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@6.0.320",
+   "date": "2026-10-30T19:30:09Z",
+   "name": "@ai-sdk/vue@3.0.320",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@3.0.320",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.320"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - ai@5.0.283",
+   "date": "2026-10-30T19:35:59Z",
+   "name": "@ai-sdk/vue@2.0.283",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@2.0.283",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.283"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:28Z",
+   "name": "@ai-sdk/voyage@2.0.72",
+   "prerelease": false,
+   "tag": "@ai-sdk/voyage@2.0.72",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/voyage%402.0.72"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - @ai-sdk/openai-compatible@1.0.60",
+   "date": "2026-10-30T19:35:53Z",
+   "name": "@ai-sdk/vercel@1.0.61",
+   "prerelease": false,
+   "tag": "@ai-sdk/vercel@1.0.61",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vercel%401.0.61"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72",
+   "date": "2026-10-30T15:43:25Z",
+   "name": "@ai-sdk/valibot@3.0.72",
+   "prerelease": false,
+   "tag": "@ai-sdk/valibot@3.0.72",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%403.0.72"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43",
+   "date": "2026-10-30T19:35:49Z",
+   "name": "@ai-sdk/valibot@1.0.43",
+   "prerelease": false,
+   "tag": "@ai-sdk/valibot@1.0.43",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%401.0.43"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:22Z",
+   "name": "@ai-sdk/typesafe-ai@3.0.31",
+   "prerelease": false,
+   "tag": "@ai-sdk/typesafe-ai@3.0.31",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/typesafe-ai%403.0.31"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:41Z",
+   "name": "@ai-sdk/tui@1.0.160",
+   "prerelease": false,
+   "tag": "@ai-sdk/tui@1.0.160",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.160"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n  - ai@7.0.158",
+   "date": "2026-10-30T15:43:19Z",
+   "name": "@ai-sdk/tui@1.0.159",
+   "prerelease": false,
+   "tag": "@ai-sdk/tui@1.0.159",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.159"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:16Z",
+   "name": "@ai-sdk/topaz@3.0.19",
+   "prerelease": false,
+   "tag": "@ai-sdk/topaz@3.0.19",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/topaz%403.0.19"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:38Z",
+   "name": "@ai-sdk/tool-web-fetch@1.0.9",
+   "prerelease": false,
+   "tag": "@ai-sdk/tool-web-fetch@1.0.9",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-web-fetch%401.0.9"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158",
+   "date": "2026-10-30T15:43:13Z",
+   "name": "@ai-sdk/tool-web-fetch@1.0.8",
+   "prerelease": false,
+   "tag": "@ai-sdk/tool-web-fetch@1.0.8",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-web-fetch%401.0.8"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:44Z",
+   "name": "@ai-sdk/tool-bash@1.0.13",
+   "prerelease": false,
+   "tag": "@ai-sdk/tool-bash@1.0.13",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-bash%401.0.13"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n  - ai@7.0.158",
+   "date": "2026-10-30T15:43:10Z",
+   "name": "@ai-sdk/tool-bash@1.0.12",
+   "prerelease": false,
+   "tag": "@ai-sdk/tool-bash@1.0.12",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-bash%401.0.12"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/openai-compatible@3.0.82\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:43:07Z",
+   "name": "@ai-sdk/togetherai@3.0.83",
+   "prerelease": false,
+   "tag": "@ai-sdk/togetherai@3.0.83",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%403.0.83"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - @ai-sdk/openai-compatible@1.0.60",
+   "date": "2026-10-30T19:35:46Z",
+   "name": "@ai-sdk/togetherai@1.0.64",
+   "prerelease": false,
+   "tag": "@ai-sdk/togetherai@1.0.64",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%401.0.64"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:35Z",
+   "name": "@ai-sdk/svelte@5.0.159",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@5.0.159",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%405.0.159"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158",
+   "date": "2026-10-30T15:43:04Z",
+   "name": "@ai-sdk/svelte@5.0.158",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@5.0.158",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%405.0.158"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@6.0.320",
+   "date": "2026-10-30T19:30:06Z",
+   "name": "@ai-sdk/svelte@4.0.320",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@4.0.320",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.320"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - ai@5.0.283",
+   "date": "2026-10-30T19:35:44Z",
+   "name": "@ai-sdk/svelte@3.0.283",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@3.0.283",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%403.0.283"
+  },
+  {
+   "body": "### Patch Changes\n\n- @ai-sdk/harness@1.0.170",
+   "date": "2026-10-30T22:19:32Z",
+   "name": "@ai-sdk/sandbox-vercel@1.0.170",
+   "prerelease": false,
+   "tag": "@ai-sdk/sandbox-vercel@1.0.170",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/sandbox-vercel%401.0.170"
+  },
+  {
+   "body": "### Patch Changes\n\n- 5c247e9: feat(sandbox): add `stat`, `listDirectory`, and `deleteFile` to `Experimental_SandboxSession`, and specify that relative paths in every method resolve against the directory `run` and `spawn` start in\n\n  The just-bash and Vercel Sandbox adapters implement the new methods. Both now resolve a relative `workingDirectory` for `run` and `spawn` against the sandbox's working directory, and the just-bash adapter rejects writes to a directory instead of replacing it with a file.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/harness@1.0.169",
+   "date": "2026-10-30T15:43:01Z",
+   "name": "@ai-sdk/sandbox-vercel@1.0.169",
+   "prerelease": false,
+   "tag": "@ai-sdk/sandbox-vercel@1.0.169",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/sandbox-vercel%401.0.169"
+  },
+  {
+   "body": "### Patch Changes\n\n- @ai-sdk/harness@1.0.170",
+   "date": "2026-10-30T22:19:29Z",
+   "name": "@ai-sdk/sandbox-just-bash@1.0.170",
+   "prerelease": false,
+   "tag": "@ai-sdk/sandbox-just-bash@1.0.170",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/sandbox-just-bash%401.0.170"
+  },
+  {
+   "body": "### Patch Changes\n\n- 5c247e9: feat(sandbox): add `stat`, `listDirectory`, and `deleteFile` to `Experimental_SandboxSession`, and specify that relative paths in every method resolve against the directory `run` and `spawn` start in\n\n  The just-bash and Vercel Sandbox adapters implement the new methods. Both now resolve a relative `workingDirectory` for `run` and `spawn` against the sandbox's working directory, and the just-bash adapter rejects writes to a directory instead of replacing it with a file.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/harness@1.0.169",
+   "date": "2026-10-30T15:42:58Z",
+   "name": "@ai-sdk/sandbox-just-bash@1.0.169",
+   "prerelease": false,
+   "tag": "@ai-sdk/sandbox-just-bash@1.0.169",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/sandbox-just-bash%401.0.169"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:26Z",
+   "name": "@ai-sdk/rsc@3.0.159",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@3.0.159",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%403.0.159"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:42:55Z",
+   "name": "@ai-sdk/rsc@3.0.158",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@3.0.158",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%403.0.158"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@6.0.320",
+   "date": "2026-10-30T19:30:03Z",
+   "name": "@ai-sdk/rsc@2.0.320",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@2.0.320",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%402.0.320"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43\n  - ai@5.0.283",
+   "date": "2026-10-30T19:35:37Z",
+   "name": "@ai-sdk/rsc@1.0.285",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@1.0.285",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%401.0.285"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:42:52Z",
+   "name": "@ai-sdk/revai@3.0.72",
+   "prerelease": false,
+   "tag": "@ai-sdk/revai@3.0.72",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/revai%403.0.72"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43",
+   "date": "2026-10-30T19:35:41Z",
+   "name": "@ai-sdk/revai@1.0.45",
+   "prerelease": false,
+   "tag": "@ai-sdk/revai@1.0.45",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/revai%401.0.45"
+  },
+  {
+   "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:42:49Z",
+   "name": "@ai-sdk/replicate@3.0.73",
+   "prerelease": false,
+   "tag": "@ai-sdk/replicate@3.0.73",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/replicate%403.0.73"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [a1a772f]\n  - @ai-sdk/provider-utils@3.0.43",
+   "date": "2026-10-30T19:35:32Z",
+   "name": "@ai-sdk/replicate@1.0.45",
+   "prerelease": false,
+   "tag": "@ai-sdk/replicate@1.0.45",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/replicate%401.0.45"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@7.0.159",
+   "date": "2026-10-30T22:19:23Z",
+   "name": "@ai-sdk/react@4.0.163",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@4.0.163",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%404.0.163"
+  },
+  {
+   "body": "### Patch Changes\n\n- 1afa510: Graduate `StdioMCPTransport`, `MCPClient.listPrompts`, `MCPClient.getPrompt`, and `MCPAppRenderer` to stable APIs. Deprecate their experimental names while retaining them as compatible aliases. MCP events remain experimental.\n- Updated dependencies [7716e18]\n- Updated dependencies [8ba3a5c]\n- Updated dependencies [c3af430]\n- Updated dependencies [1afa510]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - ai@7.0.158\n  - @ai-sdk/mcp@2.0.88\n  - @ai-sdk/provider@4.0.35",
+   "date": "2026-10-30T15:42:46Z",
+   "name": "@ai-sdk/react@4.0.162",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@4.0.162",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%404.0.162"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@6.0.320",
+   "date": "2026-10-30T19:30:00Z",
+   "name": "@ai-sdk/react@3.0.323",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@3.0.323",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.323"
+  }
+ ],
+ "repo": "vercel/ai"
+}

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "1.32.2",
+ "metadata_fetched": "2026-11-02T17:00:11Z",
+ "package": "@modelcontextprotocol/sdk",
+ "page": "https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/",
+ "registry": "https://www.npmjs.com/package/@modelcontextprotocol/sdk",
+ "releases": [],
+ "repository": "https://github.com/modelcontextprotocol/typescript-sdk",
+ "summary": "Model Context Protocol implementation for TypeScript"
+}

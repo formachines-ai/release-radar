@@ -1,0 +1,23 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "2_x": "2.20.3",
+  "latest": "15.0.0",
+  "next": "15.0.0-0"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:23Z",
+ "homepage": "https://github.com/tj/commander.js#readme",
+ "latest": "15.0.0",
+ "name": "commander",
+ "page": "https://www.npmjs.com/package/commander",
+ "repo": "tj/commander.js",
+ "summary": "the complete solution for node.js command-line programs",
+ "versions": [
+  {
+   "date": "2026-05-29T09:16:23Z",
+   "deprecated": false,
+   "version": "15.0.0"
+  }
+ ]
+}

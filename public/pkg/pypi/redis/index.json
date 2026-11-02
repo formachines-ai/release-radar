@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/redis/redis-py/releases",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "8.1.0",
+ "metadata_fetched": "2026-11-02T16:59:58Z",
+ "package": "redis",
+ "page": "https://releases.formachines.ai/pkg/pypi/redis/",
+ "registry": "https://pypi.org/project/redis/",
+ "releases": [],
+ "repository": "https://github.com/redis/redis-py",
+ "summary": "Python client for Redis database and key-value store"
+}

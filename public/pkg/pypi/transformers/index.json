@@ -1,0 +1,92 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "5.22.1",
+ "metadata_fetched": "2026-11-02T16:59:50Z",
+ "package": "transformers",
+ "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+ "registry": "https://pypi.org/project/transformers/",
+ "releases": [
+  {
+   "date": "2026-10-30T07:47:59Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/transformers/5.22.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ff92f5be72/",
+   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.22.1",
+   "package": "transformers",
+   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.22.1",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-29T14:18:15Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/transformers/5.22.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fb0dc09296/",
+   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
+   "package": "transformers",
+   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "Breaking",
+     "quote": "## Breaking changes\n* 🚨 Separate EP logic into its own file (#49679) by @3outeille"
+    },
+    {
+     "match": "deprecation",
+     "quote": "* Remove deprecation cycle for candidate generators (#50034) by @Cyrilvallez in [#50034]"
+    }
+   ],
+   "version": "5.22.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-29T08:34:26Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/transformers/5.21.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/88cbb8199f/",
+   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
+   "package": "transformers",
+   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.21.1",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-26T18:17:23Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/transformers/5.21.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/dbc9598b3b/",
+   "notes_url": "https://github.com/huggingface/transformers/releases",
+   "package": "transformers",
+   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.21.0",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/huggingface/transformers",
+ "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
+}

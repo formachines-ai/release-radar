@@ -1,0 +1,213 @@
+{
+ "changelog": "https://github.com/ijl/orjson/blob/master/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:55Z",
+ "homepage": "",
+ "latest": "3.13.0",
+ "name": "orjson",
+ "page": "https://pypi.org/project/orjson/",
+ "repo": "ijl/orjson",
+ "summary": "Fast, correct Python JSON library supporting dataclasses, datetimes, and numpy",
+ "versions": [
+  {
+   "date": "2026-10-07T14:07:54Z",
+   "version": "3.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-14T16:12:00Z",
+   "version": "3.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-06T15:09:14Z",
+   "version": "3.11.9",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-31T16:14:30Z",
+   "version": "3.11.8",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-02T15:37:06Z",
+   "version": "3.11.7",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-29T15:11:17Z",
+   "version": "3.11.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-06T15:53:43Z",
+   "version": "3.11.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-24T15:48:28Z",
+   "version": "3.11.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-26T17:44:36Z",
+   "version": "3.11.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-12T15:10:22Z",
+   "version": "3.11.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-25T14:31:52Z",
+   "version": "3.11.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-15T16:06:23Z",
+   "version": "3.11.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-29T23:28:08Z",
+   "version": "3.10.18",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-29T14:23:47Z",
+   "version": "3.10.17",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-24T16:58:41Z",
+   "version": "3.10.16",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-18T15:53:17Z",
+   "version": "3.10.15",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-08T16:56:21Z",
+   "version": "3.10.14",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-29T23:40:30Z",
+   "version": "3.10.13",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-23T19:40:48Z",
+   "version": "3.10.12",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-01T23:48:29Z",
+   "version": "3.10.11",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-22T18:18:24Z",
+   "version": "3.10.10",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-19T17:35:44Z",
+   "version": "3.10.9",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-19T15:48:11Z",
+   "version": "3.10.8",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-08T23:39:50Z",
+   "version": "3.10.7",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-02T16:38:29Z",
+   "version": "3.10.6",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-13T23:07:15Z",
+   "version": "3.10.5",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-10T17:01:31Z",
+   "version": "3.10.4",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-03T14:49:49Z",
+   "version": "3.10.3",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-01T01:16:06Z",
+   "version": "3.10.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-15T21:54:28Z",
+   "version": "3.10.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-27T22:52:08Z",
+   "version": "3.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-23T17:26:12Z",
+   "version": "3.9.15",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-14T03:41:18Z",
+   "version": "3.9.14",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-03T22:58:19Z",
+   "version": "3.9.13",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-18T17:19:12Z",
+   "version": "3.9.12",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-18T16:09:59Z",
+   "version": "3.9.11",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-26T14:30:16Z",
+   "version": "3.9.10",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-12T22:54:53Z",
+   "version": "3.9.9",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-10T14:49:51Z",
+   "version": "3.9.8",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-08T16:08:16Z",
+   "version": "3.9.7",
+   "yanked": false
+  }
+ ]
+}

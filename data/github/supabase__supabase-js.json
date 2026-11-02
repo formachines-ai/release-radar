@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T17:00:20Z",
+ "releases": [
+  {
+   "body": "## 2.119.0-canary.4 (2026-10-28)\n\n### 🩹 Fixes\n\n- **auth:** `global` sign out cleared the local session when the server failed to log out ([#2786](https://github.com/supabase/supabase-js/pull/2786))\n\n### ❤️ Thank You\n\n- Christian Melchior",
+   "date": "2026-10-28T13:27:35Z",
+   "name": "v2.119.0-canary.4",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.4",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.4"
+  },
+  {
+   "body": "## 2.119.0-canary.3 (2026-10-27)\n\n### 🩹 Fixes\n\n- **storage:** ignore undefined FileOptions during upload ([#2789](https://github.com/supabase/supabase-js/pull/2789))\n\n### ❤️ Thank You\n\n- Pintu Kumar @pintu544",
+   "date": "2026-10-27T06:13:00Z",
+   "name": "v2.119.0-canary.3",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.3",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.3"
+  },
+  {
+   "body": "## 2.119.0-canary.2 (2026-10-22)\n\n### 🩹 Fixes\n\n- **storage:** `exists` reports invalid JWT or missing bucket as missing file ([#2783](https://github.com/supabase/supabase-js/pull/2783))\n\n### ❤️ Thank You\n\n- Christian Melchior",
+   "date": "2026-10-22T11:58:11Z",
+   "name": "v2.119.0-canary.2",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.2"
+  },
+  {
+   "body": "## 2.119.0-canary.1 (2026-10-20)\n\n### 🩹 Fixes\n\n- **auth:** `deleteUser` miscast empty object to `User` ([#2773](https://github.com/supabase/supabase-js/pull/2773))\n\n### ❤️ Thank You\n\n- Christian Melchior",
+   "date": "2026-10-20T11:37:26Z",
+   "name": "v2.119.0-canary.1",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.1"
+  },
+  {
+   "body": "## 2.119.0-canary.0 (2026-10-20)\n\n### 🚀 Features\n\n- **postgrest:** expose query builder options to .from method - custom fetch per request ([#1570](https://github.com/supabase/supabase-js/pull/1570))\n\n### ❤️ Thank You\n\n- 7vignesh\n- 7vignesh <vigneshgopikrishnan7@gmail.com> and stenlan @stenlan\n- Katerina Skroumpelou\n- stenlan @stenlan\n- Vignesh",
+   "date": "2026-10-20T05:41:52Z",
+   "name": "v2.119.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.0"
+  },
+  {
+   "body": "## 2.118.0 (2026-10-15)\n\n### 🚀 Features\n\n- **postgrest:** leave computed fields out of select('*') and resolve no-argument rpc overloads for postgrest-typegen output ([#2730](https://github.com/supabase/supabase-js/pull/2730))\n- **storage:** add content-encoding support for uploads ([#1949](https://github.com/supabase/supabase-js/pull/1949))\n\n### 🩹 Fixes\n\n- **ci:** patch next and sharp advisories and pin node-browser playwright ([#2753](https://github.com/supabase/supabase-js/pull/2753))\n\n### ❤️ Thank You\n\n- Atharv Gaur @Athaxv\n- Ferhat Elmas\n- Lukas Klingsbo",
+   "date": "2026-10-15T12:55:27Z",
+   "name": "v2.118.0",
+   "prerelease": false,
+   "tag": "v2.118.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.118.0"
+  },
+  {
+   "body": "## 2.118.0-canary.2 (2026-10-12)\n\nThis was a version bump only, there were no code changes.",
+   "date": "2026-10-12T14:04:29Z",
+   "name": "v2.118.0-canary.2",
+   "prerelease": true,
+   "tag": "v2.118.0-canary.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.118.0-canary.2"
+  },
+  {
+   "body": "## 2.118.0-canary.1 (2026-10-12)\n\nThis was a version bump only, there were no code changes.",
+   "date": "2026-10-12T11:39:50Z",
+   "name": "v2.118.0-canary.1",
+   "prerelease": true,
+   "tag": "v2.118.0-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.118.0-canary.1"
+  },
+  {
+   "body": "## 2.118.0-canary.0 (2026-10-09)\n\n### 🚀 Features\n\n- **postgrest:** leave computed fields out of select('*') and resolve no-argument rpc overloads for postgrest-typegen output ([#2730](https://github.com/supabase/supabase-js/pull/2730))\n\n### 🩹 Fixes\n\n- **ci:** patch next and sharp advisories and pin node-browser playwright ([#2753](https://github.com/supabase/supabase-js/pull/2753))\n\n### ❤️ Thank You\n\n- Lukas Klingsbo",
+   "date": "2026-10-09T17:58:41Z",
+   "name": "v2.118.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.118.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.118.0-canary.0"
+  },
+  {
+   "body": "## 2.117.3 (2026-10-07)\n\n### 🩹 Fixes\n\n- **deps:** bump next to patch RCE in realtime-js example ([#2733](https://github.com/supabase/supabase-js/pull/2733))\n- **functions:** send a Blob or File with its own content type ([#2714](https://github.com/supabase/supabase-js/pull/2714))\n- **postgrest:** treat TimeoutError as an abort in retry guard ([#2732](https://github.com/supabase/supabase-js/pull/2732))\n- **storage:** send multipart fields before files ([#2736](https://github.com/supabase/supabase-js/pull/2736))\n\n### ❤️ Thank You\n\n- Bruno Gale @fresh55\n- Ferhat Elmas\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-10-07T12:33:06Z",
+   "name": "v2.117.3",
+   "prerelease": false,
+   "tag": "v2.117.3",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.3"
+  },
+  {
+   "body": "## 2.117.3-canary.1 (2026-10-07)\n\n### 🩹 Fixes\n\n- **storage:** send multipart fields before files ([#2736](https://github.com/supabase/supabase-js/pull/2736))\n\n### ❤️ Thank You\n\n- Ferhat Elmas\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-10-07T12:30:56Z",
+   "name": "v2.117.3-canary.1",
+   "prerelease": true,
+   "tag": "v2.117.3-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.3-canary.1"
+  },
+  {
+   "body": "## 2.117.3-canary.0 (2026-10-02)\n\n### 🩹 Fixes\n\n- **deps:** bump next to patch RCE in realtime-js example ([#2733](https://github.com/supabase/supabase-js/pull/2733))\n- **functions:** send a Blob or File with its own content type ([#2714](https://github.com/supabase/supabase-js/pull/2714))\n- **postgrest:** treat TimeoutError as an abort in retry guard ([#2732](https://github.com/supabase/supabase-js/pull/2732))\n\n### ❤️ Thank You\n\n- Bruno Gale @fresh55\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-10-02T13:07:39Z",
+   "name": "v2.117.3-canary.0",
+   "prerelease": true,
+   "tag": "v2.117.3-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.3-canary.0"
+  },
+  {
+   "body": "## 2.117.2 (2026-09-25)\n\n### 🩹 Fixes\n\n- **postgrest:** avoid instantiation depth errors for large relationship unions ([#2701](https://github.com/supabase/supabase-js/pull/2701))\n\n### ❤️ Thank You\n\n- Han Qiao @sweatybridge",
+   "date": "2026-09-25T10:05:55Z",
+   "name": "v2.117.2",
+   "prerelease": false,
+   "tag": "v2.117.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.2"
+  },
+  {
+   "body": "## 2.117.2-canary.0 (2026-09-24)\n\n### 🩹 Fixes\n\n- **postgrest:** avoid instantiation depth errors for large relationship unions ([#2701](https://github.com/supabase/supabase-js/pull/2701))\n\n### ❤️ Thank You\n\n- Han Qiao @sweatybridge",
+   "date": "2026-09-24T11:03:38Z",
+   "name": "v2.117.2-canary.0",
+   "prerelease": true,
+   "tag": "v2.117.2-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.2-canary.0"
+  },
+  {
+   "body": "## 2.117.1 (2026-09-23)\n\n### 🩹 Fixes\n\n- **auth:** return stored session when a refresh loses to another tab ([#2698](https://github.com/supabase/supabase-js/pull/2698))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-23T09:34:07Z",
+   "name": "v2.117.1",
+   "prerelease": false,
+   "tag": "v2.117.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.1"
+  },
+  {
+   "body": "## 2.117.1-canary.0 (2026-09-23)\n\n### 🩹 Fixes\n\n- **auth:** return stored session when a refresh loses to another tab ([#2698](https://github.com/supabase/supabase-js/pull/2698))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-23T09:27:01Z",
+   "name": "v2.117.1-canary.0",
+   "prerelease": true,
+   "tag": "v2.117.1-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.1-canary.0"
+  },
+  {
+   "body": "## 2.117.0 (2026-09-22)\n\n### 🚀 Features\n\n- **auth:** forward options.mediation to navigator.credentials.get in signInWithPasskey ([#2675](https://github.com/supabase/supabase-js/pull/2675))\n- **auth:** enable passkey API by default and deprecate experimental passkey opt-in ([#2695](https://github.com/supabase/supabase-js/pull/2695))\n\n### ❤️ Thank You\n\n- fadymak\n- James Argarin\n- Katerina Skroumpelou",
+   "date": "2026-09-22T12:55:38Z",
+   "name": "v2.117.0",
+   "prerelease": false,
+   "tag": "v2.117.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.0"
+  },
+  {
+   "body": "## 2.117.0-canary.1 (2026-09-22)\n\n### 🚀 Features\n\n- **auth:** enable passkey API by default and deprecate experimental passkey opt-in ([#2695](https://github.com/supabase/supabase-js/pull/2695))\n\n### ❤️ Thank You\n\n- fadymak",
+   "date": "2026-09-22T12:25:19Z",
+   "name": "v2.117.0-canary.1",
+   "prerelease": true,
+   "tag": "v2.117.0-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.0-canary.1"
+  },
+  {
+   "body": "## 2.117.0-canary.0 (2026-09-17)\n\n### 🚀 Features\n\n- **auth:** forward options.mediation to navigator.credentials.get in signInWithPasskey ([#2675](https://github.com/supabase/supabase-js/pull/2675))\n\n### ❤️ Thank You\n\n- James Argarin\n- Katerina Skroumpelou",
+   "date": "2026-09-17T12:43:56Z",
+   "name": "v2.117.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.117.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.117.0-canary.0"
+  },
+  {
+   "body": "## 2.116.0 (2026-09-07)\n\n### 🚀 Features\n\n- **auth:** add MFA recovery codes API ([#2676](https://github.com/supabase/supabase-js/pull/2676))\n- **storage:** add bucket lifecycle configuration ([#2659](https://github.com/supabase/supabase-js/pull/2659))\n- **storage:** topk 10k support ([#2667](https://github.com/supabase/supabase-js/pull/2667))\n- **storage:** add versionId support to create URL methods ([#2678](https://github.com/supabase/supabase-js/pull/2678))\n\n### 🩹 Fixes\n\n- **auth:** silence commit-guard-discarded refresh in initial session ([#2668](https://github.com/supabase/supabase-js/pull/2668))\n- **storage:** drop legacy prefix from lifecycles ([#2674](https://github.com/supabase/supabase-js/pull/2674))\n- **supabase:** warn when schema is passed outside db options ([#2663](https://github.com/supabase/supabase-js/pull/2663))\n\n### ❤️ Thank You\n\n- fadymak\n- Ferhat Elmas\n- Katerina Skroumpelou @mandarini\n- Tyler Hillery",
+   "date": "2026-09-07T16:24:55Z",
+   "name": "v2.116.0",
+   "prerelease": false,
+   "tag": "v2.116.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.116.0"
+  },
+  {
+   "body": "## 2.116.0-canary.3 (2026-09-07)\n\n### 🚀 Features\n\n- **auth:** add MFA recovery codes API ([#2676](https://github.com/supabase/supabase-js/pull/2676))\n- **storage:** add versionId support to create URL methods ([#2678](https://github.com/supabase/supabase-js/pull/2678))\n\n### ❤️ Thank You\n\n- fadymak\n- Katerina Skroumpelou\n- Tyler Hillery",
+   "date": "2026-09-07T16:22:29Z",
+   "name": "v2.116.0-canary.3",
+   "prerelease": true,
+   "tag": "v2.116.0-canary.3",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.116.0-canary.3"
+  },
+  {
+   "body": "## 2.116.0-canary.2 (2026-09-07)\n\n### 🚀 Features\n\n- **storage:** topk 10k support ([#2667](https://github.com/supabase/supabase-js/pull/2667))\n\n### 🩹 Fixes\n\n- **storage:** drop legacy prefix from lifecycles ([#2674](https://github.com/supabase/supabase-js/pull/2674))\n\n### ❤️ Thank You\n\n- Ferhat Elmas",
+   "date": "2026-09-07T12:13:37Z",
+   "name": "v2.116.0-canary.2",
+   "prerelease": true,
+   "tag": "v2.116.0-canary.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.116.0-canary.2"
+  },
+  {
+   "body": "## 2.116.0-canary.1 (2026-09-04)\n\n### 🩹 Fixes\n\n- **auth:** silence commit-guard-discarded refresh in initial session ([#2668](https://github.com/supabase/supabase-js/pull/2668))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-04T12:41:20Z",
+   "name": "v2.116.0-canary.1",
+   "prerelease": true,
+   "tag": "v2.116.0-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.116.0-canary.1"
+  },
+  {
+   "body": "## 2.116.0-canary.0 (2026-09-04)\n\n### 🚀 Features\n\n- **storage:** add bucket lifecycle configuration ([#2659](https://github.com/supabase/supabase-js/pull/2659))\n\n### ❤️ Thank You\n\n- Ferhat Elmas",
+   "date": "2026-09-04T11:42:09Z",
+   "name": "v2.116.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.116.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.116.0-canary.0"
+  },
+  {
+   "body": "## 2.115.1-canary.0 (2026-09-04)\n\n### 🩹 Fixes\n\n- **supabase:** warn when schema is passed outside db options ([#2663](https://github.com/supabase/supabase-js/pull/2663))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-04T08:52:17Z",
+   "name": "v2.115.1-canary.0",
+   "prerelease": true,
+   "tag": "v2.115.1-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.115.1-canary.0"
+  },
+  {
+   "body": "## 2.115.0 (2026-09-03)\n\n### 🚀 Features\n\n- **postgrest:** add getOpenApiSpec() ([#2651](https://github.com/supabase/supabase-js/pull/2651))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-03T16:17:18Z",
+   "name": "v2.115.0",
+   "prerelease": false,
+   "tag": "v2.115.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.115.0"
+  },
+  {
+   "body": "## 2.115.0-canary.0 (2026-09-03)\n\n### 🚀 Features\n\n- **postgrest:** add getOpenApiSpec() ([#2651](https://github.com/supabase/supabase-js/pull/2651))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-09-03T16:05:34Z",
+   "name": "v2.115.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.115.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.115.0-canary.0"
+  },
+  {
+   "body": "## 2.114.0 (2026-09-02)\n\n### 🚀 Features\n\n- **storage:** object versioning updates ([#2644](https://github.com/supabase/supabase-js/pull/2644))\n\n### 🩹 Fixes\n\n- **auth:** unenroll the unverified factor after a failed registration ([#2641](https://github.com/supabase/supabase-js/pull/2641))\n- **deps:** override browserslist to patch high-severity advisories ([#2652](https://github.com/supabase/supabase-js/pull/2652))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini\n- Miodrag Obradovic @Kjubikstronk\n- Tyler Hillery",
+   "date": "2026-09-02T13:14:13Z",
+   "name": "v2.114.0",
+   "prerelease": false,
+   "tag": "v2.114.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.114.0"
+  },
+  {
+   "body": "## 2.114.0-canary.0 (2026-09-02)\n\n### 🚀 Features\n\n- **storage:** object versioning updates ([#2644](https://github.com/supabase/supabase-js/pull/2644))\n\n### 🩹 Fixes\n\n- **auth:** unenroll the unverified factor after a failed registration ([#2641](https://github.com/supabase/supabase-js/pull/2641))\n- **deps:** override browserslist to patch high-severity advisories ([#2652](https://github.com/supabase/supabase-js/pull/2652))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini\n- Miodrag Obradovic @Kjubikstronk\n- Tyler Hillery",
+   "date": "2026-09-02T13:08:58Z",
+   "name": "v2.114.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.114.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.114.0-canary.0"
+  },
+  {
+   "body": "## 2.113.0 (2026-09-02)\n\n### 🚀 Features\n\n- **realtime:** allow wait for pg changes ([#2630](https://github.com/supabase/supabase-js/pull/2630))\n\n### ❤️ Thank You\n\n- Filipe Cabaço @filipecabaco",
+   "date": "2026-09-02T06:02:37Z",
+   "name": "v2.113.0",
+   "prerelease": false,
+   "tag": "v2.113.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.113.0"
+  },
+  {
+   "body": "## 2.113.0-canary.0 (2026-09-01)\n\n### 🚀 Features\n\n- **realtime:** allow wait for pg changes ([#2630](https://github.com/supabase/supabase-js/pull/2630))\n\n### ❤️ Thank You\n\n- Filipe Cabaço @filipecabaco",
+   "date": "2026-09-01T13:36:13Z",
+   "name": "v2.113.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.113.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.113.0-canary.0"
+  },
+  {
+   "body": "## 2.112.4 (2026-08-24)\n\n### 🩹 Fixes\n\n- **auth:** convert stolen-lock AbortError when acquireTimeout is 0 ([#2616](https://github.com/supabase/supabase-js/pull/2616))\n- **auth:** warn on deprecated lock option and prevent unhandled refresh rejection ([#2627](https://github.com/supabase/supabase-js/pull/2627))\n- **postgrest:** move override fixtures out of generated types, repair codegen ([#2605](https://github.com/supabase/supabase-js/pull/2605))\n- **realtime:** respect custom logger for send() REST fallback warning ([#2612](https://github.com/supabase/supabase-js/pull/2612))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini\n- mmustafasenoglu @mmustafasenoglu",
+   "date": "2026-08-24T10:32:46Z",
+   "name": "v2.112.4",
+   "prerelease": false,
+   "tag": "v2.112.4",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.4"
+  },
+  {
+   "body": "## 2.112.4-canary.3 (2026-08-24)\n\n### 🩹 Fixes\n\n- **auth:** warn on deprecated lock option and prevent unhandled refresh rejection ([#2627](https://github.com/supabase/supabase-js/pull/2627))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-08-24T10:30:17Z",
+   "name": "v2.112.4-canary.3",
+   "prerelease": true,
+   "tag": "v2.112.4-canary.3",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.4-canary.3"
+  },
+  {
+   "body": "## 2.112.4-canary.2 (2026-08-24)\n\n### 🩹 Fixes\n\n- **auth:** convert stolen-lock AbortError when acquireTimeout is 0 ([#2616](https://github.com/supabase/supabase-js/pull/2616))\n- **realtime:** respect custom logger for send() REST fallback warning ([#2612](https://github.com/supabase/supabase-js/pull/2612))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini\n- mmustafasenoglu @mmustafasenoglu",
+   "date": "2026-08-24T09:24:03Z",
+   "name": "v2.112.4-canary.2",
+   "prerelease": true,
+   "tag": "v2.112.4-canary.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.4-canary.2"
+  },
+  {
+   "body": "## 2.112.4-canary.1 (2026-08-12)\n\nThis was a version bump only, there were no code changes.",
+   "date": "2026-08-12T10:07:34Z",
+   "name": "v2.112.4-canary.1",
+   "prerelease": true,
+   "tag": "v2.112.4-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.4-canary.1"
+  },
+  {
+   "body": "## 2.112.4-canary.0 (2026-08-11)\n\n### 🩹 Fixes\n\n- **postgrest:** move override fixtures out of generated types, repair codegen ([#2605](https://github.com/supabase/supabase-js/pull/2605))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-08-11T14:40:34Z",
+   "name": "v2.112.4-canary.0",
+   "prerelease": true,
+   "tag": "v2.112.4-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.4-canary.0"
+  },
+  {
+   "body": "## 2.112.3 (2026-08-11)\n\n### 🩹 Fixes\n\n- **supabase:** add trace context headers to canonical CORS allow-list ([#2603](https://github.com/supabase/supabase-js/pull/2603))\n- **supabase:** improve trace propagation sampling and diagnostics ([#2604](https://github.com/supabase/supabase-js/pull/2604))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-08-11T07:27:34Z",
+   "name": "v2.112.3",
+   "prerelease": false,
+   "tag": "v2.112.3",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.3"
+  },
+  {
+   "body": "## 2.112.3-canary.0 (2026-08-11)\n\n### 🩹 Fixes\n\n- **supabase:** add trace context headers to canonical CORS allow-list ([#2603](https://github.com/supabase/supabase-js/pull/2603))\n- **supabase:** improve trace propagation sampling and diagnostics ([#2604](https://github.com/supabase/supabase-js/pull/2604))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-08-11T07:20:27Z",
+   "name": "v2.112.3-canary.0",
+   "prerelease": true,
+   "tag": "v2.112.3-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.3-canary.0"
+  },
+  {
+   "body": "## 2.112.2 (2026-08-06)\n\n### 🩹 Fixes\n\n- **realtime:** prevent duplicate on bindings ([#2594](https://github.com/supabase/supabase-js/pull/2594))\n- **realtime:** clear stale join payload on sign-out ([#2597](https://github.com/supabase/supabase-js/pull/2597))\n\n### ❤️ Thank You\n\n- Filipe Cabaço @filipecabaco\n- Vaibhav @7ttp",
+   "date": "2026-08-06T13:34:31Z",
+   "name": "v2.112.2",
+   "prerelease": false,
+   "tag": "v2.112.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.2"
+  },
+  {
+   "body": "## 2.112.2-canary.1 (2026-08-06)\n\n### 🩹 Fixes\n\n- **realtime:** clear stale join payload on sign-out ([#2597](https://github.com/supabase/supabase-js/pull/2597))\n\n### ❤️ Thank You\n\n- Vaibhav @7ttp",
+   "date": "2026-08-06T13:31:20Z",
+   "name": "v2.112.2-canary.1",
+   "prerelease": true,
+   "tag": "v2.112.2-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.2-canary.1"
+  },
+  {
+   "body": "## 2.112.2-canary.0 (2026-08-06)\n\n### 🩹 Fixes\n\n- **realtime:** prevent duplicate on bindings ([#2594](https://github.com/supabase/supabase-js/pull/2594))\n\n### ❤️ Thank You\n\n- Filipe Cabaço @filipecabaco",
+   "date": "2026-08-06T13:08:42Z",
+   "name": "v2.112.2-canary.0",
+   "prerelease": true,
+   "tag": "v2.112.2-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.2-canary.0"
+  },
+  {
+   "body": "## 2.112.1 (2026-08-05)\n\n### 🩹 Fixes\n\n- **auth:** preserve 5xx error message ([#2587](https://github.com/supabase/supabase-js/pull/2587))\n- **realtime:** ensure setAuth doesn't disable token refresh ([#2592](https://github.com/supabase/supabase-js/pull/2592))\n\n### ❤️ Thank You\n\n- Eduardo Gurgel\n- Vaibhav @7ttp",
+   "date": "2026-08-05T10:43:58Z",
+   "name": "v2.112.1",
+   "prerelease": false,
+   "tag": "v2.112.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.1"
+  },
+  {
+   "body": "## 2.112.1-canary.1 (2026-08-05)\n\n### 🩹 Fixes\n\n- **realtime:** ensure setAuth doesn't disable token refresh ([#2592](https://github.com/supabase/supabase-js/pull/2592))\n\n### ❤️ Thank You\n\n- Eduardo Gurgel",
+   "date": "2026-08-05T10:34:06Z",
+   "name": "v2.112.1-canary.1",
+   "prerelease": true,
+   "tag": "v2.112.1-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.1-canary.1"
+  },
+  {
+   "body": "## 2.112.1-canary.0 (2026-08-03)\n\n### 🩹 Fixes\n\n- **auth:** preserve 5xx error message ([#2587](https://github.com/supabase/supabase-js/pull/2587))\n\n### ❤️ Thank You\n\n- Vaibhav @7ttp",
+   "date": "2026-08-03T13:13:01Z",
+   "name": "v2.112.1-canary.0",
+   "prerelease": true,
+   "tag": "v2.112.1-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.1-canary.0"
+  },
+  {
+   "body": "## 2.112.0 (2026-08-03)\n\n### 🚀 Features\n\n- **supabase:** move OpenTelemetry tracing to opt-in /tracing subpath ([#2583](https://github.com/supabase/supabase-js/pull/2583))\n\n### 🩹 Fixes\n\n- **auth:** accept uppercase UUIDs in validateUUID ([#2467](https://github.com/supabase/supabase-js/pull/2467))\n- **postgrest:** honour throwOnError when maybeSingle finds multiple rows ([#2580](https://github.com/supabase/supabase-js/pull/2580))\n- **storage:** resolve createSignedUrls return type mismatch ([#2474](https://github.com/supabase/supabase-js/pull/2474))\n- **storage:** expose service error code on StorageApiError ([#2537](https://github.com/supabase/supabase-js/pull/2537))\n- **supabase:** forward db retry option ([#2571](https://github.com/supabase/supabase-js/pull/2571))\n\n### ❤️ Thank You\n\n- Anubhav Anand @i-anubhav-anand\n- Gourab Singha @gourabsingha1\n- Juhef @juheff\n- Katerina Skroumpelou @mandarini\n- Thribhuvan\n- Vaibhav @7ttp\n- Zuhef Ahmed @Zuhef",
+   "date": "2026-08-03T07:33:10Z",
+   "name": "v2.112.0",
+   "prerelease": false,
+   "tag": "v2.112.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0"
+  },
+  {
+   "body": "## 2.112.0-canary.2 (2026-08-03)\n\nThis was a version bump only, there were no code changes.",
+   "date": "2026-08-03T07:15:19Z",
+   "name": "v2.112.0-canary.2",
+   "prerelease": true,
+   "tag": "v2.112.0-canary.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.2"
+  },
+  {
+   "body": "## 2.112.0-canary.1 (2026-07-31)\n\n### 🩹 Fixes\n\n- **postgrest:** honour throwOnError when maybeSingle finds multiple rows ([#2580](https://github.com/supabase/supabase-js/pull/2580))\n- **storage:** expose service error code on StorageApiError ([#2537](https://github.com/supabase/supabase-js/pull/2537))\n\n### ❤️ Thank You\n\n- Juhef @juheff\n- Katerina Skroumpelou\n- Thribhuvan\n- Zuhef Ahmed @Zuhef",
+   "date": "2026-07-31T13:39:50Z",
+   "name": "v2.112.0-canary.1",
+   "prerelease": true,
+   "tag": "v2.112.0-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.1"
+  },
+  {
+   "body": "## 2.112.0-canary.0 (2026-07-31)\n\n### 🚀 Features\n\n- **supabase:** move OpenTelemetry tracing to opt-in /tracing subpath ([#2583](https://github.com/supabase/supabase-js/pull/2583))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
+   "date": "2026-07-31T10:02:55Z",
+   "name": "v2.112.0-canary.0",
+   "prerelease": true,
+   "tag": "v2.112.0-canary.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.0"
+  },
+  {
+   "body": "## 2.112.0-beta.0 (2026-07-30)\n\n### 🚀 Features\n\n- **supabase:** move OpenTelemetry tracing to opt-in /tracing subpath ([00cdfd5c](https://github.com/supabase/supabase-js/commit/00cdfd5c))\n\n### 🩹 Fixes\n\n- **supabase:** forward db retry option ([#2571](https://github.com/supabase/supabase-js/pull/2571))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou\n- Vaibhav @7ttp",
+   "date": "2026-07-30T14:39:58Z",
+   "name": "v2.112.0-beta.0",
+   "prerelease": true,
+   "tag": "v2.112.0-beta.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-beta.0"
+  },
+  {
+   "body": "## 2.111.1-canary.1 (2026-07-30)\n\n### 🩹 Fixes\n\n- **auth:** accept uppercase UUIDs in validateUUID ([#2467](https://github.com/supabase/supabase-js/pull/2467))\n- **storage:** resolve createSignedUrls return type mismatch ([#2474](https://github.com/supabase/supabase-js/pull/2474))\n\n### ❤️ Thank You\n\n- Anubhav Anand @i-anubhav-anand\n- Gourab Singha @gourabsingha1",
+   "date": "2026-07-30T14:08:36Z",
+   "name": "v2.111.1-canary.1",
+   "prerelease": true,
+   "tag": "v2.111.1-canary.1",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.111.1-canary.1"
+  }
+ ],
+ "repo": "supabase/supabase-js"
+}

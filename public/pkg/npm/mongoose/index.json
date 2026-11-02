@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "9.11.4",
+ "metadata_fetched": "2026-11-02T17:00:33Z",
+ "package": "mongoose",
+ "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+ "registry": "https://www.npmjs.com/package/mongoose",
+ "releases": [],
+ "repository": "https://github.com/Automattic/mongoose",
+ "summary": "Mongoose MongoDB ODM"
+}

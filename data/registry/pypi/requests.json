@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:58Z",
+ "homepage": "",
+ "latest": "2.34.2",
+ "name": "requests",
+ "page": "https://pypi.org/project/requests/",
+ "repo": "psf/requests",
+ "summary": "Python HTTP for Humans.",
+ "versions": [
+  {
+   "date": "2026-05-14T19:25:26Z",
+   "version": "2.34.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-13T19:20:22Z",
+   "version": "2.34.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-11T19:29:49Z",
+   "version": "2.34.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-03T20:21:40Z",
+   "version": "2.34.0.dev1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-30T16:09:13Z",
+   "version": "2.33.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-25T15:10:40Z",
+   "version": "2.33.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-18T20:46:00Z",
+   "version": "2.32.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-09T16:43:05Z",
+   "version": "2.32.4",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-29T15:37:47Z",
+   "version": "2.32.3",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-21T18:51:29Z",
+   "version": "2.32.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-20T22:08:45Z",
+   "version": "2.32.1",
+   "yanked": true
+  },
+  {
+   "date": "2024-05-20T16:08:19Z",
+   "version": "2.32.0",
+   "yanked": true
+  },
+  {
+   "date": "2023-05-22T15:12:42Z",
+   "version": "2.31.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-03T15:44:03Z",
+   "version": "2.30.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-04-26T15:24:31Z",
+   "version": "2.29.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-01-12T16:24:52Z",
+   "version": "2.28.2",
+   "yanked": false
+  },
+  {
+   "date": "2022-06-29T15:13:40Z",
+   "version": "2.28.1",
+   "yanked": false
+  },
+  {
+   "date": "2022-06-09T14:44:34Z",
+   "version": "2.28.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-05T15:40:49Z",
+   "version": "2.27.1",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-03T15:09:26Z",
+   "version": "2.27.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-07-13T14:55:06Z",
+   "version": "2.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-12-16T19:38:34Z",
+   "version": "2.25.1",
+   "yanked": false
+  },
+  {
+   "date": "2020-11-11T20:05:15Z",
+   "version": "2.25.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-06-17T16:30:08Z",
+   "version": "2.24.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-02-19T18:50:59Z",
+   "version": "2.23.0",
+   "yanked": false
+  },
+  {
+   "date": "2019-05-16T14:37:14Z",
+   "version": "2.22.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-12-10T15:40:08Z",
+   "version": "2.21.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-11-08T17:20:29Z",
+   "version": "2.20.1",
+   "yanked": false
+  },
+  {
+   "date": "2018-10-18T15:46:10Z",
+   "version": "2.20.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-06-14T13:40:38Z",
+   "version": "2.19.1",
+   "yanked": false
+  },
+  {
+   "date": "2018-06-12T14:46:15Z",
+   "version": "2.19.0",
+   "yanked": false
+  },
+  {
+   "date": "2017-08-15T13:23:43Z",
+   "version": "2.18.4",
+   "yanked": false
+  },
+  {
+   "date": "2017-08-02T13:23:31Z",
+   "version": "2.18.3",
+   "yanked": false
+  },
+  {
+   "date": "2017-07-25T15:23:15Z",
+   "version": "2.18.2",
+   "yanked": false
+  },
+  {
+   "date": "2017-06-14T17:51:25Z",
+   "version": "2.18.1",
+   "yanked": false
+  },
+  {
+   "date": "2017-06-14T15:44:35Z",
+   "version": "2.18.0",
+   "yanked": false
+  },
+  {
+   "date": "2017-05-29T21:53:19Z",
+   "version": "2.17.3",
+   "yanked": false
+  },
+  {
+   "date": "2017-05-29T21:33:32Z",
+   "version": "2.17.2",
+   "yanked": false
+  },
+  {
+   "date": "2017-05-29T19:59:39Z",
+   "version": "2.17.1",
+   "yanked": false
+  },
+  {
+   "date": "2017-05-29T17:24:35Z",
+   "version": "2.17.0",
+   "yanked": false
+  }
+ ]
+}

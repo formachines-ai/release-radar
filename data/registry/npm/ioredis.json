@@ -1,0 +1,30 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "beta": "6.1.0-beta.1",
+  "latest": "6.0.0",
+  "next": "5.0.4",
+  "release-v4": "4.31.0",
+  "v4-beta": "4.30.2-v4-beta.1"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:33Z",
+ "homepage": "https://github.com/redis/ioredis#readme",
+ "latest": "6.0.0",
+ "name": "ioredis",
+ "page": "https://www.npmjs.com/package/ioredis",
+ "repo": "redis/ioredis",
+ "summary": "A robust, performance-focused and full-featured Redis client for Node.js.",
+ "versions": [
+  {
+   "date": "2026-10-12T15:49:15Z",
+   "deprecated": false,
+   "version": "6.1.0-beta.1"
+  },
+  {
+   "date": "2026-07-31T15:03:15Z",
+   "deprecated": false,
+   "version": "6.0.0"
+  }
+ ]
+}

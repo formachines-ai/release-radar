@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:49Z",
+ "homepage": "https://modelcontextprotocol.io",
+ "latest": "2.3.0",
+ "name": "mcp",
+ "page": "https://pypi.org/project/mcp/",
+ "repo": "modelcontextprotocol/python-sdk",
+ "summary": "Model Context Protocol SDK",
+ "versions": [
+  {
+   "date": "2026-10-02T22:06:52Z",
+   "version": "2.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-07T16:06:19Z",
+   "version": "2.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-07T14:34:14Z",
+   "version": "1.30.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-26T10:48:35Z",
+   "version": "2.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-25T16:13:59Z",
+   "version": "2.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-24T19:04:29Z",
+   "version": "2.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-24T18:30:39Z",
+   "version": "1.29.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-28T13:45:28Z",
+   "version": "2.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-28T13:41:40Z",
+   "version": "1.29.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-27T13:35:13Z",
+   "version": "2.0.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-14T16:47:54Z",
+   "version": "2.0.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-30T23:24:34Z",
+   "version": "2.0.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-26T12:57:27Z",
+   "version": "1.28.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-26T08:49:10Z",
+   "version": "2.0.0a3",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-16T22:01:35Z",
+   "version": "2.0.0a2",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-16T21:37:16Z",
+   "version": "1.28.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-11T09:55:46Z",
+   "version": "2.0.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-29T17:16:02Z",
+   "version": "1.27.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-08T16:50:10Z",
+   "version": "1.27.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-02T14:48:07Z",
+   "version": "1.27.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-24T19:40:30Z",
+   "version": "1.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-19T10:19:55Z",
+   "version": "1.25.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-12T14:19:36Z",
+   "version": "1.24.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-09T16:04:35Z",
+   "version": "1.23.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-08T15:51:01Z",
+   "version": "1.23.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T18:41:11Z",
+   "version": "1.23.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T13:40:00Z",
+   "version": "1.23.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-20T20:11:26Z",
+   "version": "1.22.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-17T13:56:04Z",
+   "version": "1.21.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-13T20:33:44Z",
+   "version": "1.21.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-06T23:19:56Z",
+   "version": "1.21.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-30T22:14:51Z",
+   "version": "1.20.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-24T01:11:14Z",
+   "version": "1.19.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-16T19:19:53Z",
+   "version": "1.18.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-10T12:16:42Z",
+   "version": "1.17.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-02T16:58:19Z",
+   "version": "1.16.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-25T15:39:50Z",
+   "version": "1.15.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-18T13:37:18Z",
+   "version": "1.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-11T17:40:46Z",
+   "version": "1.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-22T09:22:14Z",
+   "version": "1.13.1",
+   "yanked": false
+  }
+ ]
+}

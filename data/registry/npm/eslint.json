@@ -1,0 +1,59 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "es6jsx": "0.11.0-alpha.0",
+  "latest": "10.14.0",
+  "maintenance": "9.39.5",
+  "next": "10.0.0-rc.2"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:28Z",
+ "homepage": "https://eslint.org",
+ "latest": "10.14.0",
+ "name": "eslint",
+ "page": "https://www.npmjs.com/package/eslint",
+ "repo": "eslint/eslint",
+ "summary": "An AST-based pattern checker for JavaScript.",
+ "versions": [
+  {
+   "date": "2026-10-30T14:12:27Z",
+   "deprecated": false,
+   "version": "10.14.0"
+  },
+  {
+   "date": "2026-10-16T14:24:10Z",
+   "deprecated": false,
+   "version": "10.13.0"
+  },
+  {
+   "date": "2026-10-02T20:08:19Z",
+   "deprecated": false,
+   "version": "10.12.0"
+  },
+  {
+   "date": "2026-09-18T20:15:36Z",
+   "deprecated": false,
+   "version": "10.11.0"
+  },
+  {
+   "date": "2026-09-04T14:34:21Z",
+   "deprecated": false,
+   "version": "10.10.0"
+  },
+  {
+   "date": "2026-08-24T18:21:58Z",
+   "deprecated": false,
+   "version": "10.9.1"
+  },
+  {
+   "date": "2026-08-21T13:07:47Z",
+   "deprecated": false,
+   "version": "10.9.0"
+  },
+  {
+   "date": "2026-08-07T20:21:24Z",
+   "deprecated": false,
+   "version": "10.8.1"
+  }
+ ]
+}

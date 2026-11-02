@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T17:00:11Z",
+ "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#12051](https://github.com/langchain-ai/langchainjs/pull/12051) [`71fd01a`](https://github.com/langchain-ai/langchainjs/commit/71fd01ab6edb530a3d52cebcfc191674c10138d2) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add `addNotificationMetadata`, `getNotificationMetadata` and the `NotificationMetadata` type for marking messages the agent harness adds.",
+   "date": "2026-10-29T17:52:51Z",
+   "name": "@langchain/core@1.3.2",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.2"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11930](https://github.com/langchain-ai/langchainjs/pull/11930) [`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977) Thanks [@hntrl](https://github.com/hntrl)! - Add a beta `OpenAIDecisions` runnable with typed predicate, choice and score questions, plus model-routing and tool-risk agent middleware.",
+   "date": "2026-10-28T00:55:04Z",
+   "name": "langchain@1.6.0",
+   "prerelease": false,
+   "tag": "langchain@1.6.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:28Z",
+   "name": "@langchain/xai@1.5.2",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:25Z",
+   "name": "@langchain/together-ai@0.2.21",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.21",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.21"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:22Z",
+   "name": "@langchain/openrouter@0.4.21",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.21",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.21"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11930](https://github.com/langchain-ai/langchainjs/pull/11930) [`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977) Thanks [@hntrl](https://github.com/hntrl)! - Add a beta `OpenAIDecisions` runnable with typed predicate, choice and score questions, plus model-routing and tool-risk agent middleware.",
+   "date": "2026-10-28T00:55:10Z",
+   "name": "@langchain/openai@1.8.0",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.8.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.57",
+   "date": "2026-10-28T00:55:31Z",
+   "name": "@langchain/neo4j@0.1.29",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.29",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.29"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:19Z",
+   "name": "@langchain/fireworks@0.2.21",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.21",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.21"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:16Z",
+   "name": "@langchain/deepseek@1.1.21",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.21",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.21"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12026](https://github.com/langchain-ai/langchainjs/pull/12026) [`178af31`](https://github.com/langchain-ai/langchainjs/commit/178af31ee41b7e36fa2971af61ade6a5460b6d2e) Thanks [@eliornl](https://github.com/eliornl)! - fix(core): deliver callbacks once to a handler registered twice by merged configs\n\n  Merging two runnable configs that both carry the same callback handler, as happens when an agent's `streamEvents()` runs inside a LangGraph node with tracing on, registered that handler twice, so it received every callback twice: every streamed chunk arrived twice. The configured callback manager now keeps each handler once, in order, including a handler passed as a plain object of methods that merged configs wrapped twice.\n\n- [#12042](https://github.com/langchain-ai/langchainjs/pull/12042) [`50343ba`](https://github.com/langchain-ai/langchainjs/commit/50343ba94c2388b3d3a7d4d6cd0977fa60a90294) Thanks [@sera-wi](https://github.com/sera-wi)! - fix(core): include node `metadata` in `Graph.toJSON()` output when set, matching Python\n\n- [#12048](https://github.com/langchain-ai/langchainjs/pull/12048) [`304d190`](https://github.com/langchain-ai/langchainjs/commit/304d190a30343ecb8ae5f06081a2b5a6d93d9968) Thanks [@sera-wi](https://github.com/sera-wi)! - fix(core): escape `drawMermaid` node metadata labels and leave out object values, so metadata with brackets or objects no longer breaks Mermaid parsing",
+   "date": "2026-10-28T00:55:01Z",
+   "name": "@langchain/core@1.3.1",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
+   "date": "2026-10-28T00:55:13Z",
+   "name": "@langchain/classic@1.0.57",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.57",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.57"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11463](https://github.com/langchain-ai/langchainjs/pull/11463) [`52d2ba8`](https://github.com/langchain-ai/langchainjs/commit/52d2ba8ea50149f2314df63b79582f8508034a3b) Thanks [@syedsohailhussain1](https://github.com/syedsohailhussain1)! - fix(aws): use this.caller in ChatBedrockConverse to support maxRetries, timeout, and onFailedAttempt",
+   "date": "2026-10-28T00:55:07Z",
+   "name": "@langchain/aws@1.5.1",
+   "prerelease": false,
+   "tag": "@langchain/aws@1.5.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/aws%401.5.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12043](https://github.com/langchain-ai/langchainjs/pull/12043) [`81577b3`](https://github.com/langchain-ai/langchainjs/commit/81577b3e84c3f38581e76e8335faa89511e99d74) Thanks [@eliornl](https://github.com/eliornl)! - fix(langchain): re-throw a drained tool from the agent's `ToolNode`\n\n  A tool that throws `GraphDrained`, for example one whose inner graph run is drained with `RunControl.requestDrain()`, now stops the agent run with that error, as an interrupt already did, instead of coming back as an error `ToolMessage` that lets the agent go on as if the tool had failed.",
+   "date": "2026-10-27T01:37:58Z",
+   "name": "langchain@1.5.20",
+   "prerelease": false,
+   "tag": "langchain@1.5.20",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.5.20"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:19Z",
+   "name": "@langchain/xai@1.5.1",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:16Z",
+   "name": "@langchain/together-ai@0.2.20",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.20",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.20"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:13Z",
+   "name": "@langchain/openrouter@0.4.20",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.20",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.20"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12046](https://github.com/langchain-ai/langchainjs/pull/12046) [`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(openai): refresh model profiles from models.dev\n\n  - Add GPT-6.1 Terra\n  - Remove `gpt-5.2-chat-latest` and `gpt-5.3-chat-latest`, which OpenAI shut down on Aug 10, 2026",
+   "date": "2026-10-27T01:38:01Z",
+   "name": "@langchain/openai@1.7.1",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.7.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.7.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.56",
+   "date": "2026-10-27T01:38:22Z",
+   "name": "@langchain/neo4j@0.1.28",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.28",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.28"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:10Z",
+   "name": "@langchain/fireworks@0.2.20",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.20",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.20"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:07Z",
+   "name": "@langchain/deepseek@1.1.20",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.20",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.20"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`95b191b`](https://github.com/langchain-ai/langchainjs/commit/95b191b1928ee8f4e20e51aa821f5c5fd4b8b3da)]:\n  - @langchain/openai@1.7.1",
+   "date": "2026-10-27T01:38:04Z",
+   "name": "@langchain/classic@1.0.56",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.56",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.56"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11990](https://github.com/langchain-ai/langchainjs/pull/11990) [`0c5e7bc`](https://github.com/langchain-ai/langchainjs/commit/0c5e7bc688f651c6acc78b2d8b6ad48f6b161165) Thanks [@hntrl](https://github.com/hntrl)! - Avoid copying full agent state into every parallel tool task. Restore tool and middleware state from graph channels for compact tasks while continuing to support full-state tasks saved in older checkpoints.\n\n- [#11989](https://github.com/langchain-ai/langchainjs/pull/11989) [`f096a32`](https://github.com/langchain-ai/langchainjs/commit/f096a32187d194b9f334cf7ec62e05c0050a1cfd) Thanks [@hntrl](https://github.com/hntrl)! - Align the default todo-list system prompt and tool description with Python, including guidance to deliver the substantive final answer after the last `write_todos` result.",
+   "date": "2026-10-22T11:25:54Z",
+   "name": "langchain@1.5.19",
+   "prerelease": false,
+   "tag": "langchain@1.5.19",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.5.19"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11986](https://github.com/langchain-ai/langchainjs/pull/11986) [`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat(xai): stream Responses tool-call args as `tool-call-delta` slices\n\n  - In Responses mode, tool-call args now stream as `tool-call-delta` slices, through `@langchain/openai`'s converter.\n  - The `@langchain/core` peer is now `^1.3.0`, so pinning `@langchain/core` below 1.3.0 also keeps xAI on snapshots.\n\n### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:46Z",
+   "name": "@langchain/xai@1.5.0",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:43Z",
+   "name": "@langchain/together-ai@0.2.19",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.19",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.19"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:40Z",
+   "name": "@langchain/openrouter@0.4.19",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.19",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.19"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11986](https://github.com/langchain-ai/langchainjs/pull/11986) [`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat: stream tool-call args as `tool-call-delta` slices\n\n  Tool-call and server-tool-call args now stream as `tool-call-delta` events, which carry only the new slice of the args, instead of `block-delta` snapshots of the args so far. A large tool call now costs about the same bytes on the wire as the same length of text.\n\n  - This covers the compat bridge (any model that only implements `_streamResponseChunks`), the OpenAI-compatible converter (OpenAI Completions, Groq, Mistral, IBM, OpenRouter, Perplexity, DeepSeek, Fireworks, Together AI and xAI Completions), OpenAI and xAI Responses, Anthropic (client and server tool calls) and Bedrock Converse. Google and Ollama still send one complete snapshot per call.\n  - A tool call's `id`, `name` and `index` go on `content-block-start`, which carries no args. An `id` or `name` that arrives later reaches consumers on `content-block-finish`.\n  - If you read raw events and their `block-delta` `fields.args` mid-stream, or write agent stream transformers that do, read `tool-call-delta` instead. `await stream`, `.toolCalls` and the assembled message are unchanged.\n  - Upgrade your clients first. Older clients mishandle `tool-call-delta`. You need `@langchain/langgraph-sdk` 1.12.6 or later; `@langchain/react`, `@langchain/vue`, `@langchain/svelte` or `@langchain/angular` 1.2.6 or later; and `langchain-core` 1.6.13 or later for Python clients.\n  - To hold back, pin `@langchain/core` below 1.3.0. That also keeps you on `@langchain/openai`, `@langchain/anthropic`, `@langchain/aws` and `@langchain/xai` versions that send snapshots.",
+   "date": "2026-10-22T17:57:28Z",
+   "name": "@langchain/openai@1.7.0",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.7.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.7.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.55",
+   "date": "2026-10-22T17:57:49Z",
+   "name": "@langchain/neo4j@0.1.27",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.27",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.27"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:37Z",
+   "name": "@langchain/fireworks@0.2.19",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.19",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.19"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:34Z",
+   "name": "@langchain/deepseek@1.1.19",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.19",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.19"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11986](https://github.com/langchain-ai/langchainjs/pull/11986) [`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat: stream tool-call args as `tool-call-delta` slices\n\n  Tool-call and server-tool-call args now stream as `tool-call-delta` events, which carry only the new slice of the args, instead of `block-delta` snapshots of the args so far. A large tool call now costs about the same bytes on the wire as the same length of text.\n\n  - This covers the compat bridge (any model that only implements `_streamResponseChunks`), the OpenAI-compatible converter (OpenAI Completions, Groq, Mistral, IBM, OpenRouter, Perplexity, DeepSeek, Fireworks, Together AI and xAI Completions), OpenAI and xAI Responses, Anthropic (client and server tool calls) and Bedrock Converse. Google and Ollama still send one complete snapshot per call.\n  - A tool call's `id`, `name` and `index` go on `content-block-start`, which carries no args. An `id` or `name` that arrives later reaches consumers on `content-block-finish`.\n  - If you read raw events and their `block-delta` `fields.args` mid-stream, or write agent stream transformers that do, read `tool-call-delta` instead. `await stream`, `.toolCalls` and the assembled message are unchanged.\n  - Upgrade your clients first. Older clients mishandle `tool-call-delta`. You need `@langchain/langgraph-sdk` 1.12.6 or later; `@langchain/react`, `@langchain/vue`, `@langchain/svelte` or `@langchain/angular` 1.2.6 or later; and `langchain-core` 1.6.13 or later for Python clients.\n  - To hold back, pin `@langchain/core` below 1.3.0. That also keeps you on `@langchain/openai`, `@langchain/anthropic`, `@langchain/aws` and `@langchain/xai` versions that send snapshots.",
+   "date": "2026-10-22T17:57:19Z",
+   "name": "@langchain/core@1.3.0",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da)]:\n  - @langchain/openai@1.7.0",
+   "date": "2026-10-22T17:57:31Z",
+   "name": "@langchain/classic@1.0.55",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.55",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.55"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11986](https://github.com/langchain-ai/langchainjs/pull/11986) [`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat: stream tool-call args as `tool-call-delta` slices\n\n  Tool-call and server-tool-call args now stream as `tool-call-delta` events, which carry only the new slice of the args, instead of `block-delta` snapshots of the args so far. A large tool call now costs about the same bytes on the wire as the same length of text.\n\n  - This covers the compat bridge (any model that only implements `_streamResponseChunks`), the OpenAI-compatible converter (OpenAI Completions, Groq, Mistral, IBM, OpenRouter, Perplexity, DeepSeek, Fireworks, Together AI and xAI Completions), OpenAI and xAI Responses, Anthropic (client and server tool calls) and Bedrock Converse. Google and Ollama still send one complete snapshot per call.\n  - A tool call's `id`, `name` and `index` go on `content-block-start`, which carries no args. An `id` or `name` that arrives later reaches consumers on `content-block-finish`.\n  - If you read raw events and their `block-delta` `fields.args` mid-stream, or write agent stream transformers that do, read `tool-call-delta` instead. `await stream`, `.toolCalls` and the assembled message are unchanged.\n  - Upgrade your clients first. Older clients mishandle `tool-call-delta`. You need `@langchain/langgraph-sdk` 1.12.6 or later; `@langchain/react`, `@langchain/vue`, `@langchain/svelte` or `@langchain/angular` 1.2.6 or later; and `langchain-core` 1.6.13 or later for Python clients.\n  - To hold back, pin `@langchain/core` below 1.3.0. That also keeps you on `@langchain/openai`, `@langchain/anthropic`, `@langchain/aws` and `@langchain/xai` versions that send snapshots.",
+   "date": "2026-10-22T17:57:25Z",
+   "name": "@langchain/aws@1.5.0",
+   "prerelease": false,
+   "tag": "@langchain/aws@1.5.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/aws%401.5.0"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#11986](https://github.com/langchain-ai/langchainjs/pull/11986) [`2caf64d`](https://github.com/langchain-ai/langchainjs/commit/2caf64da3f02730f3cd2aab0c15de6eab41a01da) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat: stream tool-call args as `tool-call-delta` slices\n\n  Tool-call and server-tool-call args now stream as `tool-call-delta` events, which carry only the new slice of the args, instead of `block-delta` snapshots of the args so far. A large tool call now costs about the same bytes on the wire as the same length of text.\n\n  - This covers the compat bridge (any model that only implements `_streamResponseChunks`), the OpenAI-compatible converter (OpenAI Completions, Groq, Mistral, IBM, OpenRouter, Perplexity, DeepSeek, Fireworks, Together AI and xAI Completions), OpenAI and xAI Responses, Anthropic (client and server tool calls) and Bedrock Converse. Google and Ollama still send one complete snapshot per call.\n  - A tool call's `id`, `name` and `index` go on `content-block-start`, which carries no args. An `id` or `name` that arrives later reaches consumers on `content-block-finish`.\n  - If you read raw events and their `block-delta` `fields.args` mid-stream, or write agent stream transformers that do, read `tool-call-delta` instead. `await stream`, `.toolCalls` and the assembled message are unchanged.\n  - Upgrade your clients first. Older clients mishandle `tool-call-delta`. You need `@langchain/langgraph-sdk` 1.12.6 or later; `@langchain/react`, `@langchain/vue`, `@langchain/svelte` or `@langchain/angular` 1.2.6 or later; and `langchain-core` 1.6.13 or later for Python clients.\n  - To hold back, pin `@langchain/core` below 1.3.0. That also keeps you on `@langchain/openai`, `@langchain/anthropic`, `@langchain/aws` and `@langchain/xai` versions that send snapshots.",
+   "date": "2026-10-22T17:57:22Z",
+   "name": "@langchain/anthropic@1.6.0",
+   "prerelease": false,
+   "tag": "@langchain/anthropic@1.6.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`d71c542`](https://github.com/langchain-ai/langchainjs/commit/d71c542fb1d9cd1ceb310a4759591c024cf0d57d)]:\n  - @langchain/openai@1.6.3",
+   "date": "2026-10-20T22:03:31Z",
+   "name": "@langchain/xai@1.4.18",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.4.18",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.4.18"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`d71c542`](https://github.com/langchain-ai/langchainjs/commit/d71c542fb1d9cd1ceb310a4759591c024cf0d57d)]:\n  - @langchain/openai@1.6.3",
+   "date": "2026-10-20T22:03:28Z",
+   "name": "@langchain/together-ai@0.2.18",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.18",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.18"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`d71c542`](https://github.com/langchain-ai/langchainjs/commit/d71c542fb1d9cd1ceb310a4759591c024cf0d57d)]:\n  - @langchain/openai@1.6.3",
+   "date": "2026-10-20T22:03:25Z",
+   "name": "@langchain/openrouter@0.4.18",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.18",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.18"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11922](https://github.com/langchain-ai/langchainjs/pull/11922) [`d71c542`](https://github.com/langchain-ai/langchainjs/commit/d71c542fb1d9cd1ceb310a4759591c024cf0d57d) Thanks [@richardscarrott](https://github.com/richardscarrott)! - feat(openai): declare mid-conversation support in model profiles. GPT-4.1, GPT-5.x, GPT-6.x and o3 set `midConversationSystemMessages` and `midConversationTools`. `midConversationTools` is `false` on Chat Completions, since only the Responses API carries an `additional_tools` input item, so `ChatOpenAI` reports it only when it routes to the Responses API. `AzureChatOpenAI` and `AzureChatOpenAIResponses` leave it unset, since it is unverified on Azure's API.\n\n  Regenerating the profiles from models.dev also adds GPT-6 Sol, GPT-6 Luna and GPT-6.1 Sol.",
+   "date": "2026-10-20T22:03:13Z",
+   "name": "@langchain/openai@1.6.3",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.6.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.6.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.54",
+   "date": "2026-10-20T22:03:34Z",
+   "name": "@langchain/neo4j@0.1.26",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.26",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.26"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11968](https://github.com/langchain-ai/langchainjs/pull/11968) [`84eca2b`](https://github.com/langchain-ai/langchainjs/commit/84eca2b11c0900a67775dca258ebec04f8e852a2) Thanks [@afirstenberg](https://github.com/afirstenberg)! - refactoring in preparation for Interactions API\n\n  - Protocol-specific operations are now done through `GoogleChatApiHandler`\n    subclass\n  - Converters for generate_content and shared converters\n  - Types moved into protocol-specific generated file\n  - Includes support Gemini 4 Argon parity (thinking config, model profile,\n    usage-only streaming)",
+   "date": "2026-10-20T00:54:09Z",
+   "name": "@langchain/google@0.2.12",
+   "prerelease": false,
+   "tag": "@langchain/google@0.2.12",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google%400.2.12"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-common@2.3.4",
+   "date": "2026-10-20T11:58:15Z",
+   "name": "@langchain/google-webauth@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-webauth@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-webauth%402.3.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2a37b67`](https://github.com/langchain-ai/langchainjs/commit/2a37b672115a99136d645c3f96633d00421312d6)]:\n  - @langchain/google-common@2.3.3",
+   "date": "2026-10-20T00:54:21Z",
+   "name": "@langchain/google-webauth@2.3.3",
+   "prerelease": false,
+   "tag": "@langchain/google-webauth@2.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-webauth%402.3.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-gauth@2.3.4",
+   "date": "2026-10-20T11:58:18Z",
+   "name": "@langchain/google-vertexai@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai%402.3.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11988](https://github.com/langchain-ai/langchainjs/pull/11988) [`2a37b67`](https://github.com/langchain-ai/langchainjs/commit/2a37b672115a99136d645c3f96633d00421312d6) Thanks [@jacoblee93](https://github.com/jacoblee93)! - Backport LangSmith gateway routing to `ChatVertexAI` in the Node and web packages through `@langchain/google-common`, including streaming, custom gateway URLs, and explicit regional project configuration. Honor custom endpoints in Vertex Express requests.\n- Updated dependencies []:\n  - @langchain/google-gauth@2.3.3",
+   "date": "2026-10-20T00:54:24Z",
+   "name": "@langchain/google-vertexai@2.3.3",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai@2.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai%402.3.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-webauth@2.3.4",
+   "date": "2026-10-20T11:58:21Z",
+   "name": "@langchain/google-vertexai-web@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai-web@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai-web%402.3.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11988](https://github.com/langchain-ai/langchainjs/pull/11988) [`2a37b67`](https://github.com/langchain-ai/langchainjs/commit/2a37b672115a99136d645c3f96633d00421312d6) Thanks [@jacoblee93](https://github.com/jacoblee93)! - Backport LangSmith gateway routing to `ChatVertexAI` in the Node and web packages through `@langchain/google-common`, including streaming, custom gateway URLs, and explicit regional project configuration. Honor custom endpoints in Vertex Express requests.\n- Updated dependencies []:\n  - @langchain/google-webauth@2.3.3",
+   "date": "2026-10-20T00:54:27Z",
+   "name": "@langchain/google-vertexai-web@2.3.3",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai-web@2.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai-web%402.3.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11992](https://github.com/langchain-ai/langchainjs/pull/11992) [`77e3fd1`](https://github.com/langchain-ai/langchainjs/commit/77e3fd1ff891a0dec0b62ae4db10a9951be696e9) Thanks [@thibautlehmann](https://github.com/thibautlehmann)! - fix(google-genai): include `model` in traced invocation params so LangSmith runs name the Gemini model like other providers",
+   "date": "2026-10-20T11:58:09Z",
+   "name": "@langchain/google-genai@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-genai@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.4"
+  },
+  {
+   "body": "No changes in this release.",
+   "date": "2026-10-20T00:54:15Z",
+   "name": "@langchain/google-genai@2.3.3",
+   "prerelease": false,
+   "tag": "@langchain/google-genai@2.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-common@2.3.4",
+   "date": "2026-10-20T11:58:12Z",
+   "name": "@langchain/google-gauth@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-gauth@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`2a37b67`](https://github.com/langchain-ai/langchainjs/commit/2a37b672115a99136d645c3f96633d00421312d6)]:\n  - @langchain/google-common@2.3.3",
+   "date": "2026-10-20T00:54:18Z",
+   "name": "@langchain/google-gauth@2.3.3",
+   "prerelease": false,
+   "tag": "@langchain/google-gauth@2.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.3"
+  },
+  {
+   "body": "No changes in this release.",
+   "date": "2026-10-20T11:58:06Z",
+   "name": "@langchain/google-common@2.3.4",
+   "prerelease": false,
+   "tag": "@langchain/google-common@2.3.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-common%402.3.4"
+  }
+ ],
+ "repo": "langchain-ai/langchainjs"
+}

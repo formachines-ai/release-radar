@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T17:00:01Z",
+ "homepage": "",
+ "latest": "1.18.1",
+ "name": "scipy",
+ "page": "https://pypi.org/project/scipy/",
+ "repo": "scipy/scipy",
+ "summary": "Fundamental algorithms for scientific computing in Python",
+ "versions": [
+  {
+   "date": "2026-08-21T23:23:44Z",
+   "version": "1.18.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-19T14:59:45Z",
+   "version": "1.18.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-09T16:42:56Z",
+   "version": "1.18.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-25T16:17:28Z",
+   "version": "1.18.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-23T00:16:00Z",
+   "version": "1.17.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-10T21:24:33Z",
+   "version": "1.17.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-30T20:42:42Z",
+   "version": "1.17.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-09T17:38:39Z",
+   "version": "1.17.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-28T17:31:47Z",
+   "version": "1.16.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-11T17:39:20Z",
+   "version": "1.16.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-27T16:26:29Z",
+   "version": "1.16.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-22T16:18:17Z",
+   "version": "1.16.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-08T17:39:17Z",
+   "version": "1.16.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-21T16:52:50Z",
+   "version": "1.16.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-08T16:04:20Z",
+   "version": "1.15.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-17T00:28:56Z",
+   "version": "1.15.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-10T23:59:19Z",
+   "version": "1.15.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-03T14:30:00Z",
+   "version": "1.15.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-24T05:05:06Z",
+   "version": "1.15.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-13T23:53:39Z",
+   "version": "1.15.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-21T00:03:32Z",
+   "version": "1.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-24T20:31:50Z",
+   "version": "1.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-15T23:01:15Z",
+   "version": "1.14.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-30T02:42:50Z",
+   "version": "1.14.0rc1",
+   "yanked": true
+  },
+  {
+   "date": "2024-05-23T03:19:01Z",
+   "version": "1.13.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-02T21:41:20Z",
+   "version": "1.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-19T18:18:21Z",
+   "version": "1.13.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-20T21:10:31Z",
+   "version": "1.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-12T21:45:39Z",
+   "version": "1.12.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-20T16:26:18Z",
+   "version": "1.12.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-18T21:01:18Z",
+   "version": "1.11.4",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-27T21:55:42Z",
+   "version": "1.11.3",
+   "yanked": false
+  },
+  {
+   "date": "2023-08-17T22:08:09Z",
+   "version": "1.11.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-28T21:43:44Z",
+   "version": "1.11.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-25T18:27:23Z",
+   "version": "1.11.0",
+   "yanked": true
+  },
+  {
+   "date": "2023-06-16T19:30:25Z",
+   "version": "1.11.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-31T19:44:18Z",
+   "version": "1.11.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2023-02-19T20:33:55Z",
+   "version": "1.10.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-01-03T22:34:14Z",
+   "version": "1.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-12-25T20:18:47Z",
+   "version": "1.10.0rc2",
+   "yanked": false
+  }
+ ]
+}

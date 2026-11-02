@@ -1,0 +1,32 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/python/mypy/blob/master/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "2.4.1",
+ "metadata_fetched": "2026-11-02T16:59:54Z",
+ "package": "mypy",
+ "page": "https://releases.formachines.ai/pkg/pypi/mypy/",
+ "registry": "https://pypi.org/project/mypy/",
+ "releases": [
+  {
+   "date": "2026-10-28T19:21:04Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/mypy/2.4.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/mypy/index.json",
+   "notes_kind": "changelog",
+   "notes_redirect": "https://releases.formachines.ai/go/5d0f6c3902/",
+   "notes_url": "https://github.com/python/mypy/blob/master/CHANGELOG.md",
+   "package": "mypy",
+   "page": "https://releases.formachines.ai/pkg/pypi/mypy/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "2.4.1",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/python/mypy",
+ "summary": "Optional static typing for Python"
+}

@@ -1,0 +1,759 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "dev": "8.0.0-rc.29-dev.177",
+  "early-access": "5.12.0-dev.21",
+  "integration": "7.10.0-integration-fix-prisma-publish-token.1",
+  "latest": "8.0.0-rc.29",
+  "next": "8.0.0-rc.10",
+  "patch-dev": "7.9.1-dev.1",
+  "prev": "7.10.1",
+  "turso": "5.4.0-dev.61",
+  "typed-sql": "5.19.0-integration-feat-typed-sql.14"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:39Z",
+ "homepage": "https://github.com/prisma/prisma-cli#readme",
+ "latest": "8.0.0-rc.29",
+ "name": "prisma",
+ "page": "https://www.npmjs.com/package/prisma",
+ "repo": "prisma/prisma-cli",
+ "summary": "The Prisma CLI: one binary for the ORM, Composer, and the Prisma Developer Platform.",
+ "versions": [
+  {
+   "date": "2026-10-31T06:31:34Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.29-dev.177"
+  },
+  {
+   "date": "2026-10-30T11:43:29Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.29-dev.176"
+  },
+  {
+   "date": "2026-10-30T10:58:16Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.29"
+  },
+  {
+   "date": "2026-10-30T10:53:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.29-dev.175"
+  },
+  {
+   "date": "2026-10-29T14:49:19Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.28-dev.174"
+  },
+  {
+   "date": "2026-10-28T08:17:58Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.28-dev.173"
+  },
+  {
+   "date": "2026-10-28T06:37:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.28-dev.172"
+  },
+  {
+   "date": "2026-10-27T19:44:48Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.28"
+  },
+  {
+   "date": "2026-10-27T19:40:41Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.28-dev.171"
+  },
+  {
+   "date": "2026-10-27T17:50:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.170"
+  },
+  {
+   "date": "2026-10-27T09:25:16Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.169"
+  },
+  {
+   "date": "2026-10-27T09:15:54Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.168"
+  },
+  {
+   "date": "2026-10-24T15:03:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.167"
+  },
+  {
+   "date": "2026-10-23T08:07:46Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.166"
+  },
+  {
+   "date": "2026-10-23T06:28:04Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27"
+  },
+  {
+   "date": "2026-10-23T06:23:18Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.27-dev.165"
+  },
+  {
+   "date": "2026-10-23T06:12:08Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.26-dev.164"
+  },
+  {
+   "date": "2026-10-22T19:28:31Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.25-dev.163"
+  },
+  {
+   "date": "2026-10-22T19:22:21Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.26"
+  },
+  {
+   "date": "2026-10-22T18:57:01Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.26-dev.162"
+  },
+  {
+   "date": "2026-10-22T08:22:09Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.25"
+  },
+  {
+   "date": "2026-10-22T08:14:46Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.25-dev.161"
+  },
+  {
+   "date": "2026-10-21T06:52:02Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.24"
+  },
+  {
+   "date": "2026-10-21T06:44:21Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.24-dev.158"
+  },
+  {
+   "date": "2026-10-21T06:35:33Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.157"
+  },
+  {
+   "date": "2026-10-20T06:47:12Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.156"
+  },
+  {
+   "date": "2026-10-19T12:57:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.155"
+  },
+  {
+   "date": "2026-10-15T19:25:15Z",
+   "deprecated": false,
+   "version": "7.10.1"
+  },
+  {
+   "date": "2026-10-15T16:35:34Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.153"
+  },
+  {
+   "date": "2026-10-15T14:26:05Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.152"
+  },
+  {
+   "date": "2026-10-15T09:32:33Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23"
+  },
+  {
+   "date": "2026-10-15T09:27:10Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.23-dev.151"
+  },
+  {
+   "date": "2026-10-15T09:16:59Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.150"
+  },
+  {
+   "date": "2026-10-15T06:49:03Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.149"
+  },
+  {
+   "date": "2026-10-14T08:39:59Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.148"
+  },
+  {
+   "date": "2026-10-13T13:06:36Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.147"
+  },
+  {
+   "date": "2026-10-12T12:11:10Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.146"
+  },
+  {
+   "date": "2026-10-09T10:22:57Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.9"
+  },
+  {
+   "date": "2026-10-09T09:48:14Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.8"
+  },
+  {
+   "date": "2026-10-08T18:19:30Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22"
+  },
+  {
+   "date": "2026-10-08T18:15:07Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.22-dev.145"
+  },
+  {
+   "date": "2026-10-08T05:40:42Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.21-dev.143"
+  },
+  {
+   "date": "2026-10-07T12:35:17Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.21"
+  },
+  {
+   "date": "2026-10-07T12:31:36Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.21-dev.142"
+  },
+  {
+   "date": "2026-10-05T14:46:47Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.20"
+  },
+  {
+   "date": "2026-10-05T14:38:33Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.20-dev.139"
+  },
+  {
+   "date": "2026-10-05T08:00:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.19-dev.138"
+  },
+  {
+   "date": "2026-09-30T06:41:34Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.19-dev.136"
+  },
+  {
+   "date": "2026-09-29T11:25:53Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.19"
+  },
+  {
+   "date": "2026-09-29T11:21:35Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.19-dev.135"
+  },
+  {
+   "date": "2026-09-29T11:13:39Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.18-dev.134"
+  },
+  {
+   "date": "2026-09-29T10:36:28Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.18-dev.133"
+  },
+  {
+   "date": "2026-09-29T08:21:23Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.18"
+  },
+  {
+   "date": "2026-09-29T08:18:08Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.18-dev.132"
+  },
+  {
+   "date": "2026-09-29T07:55:45Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.131"
+  },
+  {
+   "date": "2026-09-29T07:43:49Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.130"
+  },
+  {
+   "date": "2026-09-29T07:38:43Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.129"
+  },
+  {
+   "date": "2026-09-27T09:35:06Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.127"
+  },
+  {
+   "date": "2026-09-27T08:24:06Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.126"
+  },
+  {
+   "date": "2026-09-24T20:02:26Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17"
+  },
+  {
+   "date": "2026-09-24T19:54:44Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.125"
+  },
+  {
+   "date": "2026-09-24T18:55:45Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.17-dev.124"
+  },
+  {
+   "date": "2026-09-24T18:35:46Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.16-dev.123"
+  },
+  {
+   "date": "2026-09-24T15:07:54Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.16-dev.122"
+  },
+  {
+   "date": "2026-09-24T14:46:07Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.16-dev.121"
+  },
+  {
+   "date": "2026-09-24T13:37:25Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.16-dev.120"
+  },
+  {
+   "date": "2026-09-24T12:49:48Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.16-dev.119"
+  },
+  {
+   "date": "2026-09-22T07:41:56Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.114"
+  },
+  {
+   "date": "2026-09-22T06:46:15Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.113"
+  },
+  {
+   "date": "2026-09-21T15:38:47Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.112"
+  },
+  {
+   "date": "2026-09-21T15:24:08Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.111"
+  },
+  {
+   "date": "2026-09-21T14:10:09Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.110"
+  },
+  {
+   "date": "2026-09-16T15:14:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.109"
+  },
+  {
+   "date": "2026-09-16T14:31:20Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.7"
+  },
+  {
+   "date": "2026-09-16T07:35:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.108"
+  },
+  {
+   "date": "2026-09-15T13:51:03Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.107"
+  },
+  {
+   "date": "2026-09-14T14:56:09Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.106"
+  },
+  {
+   "date": "2026-09-14T14:49:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.105"
+  },
+  {
+   "date": "2026-09-14T07:01:35Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15"
+  },
+  {
+   "date": "2026-09-14T06:57:08Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.15-dev.104"
+  },
+  {
+   "date": "2026-09-13T12:41:39Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.14-dev.103"
+  },
+  {
+   "date": "2026-09-13T06:35:06Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.14-dev.102"
+  },
+  {
+   "date": "2026-09-12T14:24:40Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.14"
+  },
+  {
+   "date": "2026-09-12T14:19:29Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.14-dev.101"
+  },
+  {
+   "date": "2026-09-12T14:13:11Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.100"
+  },
+  {
+   "date": "2026-09-11T16:59:48Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.99"
+  },
+  {
+   "date": "2026-09-11T16:55:27Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.98"
+  },
+  {
+   "date": "2026-09-11T16:36:47Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.97"
+  },
+  {
+   "date": "2026-09-10T15:55:18Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.96"
+  },
+  {
+   "date": "2026-09-10T09:53:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.95"
+  },
+  {
+   "date": "2026-09-08T17:11:41Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.94"
+  },
+  {
+   "date": "2026-09-08T17:04:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.93"
+  },
+  {
+   "date": "2026-09-04T15:34:39Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13"
+  },
+  {
+   "date": "2026-09-04T15:30:18Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.13-dev.92"
+  },
+  {
+   "date": "2026-09-04T15:24:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.12-dev.91"
+  },
+  {
+   "date": "2026-09-01T11:49:13Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.6"
+  },
+  {
+   "date": "2026-09-01T10:20:43Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.5"
+  },
+  {
+   "date": "2026-09-01T09:42:59Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.4"
+  },
+  {
+   "date": "2026-09-01T08:43:54Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.3"
+  },
+  {
+   "date": "2026-08-27T08:05:08Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.2"
+  },
+  {
+   "date": "2026-08-26T14:06:49Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.12"
+  },
+  {
+   "date": "2026-08-26T13:59:03Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.12-dev.90"
+  },
+  {
+   "date": "2026-08-26T13:53:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.11-dev.89"
+  },
+  {
+   "date": "2026-08-26T13:33:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.11-dev.88"
+  },
+  {
+   "date": "2026-08-26T13:00:48Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.11-dev.87"
+  },
+  {
+   "date": "2026-08-26T09:13:30Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.11"
+  },
+  {
+   "date": "2026-08-26T09:07:44Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.11-dev.86"
+  },
+  {
+   "date": "2026-08-26T07:14:41Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.85"
+  },
+  {
+   "date": "2026-08-25T16:16:04Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.84"
+  },
+  {
+   "date": "2026-08-25T15:31:35Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.83"
+  },
+  {
+   "date": "2026-08-25T12:47:51Z",
+   "deprecated": false,
+   "version": "7.10.0"
+  },
+  {
+   "date": "2026-08-25T11:56:48Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.82"
+  },
+  {
+   "date": "2026-08-25T11:42:22Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.1"
+  },
+  {
+   "date": "2026-08-25T11:15:38Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.81"
+  },
+  {
+   "date": "2026-08-25T10:55:44Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10"
+  },
+  {
+   "date": "2026-08-25T10:50:19Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.10-dev.80"
+  },
+  {
+   "date": "2026-08-25T07:25:10Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.9-dev.79"
+  },
+  {
+   "date": "2026-08-24T13:32:31Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.9-dev.75"
+  },
+  {
+   "date": "2026-08-24T13:23:15Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.9-dev.74"
+  },
+  {
+   "date": "2026-08-24T13:14:30Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.9"
+  },
+  {
+   "date": "2026-08-24T13:09:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.9-dev.73"
+  },
+  {
+   "date": "2026-08-24T13:02:31Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.8-dev.72"
+  },
+  {
+   "date": "2026-08-24T08:53:57Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.8-dev.71"
+  },
+  {
+   "date": "2026-08-24T08:48:31Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.8"
+  },
+  {
+   "date": "2026-08-24T08:39:56Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.8-dev.70"
+  },
+  {
+   "date": "2026-08-22T11:44:19Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.7-dev.69"
+  },
+  {
+   "date": "2026-08-20T14:47:40Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.7"
+  },
+  {
+   "date": "2026-08-20T14:43:00Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.7-dev.68"
+  },
+  {
+   "date": "2026-08-20T14:15:45Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.6-dev.67"
+  },
+  {
+   "date": "2026-08-18T17:26:12Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.6"
+  },
+  {
+   "date": "2026-08-18T17:23:10Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.6-dev.66"
+  },
+  {
+   "date": "2026-08-18T13:53:40Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.5-dev.65"
+  },
+  {
+   "date": "2026-08-18T13:48:00Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.5-dev.64"
+  },
+  {
+   "date": "2026-08-18T12:40:05Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.5"
+  },
+  {
+   "date": "2026-08-18T12:35:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.5-dev.63"
+  },
+  {
+   "date": "2026-08-18T12:10:01Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.62"
+  },
+  {
+   "date": "2026-08-18T11:19:00Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.61"
+  },
+  {
+   "date": "2026-08-18T09:03:00Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.60"
+  },
+  {
+   "date": "2026-08-18T08:57:50Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.59"
+  },
+  {
+   "date": "2026-08-18T08:41:08Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.58"
+  },
+  {
+   "date": "2026-08-18T08:23:41Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4-dev.57"
+  },
+  {
+   "date": "2026-08-18T05:56:22Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.4"
+  },
+  {
+   "date": "2026-08-17T17:36:38Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.3-dev.54"
+  },
+  {
+   "date": "2026-08-17T13:02:33Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.3-dev.53"
+  },
+  {
+   "date": "2026-08-17T11:58:14Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.3"
+  },
+  {
+   "date": "2026-08-17T10:41:58Z",
+   "deprecated": false,
+   "version": "7.10.0-dev.58"
+  },
+  {
+   "date": "2026-08-17T09:57:12Z",
+   "deprecated": false,
+   "version": "7.10.0-integration-fix-prisma-publish-token.1"
+  }
+ ]
+}

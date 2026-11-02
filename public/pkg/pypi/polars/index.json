@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/pola-rs/polars/releases",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "2.1.0",
+ "metadata_fetched": "2026-11-02T16:59:55Z",
+ "package": "polars",
+ "page": "https://releases.formachines.ai/pkg/pypi/polars/",
+ "registry": "https://pypi.org/project/polars/",
+ "releases": [],
+ "repository": "https://github.com/pola-rs/polars",
+ "summary": "Blazingly fast DataFrame library"
+}

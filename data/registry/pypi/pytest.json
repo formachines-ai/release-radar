@@ -1,0 +1,213 @@
+{
+ "changelog": "https://docs.pytest.org/en/stable/changelog.html",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:57Z",
+ "homepage": "https://docs.pytest.org/en/latest/",
+ "latest": "9.2.0",
+ "name": "pytest",
+ "page": "https://pypi.org/project/pytest/",
+ "repo": "pytest-dev/pytest",
+ "summary": "pytest: simple powerful testing with Python",
+ "versions": [
+  {
+   "date": "2026-10-27T21:30:19Z",
+   "version": "9.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-19T10:58:31Z",
+   "version": "9.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-13T18:52:44Z",
+   "version": "9.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-07T17:16:16Z",
+   "version": "9.0.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-06T21:30:49Z",
+   "version": "9.0.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-12T13:05:07Z",
+   "version": "9.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-08T17:25:31Z",
+   "version": "9.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-04T14:34:20Z",
+   "version": "8.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-18T05:48:03Z",
+   "version": "8.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-02T17:36:27Z",
+   "version": "8.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-02T12:54:52Z",
+   "version": "8.3.5",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-01T12:54:19Z",
+   "version": "8.3.4",
+   "yanked": false
+  },
+  {
+   "date": "2024-09-10T10:52:12Z",
+   "version": "8.3.3",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-25T10:39:57Z",
+   "version": "8.3.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-20T16:24:59Z",
+   "version": "8.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-20T15:32:25Z",
+   "version": "8.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-06-04T13:38:05Z",
+   "version": "8.2.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-05-19T19:07:58Z",
+   "version": "8.2.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-27T23:34:52Z",
+   "version": "8.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-26T18:05:15Z",
+   "version": "8.1.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-09T11:51:04Z",
+   "version": "8.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-03T21:23:38Z",
+   "version": "8.1.0",
+   "yanked": true
+  },
+  {
+   "date": "2024-02-24T22:21:27Z",
+   "version": "8.0.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-16T22:08:26Z",
+   "version": "8.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-27T21:47:54Z",
+   "version": "8.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-17T21:40:39Z",
+   "version": "8.0.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-02T08:46:20Z",
+   "version": "8.0.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-31T12:00:13Z",
+   "version": "7.4.4",
+   "yanked": false
+  },
+  {
+   "date": "2023-10-24T19:23:14Z",
+   "version": "7.4.3",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-07T18:45:52Z",
+   "version": "7.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-02T15:23:09Z",
+   "version": "7.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-23T11:17:25Z",
+   "version": "7.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-10T19:28:50Z",
+   "version": "7.3.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-04-14T18:11:24Z",
+   "version": "7.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-04-08T21:46:21Z",
+   "version": "7.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-03-03T19:12:27Z",
+   "version": "7.2.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-01-14T12:17:32Z",
+   "version": "7.2.1",
+   "yanked": false
+  },
+  {
+   "date": "2022-10-25T07:58:10Z",
+   "version": "7.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-09-02T11:13:13Z",
+   "version": "7.1.3",
+   "yanked": false
+  },
+  {
+   "date": "2022-04-23T14:35:55Z",
+   "version": "7.1.2",
+   "yanked": false
+  }
+ ]
+}

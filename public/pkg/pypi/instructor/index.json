@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "1.17.0",
+ "metadata_fetched": "2026-11-02T16:59:46Z",
+ "package": "instructor",
+ "page": "https://releases.formachines.ai/pkg/pypi/instructor/",
+ "registry": "https://pypi.org/project/instructor/",
+ "releases": [],
+ "repository": "https://github.com/567-labs/instructor",
+ "summary": "structured outputs for llm"
+}

@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T17:00:53Z",
+ "releases": [
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-10-30T08:01:40Z",
+   "name": "v3.6.0-rc.14",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.14",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.14"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-10-23T07:59:39Z",
+   "name": "v3.6.0-rc.13",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.13",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.13"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-10-16T07:57:42Z",
+   "name": "v3.6.0-rc.12",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.12",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.12"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-10-13T07:43:25Z",
+   "name": "v3.5.44",
+   "prerelease": false,
+   "tag": "v3.5.44",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.44"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-10-10T07:49:44Z",
+   "name": "v3.6.0-rc.11",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.11",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.11"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-09-30T09:01:06Z",
+   "name": "v3.6.0-rc.10",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.10",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.10"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-09-18T08:17:55Z",
+   "name": "v3.6.0-rc.9",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.9",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.9"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-09-17T08:36:57Z",
+   "name": "v3.5.43",
+   "prerelease": false,
+   "tag": "v3.5.43",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.43"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-09-11T05:46:16Z",
+   "name": "v3.6.0-rc.8",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.8",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.8"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-09-04T07:43:15Z",
+   "name": "v3.6.0-rc.7",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.7",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.7"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-28T05:54:05Z",
+   "name": "v3.6.0-rc.6",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.6",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.6"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-27T05:47:42Z",
+   "name": "v3.5.42",
+   "prerelease": false,
+   "tag": "v3.5.42",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.42"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-21T09:21:06Z",
+   "name": "v3.6.0-rc.5",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.5",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.5"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-14T08:58:48Z",
+   "name": "v3.6.0-rc.4",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.4",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.4"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-11T03:55:47Z",
+   "name": "v3.6.0-rc.3",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.3",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.3"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-08-05T06:59:01Z",
+   "name": "v3.5.41",
+   "prerelease": false,
+   "tag": "v3.5.41",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.41"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-07-22T09:32:10Z",
+   "name": "v3.6.0-rc.2",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.2",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.2"
+  },
+  {
+   "body": "Vue 3.6 is now entering the RC phase as we have completed the intended feature set for Vapor Mode.\r\n\r\n3.6 also includes a major refactor of `@vue/reactivity` based on [alien-signals](https://github.com/stackblitz/alien-signals), which significantly improves the reactivity system's performance and memory usage.\r\n\r\nFor more details about Vapor Mode, see the [About Vapor Mode](#about-vapor-mode) section later in this release note.\r\n\r\n\r\n\r\n### Bug Fixes\r\n\r\n* **hydration:** avoid resolving inherited fallback in forwarded slots ([4c215b5](https://github.com/vuejs/core/commit/4c215b5bd293e18f3a4c62b627a7696016afb982))\r\n* **hydration:** remove adopted SSR DOM for unresolved async setup ([3859af4](https://github.com/vuejs/core/commit/3859af4066edeba647e886decb9b4737d7f371cc))\r\n* **runtime-vapor:** avoid patching invalid VNode slot content ([25f5a8a](https://github.com/vuejs/core/commit/25f5a8ae6ed3df9c4e3fbaed0da32ce0466c5612))\r\n* **runtime-vapor:** clean up detached slot branches ([b41009d](https://github.com/vuejs/core/commit/b41009d41b21c98174b214eebd271d456215d177))\r\n* **runtime-vapor:** defer slot content anchors during hydration ([9b9e4bd](https://github.com/vuejs/core/commit/9b9e4bd6efdbce7de258d27e88155bff657d6ae9))\r\n* **runtime-vapor:** preserve outer pending slot anchors ([4af4bf9](https://github.com/vuejs/core/commit/4af4bf92a46426631ed6323e542227855b2fc86f))\r\n* **runtime-vapor:** preserve slot content anchors during mismatch recovery ([26f90b5](https://github.com/vuejs/core/commit/26f90b58977ee84569b5599700dbe9e864c880a4))\r\n* **runtime-vapor:** preserve v-show transition on vdom child ([#15074](https://github.com/vuejs/core/issues/15074)) ([fe882c9](https://github.com/vuejs/core/commit/fe882c93bb3ec37772126de1cb5c646edb56ace4)), closes [#15073](https://github.com/vuejs/core/issues/15073)\r\n* **runtime-vapor:** preserve vapor slot owner during interop slot dry run ([#15031](https://github.com/vuejs/core/issues/15031)) ([340630e](https://github.com/vuejs/core/commit/340630ea37388e12f176a11cadcbdfe8e55e5912))\r\n* **runtime-vapor:** preserve VNode anchors in dynamic component hydration ([898e2ca](https://github.com/vuejs/core/commit/898e2ca2441ea3ac064f3b38db47a0aa1b7a556d))\r\n* **runtime-vapor:** remove unsafe slot dry runs from vdom interop ([#15089](https://github.com/vuejs/core/issues/15089)) ([3d42cdf](https://github.com/vuejs/core/commit/3d42cdf380b23da000de0ff9d6c3de5d77e0b0d1)), closes [#14793](https://github.com/vuejs/core/issues/14793)\r\n* **runtime-vapor:** reuse hydration anchor candidates ([06778e7](https://github.com/vuejs/core/commit/06778e705aa87e35f6058c575c562c355a365523))\r\n* **vapor:** handle v-if and v-show on transition roots ([#15069](https://github.com/vuejs/core/issues/15069)) ([8f62f2e](https://github.com/vuejs/core/commit/8f62f2e57519dcb80c9b3b42588c77ee6d2b0a2f)), closes [#15068](https://github.com/vuejs/core/issues/15068)\r\n\r\n\r\n## About Vapor Mode\r\n\r\nVapor Mode is a new compilation mode for Vue Single-File Components (SFCs) with the goal of reducing baseline bundle size and improving performance.\r\n\r\nIt is 100% opt-in and supports a subset of existing Vue APIs with mostly identical behavior. Features that depend on VNodes or the component public instance proxy are not available in Vapor components.\r\n\r\nVapor Mode has demonstrated the same level of performance as Solid and Svelte 5 in [third-party benchmarks](https://github.com/krausest/js-framework-benchmark).\r\n\r\n### General Stability Notes\r\n\r\nVapor Mode is feature-complete in Vue 3.6 RC. For now, we recommend using it in the following cases:\r\n\r\n- Partial usage in existing apps, such as implementing a performance-sensitive page in Vapor Mode.\r\n- Building small new apps entirely in Vapor Mode.\r\n\r\n## Opting In to Vapor Mode\r\n\r\nVapor Mode supports template-only SFCs and SFCs using `<script setup>`; the Options API is not supported. The following forms are supported:\r\n\r\n```vue\r\n<script setup vapor>\r\n// ...\r\n</script>\r\n```\r\n\r\n`<script vapor>` is shorthand for `<script setup vapor>`:\r\n\r\n```vue\r\n<script vapor>\r\n// ...\r\n</script>\r\n```\r\n\r\nThe `vapor` marker can also be placed on the template, enabling Vapor compilation for the entire SFC:\r\n\r\n```vue\r\n<template vapor>\r\n  <!-- ... -->\r\n</template>\r\n```\r\n\r\n## Creating an App and Using VDOM Interop\r\n\r\n### Pure Vapor Applications\r\n\r\nApplications composed entirely of Vapor components can use `createVaporApp()`:\r\n\r\n```js\r\nimport { createVaporApp } from 'vue'\r\nimport App from './App.vue'\r\n\r\ncreateVaporApp(App).mount('#app')\r\n```\r\n\r\nApps created this way avoid pulling in the Virtual DOM runtime code and allow the baseline bundle size to be drastically reduced.\r\n\r\n### Enabling VDOM Interop\r\n\r\nTo use Vapor components in a VDOM app instance created via `createApp()`, the `vaporInteropPlugin` must be installed:\r\n\r\n```js\r\nimport { createApp, vaporInteropPlugin } from 'vue'\r\nimport App from './App.vue'\r\n\r\ncreateApp(App).use(vaporInteropPlugin).mount('#app')\r\n```\r\n\r\nA Vapor app instance can also install `vaporInteropPlugin` to allow VDOM components to be used inside, but this pulls in the VDOM runtime and offsets the benefits of a smaller bundle.\r\n\r\nComponents authored with render functions or JSX remain VDOM components and also require interop when used in a Vapor application.\r\n\r\nWhen the interop plugin is installed, Vapor and non-Vapor components can be nested inside each other. This currently covers standard props, events, and slots usage, but does not yet account for all possible edge cases. For example, there may still be rough edges when using a VDOM-based component library in Vapor Mode.\r\n\r\nIn general, we recommend having distinct regions in an app where one rendering mode or the other is used, and avoiding mixed nesting as much as possible.\r\n\r\n## Feature Compatibility\r\n\r\nBy design, Vapor Mode supports a subset of existing Vue features. For the supported subset, we aim to deliver the same behavior according to the API specifications. The following features are currently unsupported or do not apply to Vapor Mode:\r\n\r\n- Options API\r\n- `app.config.globalProperties`\r\n- `getCurrentInstance()` returns `null` in Vapor components\r\n- `@vue:xxx` per-element lifecycle events\r\n- `v-memo`\r\n- Component template refs do not expose properties such as `$el`, `$props`, `$attrs`, `$slots`, and `$refs`\r\n\r\n## Important Usage Considerations\r\n\r\n### Event Delegation and `stopPropagation()`\r\n\r\nVapor delegates eligible events to `document`. Each element stores its own handler, and a single document listener walks the event path and invokes matching handlers.\r\n\r\nIf any ancestor calls `stopPropagation()`, the event never reaches `document`, and the delegated handler will not run.\r\n\r\nThe following forms bypass delegation and attach the listener directly to the element:\r\n\r\n```vue\r\n<button @[event]=\"onClick\" />\r\n<button v-bind=\"{ onClick }\" />\r\n<button v-on=\"{ click: onClick }\" />\r\n```\r\n\r\n### `slots.default()` Is Not a Safe Dry Run\r\n\r\nIn Vapor, `slots.default()` is not a side-effect-free inspection API. Calling it executes the slot's rendering logic, which may create Blocks and DOM nodes, register reactive effects, and claim existing SSR DOM during hydration.\r\n\r\nDo not call a slot to inspect its output before deciding what else to render:\r\n\r\n```vue\r\n<script setup vapor>\r\nimport { useSlots } from 'vue'\r\n\r\nconst slots = useSlots()\r\nconst content = slots.default?.()\r\nconst showFallback = !content\r\n</script>\r\n\r\n<template>\r\n  <div v-if=\"showFallback\">Fallback</div>\r\n</template>\r\n```\r\n\r\nInstead, leave slot rendering to the template:\r\n\r\n```vue\r\n<template>\r\n  <slot />\r\n</template>\r\n```\r\n\r\n### Custom Directives Use a Different Interface\r\n\r\nCustom directives in Vapor also have a different interface:\r\n\r\n```ts\r\ntype VaporDirective = (\r\n  node: Element | VaporComponentInstance,\r\n  value?: () => any,\r\n  argument?: string,\r\n  modifiers?: DirectiveModifiers,\r\n) => (() => void) | void\r\n```\r\n\r\n`value` is a reactive getter that returns the binding value. Reactive effects can be set up using `watchEffect()` and are automatically released when the component unmounts. A directive may also return a cleanup function:\r\n\r\n```ts\r\nconst MyDirective = (el, source) => {\r\n  watchEffect(() => {\r\n    el.textContent = source()\r\n  })\r\n  return () => console.log('cleanup')\r\n}\r\n```\r\n\r\n## Behavior Consistency\r\n\r\nVapor Mode attempts to match VDOM Mode behavior as much as possible, but minor inconsistencies may still exist in edge cases because the two rendering modes are fundamentally different. In general, a minor inconsistency is not considered a breaking change unless the behavior has previously been documented.\r\n\r\nFor stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\r\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-07-18T01:12:03Z",
+   "name": "v3.6.0-rc.1",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.1",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.1"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-07-16T03:08:38Z",
+   "name": "v3.5.40",
+   "prerelease": false,
+   "tag": "v3.5.40",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.40"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-25T09:44:02Z",
+   "name": "v3.5.39",
+   "prerelease": false,
+   "tag": "v3.5.39",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.39"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-24T09:19:21Z",
+   "name": "v3.6.0-beta.17",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.17",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.17"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-17T03:00:53Z",
+   "name": "v3.6.0-beta.16",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.16",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.16"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-11T07:44:47Z",
+   "name": "v3.6.0-beta.15",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.15",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.15"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-11T08:00:58Z",
+   "name": "v3.5.38",
+   "prerelease": false,
+   "tag": "v3.5.38",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.38"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.\n",
+   "date": "2026-06-11T06:51:15Z",
+   "name": "v3.5.37",
+   "prerelease": false,
+   "tag": "v3.5.37",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.37"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-06-05T01:26:13Z",
+   "name": "v3.6.0-beta.14",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.14",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.14"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-05-28T06:12:29Z",
+   "name": "v3.6.0-beta.13",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.13",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.13"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-05-27T09:04:59Z",
+   "name": "v3.5.35",
+   "prerelease": false,
+   "tag": "v3.5.35",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.35"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-05-15T06:37:07Z",
+   "name": "v3.6.0-beta.12",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.12",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.12"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-05-07T08:45:12Z",
+   "name": "v3.6.0-beta.11",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.11",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.11"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-05-06T07:20:28Z",
+   "name": "v3.5.34",
+   "prerelease": false,
+   "tag": "v3.5.34",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.34"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-04-22T07:21:18Z",
+   "name": "v3.5.33",
+   "prerelease": false,
+   "tag": "v3.5.33",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.33"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-04-13T03:29:32Z",
+   "name": "v3.6.0-beta.10",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.10",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.10"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-04-03T05:41:45Z",
+   "name": "v3.5.32",
+   "prerelease": false,
+   "tag": "v3.5.32",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.32"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-03-26T01:12:56Z",
+   "name": "v3.6.0-beta.9",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.9",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.9"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-03-25T09:23:26Z",
+   "name": "v3.5.31",
+   "prerelease": false,
+   "tag": "v3.5.31",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.31"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-03-16T06:57:31Z",
+   "name": "v3.6.0-beta.8",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.8",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.8"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-03-09T10:07:54Z",
+   "name": "v3.5.30",
+   "prerelease": false,
+   "tag": "v3.5.30",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.30"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-02-27T06:13:33Z",
+   "name": "v3.6.0-beta.7",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.7",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.7"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-02-24T05:54:37Z",
+   "name": "v3.5.29",
+   "prerelease": false,
+   "tag": "v3.5.29",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.29"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-02-12T06:48:43Z",
+   "name": "v3.6.0-beta.6",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.6",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.6"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-02-09T08:30:37Z",
+   "name": "v3.5.28",
+   "prerelease": false,
+   "tag": "v3.5.28",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.28"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-01-30T05:56:53Z",
+   "name": "v3.6.0-beta.5",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.5",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.5"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-01-23T06:38:52Z",
+   "name": "v3.6.0-beta.4",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.4",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.4"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-01-19T06:33:49Z",
+   "name": "v3.5.27",
+   "prerelease": false,
+   "tag": "v3.5.27",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.27"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-01-12T02:33:54Z",
+   "name": "v3.6.0-beta.3",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.3",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.3"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-01-04T07:18:31Z",
+   "name": "v3.6.0-beta.2",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.2",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.2"
+  },
+  {
+   "body": "Vue 3.6 is now entering beta phase as we have completed the intended feature set for Vapor Mode as outlined in the [roadmap](https://github.com/vuejs/core/issues/13687)! Vapor Mode now has feature parity with all stable features in Virtual DOM mode. Suspense is not supported in Vapor-only mode, but you can render Vapor components inside a VDOM Suspense.\r\n\r\n3.6 also includes a major refactor of `@vue/reactivity` based on [alien-signals](https://github.com/stackblitz/alien-signals), which significantly improves the reactivity system's performance and memory usage.\r\n\r\nFor more details about Vapor Mode, see [About Vapor Mode](#about-vapor-mode) section at the end of this release note.\r\n\r\n### Features\r\n\r\n* **runtime-vapor:** support render block in createDynamicComponent ([#14213](https://github.com/vuejs/core/issues/14213)) ([ddc1bae](https://github.com/vuejs/core/commit/ddc1baecb974721e1b6f2570ffab4e783c397418))\r\n\r\n\r\n### Performance Improvements\r\n\r\n* **runtime-vapor:** implement dynamic props/slots source caching ([#14208](https://github.com/vuejs/core/issues/14208)) ([1428c06](https://github.com/vuejs/core/commit/1428c06466b3c69385d4755213ef1dfc604d3f97))\r\n\r\n### Bug Fixes\r\n\r\n* **compiler-vapor:** camelize kebab-case component event handlers ([#14211](https://github.com/vuejs/core/issues/14211)) ([b205408](https://github.com/vuejs/core/commit/b205408ff0b0a611fc4f93c7e12b89bbae506a04))\r\n* **compiler-vapor:** merge component v-model onUpdate handlers ([#14229](https://github.com/vuejs/core/issues/14229)) ([e6bff23](https://github.com/vuejs/core/commit/e6bff23a4a1e25fc405d2392dd3d083f08651c2b))\r\n* **compiler-vapor:** wrap handler values in functions for dynamic v-on ([#14218](https://github.com/vuejs/core/issues/14218)) ([1e3e1ef](https://github.com/vuejs/core/commit/1e3e1ef2bf5d61e82c3220f6e2f3414333fdef8b))\r\n* **hmr:** suppress `provide()` warning during HMR updates for mounted instances ([#14195](https://github.com/vuejs/core/issues/14195)) ([d823d6a](https://github.com/vuejs/core/commit/d823d6a325e173192c1c5635e892656cb2550cd3))\r\n* **keep-alive:** preserve fragment's scope only if it include a component that should be cached ([26b0b37](https://github.com/vuejs/core/commit/26b0b374e1cf1d31a4db09df5e1a9e9ed023675a))\r\n* **runtime-core:** remove constructor props for defineComponent ([#14223](https://github.com/vuejs/core/issues/14223)) ([ad0a237](https://github.com/vuejs/core/commit/ad0a237138ab87143dd3728128b2f784b676e840))\r\n* **runtime-vapor:** implement v-once caching for props and attrs ([#14207](https://github.com/vuejs/core/issues/14207)) ([be2b79d](https://github.com/vuejs/core/commit/be2b79dedd67c11b26510f9f7eafdd0848839f39))\r\n* **runtime-vapor:** optimize prop handling in VaporTransitionGroup using Proxy ([0ceebeb](https://github.com/vuejs/core/commit/0ceebebf58c8f7ea686e96c79763f8b01672ddfd))\r\n* **transition:** move kept-alive node before v-show transition leave finishes ([e393552](https://github.com/vuejs/core/commit/e393552feb1176a878ef1852289d5c8563822770))\r\n* **transition:** optimize prop handling in VaporTransition using Proxy ([b092624](https://github.com/vuejs/core/commit/b0926246f1e8d5ff4ada7416bb641e025b4846c8))\r\n* **transition:** prevent unmounted block from being inserted after transition leave ([f9a9fad](https://github.com/vuejs/core/commit/f9a9fadc6d0e89d8eb82c0b4702d514e4c303634))\r\n\r\n### About Vapor Mode\r\n\r\nVapor Mode is a new compilation mode for Vue Single-File Components (SFC) with the goal of reducing baseline bundle size and improved performance. It is 100% opt-in, and supports a subset of existing Vue APIs with mostly identical behavior.\r\n\r\nVapor Mode has demonstrated the same level of performance with Solid and Svelte 5 in [3rd party benchmarks](https://github.com/krausest/js-framework-benchmark).\r\n\r\n#### General Stability Notes\r\n\r\nVapor Mode is feature-complete in Vue 3.6 beta, but is still considered unstable. For now, we recommend using it for the following cases:\r\n\r\n- Partial usage in existing apps, e.g. implementing a perf-sensitive sub page in Vapor Mode.\r\n- Build small new apps entirely in Vapor Mode.\r\n\r\n#### Opting in to Vapor Mode\r\n\r\nVapor Mode only works for Single File Components using `<script setup>`. To opt-in, add the `vapor` attribute to `<script setup>`:\r\n\r\n```vue\r\n<script setup vapor>\r\n// ...\r\n</script>\r\n```\r\n\r\nVapor Mode components are usable in two scenarios:\r\n\r\n1. Inside a Vapor app instance create via `createVaporApp`. Apps created this way avoids pulling in the Virtual DOM runtime code and allows bundle baseline size to be drastically reduced.\r\n\r\n2. To use Vapor components in a VDOM app instance created via `createApp`, the `vaporInteropPlugin` must be installed:\r\n\r\n   ```js\r\n   import { createApp, vaporInteropPlugin } from 'vue'\r\n   import App from './App.vue'\r\n\r\n   createApp(App)\r\n     .use(vaporInteropPlugin) // enable vapor interop\r\n     .mount('#app')\r\n   ```\r\n\r\n   A Vapor app instance can also install `vaporInteropPlugin` to allow vdom components to be used inside, but it will pull in the vdom runtime and offset the benefits of a smaller bundle.\r\n\r\n#### VDOM Interop Limitations\r\n\r\nWhen the interop plugin is installed, Vapor and non-Vapor components can be nested inside each other. This currently covers standard props, events, and slots usage, but does not yet account for all possible edge cases. For example, there will most likely still be rough edges when using a VDOM-based component library in Vapor Mode.\r\n\r\nA know issue is that vapor slots cannot be rendered with `slots.default()` inside a VDOM component. `renderSlot` must be used instead. [[Example](https://play.vuejs.org/#eNp9UsGO0zAQ/ZWRL02lkCAtcKi6KwHaAxwAsUgcMEJWMm2y69iWPclWqvLvjJ02pRXbkz0zb948z/NevHeuGHoUK7EOlW8dQUDqHQzKWX8nTdvxSbCHn145hx5G2HjbwaIoK9u5gsJCmnU59TKeA8LOaUXIEcD60JcCgAa1thNDmgCRxBo0lMDlCb0uZx6RCwqVNZt2WzwGa1jsPsKliN2tRv/VUWtNkGIFqRJriic9f0458j3mx3zVYPX0n/xj2MWcFN88BvQDSjHXSPkt0lS+f/iCO77Pxc7WvWb0leJ3DFb3UeME+9CbmmX/g0tqP6Vlt2b7I9zvCE04PioKjcgx4aVgxz5eefpJ7k3xJvVJM/IWD47x/mZba9y0JpElF3KPpkb/oC3l0Mxm8zy2WRrcpTb2ItD8I24vSbIkJP2jzHnrQs6DFJHnS2DmAOPyKLYswViCZ+uf+N1TznOnN5At4fYOmmxRt8MiPxIkyarXtJq4ikPInDPjGcEZKmPQDDsbetl2WkSWGHLe64FEihdGXWr9dZ3kd6KJno5LdufPgD46zvbcFO+K16+Udo0q3orxLxb6NNM=)]\r\n\r\nThis is expected to improve over time, but in general, we recommend having distinct \"regions\" in your app where it's one mode or another, and avoid mixed nesting as much as possible.\r\n\r\nIn the future, we may provide support tooling to enforce Vapor usage boundaries in codebases.\r\n\r\n#### Feature Compatibility\r\n\r\nBy design, Vapor Mode supports a **subset** of existing Vue features. For the supported subset, we aim to deliver the exact same behavior per API specifications. At the same time, this means there are some features that are explicitly not supported in Vapor Mode:\r\n\r\n- Options API\r\n- `app.config.globalProperties`\r\n- `getCurrentInstance()` returns `null` in Vapor components\r\n- `@vue:xxx` per-element lifecycle events\r\n\r\nCustom directives in Vapor also have a different interface:\r\n\r\n```ts\r\ntype VaporDirective = (\r\n  node: Element | VaporComponentInstance,\r\n  value?: () => any,\r\n  argument?: string,\r\n  modifiers?: DirectiveModifiers,\r\n) => (() => void) | void\r\n```\r\n\r\n`value` is a reactive getter that returns the binding value. The user can set up reactive effects using `watchEffect` (auto released when component unmounts), and can optionally return a cleanup function. Example:\r\n\r\n```ts\r\nconst MyDirective = (el, source) => {\r\n  watchEffect(() => {\r\n    el.textContent = source()\r\n  })\r\n  return () => console.log('cleanup')\r\n}\r\n```\r\n\r\n#### Behavior Consistency\r\n\r\nVapor Mode attempts to match VDOM Mode behavior as much as possible, but there could still be minor behavior inconsistencies in edge cases due to how fundamentally different the two rendering modes are. In general, we do not consider a minor inconsistency to be breaking change unless the behavior has previously been documented.\r\n\r\nFor stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\r\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2025-12-23T13:57:45Z",
+   "name": "v3.6.0-beta.1",
+   "prerelease": true,
+   "tag": "v3.6.0-beta.1",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.1"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2025-12-18T12:12:36Z",
+   "name": "v3.5.26",
+   "prerelease": false,
+   "tag": "v3.5.26",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.5.26"
+  },
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2025-12-12T08:33:27Z",
+   "name": "v3.6.0-alpha.7",
+   "prerelease": true,
+   "tag": "v3.6.0-alpha.7",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-alpha.7"
+  }
+ ],
+ "repo": "vuejs/core"
+}

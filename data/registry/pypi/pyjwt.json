@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:57Z",
+ "homepage": "https://github.com/jpadilla/pyjwt",
+ "latest": "2.15.1",
+ "name": "PyJWT",
+ "page": "https://pypi.org/project/pyjwt/",
+ "repo": "jpadilla/pyjwt",
+ "summary": "JSON Web Token implementation in Python",
+ "versions": [
+  {
+   "date": "2026-09-28T18:40:41Z",
+   "version": "2.15.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-23T16:55:59Z",
+   "version": "2.15.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-11T13:11:53Z",
+   "version": "2.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-21T19:54:35Z",
+   "version": "2.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-13T19:27:35Z",
+   "version": "2.12.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-12T17:15:29Z",
+   "version": "2.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-30T19:59:54Z",
+   "version": "2.11.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-28T03:43:27Z",
+   "version": "2.10.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-17T10:19:46Z",
+   "version": "2.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-01T15:01:06Z",
+   "version": "2.9.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-07-18T20:02:21Z",
+   "version": "2.8.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-09T20:04:39Z",
+   "version": "2.7.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-10-20T01:09:09Z",
+   "version": "2.6.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-09-17T14:01:55Z",
+   "version": "2.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-05-12T18:58:19Z",
+   "version": "2.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-10-16T15:54:52Z",
+   "version": "2.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-10-06T22:30:17Z",
+   "version": "2.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-04-28T12:02:52Z",
+   "version": "2.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-01-17T17:57:18Z",
+   "version": "2.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2020-12-22T14:14:33Z",
+   "version": "2.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-12-20T00:11:14Z",
+   "version": "2.0.0a2",
+   "yanked": false
+  },
+  {
+   "date": "2020-11-02T12:52:01Z",
+   "version": "2.0.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2018-12-07T13:40:06Z",
+   "version": "1.7.1",
+   "yanked": false
+  },
+  {
+   "date": "2018-12-02T03:49:20Z",
+   "version": "1.7.0",
+   "yanked": false
+  },
+  {
+   "date": "2018-05-24T02:46:59Z",
+   "version": "1.6.4",
+   "yanked": false
+  },
+  {
+   "date": "2018-05-19T17:13:41Z",
+   "version": "1.6.3",
+   "yanked": false
+  },
+  {
+   "date": "2018-03-18T13:38:21Z",
+   "version": "1.6.1",
+   "yanked": false
+  },
+  {
+   "date": "2018-03-03T16:53:23Z",
+   "version": "1.6.0",
+   "yanked": false
+  },
+  {
+   "date": "2017-09-05T18:21:33Z",
+   "version": "1.5.3",
+   "yanked": false
+  },
+  {
+   "date": "2017-06-22T16:31:25Z",
+   "version": "1.5.2",
+   "yanked": false
+  },
+  {
+   "date": "2017-06-22T14:56:55Z",
+   "version": "1.5.1",
+   "yanked": false
+  },
+  {
+   "date": "2017-04-19T14:38:19Z",
+   "version": "1.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2016-08-08T20:07:53Z",
+   "version": "1.4.2",
+   "yanked": false
+  },
+  {
+   "date": "2016-07-13T11:22:41Z",
+   "version": "1.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2015-07-17T01:30:23Z",
+   "version": "1.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-05-22T15:51:18Z",
+   "version": "1.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-04-15T20:54:37Z",
+   "version": "1.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-03-26T21:10:29Z",
+   "version": "1.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2015-03-18T17:10:10Z",
+   "version": "1.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2015-02-18T20:35:20Z",
+   "version": "0.4.3",
+   "yanked": false
+  }
+ ]
+}

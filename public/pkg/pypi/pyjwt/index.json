@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "2.15.1",
+ "metadata_fetched": "2026-11-02T16:59:57Z",
+ "package": "pyjwt",
+ "page": "https://releases.formachines.ai/pkg/pypi/pyjwt/",
+ "registry": "https://pypi.org/project/pyjwt/",
+ "releases": [],
+ "repository": "https://github.com/jpadilla/pyjwt",
+ "summary": "JSON Web Token implementation in Python"
+}

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "0.45.4",
+ "metadata_fetched": "2026-11-02T17:00:28Z",
+ "package": "drizzle-orm",
+ "page": "https://releases.formachines.ai/pkg/npm/drizzle-orm/",
+ "registry": "https://www.npmjs.com/package/drizzle-orm",
+ "releases": [],
+ "repository": "https://github.com/drizzle-team/drizzle-orm",
+ "summary": "Drizzle ORM package for SQL databases"
+}

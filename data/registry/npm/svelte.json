@@ -1,0 +1,47 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "latest": "5.57.3",
+  "next": "5.0.0-next.272"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:47Z",
+ "homepage": "https://svelte.dev",
+ "latest": "5.57.3",
+ "name": "svelte",
+ "page": "https://www.npmjs.com/package/svelte",
+ "repo": "sveltejs/svelte",
+ "summary": "Cybernetically enhanced web apps",
+ "versions": [
+  {
+   "date": "2026-10-26T18:16:20Z",
+   "deprecated": false,
+   "version": "5.57.3"
+  },
+  {
+   "date": "2026-10-06T14:24:31Z",
+   "deprecated": false,
+   "version": "5.57.2"
+  },
+  {
+   "date": "2026-09-18T23:52:47Z",
+   "deprecated": false,
+   "version": "5.57.1"
+  },
+  {
+   "date": "2026-08-28T23:33:45Z",
+   "deprecated": false,
+   "version": "5.57.0"
+  },
+  {
+   "date": "2026-08-20T19:26:03Z",
+   "deprecated": false,
+   "version": "5.56.10"
+  },
+  {
+   "date": "2026-08-12T18:14:48Z",
+   "deprecated": false,
+   "version": "5.56.9"
+  }
+ ]
+}

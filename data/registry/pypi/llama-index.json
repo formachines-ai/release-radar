@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:49Z",
+ "homepage": "https://llamaindex.ai",
+ "latest": "0.14.25",
+ "name": "llama-index",
+ "page": "https://pypi.org/project/llama-index/",
+ "repo": "run-llama/llama_index",
+ "summary": "Interface between LLMs and your data",
+ "versions": [
+  {
+   "date": "2026-09-21T16:22:20Z",
+   "version": "0.14.25",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-19T18:47:57Z",
+   "version": "0.14.24",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-24T19:36:37Z",
+   "version": "0.14.23",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-14T20:22:19Z",
+   "version": "0.14.22",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-21T00:18:46Z",
+   "version": "0.14.21",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-03T19:55:46Z",
+   "version": "0.14.20",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-25T20:59:12Z",
+   "version": "0.14.19",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-16T19:41:57Z",
+   "version": "0.14.18",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-10T19:20:29Z",
+   "version": "0.14.16",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-18T19:06:38Z",
+   "version": "0.14.15",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-10T23:08:41Z",
+   "version": "0.14.14",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-21T20:44:47Z",
+   "version": "0.14.13",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-30T01:06:55Z",
+   "version": "0.14.12",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-04T19:45:56Z",
+   "version": "0.14.10",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T21:31:12Z",
+   "version": "0.14.9",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-10T22:18:35Z",
+   "version": "0.14.8",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-30T23:58:38Z",
+   "version": "0.14.7",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-26T03:01:26Z",
+   "version": "0.14.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-15T19:10:54Z",
+   "version": "0.14.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-03T17:43:15Z",
+   "version": "0.14.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-24T21:02:43Z",
+   "version": "0.14.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-16T05:11:03Z",
+   "version": "0.14.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-15T03:53:12Z",
+   "version": "0.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-08T20:53:25Z",
+   "version": "0.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-07T04:57:12Z",
+   "version": "0.13.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-04T23:14:57Z",
+   "version": "0.13.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-02T05:08:59Z",
+   "version": "0.13.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-22T20:07:10Z",
+   "version": "0.13.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-14T22:04:02Z",
+   "version": "0.13.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-08T22:20:15Z",
+   "version": "0.13.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-31T16:07:42Z",
+   "version": "0.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-23T18:11:57Z",
+   "version": "0.12.52",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-22T15:08:58Z",
+   "version": "0.12.51",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-19T18:38:04Z",
+   "version": "0.12.50",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-14T20:18:48Z",
+   "version": "0.12.49",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-09T18:35:47Z",
+   "version": "0.12.48",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-07T05:17:43Z",
+   "version": "0.12.47",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-03T03:24:54Z",
+   "version": "0.12.46",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-01T02:50:24Z",
+   "version": "0.12.45",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-26T05:35:33Z",
+   "version": "0.12.44",
+   "yanked": false
+  }
+ ]
+}

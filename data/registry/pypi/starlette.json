@@ -1,0 +1,213 @@
+{
+ "changelog": "https://starlette.dev/release-notes/",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T17:00:01Z",
+ "homepage": "https://github.com/Kludex/starlette",
+ "latest": "1.10.0",
+ "name": "starlette",
+ "page": "https://pypi.org/project/starlette/",
+ "repo": "Kludex/starlette",
+ "summary": "The little ASGI library that shines.",
+ "versions": [
+  {
+   "date": "2026-10-24T15:04:10Z",
+   "version": "1.10.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-18T15:50:31Z",
+   "version": "1.9.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-13T07:54:38Z",
+   "version": "1.8.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-23T07:30:24Z",
+   "version": "1.7.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-08T18:27:56Z",
+   "version": "1.6.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-08T17:01:44Z",
+   "version": "1.5.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-08T07:23:14Z",
+   "version": "1.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-05T15:17:24Z",
+   "version": "1.4.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-05T09:36:41Z",
+   "version": "1.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-12T09:23:10Z",
+   "version": "1.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-11T06:27:40Z",
+   "version": "1.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-31T01:07:50Z",
+   "version": "1.2.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-28T11:42:48Z",
+   "version": "1.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-23T16:55:39Z",
+   "version": "1.1.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-21T21:58:56Z",
+   "version": "1.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-22T18:29:45Z",
+   "version": "1.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-23T22:12:30Z",
+   "version": "1.0.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-18T13:34:09Z",
+   "version": "0.52.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-18T10:07:06Z",
+   "version": "0.52.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-10T20:23:13Z",
+   "version": "0.51.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-01T15:25:25Z",
+   "version": "0.50.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-01T15:12:24Z",
+   "version": "0.49.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-01T11:38:45Z",
+   "version": "0.49.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-28T17:34:09Z",
+   "version": "0.49.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-28T08:11:40Z",
+   "version": "0.49.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-13T08:41:03Z",
+   "version": "0.48.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-24T13:36:40Z",
+   "version": "0.47.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-20T17:31:56Z",
+   "version": "0.47.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-21T04:03:15Z",
+   "version": "0.47.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-29T15:45:26Z",
+   "version": "0.47.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-13T13:56:16Z",
+   "version": "0.46.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-08T10:55:32Z",
+   "version": "0.46.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-22T17:34:43Z",
+   "version": "0.46.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-24T11:17:34Z",
+   "version": "0.45.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-01-04T09:54:28Z",
+   "version": "0.45.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-30T21:10:51Z",
+   "version": "0.45.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-29T09:28:02Z",
+   "version": "0.45.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-28T07:32:53Z",
+   "version": "0.44.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-25T15:37:23Z",
+   "version": "0.43.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-14T09:01:44Z",
+   "version": "0.42.0",
+   "yanked": false
+  }
+ ]
+}

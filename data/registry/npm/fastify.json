@@ -1,0 +1,104 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "four": "4.29.1",
+  "latest": "5.12.8",
+  "next": "6.0.0-alpha.6",
+  "three": "3.29.5"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:29Z",
+ "homepage": "https://fastify.dev/",
+ "latest": "5.12.8",
+ "name": "fastify",
+ "page": "https://www.npmjs.com/package/fastify",
+ "repo": "fastify/fastify",
+ "summary": "Fast and low overhead web framework, for Node.js",
+ "versions": [
+  {
+   "date": "2026-11-02T10:46:39Z",
+   "deprecated": false,
+   "version": "5.12.8"
+  },
+  {
+   "date": "2026-11-02T10:40:00Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.6"
+  },
+  {
+   "date": "2026-10-13T08:07:53Z",
+   "deprecated": false,
+   "version": "5.12.7"
+  },
+  {
+   "date": "2026-10-13T06:52:47Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.5"
+  },
+  {
+   "date": "2026-10-13T06:50:58Z",
+   "deprecated": false,
+   "version": "5.12.6"
+  },
+  {
+   "date": "2026-09-16T10:23:05Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.4"
+  },
+  {
+   "date": "2026-09-16T07:37:06Z",
+   "deprecated": false,
+   "version": "5.12.5"
+  },
+  {
+   "date": "2026-09-11T09:23:32Z",
+   "deprecated": false,
+   "version": "5.12.4"
+  },
+  {
+   "date": "2026-09-04T08:24:54Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.3"
+  },
+  {
+   "date": "2026-09-04T08:21:57Z",
+   "deprecated": false,
+   "version": "5.12.3"
+  },
+  {
+   "date": "2026-09-04T08:21:15Z",
+   "deprecated": false,
+   "version": "5.12.2"
+  },
+  {
+   "date": "2026-08-18T19:57:49Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.2"
+  },
+  {
+   "date": "2026-08-18T19:51:15Z",
+   "deprecated": false,
+   "version": "5.12.1"
+  },
+  {
+   "date": "2026-08-13T15:59:58Z",
+   "deprecated": false,
+   "version": "5.12.0"
+  },
+  {
+   "date": "2026-08-13T15:59:55Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.1"
+  },
+  {
+   "date": "2026-08-11T08:39:17Z",
+   "deprecated": false,
+   "version": "6.0.0-alpha.0"
+  },
+  {
+   "date": "2026-08-08T07:00:36Z",
+   "deprecated": false,
+   "version": "5.11.3"
+  }
+ ]
+}

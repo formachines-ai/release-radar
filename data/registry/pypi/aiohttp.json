@@ -1,0 +1,213 @@
+{
+ "changelog": "https://docs.aiohttp.org/en/stable/changes.html",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:51Z",
+ "homepage": "https://github.com/aio-libs/aiohttp",
+ "latest": "3.14.5",
+ "name": "aiohttp",
+ "page": "https://pypi.org/project/aiohttp/",
+ "repo": "aio-libs/aiohttp",
+ "summary": "Async http client/server framework (asyncio)",
+ "versions": [
+  {
+   "date": "2026-10-11T00:59:07Z",
+   "version": "3.14.5",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-05T17:37:45Z",
+   "version": "3.14.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-23T01:52:08Z",
+   "version": "3.14.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-20T19:49:37Z",
+   "version": "3.14.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-07T21:05:37Z",
+   "version": "3.14.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-01T19:36:39Z",
+   "version": "3.14.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-31T21:56:30Z",
+   "version": "3.13.5",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-28T17:14:59Z",
+   "version": "3.13.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-03T17:29:13Z",
+   "version": "3.13.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-28T20:55:27Z",
+   "version": "3.13.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-17T13:58:56Z",
+   "version": "3.13.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-06T19:54:40Z",
+   "version": "3.13.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-29T05:49:43Z",
+   "version": "3.12.15",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-10T13:02:38Z",
+   "version": "3.12.14",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-14T15:12:58Z",
+   "version": "3.12.13",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-10T05:18:23Z",
+   "version": "3.12.12",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-07T15:50:24Z",
+   "version": "3.12.11",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-07T12:24:31Z",
+   "version": "3.12.10",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-04T16:23:09Z",
+   "version": "3.12.9",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-04T10:03:12Z",
+   "version": "3.12.8",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-02T16:31:02Z",
+   "version": "3.12.7",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-02T10:12:57Z",
+   "version": "3.12.7rc0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-31T05:54:32Z",
+   "version": "3.12.6",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-29T01:33:48Z",
+   "version": "3.12.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-28T23:02:37Z",
+   "version": "3.12.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-27T00:01:09Z",
+   "version": "3.12.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-26T16:20:42Z",
+   "version": "3.12.1",
+   "yanked": true
+  },
+  {
+   "date": "2025-05-26T15:24:15Z",
+   "version": "3.12.1rc0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-24T22:30:13Z",
+   "version": "3.12.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-24T19:42:57Z",
+   "version": "3.12.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-24T00:11:55Z",
+   "version": "3.12.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-22T23:42:24Z",
+   "version": "3.12.0b3",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-22T20:50:38Z",
+   "version": "3.12.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-22T18:45:36Z",
+   "version": "3.12.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-20T23:25:48Z",
+   "version": "3.12.0b0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-21T09:40:25Z",
+   "version": "3.11.18",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-19T21:38:28Z",
+   "version": "3.11.17",
+   "yanked": true
+  },
+  {
+   "date": "2025-04-02T02:15:15Z",
+   "version": "3.11.16",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-01T04:48:20Z",
+   "version": "3.11.15",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-17T02:42:42Z",
+   "version": "3.11.14",
+   "yanked": true
+  }
+ ]
+}

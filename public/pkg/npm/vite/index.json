@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "8.3.5",
+ "metadata_fetched": "2026-11-02T17:00:52Z",
+ "package": "vite",
+ "page": "https://releases.formachines.ai/pkg/npm/vite/",
+ "registry": "https://www.npmjs.com/package/vite",
+ "releases": [],
+ "repository": "https://github.com/vitejs/vite",
+ "summary": "Native-ESM powered web dev build tool"
+}

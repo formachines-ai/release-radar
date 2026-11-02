@@ -1,0 +1,213 @@
+{
+ "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:54Z",
+ "homepage": "https://docs.celeryq.dev/",
+ "latest": "5.6.3",
+ "name": "celery",
+ "page": "https://pypi.org/project/celery/",
+ "repo": "celery/celery",
+ "summary": "Distributed Task Queue.",
+ "versions": [
+  {
+   "date": "2026-10-18T08:54:10Z",
+   "version": "5.7.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-06T16:50:21Z",
+   "version": "5.7.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-22T08:33:56Z",
+   "version": "5.7.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-26T12:14:49Z",
+   "version": "5.6.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-04T12:35:55Z",
+   "version": "5.6.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-29T21:48:48Z",
+   "version": "5.6.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-30T17:39:44Z",
+   "version": "5.6.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-22T17:52:36Z",
+   "version": "5.6.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-01T23:53:14Z",
+   "version": "5.6.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-20T08:44:50Z",
+   "version": "5.6.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-15T00:45:37Z",
+   "version": "5.6.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-01T11:08:09Z",
+   "version": "5.5.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-25T20:10:01Z",
+   "version": "5.5.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-07T22:21:51Z",
+   "version": "5.5.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-31T20:25:18Z",
+   "version": "5.5.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-25T16:43:05Z",
+   "version": "5.5.0rc5",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-19T15:09:05Z",
+   "version": "5.5.0rc4",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-03T11:59:51Z",
+   "version": "5.5.0rc3",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-18T18:00:52Z",
+   "version": "5.5.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2024-10-08T12:43:19Z",
+   "version": "5.5.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2024-09-30T18:38:43Z",
+   "version": "5.5.0b4",
+   "yanked": false
+  },
+  {
+   "date": "2024-09-08T13:39:30Z",
+   "version": "5.5.0b3",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-06T20:47:17Z",
+   "version": "5.5.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2024-07-24T13:49:02Z",
+   "version": "5.5.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2024-04-17T20:29:39Z",
+   "version": "5.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-03-27T15:13:39Z",
+   "version": "5.4.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2024-01-17T17:52:49Z",
+   "version": "5.4.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-22T15:16:19Z",
+   "version": "5.3.6",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-10T13:28:16Z",
+   "version": "5.3.5",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-03T20:16:15Z",
+   "version": "5.3.4",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-18T14:19:17Z",
+   "version": "5.3.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-06-06T06:03:09Z",
+   "version": "5.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-31T14:56:14Z",
+   "version": "5.3.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-11T12:02:56Z",
+   "version": "5.3.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2023-02-19T10:28:10Z",
+   "version": "5.3.0b2",
+   "yanked": false
+  },
+  {
+   "date": "2022-08-01T11:21:22Z",
+   "version": "5.3.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2022-06-29T11:38:16Z",
+   "version": "5.3.0a1",
+   "yanked": false
+  },
+  {
+   "date": "2022-05-29T12:57:59Z",
+   "version": "5.2.7",
+   "yanked": false
+  },
+  {
+   "date": "2022-04-05T08:37:09Z",
+   "version": "5.2.6",
+   "yanked": false
+  },
+  {
+   "date": "2022-04-03T17:45:15Z",
+   "version": "5.2.5",
+   "yanked": true
+  }
+ ]
+}

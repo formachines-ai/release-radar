@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "25.16.0",
+ "metadata_fetched": "2026-11-02T17:00:40Z",
+ "package": "puppeteer",
+ "page": "https://releases.formachines.ai/pkg/npm/puppeteer/",
+ "registry": "https://www.npmjs.com/package/puppeteer",
+ "releases": [],
+ "repository": "https://github.com/puppeteer/puppeteer",
+ "summary": "A high-level API to control headless Chrome over the DevTools Protocol"
+}

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "6.0.0",
+ "metadata_fetched": "2026-11-02T17:00:33Z",
+ "package": "ioredis",
+ "page": "https://releases.formachines.ai/pkg/npm/ioredis/",
+ "registry": "https://www.npmjs.com/package/ioredis",
+ "releases": [],
+ "repository": "https://github.com/redis/ioredis",
+ "summary": "A robust, performance-focused and full-featured Redis client for Node.js."
+}

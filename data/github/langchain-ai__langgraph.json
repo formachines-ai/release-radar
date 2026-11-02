@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T16:59:47Z",
+ "releases": [
+  {
+   "body": "Changes since 1.2.18\n\n* release(langgraph): 1.2.19 (#9504)\n* release(checkpoint-sqlite): 3.1.3 (#9505)\n* fix(langgraph): keep trace_policy from rewriting streamed node payloads (#9486)\n* fix(langgraph): give messages and tools events the namespace of their graph (#9458)\n* chore(deps): bump setuptools from 83.0.0 to 84.1.0 in /libs/langgraph (#9433)\n* fix(langgraph): emit node-output messages from a graph streamed inside a node (#9463)\n* fix(langgraph): respect subgraphs=False in RemoteGraph.stream under a streaming parent (#9453)\n* fix(langgraph): don't report a paused tool as failed on the tools stream (#9406)\n* fix(langgraph): return an awaited @task's value while streaming (#9407)\n* feat(langgraph): list ToolNode tool names in graph node metadata (#9449)",
+   "date": "2026-10-30T22:23:43Z",
+   "name": "langgraph==1.2.19",
+   "prerelease": false,
+   "tag": "1.2.19",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.19"
+  },
+  {
+   "body": "Changes since sdk==0.4.10\n\n* release(langgraph): 1.2.19 (#9504)\n* release(sdk-py): 0.4.11 (#9503)\n* test(sdk-py): check that a reconnect loop resumes after the newest event (#9483)\n* fix(sdk-py): retry runs.wait, join and cancel(wait=True) reconnects with backoff (#9481)\n* fix(sdk-py): warn when a stream reconnects without a Last-Event-ID (#9482)\n* fix(sdk-py): preserve SSE data and cursor state across chunks (#9477)\n* fix(sdk-py): retry failed stream reconnects with backoff (#9462)\n* fix(sdk-py): match Auth.on overload to optional resources (#9450)\n* fix(sdk-py): reset the reconnect cursor on every empty id (#9440)",
+   "date": "2026-10-30T22:17:59Z",
+   "name": "langgraph-sdk==0.4.11",
+   "prerelease": false,
+   "tag": "sdk==0.4.11",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.11"
+  },
+  {
+   "body": "Changes since checkpointsqlite==3.1.2\n\n* release(checkpoint-sqlite): 3.1.3 (#9505)\n* release(checkpoint): 4.3.1 (#9447)\n* fix(checkpoint): reject NUL bytes in namespace labels (#9383)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/checkpoint-sqlite (#9368)",
+   "date": "2026-10-30T22:18:54Z",
+   "name": "langgraph-checkpoint-sqlite==3.1.3",
+   "prerelease": false,
+   "tag": "checkpointsqlite==3.1.3",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.3"
+  },
+  {
+   "body": "Changes since 1.2.17\n\n* release(checkpoint): 4.3.1 (#9447)\n* release(langgraph): 1.2.18 (#9445)\n* fix(langgraph): let error_handler recover on every path and stream failed task results (#9408)\n* feat(langgraph): default delta snapshots to 100 updates (#9420). `DeltaChannel` now takes a full snapshot every 100 updates instead of 1000: faster reads on long threads, more storage. Pass `snapshot_frequency=1000` to keep the old behavior.\n* fix(langgraph): stream the last checkpoint of a run stopped by interrupt_after or the recursion limit (#9409)\n* fix(langgraph): stop duplicating tags at every subgraph level (#9400)\n* chore(deps): bump opentelemetry-api from 1.39.1 to 1.45.1 in /libs/langgraph (#9424)\n* chore(deps): bump nbconvert from 7.17.1 to 7.17.2 in /libs/langgraph (#9426)\n",
+   "date": "2026-10-26T20:04:45Z",
+   "name": "langgraph==1.2.18",
+   "prerelease": false,
+   "tag": "1.2.18",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.18"
+  },
+  {
+   "body": "Changes since sdk==0.4.9\n\n* release(checkpoint): 4.3.1 (#9447)\n* release(langgraph): 1.2.18 (#9445)\n* release(sdk-py): 0.4.10 (#9446)\n* fix(sdk-py): retry runs.wait with a bodyless GET and raise run errors in sync wait (#9399)\n* fix(sdk-py): follow the SSE spec for multi-line data, empty ids and a leading BOM (#9402)\n* fix(sdk-py): accept durability, stream_resumable and context in the runs overloads (#9403)\n* release(langgraph): 1.2.17 (#9418)",
+   "date": "2026-10-26T19:59:56Z",
+   "name": "langgraph-sdk==0.4.10",
+   "prerelease": false,
+   "tag": "sdk==0.4.10",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.10"
+  },
+  {
+   "body": "Changes since cli==0.4.39\n\n* release(cli): 0.4.40 (#9443)\n* feat(cli): send the upload headers the control plane returns (#9396)",
+   "date": "2026-10-26T16:45:54Z",
+   "name": "langgraph-cli==0.4.40",
+   "prerelease": false,
+   "tag": "cli==0.4.40",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.40"
+  },
+  {
+   "body": "Changes since cli==0.4.38\n\n* release(cli): 0.4.39 (#9442)\n* feat(cli): add --json to deploy list (#9395)\n* chore(deps): bump zod from 4.3.6 to 4.6.7 in /libs/cli/js-examples (#9432)\n* chore(deps): bump langgraph-checkpoint-postgres from 3.1.1 to 3.1.3 in /libs/cli/uv-examples/monorepo in the uv group across 1 directory (#9422)\n* chore(deps): bump virtualenv from 21.7.13 to 21.14.13 in /libs/cli (#9427)\n* chore(deps): bump setuptools from 83.0.0 to 84.1.0 in /libs/cli (#9425)\n* chore(deps): bump opentelemetry-api from 1.41.0 to 1.45.1 in /libs/cli (#9423)",
+   "date": "2026-10-26T14:16:53Z",
+   "name": "langgraph-cli==0.4.39",
+   "prerelease": false,
+   "tag": "cli==0.4.39",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.39"
+  },
+  {
+   "body": "Changes since checkpoint==4.3.0\n\n* release(checkpoint): 4.3.1 (#9447)\n* fix(checkpoint): reject NUL bytes in namespace labels (#9383)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/checkpoint (#9372)",
+   "date": "2026-10-26T19:57:41Z",
+   "name": "langgraph-checkpoint==4.3.1",
+   "prerelease": false,
+   "tag": "checkpoint==4.3.1",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.3.1"
+  },
+  {
+   "body": "Changes since 1.2.16\n\n* release(langgraph): 1.2.17 (#9418)\n* fix(langgraph): apply an explicit recursion_limit equal to the default (#9417)\n* fix(langgraph): keep the caller's namespace in RemoteGraph.stream(subgraphs=True) (#9401)\n* chore(deps): remove precautionary third-party upper bounds (#9390)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/langgraph (#9375)\n* chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 6 updates (#9150)",
+   "date": "2026-10-24T01:08:05Z",
+   "name": "langgraph==1.2.17",
+   "prerelease": false,
+   "tag": "1.2.17",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.17"
+  },
+  {
+   "body": "Changes since sdk==0.4.8\n\n* release(sdk-py): 0.4.9 (#9398)\n* feat(sdk-py): add Priority for thread priority settings (#9392)\n* chore(deps): remove precautionary third-party upper bounds (#9390)\n* chore(deps): bump certifi from 2026.2.25 to 2026.10.19 in /libs/sdk-py (#9370)\n* chore(deps-dev): bump dotenv from 17.4.2 to 18.0.4 in /libs/cli/js-examples in the major group (#9154)\n* chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 6 updates (#9150)",
+   "date": "2026-10-23T14:19:24Z",
+   "name": "langgraph-sdk==0.4.9",
+   "prerelease": false,
+   "tag": "sdk==0.4.9",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.9"
+  },
+  {
+   "body": "Changes since cli==0.4.37\n\n* release(cli): 0.4.38 (#9411)\n* feat(cli): add the priority section to langgraph.json (#9393)\n* chore(deps): bump uv from 0.11.15 to 0.13.4 in /libs/cli (#9366)\n* chore(deps): bump certifi from 2026.2.25 to 2026.10.19 in /libs/cli (#9374)\n* chore(deps): bump the uv group across 2 directories with 1 update (#9373)\n* fix(cli): patch missed brace-expansion dependency majors (#9360)",
+   "date": "2026-10-23T14:22:29Z",
+   "name": "langgraph-cli==0.4.38",
+   "prerelease": false,
+   "tag": "cli==0.4.38",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.38"
+  },
+  {
+   "body": "Changes since cli==0.4.36\n\n* release(cli): 0.4.37 (#9351)\n* fix(cli): stop printing subprocess stdin in verbose output (#9350)\n* Merge PR #9349\n* fix(cli): default deploy to serverless (#9333)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 9 updates (#9152)\n* chore(deps-dev): bump dotenv from 17.4.2 to 18.0.4 in /libs/cli/js-examples in the major group (#9154)",
+   "date": "2026-10-19T14:06:22Z",
+   "name": "langgraph-cli==0.4.37",
+   "prerelease": false,
+   "tag": "cli==0.4.37",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.37"
+  },
+  {
+   "body": "Changes since 1.2.15\n\n* release(langgraph): 1.2.16 (#9334)\n* fix(langgraph): let other tasks finish when a resume value is invalid (#9265)\n* fix(langgraph): apply a resumed Command's update once (#9322)\n* fix(langgraph): stop a subgraph from rerunning its finished tasks on resume (#9315)\n* fix(langgraph): save a resumed exit run's pending writes once (#9314)\n* release(prebuilt): 1.1.1 (#9316)\n* release(checkpoint-postgres): 3.2.0 (#9313)\n* feat(checkpoint-postgres): add prune to PostgresSaver and AsyncPostgresSaver (#9290)\n* fix(langgraph): keep a DeltaChannel's value when its field changes to a plain reducer (#9302)\n* release(checkpoint-postgres): 3.1.3 (#9287)\n* release(checkpoint-sqlite): 3.1.2 (#9288)",
+   "date": "2026-10-16T22:11:28Z",
+   "name": "langgraph==1.2.16",
+   "prerelease": false,
+   "tag": "1.2.16",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.16"
+  },
+  {
+   "body": "Changes since sdk==0.4.7\n\n* release(langgraph): 1.2.16 (#9334)\n* release(sdk-py): 0.4.8 (#9335)\n* fix(sdk-py): surface thread stream errors and stop retrying a rejected stream (#9317)\n* release(prebuilt): 1.1.1 (#9316)",
+   "date": "2026-10-16T22:09:01Z",
+   "name": "langgraph-sdk==0.4.8",
+   "prerelease": false,
+   "tag": "sdk==0.4.8",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.8"
+  },
+  {
+   "body": "Changes since cli==0.4.35\n\n* release(cli): 0.4.36 (#9330)\n* fix(cli): accept serverless and dedicated deployment aliases (#9325)\n* fix(cli): push through the active Docker context in langgraph deploy (#9321)",
+   "date": "2026-10-16T16:39:14Z",
+   "name": "langgraph-cli==0.4.36",
+   "prerelease": false,
+   "tag": "cli==0.4.36",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.36"
+  },
+  {
+   "body": "Changes since prebuilt==1.1.0\n\n* release(prebuilt): 1.1.1 (#9316)\n* release(checkpoint-postgres): 3.2.0 (#9313)\n* release(checkpoint-postgres): 3.1.3 (#9287)\n* release(checkpoint-sqlite): 3.1.2 (#9288)\n* release(langgraph): 1.2.15 (#9283)\n* fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values (#9232)\n* fix: order delta channel replay by task path (#8544)\n* release(langgraph): 1.2.14 (#9215)\n* release(langgraph): 1.2.13 (#9205)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 5 updates (#9149)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/prebuilt (#9130)\n* release(langgraph): 1.2.12 (#8987)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779)\n* chore(deps-dev): bump syrupy from 5.5.3 to 6.0.0 in /libs/prebuilt in the major group (#8780)\n* chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 3 updates (#8774)\n* release(langgraph): 1.2.11 (#8595)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8533)\n* chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532)\n* release(checkpoint-postgres): 3.1.2 (#8565)\n* release(checkpoint): 4.2.0 (#8563)\n* chore: enforce PLC0415 in tests for the remaining packages (#8547)\n* test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(deps): bump the minor-and-patch group in /libs/prebuilt with 7 updates (#8500)\n* release(checkpoint-sqlite): 3.1.1 (#8481)\n* release(checkpoint-postgres): 3.1.1 (#8480)\n* release(langgraph): 1.2.10 (#8462)\n* release(langgraph): 1.2.9 (#8316)\n* release(langgraph): 1.2.8 (#8292)\n* chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/langgraph in the major group (#8256)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 9 updates (#8252)\n* chore(deps): bump the minor-and-patch group in /libs/prebuilt with 7 updates (#8254)\n* release(langgraph): 1.2.7 (#8223)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/prebuilt (#8175)\n* release(langgraph): 1.2.6 (#8139)\n* docs: standardize package `README.md` structure (#8064)\n* release(langgraph): 1.2.5 (#8062)\n* fix(langgraph): merge `lc_versions` config metadata (#8052)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/prebuilt with 11 updates (#7973)\n* release(langgraph): 1.2.4 (#7991)\n* release(langgraph): 1.2.3 (#7945)\n* feat(sdk-py): add websocket stream transports (#7830)\n* feat(sdk-py): add messages and tool call projections (#7823)\n* feat(sdk-py): add v3 streaming primitives and SSE transport (#7818)\n* chore(langgraph): bump version to 1.2.2 (#7914)\n* release(checkpoint): 4.1.1 (#7890)\n* release(langgraph): 1.2.1 (#7883)\n* chore(deps): bump idna from 3.11 to 3.15 in /libs/prebuilt (#7864)\n* fix(langgraph): keep tool results out of v3 messages (#7838)\n* chore(deps): bump langsmith from 0.7.31 to 0.8.0 in /libs/prebuilt (#7787)",
+   "date": "2026-10-15T04:32:40Z",
+   "name": "langgraph-prebuilt==1.1.1",
+   "prerelease": false,
+   "tag": "prebuilt==1.1.1",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.1"
+  },
+  {
+   "body": "Changes since cli==0.4.34\n\n* release(cli): 0.4.35 (#9310)\n* feat(cli): add --image-pull-secret for deploying through a private registry (#9305)\n* feat(cli): log in with the registry username the control plane returns (#9301)\n* fix(cli): preserve failed deployment build logs (#9308)\n* chore(deps): bump handlebars from 4.7.9 to 4.7.10 in /libs/cli/js-examples (#9286)",
+   "date": "2026-10-14T16:11:12Z",
+   "name": "langgraph-cli==0.4.35",
+   "prerelease": false,
+   "tag": "cli==0.4.35",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.35"
+  },
+  {
+   "body": "Changes since checkpointpostgres==3.1.3\n\n* release(checkpoint-postgres): 3.2.0 (#9313)\n* feat(checkpoint-postgres): add prune to PostgresSaver and AsyncPostgresSaver (#9290)",
+   "date": "2026-10-14T19:54:57Z",
+   "name": "langgraph-checkpoint-postgres==3.2.0",
+   "prerelease": false,
+   "tag": "checkpointpostgres==3.2.0",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.2.0"
+  },
+  {
+   "body": "Changes since cli==0.4.33\n\n* release(cli): 0.4.34 (#9300)\n* feat(cli): add --json to deploy listeners list (#9243)",
+   "date": "2026-10-13T21:18:10Z",
+   "name": "langgraph-cli==0.4.34",
+   "prerelease": false,
+   "tag": "cli==0.4.34",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.34"
+  },
+  {
+   "body": "Changes since 1.2.14\n\n* release(langgraph): 1.2.15 (#9283)\n* fix(langgraph): give every message written to a messages DeltaChannel an id (#9275)\n* fix(langgraph): save a cached node's writes like a node that ran (#9259)\n* fix(langgraph): stop at an interrupt_before breakpoint when a drain is requested before it (#9281)\n* fix(langgraph): keep an exit run from a checkpoint the thread moved past out of its newer branch (#9269)\n* fix(langgraph): store an update_state input's writes on the checkpoint it updates (#9258)\n* fix(langgraph): read a run's DeltaChannel input back only on its own checkpoints (#9260)\n* fix(langgraph): snapshot a DeltaChannel that an update_state Overwrite resets (#9263)\n* fix(langgraph): keep a fork's DeltaChannel snapshot from starting nodes that never ran (#9264)\n* fix(langgraph): don't save a checkpoint past a failed DeltaChannel write (#9235)\n* fix(langgraph,prebuilt): stop ToolNode from swallowing invalid resume values (#9232)\n* fix(langgraph): never store exit-mode delta writes under the null task id (#9229)\n* fix(langgraph): stop astream_events dropping control/interrupts on v1/v2 (#9219)\n* chore(deps): bump notebook from 7.5.7 to 7.6.3 in /libs/langgraph (#9206)\n* fix(langgraph): give each bulk_update_state update its own task id (#9128)\n* fix(langgraph): replay a resumed exit-mode run's delta writes in live order (#9114)\n* fix: order delta channel replay by task path (#8544)",
+   "date": "2026-10-12T22:38:26Z",
+   "name": "langgraph==1.2.15",
+   "prerelease": false,
+   "tag": "1.2.15",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.15"
+  },
+  {
+   "body": "Changes since sdk==0.4.6\n\n* release(sdk-py): 0.4.7 (#9289)\n* release(langgraph): 1.2.15 (#9283)\n* fix(sdk-py): end a thread stream's run only on a root lifecycle event (#9228)\n* fix: order delta channel replay by task path (#8544)\n* release(langgraph): 1.2.14 (#9215)",
+   "date": "2026-10-12T22:54:19Z",
+   "name": "langgraph-sdk==0.4.7",
+   "prerelease": false,
+   "tag": "sdk==0.4.7",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.7"
+  },
+  {
+   "body": "Changes since checkpointsqlite==3.1.1\n\n* release(checkpoint-sqlite): 3.1.2 (#9288)\n* fix(checkpoint-postgres,checkpoint-sqlite): treat an empty checkpoint_id as the latest in delta history (#9262)\n* fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217)\n* fix: order delta channel replay by task path (#8544)\n* chore(deps-dev): bump the minor-and-patch group in /libs/checkpoint-sqlite with 3 updates (#9146)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/checkpoint-sqlite (#9135)\n* fix(checkpoint-sqlite): walk delta ancestors by parent pointer (#8557)\n* chore(deps): bump anyio from 4.12.1 to 4.14.2 in /libs/checkpoint-sqlite (#8993)\n* chore(deps-dev): bump the minor-and-patch group in /libs/checkpoint-sqlite with 2 updates (#8772)\n* fix(checkpoint): widen `Store` `put` value type to `Mapping[str, Any]` (#8617)\n* release(checkpoint): 4.2.0 (#8563)\n* test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(checkpoint-postgres,checkpoint-sqlite): enable PLC0415 lint rule (#8540)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-sqlite with 4 updates (#8494)",
+   "date": "2026-10-12T22:54:47Z",
+   "name": "langgraph-checkpoint-sqlite==3.1.2",
+   "prerelease": false,
+   "tag": "checkpointsqlite==3.1.2",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.2"
+  },
+  {
+   "body": "Changes since checkpointpostgres==3.1.2\n\n* release(checkpoint-postgres): 3.1.3 (#9287)\n* fix(checkpoint-postgres,checkpoint-sqlite): treat an empty checkpoint_id as the latest in delta history (#9262)\n* perf(checkpoint-postgres): start the delta walk at the target (#9248)\n* fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217)\n* fix: order delta channel replay by task path (#8544)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 6 updates (#9147)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/checkpoint-postgres (#9132)\n* fix(checkpoint-postgres): derive the delta walk cursor once the target loads (#8556)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 3 updates (#8773)\n* fix(checkpoint): widen `Store` `put` value type to `Mapping[str, Any]` (#8617)",
+   "date": "2026-10-12T23:05:31Z",
+   "name": "langgraph-checkpoint-postgres==3.1.3",
+   "prerelease": false,
+   "tag": "checkpointpostgres==3.1.3",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.3"
+  },
+  {
+   "body": "Changes since checkpoint==4.2.0\n\n* fix(checkpoint): default InMemorySaver delta history to the latest checkpoint (#9257)\n* test(checkpoint): run the delta conformance suite against InMemorySaver in CI (#9261)\n* fix(checkpoint,checkpoint-postgres,checkpoint-sqlite): validate namespace labels before store dispatch (#9217)\n* fix(checkpoint): keep serialized data when an object can't be rebuilt (#9251)\n* fix(langgraph): replay a resumed exit-mode run's delta writes in live order (#9114)\n* fix: order delta channel replay by task path (#8544)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 4 updates (#9148)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/checkpoint (#9131)\n* chore(deps): bump anyio from 4.12.1 to 4.14.2 in /libs/checkpoint (#8995)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 4 updates (#8777)\n* fix(checkpoint): widen `Store` `put` value type to `Mapping[str, Any]` (#8617)",
+   "date": "2026-10-12T22:26:41Z",
+   "name": "langgraph-checkpoint==4.3.0",
+   "prerelease": false,
+   "tag": "checkpoint==4.3.0",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.3.0"
+  },
+  {
+   "body": "Changes since cli==0.4.32\n\n* release(cli): 0.4.33 (#9227)\n* feat(cli): add --image-uri to deploy an already-pushed image (#9222)\n* feat(cli): add 'langgraph deploy listeners list' (#9221)\n* chore(deps): bump virtualenv from 21.7.12 to 21.7.13 in /libs/cli (#9167)\n* chore(deps): bump virtualenv from 21.2.4 to 21.7.12 in /libs/cli (#9159)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#9151)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates (#9153)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/cli (#9137)\n* chore(deps): bump the uv group across 2 directories with 1 update (#9136)\n* chore(deps): bump pyjwt from 2.13.0 to 2.15.0 in /libs/cli (#9129)\n* fix: reject credential-bearing Git dependencies (#8542)",
+   "date": "2026-10-07T13:38:46Z",
+   "name": "langgraph-cli==0.4.33",
+   "prerelease": false,
+   "tag": "cli==0.4.33",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.33"
+  },
+  {
+   "body": "Changes since 1.2.13\n\n* release(langgraph): 1.2.14 (#9215)",
+   "date": "2026-10-06T14:41:37Z",
+   "name": "langgraph==1.2.14",
+   "prerelease": false,
+   "tag": "1.2.14",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.14"
+  },
+  {
+   "body": "Changes since sdk==0.4.5\n\n* release(sdk-py): 0.4.6 (#9214)\n* fix(sdk-py): percent-encode thread_id and assistant_id in thread stream requests (#9213)\n* release(langgraph): 1.2.13 (#9205)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 5 updates (#9149)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/sdk-py (#9134)",
+   "date": "2026-10-06T14:18:08Z",
+   "name": "langgraph-sdk==0.4.6",
+   "prerelease": false,
+   "tag": "sdk==0.4.6",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.6"
+  },
+  {
+   "body": "Changes since 1.2.12\n\n* fix(langgraph): fork before replaying an update checkpoint the thread moved past (#9170)\n* fix(langgraph): keep an update_state on an older checkpoint out of its other branches (#9165)\n* fix(langgraph): keep DeltaChannel counters on every update_state path (#9142)\n* release(langgraph): 1.2.13 (#9205)\n* fix(langgraph): don't walk history for a DeltaChannel that was never written (#9141)\n* fix(langgraph): don't replay an abandoned branch into a DeltaChannel fork (#8548)\n* chore(deps): bump notebook from 7.5.6 to 7.5.7 in /libs/langgraph (#9168)\n* fix(langgraph): hydrate subgraph delta channels with the caller-resolved saver (#8538)\n* fix(langgraph): stop reporting answered interrupts in get_state (#9103)\n* chore(deps-dev): bump the minor-and-patch group across 1 directory with 5 updates (#9155)\n* chore(deps-dev): bump the minor-and-patch group in /libs/checkpoint-conformance with 2 updates (#9145)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 5 updates (#9149)\n* chore(deps): bump tornado from 6.5.8 to 6.5.9 in /libs/langgraph (#9160)\n* chore(deps-dev): bump types-requests from 2.33.0.20260712 to 2.33.0.20260906 in /libs/langgraph (#9156)\n* chore(deps): bump pyjwt from 2.15.0 to 2.15.1 in /libs/langgraph (#9140)\n* chore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/langgraph (#9138)\n* chore(deps): bump pyjwt from 2.14.0 to 2.15.0 in /libs/langgraph (#9139)\n* chore(deps): bump pyjwt from 2.13.0 to 2.14.0 in /libs/langgraph (#9126)",
+   "date": "2026-10-05T17:51:32Z",
+   "name": "langgraph==1.2.13",
+   "prerelease": false,
+   "tag": "1.2.13",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.13"
+  },
+  {
+   "body": "Changes since cli==0.4.32",
+   "date": "2026-09-23T23:26:51Z",
+   "name": "langgraph-cli==0.4.32.dev0",
+   "prerelease": false,
+   "tag": "cli==0.4.32.dev0",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.32.dev0"
+  },
+  {
+   "body": "Changes since cli==0.4.31\n\n* feat(cli): place self-hosted deployments on a listener (#9056)\n* feat(cli): clarify agent flags and support env defaults (#9063)\n* feat(cli): Update langgraph deploy command to use agent_id and environment args (#9055)\n* feat(cli): add --image-uri flag for self-hosted deployments (#8482)\n* fix(cli): remediate AnyIO vulnerabilities in example lockfiles (#9022)\n* chore(deps): bump anyio from 4.13.0 to 4.14.2 in /libs/cli (#8998)\n* chore(deps): fix vulnerable dev dependencies (#8449)\n* chore(deps): bump httpx2 from 2.10.0 to 2.12.0 in /libs/cli (#8863)\n* chore(deps): bump js-yaml from 4.3.1 to 4.3.2 in /libs/cli/js-monorepo-example (#8867)\n* chore(deps): bump httpcore2 from 2.5.0 to 2.10.0 in /libs/cli (#8864)\n* fix(cli): clarify missing deploy config (#8854)\n* chore(deps): bump browserslist from 4.28.1 to 4.28.8 in /libs/cli/js-examples (#8797)\n* chore(deps): bump @humanfs/node from 0.16.7 to 0.16.8 in /libs/cli/js-examples (#8798)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 6 updates (#8778)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 6 updates (#8776)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 6 updates (#8775)\n* chore(deps): bump langgraph-checkpoint-postgres from 3.0.5 to 3.1.1 in /libs/cli/uv-examples/monorepo in the uv group across 1 directory (#8646)\n* chore: enforce PLC0415 in tests for the remaining packages (#8547)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 8 updates (#8492)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#8489)\n* chore(deps-dev): bump the minor-and-patch group in /libs/cli with 4 updates (#8495)\n* chore(deps-dev): bump typescript from 6.0.3 to 7.0.2 in /libs/cli/js-monorepo-example in the major group (#8496)\n* chore(deps-dev): bump typescript from 6.0.3 to 7.0.2 in /libs/cli/js-examples in the major group (#8498)\n* chore(deps): bump cryptography from 48.0.1 to 50.0.0 in /libs/cli (#8529)\n* chore(deps): bump js-yaml from 4.2.0 to 4.3.0 in /libs/cli/js-monorepo-example (#8438)\n* chore(deps): bump setuptools from 82.0.1 to 83.0.0 in /libs/cli (#8434)",
+   "date": "2026-09-23T18:02:46Z",
+   "name": "langgraph-cli==0.4.32",
+   "prerelease": false,
+   "tag": "cli==0.4.32",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.32"
+  },
+  {
+   "body": "Changes since 1.2.11\n\n* release(langgraph): 1.2.12 (#8987)\n* chore(deps): bump soupsieve from 2.8.4 to 2.9 in /libs/langgraph (#8958)\n* feat(langgraph): add response_schema to interrupt() (#8886)\n* fix(langgraph): type undeclared v3 stream projections (#8596)\n* chore(langgraph): bump mistune to 3.3.4 (#8804)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779)\n* chore(deps): bump the minor-and-patch group across 1 directory with 4 updates (#8782)\n* chore(deps): bump tornado from 6.5.7 to 6.5.8 in /libs/langgraph (#8792)\n* chore(deps): bump the major group in /libs/langgraph with 2 updates (#8783)\n* fix(langgraph): detect subgraphs from bytecode instead of source (#8569)",
+   "date": "2026-09-21T14:43:40Z",
+   "name": "langgraph==1.2.12",
+   "prerelease": false,
+   "tag": "1.2.12",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.12"
+  },
+  {
+   "body": "Changes since sdk==0.4.4\n\n* release(sdk-py): 0.4.5 (#8988)\n* release(langgraph): 1.2.12 (#8987)\n* chore(deps): bump anyio from 4.14.2 to 4.15.1 in /libs/sdk-py (#8997)\n* chore(deps): bump anyio from 4.13.0 to 4.14.2 in /libs/cli (#8998)\n* chore(deps): bump anyio from 4.12.1 to 4.14.2 in /libs/sdk-py (#8994)\n* feat(langgraph): add response_schema to interrupt() (#8886)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8779)\n* chore(deps): bump websockets from 16.0 to 16.1.1 in /libs/sdk-py in the major group (#8781)",
+   "date": "2026-09-21T14:43:09Z",
+   "name": "langgraph-sdk==0.4.5",
+   "prerelease": false,
+   "tag": "sdk==0.4.5",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.5"
+  },
+  {
+   "body": "Changes since sdk==0.4.3\n\n* release(sdk-py): 0.4.4 (#8738)\n* Merge commit from fork\n* feat: route LangSmith traces from thread streams (#8723)",
+   "date": "2026-08-27T21:25:36Z",
+   "name": "langgraph-sdk==0.4.4",
+   "prerelease": false,
+   "tag": "sdk==0.4.4",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.4"
+  },
+  {
+   "body": "Changes since sdk==0.4.2\n\n* release(sdk-py): 0.4.3 (#8657)\n* feat(sdk-py): add decrypt replacement result (#8598)\n* release(langgraph): 1.2.11 (#8595)\n* chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532)\n* release(checkpoint): 4.2.0 (#8563)\n* chore: enforce PLC0415 in tests for the remaining packages (#8547)\n* release(langgraph): 1.2.10 (#8462)\n* chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/sdk-py in the major group (#8253)\n* fix(sdk-py): support clearing cron end_time via update(end_time=None) (#8334)\n* release(langgraph): 1.2.9 (#8316)\n* release(langgraph): 1.2.8 (#8292)\n* chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/langgraph in the major group (#8256)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 9 updates (#8252)\n* release(langgraph): 1.2.7 (#8223)\n* chore(deps-dev): bump starlette from 1.0.1 to 1.3.1 in /libs/sdk-py (#8104)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/sdk-py (#8174)\n* release(langgraph): 1.2.6 (#8139)\n* docs: standardize package `README.md` structure (#8064)\n* release(langgraph): 1.2.5 (#8062)\n* fix(langgraph): merge `lc_versions` config metadata (#8052)\n* chore(deps-dev): bump starlette from 1.0.0 to 1.0.1 in /libs/sdk-py (#8006)\n* chore: migrate Python type checking to ty (#8002)\n* release(langgraph): 1.2.4 (#7991)\n* test(sdk-py): add factory-graph integration test exercising the server factory path (#7978)\n* release(langgraph): 1.2.3 (#7945)",
+   "date": "2026-08-19T18:05:32Z",
+   "name": "langgraph-sdk==0.4.3",
+   "prerelease": false,
+   "tag": "sdk==0.4.3",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.3"
+  },
+  {
+   "body": "Changes since 1.2.10\n\n* release(langgraph): 1.2.11 (#8595)\n* feat(langgraph): expose `trace_policy` on `add_node` (#8523)\n* chore(deps): bump the minor-and-patch group across 1 directory with 7 updates (#8533)\n* chore(deps): bump the minor-and-patch group across 1 directory with 5 updates (#8532)\n* release(checkpoint-postgres): 3.1.2 (#8565)\n* release(checkpoint): 4.2.0 (#8563)\n* fix(checkpoint): collect writes at plain-value seed in delta channel history (#8526)\n* chore: enforce PLC0415 in tests for the remaining packages (#8547)\n* test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(deps-dev): bump types-requests from 2.33.0.20260518 to 2.33.0.20260712 in /libs/langgraph (#8502)\n* chore(deps): bump cryptography from 48.0.1 to 50.0.0 in /libs/langgraph (#8528)\n* release(checkpoint-sqlite): 3.1.1 (#8481)\n* release(checkpoint-postgres): 3.1.1 (#8480)",
+   "date": "2026-08-11T14:00:50Z",
+   "name": "langgraph==1.2.11",
+   "prerelease": false,
+   "tag": "1.2.11",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.11"
+  },
+  {
+   "body": "Changes since checkpointpostgres==3.1.1\n\n* release(checkpoint-postgres): 3.1.2 (#8565)\n* release(checkpoint): 4.2.0 (#8563)\n* test(checkpoint-postgres,checkpoint-sqlite): run the conformance suite (#8537)\n* fix(checkpoint-postgres): find plain-value seeds when walking delta history (#8535)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(checkpoint-postgres,checkpoint-sqlite): enable PLC0415 lint rule (#8540)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 5 updates (#8497)",
+   "date": "2026-08-07T20:40:16Z",
+   "name": "langgraph-checkpoint-postgres==3.1.2",
+   "prerelease": false,
+   "tag": "checkpointpostgres==3.1.2",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.2"
+  },
+  {
+   "body": "Changes since checkpoint==4.1.1\n\n* release(checkpoint): 4.2.0 (#8563)\n* fix(checkpoint): collect writes at plain-value seed in delta channel history (#8526)\n* chore: enforce PLC0415 in tests for the remaining packages (#8547)\n* chore: enable RUF100 and clear unused noqa directives (#8546)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 4 updates (#8490)\n* feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 5 updates (#8248)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint (#8173)\n* docs: standardize package `README.md` structure (#8064)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps-dev): bump the major group in /libs/checkpoint with 2 updates (#7967)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 3 updates (#7960)",
+   "date": "2026-08-07T20:05:22Z",
+   "name": "langgraph-checkpoint==4.2.0",
+   "prerelease": false,
+   "tag": "checkpoint==4.2.0",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.2.0"
+  },
+  {
+   "body": "Changes since checkpointsqlite==3.1.0\n\n* release(checkpoint-sqlite): 3.1.1 (#8481)\n* fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-sqlite with 4 updates (#8249)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-sqlite (#8177)\n* docs: standardize package `README.md` structure (#8064)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-sqlite with 3 updates (#7961)\n* release(checkpoint): 4.1.1 (#7890)\n* chore(deps): bump langsmith from 0.7.31 to 0.8.0 in /libs/checkpoint-sqlite (#7786)\n* chore(deps): bump idna from 3.11 to 3.15 in /libs/checkpoint-sqlite (#7862)",
+   "date": "2026-07-30T19:19:47Z",
+   "name": "langgraph-checkpoint-sqlite==3.1.1",
+   "prerelease": false,
+   "tag": "checkpointsqlite==3.1.1",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.1"
+  },
+  {
+   "body": "Changes since checkpointpostgres==3.1.0\n\n* release(checkpoint-postgres): 3.1.1 (#8480)\n* fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478)\n* feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 5 updates (#8250)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-postgres (#8171)\n* docs: standardize package `README.md` structure (#8064)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 7 updates (#7965)\n* release(checkpoint): 4.1.1 (#7890)\n* chore(deps): bump idna from 3.11 to 3.15 in /libs/checkpoint-postgres (#7861)\n* chore(deps): bump langsmith from 0.7.31 to 0.8.0 in /libs/checkpoint-postgres (#7785)",
+   "date": "2026-07-30T19:16:01Z",
+   "name": "langgraph-checkpoint-postgres==3.1.1",
+   "prerelease": false,
+   "tag": "checkpointpostgres==3.1.1",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.1"
+  },
+  {
+   "body": "Changes since 1.2.9\n\n* release(langgraph): 1.2.10 (#8462)\n* chore(deps): bump jupyterlab from 4.5.9 to 4.5.10 in /libs/langgraph (#8440)\n* chore(deps): bump setuptools from 80.9.0 to 83.0.0 in /libs/langgraph (#8435)\n* feat(langgraph): type v3 stream_events return and native projections (#8389)\n* revert(langgraph): delete TracePolicy (#8403)\n* feat(langgraph): drop tags from TracePolicy (#8402)\n* feat(langgraph): expose `trace_policy` on `add_node` (#8362)\n* chore(deps): bump mistune from 3.2.1 to 3.3.0 in /libs/langgraph (#8317)\n* chore(deps): bump soupsieve from 2.8.1 to 2.8.4 in /libs/langgraph (#8318)\n* chore(cli): allow langgraph-api versions up to 1.0.0 (#8319)",
+   "date": "2026-07-28T18:34:14Z",
+   "name": "langgraph==1.2.10",
+   "prerelease": false,
+   "tag": "1.2.10",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.10"
+  },
+  {
+   "body": "Changes since 1.2.8\n\n* release(langgraph): 1.2.9 (#8316)\n* fix: updateState metadata/counters for delta channel (#8315)",
+   "date": "2026-07-10T01:30:24Z",
+   "name": "langgraph==1.2.9",
+   "prerelease": false,
+   "tag": "1.2.9",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.9"
+  },
+  {
+   "body": "Changes since cli==0.4.30\n\n* chore(cli): allow langgraph-api versions up to 1.0.0 (#8319)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates (#8251)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 6 updates (#8246)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 7 updates (#8245)\n* chore(deps): bump starlette from 1.0.1 to 1.3.1 in /libs/cli (#8105)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/cli (#8172)\n* feat(cli): allow prebuild images for langgraph deploy (#8100)\n* chore(deps): bump langchain-anthropic from 1.0.0a5 to 1.4.6 in /libs/cli/examples/graph_prerelease_reqs in the pip group across 1 directory (#8145)\n* chore(deps): bump @babel/core from 7.25.2 to 7.29.7 in /libs/cli/js-examples (#8144)\n* chore(deps): bump js-yaml from 4.1.1 to 4.2.0 in /libs/cli/js-monorepo-example (#8143)\n* chore(deps): bump cryptography from 46.0.7 to 48.0.1 in /libs/cli (#8103)\n* chore(deps): bump pyjwt from 2.12.1 to 2.13.0 in /libs/cli (#8093)",
+   "date": "2026-07-10T22:58:04Z",
+   "name": "langgraph-cli==0.4.31",
+   "prerelease": false,
+   "tag": "cli==0.4.31",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.31"
+  },
+  {
+   "body": "Changes since 1.2.7\n\n* release(langgraph): 1.2.8 (#8292)\n* fix: delta channel bug with updateState on fresh thread will force snapshot instead of stub checkpoint (#8290)\n* chore(deps): bump the minor-and-patch group in /libs/langgraph with 8 updates (#8255)\n* chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/langgraph in the major group (#8256)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 9 updates (#8252)",
+   "date": "2026-07-06T20:40:30Z",
+   "name": "langgraph==1.2.8",
+   "prerelease": false,
+   "tag": "1.2.8",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.8"
+  },
+  {
+   "body": "Changes since 1.2.6\n\n* release(langgraph): 1.2.7 (#8223)\n* fix(langgraph): snapshot `DeltaChannel` overwrite supersteps (#8125)\n* fix(langgraph): Make `Overwrite` survive JSON roundtrips (#8127)\n* chore(deps): bump redis in /libs/langgraph (#7976)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/langgraph (#8176)\n* chore(deps): bump jupyterlab from 4.5.7 to 4.5.9 in /libs/langgraph (#8164)\n* fix(langgraph): emit valid UUIDs for exit-mode delta task_ids for langgraph-api (#8165)\n* chore(deps): bump bleach from 6.3.0 to 6.4.0 in /libs/langgraph (#8107)\n* chore(deps): bump cryptography from 46.0.7 to 48.0.1 in /libs/langgraph (#8106)\n* chore(deps): bump jupyter-server from 2.18.0 to 2.20.0 in /libs/langgraph (#8134)\n* chore(deps): bump tornado from 6.5.6 to 6.5.7 in /libs/langgraph (#8108)\n* chore(deps): bump pyjwt from 2.12.0 to 2.13.0 in /libs/langgraph (#8092)",
+   "date": "2026-06-30T01:24:26Z",
+   "name": "langgraph==1.2.7",
+   "prerelease": false,
+   "tag": "1.2.7",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.7"
+  },
+  {
+   "body": "Changes since 1.2.5\n\n* release(langgraph): 1.2.6 (#8139)\n* fix: nested subgraph inherits parent checkpoint_ns (regression in 1.2.3) (#8053)\n* fix: cancel running subgraphs on v3 stream abort [closes #8029] (#8057)\n* release(cli): 0.4.30 (#8101)\n* docs: standardize package `README.md` structure (#8064)\n* chore(deps): bump tornado from 6.5.5 to 6.5.6 in /libs/langgraph (#8063)",
+   "date": "2026-06-18T20:58:32Z",
+   "name": "langgraph==1.2.6",
+   "prerelease": false,
+   "tag": "1.2.6",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.6"
+  },
+  {
+   "body": "Changes since cli==0.4.29\n\n* release(cli): 0.4.30 (#8101)\n* feat(cli): support compatible api version ranges (#8023)\n* docs: standardize package `README.md` structure (#8064)",
+   "date": "2026-06-16T19:46:45Z",
+   "name": "langgraph-cli==0.4.30",
+   "prerelease": false,
+   "tag": "cli==0.4.30",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.30"
+  },
+  {
+   "body": "Changes since 1.2.4\n\n* release(langgraph): 1.2.5 (#8062)\n* fix(langgraph): merge `lc_versions` config metadata (#8052)\n* release(cli): 0.4.28 (#8041)\n* fix: updateState bug for deltaChannel on empty thread (#8011)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps-dev): bump types-requests from 2.33.0.20260408 to 2.33.0.20260518 in /libs/langgraph (#7977)\n* chore(deps): bump the minor-and-patch group in /libs/langgraph with 14 updates (#7975)",
+   "date": "2026-06-12T20:31:14Z",
+   "name": "langgraph==1.2.5",
+   "prerelease": false,
+   "tag": "1.2.5",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.5"
+  },
+  {
+   "body": "Changes since cli==0.4.28\n\n* release(cli): 0.4.29 (#8046)\n* feat(cli): add support for passing certfile and cert key to run dev server under HTTPS (#8031)",
+   "date": "2026-06-11T19:53:04Z",
+   "name": "langgraph-cli==0.4.29",
+   "prerelease": false,
+   "tag": "cli==0.4.29",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.29"
+  },
+  {
+   "body": "Changes since cli==0.4.27\n\n* release(cli): 0.4.28 (#8041)\n* chore(deps): bump starlette from 1.0.0 to 1.0.1 in /libs/cli (#8005)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 4 updates (#7962)\n* chore(deps): bump typescript from 5.9.3 to 6.0.3 in /libs/cli/js-monorepo-example (#7672)\n* chore(deps-dev): bump typescript from 5.9.3 to 6.0.3 in /libs/cli/js-examples in the major group across 1 directory (#7966)\n* chore(deps-dev): bump mypy from 1.20.2 to 2.1.0 in /libs/cli in the major group (#7968)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 7 updates (#7959)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 8 updates (#7963)\n* chore(deps): bump uv from 0.11.7 to 0.11.15 in /libs/cli (#7943)\n* chore(langgraph): Track ADK/other library usage when deploying using cli (#7939)",
+   "date": "2026-06-10T18:20:32Z",
+   "name": "langgraph-cli==0.4.28",
+   "prerelease": false,
+   "tag": "cli==0.4.28",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.28"
+  },
+  {
+   "body": "Changes since 1.2.3\n\n* release(langgraph): 1.2.4 (#7991)\n* test(sdk-py): add factory-graph integration test exercising the server factory path (#7978)\n* fix(langgraph): keep _on_started backward-compatible with overrides predating cause (#7987)",
+   "date": "2026-06-02T17:07:49Z",
+   "name": "langgraph==1.2.4",
+   "prerelease": false,
+   "tag": "1.2.4",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.4"
+  }
+ ],
+ "repo": "langchain-ai/langgraph"
+}

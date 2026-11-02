@@ -1,0 +1,41 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "latest": "1.32.2"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:11Z",
+ "homepage": "https://modelcontextprotocol.io",
+ "latest": "1.32.2",
+ "name": "@modelcontextprotocol/sdk",
+ "page": "https://www.npmjs.com/package/@modelcontextprotocol/sdk",
+ "repo": "modelcontextprotocol/typescript-sdk",
+ "summary": "Model Context Protocol implementation for TypeScript",
+ "versions": [
+  {
+   "date": "2026-10-23T18:11:38Z",
+   "deprecated": false,
+   "version": "1.32.2"
+  },
+  {
+   "date": "2026-10-05T11:47:50Z",
+   "deprecated": false,
+   "version": "1.32.1"
+  },
+  {
+   "date": "2026-10-02T17:32:51Z",
+   "deprecated": false,
+   "version": "1.32.0"
+  },
+  {
+   "date": "2026-09-28T18:59:36Z",
+   "deprecated": false,
+   "version": "1.31.0"
+  },
+  {
+   "date": "2026-09-23T16:06:59Z",
+   "deprecated": false,
+   "version": "1.30.1"
+  }
+ ]
+}

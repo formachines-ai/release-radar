@@ -1,0 +1,12 @@
+# Release Radar — false-positive guard for the breaking-change regex.
+# One regular expression per line (Python `re`, case-insensitive). A match of the main pattern is dropped
+# when its span overlaps a match of any pattern here. Edit this file when QA finds a false "breaking" flag;
+# never widen the main pattern with judgement calls — only verbatim text decides.
+(?:line|page|word|soft|hard|column|row)[- ]?break
+break-?(?:word|all|point|points|inside|before|after)
+breakpoint
+unbreak
+breakdown
+break\s+down
+break\s+out\s+of
+no longer (?:needed|necessary|required) to (?:install|pass|import)

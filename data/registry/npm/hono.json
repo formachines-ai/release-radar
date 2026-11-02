@@ -1,0 +1,108 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "latest": "4.13.16",
+  "next": "5.0.0-rc.1",
+  "v4": "4.0.0-rc.4"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:33Z",
+ "homepage": "https://hono.dev",
+ "latest": "4.13.16",
+ "name": "hono",
+ "page": "https://www.npmjs.com/package/hono",
+ "repo": "honojs/hono",
+ "summary": "Web framework built on Web Standards",
+ "versions": [
+  {
+   "date": "2026-11-01T03:04:37Z",
+   "deprecated": false,
+   "version": "4.13.16"
+  },
+  {
+   "date": "2026-11-01T02:04:07Z",
+   "deprecated": false,
+   "version": "4.13.15"
+  },
+  {
+   "date": "2026-10-25T07:19:30Z",
+   "deprecated": false,
+   "version": "4.13.14"
+  },
+  {
+   "date": "2026-10-10T12:34:14Z",
+   "deprecated": false,
+   "version": "5.0.0-rc.1"
+  },
+  {
+   "date": "2026-10-08T05:35:09Z",
+   "deprecated": false,
+   "version": "5.0.0-rc.0"
+  },
+  {
+   "date": "2026-10-04T03:53:48Z",
+   "deprecated": false,
+   "version": "4.13.13"
+  },
+  {
+   "date": "2026-09-30T09:43:03Z",
+   "deprecated": false,
+   "version": "4.13.12"
+  },
+  {
+   "date": "2026-09-29T06:15:49Z",
+   "deprecated": false,
+   "version": "4.13.11"
+  },
+  {
+   "date": "2026-09-28T08:24:32Z",
+   "deprecated": false,
+   "version": "4.13.10"
+  },
+  {
+   "date": "2026-09-24T01:32:02Z",
+   "deprecated": false,
+   "version": "4.13.9"
+  },
+  {
+   "date": "2026-09-15T07:31:34Z",
+   "deprecated": false,
+   "version": "4.13.8"
+  },
+  {
+   "date": "2026-09-04T19:18:07Z",
+   "deprecated": false,
+   "version": "4.13.7"
+  },
+  {
+   "date": "2026-09-04T19:08:02Z",
+   "deprecated": false,
+   "version": "4.13.6"
+  },
+  {
+   "date": "2026-08-26T02:00:22Z",
+   "deprecated": false,
+   "version": "4.13.5"
+  },
+  {
+   "date": "2026-08-24T08:48:08Z",
+   "deprecated": false,
+   "version": "4.13.4"
+  },
+  {
+   "date": "2026-08-18T10:56:09Z",
+   "deprecated": false,
+   "version": "4.13.3"
+  },
+  {
+   "date": "2026-08-13T11:55:37Z",
+   "deprecated": false,
+   "version": "4.13.2"
+  },
+  {
+   "date": "2026-08-07T06:45:13Z",
+   "deprecated": false,
+   "version": "4.13.1"
+  }
+ ]
+}

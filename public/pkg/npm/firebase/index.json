@@ -1,0 +1,56 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": {
+  "errata": 2,
+  "json": "https://formachines.ai/errata/npm/firebase/index.json",
+  "new_version": "13.1.0",
+  "old_version": "12.11.0",
+  "updated": "2026-11-02",
+  "url": "https://formachines.ai/errata/npm/firebase/"
+ },
+ "latest": "13.1.0",
+ "metadata_fetched": "2026-11-02T17:00:31Z",
+ "package": "firebase",
+ "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+ "registry": "https://www.npmjs.com/package/firebase",
+ "releases": [
+  {
+   "date": "2026-10-30T16:25:33Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": false,
+   "id": "npm/firebase/13.2.0-20261030160918",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "13.2.0-20261030160918",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-26T17:35:01Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": false,
+   "id": "npm/firebase/13.1.0-eap-crashlytics.d474e7535",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "13.1.0-eap-crashlytics.d474e7535",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/firebase/firebase-js-sdk",
+ "summary": "Firebase JavaScript library for web and Node.js"
+}

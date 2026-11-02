@@ -1,0 +1,234 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "alpha": "5.0.0-alpha.0",
+  "beta": "5.0.0-beta.0",
+  "latest": "7.47.0",
+  "next": "4.0.0-beta.12"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:17Z",
+ "homepage": "https://github.com/openai/openai-node#readme",
+ "latest": "7.47.0",
+ "name": "openai",
+ "page": "https://www.npmjs.com/package/openai",
+ "repo": "openai/openai-node",
+ "summary": "The official TypeScript library for the OpenAI API",
+ "versions": [
+  {
+   "date": "2026-10-31T05:06:22Z",
+   "deprecated": false,
+   "version": "7.47.0"
+  },
+  {
+   "date": "2026-10-31T00:37:09Z",
+   "deprecated": false,
+   "version": "7.46.0"
+  },
+  {
+   "date": "2026-10-27T15:49:38Z",
+   "deprecated": false,
+   "version": "7.45.1"
+  },
+  {
+   "date": "2026-10-26T19:27:19Z",
+   "deprecated": false,
+   "version": "7.45.0"
+  },
+  {
+   "date": "2026-10-26T15:39:19Z",
+   "deprecated": false,
+   "version": "7.44.0"
+  },
+  {
+   "date": "2026-10-22T21:54:28Z",
+   "deprecated": false,
+   "version": "7.43.0"
+  },
+  {
+   "date": "2026-10-22T03:50:19Z",
+   "deprecated": false,
+   "version": "7.42.0"
+  },
+  {
+   "date": "2026-10-21T15:40:35Z",
+   "deprecated": false,
+   "version": "7.41.0"
+  },
+  {
+   "date": "2026-10-21T13:34:48Z",
+   "deprecated": false,
+   "version": "7.40.0"
+  },
+  {
+   "date": "2026-10-19T00:05:57Z",
+   "deprecated": false,
+   "version": "7.39.0"
+  },
+  {
+   "date": "2026-10-17T23:36:47Z",
+   "deprecated": false,
+   "version": "7.38.0"
+  },
+  {
+   "date": "2026-10-17T20:45:17Z",
+   "deprecated": false,
+   "version": "7.37.0"
+  },
+  {
+   "date": "2026-10-17T00:39:38Z",
+   "deprecated": false,
+   "version": "7.36.0"
+  },
+  {
+   "date": "2026-10-16T20:29:35Z",
+   "deprecated": false,
+   "version": "7.35.0"
+  },
+  {
+   "date": "2026-10-14T21:34:49Z",
+   "deprecated": false,
+   "version": "7.34.0"
+  },
+  {
+   "date": "2026-10-14T05:48:35Z",
+   "deprecated": false,
+   "version": "7.33.0"
+  },
+  {
+   "date": "2026-10-09T21:16:41Z",
+   "deprecated": false,
+   "version": "7.32.0"
+  },
+  {
+   "date": "2026-10-09T04:13:08Z",
+   "deprecated": false,
+   "version": "7.31.0"
+  },
+  {
+   "date": "2026-10-08T09:01:13Z",
+   "deprecated": false,
+   "version": "7.30.1"
+  },
+  {
+   "date": "2026-10-06T21:59:13Z",
+   "deprecated": false,
+   "version": "7.30.0"
+  },
+  {
+   "date": "2026-10-04T18:31:37Z",
+   "deprecated": false,
+   "version": "7.28.0"
+  },
+  {
+   "date": "2026-10-01T23:10:23Z",
+   "deprecated": false,
+   "version": "7.27.0"
+  },
+  {
+   "date": "2026-10-01T21:22:28Z",
+   "deprecated": false,
+   "version": "7.26.0"
+  },
+  {
+   "date": "2026-09-29T19:16:19Z",
+   "deprecated": false,
+   "version": "7.25.0"
+  },
+  {
+   "date": "2026-09-29T17:58:38Z",
+   "deprecated": false,
+   "version": "7.24.0"
+  },
+  {
+   "date": "2026-09-23T07:19:25Z",
+   "deprecated": false,
+   "version": "7.23.0"
+  },
+  {
+   "date": "2026-09-22T18:36:25Z",
+   "deprecated": false,
+   "version": "7.22.0"
+  },
+  {
+   "date": "2026-09-22T02:28:49Z",
+   "deprecated": false,
+   "version": "7.21.0"
+  },
+  {
+   "date": "2026-09-19T18:32:26Z",
+   "deprecated": false,
+   "version": "7.20.0"
+  },
+  {
+   "date": "2026-09-18T19:35:54Z",
+   "deprecated": false,
+   "version": "7.19.0"
+  },
+  {
+   "date": "2026-09-18T00:47:26Z",
+   "deprecated": false,
+   "version": "7.18.0"
+  },
+  {
+   "date": "2026-09-16T19:36:19Z",
+   "deprecated": false,
+   "version": "7.17.0"
+  },
+  {
+   "date": "2026-09-16T16:37:11Z",
+   "deprecated": false,
+   "version": "7.16.0"
+  },
+  {
+   "date": "2026-09-10T19:46:30Z",
+   "deprecated": false,
+   "version": "7.15.0"
+  },
+  {
+   "date": "2026-09-10T17:40:27Z",
+   "deprecated": false,
+   "version": "7.14.0"
+  },
+  {
+   "date": "2026-09-09T15:44:55Z",
+   "deprecated": false,
+   "version": "7.13.0"
+  },
+  {
+   "date": "2026-09-09T01:28:59Z",
+   "deprecated": false,
+   "version": "7.12.1"
+  },
+  {
+   "date": "2026-09-03T19:56:42Z",
+   "deprecated": false,
+   "version": "7.10.0"
+  },
+  {
+   "date": "2026-09-02T01:39:46Z",
+   "deprecated": false,
+   "version": "7.9.0"
+  },
+  {
+   "date": "2026-08-27T16:54:24Z",
+   "deprecated": false,
+   "version": "7.8.0"
+  },
+  {
+   "date": "2026-08-27T01:07:24Z",
+   "deprecated": false,
+   "version": "7.7.0"
+  },
+  {
+   "date": "2026-08-26T21:56:22Z",
+   "deprecated": false,
+   "version": "7.6.0"
+  },
+  {
+   "date": "2026-08-17T19:18:01Z",
+   "deprecated": false,
+   "version": "7.5.0"
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "4.6.3",
+ "metadata_fetched": "2026-11-02T17:00:35Z",
+ "package": "nuxt",
+ "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
+ "registry": "https://www.npmjs.com/package/nuxt",
+ "releases": [
+  {
+   "date": "2026-10-27T01:08:54Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/nuxt/4.6.3",
+   "json": "https://releases.formachines.ai/pkg/npm/nuxt/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8ad3f0d623/",
+   "notes_url": "https://github.com/nuxt/nuxt/releases/tag/v4.6.3",
+   "package": "nuxt",
+   "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "4.6.3",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/nuxt/nuxt",
+ "summary": "Nuxt is a free and open-source framework with an intuitive and extendable way to create type-safe, performant and production-grade full-stack web applications and websites with Vue.js."
+}

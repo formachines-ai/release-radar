@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:45Z",
+ "homepage": "https://github.com/huggingface/huggingface_hub",
+ "latest": "2.4.0",
+ "name": "huggingface-hub",
+ "page": "https://pypi.org/project/huggingface-hub/",
+ "repo": "huggingface/huggingface_hub",
+ "summary": "Client library to download and publish models, datasets and other repos on the huggingface.co hub",
+ "versions": [
+  {
+   "date": "2026-10-29T15:30:10Z",
+   "version": "2.4.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-29T14:11:26Z",
+   "version": "2.4.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-23T08:52:04Z",
+   "version": "2.3.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-22T13:22:58Z",
+   "version": "2.3.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-22T12:06:28Z",
+   "version": "2.3.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-08T15:30:57Z",
+   "version": "2.2.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-08T14:42:17Z",
+   "version": "2.2.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-01T12:32:32Z",
+   "version": "2.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-01T12:12:11Z",
+   "version": "2.1.0",
+   "yanked": true
+  },
+  {
+   "date": "2026-10-01T09:57:58Z",
+   "version": "2.1.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T12:01:21Z",
+   "version": "2.0.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T10:37:46Z",
+   "version": "2.0.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T09:49:28Z",
+   "version": "1.33.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T09:45:39Z",
+   "version": "1.33.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-24T09:25:59Z",
+   "version": "1.33.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-17T10:27:46Z",
+   "version": "1.32.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-17T10:04:22Z",
+   "version": "1.32.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-10T10:27:20Z",
+   "version": "1.31.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-10T10:12:21Z",
+   "version": "1.31.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-10T09:27:31Z",
+   "version": "1.31.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-03T10:05:12Z",
+   "version": "1.30.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-03T09:16:48Z",
+   "version": "1.30.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-27T12:18:35Z",
+   "version": "1.29.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-27T10:44:41Z",
+   "version": "1.29.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-18T12:27:12Z",
+   "version": "1.28.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-18T11:54:35Z",
+   "version": "1.28.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-07T12:48:02Z",
+   "version": "1.27.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-07T11:52:00Z",
+   "version": "1.27.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-06T09:42:22Z",
+   "version": "1.26.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-30T14:12:01Z",
+   "version": "1.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-30T11:23:21Z",
+   "version": "1.26.0rc2",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-30T11:19:50Z",
+   "version": "1.26.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-30T10:06:01Z",
+   "version": "1.26.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-27T09:24:08Z",
+   "version": "1.25.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-27T08:52:49Z",
+   "version": "1.25.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-27T08:04:48Z",
+   "version": "1.25.0rc0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-17T09:53:59Z",
+   "version": "1.24.0",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-17T09:39:26Z",
+   "version": "1.24.0rc3",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-17T09:34:47Z",
+   "version": "1.24.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-17T08:36:10Z",
+   "version": "1.24.0rc0",
+   "yanked": false
+  }
+ ]
+}

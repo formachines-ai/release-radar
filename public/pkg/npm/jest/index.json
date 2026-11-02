@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "30.5.2",
+ "metadata_fetched": "2026-11-02T17:00:33Z",
+ "package": "jest",
+ "page": "https://releases.formachines.ai/pkg/npm/jest/",
+ "registry": "https://www.npmjs.com/package/jest",
+ "releases": [],
+ "repository": "https://github.com/jestjs/jest",
+ "summary": "Delightful JavaScript Testing."
+}

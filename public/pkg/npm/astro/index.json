@@ -1,0 +1,97 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "7.4.5",
+ "metadata_fetched": "2026-11-02T17:00:21Z",
+ "package": "astro",
+ "page": "https://releases.formachines.ai/pkg/npm/astro/",
+ "registry": "https://www.npmjs.com/package/astro",
+ "releases": [
+  {
+   "date": "2026-11-02T14:26:27Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/astro/7.4.5",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/200b27eec9/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.5",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…amic tags, JSX, and MDX. Only the leading part of the string that is a valid element name is rendered, so characters such as `/` or `=` can no longer change the generated markup. A string that does not start with a valid element name (for example `'!--'` or `''`) now throws an er…"
+    }
+   ],
+   "version": "7.4.5",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-29T18:38:29Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.4-beta.0",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8be236ae0c/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.4-beta.0",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "7.4.4-beta.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-28T20:21:47Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.4",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4c3654a295/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.4",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.4.4",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-10-28T14:57:38Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/astro/7.4.3",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1da85efb08/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.3",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…://github.com/withastro/astro/commit/e4e25fa7d47e702985cbb1ee633d4ffb92f8dad6) Thanks [@umeraamir69](https://github.com/umeraamir69)! - CSP no longer hashes empty children on external stylesheets and scripts, which was inserting the SHA-256 of the empty string into `script-src` a…"
+    },
+    {
+     "match": "deprecation",
+     "quote": "…/astro/commit/d0240b9d5738a97f0b8ad100b76bce8b7527e4cd) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes a `DEP0190` deprecation warning printed by `astro info` on Node.js 24 and later…"
+    }
+   ],
+   "version": "7.4.3",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/withastro/astro",
+ "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
+}

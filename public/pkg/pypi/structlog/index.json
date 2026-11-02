@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "26.1.0",
+ "metadata_fetched": "2026-11-02T17:00:01Z",
+ "package": "structlog",
+ "page": "https://releases.formachines.ai/pkg/pypi/structlog/",
+ "registry": "https://pypi.org/project/structlog/",
+ "releases": [],
+ "repository": "https://github.com/hynek/structlog",
+ "summary": "Structured Logging for Python"
+}

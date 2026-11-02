@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T17:00:02Z",
+ "releases": [
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-10-30T15:10:39Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.4",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.4"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-10-19T16:58:07Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.3",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.3"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-10-03T14:56:55Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-08-26T17:25:34Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-07-31T11:31:29Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-07-29T18:07:19Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "17.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/17.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-07-17T22:51:07Z",
+   "name": "16.1.1",
+   "prerelease": false,
+   "tag": "16.1.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/16.1.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-07-10T06:33:00Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "16.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/16.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2026-01-10T09:23:48Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "16.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/16.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2025-03-05T20:03:43Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "15.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/15.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2025-02-16T11:06:57Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "15.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/15.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2025-01-19T21:00:58Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "14.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/14.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2024-11-13T07:11:30Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "14.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/14.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2024-11-09T13:17:00Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "14.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/14.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2024-09-21T17:34:23Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "13.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/13.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2024-08-28T20:53:35Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "13.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/13.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2024-08-20T14:05:48Z",
+   "name": "13.0",
+   "prerelease": false,
+   "tag": "13.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/13.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-10-21T14:25:02Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "12.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/12.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:33Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "11.0.3",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/11.0.3"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:32Z",
+   "name": "11.0.2",
+   "prerelease": false,
+   "tag": "11.0.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/11.0.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:32Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "11.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/11.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:31Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "11.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/11.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:30Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "10.4",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/10.4"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:29Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "10.3",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/10.3"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:28Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "10.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/10.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:27Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "10.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/10.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:26Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "10.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/10.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:55Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "9.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/9.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:55Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "9.0.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/9.0.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:54Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "9.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/9.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:53Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "9.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/9.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:52Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/8.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:51Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/8.0.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:50Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/8.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:50Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/8.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:49Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "7.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/7.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:48Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "6.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/6.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:47Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "5.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/5.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:46Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "5.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/5.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:46Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "4.0.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/4.0.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:45Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "4.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/4.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:44Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "3.4",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/3.4"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:43Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "3.3",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/3.3"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:42Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "3.2",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/3.2"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:41Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "3.1",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/3.1"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:41Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "3.0",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/3.0"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:40Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "2.7",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/2.7"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:39Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "2.6",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/2.6"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:38Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "2.5",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/2.5"
+  },
+  {
+   "body": "See https://websockets.readthedocs.io/en/stable/project/changelog.html for details.",
+   "date": "2023-05-07T14:24:37Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "2.4",
+   "url": "https://github.com/python-websockets/websockets/releases/tag/2.4"
+  }
+ ],
+ "repo": "python-websockets/websockets"
+}

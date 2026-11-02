@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://github.com/microsoft/playwright-python/releases",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "1.64.1",
+ "metadata_fetched": "2026-11-02T16:59:55Z",
+ "package": "playwright",
+ "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
+ "registry": "https://pypi.org/project/playwright/",
+ "releases": [],
+ "repository": "https://github.com/microsoft/playwright-python",
+ "summary": "A high-level API to automate web browsers"
+}

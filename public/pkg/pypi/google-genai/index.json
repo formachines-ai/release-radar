@@ -1,0 +1,44 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": {
+  "errata": 1,
+  "json": "https://formachines.ai/errata/pypi/google-genai/index.json",
+  "new_version": "2.34.0",
+  "old_version": "1.69.0",
+  "updated": "2026-10-31",
+  "url": "https://formachines.ai/errata/pypi/google-genai/"
+ },
+ "latest": "2.34.0",
+ "metadata_fetched": "2026-11-02T16:59:44Z",
+ "package": "google-genai",
+ "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
+ "registry": "https://pypi.org/project/google-genai/",
+ "releases": [
+  {
+   "date": "2026-10-29T06:43:21Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
+   "flagged": true,
+   "id": "pypi/google-genai/2.34.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1eed7297f6/",
+   "notes_url": "https://github.com/googleapis/python-genai/releases/tag/v2.34.0",
+   "package": "google-genai",
+   "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "Drop support",
+     "quote": "* Drop support for Python 3.10 ([2677298](https://github.com/googleapis/python-genai/commit/2677298eaa011df6662d6379280441d75a4693aa))"
+    }
+   ],
+   "version": "2.34.0",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/googleapis/python-genai",
+ "summary": "GenAI Python SDK"
+}

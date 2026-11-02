@@ -1,0 +1,213 @@
+{
+ "changelog": "https://docs.djangoproject.com/en/stable/releases/",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:54Z",
+ "homepage": "https://www.djangoproject.com/",
+ "latest": "6.1.2",
+ "name": "Django",
+ "page": "https://pypi.org/project/django/",
+ "repo": "django/django",
+ "summary": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+ "versions": [
+  {
+   "date": "2026-10-06T13:01:04Z",
+   "version": "5.2.18",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-06T12:57:52Z",
+   "version": "6.0.9",
+   "yanked": false
+  },
+  {
+   "date": "2026-10-06T12:53:17Z",
+   "version": "6.1.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-09-02T17:20:39Z",
+   "version": "6.1.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-05T19:21:47Z",
+   "version": "6.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-04T15:03:59Z",
+   "version": "5.2.17",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-04T15:03:35Z",
+   "version": "6.0.8",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-22T20:07:43Z",
+   "version": "6.1rc1",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-07T13:52:11Z",
+   "version": "5.2.16",
+   "yanked": false
+  },
+  {
+   "date": "2026-07-07T13:51:20Z",
+   "version": "6.0.7",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-24T17:34:04Z",
+   "version": "6.1b1",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-03T13:03:31Z",
+   "version": "5.2.15",
+   "yanked": false
+  },
+  {
+   "date": "2026-06-03T13:02:41Z",
+   "version": "6.0.6",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-20T19:40:43Z",
+   "version": "6.1a1",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-05T13:57:25Z",
+   "version": "5.2.14",
+   "yanked": false
+  },
+  {
+   "date": "2026-05-05T13:54:33Z",
+   "version": "6.0.5",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-07T14:05:38Z",
+   "version": "4.2.30",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-07T14:02:08Z",
+   "version": "5.2.13",
+   "yanked": false
+  },
+  {
+   "date": "2026-04-07T13:55:37Z",
+   "version": "6.0.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-03T13:56:36Z",
+   "version": "4.2.29",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-03T13:56:01Z",
+   "version": "5.2.12",
+   "yanked": false
+  },
+  {
+   "date": "2026-03-03T13:55:10Z",
+   "version": "6.0.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-03T13:55:09Z",
+   "version": "4.2.28",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-03T13:52:42Z",
+   "version": "5.2.11",
+   "yanked": false
+  },
+  {
+   "date": "2026-02-03T13:50:15Z",
+   "version": "6.0.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-06T18:55:46Z",
+   "version": "6.0.1",
+   "yanked": false
+  },
+  {
+   "date": "2026-01-06T18:55:20Z",
+   "version": "5.2.10",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-03T16:26:16Z",
+   "version": "6.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T14:01:44Z",
+   "version": "4.2.27",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T14:01:27Z",
+   "version": "5.1.15",
+   "yanked": false
+  },
+  {
+   "date": "2025-12-02T14:01:03Z",
+   "version": "5.2.9",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-19T14:56:30Z",
+   "version": "6.0rc1",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-05T14:08:20Z",
+   "version": "4.2.26",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-05T14:07:53Z",
+   "version": "5.1.14",
+   "yanked": false
+  },
+  {
+   "date": "2025-11-05T14:07:28Z",
+   "version": "5.2.8",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-22T18:50:49Z",
+   "version": "6.0b1",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-01T15:05:46Z",
+   "version": "4.2.25",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-01T14:25:28Z",
+   "version": "5.1.13",
+   "yanked": false
+  },
+  {
+   "date": "2025-10-01T14:22:12Z",
+   "version": "5.2.7",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-17T19:05:31Z",
+   "version": "6.0a1",
+   "yanked": false
+  }
+ ]
+}

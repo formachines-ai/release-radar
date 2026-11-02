@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-02T17:00:33Z",
+ "releases": [
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### `mount()` and `app.mount()` can forward a path that bypasses middleware scoped inside the mount prefix\r\n\r\nAffects: `mount()` in `hono/mount` and `app.mount()`. A dynamic prefix such as `/api/:tenant/*` was removed by the length of the route pattern. The forwarded path was also re-normalized by the URL parser, so a decoded `\\` became `/` and `..` collapsed. Both let a crafted request skip middleware scoped inside the mount prefix. Routes such as `/assets*` and duplicate parameter names now throw. GHSA-4m76-xfj5-7975\r\n\r\n### RegExpRouter skips wildcard middleware for certain route patterns and for paths with an encoded line terminator\r\n\r\nAffects: `RegExpRouter`, including the default `SmartRouter`. Wildcard middleware was not applied in three cases: a parameter written as `{[^/]+}` in the middleware path only, a `/prefix*` route next to `/prefix/*` middleware, and a path with an encoded line terminator. RegExpRouter now covers the same routes as the other routers. Custom patterns that can match the empty string, such as `{[0-9]*}`, throw `UnsupportedPathError`. Regenerate `PreparedRegExpRouter` data. GHSA-h7mg-cq63-vhpq\r\n\r\n### `validator('form')` skips validation for `multipart/form-data` requests with extra parameters\r\n\r\nAffects: `validator('form')` in `hono/validator`. A `multipart/form-data` request with an extra parameter such as `charset` was not recognized as a form. The validator then saw an empty object while the handler could read all fields. GHSA-4h7h-rv7c-7m2v\r\n\r\n### `css` helper does not escape a closing tag assembled from template parts and values, allowing HTML injection\r\n\r\nAffects: `css` in `hono/css`. A `</style>` split between the template and a value, or between two values, was not escaped. Closing tags are now escaped after minification. GHSA-3gg2-335m-rxc6\r\n\r\n### `csrf()` does not check requests sent by hyperlink auditing (`text/ping`)\r\n\r\nAffects: `csrf()` in `hono/csrf`. A POST sent by Chromium's `<a ping>` has the content type `text/ping` and was not checked against `Origin` and `Sec-Fetch-Site`. GHSA-46wx-v44x-9hh2\r\n\r\n---\r\n\r\nUsers who rely on path-scoped middleware with `mount()`, wildcard middleware with the default router, `validator('form')`, the `css` helper with untrusted values, or `csrf()` are strongly encouraged to upgrade to this version.\r\n\r\n## What's Changed\r\n* fix(jwt): reject a signature segment outside the base64url alphabet and a header with `crit` in https://github.com/honojs/hono/pull/5597\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.15...v4.13.16\r\n",
+   "date": "2026-11-01T03:10:37Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "v4.13.16",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.16"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(auth): escape backslashes in the WWW-Authenticate realm by @yusukebe in https://github.com/honojs/hono/pull/5590\r\n* docs(contributing): drop the note about linking a fork branch by @yusukebe in https://github.com/honojs/hono/pull/5593\r\n* fix(context): allow `c.header()` after the response body is consumed by @yusukebe in https://github.com/honojs/hono/pull/5587\r\n\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.14...v4.13.15",
+   "date": "2026-11-01T02:02:57Z",
+   "name": "v4.13.15",
+   "prerelease": false,
+   "tag": "v4.13.15",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.15"
+  },
+  {
+   "body": "## What's Changed\r\n* docs(contributing): ask for issues instead of RPs https://github.com/honojs/hono/pull/5526\r\n* docs(readme): sync the contributing list with CONTRIBUTING.md https://github.com/honojs/hono/pull/5527\r\n* fix(adapters): accept Hono v5 prereleases in the `hono` peer range https://github.com/honojs/hono/pull/5537\r\n* chore: unified oxfmt and oxlint config https://github.com/honojs/hono/pull/5518\r\n* docs(readme): remove the deepwiki badge https://github.com/honojs/hono/pull/5548\r\n* fix(serve-static): only serve GET and HEAD requests https://github.com/honojs/hono/pull/5514\r\n* fix(build): keep barrel imports in the bundled `d.ts` https://github.com/honojs/hono/pull/5557\r\n* fix(jsx): preserve self-closing void elements in cloneElement https://github.com/honojs/hono/pull/5314\r\n* fix(css): keep \"//\" inside an unquoted url() when minifying https://github.com/honojs/hono/pull/5450\r\n* fix(css): keep the descendant combinator before a pseudo-class when minifying https://github.com/honojs/hono/pull/5451\r\n* fix(serve-static): respect q-values in Accept-Encoding for precompressed files https://github.com/honojs/hono/pull/5436\r\n* fix(helper/route): match regex params in basePath() the same way as the router https://github.com/honojs/hono/pull/5498\r\n* fix(trie-router): keep first value for duplicate path params https://github.com/honojs/hono/pull/5423\r\n* fix(hono-base): disallow `getPath` when `strict` is `false` https://github.com/honojs/hono/pull/5563\r\n* fix(css): Fix multiline CSS handling in style replacement https://github.com/honojs/hono/pull/5405\r\n* feat(bearer-auth): allow MessageFunction to return a Response https://github.com/honojs/hono/pull/5269\r\n* fix(utils/url): preserve encoded duplicate query order https://github.com/honojs/hono/pull/5495\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.13...v4.13.14",
+   "date": "2026-10-25T07:19:38Z",
+   "name": "v4.13.14",
+   "prerelease": false,
+   "tag": "v4.13.14",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.14"
+  },
+  {
+   "body": "",
+   "date": "2026-10-10T12:34:21Z",
+   "name": "",
+   "prerelease": true,
+   "tag": "v5.0.0-rc.1",
+   "url": "https://github.com/honojs/hono/releases/tag/v5.0.0-rc.1"
+  },
+  {
+   "body": "",
+   "date": "2026-10-08T05:56:34Z",
+   "name": "v5.0.0-rc.0",
+   "prerelease": true,
+   "tag": "v5.0.0-rc.0",
+   "url": "https://github.com/honojs/hono/releases/tag/v5.0.0-rc.0"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:27Z",
+   "name": "@hono/vercel@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/vercel@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/vercel%401.0.1"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:27Z",
+   "name": "@hono/service-worker@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/service-worker@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/service-worker%401.0.1"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:26Z",
+   "name": "@hono/netlify@1.0.2",
+   "prerelease": false,
+   "tag": "@hono/netlify@1.0.2",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/netlify%401.0.2"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:25Z",
+   "name": "@hono/lambda-edge@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/lambda-edge@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/lambda-edge%401.0.1"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:24Z",
+   "name": "@hono/deno@1.0.3",
+   "prerelease": false,
+   "tag": "@hono/deno@1.0.3",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/deno%401.0.3"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:23Z",
+   "name": "@hono/cloudflare-workers@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/cloudflare-workers@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/cloudflare-workers%401.0.1"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:21Z",
+   "name": "@hono/bun@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/bun@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/bun%401.0.1"
+  },
+  {
+   "body": "## What's Changed\n\n- Accept Hono v5 prereleases in the `hono` peer range, so `npm install` with `hono@next` no longer fails with ERESOLVE by @yusukebe in https://github.com/honojs/hono/pull/5537\n- Keep internal types private in the bundled `d.ts` by @yusukebe in https://github.com/honojs/hono/pull/5485",
+   "date": "2026-10-08T05:15:20Z",
+   "name": "@hono/aws-lambda@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/aws-lambda@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/aws-lambda%401.0.1"
+  },
+  {
+   "body": "## Mount Middleware\r\n\r\n`app.mount()` is now available as the Mount Middleware, `hono/mount`. It is just a handler, so you register it with `app.all()`:\r\n\r\n```ts\r\nimport { Router as IttyRouter } from 'itty-router'\r\nimport { Hono } from 'hono'\r\nimport { mount } from 'hono/mount'\r\n\r\nconst ittyRouter = IttyRouter()\r\nittyRouter.get('/hello', () => new Response('Hello from itty-router'))\r\n\r\nconst app = new Hono()\r\napp.all('/itty-router/*', mount(ittyRouter.handle))\r\n```\r\n\r\n`app.mount()` still works in v4 but is deprecated and will be removed in v5. Migrating is a one-line change:\r\n\r\n```diff\r\n- app.mount('/itty-router', ittyRouter.handle)\r\n+ app.all('/itty-router/*', mount(ittyRouter.handle))\r\n```\r\n\r\n## What's Changed\r\n* test(client): simulate network error for undefined route in parseResponse test in https://github.com/honojs/hono/pull/5439\r\n* docs(request): fix jsdoc comments for some getters in https://github.com/honojs/hono/pull/5445\r\n* fix(jsx): allow JSXNode function component results in https://github.com/honojs/hono/pull/5476\r\n* feat(mount): introduce Mount Middleware and deprecate `app.mount` in https://github.com/honojs/hono/pull/5221\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.12...v4.13.13",
+   "date": "2026-10-04T03:54:35Z",
+   "name": "v4.13.13",
+   "prerelease": false,
+   "tag": "v4.13.13",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.13"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(build): keep internal types private in bundled d.ts and avoid a self-referencing JSX.IntrinsicElements in https://github.com/honojs/hono/pull/5485\r\n* test(build): type-check the bundled declarations from a consumer project in https://github.com/honojs/hono/pull/5486\r\n* fix(etag): correctly match mixed-case header name in retainedHeader option in https://github.com/honojs/hono/pull/5475\r\n* fix(jsx): add px to numeric gridGap, gridRowGap and gridColumnGap in https://github.com/honojs/hono/pull/5487\r\n* fix(combine): return a Response from a short-circuiting middleware in some() in https://github.com/honojs/hono/pull/5391\r\n* chore(deps): upgrade vite-plus to 1.0.0 in https://github.com/honojs/hono/pull/5464\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.11...v4.13.12",
+   "date": "2026-09-30T09:43:10Z",
+   "name": "v4.13.12",
+   "prerelease": false,
+   "tag": "v4.13.12",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.12"
+  },
+  {
+   "body": "## Security fixes\r\n\r\n### `serveStatic` decodes the request path a second time, leading to bypass of middleware on static paths\r\n\r\nAffects: `hono/serve-static` and the adapters built on it (`hono/bun`, `hono/deno`, `hono/cloudflare-workers`, `@hono/bun`, `@hono/deno`, `@hono/cloudflare-workers`). Fixes `serveStatic` decoding an already-decoded path, where a crafted request could be routed as one path and served as another, skipping middleware mounted on a static prefix. GHSA-5r4p-p66f-jhc7\r\n\r\n`serveStatic` now rejects request paths that still contain `%` after decoding. To serve files whose names contain a literal `%`, set `allowPercentInPath: true`.\r\n\r\nThe same fix ships in `@hono/node-server` v2.1.3.\r\n",
+   "date": "2026-09-29T06:19:04Z",
+   "name": "v4.13.11",
+   "prerelease": false,
+   "tag": "v4.13.11",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.11"
+  },
+  {
+   "body": "## Adapters are now separate packages\r\n\r\nThe runtime adapters are now published as their own packages: `@hono/bun`, `@hono/deno`, `@hono/cloudflare-workers`, `@hono/aws-lambda`, `@hono/lambda-edge`, `@hono/netlify`, `@hono/vercel`, and `@hono/service-worker`. `@hono/deno` is also on JSR.\r\n\r\n`hono/<adapter>` still works in v4 but is deprecated and will be removed in v5. Migrating is an import change:\r\n\r\n```diff\r\n- import { serveStatic } from 'hono/bun'\r\n+ import { serveStatic } from '@hono/bun'\r\n```\r\n\r\nhono/cloudflare-pages is deprecated without a replacement package; Cloudflare recommends Workers with static assets.\r\n\r\n## What's Changed\r\n* chore: migrate the package manager from bun to pnpm in https://github.com/honojs/hono/pull/5433\r\n* chore(package.json): invoke package scripts through pnpm instead of bun in https://github.com/honojs/hono/pull/5434\r\n* chore: replace prettier with oxfmt in https://github.com/honojs/hono/pull/5435\r\n* chore(deps): upgrade vitest to 5.0.1 in https://github.com/honojs/hono/pull/5437\r\n* chore: let oxfmt sort imports instead of eslint in https://github.com/honojs/hono/pull/5442\r\n* chore: replace eslint with oxlint in https://github.com/honojs/hono/pull/5443\r\n* chore: introduce Vite+ in https://github.com/honojs/hono/pull/5444\r\n* fix(types): allow returning a Blob as a response body in https://github.com/honojs/hono/pull/5446\r\n* chore: convert build scripts into plugins in https://github.com/honojs/hono/pull/5448\r\n* chore: stop editorconfig-checker from checking Markdown indent size in https://github.com/honojs/hono/pull/5455\r\n* ci: remove empty step left in `cr.yml` by the pnpm migration in https://github.com/honojs/hono/pull/5456\r\n* chore(deps): upgrade vite-plus to `1.0.0-rc.1` in https://github.com/honojs/hono/pull/5459\r\n* feat(adapters): add @hono/bun as a workspace package in https://github.com/honojs/hono/pull/5447\r\n* chore(adapters/bun): ship ESM only in https://github.com/honojs/hono/pull/5462\r\n* feat(adapters): add the seven adapters as workspace packages in https://github.com/honojs/hono/pull/5463\r\n* feat(adapters/deno): publish to JSR in https://github.com/honojs/hono/pull/5465\r\n* test: move adapter runtime tests into `adapters/*` in https://github.com/honojs/hono/pull/5466\r\n\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.9...v4.13.10",
+   "date": "2026-09-28T08:24:41Z",
+   "name": "v4.13.10",
+   "prerelease": false,
+   "tag": "v4.13.10",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.10"
+  },
+  {
+   "body": "",
+   "date": "2026-09-28T08:49:12Z",
+   "name": "@hono/netlify@1.0.1",
+   "prerelease": false,
+   "tag": "@hono/netlify@1.0.1",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/netlify%401.0.1"
+  },
+  {
+   "body": "",
+   "date": "2026-09-28T08:48:37Z",
+   "name": "@hono/deno@1.0.2",
+   "prerelease": false,
+   "tag": "@hono/deno@1.0.2",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/deno%401.0.2"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(jsx): replace Suspense and ErrorBoundary content across newlines in https://github.com/honojs/hono/pull/5380\r\n* fix(accepts): match media types and language tags case-insensitively in https://github.com/honojs/hono/pull/5376\r\n* fix(linear-router): don't match an empty path segment as a param in https://github.com/honojs/hono/pull/5373\r\n* fix(pretty-json): don't break responses with unparseable JSON bodies in https://github.com/honojs/hono/pull/5377\r\n* fix(jwt): throw JwtTokenInvalid when the signature is not valid base64url in https://github.com/honojs/hono/pull/5379\r\n* fix(aws-lambda): treat binary +xml archive media types as binary in https://github.com/honojs/hono/pull/5424\r\n* fix(aws-lambda): preserve empty query parameters in https://github.com/honojs/hono/pull/5292\r\n* fix(lambda-edge): sync content type detection with aws-lambda in https://github.com/honojs/hono/pull/5426\r\n* fix(lambda-edge): fail with a descriptive error on a malformed event in https://github.com/honojs/hono/pull/5358\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.8...v4.13.9",
+   "date": "2026-09-24T01:32:14Z",
+   "name": "v4.13.9",
+   "prerelease": false,
+   "tag": "v4.13.9",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.9"
+  },
+  {
+   "body": "## What's Changed\r\n* docs: fix typos in code comments and link third-party middleware section in https://github.com/honojs/hono/pull/5343\r\n* perf(jsx/dom): reduce lookup work for large keyed updates in https://github.com/honojs/hono/pull/5340\r\n* fix(aws-lambda): respect backpressure when streaming the response body in https://github.com/honojs/hono/pull/5351\r\n* fix(accepts, language): skip accept entries with quality 0 when matching in https://github.com/honojs/hono/pull/5311\r\n* fix(accept): treat the q parameter name as case-insensitive in https://github.com/honojs/hono/pull/5349\r\n* fix(accept): clamp a negative q to 0, not 1 in https://github.com/honojs/hono/pull/5357\r\n* fix(request): keep the request media type when reusing a cached body in https://github.com/honojs/hono/pull/5366\r\n* docs(combine): fix except() JSDoc param and add missing @returns in https://github.com/honojs/hono/pull/5346\r\n* perf(jsx/dom): optimize matching-head child lookup during reconciliation in https://github.com/honojs/hono/pull/5329\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.7...v4.13.8",
+   "date": "2026-09-15T07:31:42Z",
+   "name": "v4.13.8",
+   "prerelease": false,
+   "tag": "v4.13.8",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.8"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes a fix for the following security issue:\r\n\r\n### `hono/jsx` renders plain strings unescaped in boundary components, leading to XSS\r\n\r\nAffects: `Suspense`, `ErrorBoundary`, and `Context.Provider` in `hono/jsx`, and `renderToString()` / `renderToReadableStream()` in `hono/jsx/dom/server`. Fixes missing HTML escaping for a plain string placed directly as a child or `fallback` of these components, or as the root value of the server rendering functions, so untrusted strings could be emitted as markup. GHSA-hxh3-vqpv-xpqv\r\n\r\n---\r\n\r\nUsers who render untrusted strings inside `Suspense`, `ErrorBoundary`, or `Context.Provider`, or pass them directly to `hono/jsx/dom/server`, are strongly encouraged to upgrade to this version.",
+   "date": "2026-09-04T19:18:14Z",
+   "name": "v4.13.7",
+   "prerelease": false,
+   "tag": "v4.13.7",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.7"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(client): keep a param value of \"index\" in $url() and $path() in https://github.com/honojs/hono/pull/5297\r\n* fix(client): normalize root WebSocket URLs in https://github.com/honojs/hono/pull/5291\r\n* fix(types): allow symbol keys in Context<any> get and set fallbacks in https://github.com/honojs/hono/pull/5300\r\n* chore: bump `editorconfig-checker` in https://github.com/honojs/hono/pull/5336\r\n* refactor(on-handler): use forEach for consistent handler iteration in https://github.com/honojs/hono/pull/5326\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.5...v4.13.6",
+   "date": "2026-09-04T19:08:08Z",
+   "name": "v4.13.6",
+   "prerelease": false,
+   "tag": "v4.13.6",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.6"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Query parser reads parameters after the URL fragment, causing cache-key and proxy interpretation differentials\r\n\r\nAffects: Cache Middleware and applications behind a proxy, WAF, or logging layer that inspects query strings. Fixes query parsing that did not stop at the URL fragment, so a `?` after a `#` was treated as the start of a query string and the application could read parameters that the other component never saw. GHSA-crvj-82cr-hjcx\r\n\r\n### Incomplete fix for CVE-2026-39408: `toSSG()` still writes files outside the output directory\r\n\r\nAffects: `toSSG()` for Static Site Generation. Fixes a path normalization gap where consecutive parent-directory segments in `ssgParams` values were not fully collapsed, bypassing the containment check added in 4.12.12. GHSA-gqvv-2mrq-wpjv\r\n\r\n### Unbounded dot-notation nesting in `parseBody()` can cause memory exhaustion\r\n\r\nAffects: `parseBody()` when dot-notation parsing is enabled. Fixes unbounded expansion of dot-separated field names, where a small request body could allocate a disproportionately large object graph and concurrent requests could exhaust the heap. GHSA-g6gw-c38x-mqfc\r\n\r\n---\r\n\r\nUsers who use Cache Middleware, deploy behind a proxy or WAF that inspects query strings, use Static Site Generation, or use `parseBody({ dot: true })` are strongly encouraged to upgrade to this version.",
+   "date": "2026-08-26T02:00:33Z",
+   "name": "v4.13.5",
+   "prerelease": false,
+   "tag": "v4.13.5",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.5"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(request): handle params on unmatched requests in https://github.com/honojs/hono/pull/5268\r\n* fix(jsx/dom): execute previous ref cleanup when ref prop changes on re-render  in https://github.com/honojs/hono/pull/5264\r\n* fix(reg-exp-router): associate wildcard middleware with matching routes in https://github.com/honojs/hono/pull/5266\r\n* perf(router): share null object creation in https://github.com/honojs/hono/pull/5267\r\n* fix(etag): match If-None-Match tags with optional whitespace before the comma in https://github.com/honojs/hono/pull/5222\r\n* fix(client): skip undefined header and cookie values in https://github.com/honojs/hono/pull/5244\r\n* fix(client): skip an undefined entry inside a query array in https://github.com/honojs/hono/pull/5272\r\n* fix(client): skip an undefined entry inside a form array in https://github.com/honojs/hono/pull/5280\r\n* fix(client): support custom buildSearchParams and filter undefined query in $ws() bin https://github.com/honojs/hono/pull/5256\r\n* fix(accepts): support wildcard media types and specificity ordering in defaultMatch in https://github.com/honojs/hono/pull/5255\r\n* fix(client): omit empty query delimiter in https://github.com/honojs/hono/pull/5283\r\n* fix(request): drop stale content length for cloned FormData in https://github.com/honojs/hono/pull/5282\r\n* fix(request): serialize cached JSON body in cloneRawRequest in https://github.com/honojs/hono/pull/5288\r\n* fix(cookie): allow parsing signed cookies with empty string values in https://github.com/honojs/hono/pull/5246\r\n* fix(utils/stream): do not let abort listeners crash abort() in https://github.com/honojs/hono/pull/5274\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.3...v4.13.4",
+   "date": "2026-08-24T08:49:55Z",
+   "name": "v4.13.4",
+   "prerelease": false,
+   "tag": "v4.13.4",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.4"
+  },
+  {
+   "body": "## What's Changed\r\n\r\n* fix(client): prevent URL corruption when replaceUrlParam contains $ replacement tokens in https://github.com/honojs/hono/pull/5227\r\n* fix(etag): copy pending stream bytes in https://github.com/honojs/hono/pull/5239\r\n* fix(etag): avoid skipping headers when filtering 304 response headers in https://github.com/honojs/hono/pull/5234\r\n* fix(cors): append Origin to Vary header on OPTIONS preflight in https://github.com/honojs/hono/pull/5235\r\n* docs(context): add custom headers append option example to Context JSDoc in https://github.com/honojs/hono/pull/5248\r\n* fix(trie-router): match suffix wildcard routes in https://github.com/honojs/hono/pull/5236\r\n* fix(pattern-router/linear-router): prevent prefix overmatch on wildcard routes in https://github.com/honojs/hono/pull/5252\r\n* fix(csrf): exempt OPTIONS request from CSRF validation in https://github.com/honojs/hono/pull/5250\r\n* fix(utils/ipaddr): avoid truncation on embedded IPv4 addresses in expand IPv6 in https://github.com/honojs/hono/pull/5247\r\n* feat(pretty-json): support structured JSON content-types (+json) in https://github.com/honojs/hono/pull/5226\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.2...v4.13.3",
+   "date": "2026-08-18T10:57:10Z",
+   "name": "v4.13.3",
+   "prerelease": false,
+   "tag": "v4.13.3",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.3"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(secure-headers): output standard empty parentheses () instead of none for disabled Permissions-Policy directives in https://github.com/honojs/hono/pull/5197\r\n* fix(jsx): render async children of document metadata tags instead of [object Promise] in https://github.com/honojs/hono/pull/5204\r\n* fix(etag): resolve incorrect incremental hashing for chunked responses in https://github.com/honojs/hono/pull/5199\r\n* fix(client): serialize multiple cookies correctly in https://github.com/honojs/hono/pull/5202\r\n* fix(etag): stabilize digest across stream chunks in https://github.com/honojs/hono/pull/5205\r\n* fix(url): strip trailing question mark correctly for optional params with regex quantifiers in https://github.com/honojs/hono/pull/5209\r\n* perf(cors): pre-join static array header options during initialization in https://github.com/honojs/hono/pull/5210\r\n* fix(client): send falsy JSON bodies in https://github.com/honojs/hono/pull/5215\r\n* feat(secure-headers): add missing W3C Permissions-Policy directives in https://github.com/honojs/hono/pull/5214\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.1...v4.13.2",
+   "date": "2026-08-13T11:56:23Z",
+   "name": "v4.13.2",
+   "prerelease": false,
+   "tag": "v4.13.2",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.2"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(trie-router): count every slash a pattern consumes by @Jaybhade in https://github.com/honojs/hono/pull/5189\r\n* fix(utils/stream): re-acquire writer lock when pipe() throws by @Sriharsha-dev369 in https://github.com/honojs/hono/pull/4988\r\n* fix(etag): skip unsafe methods or error responses on non-* case by @na-trium-144 in https://github.com/honojs/hono/pull/5196\r\n\r\n## New Contributors\r\n* @Jaybhade made their first contribution in https://github.com/honojs/hono/pull/5189\r\n* @Sriharsha-dev369 made their first contribution in https://github.com/honojs/hono/pull/4988\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.0...v4.13.1",
+   "date": "2026-08-07T06:45:21Z",
+   "name": "v4.13.1",
+   "prerelease": false,
+   "tag": "v4.13.1",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.1"
+  },
+  {
+   "body": "Hono v4.13.0 is now available!\r\n\r\nThe highlight of this release is performance: a batch of low-level optimizations makes the core request/response path significantly faster — up to 1.25x on common routes in our benchmark. This release also adds first-class support for the HTTP QUERY method, defined in [RFC 10008](https://www.rfc-editor.org/rfc/rfc10008.html), a new Method Not Allowed middleware, and more.\r\n\r\n## Performance improvements\r\n\r\nThis release includes a series of small optimizations: skipping unnecessary `Headers` allocations, replacing regex tests with `indexOf`, allocating internal state lazily, and more.\r\n\r\nHere is [`benchmarks/fetch`](https://github.com/honojs/hono/tree/main/benchmarks/fetch) comparing v4.12 and v4.13 (`ROUNDS=5 ./compare.sh`, Bun 1.4.0, Apple Silicon — each measurement runs in a fresh process, and the variant order is reversed every round to avoid warm-up bias):\r\n\r\n| Benchmark | v4.12 | v4.13 | Speedup |\r\n| --- | ---: | ---: | ---: |\r\n| `ping` — `GET /` | 165.83 ns | 163.99 ns | 1.01x |\r\n| `query` — `GET /id/1?name=bun` | 674.40 ns | 616.99 ns | **1.09x** |\r\n| `json` — `GET /user` | 528.99 ns | 422.44 ns | **1.25x** |\r\n| `body` — `POST /json` | 1.16 µs | 1.00 µs | **1.15x** |\r\n\r\nThe individual changes:\r\n\r\n- perf(context): iterate the header record with `for..in` https://github.com/honojs/hono/pull/5118\r\n- perf(url): replace regex tests with `indexOf` https://github.com/honojs/hono/pull/5121\r\n- perf(context): skip `Headers` creation when there are no headers to merge https://github.com/honojs/hono/pull/5122\r\n- perf(urls): refactor `tryDecodeURIComponent` https://github.com/honojs/hono/pull/5158\r\n- perf(request): allocate `#validatedData` lazily https://github.com/honojs/hono/pull/5175\r\n- perf(request): probe the body cache without allocating https://github.com/honojs/hono/pull/5176\r\n\r\nIn addition, the RegExpRouter rewrite described below makes route registration plus the first match roughly 20% faster.\r\n\r\nThanks @kibertoad for the contributions!\r\n\r\n## First-class QUERY method support\r\n\r\nThe QUERY method — a safe, idempotent method that carries a request body — is now a first-class citizen in Hono. You can define QUERY handlers with `app.query()`:\r\n\r\n```ts\r\nconst app = new Hono()\r\n\r\napp.query('/search', async (c) => {\r\n  const conditions = await c.req.json()\r\n  return c.json(await search(conditions))\r\n})\r\n```\r\n\r\nThanks @shellhaki!\r\n\r\n## QUERY support across built-in middleware\r\n\r\nThe built-in middleware has been updated to handle QUERY requests properly:\r\n\r\n### Cache Middleware\r\n\r\nThe Cache Middleware now caches QUERY responses. Following RFC 10008 Section 2.7, the cache key incorporates a SHA-256 digest of the request content and its representation metadata, so different query bodies are cached separately:\r\n\r\n```ts\r\napp.query(\r\n  '/search',\r\n  cache({\r\n    cacheName: 'search-cache',\r\n    cacheControl: 'max-age=3600',\r\n  })\r\n)\r\n```\r\n\r\n**Note**: To support this, the internal cache key format has changed for all methods, including GET. Cached entries are now stored under an internal URL of the form `/.hono/cache?__hono_cache_key=...`. If you purge cache entries by URL outside of the middleware (e.g. calling `caches.delete()` with the original request URL), you will need to update that logic. Existing cache entries stored with the old format will simply be re-fetched.\r\n\r\n### ETag Middleware\r\n\r\nThe ETag Middleware now handles conditional requests for QUERY, returning `304 Not Modified` when `If-None-Match` matches.\r\n\r\n### CORS Middleware\r\n\r\nThe CORS Middleware now includes QUERY in the default `Access-Control-Allow-Methods`, which is now `GET, HEAD, PUT, POST, DELETE, PATCH, QUERY`. If you specify `allowMethods` explicitly, nothing changes for you.\r\n\r\nThanks @usualoma and @Cherry!\r\n\r\n## Method Not Allowed Middleware\r\n\r\nThe new Method Not Allowed Middleware returns a `405 Method Not Allowed` response with a proper `Allow` header when the request path matches a registered route but the method does not:\r\n\r\n```ts\r\nimport { methodNotAllowed } from 'hono/method-not-allowed'\r\n\r\nconst app = new Hono()\r\n\r\napp.use(methodNotAllowed({ app }))\r\n\r\napp.get('/hello', (c) => c.text('Hello!'))\r\napp.post('/hello', (c) => c.text('Posted!'))\r\n\r\n// PUT /hello -> 405 Method Not Allowed\r\n// Allow: GET, HEAD, POST\r\n```\r\n\r\nYou can customize the response with the `onMethodNotAllowed` option:\r\n\r\n```ts\r\napp.use(\r\n  methodNotAllowed({\r\n    app,\r\n    onMethodNotAllowed: (c, methods) =>\r\n      c.json({ error: 'Method Not Allowed' }, 405, { Allow: methods.join(', ') }),\r\n  })\r\n)\r\n```\r\n\r\nThanks @usualoma!\r\n\r\n## RegExpRouter throws `UnsupportedPathError` at registration time\r\n\r\nThe RegExpRouter now detects unsupported path combinations when routes are registered, instead of at the first matching request. This means misconfigured routes fail fast at startup rather than at runtime. As a bonus, registration plus the first match is roughly 20% faster.\r\n\r\nThanks @usualoma!\r\n\r\n## Other improvements\r\n\r\n- `hono/utils/headers` has been synced with the IANA HTTP Field Name Registry, adding newly registered fields such as `Accept-Query`. Thanks @akahoshi1421!\r\n- The JWT and JWK middleware now accept a `realm` option for the `WWW-Authenticate` challenge on `401` responses, and challenge values are properly escaped. Thanks @arhxam!\r\n- JSX: `useRef` and `RefObject` are now aligned with React 19. Note that this is a type-level change — `RefObject<T>` is now `{ current: T }`, so type a nullable ref as `RefObject<T | null>`, and pass `useRef(undefined)` instead of `useRef()`. Thanks @ashunar0!\r\n- JSX: a function component can now return an array of children without throwing during server-side rendering. Thanks @natsuki-engr!\r\n- The Compress Middleware now sets `Vary: Accept-Encoding` on negotiated responses. Thanks @arhxam!\r\n\r\n## All changes\r\n\r\n* perf(hono-base): avoid rest parameter in `fetch` by @yusukebe in https://github.com/honojs/hono/pull/5113\r\n* perf(context): iterate the header record with for..in by @yusukebe in https://github.com/honojs/hono/pull/5118\r\n* perf(url/request): replace regex tests with `indexOf` by @yusukebe in https://github.com/honojs/hono/pull/5121\r\n* perf(context): skip Headers creation when there are no headers to merge by @yusukebe in https://github.com/honojs/hono/pull/5122\r\n* perf(urls): refactor `tryDecodeURIComponent` by @yusukebe in https://github.com/honojs/hono/pull/5158\r\n* chore(benchmarks): correct src path on Windows, add json and middleware cases by @kibertoad in https://github.com/honojs/hono/pull/5173\r\n* perf(context): drop the throwaway `env` field initializer by @kibertoad in https://github.com/honojs/hono/pull/5174\r\n* perf(request): allocate `#validatedData` lazily by @kibertoad in https://github.com/honojs/hono/pull/5175\r\n* perf(request): probe the body cache without allocating by @kibertoad in https://github.com/honojs/hono/pull/5176\r\n* chore(benchmarks): stabilize measurements by forcing mitata batching by @yusukebe in https://github.com/honojs/hono/pull/5183\r\n* perf(hono-base): restore the rest parameter in `fetch` by @yusukebe in https://github.com/honojs/hono/pull/5184\r\n* perf(context): restore the `env` field initializer by @yusukebe in https://github.com/honojs/hono/pull/5186\r\n* feat: add first-class QUERY method support by @shellhaki in https://github.com/honojs/hono/pull/5070\r\n* feat(etag): support conditional requests for the QUERY method by @Cherry in https://github.com/honojs/hono/pull/5111\r\n* feat(cors): allow QUERY by default as a first-class method by @usualoma in https://github.com/honojs/hono/pull/5115\r\n* feat(cache): add first-class support for QUERY requests by @usualoma in https://github.com/honojs/hono/pull/5119\r\n* feat(jsx): add React-compatible overloads to useRef by @ashunar0 in https://github.com/honojs/hono/pull/5063\r\n* feat(middleware): add method-not-allowed middleware by @usualoma in https://github.com/honojs/hono/pull/5132\r\n* feat(jwt,jwk): add a configurable WWW-Authenticate realm by @arhxam in https://github.com/honojs/hono/pull/5141\r\n* feat(utils/headers): sync HTTP field types with the IANA registry by @akahoshi1421 in https://github.com/honojs/hono/pull/5153\r\n* fix(jsx): allow a function component to return an array by @natsuki-engr in https://github.com/honojs/hono/pull/5179\r\n* feat(reg-exp-router): throw UnsupportedPathError during route registration by @usualoma in https://github.com/honojs/hono/pull/5171\r\n* fix(compress): set Vary: Accept-Encoding on negotiated responses by @arhxam in https://github.com/honojs/hono/pull/5137\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.34...v4.13.0\r\n\r\nThank you to all contributors!\r\n",
+   "date": "2026-08-03T21:55:37Z",
+   "name": "v4.13.0",
+   "prerelease": false,
+   "tag": "v4.13.0",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.0"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### `memo()` retains SSR output across requests, leading to cross-user data disclosure\r\n\r\nAffects: `hono/jsx` (server-side rendering). Fixes `memo()` reusing a retained render result across requests when props compare equal, where a component reading request-scoped values from ambient context — `useContext()`, `useRequestContext()`, or `getContext()` — could serve HTML rendered for another user's request, disclosing account data or request-scoped secrets such as CSRF tokens. GHSA-f23p-vx2j-j53r\r\n\r\n### ReDoS in CORS middleware via `Access-Control-Request-Headers`\r\n\r\nAffects: `hono/cors`. Fixes a whitespace-tolerant regular expression with quadratic backtracking used to parse the `Access-Control-Request-Headers` preflight header when `allowHeaders` is not configured (the default), where a single preflight request carrying a long whitespace run could consume seconds of CPU and stall request processing. GHSA-8j4g-w8fx-2239\r\n\r\n### Algorithmic complexity DoS in Language Middleware\r\n\r\nAffects: `hono/language`. Fixes quadratic string processing in language-tag normalization, where a crafted language tag with a large number of hyphen-separated subtags — supplied via a query parameter, cookie, or `Accept-Language` header — could cause excessive CPU consumption and block the event loop. GHSA-54fx-42gc-7vw4\r\n\r\n### Proxy Helper does not remove response headers listed in the `Connection` header\r\n\r\nAffects: `hono/proxy`. Fixes `proxy()` forwarding response headers that the origin's `Connection` header designates as connection-scoped, where headers intended only for the immediate peer — per RFC 9110 Section 7.6.1 — could be exposed to clients, disclosing connection-scoped or internal metadata. GHSA-79qm-7rj5-m7r9\r\n\r\n---\r\n\r\nUsers who use `hono/jsx` for server-side rendering, `hono/cors`, `hono/language`, or `hono/proxy` are strongly encouraged to upgrade to this version.\r\n",
+   "date": "2026-08-03T02:37:37Z",
+   "name": "v4.12.34",
+   "prerelease": false,
+   "tag": "v4.12.34",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.34"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(cookie): relax name validation when parsing Cookie header in https://github.com/honojs/hono/pull/5164\r\n* chore: bump `@hono/node-server` in https://github.com/honojs/hono/pull/5167\r\n* fix(jsx): handle useSyncExternalStore subscription and snapshot changes in https://github.com/honojs/hono/pull/5166\r\n* chore: remove undici in favor of global fetch in https://github.com/honojs/hono/pull/5168\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.32...v4.12.33",
+   "date": "2026-07-31T10:42:51Z",
+   "name": "v4.12.33",
+   "prerelease": false,
+   "tag": "v4.12.33",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.33"
+  },
+  {
+   "body": "## What's Changed\r\n* ci: enable reports for type & bundle size check in https://github.com/honojs/hono/pull/5148\r\n* fix(aws-lambda): add jwt and lambda authorizer types for API Gateway v2 in https://github.com/honojs/hono/pull/5142\r\n* fix(sse): emit empty id field to reset Last-Event-ID in https://github.com/honojs/hono/pull/5138\r\n* test(cloudflare-workers): add coverage for onClose, onError, send, and close in Cloudflare Workers websocket adapter in https://github.com/honojs/hono/pull/5145\r\n* fix: use `Object.create(null)` when parsing query, headers, and params in https://github.com/honojs/hono/pull/5161\r\n* fix(secure-headers): keep CSP callbacks scoped to their header in https://github.com/honojs/hono/pull/5147\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.31...v4.12.32",
+   "date": "2026-07-24T08:56:41Z",
+   "name": "v4.12.32",
+   "prerelease": false,
+   "tag": "v4.12.32",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.32"
+  },
+  {
+   "body": "## What's Changed\r\n* test(context): assert case-insensitive header names in response helpers by @yusukebe in https://github.com/honojs/hono/pull/5116\r\n* chore(benchmark): add app.fetch() overhead benchmark by @yusukebe in https://github.com/honojs/hono/pull/5117\r\n* refactor(aws-lambada): remove FIXME in `@ts-expect-error` by @yusukebe in https://github.com/honojs/hono/pull/5130\r\n* fix(utils/body): reuse cached formData in `parseBody()` by @yusukebe in https://github.com/honojs/hono/pull/5131\r\n* fix(request): fix multipart boundary mismatch in `cloneRawRequest` by @yusukebe in https://github.com/honojs/hono/pull/5133\r\n* fix(sse): emit retry feild when retry is `0` by @yusukebe in https://github.com/honojs/hono/pull/5135\r\n* test(validator): fix misspelled identifier in transform type test by @yusukebe in https://github.com/honojs/hono/pull/5136\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.30...v4.12.31",
+   "date": "2026-07-18T23:16:12Z",
+   "name": "v4.12.31",
+   "prerelease": false,
+   "tag": "v4.12.31",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.31"
+  },
+  {
+   "body": "## What's Changed\r\n* chore(benchmark/routers): bump deps in https://github.com/honojs/hono/pull/5107\r\n* chore(benchmark): remove not used benchmarks in https://github.com/honojs/hono/pull/5108\r\n* chore: update to ts6 in prep for ts7 in https://github.com/honojs/hono/pull/5104\r\n* fix(cache): deduplicate Cache-Control directives case-insensitively in https://github.com/honojs/hono/pull/5025\r\n* fix(compress): do not compress 206 Partial Content responses in https://github.com/honojs/hono/pull/5020\r\n* fix(client): replaceUrlParam should not match a param that prefixes another in https://github.com/honojs/hono/pull/5096\r\n* fix(method-override): set duplex when forwarding a stream body in query mode in https://github.com/honojs/hono/pull/5110\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.29...v4.12.30",
+   "date": "2026-07-13T00:36:06Z",
+   "name": "v4.12.30",
+   "prerelease": false,
+   "tag": "v4.12.30",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.30"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(client): merge function headers with per-request headers by @yusukebe in https://github.com/honojs/hono/pull/5092\r\n* chore: fix no-op tsc in test script by @yusukebe in https://github.com/honojs/hono/pull/5093\r\n* fix(lambda-edge): resolve the handler with the value passed to the callback by @yusukebe in https://github.com/honojs/hono/pull/5094\r\n* docs(language): add JSDoc @example to languageDetector by @codebybilal18 in https://github.com/honojs/hono/pull/5081\r\n* test(workerd): add `compatibilityDate` by @yusukebe in https://github.com/honojs/hono/pull/5100\r\n* fix(lambda-edge): base64 encode content-encoded response bodies by @yusukebe in https://github.com/honojs/hono/pull/5099\r\n* fix(aws-lambda): treat any non-identity content-encoding as binary by @yusukebe in https://github.com/honojs/hono/pull/5101\r\n* fix(types): strip extra properties from array types in JSONParsed by @Arman-Luthra in https://github.com/honojs/hono/pull/5103\r\n* fix(trie-router): match empty wildcard remainder after regexp param by @usualoma in https://github.com/honojs/hono/pull/5102\r\n* fix(etag): treat If-None-Match: `*` as a match by @yusukebe in https://github.com/honojs/hono/pull/5084\r\n\r\n## New Contributors\r\n* @codebybilal18 made their first contribution in https://github.com/honojs/hono/pull/5081\r\n* @Arman-Luthra made their first contribution in https://github.com/honojs/hono/pull/5103\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.28...v4.12.29",
+   "date": "2026-07-10T09:33:30Z",
+   "name": "v4.12.29",
+   "prerelease": false,
+   "tag": "v4.12.29",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.29"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(serve-static): treat empty string content as found by @yusukebe in https://github.com/honojs/hono/pull/5062\r\n* docs(MIGRATION): fix req.raw.headers reference (property, not method) by @EduardF1 in https://github.com/honojs/hono/pull/5047\r\n* chore: don't publish `*.tsbuildinfo` by @yusukebe in https://github.com/honojs/hono/pull/5066\r\n* fix(utils/body,validator): normalize Content-Type media type for case-insensitive matching by @yusukebe in https://github.com/honojs/hono/pull/5067\r\n* fix: avoid circular dependency between body.ts and request.ts by @usualoma in https://github.com/honojs/hono/pull/5071\r\n* fix(bun): report the requested subprotocol on WSContext.protocol by @greymoth-jp in https://github.com/honojs/hono/pull/5059\r\n* chore: bump `devDependencies` by @yusukebe in https://github.com/honojs/hono/pull/5085\r\n* fix(aws-lambda): detect V2 events by request context, not rawPath alone by @VihaanAgarwal in https://github.com/honojs/hono/pull/5033\r\n* docs(context-storage): fix JSDoc by @yusukebe in https://github.com/honojs/hono/pull/5086\r\n\r\n## New Contributors\r\n* @EduardF1 made their first contribution in https://github.com/honojs/hono/pull/5047\r\n* @greymoth-jp made their first contribution in https://github.com/honojs/hono/pull/5059\r\n* @VihaanAgarwal made their first contribution in https://github.com/honojs/hono/pull/5033\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.27...v4.12.28",
+   "date": "2026-07-06T10:08:05Z",
+   "name": "v4.12.28",
+   "prerelease": false,
+   "tag": "v4.12.28",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.28"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### hono/jsx does not isolate context per request\r\n\r\nAffects: `hono/jsx`, `hono/jsx-renderer`. During SSR, context was stored process-wide instead of per request, so `useContext()`/`useRequestContext()` read after an `await` in an async component could return another concurrent request's value — leading to cross-request data disclosure or authorization checks against the wrong request. GHSA-hvrm-45r6-mjfj\r\n\r\n### Server-Side XSS via JSX escaping bypass in cx()\r\n\r\nAffects: `hono/css`. `cx()` marked its composed class name as already-escaped without escaping the input, so untrusted input passed as a class name could break out of the JSX `class` attribute during SSR and inject markup (XSS). GHSA-w62v-xxxg-mg59\r\n\r\n### API Gateway v1 adapter can drop a repeated request header value\r\n\r\nAffects: `hono/aws-lambda`. The API Gateway v1 (and VPC Lattice) adapter de-duplicated repeated header values by substring instead of exact match, dropping a value that is a substring of another (e.g. `203.0.113.1` dropped when `203.0.113.10` is present) — affecting logic such as `X-Forwarded-For`-based IP restriction. GHSA-xgm2-5f3f-mvvc\r\n\r\n---\r\n\r\nUsers of `hono/jsx`/`hono/jsx-renderer`, `hono/css` (`cx()`), or the `hono/aws-lambda` API Gateway v1 / VPC Lattice adapters are encouraged to upgrade.\r\n",
+   "date": "2026-06-23T02:51:19Z",
+   "name": "v4.12.27",
+   "prerelease": false,
+   "tag": "v4.12.27",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.27"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(lambda-edge): satisfy Deno lib types for Content-Length body encoding by @yusukebe in https://github.com/honojs/hono/pull/5013\r\n* ci: publish to npm from CI with OIDC trusted publishing by @yusukebe in https://github.com/honojs/hono/pull/5028\r\n* chore: remove unused devcontainer and gitpod configs by @yusukebe in https://github.com/honojs/hono/pull/5029\r\n* chore: replace arg and glob with Bun native APIs in build script by @yusukebe in https://github.com/honojs/hono/pull/5030\r\n\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.25...v4.12.26",
+   "date": "2026-06-18T02:19:23Z",
+   "name": "v4.12.26",
+   "prerelease": false,
+   "tag": "v4.12.26",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.26"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### CORS Middleware reflects any Origin with credentials when `origin` defaults to the wildcard\r\n\r\nAffects: `hono/cors`. Fixes the wildcard origin reflecting the request `Origin` and sending `Access-Control-Allow-Credentials: true` when `credentials: true` is set without an explicit `origin`, where any site a logged-in user visited could make credentialed cross-origin requests and read responses from cookie-authenticated endpoints. GHSA-88fw-hqm2-52qc\r\n\r\n### Body Limit Middleware can be bypassed on AWS Lambda by understating `Content-Length`\r\n\r\nAffects: `hono/body-limit` on AWS Lambda (`hono/aws-lambda`, `hono/lambda-edge`). Fixes the request being built with the client-declared `Content-Length` while the body is delivered fully buffered, where a client could declare a small `Content-Length` with a much larger body and slip past the configured size limit. GHSA-rv63-4mwf-qqc2\r\n\r\n### Path traversal in `serve-static` on Windows via encoded backslash (`%5C`)\r\n\r\nAffects: `serveStatic` on Windows (Node, Bun, Deno adapters). Fixes the path guard allowing a lone backslash, where an encoded backslash (`%5C`) decoded to `\\` was treated as a separator by the Windows path resolver, letting a single URL segment escape into a middleware-guarded subtree. GHSA-wwfh-h76j-fc44\r\n\r\n### AWS Lambda adapter merges multiple `Set-Cookie` headers into one value, dropping cookies on ALB single-header and Lattice\r\n\r\nAffects: `hono/aws-lambda`. Fixes multiple `Set-Cookie` response headers being joined into one comma-separated value for ALB single-header responses and VPC Lattice v2, where the value could not be split back into individual cookies and clients silently dropped or misparsed them. GHSA-j6c9-x7qj-28xf\r\n\r\n### Lambda@Edge adapter keeps only the last value of a repeated request header, dropping the rest\r\n\r\nAffects: `hono/lambda-edge`. Fixes repeated request headers being written with overwrite instead of append, where only the last value of a header such as `X-Forwarded-For` reached the application and the remaining values were silently dropped. GHSA-wgpf-jwqj-8h8p\r\n",
+   "date": "2026-06-09T03:30:10Z",
+   "name": "v4.12.25",
+   "prerelease": false,
+   "tag": "v4.12.25",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.25"
+  },
+  {
+   "body": "## What's Changed\r\n* docs(contribution): simplifyAI Usage Policy by @yusukebe in https://github.com/honojs/hono/pull/4972\r\n* chore: remove @types/glob by @rtritto in https://github.com/honojs/hono/pull/4978\r\n* fix(bearer-auth): mention verifyToken in missing-options error message by @tan7vir in https://github.com/honojs/hono/pull/4987\r\n* refactor(language): Test/improve tests on languages middleware by @iNeoO in https://github.com/honojs/hono/pull/4980\r\n* fix(utils/ipaddr): expand \"::\" to eight zero groups by @youcefzemmar in https://github.com/honojs/hono/pull/4973\r\n* fix: clean up config files trailing comma, stale excludes, typesVersions gaps, jsr paths by @Mohammad-Faiz-Cloud-Engineer in https://github.com/honojs/hono/pull/4982\r\n* refactor(timing): Test/add test for middleware timing by @iNeoO in https://github.com/honojs/hono/pull/4991\r\n* fix(utils/ipaddr): render the unspecified address binary as \"::\" by @sarathfrancis90 in https://github.com/honojs/hono/pull/4998\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.23...v4.12.24",
+   "date": "2026-06-08T11:16:30Z",
+   "name": "v4.12.24",
+   "prerelease": false,
+   "tag": "v4.12.24",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.24"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(serve-static): normalize all backslashes in file paths, not just the first in https://github.com/honojs/hono/pull/4962\r\n* feat(context): export the Context class publicly by @BlankParticle in https://github.com/honojs/hono/pull/4543\r\n* docs(contribution): add AI Usage Policy by @yusukebe in https://github.com/honojs/hono/pull/4970\r\n* feat(compress): add contentTypeFilter option and `COMPRESSIBLE_CONTENT_TYPE_REGEX` re-export by @na-trium-144 in https://github.com/honojs/hono/pull/4961\r\n* fix(utils/ipaddr): do not compress a single 0 group to `::` by @yusukebe in https://github.com/honojs/hono/pull/4971\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.22...v4.12.23",
+   "date": "2026-05-25T02:00:10Z",
+   "name": "v4.12.23",
+   "prerelease": false,
+   "tag": "v4.12.23",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.23"
+  },
+  {
+   "body": "## What's Changed\r\n* chore: update vitest to v4 and cleanups by @BlankParticle in https://github.com/honojs/hono/pull/4952\r\n* fix(mime): specify charset parameter per MIME type instead of mechanical detection by @renatograsso10 in https://github.com/honojs/hono/pull/4912\r\n* fix(compress): respect Accept-Encoding when encoding option is set by @LeSingh1 in https://github.com/honojs/hono/pull/4951\r\n* fix(deno): echo negotiated WebSocket subprotocol in upgrade response by @ATOM00blue in https://github.com/honojs/hono/pull/4955\r\n* feat: add msgpack as a compressible content type by @na-trium-144 in https://github.com/honojs/hono/pull/4957\r\n\r\n## New Contributors\r\n* @renatograsso10 made their first contribution in https://github.com/honojs/hono/pull/4912\r\n* @LeSingh1 made their first contribution in https://github.com/honojs/hono/pull/4951\r\n* @ATOM00blue made their first contribution in https://github.com/honojs/hono/pull/4955\r\n* @na-trium-144 made their first contribution in https://github.com/honojs/hono/pull/4957\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.21...v4.12.22",
+   "date": "2026-05-22T09:16:04Z",
+   "name": "v4.12.22",
+   "prerelease": false,
+   "tag": "v4.12.22",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.22"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### app.mount() strips mount prefix using undecoded path, causing incorrect routing for percent-encoded paths\r\n\r\nAffects: `app.mount()`. Fixes prefix stripping using the raw URL pathname instead of the decoded path, where percent-encoded characters in the mount prefix or path could cause the prefix to be removed at the wrong position, resulting in the sub-application receiving an incorrect path. GHSA-2gcr-mfcq-wcc3\r\n\r\n### IP Restriction bypasses static deny rules for non-canonical IPv6\r\n\r\nAffects: `hono/ip-restriction`. Fixes IP address comparison using string equality, where non-canonical IPv6 representations of a denied address — such as compressed forms or hex-notation IPv4-mapped addresses — could bypass static deny rules. GHSA-xrhx-7g5j-rcj5\r\n\r\n### Cookie helper does not sanitize sameSite and priority, allowing Set-Cookie injection\r\n\r\nAffects: `hono/cookie`. Fixes missing validation of `sameSite` and `priority` options against injection characters (`;`, `\\r`, `\\n`), where user-controlled input passed to either option could inject additional attributes into the Set-Cookie response header. GHSA-3hrh-pfw6-9m5x\r\n\r\n### JWT middleware accepts any Authorization scheme, not only Bearer\r\n\r\nAffects: `hono/jwt`, `hono/jwk`. Fixes missing scheme validation in the Authorization header, where any two-part header value was accepted regardless of the scheme name, allowing non-Bearer schemes to pass JWT authentication. GHSA-f577-qrjj-4474\r\n\r\n---\r\n\r\nUsers who use `app.mount()`, `hono/ip-restriction`, `hono/cookie`, or `hono/jwt`/`hono/jwk` are encouraged to upgrade to this version.\r\n",
+   "date": "2026-05-19T11:40:11Z",
+   "name": "v4.12.21",
+   "prerelease": false,
+   "tag": "v4.12.21",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.21"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(route): preserve the base path of the mounted route() app by @usualoma in https://github.com/honojs/hono/pull/4942\r\n* fix(jsx): widen jsx and jsxFn children to Child[] by @ashunar0 in https://github.com/honojs/hono/pull/4947\r\n\r\n## New Contributors\r\n* @ashunar0 made their first contribution in https://github.com/honojs/hono/pull/4947\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.19...v4.12.20",
+   "date": "2026-05-19T10:41:30Z",
+   "name": "v4.12.20",
+   "prerelease": false,
+   "tag": "v4.12.20",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.20"
+  },
+  {
+   "body": "## What's Changed\r\n* ci: pin GitHub Actions to SHAs by @yusukebe in https://github.com/honojs/hono/pull/4932\r\n* fix(serveStatic): make options parameter optional in all adapters by @mixelburg in https://github.com/honojs/hono/pull/4934\r\n* fix(cookie): return the first cookie when there are multiple cookies with the same name by @usualoma in https://github.com/honojs/hono/pull/4922\r\n* feat(bearer-auth): make bearerAuth generic for typed context in verifyToken by @justinnais in https://github.com/honojs/hono/pull/4913\r\n* feat(cache): key cache entries by configured vary headers by @usualoma in https://github.com/honojs/hono/pull/4915\r\n* feat(request): add `bytes()` by @yusukebe in https://github.com/honojs/hono/pull/4921\r\n* fix(stream): upgrade `@hono/node-server` to v2 and fix abort handling by @yusukebe in https://github.com/honojs/hono/pull/4940\r\n\r\n## New Contributors\r\n* @justinnais made their first contribution in https://github.com/honojs/hono/pull/4913\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.18...v4.12.19",
+   "date": "2026-05-16T10:17:09Z",
+   "name": "v4.12.19",
+   "prerelease": false,
+   "tag": "v4.12.19",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.19"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Cache Middleware ignores Vary: Authorization / Vary: Cookie leading to cross-user cache leakage\r\n\r\nAffects: Cache Middleware. Fixes missing cache-skip handling for `Vary: Authorization` and `Vary: Cookie`, where a response cached for one authenticated user could be served to other users. GHSA-p77w-8qqv-26rm\r\n\r\n### CSS Declaration Injection via Style Object Values in JSX SSR\r\n\r\nAffects: hono/jsx. Fixes a missing CSS-context escape for `style` object values and property names, where untrusted input could inject additional CSS declarations. The impact is limited to CSS and does not allow JavaScript execution. GHSA-qp7p-654g-cw7p\r\n\r\n### Improper validation of NumericDate claims (exp, nbf, iat) in JWT verify()\r\n\r\nAffects: `hono/utils/jwt`. Fixes improper validation of `exp`, `nbf`, and `iat` claims, where falsy, non-finite, or non-numeric values could silently bypass time-based checks instead of being rejected per RFC 7519. GHSA-hm8q-7f3q-5f36\r\n\r\n---\r\n\r\nUsers who use the JWT helper, hono/jsx, or the Cache middleware are strongly encouraged to upgrade to this version.",
+   "date": "2026-05-06T11:39:35Z",
+   "name": "v4.12.18",
+   "prerelease": false,
+   "tag": "v4.12.18",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.18"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(jsx): normalize SVG attributes on the <svg> root element by @kfly8 in https://github.com/honojs/hono/pull/4893\r\n* fix(ssg): add `atom+xml` and `rss+xml` to `defaultExtensionMap` by @yuintei in https://github.com/honojs/hono/pull/4899\r\n* fix(cors): make origin optional in CORSOptions by @truffle-dev in https://github.com/honojs/hono/pull/4905\r\n* fix(types): propagate middleware response types to app.on overloads by @T4ko0522 in https://github.com/honojs/hono/pull/4906\r\n\r\n## New Contributors\r\n* @kfly8 made their first contribution in https://github.com/honojs/hono/pull/4893\r\n* @truffle-dev made their first contribution in https://github.com/honojs/hono/pull/4905\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.16...v4.12.17",
+   "date": "2026-05-05T09:31:04Z",
+   "name": "v4.12.17",
+   "prerelease": false,
+   "tag": "v4.12.17",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.17"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Unvalidated JSX Tag Names in hono/jsx May Allow HTML Injection\r\n\r\nAffects: hono/jsx. Fixes missing validation of JSX tag names when using `jsx()` or `createElement()`, which could allow HTML injection if untrusted input is used as the tag name. GHSA-69xw-7hcm-h432\r\n\r\n### bodyLimit() can be bypassed for chunked / unknown-length requests\r\n\r\nAffects: Body Limit Middleware. Fixes late enforcement for request bodies without a reliable Content-Length (e.g. chunked requests), where oversized requests could reach handlers and return successful responses before being rejected. GHSA-9vqf-7f2p-gf9v",
+   "date": "2026-04-30T09:16:16Z",
+   "name": "v4.12.16",
+   "prerelease": false,
+   "tag": "v4.12.16",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.16"
+  },
+  {
+   "body": "## What's Changed\r\n* fix(jwt): support single-line PEM keys by @hiendv in https://github.com/honojs/hono/pull/4889\r\n\r\n## New Contributors\r\n* @hiendv made their first contribution in https://github.com/honojs/hono/pull/4889\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.14...v4.12.15",
+   "date": "2026-04-24T06:51:23Z",
+   "name": "v4.12.15",
+   "prerelease": false,
+   "tag": "v4.12.15",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.15"
+  },
+  {
+   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Improper handling of JSX attribute names in hono/jsx SSR\r\n\r\nAffects: hono/jsx. Fixes missing validation of JSX attribute names during server-side rendering, which could allow malformed attribute keys to corrupt the generated HTML output and inject unintended attributes or elements. GHSA-458j-xx4x-4375\r\n\r\n## Other changes\r\n\r\n- fix(aws-lambda): handle invalid header names in request processing (#4883)  fa2c74fe\r\n",
+   "date": "2026-04-15T06:15:10Z",
+   "name": "v4.12.14",
+   "prerelease": false,
+   "tag": "v4.12.14",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.12.14"
+  }
+ ],
+ "repo": "honojs/hono"
+}

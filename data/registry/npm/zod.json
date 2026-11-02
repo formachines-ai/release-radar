@@ -1,0 +1,710 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "alpha": "3.25.68-alpha.11",
+  "beta": "4.1.13-beta.0",
+  "canary": "4.5.0-canary.20260828T171753",
+  "latest": "4.6.7",
+  "next": "3.25.0-beta.20250519T094321"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:54Z",
+ "homepage": "https://zod.dev",
+ "latest": "4.6.7",
+ "name": "zod",
+ "page": "https://www.npmjs.com/package/zod",
+ "repo": "colinhacks/zod",
+ "summary": "TypeScript-first schema declaration and validation library with static type inference",
+ "versions": [
+  {
+   "date": "2026-10-12T16:29:37Z",
+   "deprecated": false,
+   "version": "4.6.7"
+  },
+  {
+   "date": "2026-10-11T16:18:23Z",
+   "deprecated": false,
+   "version": "4.6.6"
+  },
+  {
+   "date": "2026-09-13T23:25:14Z",
+   "deprecated": false,
+   "version": "4.6.5"
+  },
+  {
+   "date": "2026-09-13T00:12:11Z",
+   "deprecated": false,
+   "version": "4.6.4"
+  },
+  {
+   "date": "2026-09-12T22:23:48Z",
+   "deprecated": false,
+   "version": "4.6.3"
+  },
+  {
+   "date": "2026-09-10T21:44:31Z",
+   "deprecated": false,
+   "version": "4.6.2"
+  },
+  {
+   "date": "2026-09-09T21:50:12Z",
+   "deprecated": false,
+   "version": "4.6.1"
+  },
+  {
+   "date": "2026-09-09T19:25:02Z",
+   "deprecated": false,
+   "version": "4.6.0"
+  },
+  {
+   "date": "2026-08-29T17:55:42Z",
+   "deprecated": false,
+   "version": "4.5.4"
+  },
+  {
+   "date": "2026-08-29T17:46:48Z",
+   "deprecated": false,
+   "version": "4.5.3"
+  },
+  {
+   "date": "2026-08-29T00:36:06Z",
+   "deprecated": false,
+   "version": "4.5.2"
+  },
+  {
+   "date": "2026-08-28T18:36:07Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T051321"
+  },
+  {
+   "date": "2026-08-28T18:31:51Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T163622"
+  },
+  {
+   "date": "2026-08-28T18:14:39Z",
+   "deprecated": false,
+   "version": "4.5.0"
+  },
+  {
+   "date": "2026-08-28T17:58:39Z",
+   "deprecated": false,
+   "version": "4.5.1"
+  },
+  {
+   "date": "2026-08-28T17:20:07Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T171753"
+  },
+  {
+   "date": "2026-08-28T16:36:47Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T163402"
+  },
+  {
+   "date": "2026-08-28T16:16:41Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T161354"
+  },
+  {
+   "date": "2026-08-28T16:11:11Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T160755"
+  },
+  {
+   "date": "2026-08-28T06:26:31Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T062315"
+  },
+  {
+   "date": "2026-08-28T05:32:53Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260828T053040"
+  },
+  {
+   "date": "2026-08-27T05:46:01Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260827T054049"
+  },
+  {
+   "date": "2026-08-27T01:51:11Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260827T005050"
+  },
+  {
+   "date": "2026-08-27T00:41:42Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260827T003629"
+  },
+  {
+   "date": "2026-08-26T00:51:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260826T002553"
+  },
+  {
+   "date": "2026-08-26T00:15:48Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260826T001234"
+  },
+  {
+   "date": "2026-08-26T00:05:21Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260826T000001"
+  },
+  {
+   "date": "2026-08-25T23:24:53Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T232139"
+  },
+  {
+   "date": "2026-08-25T16:42:03Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T163950"
+  },
+  {
+   "date": "2026-08-25T06:00:47Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T055534"
+  },
+  {
+   "date": "2026-08-25T04:24:30Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T025411"
+  },
+  {
+   "date": "2026-08-25T04:16:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T041357"
+  },
+  {
+   "date": "2026-08-25T04:12:57Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T040744"
+  },
+  {
+   "date": "2026-08-25T04:11:55Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T014134"
+  },
+  {
+   "date": "2026-08-25T04:04:30Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T040219"
+  },
+  {
+   "date": "2026-08-25T03:02:47Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T025933"
+  },
+  {
+   "date": "2026-08-25T03:01:03Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T025549"
+  },
+  {
+   "date": "2026-08-25T02:02:39Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T012222"
+  },
+  {
+   "date": "2026-08-25T01:36:34Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T000613"
+  },
+  {
+   "date": "2026-08-25T00:12:18Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260825T000704"
+  },
+  {
+   "date": "2026-08-24T23:58:11Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T235056"
+  },
+  {
+   "date": "2026-08-24T23:53:33Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T235120"
+  },
+  {
+   "date": "2026-08-24T23:51:01Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T234547"
+  },
+  {
+   "date": "2026-08-24T22:39:36Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T223622"
+  },
+  {
+   "date": "2026-08-24T22:38:41Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T223527"
+  },
+  {
+   "date": "2026-08-24T21:45:36Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T214023"
+  },
+  {
+   "date": "2026-08-24T17:31:13Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260824T172557"
+  },
+  {
+   "date": "2026-08-20T19:43:58Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T210425"
+  },
+  {
+   "date": "2026-08-20T19:41:43Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T211159"
+  },
+  {
+   "date": "2026-08-20T19:41:31Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T143231"
+  },
+  {
+   "date": "2026-08-20T19:41:23Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T200234"
+  },
+  {
+   "date": "2026-08-20T19:41:16Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T191034"
+  },
+  {
+   "date": "2026-08-20T19:41:07Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T190527"
+  },
+  {
+   "date": "2026-08-20T16:00:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T155656"
+  },
+  {
+   "date": "2026-08-20T15:23:08Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T151954"
+  },
+  {
+   "date": "2026-08-20T14:56:23Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T145307"
+  },
+  {
+   "date": "2026-08-20T14:49:56Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T144642"
+  },
+  {
+   "date": "2026-08-20T14:49:47Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T144632"
+  },
+  {
+   "date": "2026-08-20T14:44:02Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260820T143849"
+  },
+  {
+   "date": "2026-08-19T21:21:12Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T211556"
+  },
+  {
+   "date": "2026-08-19T19:04:57Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T185743"
+  },
+  {
+   "date": "2026-08-19T19:03:43Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T173014"
+  },
+  {
+   "date": "2026-08-19T19:03:32Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T185817"
+  },
+  {
+   "date": "2026-08-19T19:03:12Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T162129"
+  },
+  {
+   "date": "2026-08-19T19:02:29Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T150440"
+  },
+  {
+   "date": "2026-08-19T16:07:41Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T160226"
+  },
+  {
+   "date": "2026-08-19T15:01:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T145553"
+  },
+  {
+   "date": "2026-08-19T14:48:47Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T144131"
+  },
+  {
+   "date": "2026-08-19T14:46:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260819T144110"
+  },
+  {
+   "date": "2026-08-17T22:37:11Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T190646"
+  },
+  {
+   "date": "2026-08-17T19:18:06Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T183748"
+  },
+  {
+   "date": "2026-08-17T16:11:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T002538"
+  },
+  {
+   "date": "2026-08-17T16:11:13Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T001220"
+  },
+  {
+   "date": "2026-08-17T16:10:02Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T005319"
+  },
+  {
+   "date": "2026-08-17T16:08:54Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T033812"
+  },
+  {
+   "date": "2026-08-17T06:26:50Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T002606"
+  },
+  {
+   "date": "2026-08-17T06:26:09Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T002539"
+  },
+  {
+   "date": "2026-08-17T06:25:37Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T002500"
+  },
+  {
+   "date": "2026-08-17T06:25:03Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T002434"
+  },
+  {
+   "date": "2026-08-17T06:11:18Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T011047"
+  },
+  {
+   "date": "2026-08-17T06:06:41Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T010613"
+  },
+  {
+   "date": "2026-08-17T06:03:45Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T013315"
+  },
+  {
+   "date": "2026-08-17T05:59:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T022854"
+  },
+  {
+   "date": "2026-08-17T05:58:46Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T025820"
+  },
+  {
+   "date": "2026-08-17T05:58:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260817T005756"
+  },
+  {
+   "date": "2026-08-17T02:47:28Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T234705"
+  },
+  {
+   "date": "2026-08-16T23:48:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T224749"
+  },
+  {
+   "date": "2026-08-16T23:45:07Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T230448"
+  },
+  {
+   "date": "2026-08-16T23:45:00Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T230440"
+  },
+  {
+   "date": "2026-08-16T23:44:51Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T230432"
+  },
+  {
+   "date": "2026-08-16T23:33:58Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T225339"
+  },
+  {
+   "date": "2026-08-16T23:33:19Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T230800"
+  },
+  {
+   "date": "2026-08-16T23:33:08Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T225249"
+  },
+  {
+   "date": "2026-08-16T23:29:50Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T230431"
+  },
+  {
+   "date": "2026-08-16T23:01:11Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T213049"
+  },
+  {
+   "date": "2026-08-16T22:58:28Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T212807"
+  },
+  {
+   "date": "2026-08-16T22:54:57Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T215437"
+  },
+  {
+   "date": "2026-08-16T22:51:16Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T212054"
+  },
+  {
+   "date": "2026-08-16T22:49:59Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T222439"
+  },
+  {
+   "date": "2026-08-16T22:44:10Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260816T221850"
+  },
+  {
+   "date": "2026-08-15T04:09:57Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T233931"
+  },
+  {
+   "date": "2026-08-14T05:58:43Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T055530"
+  },
+  {
+   "date": "2026-08-14T05:58:23Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T055510"
+  },
+  {
+   "date": "2026-08-14T05:41:22Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T053909"
+  },
+  {
+   "date": "2026-08-14T05:22:03Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T051949"
+  },
+  {
+   "date": "2026-08-14T02:37:27Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T023414"
+  },
+  {
+   "date": "2026-08-14T01:32:06Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T012954"
+  },
+  {
+   "date": "2026-08-14T01:28:04Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T012452"
+  },
+  {
+   "date": "2026-08-14T00:26:41Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T002126"
+  },
+  {
+   "date": "2026-08-14T00:25:50Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T002237"
+  },
+  {
+   "date": "2026-08-14T00:23:56Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T002144"
+  },
+  {
+   "date": "2026-08-14T00:12:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T000912"
+  },
+  {
+   "date": "2026-08-14T00:09:16Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T000703"
+  },
+  {
+   "date": "2026-08-14T00:07:53Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260814T000238"
+  },
+  {
+   "date": "2026-08-13T23:52:01Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T234848"
+  },
+  {
+   "date": "2026-08-13T23:48:33Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T234521"
+  },
+  {
+   "date": "2026-08-13T21:12:28Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T210915"
+  },
+  {
+   "date": "2026-08-13T21:09:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T210613"
+  },
+  {
+   "date": "2026-08-13T21:06:31Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T210419"
+  },
+  {
+   "date": "2026-08-13T21:01:13Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T205759"
+  },
+  {
+   "date": "2026-08-13T20:54:30Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T204917"
+  },
+  {
+   "date": "2026-08-13T20:14:25Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T201212"
+  },
+  {
+   "date": "2026-08-13T19:49:34Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T194619"
+  },
+  {
+   "date": "2026-08-13T18:51:28Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T184802"
+  },
+  {
+   "date": "2026-08-13T18:19:23Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T181206"
+  },
+  {
+   "date": "2026-08-13T05:57:14Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T055200"
+  },
+  {
+   "date": "2026-08-13T05:52:28Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T055010"
+  },
+  {
+   "date": "2026-08-13T05:40:38Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260813T053716"
+  },
+  {
+   "date": "2026-08-12T21:21:42Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T211928"
+  },
+  {
+   "date": "2026-08-12T20:20:45Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T201530"
+  },
+  {
+   "date": "2026-08-12T19:23:32Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T191817"
+  },
+  {
+   "date": "2026-08-12T19:11:15Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T190600"
+  },
+  {
+   "date": "2026-08-12T19:03:58Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T185642"
+  },
+  {
+   "date": "2026-08-12T18:49:31Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T184719"
+  },
+  {
+   "date": "2026-08-12T18:48:54Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T184640"
+  },
+  {
+   "date": "2026-08-12T18:40:48Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260812T183534"
+  },
+  {
+   "date": "2026-08-09T18:10:14Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260809T180500"
+  },
+  {
+   "date": "2026-08-09T17:00:37Z",
+   "deprecated": false,
+   "version": "4.5.0-canary.20260809T165522"
+  }
+ ]
+}

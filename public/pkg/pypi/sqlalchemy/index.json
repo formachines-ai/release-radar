@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "2.1.6",
+ "metadata_fetched": "2026-11-02T17:00:01Z",
+ "package": "sqlalchemy",
+ "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
+ "registry": "https://pypi.org/project/sqlalchemy/",
+ "releases": [],
+ "repository": "https://github.com/sqlalchemy/sqlalchemy",
+ "summary": "Database Abstraction Library"
+}

@@ -1,0 +1,118 @@
+# Release Radar
+
+> Daily feed of PyPI and npm releases (93 tracked packages, last 7 days) with the verbatim lines of release notes that mention breaking, deprecated, removed, renamed, dropped support or no longer. Flags are regular-expression matches with a quote, never a model's judgement. Packages with a sandbox-verified fix on formachines.ai/errata carry a link.
+
+Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
+
+## Data
+
+- [today.json](https://releases.formachines.ai/today.json): every release in the window — package, version, date, flagged, quotes, notes_url, errata_url
+- [feed.xml](https://releases.formachines.ai/feed.xml): RSS 2.0 of the same releases
+- [build.json](https://releases.formachines.ai/build.json): build time, package and release counts, errors
+- Per package: https://releases.formachines.ai/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)
+
+## Pages
+
+- [Front page](https://releases.formachines.ai/): last 24 h, flagged releases, PyPI and npm lists, all packages
+- [Legal](https://releases.formachines.ai/legal/)
+
+## Packages
+
+- [@ai-sdk/openai (npm)](https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/): latest 4.0.106
+- [@anthropic-ai/sdk (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/): latest 1.3.0
+- [@google/genai (npm)](https://releases.formachines.ai/pkg/npm/@google/genai/): latest 2.32.0
+- [@langchain/core (npm)](https://releases.formachines.ai/pkg/npm/@langchain/core/): latest 1.3.2
+- [@modelcontextprotocol/sdk (npm)](https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/): latest 1.32.2
+- [@prisma/client (npm)](https://releases.formachines.ai/pkg/npm/@prisma/client/): latest 7.10.1
+- [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.118.0
+- [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.105.2
+- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.159
+- [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.5
+- [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.0
+- [commander (npm)](https://releases.formachines.ai/pkg/npm/commander/): latest 15.0.0
+- [dotenv (npm)](https://releases.formachines.ai/pkg/npm/dotenv/): latest 18.0.9
+- [drizzle-orm (npm)](https://releases.formachines.ai/pkg/npm/drizzle-orm/): latest 0.45.4
+- [esbuild (npm)](https://releases.formachines.ai/pkg/npm/esbuild/): latest 0.28.2
+- [eslint (npm)](https://releases.formachines.ai/pkg/npm/eslint/): latest 10.14.0
+- [express (npm)](https://releases.formachines.ai/pkg/npm/express/): latest 5.3.0
+- [fastify (npm)](https://releases.formachines.ai/pkg/npm/fastify/): latest 5.12.8
+- [firebase (npm)](https://releases.formachines.ai/pkg/npm/firebase/): latest 13.1.0 · Errata correction available
+- [hono (npm)](https://releases.formachines.ai/pkg/npm/hono/): latest 4.13.16
+- [ioredis (npm)](https://releases.formachines.ai/pkg/npm/ioredis/): latest 6.0.0
+- [jest (npm)](https://releases.formachines.ai/pkg/npm/jest/): latest 30.5.2
+- [langchain (npm)](https://releases.formachines.ai/pkg/npm/langchain/): latest 1.6.0
+- [mongoose (npm)](https://releases.formachines.ai/pkg/npm/mongoose/): latest 9.11.4
+- [next (npm)](https://releases.formachines.ai/pkg/npm/next/): latest 16.4.4
+- [nuxt (npm)](https://releases.formachines.ai/pkg/npm/nuxt/): latest 4.6.3
+- [openai (npm)](https://releases.formachines.ai/pkg/npm/openai/): latest 7.47.0
+- [pg (npm)](https://releases.formachines.ai/pkg/npm/pg/): latest 8.23.1
+- [playwright (npm)](https://releases.formachines.ai/pkg/npm/playwright/): latest 1.64.1
+- [prettier (npm)](https://releases.formachines.ai/pkg/npm/prettier/): latest 3.9.10
+- [prisma (npm)](https://releases.formachines.ai/pkg/npm/prisma/): latest 8.0.0-rc.29
+- [puppeteer (npm)](https://releases.formachines.ai/pkg/npm/puppeteer/): latest 25.16.0
+- [react (npm)](https://releases.formachines.ai/pkg/npm/react/): latest 19.3.1
+- [react-dom (npm)](https://releases.formachines.ai/pkg/npm/react-dom/): latest 19.3.1
+- [react-router (npm)](https://releases.formachines.ai/pkg/npm/react-router/): latest 8.5.1
+- [stripe (npm)](https://releases.formachines.ai/pkg/npm/stripe/): latest 23.1.0
+- [svelte (npm)](https://releases.formachines.ai/pkg/npm/svelte/): latest 5.57.3
+- [tailwindcss (npm)](https://releases.formachines.ai/pkg/npm/tailwindcss/): latest 4.3.3
+- [typescript (npm)](https://releases.formachines.ai/pkg/npm/typescript/): latest 7.0.2 · Errata correction available
+- [vite (npm)](https://releases.formachines.ai/pkg/npm/vite/): latest 8.3.5
+- [vitest (npm)](https://releases.formachines.ai/pkg/npm/vitest/): latest 5.1.0
+- [vue (npm)](https://releases.formachines.ai/pkg/npm/vue/): latest 3.5.44
+- [zod (npm)](https://releases.formachines.ai/pkg/npm/zod/): latest 4.6.7
+- [zustand (npm)](https://releases.formachines.ai/pkg/npm/zustand/): latest 5.0.16
+- [aiohttp (pypi)](https://releases.formachines.ai/pkg/pypi/aiohttp/): latest 3.14.5
+- [alembic (pypi)](https://releases.formachines.ai/pkg/pypi/alembic/): latest 1.20.1
+- [anthropic (pypi)](https://releases.formachines.ai/pkg/pypi/anthropic/): latest 2.3.0
+- [black (pypi)](https://releases.formachines.ai/pkg/pypi/black/): latest 26.10.1
+- [boto3 (pypi)](https://releases.formachines.ai/pkg/pypi/boto3/): latest 1.43.123
+- [celery (pypi)](https://releases.formachines.ai/pkg/pypi/celery/): latest 5.6.3
+- [click (pypi)](https://releases.formachines.ai/pkg/pypi/click/): latest 8.5.0 · Errata correction available
+- [cryptography (pypi)](https://releases.formachines.ai/pkg/pypi/cryptography/): latest 50.0.2 · Errata correction available
+- [django (pypi)](https://releases.formachines.ai/pkg/pypi/django/): latest 6.1.2
+- [fastapi (pypi)](https://releases.formachines.ai/pkg/pypi/fastapi/): latest 0.162.0
+- [flask (pypi)](https://releases.formachines.ai/pkg/pypi/flask/): latest 3.1.3
+- [google-genai (pypi)](https://releases.formachines.ai/pkg/pypi/google-genai/): latest 2.34.0 · Errata correction available
+- [httpx (pypi)](https://releases.formachines.ai/pkg/pypi/httpx/): latest 0.28.1
+- [huggingface-hub (pypi)](https://releases.formachines.ai/pkg/pypi/huggingface-hub/): latest 2.4.0 · Errata correction available
+- [instructor (pypi)](https://releases.formachines.ai/pkg/pypi/instructor/): latest 1.17.0
+- [jinja2 (pypi)](https://releases.formachines.ai/pkg/pypi/jinja2/): latest 3.1.6
+- [langchain (pypi)](https://releases.formachines.ai/pkg/pypi/langchain/): latest 1.4.8
+- [langchain-core (pypi)](https://releases.formachines.ai/pkg/pypi/langchain-core/): latest 1.7.4
+- [langgraph (pypi)](https://releases.formachines.ai/pkg/pypi/langgraph/): latest 1.2.19
+- [litellm (pypi)](https://releases.formachines.ai/pkg/pypi/litellm/): latest 1.106.6
+- [llama-index (pypi)](https://releases.formachines.ai/pkg/pypi/llama-index/): latest 0.14.25
+- [mcp (pypi)](https://releases.formachines.ai/pkg/pypi/mcp/): latest 2.3.0 · Errata correction available
+- [mypy (pypi)](https://releases.formachines.ai/pkg/pypi/mypy/): latest 2.4.1
+- [numpy (pypi)](https://releases.formachines.ai/pkg/pypi/numpy/): latest 2.5.4
+- [openai (pypi)](https://releases.formachines.ai/pkg/pypi/openai/): latest 3.42.1
+- [openai-agents (pypi)](https://releases.formachines.ai/pkg/pypi/openai-agents/): latest 0.24.0
+- [orjson (pypi)](https://releases.formachines.ai/pkg/pypi/orjson/): latest 3.13.0
+- [pandas (pypi)](https://releases.formachines.ai/pkg/pypi/pandas/): latest 3.1.0
+- [pillow (pypi)](https://releases.formachines.ai/pkg/pypi/pillow/): latest 13.0.0
+- [playwright (pypi)](https://releases.formachines.ai/pkg/pypi/playwright/): latest 1.64.1
+- [polars (pypi)](https://releases.formachines.ai/pkg/pypi/polars/): latest 2.1.0
+- [pydantic (pypi)](https://releases.formachines.ai/pkg/pypi/pydantic/): latest 2.14.2
+- [pydantic-settings (pypi)](https://releases.formachines.ai/pkg/pypi/pydantic-settings/): latest 2.16.2
+- [pyjwt (pypi)](https://releases.formachines.ai/pkg/pypi/pyjwt/): latest 2.15.1
+- [pytest (pypi)](https://releases.formachines.ai/pkg/pypi/pytest/): latest 9.2.0
+- [pyyaml (pypi)](https://releases.formachines.ai/pkg/pypi/pyyaml/): latest 6.0.3
+- [redis (pypi)](https://releases.formachines.ai/pkg/pypi/redis/): latest 8.1.0
+- [requests (pypi)](https://releases.formachines.ai/pkg/pypi/requests/): latest 2.34.2
+- [rich (pypi)](https://releases.formachines.ai/pkg/pypi/rich/): latest 15.0.0
+- [ruff (pypi)](https://releases.formachines.ai/pkg/pypi/ruff/): latest 0.17.3
+- [scipy (pypi)](https://releases.formachines.ai/pkg/pypi/scipy/): latest 1.18.1 · Errata correction available
+- [sqlalchemy (pypi)](https://releases.formachines.ai/pkg/pypi/sqlalchemy/): latest 2.1.6
+- [starlette (pypi)](https://releases.formachines.ai/pkg/pypi/starlette/): latest 1.10.0
+- [structlog (pypi)](https://releases.formachines.ai/pkg/pypi/structlog/): latest 26.1.0
+- [tiktoken (pypi)](https://releases.formachines.ai/pkg/pypi/tiktoken/): latest 0.14.0
+- [transformers (pypi)](https://releases.formachines.ai/pkg/pypi/transformers/): latest 5.22.1
+- [typer (pypi)](https://releases.formachines.ai/pkg/pypi/typer/): latest 0.27.3
+- [uvicorn (pypi)](https://releases.formachines.ai/pkg/pypi/uvicorn/): latest 0.54.0
+- [websockets (pypi)](https://releases.formachines.ai/pkg/pypi/websockets/): latest 17.4 · Errata correction available
+
+## Related
+
+- [Errata — where AI models write outdated code, and the verified fix](https://formachines.ai/errata/)
+- [Errata skill for coding agents](https://github.com/formachines-ai/skills)

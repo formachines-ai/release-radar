@@ -1,0 +1,125 @@
+{
+ "by_tag": {
+  "1.43.119": null,
+  "1.43.120": null,
+  "1.43.121": null,
+  "1.43.122": null,
+  "1.43.123": null
+ },
+ "fetched": "2026-11-02T16:59:52Z",
+ "releases": [
+  {
+   "body": "-   feature:Resources: Update to the latest resource models for:\n  -   AWS CloudFormation\n  -   Amazon EC2\n  -   AWS IAM\n-   feature:Amazon S3: Add an `upload_file` and `download_file` to S3\n  clients that transparently handle parallel multipart transfers.\n-   feature:Botocore: Update to Botocore 0.102.0.\n  -   Add support for Amazon Machine Learning.\n  -   Add support for Amazon Workspaces.\n  -   Update `requests` to 2.6.0.\n  -   Update AWS Lambda to the latest API.\n  -   Update Amazon EC2 Container Service to the latest API.\n  -   Update Amazon S3 to the latest API.\n  -   Add `DBSnapshotCompleted` support to Amazon RDS waiters.\n  -   Fixes for the REST-JSON protocol.\n",
+   "date": "2015-04-09T19:29:21Z",
+   "name": "Boto 3 - 0.0.14",
+   "prerelease": false,
+   "tag": "0.0.14",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.14"
+  },
+  {
+   "body": "-   feature:Botocore: Update to Botocore 0.100.0.\n  -   Update AWS CodeDeploy to the latest service API.\n  -   Update Amazon RDS to support the `describe_certificates` service\n    operation.\n  -   Update Amazon Elastic Transcoder to support PlayReady DRM.\n  -   Update Amazon EC2 to support D2 instance types.\n",
+   "date": "2015-04-03T17:24:35Z",
+   "name": "Boto 3 - 0.0.13",
+   "prerelease": false,
+   "tag": "0.0.13",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.13"
+  },
+  {
+   "body": "-   feature:Resources: Add the ability to load resource data from a\n  `has` relationship. This saves a call to `load` when available, and\n  otherwise fixes a problem where there was no way to get at certain\n  resource data. ([issue 74](https://github.com/boto/boto3/pull/72),\n-   feature:Botocore: Update to Botocore 0.99.0\n  -   Update service models for amazon Elastic Transcoder, AWS IAM and\n    AWS OpsWorks to the latest versions.\n  -   Add deprecation warnings for old interface.\n",
+   "date": "2015-03-27T18:22:36Z",
+   "name": "Boto 3 - 0.0.12",
+   "prerelease": false,
+   "tag": "0.0.12",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.12"
+  },
+  {
+   "body": "-   feature:Resources: Add Amazon EC2 support for ClassicLink actions\n  and add a delete action to EC2 `Volume` resources.\n-   feature:Resources: Add a `load` operation and `user` reference to\n  AWS IAM's `CurrentUser` resource. ([issue\n  72](https://github.com/boto/boto3/pull/72),\n-   feature:Resources: Add resources for AWS IAM managed policies.\n  ([issue 71](https://github.com/boto/boto3/pull/71))\n-   feature:Botocore: Update to Botocore 0.97.0\n  -   Add new Amazon EC2 waiters.\n  -   Add support for Amazon S3 cross region replication.\n  -   Fix an issue where empty config values could not be specified\n    for Amazon S3's bucket notifications. ([botocore issue\n    495](https://github.com/boto/botocore/pull/495))\n  -   Update Amazon CloudWatch Logs to the latest API.\n  -   Update Amazon Elastic Transcoder to the latest API.\n  -   Update AWS CloudTrail to the latest API.\n  -   Fix bug where explicitly passed `profile_name` will now override\n    any access and secret keys set in environment variables.\n    ([botocore issue\n    486](https://github.com/boto/botocore/pull/486))\n  -   Add `endpoint_url` to `client.meta`.\n  -   Better error messages for invalid regions.\n  -   Fix creating clients with unicode service name.\n",
+   "date": "2015-03-24T22:14:00Z",
+   "name": "Boto 3 - 0.0.11",
+   "prerelease": false,
+   "tag": "0.0.11",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.11"
+  },
+  {
+   "body": "-   bugfix:Documentation: Name collisions are now handled at the\n  resource model layer instead of the factory, meaning that the\n  documentation now uses the correct names. ([issue\n  67](https://github.com/boto/boto3/pull/67))\n-   feature:Session: Add a `region_name` option when creating a session.\n  ([issue 69](https://github.com/boto/boto3/pull/69), [issue\n  21](https://github.com/boto/boto3/issues/21))\n-   feature:Botocore: Update to Botocore 0.94.0\n  -   Update to the latest Amazon CloudeSearch API.\n  -   Add support for near-realtime data updates and exporting\n    historical data from Amazon Cognito Sync.\n  -   **Removed** the ability to clone a low-level client. Instead,\n    create a new client with the same parameters.\n  -   Add support for URL paths in an endpoint URL.\n  -   Multithreading signature fixes.\n  -   Add support for listing hosted zones by name and getting hosted\n    zone counts from Amazon Route53.\n  -   Add support for tagging to AWS Data Pipeline.\n",
+   "date": "2015-03-24T22:14:37Z",
+   "name": "Boto 3 - 0.0.10",
+   "prerelease": false,
+   "tag": "0.0.10",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.10"
+  },
+  {
+   "body": "-   feature:Botocore: Update to Botocore 0.92.0\n  -   Add support for the latest Amazon EC2 Container Service API.\n  -   Allow calling AWS STS `assume_role_with_saml` without\n    credentials.\n  -   Update to latest Amazon CloudFront API\n  -   Add support for AWS STS regionalized calls by passing both a\n    region name and an endpoint URL. ([botocore issue\n    464](https://github.com/boto/botocore/pull/464))\n  -   Add support for Amazon Simple Systems Management Service (SSM)\n  -   Fix Amazon S3 auth errors when uploading large files to the\n    `eu-central-1` and `cn-north-1` regions. ([botocore issue\n    462](https://github.com/boto/botocore/pull/462))\n  -   Add support for AWS IAM managed policies\n  -   Add support for Amazon ElastiCache tagging\n  -   Add support for Amazon Route53 Domains tagging of domains\n",
+   "date": "2015-02-20T00:09:22Z",
+   "name": "Boto 3 - 0.0.9",
+   "prerelease": false,
+   "tag": "0.0.9",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.9"
+  },
+  {
+   "body": "-   bugfix:Resources: Fix Amazon S3 resource identifier order. ([issue\n  62](https://github.com/boto/boto3/pull/62))\n-   bugfix:Resources: Fix collection resource hydration path. ([issue\n  61](https://github.com/boto/boto3/pull/61))\n-   bugfix:Resources: Re-enable service-level access to all resources,\n  allowing e.g. `obj = s3.Object('bucket', 'key')`. ([issue\n  60](https://github.com/boto/boto3/pull/60))\n-   feature:Botocore: Update to Botocore 0.87.0\n  -   Add support for Amazon DynamoDB secondary index scanning.\n  -   Upgrade to `requests` 2.5.1.\n  -   Add support for anonymous (unsigned) clients. ([botocore issue\n    448](https://github.com/boto/botocore/pull/448))\n",
+   "date": "2015-02-11T02:16:30Z",
+   "name": "Boto 3 - 0.0.8",
+   "prerelease": false,
+   "tag": "0.0.8",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.8"
+  },
+  {
+   "body": "-   feature:Resources: Enable support for Amazon Glacier.\n-   feature:Resources: Support plural references and nested JMESPath\n  queries for data members when building parameters and identifiers.\n  ([issue 52](https://github.com/boto/boto3/pull/52))\n-   feature:Resources: Update to the latest resource JSON format.This is\n  a **backward-incompatible** change as not all resources are exposed\n  at the service level anymore. For example, `s3.Object('bucket', 'key')`\n  is now `s3.Bucket('bucket').Object('key')`.\n  ([issue 51](https://github.com/boto/boto3/pull/51))\n-   feature:Resources: Make `resource.meta` a proper object. This allows\n  you to do things like `resource.meta.client`. This is a\n  **backward-incompatible** change. ([issue\n  45](https://github.com/boto/boto3/pull/45))\n-   feature:Dependency: Update to JMESPath 0.6.1\n-   feature:Botocore: Update to Botocore 0.86.0\n  -   Add support for AWS CloudHSM\n  -   Add support for Amazon EC2 and Autoscaling ClassicLink\n  -   Add support for Amazon EC2 Container Service (ECS)\n  -   Add support for encryption at rest and CloudHSM to Amazon RDS\n  -   Add support for Amazon DynamoDB online indexing.\n  -   Add support for AWS ImportExport `get_shipping_label`.\n  -   Add support for Amazon Glacier.\n  -   Add waiters for AWS ElastiCache. ([botocore issue\n    443](https://github.com/boto/botocore/pull/443))\n  -   Fix an issue with Amazon CloudFront waiters. ([botocore issue\n    426](https://github.com/boto/botocore/pull/426))\n  -   Allow binary data to be passed to `UserData`. ([botocore issue\n    416](https://github.com/boto/botocore/pull/416))\n  -   Fix Amazon EMR endpoints for `eu-central-1` and `cn-north-1`.\n    ([botocore issue\n    423](https://github.com/boto/botocore/pull/423))\n  -   Fix issue with base64 encoding of blob types for Amazon EMR.\n    ([botocore issue\n    413](https://github.com/boto/botocore/pull/413))\n",
+   "date": "2015-02-05T22:52:22Z",
+   "name": "Boto 3 - 0.0.7",
+   "prerelease": false,
+   "tag": "0.0.7",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.7"
+  },
+  {
+   "body": "-   feature:Amazon SQS: Add `purge` action to queue resources\n-   feature:Waiters: Add documentation for client and resource waiters\n  ([issue 44](https://github.com/boto/boto3/pull/44))\n-   feature:Waiters: Add support for resource waiters ([issue\n  43](https://github.com/boto/boto3/pull/43))\n-   bugfix:Installation: Remove dependency on the unused `six` module\n  ([issue 42](https://github.com/boto/boto3/pull/42))\n-   feature:Botocore: Update to Botocore 0.80.0\n  -   Update Amazon Simple Workflow Service (SWF) to the latest\n    version\n  -   Update AWS Storage Gateway to the latest version\n  -   Update AWS Elastic MapReduce (EMR) to the latest version\n  -   Update AWS Elastic Transcoder to the latest version\n  -   Enable use of `page_size` for clients ([botocore issue\n    408](https://github.com/boto/botocore/pull/408))\n",
+   "date": "2014-12-18T19:24:40Z",
+   "name": "Boto 3 - 0.0.6",
+   "prerelease": false,
+   "tag": "0.0.6",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.6"
+  },
+  {
+   "body": "-   feature: Add support for batch actions on collections. ([issue\n  32](https://github.com/boto/boto3/pull/32))\n-   feature: Update to Botocore 0.78.0\n  -   Add support for Amazon Simple Queue Service purge queue which\n    allows users to delete the messages in their queue.\n  -   Add AWS OpsWorks support for registering and assigning existing\n    Amazon EC2 instances and on-premises servers.\n  -   Fix issue with expired signatures when retrying failed requests\n    ([botocore issue\n    399](https://github.com/boto/botocore/pull/399))\n  -   Port Route53 resource ID customizations from AWS CLI to\n    Botocore. ([botocore issue\n    398](https://github.com/boto/botocore/pull/398))\n  -   Fix handling of blob type serialization for JSON services.\n    ([botocore issue\n    397](https://github.com/boto/botocore/pull/397))\n",
+   "date": "2014-12-16T23:05:32Z",
+   "name": "Boto 3 - 0.0.5",
+   "prerelease": false,
+   "tag": "0.0.5",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.5"
+  },
+  {
+   "body": "-   feature: Update to Botocore 0.77.0\n  -   Add support for Kinesis PutRecords operation. It writes multiple\n    data records from a producer into an Amazon Kinesis stream in a\n    single call.\n  -   Add support for IAM GetAccountAuthorizationDetails operation. It\n    retrieves information about all IAM users, groups, and roles in\n    your account, including their relationships to one another and\n    their attached policies.\n  -   Add support for updating the comment of a Route53 hosted zone.\n  -   Fix base64 serialization for JSON protocol services.\n  -   Fix issue where certain timestamps were not being accepted as\n    valid input ([botocore issue\n    389](https://github.com/boto/botocore/pull/389))\n-   feature: Update [Amazon EC2](http://aws.amazon.com/ec2/) resource model.\n-   feature: Support belongsTo resource reference as well as path\n  specified in an action's resource definition.\n-   bugfix: Fix an issue accessing SQS message bodies ([issue\n  33](https://github.com/boto/boto3/issues/33))\n",
+   "date": "2014-12-04T23:55:54Z",
+   "name": "Boto 3 - 0.0.4",
+   "prerelease": false,
+   "tag": "0.0.4",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.4"
+  },
+  {
+   "body": "-   feature: Update to Botocore 0.76.0.\n  -   Add support for using AWS Data Pipeline templates to create\n    pipelines and bind values to parameters in the pipeline\n  -   Add support to Amazon Elastic Transcoder client for encryption\n    of files in Amazon S3.\n  -   Fix issue where Amazon S3 requests were not being resigned\n    correctly when using Signature Version 4. ([botocore issue\n    388](https://github.com/boto/botocore/pull/388))\n  -   Add support for custom response parsing in Botocore clients.\n    ([botocore issue\n    387](https://github.com/boto/botocore/pull/387))\n",
+   "date": "2014-11-26T20:14:11Z",
+   "name": "Boto 3 - 0.0.3",
+   "prerelease": false,
+   "tag": "0.0.3",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.3"
+  },
+  {
+   "body": "-   Adds resources for [AWS\n  CloudFormation](http://aws.amazon.com/cloudformation/) and [AWS\n  OpsWorks](http://aws.amazon.com/opsworks/).\n-   Update to Botocore 0.73.0 and JMESPath 0.5.0\n-   Adds support for [AWS\n  CodeDeploy](http://aws.amazon.com/codedeploy/), [AWS\n  Config](http://aws.amazon.com/config/), [AWS\n  KMS](http://aws.amazon.com/kms/), [AWS\n  Lambda](http://aws.amazon.com/lambda/).\n-   Make requests with a customized HTTP user-agent\n",
+   "date": "2014-11-26T20:13:49Z",
+   "name": "Boto 3 - 0.0.2",
+   "prerelease": false,
+   "tag": "0.0.2",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.2"
+  },
+  {
+   "body": "- Initial developer preview refresh of Boto 3\n- Supports S3, EC2, SQS, SNS, and IAM resources\n- Supports low-level clients for most services\n",
+   "date": "2014-11-26T20:13:13Z",
+   "name": "Boto 3 - 0.0.1",
+   "prerelease": false,
+   "tag": "0.0.1",
+   "url": "https://github.com/boto/boto3/releases/tag/0.0.1"
+  }
+ ],
+ "repo": "boto/boto3"
+}

@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": "https://fastapi.tiangolo.com/release-notes/",
+ "ecosystem": "pypi",
+ "errata": null,
+ "latest": "0.162.0",
+ "metadata_fetched": "2026-11-02T16:59:54Z",
+ "package": "fastapi",
+ "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+ "registry": "https://pypi.org/project/fastapi/",
+ "releases": [],
+ "repository": "https://github.com/fastapi/fastapi",
+ "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
+}

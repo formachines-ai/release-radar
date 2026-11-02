@@ -1,0 +1,21 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "pypi",
+ "errata": {
+  "errata": 3,
+  "json": "https://formachines.ai/errata/pypi/mcp/index.json",
+  "new_version": "2.3.0",
+  "old_version": "1.26.0",
+  "updated": "2026-10-27",
+  "url": "https://formachines.ai/errata/pypi/mcp/"
+ },
+ "latest": "2.3.0",
+ "metadata_fetched": "2026-11-02T16:59:49Z",
+ "package": "mcp",
+ "page": "https://releases.formachines.ai/pkg/pypi/mcp/",
+ "registry": "https://pypi.org/project/mcp/",
+ "releases": [],
+ "repository": "https://github.com/modelcontextprotocol/python-sdk",
+ "summary": "Model Context Protocol SDK"
+}

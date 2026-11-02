@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "3.9.10",
+ "metadata_fetched": "2026-11-02T17:00:38Z",
+ "package": "prettier",
+ "page": "https://releases.formachines.ai/pkg/npm/prettier/",
+ "registry": "https://www.npmjs.com/package/prettier",
+ "releases": [],
+ "repository": "https://github.com/prettier/prettier",
+ "summary": "Prettier is an opinionated code formatter"
+}

@@ -1,0 +1,213 @@
+{
+ "changelog": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
+ "ecosystem": "pypi",
+ "fetched": "2026-11-02T16:59:54Z",
+ "homepage": "https://github.com/encode/httpx",
+ "latest": "0.28.1",
+ "name": "httpx",
+ "page": "https://pypi.org/project/httpx/",
+ "repo": "encode/httpx",
+ "summary": "The next generation HTTP client.",
+ "versions": [
+  {
+   "date": "2026-08-31T17:59:54Z",
+   "version": "1.0.dev6",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-21T10:59:57Z",
+   "version": "1.0.dev5",
+   "yanked": false
+  },
+  {
+   "date": "2026-08-19T12:36:32Z",
+   "version": "1.0.dev4",
+   "yanked": false
+  },
+  {
+   "date": "2025-09-15T16:15:10Z",
+   "version": "1.0.dev3",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-04T16:41:09Z",
+   "version": "1.0.dev2",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-02T18:49:48Z",
+   "version": "1.0.dev1",
+   "yanked": false
+  },
+  {
+   "date": "2024-12-06T15:37:21Z",
+   "version": "0.28.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-11-28T14:54:55Z",
+   "version": "0.28.0",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-27T12:53:59Z",
+   "version": "0.27.2",
+   "yanked": false
+  },
+  {
+   "date": "2024-08-27T11:30:38Z",
+   "version": "0.27.1",
+   "yanked": false
+  },
+  {
+   "date": "2024-02-21T13:07:50Z",
+   "version": "0.27.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-12-20T11:02:55Z",
+   "version": "0.26.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-24T12:36:31Z",
+   "version": "0.25.2",
+   "yanked": false
+  },
+  {
+   "date": "2023-11-03T13:28:55Z",
+   "version": "0.25.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-09-11T10:17:06Z",
+   "version": "0.25.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-05-19T00:50:54Z",
+   "version": "0.24.1",
+   "yanked": false
+  },
+  {
+   "date": "2023-04-11T10:01:39Z",
+   "version": "0.24.0",
+   "yanked": false
+  },
+  {
+   "date": "2023-01-04T09:41:19Z",
+   "version": "0.23.3",
+   "yanked": false
+  },
+  {
+   "date": "2023-01-02T11:48:21Z",
+   "version": "0.23.2",
+   "yanked": false
+  },
+  {
+   "date": "2022-11-18T12:50:41Z",
+   "version": "0.23.1",
+   "yanked": false
+  },
+  {
+   "date": "2022-05-23T15:32:35Z",
+   "version": "0.23.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-26T14:50:22Z",
+   "version": "0.22.0",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-06T14:37:54Z",
+   "version": "0.21.3",
+   "yanked": false
+  },
+  {
+   "date": "2022-01-05T16:25:52Z",
+   "version": "0.21.2",
+   "yanked": false
+  },
+  {
+   "date": "2021-11-16T11:52:52Z",
+   "version": "0.21.1",
+   "yanked": false
+  },
+  {
+   "date": "2021-11-15T14:31:54Z",
+   "version": "0.21.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-10-13T09:45:23Z",
+   "version": "0.20.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-08-19T11:38:42Z",
+   "version": "0.19.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-06-17T10:31:31Z",
+   "version": "0.18.2",
+   "yanked": false
+  },
+  {
+   "date": "2021-04-29T12:58:23Z",
+   "version": "0.18.1",
+   "yanked": false
+  },
+  {
+   "date": "2021-04-27T14:23:27Z",
+   "version": "0.18.0",
+   "yanked": false
+  },
+  {
+   "date": "2021-03-15T09:20:06Z",
+   "version": "0.17.1",
+   "yanked": false
+  },
+  {
+   "date": "2021-02-28T16:10:02Z",
+   "version": "0.17.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-10-08T12:16:10Z",
+   "version": "0.16.1",
+   "yanked": false
+  },
+  {
+   "date": "2020-10-06T14:31:20Z",
+   "version": "0.16.0",
+   "yanked": false
+  },
+  {
+   "date": "2020-10-01T12:59:09Z",
+   "version": "0.15.5",
+   "yanked": false
+  },
+  {
+   "date": "2020-09-25T11:36:31Z",
+   "version": "0.15.4",
+   "yanked": false
+  },
+  {
+   "date": "2020-09-24T09:41:00Z",
+   "version": "0.15.3",
+   "yanked": false
+  },
+  {
+   "date": "2020-09-23T10:29:53Z",
+   "version": "0.15.2",
+   "yanked": false
+  },
+  {
+   "date": "2020-09-23T09:23:59Z",
+   "version": "0.15.1",
+   "yanked": false
+  }
+ ]
+}

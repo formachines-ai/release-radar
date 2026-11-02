@@ -1,0 +1,27 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "beta": "8.14.2-alpha.1",
+  "latest": "8.23.1"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-02T17:00:36Z",
+ "homepage": "https://github.com/brianc/node-postgres",
+ "latest": "8.23.1",
+ "name": "pg",
+ "page": "https://www.npmjs.com/package/pg",
+ "repo": "brianc/node-postgres",
+ "summary": "PostgreSQL client - pure javascript & libpq with the same API",
+ "versions": [
+  {
+   "date": "2026-09-30T15:39:58Z",
+   "deprecated": false,
+   "version": "8.23.1"
+  },
+  {
+   "date": "2026-08-08T19:27:05Z",
+   "deprecated": false,
+   "version": "8.23.0"
+  }
+ ]
+}

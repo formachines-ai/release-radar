@@ -1,0 +1,14 @@
+{
+ "built": "2026-11-02T17:01:40Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "5.3.0",
+ "metadata_fetched": "2026-11-02T17:00:29Z",
+ "package": "express",
+ "page": "https://releases.formachines.ai/pkg/npm/express/",
+ "registry": "https://www.npmjs.com/package/express",
+ "releases": [],
+ "repository": "https://github.com/expressjs/express",
+ "summary": "Fast, unopinionated, minimalist web framework"
+}
