@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T17:01:40Z",
+ "built": "2026-11-02T19:28:19Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -75,23 +75,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "1.43.120",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T19:25:57Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/boto3/1.43.119",
-   "json": "https://releases.formachines.ai/pkg/pypi/boto3/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/0b85655c77/",
-   "notes_url": "https://github.com/boto/boto3/releases",
-   "package": "boto3",
-   "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.43.119",
    "yanked_or_deprecated": false
   }
  ],

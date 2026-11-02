@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T17:01:40Z",
+ "built": "2026-11-02T19:28:19Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -31,23 +31,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "13.2.0-20261030160918",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T17:35:01Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/firebase/",
-   "flagged": false,
-   "id": "npm/firebase/13.1.0-eap-crashlytics.d474e7535",
-   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
-   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
-   "package": "firebase",
-   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "13.1.0-eap-crashlytics.d474e7535",
    "yanked_or_deprecated": false
   }
  ],
