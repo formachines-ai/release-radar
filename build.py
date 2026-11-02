@@ -39,6 +39,7 @@ from pathlib import Path
 # Parameters (everything tunable lives here)
 # ----------------------------------------------------------------------------------------------------------
 SITE_NAME = "Release Radar"
+REPO_ISSUES_URL = "https://github.com/formachines-ai/release-radar/issues/new"
 SITE_BASE = os.environ.get("SITE_BASE", "https://releases.formachines.ai").rstrip("/")
 RESPONSIBLE = "Dmitry, formachines.ai"
 RESPONSIBLE_URL = "https://formachines.ai/"
@@ -685,6 +686,14 @@ def render_quote(q: dict) -> str:
     return f'<blockquote class="quote">{text}</blockquote>'
 
 
+def vote_id(r: dict) -> str:
+    return hashlib.sha1(r["id"].encode("utf-8")).hexdigest()[:10]
+
+
+def vote_target(r: dict) -> str:
+    return f'{r["pkg_path"]}#{safe_fs_name(r["id"])}'
+
+
 def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
     flagged = ' flagged' if r["flagged"] else ""
     badges = []
@@ -700,11 +709,17 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
             "registry_page": "registry page"}.get(r["notes_kind"], "release notes")
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">{kind} →</a>' if r.get("notes_go") else ""
     links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
+    vid = vote_id(r)
+    issue_title = urllib.parse.quote(f"Error in entry: {r['ecosystem']}/{r['name']} {r['version']}")
+    issue_body = urllib.parse.quote(f"Entry: {SITE_BASE}{r['pkg_path']}#{safe_fs_name(r['id'])}\n\nWhat is wrong (quote / number / link)?\n")
+    feedback = (f'<span class="feedback">Was this useful? <a href="/go/vote/{vid}/up/" rel="nofollow">useful</a> · '
+                f'<a href="/go/vote/{vid}/down/" rel="nofollow">not useful</a> · '
+                f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
     return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{quotes}<div class="links">{links}</div></li>')
+            f'{" ".join(badges)}</div>{quotes}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -795,8 +810,10 @@ def render_package(p: dict, model: dict) -> str:
                   canonical=SITE_BASE + p["path"])
 
 
-def render_go(url: str, built: str) -> str:
+def render_go(url: str, built: str, vote: bool = False) -> str:
     u = esc(url)
+    msg = (f'Thanks — your vote is counted from the server log. <a href="{u}">Back to the entry</a>.' if vote else
+           f'Redirecting to <a href="{u}" rel="nofollow">{u}</a>. This hop exists only so that external clicks can be counted in the server log; nothing about you is stored.')
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -808,7 +825,7 @@ def render_go(url: str, built: str) -> str:
 <link rel="stylesheet" href="/style.css">
 </head>
 <body><main><div class="wrap">
-<p>Redirecting to <a href="{u}" rel="nofollow">{u}</a>. This hop exists only so that external clicks can be counted in the server log; nothing about you is stored.</p>
+<p>{msg}</p>
 </div></main>
 <footer class="site"><div class="wrap"><p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p><p class="build">{build_line(built)}</p></div></footer>
 </body>
@@ -969,6 +986,9 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             go_map[r["notes_go"]] = r["notes_url"]
     for gid, url in go_map.items():
         write_text(PUBLIC_DIR / "go" / gid / "index.html", render_go(url, built))
+    for r in model["releases"]:
+        for d in ("up", "down"):
+            write_text(PUBLIC_DIR / "go" / "vote" / vote_id(r) / d / "index.html", render_go(vote_target(r), built, vote=True))
     write_json(PUBLIC_DIR / "go" / "index.json", {"built": built, "redirects": go_map})
     flagged = [r for r in model["releases"] if r["flagged"]]
     today = {

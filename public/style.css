@@ -119,3 +119,5 @@ footer.site p { margin: 0.2rem 0; }
   dl.meta { grid-template-columns: 1fr; gap: 0 0; }
   dl.meta dt { margin-top: 0.4rem; }
 }
+.card .feedback-row { margin-top: 0.2rem; font-size: 0.85rem; color: var(--muted); }
+.card .feedback a { color: var(--muted); display: inline-block; min-height: 24px; line-height: 24px; }
