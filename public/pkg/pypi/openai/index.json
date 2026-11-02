@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T17:01:40Z",
+ "built": "2026-11-02T19:28:19Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -75,23 +75,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "3.40.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T19:19:10Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/openai/3.39.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/e6c8f5e185/",
-   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.39.0",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "3.39.0",
    "yanked_or_deprecated": false
   }
  ],

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T17:01:40Z",
+ "built": "2026-11-02T19:28:19Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -67,23 +67,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "5.21.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T18:17:23Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/transformers/5.21.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/dbc9598b3b/",
-   "notes_url": "https://github.com/huggingface/transformers/releases",
-   "package": "transformers",
-   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "5.21.0",
    "yanked_or_deprecated": false
   }
  ],

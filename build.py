@@ -142,10 +142,18 @@ def safe_fs_name(name: str) -> str:
     return re.sub(r"[^A-Za-z0-9@._-]+", "_", name).replace("@", "")
 
 
+GIT_SHA: str | None = None
+
+
+def build_line(built: str) -> str:
+    return f"build {esc(built)} UTC · {esc(GIT_SHA or 'unknown')}"
+
+
 def git_head() -> str | None:
     try:
-        return subprocess.run(["git", "rev-parse", "--short", "HEAD"], cwd=ROOT, capture_output=True,
-                              text=True, timeout=10, check=True).stdout.strip() or None
+        out = subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT, capture_output=True,
+                             text=True, timeout=10, check=True).stdout.strip()
+        return out[:7] if re.fullmatch(r"[0-9a-f]{40,64}", out) else None
     except (OSError, subprocess.SubprocessError):
         return None
 
@@ -642,6 +650,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 </div></main>
 <footer class="site"><div class="wrap">
 <p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p>
+<p class="build">{build_line(built)}</p>
 <p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="{esc(LICENSE_URL)}">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · no cookies, no tracking, no JavaScript.</p>
 </div></footer>
 </body>
@@ -801,7 +810,7 @@ def render_go(url: str, built: str) -> str:
 <body><main><div class="wrap">
 <p>Redirecting to <a href="{u}" rel="nofollow">{u}</a>. This hop exists only so that external clicks can be counted in the server log; nothing about you is stored.</p>
 </div></main>
-<footer class="site"><div class="wrap"><p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p></div></footer>
+<footer class="site"><div class="wrap"><p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p><p class="build">{build_line(built)}</p></div></footer>
 </body>
 </html>
 """
@@ -930,6 +939,8 @@ def render_sitemap(model: dict) -> str:
 # Write public/
 # ----------------------------------------------------------------------------------------------------------
 def write_site(model: dict, errata_count: int, http: Http) -> dict:
+    global GIT_SHA
+    GIT_SHA = git_head()
     built = model["built"]
     PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
     # never delete public/ wholesale: addresses must survive; stale pkg pages stay until removed on purpose.
@@ -969,7 +980,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     }
     write_json(PUBLIC_DIR / "today.json", today)
     build_info = {
-        "built": built, "commit": git_head(), "generator": "build.py", "packages": len(model["packages"]),
+        "built": built, "commit": GIT_SHA, "generator": "build.py", "packages": len(model["packages"]),
         "releases": len(model["releases"]), "flagged": len(flagged), "redirects": len(go_map),
         "http_requests": http.requests, "github_remaining": http.github_remaining, "errors": http.errors[:50],
     }
