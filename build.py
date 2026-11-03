@@ -672,7 +672,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="/">{esc(SITE_NAME)}</a>
-<nav><a href="/#pypi">PyPI</a><a href="/#npm">npm</a><a href="/#packages">Packages</a><a href="/feed.xml">RSS</a><a href="/today.json">today.json</a><a href="/llms.txt">llms.txt</a><a href="/legal/">Legal</a></nav>
+<nav><a href="/#pkg-index">jump to package index</a><a href="/#pypi">PyPI</a><a href="/#npm">npm</a><a href="/#packages">Packages</a><a href="/feed.xml">RSS</a><a href="/today.json">today.json</a><a href="/llms.txt">llms.txt</a><a href="/legal/">Legal</a></nav>
 </div></header>
 <main><div class="wrap">
 {body}
@@ -778,6 +778,13 @@ def render_index(model: dict, errata_count: int) -> str:
             f'Packages with a sandbox-verified fix on <a href="https://formachines.ai/errata/">Errata</a> ({errata_count} packages there) carry a green badge.</p>',
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
+    idx = [f'<h2 id="pkg-index">Tracked packages ({len(model["packages"])})</h2>']
+    for eco, label in (("npm", "npm"), ("pypi", "PyPI")):
+        names = sorted((p for p in model["packages"] if p["ecosystem"] == eco), key=lambda p: p["name"].lower())
+        if names:
+            idx.append(f'<p class="pkg-index"><b>{label} ({len(names)}):</b> ' + " · ".join(
+                f'<a href="{esc(p["path"])}">{esc(p["name"])}</a>' for p in names) + "</p>")
+    body.append("\n".join(idx))
     body.append(f'<h2 id="recent">Last {recent_hours} h{quiet_note}</h2>')
     body.append('<ul class="cards">' + "".join(render_card(r, now) for r in recent) + "</ul>" if recent
                 else f'<p class="note">No release in the last {QUIET_HOURS} h among tracked packages. The {WINDOW_DAYS}-day lists below are never empty on purpose.</p>')

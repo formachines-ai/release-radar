@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T11:16:42Z",
+ "built": "2026-11-03T12:17:15Z",
  "counts": {
   "flagged": 16,
   "packages": 93,
@@ -2772,5 +2772,5 @@
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T11:16:42Z"
+ "window_start": "2026-10-27T12:17:15Z"
 }
