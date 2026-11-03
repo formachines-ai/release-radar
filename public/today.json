@@ -1,10 +1,10 @@
 {
- "built": "2026-11-03T12:17:15Z",
+ "built": "2026-11-03T16:15:27Z",
  "counts": {
   "flagged": 16,
   "packages": 93,
   "prereleases": 66,
-  "releases": 156,
+  "releases": 154,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -2734,43 +2734,9 @@
    "quotes": [],
    "version": "19.3.0-canary-dc9aed36-20261027",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T15:49:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/openai/7.45.1",
-   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/e8caf518c7/",
-   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.45.1",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/npm/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "7.45.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T15:38:52Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/openai/3.40.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/10516ce458/",
-   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.40.0",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "3.40.0",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T12:17:15Z"
+ "window_start": "2026-10-27T16:15:27Z"
 }
