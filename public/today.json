@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T10:13:31Z",
+ "built": "2026-11-03T11:16:42Z",
  "counts": {
   "flagged": 16,
   "packages": 93,
@@ -182,11 +182,11 @@
     },
     {
      "match": "no longer",
-     "quote": "- Ensure the `@property` fallback isn't applied in Safari versions that no longer support `margin-trim: inline` ([#20569](https://github.com/tailwindlabs/tailwindcss/pull/20569))"
+     "quote": "- Ensure `@tailwindcss/turbopack` and `@tailwindcss/webpack` rebuild when the input CSS changes (e.g. `next dev` with Turbopack no longer serves the CSS of the previous edit) ([#20582](https://github.com/tailwindlabs/tailwindcss/pull/20582))"
     },
     {
      "match": "no longer",
-     "quote": "- Ensure `@tailwindcss/turbopack` and `@tailwindcss/webpack` rebuild when the input CSS changes (e.g. `next dev` with Turbopack no longer serves the CSS of the previous edit) ([#20582](https://github.com/tailwindlabs/tailwindcss/pull/20582))"
+     "quote": "- Canonicalization: don't drop a utility that sets a `--tw-*` variable when an unrelated property has the same value (e.g. `link mt-4` no longer becomes `mt-4` when `link` sets `margin-top: 16px` and `--tw-translate-x: 16px`) ([#20593](https://github.com/tailwindlabs/tailwindcss/…"
     }
    ],
    "version": "4.3.4",
@@ -2772,5 +2772,5 @@
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T10:13:31Z"
+ "window_start": "2026-10-27T11:16:42Z"
 }
