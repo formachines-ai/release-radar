@@ -1,11 +1,11 @@
 {
- "built": "2026-11-03T08:17:11Z",
+ "built": "2026-11-03T10:13:31Z",
  "counts": {
   "flagged": 16,
   "packages": 93,
-  "prereleases": 69,
-  "releases": 159,
-  "with_errata": 13
+  "prereleases": 66,
+  "releases": 156,
+  "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
@@ -2768,60 +2768,9 @@
    "quotes": [],
    "version": "3.40.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T09:25:16Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prisma/8.0.0-rc.27-dev.169",
-   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
-   "notes_url": "https://github.com/prisma/prisma-cli/releases",
-   "package": "prisma",
-   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "8.0.0-rc.27-dev.169",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T09:15:54Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prisma/8.0.0-rc.27-dev.168",
-   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
-   "notes_url": "https://github.com/prisma/prisma-cli/releases",
-   "package": "prisma",
-   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "8.0.0-rc.27-dev.168",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T08:36:54Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261027.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "7.1.0-dev.20261027.1",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T08:17:11Z"
+ "window_start": "2026-10-27T10:13:31Z"
 }

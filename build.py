@@ -666,6 +666,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 <meta name="description" content="{esc(desc)}">
 {og}{ld}<meta name="generator" content="Release Radar build.py (agent-team)">
 {robots}{canon}<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/brand/avatar.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)} RSS" href="/feed.xml">
 </head>
 <body>
@@ -893,6 +894,28 @@ def render_404(built: str) -> str:
     return layout(f"404 — {SITE_NAME}", body, built, noindex=True)
 
 
+def render_brand(built: str) -> str:
+    def img(src: str, px: int) -> str:
+        return f'<img src="{src}" width="{px}" height="{px}" alt="" style="border-radius:50%;vertical-align:middle;margin-right:.6rem">'
+    body = (
+        "<h1>Brand: avatar</h1>"
+        "<p>Two avatar concepts: plain geometry, no text, no third-party logos, readable in a 48 px circle. "
+        "The AI-agents note is not part of the picture; it is in every page footer and channel description.</p>"
+        f'<h2>Chosen: A — radar sweep</h2><p>{img("/brand/avatar.svg", 192)}{img("/brand/avatar.svg", 48)}{img("/brand/avatar.svg", 24)}</p>'
+        "<p>Why: it says “radar” at once, the high-contrast sweep and the orange blip survive downscaling to 48 px, "
+        "and the blip reads as “something new appeared”. File: <a href=\"/brand/avatar.svg\">/brand/avatar.svg</a> (SVG 512×512). "
+        "It is also the site favicon.</p>"
+        f'<h2>Variant B — version stack</h2><p>{img("/brand/avatar-b.svg", 192)}{img("/brand/avatar-b.svg", 48)}</p>'
+        "<p>Two stacked bars under an upward arrow (a version bump). Clear too, but generic: it looks like many upload/update icons. "
+        "File: <a href=\"/brand/avatar-b.svg\">/brand/avatar-b.svg</a>.</p>"
+        "<h2>Where it will be used</h2><ul>"
+        "<li>Telegram channel @relesae_radar (to be uploaded by the owner or the duty session)</li>"
+        "<li>Site favicon (done)</li></ul>"
+        "<p>Other channels from the product plan (Bluesky, Mastodon, X) may reuse it once those accounts need an avatar.</p>")
+    return layout(f"Brand — {SITE_NAME}", body, built, canonical=SITE_BASE + "/brand/",
+                  description=f"Avatar concepts and the chosen avatar of {SITE_NAME}.")
+
+
 def render_legal(built: str) -> str:
     body = (f"<h1>Legal</h1>"
             f"<p><strong>Responsible person:</strong> Dmitry, <a href=\"{esc(RESPONSIBLE_URL)}\">formachines.ai</a> — contact details, imprint and "
@@ -999,7 +1022,7 @@ Sitemap: __SITE__/sitemap.xml
 
 
 def render_sitemap(model: dict) -> str:
-    urls = [SITE_BASE + "/", SITE_BASE + "/legal/"] + [SITE_BASE + p["path"] for p in model["packages"]]
+    urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"] + [SITE_BASE + p["path"] for p in model["packages"]]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc><lastmod>{esc(model['built'][:10])}</lastmod></url>" for u in urls) + "</urlset>\n")
 
@@ -1017,6 +1040,9 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     write_text(PUBLIC_DIR / "index.html", render_index(model, errata_count))
     write_text(PUBLIC_DIR / "404.html", render_404(built))
     write_text(PUBLIC_DIR / "legal" / "index.html", render_legal(built))
+    write_text(PUBLIC_DIR / "brand" / "index.html", render_brand(built))
+    for f in (STATIC_DIR / "brand").glob("*.svg"):
+        shutil.copyfile(f, PUBLIC_DIR / "brand" / f.name)
     write_text(PUBLIC_DIR / "robots.txt", ROBOTS_TXT.replace("__SITE__", SITE_BASE))
     write_text(PUBLIC_DIR / "llms.txt", render_llms(model))
     write_text(PUBLIC_DIR / "feed.xml", render_feed(model))
