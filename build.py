@@ -772,22 +772,26 @@ def render_index(model: dict, errata_count: int) -> str:
         f'</ul>'
     )
     body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>",
-            f'<p class="lead">What shipped on PyPI and npm in the last {WINDOW_DAYS} days across {len(model["packages"])} tracked packages, '
-            f'with the exact lines of the release notes that say <em>breaking</em>, <em>deprecated</em>, <em>removed</em>, <em>renamed</em>, '
-            f'<em>dropped support</em> or <em>no longer</em>. Quotes are verbatim; the flag is a regular-expression match, not an opinion. '
-            f'Packages with a sandbox-verified fix on <a href="https://formachines.ai/errata/">Errata</a> ({errata_count} packages there) carry a green badge.</p>',
+            '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
+            'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
+            'and no flag does not mean a safe update.</p>',
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
-    idx = [f'<h2 id="pkg-index">Tracked packages ({len(model["packages"])})</h2>']
+    idx = [f'<details id="pkg-index"><summary>Find your package ({len(model["packages"])})</summary>']
     for eco, label in (("npm", "npm"), ("pypi", "PyPI")):
         names = sorted((p for p in model["packages"] if p["ecosystem"] == eco), key=lambda p: p["name"].lower())
         if names:
             idx.append(f'<p class="pkg-index"><b>{label} ({len(names)}):</b> ' + " · ".join(
                 f'<a href="{esc(p["path"])}">{esc(p["name"])}</a>' for p in names) + "</p>")
+    idx.append('</details>')
     body.append("\n".join(idx))
     body.append(f'<h2 id="recent">Last {recent_hours} h{quiet_note}</h2>')
+    body.append('<p class="note legend">Flag = regex word match + verbatim quote.</p>')
     body.append('<ul class="cards">' + "".join(render_card(r, now) for r in recent) + "</ul>" if recent
                 else f'<p class="note">No release in the last {QUIET_HOURS} h among tracked packages. The {WINDOW_DAYS}-day lists below are never empty on purpose.</p>')
+    body.append(f'<p class="note">How flags work: the last {WINDOW_DAYS} days of releases are read for the exact lines of the release notes that say <em>breaking</em>, <em>deprecated</em>, <em>removed</em>, <em>renamed</em>, '
+                f'<em>dropped support</em> or <em>no longer</em>. Quotes are verbatim; the flag is a regular-expression match, not an opinion. '
+                f'Packages with a sandbox-verified fix on <a href="https://formachines.ai/errata/">Errata</a> ({errata_count} packages there) carry a green badge.</p>')
     body.append('<h2 id="flagged">Flagged in the last 7 days</h2>')
     body.append('<ul class="cards">' + "".join(render_card(r, now) for r in flagged) + "</ul>" if flagged
                 else '<p class="note">No release notes matched the breaking-change pattern this week.</p>')

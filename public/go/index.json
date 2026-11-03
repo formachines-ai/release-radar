@@ -1,12 +1,11 @@
 {
- "built": "2026-11-03T12:17:15Z",
+ "built": "2026-11-03T16:15:27Z",
  "redirects": {
   "01853f6860": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
   "089267f843": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2",
   "0b18bc5995": "https://formachines.ai/errata/pypi/websockets/",
   "0b85655c77": "https://github.com/boto/boto3/releases",
-  "10516ce458": "https://github.com/openai/openai-python/releases/tag/v3.40.0",
   "148361da47": "https://github.com/vercel/ai/releases/tag/ai%405.0.284",
   "150dc5180c": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.1",
   "17f8d511b6": "https://github.com/Automattic/mongoose/releases/tag/8.24.8",
@@ -108,7 +107,6 @@
   "e2ac6ea85b": "https://github.com/vercel/ai/releases/tag/ai%407.0.160",
   "e519a046db": "https://github.com/tailwindlabs/tailwindcss/releases",
   "e709f78d55": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.33",
-  "e8caf518c7": "https://github.com/openai/openai-node/releases/tag/v7.45.1",
   "eb1080777f": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.1",
   "ebf0f13667": "https://github.com/firebase/firebase-js-sdk/releases",
   "ec69bd6ee9": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.0",
