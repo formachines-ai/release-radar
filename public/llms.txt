@@ -18,15 +18,15 @@ Built by AI agents (agent-team) without human editing; responsible: Dmitry, form
 
 ## Packages
 
-- [@ai-sdk/openai (npm)](https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/): latest 4.0.106
-- [@anthropic-ai/sdk (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/): latest 1.3.0
+- [@ai-sdk/openai (npm)](https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/): latest 4.0.108
+- [@anthropic-ai/sdk (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/): latest 1.4.0
 - [@google/genai (npm)](https://releases.formachines.ai/pkg/npm/@google/genai/): latest 2.32.0
-- [@langchain/core (npm)](https://releases.formachines.ai/pkg/npm/@langchain/core/): latest 1.3.2
+- [@langchain/core (npm)](https://releases.formachines.ai/pkg/npm/@langchain/core/): latest 1.3.3
 - [@modelcontextprotocol/sdk (npm)](https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/): latest 1.32.2
 - [@prisma/client (npm)](https://releases.formachines.ai/pkg/npm/@prisma/client/): latest 7.10.1
 - [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.118.0
-- [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.105.2
-- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.159
+- [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.105.3
+- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.162
 - [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.5
 - [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.0
 - [commander (npm)](https://releases.formachines.ai/pkg/npm/commander/): latest 15.0.0
@@ -36,14 +36,14 @@ Built by AI agents (agent-team) without human editing; responsible: Dmitry, form
 - [eslint (npm)](https://releases.formachines.ai/pkg/npm/eslint/): latest 10.14.0
 - [express (npm)](https://releases.formachines.ai/pkg/npm/express/): latest 5.3.0
 - [fastify (npm)](https://releases.formachines.ai/pkg/npm/fastify/): latest 5.12.8
-- [firebase (npm)](https://releases.formachines.ai/pkg/npm/firebase/): latest 13.1.0 · Errata correction available
+- [firebase (npm)](https://releases.formachines.ai/pkg/npm/firebase/): latest 13.2.0 · Errata correction available
 - [hono (npm)](https://releases.formachines.ai/pkg/npm/hono/): latest 4.13.16
 - [ioredis (npm)](https://releases.formachines.ai/pkg/npm/ioredis/): latest 6.0.0
 - [jest (npm)](https://releases.formachines.ai/pkg/npm/jest/): latest 30.5.2
 - [langchain (npm)](https://releases.formachines.ai/pkg/npm/langchain/): latest 1.6.0
 - [mongoose (npm)](https://releases.formachines.ai/pkg/npm/mongoose/): latest 9.11.4
 - [next (npm)](https://releases.formachines.ai/pkg/npm/next/): latest 16.4.4
-- [nuxt (npm)](https://releases.formachines.ai/pkg/npm/nuxt/): latest 4.6.3
+- [nuxt (npm)](https://releases.formachines.ai/pkg/npm/nuxt/): latest 4.6.4
 - [openai (npm)](https://releases.formachines.ai/pkg/npm/openai/): latest 7.47.0
 - [pg (npm)](https://releases.formachines.ai/pkg/npm/pg/): latest 8.23.1
 - [playwright (npm)](https://releases.formachines.ai/pkg/npm/playwright/): latest 1.64.1
@@ -55,7 +55,7 @@ Built by AI agents (agent-team) without human editing; responsible: Dmitry, form
 - [react-router (npm)](https://releases.formachines.ai/pkg/npm/react-router/): latest 8.5.1
 - [stripe (npm)](https://releases.formachines.ai/pkg/npm/stripe/): latest 23.1.0
 - [svelte (npm)](https://releases.formachines.ai/pkg/npm/svelte/): latest 5.57.3
-- [tailwindcss (npm)](https://releases.formachines.ai/pkg/npm/tailwindcss/): latest 4.3.3
+- [tailwindcss (npm)](https://releases.formachines.ai/pkg/npm/tailwindcss/): latest 4.3.4
 - [typescript (npm)](https://releases.formachines.ai/pkg/npm/typescript/): latest 7.0.2 · Errata correction available
 - [vite (npm)](https://releases.formachines.ai/pkg/npm/vite/): latest 8.3.5
 - [vitest (npm)](https://releases.formachines.ai/pkg/npm/vitest/): latest 5.1.0
@@ -64,7 +64,7 @@ Built by AI agents (agent-team) without human editing; responsible: Dmitry, form
 - [zustand (npm)](https://releases.formachines.ai/pkg/npm/zustand/): latest 5.0.16
 - [aiohttp (pypi)](https://releases.formachines.ai/pkg/pypi/aiohttp/): latest 3.14.5
 - [alembic (pypi)](https://releases.formachines.ai/pkg/pypi/alembic/): latest 1.20.1
-- [anthropic (pypi)](https://releases.formachines.ai/pkg/pypi/anthropic/): latest 2.3.0
+- [anthropic (pypi)](https://releases.formachines.ai/pkg/pypi/anthropic/): latest 2.4.0
 - [black (pypi)](https://releases.formachines.ai/pkg/pypi/black/): latest 26.10.1
 - [boto3 (pypi)](https://releases.formachines.ai/pkg/pypi/boto3/): latest 1.43.123
 - [celery (pypi)](https://releases.formachines.ai/pkg/pypi/celery/): latest 5.6.3

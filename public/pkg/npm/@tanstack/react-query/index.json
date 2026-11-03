@@ -1,18 +1,35 @@
 {
- "built": "2026-11-03T04:10:34Z",
+ "built": "2026-11-03T04:45:26Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "5.105.2",
+ "latest": "5.105.3",
  "latest_stable": {
-  "date": "2026-11-02T13:57:22Z",
-  "version": "5.105.2"
+  "date": "2026-11-02T20:39:13Z",
+  "version": "5.105.3"
  },
- "metadata_fetched": "2026-11-02T17:00:20Z",
+ "metadata_fetched": "2026-11-03T04:45:52Z",
  "package": "@tanstack/react-query",
  "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
  "registry": "https://www.npmjs.com/package/@tanstack/react-query",
  "releases": [
+  {
+   "date": "2026-11-02T20:39:13Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@tanstack/react-query/5.105.3",
+   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8644055809/",
+   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.3",
+   "package": "@tanstack/react-query",
+   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.105.3",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-02T13:57:22Z",
    "ecosystem": "npm",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:10:34Z",
+ "built": "2026-11-03T04:45:26Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-02T14:26:27Z",
   "version": "7.4.5"
  },
- "metadata_fetched": "2026-11-02T17:00:21Z",
+ "metadata_fetched": "2026-11-03T04:45:53Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "registry": "https://www.npmjs.com/package/astro",

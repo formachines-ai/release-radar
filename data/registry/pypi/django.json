@@ -1,7 +1,7 @@
 {
  "changelog": "https://docs.djangoproject.com/en/stable/releases/",
  "ecosystem": "pypi",
- "fetched": "2026-11-02T16:59:54Z",
+ "fetched": "2026-11-03T04:45:32Z",
  "homepage": "https://www.djangoproject.com/",
  "latest": "6.1.2",
  "name": "Django",

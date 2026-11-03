@@ -1,15 +1,5 @@
 {
- "by_tag": {
-  "react-dom@0.0.0-experimental-a703ca64-20261030": null,
-  "react-dom@0.0.0-experimental-c5ec5c6d-20261029": null,
-  "react-dom@0.0.0-experimental-dc9aed36-20261027": null,
-  "react-dom@0.0.0-experimental-e84e1492-20261031": null,
-  "react@0.0.0-experimental-a703ca64-20261030": null,
-  "react@0.0.0-experimental-c5ec5c6d-20261029": null,
-  "react@0.0.0-experimental-dc9aed36-20261027": null,
-  "react@0.0.0-experimental-e84e1492-20261031": null
- },
- "fetched": "2026-11-02T17:00:41Z",
+ "fetched": "2026-11-03T04:46:08Z",
  "releases": [
   {
    "body": "## React Server Components\r\n\r\n- Improve transport protocol ([#37845](https://github.com/facebook/react/pull/37845) by @unstubbable and @eps1lon)",

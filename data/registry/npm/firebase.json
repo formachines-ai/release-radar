@@ -20,7 +20,7 @@
   "exp-types-exploration": "8.9.1-8.9.1-exp-types-exploration.635c9e3fd",
   "firebase-studio-sdk-integration": "12.1.0-firebase-studio-sdk-integration.556d1bed2",
   "firestore-bundles-alpha": "7.22.1-alpha.96ae6a5fe",
-  "latest": "13.1.0",
+  "latest": "13.2.0",
   "longpoll": "8.2.2-longpoll.66863f547",
   "next": "13.2.0-20261030160918",
   "passkey-preview": "10.11.0-passkey-preview.103ead202",
@@ -29,14 +29,19 @@
   "vertexai-preview": "10.13.2-vertexai-preview.6b035b7d3"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-02T17:00:31Z",
+ "fetched": "2026-11-03T04:46:00Z",
  "homepage": "https://firebase.google.com/",
- "latest": "13.1.0",
+ "latest": "13.2.0",
  "name": "firebase",
  "page": "https://www.npmjs.com/package/firebase",
  "repo": "firebase/firebase-js-sdk",
  "summary": "Firebase JavaScript library for web and Node.js",
  "versions": [
+  {
+   "date": "2026-11-02T18:16:41Z",
+   "deprecated": false,
+   "version": "13.2.0"
+  },
   {
    "date": "2026-10-30T16:25:33Z",
    "deprecated": false,
@@ -136,16 +141,6 @@
    "date": "2026-08-18T17:38:59Z",
    "deprecated": false,
    "version": "12.18.0-20260818172054"
-  },
-  {
-   "date": "2026-08-04T22:44:27Z",
-   "deprecated": false,
-   "version": "12.17.1"
-  },
-  {
-   "date": "2026-08-04T21:06:12Z",
-   "deprecated": false,
-   "version": "12.17.1-20260804205512"
   }
  ]
 }

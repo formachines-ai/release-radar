@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:10:34Z",
+ "built": "2026-11-03T04:45:26Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-23T18:11:38Z",
   "version": "1.32.2"
  },
- "metadata_fetched": "2026-11-02T17:00:11Z",
+ "metadata_fetched": "2026-11-03T04:45:43Z",
  "package": "@modelcontextprotocol/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/",
  "registry": "https://www.npmjs.com/package/@modelcontextprotocol/sdk",

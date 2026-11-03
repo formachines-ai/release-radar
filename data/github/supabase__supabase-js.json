@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-02T17:00:20Z",
+ "fetched": "2026-11-03T04:45:52Z",
  "releases": [
   {
    "body": "## 2.119.0-canary.4 (2026-10-28)\n\n### 🩹 Fixes\n\n- **auth:** `global` sign out cleared the local session when the server failed to log out ([#2786](https://github.com/supabase/supabase-js/pull/2786))\n\n### ❤️ Thank You\n\n- Christian Melchior",

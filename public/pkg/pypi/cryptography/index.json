@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:10:34Z",
+ "built": "2026-11-03T04:45:26Z",
  "changelog": "https://cryptography.io/en/latest/changelog/",
  "ecosystem": "pypi",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-09-30T14:43:44Z",
   "version": "50.0.2"
  },
- "metadata_fetched": "2026-11-02T16:59:54Z",
+ "metadata_fetched": "2026-11-03T04:45:32Z",
  "package": "cryptography",
  "page": "https://releases.formachines.ai/pkg/pypi/cryptography/",
  "registry": "https://pypi.org/project/cryptography/",

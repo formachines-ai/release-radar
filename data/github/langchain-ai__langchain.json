@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-02T16:59:47Z",
+ "fetched": "2026-11-03T04:45:28Z",
  "releases": [
   {
    "body": "> [!WARNING]\n> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Python 3.10. Please upgrade to Python 3.11 or later.\n\nChanges since langchain==1.4.7\n\nchore(langchain): bump langchain-core (#41640)\nrelease(langchain): 1.4.8 (#41636)\nchore(deps): bump pyasn1 from 0.6.4 to 0.6.5 in /libs/langchain_v1 (#41591)\nchore(deps): bump joserfc from 1.7.4 to 1.7.6 in /libs/langchain_v1 (#41587)\nchore(deps): bump authlib from 1.7.2 to 1.9.1 in /libs/langchain_v1 (#41539)\nchore(deps): bump the minor-and-patch group across 3 directories with 32 updates (#41465)\nrevert: patch vulnerable integration dependencies (#41481)\nbuild(deps): patch vulnerable integration dependencies (#41473)\nchore(deps): bump fastmcp from 4.0.11 to 4.1.2 in /libs/langchain_v1 (#41437)\nchore(deps): bump opentelemetry-api from 1.44.0 to 1.45.1 in /libs/langchain_v1 (#41423)\nchore(infra): relax third-party dependency upper bounds (#41407)",
@@ -16,6 +16,14 @@
    "prerelease": false,
    "tag": "langchain-core==1.7.4",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.4"
+  },
+  {
+   "body": "Changes since langchain-anthropic==1.7.8\n\nrelease(anthropic): 1.7.9 (#41644)\nfix(anthropic): report streamed content-block tokens to callbacks (#41643)",
+   "date": "2026-11-02T20:14:18Z",
+   "name": "langchain-anthropic==1.7.9",
+   "prerelease": false,
+   "tag": "langchain-anthropic==1.7.9",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.9"
   },
   {
    "body": "Changes since langchain-anthropic==1.7.7\n\nrelease(anthropic): 1.7.8 (#41638)\nfix(anthropic): strip index from compaction blocks (#41637)\nfix(anthropic): handle null cache-creation token counts (#41553)",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "langchain-typesafe==0.0.1a1",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a1"
-  },
-  {
-   "body": "Changes since langchain==1.4.0\n\nrelease(langchain): 1.4.1 (#40498)\nfix(langchain): preserve open MCP object arguments (#40414)\nfix(langchain): correct `InterruptOnConfig` documentation (#40140)",
-   "date": "2026-09-16T17:07:03Z",
-   "name": "langchain==1.4.1",
-   "prerelease": false,
-   "tag": "langchain==1.4.1",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.1"
   }
  ],
  "repo": "langchain-ai/langchain"

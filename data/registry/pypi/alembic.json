@@ -1,7 +1,7 @@
 {
  "changelog": "https://alembic.sqlalchemy.org/en/latest/changelog.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-02T16:59:51Z",
+ "fetched": "2026-11-03T04:45:31Z",
  "homepage": "https://alembic.sqlalchemy.org",
  "latest": "1.20.1",
  "name": "alembic",

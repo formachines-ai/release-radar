@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/pydantic/pydantic-settings/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-02T16:59:56Z",
+ "fetched": "2026-11-03T04:45:34Z",
  "homepage": "https://github.com/pydantic/pydantic-settings",
  "latest": "2.16.2",
  "name": "pydantic-settings",

@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-02T17:00:11Z",
+ "fetched": "2026-11-03T04:45:43Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#12101](https://github.com/langchain-ai/langchainjs/pull/12101) [`a947c9c`](https://github.com/langchain-ai/langchainjs/commit/a947c9c3ead4225ff111e30145abe684c3652a43) Thanks [@hntrl](https://github.com/hntrl)! - Connect to and list tools from configured MCP servers concurrently during discovery instead of one server at a time, so `listTools()`/`listToolsets()` take as long as the slowest server rather than the sum of all of them.",
+   "date": "2026-11-02T23:11:07Z",
+   "name": "@langchain/mcp-adapters@2.0.2",
+   "prerelease": false,
+   "tag": "@langchain/mcp-adapters@2.0.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/mcp-adapters%402.0.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#11567](https://github.com/langchain-ai/langchainjs/pull/11567) [`d92aba6`](https://github.com/langchain-ai/langchainjs/commit/d92aba67d3ffef8e1e0fa62cdb97cbd6e7022582) Thanks [@hntrl](https://github.com/hntrl)! - Add `tracePolicy` to `RunnableSequence`. Its `processInputs`/`processOutputs` shape only what `LangChainTracer` sends to LangSmith for the sequence's own run. Batched sequence runs now each record their own output.",
+   "date": "2026-11-02T23:11:04Z",
+   "name": "@langchain/core@1.3.3",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12100](https://github.com/langchain-ai/langchainjs/pull/12100) [`dc74e55`](https://github.com/langchain-ai/langchainjs/commit/dc74e55a6473962dafcc266e18b9f978fd9495cb) Thanks [@hntrl](https://github.com/hntrl)! - Replay signed Bedrock reasoning blocks whose text is empty or missing instead of dropping them, so models that omit the thinking summary (e.g. Claude Sonnet 5, which defaults to `display: \"omitted\"`) no longer fail with an HTTP 400 on the turn after a tool call. A missing `text` is sent as `\"\"`, and an empty signature counts as unsigned. Whitespace-only text after reasoning is no longer merged into the reasoning block, and a standard reasoning block split into parts is joined before replay.\n\n- [#12052](https://github.com/langchain-ai/langchainjs/pull/12052) [`8635df6`](https://github.com/langchain-ai/langchainjs/commit/8635df6a875e8409b141e41a2507f4680460938b) Thanks [@hntrl](https://github.com/hntrl)! - Fix ChatBedrockConverse retry classification for AWS HTTP errors and content-filter failures while keeping ThrottlingException and ModelNotReadyException retryable. Internally created Bedrock clients now default to `maxAttempts: 1` so SDK retries do not stack with LangChain retries; explicit `clientOptions.maxAttempts` values and injected clients remain unchanged.\n\n- [#11905](https://github.com/langchain-ai/langchainjs/pull/11905) [`e81c689`](https://github.com/langchain-ai/langchainjs/commit/e81c689cce85aa439bdd390b1f674009b23d25d5) Thanks [@mbarinov](https://github.com/mbarinov)! - Preserve reasoning signatures in native Bedrock Converse stream events so streamed messages can be replayed in subsequent requests.\n\n- [#11368](https://github.com/langchain-ai/langchainjs/pull/11368) [`55c4edc`](https://github.com/langchain-ai/langchainjs/commit/55c4edc580f9d8674759977fc6aa7db83daa237d) Thanks [@LizunovSergey](https://github.com/LizunovSergey)! - fix(aws): preserve Bedrock text block indices when streaming",
+   "date": "2026-11-02T23:11:10Z",
+   "name": "@langchain/aws@1.5.2",
+   "prerelease": false,
+   "tag": "@langchain/aws@1.5.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/aws%401.5.2"
+  },
   {
    "body": "### Patch Changes\n\n- [#12051](https://github.com/langchain-ai/langchainjs/pull/12051) [`71fd01a`](https://github.com/langchain-ai/langchainjs/commit/71fd01ab6edb530a3d52cebcfc191674c10138d2) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add `addNotificationMetadata`, `getNotificationMetadata` and the `NotificationMetadata` type for marking messages the agent harness adds.",
    "date": "2026-10-29T17:52:51Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "@langchain/google-genai@2.3.3",
    "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-common@2.3.4",
-   "date": "2026-10-20T11:58:12Z",
-   "name": "@langchain/google-gauth@2.3.4",
-   "prerelease": false,
-   "tag": "@langchain/google-gauth@2.3.4",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.4"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`2a37b67`](https://github.com/langchain-ai/langchainjs/commit/2a37b672115a99136d645c3f96633d00421312d6)]:\n  - @langchain/google-common@2.3.3",
-   "date": "2026-10-20T00:54:18Z",
-   "name": "@langchain/google-gauth@2.3.3",
-   "prerelease": false,
-   "tag": "@langchain/google-gauth@2.3.3",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.3"
-  },
-  {
-   "body": "No changes in this release.",
-   "date": "2026-10-20T11:58:06Z",
-   "name": "@langchain/google-common@2.3.4",
-   "prerelease": false,
-   "tag": "@langchain/google-common@2.3.4",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-common%402.3.4"
   }
  ],
  "repo": "langchain-ai/langchainjs"

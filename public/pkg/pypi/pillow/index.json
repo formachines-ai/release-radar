@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:10:34Z",
+ "built": "2026-11-03T04:45:26Z",
  "changelog": "https://github.com/python-pillow/Pillow/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-16T22:15:24Z",
   "version": "13.0.0"
  },
- "metadata_fetched": "2026-11-02T16:59:55Z",
+ "metadata_fetched": "2026-11-03T04:45:33Z",
  "package": "pillow",
  "page": "https://releases.formachines.ai/pkg/pypi/pillow/",
  "registry": "https://pypi.org/project/pillow/",

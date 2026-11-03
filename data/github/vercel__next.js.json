@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-02T17:00:35Z",
+ "fetched": "2026-11-03T04:46:03Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Add router.experimental_prepare(): #101050\n- Handle registries not serving JSON when checking the version: #95062\n- Fix navigations rerendering fully static ISR pages in `next start`: #100854\n- [refactor] Remove obsolete RDC and PPR feature guards: #100827\n- [no-unsafe-inline] Carry the Flight payload as data instead of inline scripts: #97573\n- [no-unsafe-inline] Add an experimental flag for React's external browser runtime: #97570\n- Fix revalidation for caches with short stale times: #101037\n- Consistently use headersToExcludeInCacheKey: #101035\n- turbopack: experimental minify-before-chunking feature: #98760\n\n### Misc Changes\n\n- fix(turbopack): invalidate lazy compilation state across sessions: #98867\n- docs: improve turbo_tasks consistency guidance for agents: #101055\n- Revert 'Turbopack: ignore fully dynamic alternatives when tracing file paths (#100651)': #101053\n- Don't count features behind a new experimental flag as public API: #101051\n- docs: add turbo_tasks consistency guidance for agents: #100986\n- docs: correct io() prefetch behavior vs connection(): #101031\n- perf: use keyed invalidation for get_chunk_groups_for_module: #101034\n- test: fail e2e tests on Rust panics: #100922\n- turbo-tasks: add batched keyed reads via KeyedReadRef: #100884\n\n### Credits \n\nHuge thanks to @fireairforce, @mischnic, @acdlite, @vctqs1, @unstubbable, @eps1lon, @icyJoseph, @sokra, and @andrewimm for helping!",
+   "date": "2026-11-02T23:49:32Z",
+   "name": "v16.5.0-canary.37",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.37",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.37"
+  },
   {
    "body": "> [!NOTE]\r\n> This release is backporting bug fixes. It does **not** include all pending features/changes on canary. The [announced security released for November](https://nextjs.org/blog/upcoming-nextjs-security-release-november-2026) will be published tomorrow. \r\n\r\n### Core Changes\r\n\r\n- [lts-active] test: disable the `reads fallback params after a client navigation` deployment test (#100668)\r\n- [lts-active] Reload on missed Turbopack startup CSS updates (#100619)\r\n- [lts-active] Revert \"Optimize strict module factory chunks (#98421)\" (#100866)\r\n- [lts-active] Emit the Turbopack shared-runtime bootstrap in the PPR resume so it gets the CSP nonce (#100907)\r\n- [lts-active] [ci] Pin deploy test deployments to Node.js 22.x (#100886)\r\n- [lts-active] fix(analyze): use route summaries as the analyzer route index (#100974)\r\n- [lts-active] Use fast-jwt instead of jsonwebtoken (#100885)\r\n\r\n### Credits\r\n\r\nHuge thanks to @icyJoseph, @mischnic, @wbinnssmith, @lukesandberg, and @eps1lon for helping!",
    "date": "2026-11-02T16:41:08Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v16.4.0-canary.57",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.57"
-  },
-  {
-   "body": "### Misc Changes\n\n- Measure AI upgrade nudges, handoffs, and completion: #99465\n- turbo-persistence: 32 bit fingerprints for the used keys AMQFs: #99333\n- Remove suspend during operations: #99383\n- test: migrate runtime deploy exclusions to force gates: #98159\n- test: migrate asset deploy exclusions to force gates: #98158\n- test: migrate Pages Router deploy exclusions to force gates: #98157\n- fix: stale usages of unstable_ensureStatic: #99540\n- Add unstable parameter matching APIs: #97393\n- docs: point next package security disclosure to HackerOne: #99459\n- docs: add ensureStatic reference and validation guidance: #99355\n- Enable Turbopack export name mangling by default for builds: #99362\n- Allow skipping React and ESLint upgrades: #99468\n- Prefer the declared package manager during upgrades: #99471\n- Use Next.js conventions in bundle analyzer UI: #98780\n- Pass App Page HMR state through a dev render context: #99487\n- Remove request forwarding from App Router error reporting: #99488\n- docs: self hosting immutable static assets: #97008\n- test: enable deployment fixtures with Corepack and portable tarballs: #99192\n\n### Credits \n\nHuge thanks to @devjiwonchoi, @lukesandberg, @jimmyhmiller, @gnoff, @lubieowoce, @swarnava, @aurorascharff, @sokra, @wbinnssmith, @mischnic, and @jamiboym for helping!",
-   "date": "2026-10-02T00:07:46Z",
-   "name": "v16.4.0-canary.56",
-   "prerelease": true,
-   "tag": "v16.4.0-canary.56",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.56"
   }
  ],
  "repo": "vercel/next.js"
