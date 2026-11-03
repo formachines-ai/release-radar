@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T00:15:49Z",
+ "built": "2026-11-03T01:09:22Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -12,25 +12,7 @@
  "package": "ruff",
  "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
  "registry": "https://pypi.org/project/ruff/",
- "releases": [
-  {
-   "date": "2026-10-27T00:33:29Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/ruff/0.17.3",
-   "json": "https://releases.formachines.ai/pkg/pypi/ruff/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/cd382c1b37/",
-   "notes_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.3",
-   "package": "ruff",
-   "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "0.17.3",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/astral-sh/ruff",
  "summary": "An extremely fast Python linter and code formatter, written in Rust."
 }

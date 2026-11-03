@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T00:15:49Z",
+ "built": "2026-11-03T01:09:22Z",
  "redirects": {
   "01853f6860": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
@@ -56,7 +56,6 @@
   "8123445296": "https://github.com/openai/openai-python/releases/tag/v3.42.1",
   "822827f746": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.138",
   "88cbb8199f": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
-  "8ad3f0d623": "https://github.com/nuxt/nuxt/releases/tag/v4.6.3",
   "8b649fb89d": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1",
   "8be236ae0c": "https://github.com/withastro/astro/releases/tag/astro%407.4.4-beta.0",
   "8e28c8feb1": "https://github.com/pydantic/pydantic/releases/tag/v1.10.27",
@@ -84,7 +83,6 @@
   "c23ca03f2b": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.139",
   "c4042e18e3": "https://github.com/vercel/ai/releases/tag/ai%406.0.318",
   "cbb7a86a1d": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.2",
-  "cd382c1b37": "https://github.com/astral-sh/ruff/releases/tag/0.17.3",
   "d086106980": "https://github.com/BerriAI/litellm/releases/tag/v1.106.6",
   "d2d46cb0df": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.133",
   "d6708b4b0e": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.134",
