@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T06:00:01Z",
+ "built": "2026-11-03T08:10:34Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -28,23 +28,6 @@
    "prerelease": true,
    "quotes": [],
    "version": "2.119.0-canary.4",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T06:14:57Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@supabase/supabase-js/2.119.0-canary.3",
-   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/9108d31be5/",
-   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.3",
-   "package": "@supabase/supabase-js",
-   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "2.119.0-canary.3",
    "yanked_or_deprecated": false
   }
  ],

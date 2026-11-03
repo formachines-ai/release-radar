@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T06:00:01Z",
+ "built": "2026-11-03T08:10:34Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -12,38 +12,7 @@
  "package": "axios",
  "page": "https://releases.formachines.ai/pkg/npm/axios/",
  "registry": "https://www.npmjs.com/package/axios",
- "releases": [
-  {
-   "date": "2026-10-27T07:18:54Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/axios/1.21.0",
-   "json": "https://releases.formachines.ai/pkg/npm/axios/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b1c8a14146/",
-   "notes_url": "https://github.com/axios/axios/releases/tag/v1.21.0",
-   "package": "axios",
-   "page": "https://releases.formachines.ai/pkg/npm/axios/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "## ⚠️ Breaking Changes & Deprecations\n* **Header Defaults:** Only plain objects, null-prototype maps, and compatible `AxiosHeaders` instances are treated as common or method-specific defaults; literal headers such as `Link` are now preserved. Applications using custom class insta…"
-    },
-    {
-     "match": "removed",
-     "quote": "…RF tokens where supported, preserving cookie fallback, timeout accounting, and cancellation. Upload and download progress listeners are now removed on completion, failure, timeout, and cancellation. (__[#11166](https://github.com/axios/axios/pull/11166)__, __[#11225](https://gith…"
-    },
-    {
-     "match": "Removed",
-     "quote": "* **Same-Origin Checks:** Removed obsolete Internet Explorer detection without changing origin decisions in supported environments. (__[#11174](https://github.com/axios/axios/pull/11174)__)"
-    }
-   ],
-   "version": "1.21.0",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/axios/axios",
  "summary": "Promise based HTTP client for the browser and node.js"
 }

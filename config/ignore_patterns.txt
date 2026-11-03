@@ -10,3 +10,4 @@ breakdown
 break\s+down
 break\s+out\s+of
 no longer (?:needed|necessary|required) to (?:install|pass|import)
+no longer (?:[\w.()/-]+ ){0,3}?(?:crash|kill|hang|fail|throw|error|freeze|leak|panic|warn)(?:es|s|ed|ing)?\b
