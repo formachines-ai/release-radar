@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T01:09:22Z",
+ "built": "2026-11-03T04:10:34Z",
  "redirects": {
   "01853f6860": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
@@ -21,7 +21,6 @@
   "316f75ce73": "https://github.com/vercel/ai/releases/tag/ai%407.0.156",
   "3323030b67": "https://github.com/googleapis/js-genai/releases/tag/v2.32.0",
   "333d756ef9": "https://formachines.ai/errata/pypi/mcp/",
-  "33db83ec2e": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.5.20",
   "3597f285c7": "https://github.com/BerriAI/litellm/releases/tag/v1.104.8",
   "3ae16dda6e": "https://github.com/vercel/ai/releases/tag/ai%405.0.283",
   "3b1d2ae6d5": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
