@@ -1,10 +1,10 @@
 {
- "built": "2026-11-03T00:15:49Z",
+ "built": "2026-11-03T01:09:22Z",
  "counts": {
   "flagged": 14,
   "packages": 93,
   "prereleases": 68,
-  "releases": 143,
+  "releases": 141,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -2503,43 +2503,9 @@
    "quotes": [],
    "version": "1.5.20",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T01:08:54Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/nuxt/4.6.3",
-   "json": "https://releases.formachines.ai/pkg/npm/nuxt/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/8ad3f0d623/",
-   "notes_url": "https://github.com/nuxt/nuxt/releases/tag/v4.6.3",
-   "package": "nuxt",
-   "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "4.6.3",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T00:33:29Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/ruff/0.17.3",
-   "json": "https://releases.formachines.ai/pkg/pypi/ruff/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/cd382c1b37/",
-   "notes_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.3",
-   "package": "ruff",
-   "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "0.17.3",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T00:15:49Z"
+ "window_start": "2026-10-27T01:09:22Z"
 }

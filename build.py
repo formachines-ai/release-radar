@@ -964,7 +964,7 @@ def render_llms(model: dict) -> str:
              "",
              "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.", "",
              "## Data", "",
-             f"- [today.json]({SITE_BASE}/today.json): every release in the window — package, version, date, flagged, quotes, notes_url, errata_url",
+             f"- [today.json]({SITE_BASE}/today.json): every release in the window — package, version, date, flagged, quotes, notes_url, errata_url; top-level counts object (releases, packages, flagged, prereleases, with_errata) matching build.json",
              f"- [feed.xml]({SITE_BASE}/feed.xml): RSS 2.0 of the same releases",
              f"- [build.json]({SITE_BASE}/build.json): build time, package and release counts, errors",
              f"- Per package: {SITE_BASE}/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)",
