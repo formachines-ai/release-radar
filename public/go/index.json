@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T06:00:01Z",
+ "built": "2026-11-03T08:10:34Z",
  "redirects": {
   "01853f6860": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
@@ -71,7 +71,6 @@
   "8be236ae0c": "https://github.com/withastro/astro/releases/tag/astro%407.4.4-beta.0",
   "8e28c8feb1": "https://github.com/pydantic/pydantic/releases/tag/v1.10.27",
   "8f694aea25": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.35",
-  "9108d31be5": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.3",
   "9572f00f52": "https://github.com/openai/openai-node/releases/tag/v7.46.0",
   "95ca95b344": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.105",
   "97623532c6": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.104",
@@ -88,7 +87,6 @@
   "a838d40a90": "https://github.com/BerriAI/litellm/releases/tag/v1.103.10",
   "afab8e1749": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.137",
   "b0e8d1de1e": "https://github.com/fastify/fastify/releases/tag/v6.0.0-alpha.6",
-  "b1c8a14146": "https://github.com/axios/axios/releases/tag/v1.21.0",
   "b5c1eca3c1": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.2",
   "b84ea70efa": "https://formachines.ai/errata/pypi/cryptography/",
   "b90745e917": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.4",

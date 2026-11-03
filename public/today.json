@@ -1,10 +1,10 @@
 {
- "built": "2026-11-03T06:00:01Z",
+ "built": "2026-11-03T08:10:34Z",
  "counts": {
-  "flagged": 17,
+  "flagged": 16,
   "packages": 93,
-  "prereleases": 70,
-  "releases": 161,
+  "prereleases": 69,
+  "releases": 159,
   "with_errata": 13
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -186,7 +186,7 @@
     },
     {
      "match": "no longer",
-     "quote": "- Ensure the standalone macOS binaries have a valid code signature, so macOS 27 no longer kills them at launch ([#20578](https://github.com/tailwindlabs/tailwindcss/pull/20578))"
+     "quote": "- Ensure `@tailwindcss/turbopack` and `@tailwindcss/webpack` rebuild when the input CSS changes (e.g. `next dev` with Turbopack no longer serves the CSS of the previous edit) ([#20582](https://github.com/tailwindlabs/tailwindcss/pull/20582))"
     }
    ],
    "version": "4.3.4",
@@ -2819,56 +2819,9 @@
    "quotes": [],
    "version": "7.1.0-dev.20261027.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T07:18:54Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/axios/1.21.0",
-   "json": "https://releases.formachines.ai/pkg/npm/axios/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b1c8a14146/",
-   "notes_url": "https://github.com/axios/axios/releases/tag/v1.21.0",
-   "package": "axios",
-   "page": "https://releases.formachines.ai/pkg/npm/axios/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "## ⚠️ Breaking Changes & Deprecations\n* **Header Defaults:** Only plain objects, null-prototype maps, and compatible `AxiosHeaders` instances are treated as common or method-specific defaults; literal headers such as `Link` are now preserved. Applications using custom class insta…"
-    },
-    {
-     "match": "removed",
-     "quote": "…RF tokens where supported, preserving cookie fallback, timeout accounting, and cancellation. Upload and download progress listeners are now removed on completion, failure, timeout, and cancellation. (__[#11166](https://github.com/axios/axios/pull/11166)__, __[#11225](https://gith…"
-    },
-    {
-     "match": "Removed",
-     "quote": "* **Same-Origin Checks:** Removed obsolete Internet Explorer detection without changing origin decisions in supported environments. (__[#11174](https://github.com/axios/axios/pull/11174)__)"
-    }
-   ],
-   "version": "1.21.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T06:14:57Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@supabase/supabase-js/2.119.0-canary.3",
-   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/9108d31be5/",
-   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.3",
-   "package": "@supabase/supabase-js",
-   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "2.119.0-canary.3",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T06:00:01Z"
+ "window_start": "2026-10-27T08:10:34Z"
 }
