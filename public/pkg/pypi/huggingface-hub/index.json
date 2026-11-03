@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -11,6 +11,10 @@
   "url": "https://formachines.ai/errata/pypi/huggingface-hub/"
  },
  "latest": "2.4.0",
+ "latest_stable": {
+  "date": "2026-10-29T15:30:10Z",
+  "version": "2.4.0"
+ },
  "metadata_fetched": "2026-11-02T16:59:45Z",
  "package": "huggingface-hub",
  "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
@@ -50,7 +54,7 @@
    "notes_url": "https://github.com/huggingface/huggingface_hub/releases",
    "package": "huggingface-hub",
    "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "2.4.0rc0",
    "yanked_or_deprecated": false

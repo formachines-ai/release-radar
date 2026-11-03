@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "redirects": {
   "01853f6860": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
@@ -90,7 +90,6 @@
   "d6708b4b0e": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.134",
   "d71155fc82": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.29",
   "d83ee97957": "https://github.com/vercel/ai/releases/tag/ai%407.0.159",
-  "db327011e5": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.28",
   "e0d2cd6d2f": "https://github.com/stripe/stripe-node/releases/tag/v23.1.0",
   "e174a0cca3": "https://github.com/react/react/releases",
   "e519a046db": "https://github.com/tailwindlabs/tailwindcss/releases",

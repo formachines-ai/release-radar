@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": "https://numpy.org/doc/stable/release",
  "ecosystem": "pypi",
  "errata": null,
  "latest": "2.5.4",
+ "latest_stable": {
+  "date": "2026-10-10T20:02:40Z",
+  "version": "2.5.4"
+ },
  "metadata_fetched": "2026-11-02T16:59:55Z",
  "package": "numpy",
  "page": "https://releases.formachines.ai/pkg/pypi/numpy/",

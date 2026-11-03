@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "latest": "16.4.4",
+ "latest_stable": {
+  "date": "2026-11-02T10:49:48Z",
+  "version": "16.4.4"
+ },
  "metadata_fetched": "2026-11-02T17:00:34Z",
  "package": "next",
  "page": "https://releases.formachines.ai/pkg/npm/next/",
@@ -160,23 +164,6 @@
    "prerelease": true,
    "quotes": [],
    "version": "16.5.0-canary.29",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T23:58:31Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/next/16.5.0-canary.28",
-   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/db327011e5/",
-   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.28",
-   "package": "next",
-   "page": "https://releases.formachines.ai/pkg/npm/next/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "16.5.0-canary.28",
    "yanked_or_deprecated": false
   }
  ],

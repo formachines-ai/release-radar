@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "latest": "3.9.10",
+ "latest_stable": {
+  "date": "2026-10-10T08:35:28Z",
+  "version": "3.9.10"
+ },
  "metadata_fetched": "2026-11-02T17:00:38Z",
  "package": "prettier",
  "page": "https://releases.formachines.ai/pkg/npm/prettier/",

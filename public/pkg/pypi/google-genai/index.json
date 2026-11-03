@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -11,6 +11,10 @@
   "url": "https://formachines.ai/errata/pypi/google-genai/"
  },
  "latest": "2.34.0",
+ "latest_stable": {
+  "date": "2026-10-29T06:43:21Z",
+  "version": "2.34.0"
+ },
  "metadata_fetched": "2026-11-02T16:59:44Z",
  "package": "google-genai",
  "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",

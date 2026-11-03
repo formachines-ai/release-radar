@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -11,6 +11,10 @@
   "url": "https://formachines.ai/errata/npm/firebase/"
  },
  "latest": "13.1.0",
+ "latest_stable": {
+  "date": "2026-10-21T15:03:52Z",
+  "version": "13.1.0"
+ },
  "metadata_fetched": "2026-11-02T17:00:31Z",
  "package": "firebase",
  "page": "https://releases.formachines.ai/pkg/npm/firebase/",
@@ -28,7 +32,7 @@
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
    "package": "firebase",
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "13.2.0-20261030160918",
    "yanked_or_deprecated": false
