@@ -972,7 +972,7 @@ def render_llms(model: dict) -> str:
              f"- [Legal]({SITE_BASE}/legal/)",
              "", "## Packages", ""]
     for p in model["packages"]:
-        lines.append(f"- [{p['name']} ({p['ecosystem']})]({SITE_BASE}{p['path']}): latest {p.get('latest') or '?'}" + (" · Errata correction available" if p.get("errata") else ""))
+        lines.append(f"- [{p['name']} ({p['ecosystem']})]({SITE_BASE}{p['path']}): latest {p.get('latest') or '?'}" + (" · Errata correction available" if p.get("errata") else "") + f" · JSON: {SITE_BASE}{p['path']}index.json")
     lines += ["", "## Related", "", "- [Errata — where AI models write outdated code, and the verified fix](https://formachines.ai/errata/)",
               f"- [Errata skill for coding agents]({ERRATA_SKILL_URL})", ""]
     return "\n".join(lines)
