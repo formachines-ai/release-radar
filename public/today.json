@@ -1,10 +1,10 @@
 {
- "built": "2026-11-03T01:09:22Z",
+ "built": "2026-11-03T04:10:34Z",
  "counts": {
   "flagged": 14,
   "packages": 93,
   "prereleases": 68,
-  "releases": 141,
+  "releases": 140,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -2486,26 +2486,9 @@
    "quotes": [],
    "version": "1.65.0-alpha-2026-10-27",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T01:38:52Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/langchain/1.5.20",
-   "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/33db83ec2e/",
-   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.5.20",
-   "package": "langchain",
-   "page": "https://releases.formachines.ai/pkg/npm/langchain/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.5.20",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-27T01:09:22Z"
+ "window_start": "2026-10-27T04:10:34Z"
 }

@@ -61,7 +61,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
   today.json                every release in the window with quotes and links
-  feed.xml                  RSS 2.0 (newest 100 releases)
+  feed.xml                  RSS 2.0 (all releases in the window, newest first)
   llms.txt · robots.txt · sitemap.xml · build.json
   go/<id>/index.html        meta-refresh redirect to an external URL; id = sha1(url)[:10]; go/index.json maps ids → URLs
   legal/index.html          responsible person, data sources, license, no-tracking statement

@@ -72,7 +72,6 @@ QUOTE_SHORT_LINE = 48      # a matched line shorter than this gets the previous 
 MAX_QUOTES_PER_RELEASE = 3
 NPM_TIME_KEEP_DAYS = 90    # npm `time` map is trimmed to this many days in the cache (full docs are huge)
 PYPI_RELEASES_KEEP = 40    # newest PyPI versions kept in the cache
-FEED_MAX_ITEMS = 100
 
 # The breaking-change pattern. Only verbatim matches of this count; see config/ignore_patterns.txt.
 BREAKING_RE = re.compile(
@@ -930,7 +929,7 @@ def public_release(r: dict) -> dict:
 
 def render_feed(model: dict) -> str:
     items = []
-    for r in model["releases"][:FEED_MAX_ITEMS]:
+    for r in model["releases"]:
         title = f"{r['name']} {r['version']} ({r['ecosystem']})" + (" — breaking/deprecated wording" if r["flagged"] else "")
         desc_parts = []
         for q in r["quotes"]:
