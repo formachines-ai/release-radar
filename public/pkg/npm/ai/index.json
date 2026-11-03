@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T17:17:23Z",
+ "built": "2026-11-03T22:09:26Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -275,45 +275,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "7.0.156",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T19:37:45Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/ai/7.0.155",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fcb197276e/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.155",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "`streamText`, `generateText`, `generateObject` and `streamObject` no longer validate messages against the `ModelMessage` schema. This removes a cost that grew linearly with message history and was paid on every `streamText` step. Type checks on call settings, steering messages, t…"
-    }
-   ],
-   "version": "7.0.155",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T19:32:13Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/ai/6.0.317",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/62995bc74d/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.317",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "6.0.317",
    "yanked_or_deprecated": false
   }
  ],

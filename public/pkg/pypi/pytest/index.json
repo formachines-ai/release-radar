@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T17:17:23Z",
+ "built": "2026-11-03T22:09:26Z",
  "changelog": "https://docs.pytest.org/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -12,38 +12,7 @@
  "package": "pytest",
  "page": "https://releases.formachines.ai/pkg/pypi/pytest/",
  "registry": "https://pypi.org/project/pytest/",
- "releases": [
-  {
-   "date": "2026-10-27T21:30:19Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/pytest/9.2.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/pytest/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/01853f6860/",
-   "notes_url": "https://github.com/pytest-dev/pytest/releases/tag/9.2.0",
-   "package": "pytest",
-   "page": "https://releases.formachines.ai/pkg/pypi/pytest/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "breaking",
-     "quote": "## Removals and backward incompatible breaking changes"
-    },
-    {
-     "match": "Deprecations",
-     "quote": "## Deprecations (removal in next major release)\n- [\\#14742](https://github.com/pytest-dev/pytest/issues/14742): The private `_pytest.python.CallSpec2` name has been renamed to `CallSpec`."
-    },
-    {
-     "match": "renamed",
-     "quote": "- [\\#14742](https://github.com/pytest-dev/pytest/issues/14742): The private `_pytest.python.CallSpec2` name has been renamed to `CallSpec`."
-    }
-   ],
-   "version": "9.2.0",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/pytest-dev/pytest",
  "summary": "pytest: simple powerful testing with Python"
 }

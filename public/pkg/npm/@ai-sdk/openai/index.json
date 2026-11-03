@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T17:17:23Z",
+ "built": "2026-11-03T22:09:26Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -169,79 +169,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "2.0.138",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T21:27:12Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@ai-sdk/openai/3.0.134",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/d6708b4b0e/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.134",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "3.0.134",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T19:33:34Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@ai-sdk/openai/4.0.104",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/97623532c6/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.104",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "Transcription requests no longer send `response_format=verbose_json` or `timestamp_granularities[]=segment` unless the caller sets them or the model needs them. Previously, any `providerOptions.openai` value (such as a `prompt`) caused `verbose_json` to be sent for models like `g…"
-    }
-   ],
-   "version": "4.0.104",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T19:29:19Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@ai-sdk/openai/3.0.133",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/d2d46cb0df/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.133",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "3.0.133",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T19:25:04Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@ai-sdk/openai/2.0.137",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/afab8e1749/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.137",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "2.0.137",
    "yanked_or_deprecated": false
   }
  ],
