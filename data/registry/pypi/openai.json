@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-03T04:45:29Z",
+ "fetched": "2026-11-03T06:00:05Z",
  "homepage": "https://github.com/openai/openai-python",
  "latest": "3.42.1",
  "name": "openai",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:45:26Z",
+ "built": "2026-11-03T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-27T07:18:54Z",
   "version": "1.21.0"
  },
- "metadata_fetched": "2026-11-03T04:45:53Z",
+ "metadata_fetched": "2026-11-03T06:00:31Z",
  "package": "axios",
  "page": "https://releases.formachines.ai/pkg/npm/axios/",
  "registry": "https://www.npmjs.com/package/axios",

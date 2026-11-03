@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T04:46:02Z",
+ "fetched": "2026-11-03T06:00:42Z",
  "releases": [
   {
    "body": "8.24.8 / 2026-11-02\r\n===================\r\n * fix(schema): remove map paths cleanly, including maps under nested paths (backport to 8.x) #16625 #16461 #16457 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)\r\n * fix(schema): keep the map value schematype a single object when cloning (backport to 8.x) #16624 #16473 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)\r\n * fix(map): support ObjectId keys in MongooseMap#has() (backport to 8.x #16634 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)\r\n * fix(hydration): use the doc model for looking up a ref (backport to 8.x) #16623 #16453 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)\r\n * fix(document): replace {MODEL} in custom cast error messages from document validation (backport to 8.x) #16622 #16480 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)\r\n * fix(schema): run setters declared on the union path itself (backport to 8.x) #16621 #16528 [mrityunjay-pandey](https://github.com/mrityunjay-pandey)",

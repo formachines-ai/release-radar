@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T04:46:07Z",
+ "fetched": "2026-11-03T06:00:47Z",
  "releases": [
   {
    "body": "## What's Changed\n* Follow the products' released versions: @prisma/orm-toolchain 8.0.0-rc.20 -> 8.0.0-rc.21 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/375\n* Accept a deployed app's addresses as command subjects: prisma service logs @pr-42:shop.api by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/373\n* docs: tell agents to give the user the create-db claim URL by @gregory-boch-prisma in https://github.com/prisma/prisma-cli/pull/376\n* Bump to version 8.0.0-rc.29 by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/379\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.28...v8.0.0-rc.29",

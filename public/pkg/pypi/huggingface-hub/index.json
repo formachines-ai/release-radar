@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:45:26Z",
+ "built": "2026-11-03T06:00:01Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-10-29T15:30:10Z",
   "version": "2.4.0"
  },
- "metadata_fetched": "2026-11-03T04:45:27Z",
+ "metadata_fetched": "2026-11-03T06:00:03Z",
  "package": "huggingface-hub",
  "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
  "registry": "https://pypi.org/project/huggingface-hub/",

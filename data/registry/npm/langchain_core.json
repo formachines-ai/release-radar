@@ -8,7 +8,7 @@
   "tag-for-publishing-older-releases": "0.2.36"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T04:45:42Z",
+ "fetched": "2026-11-03T06:00:20Z",
  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/langchain-core/",
  "latest": "1.3.3",
  "name": "@langchain/core",

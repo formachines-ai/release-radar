@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:45:26Z",
+ "built": "2026-11-03T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-13T07:45:32Z",
   "version": "3.5.44"
  },
- "metadata_fetched": "2026-11-03T04:46:14Z",
+ "metadata_fetched": "2026-11-03T06:00:54Z",
  "package": "vue",
  "page": "https://releases.formachines.ai/pkg/npm/vue/",
  "registry": "https://www.npmjs.com/package/vue",

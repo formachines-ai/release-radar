@@ -217,7 +217,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.161"
   }
  },
- "fetched": "2026-11-03T04:45:36Z",
+ "fetched": "2026-11-03T06:00:14Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 857ca45: Restore server-defined tool metadata, dynamic status, and title when validating tool approval continuations so approval policies receive the same tool definition fields as new model calls.\n- 4d6d830: Support a single telemetry operation for durable `WorkflowAgent` runs, including the prompt, final output, steps, and tools. Events recorded in the workflow are reported on completion or suspension with their original timestamps. For OpenTelemetry, pass the same `OpenTelemetryIdGenerator` instance as the tracer provider's `idGenerator` and `sampler` and as `new OpenTelemetry({ durable })`. This explicit bridge carries parent trace context and sampling across steps, reports model spans live with provider requests nested beneath them, and reconstructs the enclosing `invoke_agent` tree when the run completes. Without the bridge, existing live per-model tracing is preserved. Add typed experimental durable context hooks for telemetry integrations; remove reliance on process-global ID-generator detection.\n- Updated dependencies [fa15312]\n  - @ai-sdk/provider-utils@5.0.74\n  - @ai-sdk/gateway@4.0.135",

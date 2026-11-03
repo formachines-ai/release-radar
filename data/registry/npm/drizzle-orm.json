@@ -58,7 +58,7 @@
   "workflows": "1.0.0-beta.1-37e2608"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T04:45:59Z",
+ "fetched": "2026-11-03T06:00:38Z",
  "homepage": "https://orm.drizzle.team",
  "latest": "0.45.4",
  "name": "drizzle-orm",

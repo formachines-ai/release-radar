@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:45:26Z",
+ "built": "2026-11-03T06:00:01Z",
  "changelog": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2024-12-06T15:37:21Z",
   "version": "0.28.1"
  },
- "metadata_fetched": "2026-11-03T04:45:33Z",
+ "metadata_fetched": "2026-11-03T06:00:09Z",
  "package": "httpx",
  "page": "https://releases.formachines.ai/pkg/pypi/httpx/",
  "registry": "https://pypi.org/project/httpx/",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T04:45:26Z",
+ "built": "2026-11-03T06:00:01Z",
  "changelog": "https://github.com/pola-rs/polars/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-25T17:58:26Z",
   "version": "2.1.0"
  },
- "metadata_fetched": "2026-11-03T04:45:33Z",
+ "metadata_fetched": "2026-11-03T06:00:10Z",
  "package": "polars",
  "page": "https://releases.formachines.ai/pkg/pypi/polars/",
  "registry": "https://pypi.org/project/polars/",
