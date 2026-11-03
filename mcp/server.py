@@ -14,7 +14,8 @@ import urllib.request
 
 BASE = os.environ.get("RELEASE_RADAR_BASE", "https://releases.formachines.ai").rstrip("/")
 VERSION = "0.1.0"
-PROTOCOL = "2024-11-05"
+SUPPORTED = ["2025-06-18", "2025-03-26", "2024-11-05"]  # newest first
+PROTOCOL = SUPPORTED[0]
 TIMEOUT = 15
 
 
@@ -87,12 +88,15 @@ def tool_list():
 def handle(msg):
     """Return a response dict, or None for notifications."""
     mid, method, params = msg.get("id"), msg.get("method"), msg.get("params") or {}
+    if not isinstance(params, dict):
+        params = {}
     if mid is None:
         return None
     def ok(result): return {"jsonrpc": "2.0", "id": mid, "result": result}
     def err(code, text): return {"jsonrpc": "2.0", "id": mid, "error": {"code": code, "message": text}}
     if method == "initialize":
-        return ok({"protocolVersion": PROTOCOL, "capabilities": {"tools": {}},
+        want = params.get("protocolVersion")
+        return ok({"protocolVersion": want if want in SUPPORTED else PROTOCOL, "capabilities": {"tools": {}},
                    "serverInfo": {"name": "release-radar-mcp", "version": VERSION}})
     if method == "ping":
         return ok({})
