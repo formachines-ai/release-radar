@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "latest": "7.0.159",
+ "latest_stable": {
+  "date": "2026-10-30T22:18:53Z",
+  "version": "7.0.159"
+ },
  "metadata_fetched": "2026-11-02T17:00:11Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",

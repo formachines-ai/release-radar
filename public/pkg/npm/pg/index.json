@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "latest": "8.23.1",
+ "latest_stable": {
+  "date": "2026-09-30T15:39:58Z",
+  "version": "8.23.1"
+ },
  "metadata_fetched": "2026-11-02T17:00:36Z",
  "package": "pg",
  "page": "https://releases.formachines.ai/pkg/npm/pg/",

@@ -80,6 +80,14 @@ BREAKING_RE = re.compile(
     re.IGNORECASE,
 )
 PRERELEASE_RE = re.compile(r"(?:^|[.\-])(?:a|b|rc|alpha|beta|dev|pre|canary|next|nightly|insiders)\d*(?:[.\-]|$)", re.I)
+PEP440_PRE_RE = re.compile(r"^v?\d+(?:\.\d+)*[-_.]?(?:a|b|c|rc|alpha|beta|pre|preview)[-_.]?\d*(?:$|[.+\-_])|\.?dev\d*", re.I)
+
+
+def is_prerelease(eco: str, ver: str) -> bool:
+    """npm: semver '-' prerelease part (build metadata after '+' ignored); PyPI: PEP 440 a/b/rc/dev."""
+    if eco == "npm":
+        return "-" in ver.split("+", 1)[0]
+    return bool(PEP440_PRE_RE.search(ver)) or bool(PRERELEASE_RE.search(ver))
 
 log = logging.getLogger("build")
 
@@ -581,7 +589,15 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             "homepage": meta.get("homepage") or "", "fetched": meta.get("fetched"),
             "errata": err, "releases": [], "path": f"/pkg/{eco}/{name}/",
         }
-        recent = [v for v in meta.get("versions", []) if (d := parse_dt(v.get("date"))) and d >= window_start]
+        stable = None
+        vers_all = meta.get("versions", [])
+        lat = meta.get("latest")
+        if lat and not is_prerelease(eco, lat):
+            stable = next((v for v in vers_all if v["version"] == lat), None) or {"version": lat, "date": None}
+        else:
+            stable = next((v for v in vers_all if not is_prerelease(eco, v["version"])), None)
+        pkg["latest_stable"] = {"version": stable["version"], "date": stable.get("date")} if stable else None
+        recent = [v for v in vers_all if (d := parse_dt(v.get("date"))) and d >= window_start]
         gh_releases: list[dict] = []
         if recent and pkg["repo"]:
             if pkg["repo"] not in repo_cache:
@@ -590,7 +606,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
         for v in recent:
             ver = v["version"]
             gh = match_release(gh_releases, ver, name)
-            if gh is None and gh_releases and pkg["repo"] and not PRERELEASE_RE.search(ver):
+            if gh is None and gh_releases and pkg["repo"] and not is_prerelease(eco, ver):
                 tag = guess_tag(gh_releases, ver, name)
                 if tag:
                     gh = fetch_release_by_tag(http, pkg["repo"], tag, no_github)
@@ -609,7 +625,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 notes_url, notes_kind = pkg["page"], "registry_page"
             rel = {
                 "id": f"{eco}/{name}/{ver}", "ecosystem": eco, "name": name, "version": ver, "date": v["date"],
-                "prerelease": bool(PRERELEASE_RE.search(ver)) or bool(gh and gh.get("prerelease")),
+                "prerelease": is_prerelease(eco, ver) or bool(gh and gh.get("prerelease")),
                 "yanked": bool(v.get("yanked")) or bool(v.get("deprecated")),
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
                 "flagged": bool(quotes), "quotes": quotes, "pkg_path": pkg["path"],
@@ -736,7 +752,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
 
 def render_index(model: dict, errata_count: int) -> str:
     now = parse_dt(model["built"]) or utcnow()
-    rels = model["releases"]
+    rels = sorted(model["releases"], key=lambda r: r["prerelease"])  # stable first (stable sort keeps date order)
     recent_hours = RECENT_HOURS
     recent = [r for r in rels if (parse_dt(r["date"]) or now) >= now - timedelta(hours=RECENT_HOURS)]
     quiet_note = ""
@@ -820,9 +836,16 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<h2>Errata</h2><p><a class="badge errata" href="/go/{esc(go_id(e["url"]))}/">Errata: {esc(e.get("errata"))} verified correction(s)</a> '
                     f'— checked on <code>{esc(e.get("old_version"))}</code> → <code>{esc(e.get("new_version"))}</code>, Errata entry updated {esc(e.get("updated"))}. '
                     f'The correction pages say on which versions the outdated code still reproduces; this site only links them.</p>')
+    ls = p.get("latest_stable")
+    if ls:
+        ls_date = fmt_date(ls["date"]) if ls.get("date") else "date unknown"
+        body.append(f'<p class="latest-stable"><b>Latest stable:</b> <code>{esc(ls["version"])}</code> ({esc(ls_date)}, source: registry)</p>')
+    else:
+        body.append('<p class="latest-stable"><b>Latest stable:</b> unknown (source: registry)</p>')
     body.append(f'<h2>Releases in the last {WINDOW_DAYS} days ({len(p["releases"])})</h2>')
     if p["releases"]:
-        body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False) for r in p["releases"]) + "</ul>")
+        ordered = sorted(p["releases"], key=lambda r: r["prerelease"])
+        body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False) for r in ordered) + "</ul>")
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
     body.append('<p class="note"><a href="/">← all packages</a></p>')
@@ -1007,6 +1030,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "ecosystem": p["ecosystem"], "package": p["name"], "summary": p["summary"], "latest": p.get("latest"),
             "registry": p["page"], "repository": f"https://github.com/{p['repo']}" if p.get("repo") else None,
             "changelog": p.get("changelog"), "errata": p.get("errata"), "metadata_fetched": p.get("fetched"),
+            "latest_stable": p.get("latest_stable"),
             "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r) for r in p["releases"]],
         })
         if p.get("errata") and p["errata"].get("url"):
@@ -1025,6 +1049,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
         "site": SITE_BASE, "built": built, "window_days": WINDOW_DAYS, "window_start": model["window_start"],
         "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
         "counts": {"packages": len(model["packages"]), "releases": len(model["releases"]), "flagged": len(flagged),
+                   "prereleases": sum(1 for r in model["releases"] if r["prerelease"]),
                    "with_errata": sum(1 for r in model["releases"] if r.get("errata_url"))},
         "releases": [public_release(r) for r in model["releases"]],
     }

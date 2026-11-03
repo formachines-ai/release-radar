@@ -1,9 +1,10 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "counts": {
   "flagged": 14,
   "packages": 93,
-  "releases": 144,
+  "prereleases": 68,
+  "releases": 143,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -426,7 +427,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-e84e1492-20261031",
    "yanked_or_deprecated": false
@@ -460,7 +461,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react",
    "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-e84e1492-20261031",
    "yanked_or_deprecated": false
@@ -732,7 +733,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-a703ca64-20261030",
    "yanked_or_deprecated": false
@@ -749,7 +750,7 @@
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
    "package": "firebase",
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "13.2.0-20261030160918",
    "yanked_or_deprecated": false
@@ -766,7 +767,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react",
    "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-a703ca64-20261030",
    "yanked_or_deprecated": false
@@ -1307,7 +1308,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react",
    "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-c5ec5c6d-20261029",
    "yanked_or_deprecated": false
@@ -1324,7 +1325,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-c5ec5c6d-20261029",
    "yanked_or_deprecated": false
@@ -1457,7 +1458,7 @@
    "notes_url": "https://github.com/huggingface/huggingface_hub/releases",
    "package": "huggingface-hub",
    "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "2.4.0rc0",
    "yanked_or_deprecated": false
@@ -1581,7 +1582,7 @@
    "notes_url": "https://github.com/BerriAI/litellm/releases",
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "1.108.0rc1",
    "yanked_or_deprecated": false
@@ -2281,7 +2282,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react",
    "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-dc9aed36-20261027",
    "yanked_or_deprecated": false
@@ -2298,7 +2299,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-dc9aed36-20261027",
    "yanked_or_deprecated": false
@@ -2536,26 +2537,9 @@
    "quotes": [],
    "version": "0.17.3",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-26T23:58:31Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/next/16.5.0-canary.28",
-   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/db327011e5/",
-   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.28",
-   "package": "next",
-   "page": "https://releases.formachines.ai/pkg/npm/next/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "16.5.0-canary.28",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-10-26T22:17:32Z"
+ "window_start": "2026-10-27T00:15:49Z"
 }

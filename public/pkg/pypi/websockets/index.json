@@ -1,5 +1,5 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": "https://websockets.readthedocs.io/en/stable/project/changelog.html",
  "ecosystem": "pypi",
  "errata": {
@@ -11,6 +11,10 @@
   "url": "https://formachines.ai/errata/pypi/websockets/"
  },
  "latest": "17.4",
+ "latest_stable": {
+  "date": "2026-10-30T15:06:39Z",
+  "version": "17.4"
+ },
  "metadata_fetched": "2026-11-02T17:00:01Z",
  "package": "websockets",
  "page": "https://releases.formachines.ai/pkg/pypi/websockets/",

@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "latest": "19.3.1",
+ "latest_stable": {
+  "date": "2026-10-14T16:49:10Z",
+  "version": "19.3.1"
+ },
  "metadata_fetched": "2026-11-02T17:00:43Z",
  "package": "react-dom",
  "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
@@ -21,7 +25,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-e84e1492-20261031",
    "yanked_or_deprecated": false
@@ -55,7 +59,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-a703ca64-20261030",
    "yanked_or_deprecated": false
@@ -89,7 +93,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-c5ec5c6d-20261029",
    "yanked_or_deprecated": false
@@ -123,7 +127,7 @@
    "notes_url": "https://github.com/react/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": false,
+   "prerelease": true,
    "quotes": [],
    "version": "0.0.0-experimental-dc9aed36-20261027",
    "yanked_or_deprecated": false

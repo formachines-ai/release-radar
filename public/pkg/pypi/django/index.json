@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": "https://docs.djangoproject.com/en/stable/releases/",
  "ecosystem": "pypi",
  "errata": null,
  "latest": "6.1.2",
+ "latest_stable": {
+  "date": "2026-10-06T12:53:17Z",
+  "version": "6.1.2"
+ },
  "metadata_fetched": "2026-11-02T16:59:54Z",
  "package": "django",
  "page": "https://releases.formachines.ai/pkg/pypi/django/",

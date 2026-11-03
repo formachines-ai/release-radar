@@ -1,9 +1,13 @@
 {
- "built": "2026-11-02T22:17:32Z",
+ "built": "2026-11-03T00:15:49Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
  "latest": "1.4.8",
+ "latest_stable": {
+  "date": "2026-11-02T15:44:45Z",
+  "version": "1.4.8"
+ },
  "metadata_fetched": "2026-11-02T16:59:46Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
