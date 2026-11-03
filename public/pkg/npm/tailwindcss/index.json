@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T16:15:27Z",
+ "built": "2026-11-03T17:17:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -33,11 +33,11 @@
     },
     {
      "match": "no longer",
-     "quote": "- Ensure `@tailwindcss/turbopack` and `@tailwindcss/webpack` rebuild when the input CSS changes (e.g. `next dev` with Turbopack no longer serves the CSS of the previous edit) ([#20582](https://github.com/tailwindlabs/tailwindcss/pull/20582))"
+     "quote": "- Canonicalization: don't drop a utility that sets a `--tw-*` variable when an unrelated property has the same value (e.g. `link mt-4` no longer becomes `mt-4` when `link` sets `margin-top: 16px` and `--tw-translate-x: 16px`) ([#20593](https://github.com/tailwindlabs/tailwindcss/…"
     },
     {
      "match": "no longer",
-     "quote": "- Canonicalization: don't drop a utility that sets a `--tw-*` variable when an unrelated property has the same value (e.g. `link mt-4` no longer becomes `mt-4` when `link` sets `margin-top: 16px` and `--tw-translate-x: 16px`) ([#20593](https://github.com/tailwindlabs/tailwindcss/…"
+     "quote": "- Decode single-digit hexadecimal escapes in theme variable and `@utility` names as the CSS spec does (e.g. `@theme { --color-\\0: red; }` no longer registers `--color-0`) ([#20591](https://github.com/tailwindlabs/tailwindcss/pull/20591))"
     }
    ],
    "version": "4.3.4",

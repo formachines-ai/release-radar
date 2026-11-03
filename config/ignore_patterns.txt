@@ -12,3 +12,4 @@ break\s+out\s+of
 no longer (?:needed|necessary|required) to (?:install|pass|import)
 no longer (?:[\w.()/-]+ ){0,3}?(?:crash|kill|hang|fail|throw|error|freeze|leak|panic|warn)(?:es|s|ed|ing)?\b
 \b(?:versions|browsers|environments|engines) that no longer supports?\b
+no longer (?:[\w.()/-]+ ){0,3}?(?:serve|show|return|use)s? (?:[\w.()/-]+ ){0,4}?(?:of|from) (?:the |an? )?(?:previous|stale|old|outdated|cached)\b

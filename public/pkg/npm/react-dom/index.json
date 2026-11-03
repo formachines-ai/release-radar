@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T16:15:27Z",
+ "built": "2026-11-03T17:17:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -113,40 +113,6 @@
    "prerelease": true,
    "quotes": [],
    "version": "19.3.0-canary-c5ec5c6d-20261029",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T16:25:14Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/react-dom/0.0.0-experimental-dc9aed36-20261027",
-   "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
-   "package": "react-dom",
-   "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "0.0.0-experimental-dc9aed36-20261027",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T16:24:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/react-dom/19.3.0-canary-dc9aed36-20261027",
-   "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
-   "package": "react-dom",
-   "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "19.3.0-canary-dc9aed36-20261027",
    "yanked_or_deprecated": false
   }
  ],
