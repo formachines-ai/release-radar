@@ -1004,6 +1004,7 @@ def render_llms(model: dict) -> str:
              f"> Daily feed of PyPI and npm releases ({len(model['packages'])} tracked packages, last {WINDOW_DAYS} days) with the verbatim lines of release notes that mention breaking, deprecated, removed, renamed, dropped support or no longer. Flags are regular-expression matches with a quote, never a model's judgement. Packages with a sandbox-verified fix on formachines.ai/errata carry a link.",
              "",
              "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.", "",
+             f"Updated: {model['built']} UTC (daily build 06:00 UTC)", "",
              "## Data", "",
              f"- [today.json]({SITE_BASE}/today.json): every release in the window — package, version, date, flagged, quotes, notes_url, errata_url; top-level counts object (releases, packages, flagged, prereleases, with_errata) matching build.json",
              f"- [feed.xml]({SITE_BASE}/feed.xml): RSS 2.0 of the same releases",
