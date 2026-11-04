@@ -4,10 +4,10 @@
   "latest": "1.21.0",
   "next": "1.7.0-beta.2",
   "old-version": "0.30.0",
-  "v0x": "0.34.0"
+  "v0x": "0.35.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T06:00:31Z",
+ "fetched": "2026-11-04T06:00:32Z",
  "homepage": "https://axios-http.com",
  "latest": "1.21.0",
  "name": "axios",
@@ -15,6 +15,11 @@
  "repo": "axios/axios",
  "summary": "Promise based HTTP client for the browser and node.js",
  "versions": [
+  {
+   "date": "2026-11-03T07:17:49Z",
+   "deprecated": false,
+   "version": "0.35.0"
+  },
   {
    "date": "2026-10-27T07:18:54Z",
    "deprecated": false,

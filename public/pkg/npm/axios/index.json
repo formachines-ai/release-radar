@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,13 +8,44 @@
   "date": "2026-10-27T07:18:54Z",
   "version": "1.21.0"
  },
- "metadata_fetched": "2026-11-03T06:00:31Z",
+ "metadata_fetched": "2026-11-04T06:00:32Z",
  "package": "axios",
  "page": "https://releases.formachines.ai/pkg/npm/axios/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/axios",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-03T07:17:49Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/axios/0.35.0",
+   "json": "https://releases.formachines.ai/pkg/npm/axios/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/83453911c7/",
+   "notes_url": "https://github.com/axios/axios/releases/tag/v0.35.0",
+   "package": "axios",
+   "page": "https://releases.formachines.ai/pkg/npm/axios/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "Breaking",
+     "quote": "## ⚠️ Breaking Changes & Deprecations\n- **Parameter Depth Limit:** `params` nested deeper than 100 levels now reject with `ERR_BAD_OPTION_VALUE`. (**#11243**)"
+    },
+    {
+     "match": "removed",
+     "quote": "…ts, and the configured agent's `destroy()` also cleans up its direct pool. Cached direct pools stay selected after public proxy options are removed or replaced. (**#11243**)…"
+    },
+    {
+     "match": "no longer",
+     "quote": "…unwrapped, sparse arrays are preserved, and non-canonical numeric field names survive JSON serialization. Inherited read-only numeric slots no longer block conversion or multipart serialization. (**#11243**)…"
+    }
+   ],
+   "version": "0.35.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/axios/axios",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Promise based HTTP client for the browser and node.js"
 }

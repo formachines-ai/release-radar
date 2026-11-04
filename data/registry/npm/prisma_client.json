@@ -11,7 +11,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T06:00:29Z",
+ "fetched": "2026-11-04T06:00:30Z",
  "homepage": "https://www.prisma.io",
  "latest": "7.10.1",
  "name": "@prisma/client",

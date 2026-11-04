@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-03T06:00:04Z",
+ "fetched": "2026-11-04T06:00:06Z",
  "homepage": "https://docs.langchain.com/oss/python/langgraph/overview",
  "latest": "1.2.19",
  "name": "langgraph",

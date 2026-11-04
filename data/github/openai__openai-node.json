@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-03T06:00:27Z",
+ "fetched": "2026-11-04T06:00:28Z",
  "releases": [
+  {
+   "body": "## [7.50.0](https://github.com/openai/openai-node/compare/v7.49.0...v7.50.0) (2026-11-03)\n\n\n### Features\n\n* **api:** add 12-hour Responses caching and cache-write usage ([#3106](https://github.com/openai/openai-node/issues/3106)) ([a286400](https://github.com/openai/openai-node/commit/a286400cf8d096d1315391701dc3312929feadfd))\n* **api:** add project service tier settings ([#3105](https://github.com/openai/openai-node/issues/3105)) ([13abd41](https://github.com/openai/openai-node/commit/13abd41307e8d2f54f5ed906128daa09c8f28b1f))\n\n\n### Bug Fixes\n\n* **deps-dev:** bump puppeteer from 25.14.0 to 25.16.0 in /ecosystem-tests/ts-browser-webpack ([#3100](https://github.com/openai/openai-node/issues/3100)) ([65095d2](https://github.com/openai/openai-node/commit/65095d2f0ff54a1f16833e00fb13d001686b99ba))\n\n\n### Documentation\n\n* clarify generated-file ownership ([#3107](https://github.com/openai/openai-node/issues/3107)) ([3eb0f23](https://github.com/openai/openai-node/commit/3eb0f2350133a9f264e2b8d911b61805527eb738))",
+   "date": "2026-11-04T02:23:57Z",
+   "name": "v7.50.0",
+   "prerelease": false,
+   "tag": "v7.50.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.50.0"
+  },
+  {
+   "body": "## [7.49.0](https://github.com/openai/openai-node/compare/v7.48.0...v7.49.0) (2026-11-03)\n\n\n### Features\n\n* **api:** add workload identity providers and federation rules ([#3103](https://github.com/openai/openai-node/issues/3103)) ([47c4227](https://github.com/openai/openai-node/commit/47c4227222af55cc1e43cd8ae4f8ba17b80cae21))",
+   "date": "2026-11-03T20:28:05Z",
+   "name": "v7.49.0",
+   "prerelease": false,
+   "tag": "v7.49.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.49.0"
+  },
+  {
+   "body": "## [7.48.0](https://github.com/openai/openai-node/compare/v7.47.0...v7.48.0) (2026-11-03)\n\n\n### Features\n\n* **api:** expand Live Responses delegation tools and choices (exhaustive TypeScript switches may need to handle new variants) ([#3101](https://github.com/openai/openai-node/issues/3101)) ([e572875](https://github.com/openai/openai-node/commit/e572875c28a34c745b249daec4d954d8300f804b))\n* **responses:** retain sparse WebSocket output facts ([#3088](https://github.com/openai/openai-node/issues/3088)) ([aab2045](https://github.com/openai/openai-node/commit/aab204589e6a512883aa4d1e63dcfafbb4490f62))\n\n\n### Bug Fixes\n\n* **deps-dev:** bump @cloudflare/workers-types from 5.20261018.1 to 5.20261025.1 in /ecosystem-tests/cloudflare-worker ([#3093](https://github.com/openai/openai-node/issues/3093)) ([8da4c55](https://github.com/openai/openai-node/commit/8da4c5572d540e18ff6c45569be933a7a7cd15a8))\n* **deps-dev:** bump follow-redirects from 1.16.1 to 1.16.2 in /ecosystem-tests/vercel-edge ([#3086](https://github.com/openai/openai-node/issues/3086)) ([be6b939](https://github.com/openai/openai-node/commit/be6b939a867e939f6ae6622d00599d65f60447e6))\n* **deps-dev:** bump puppeteer from 25.14.0 to 25.16.0 in /ecosystem-tests/browser-direct-import ([#3092](https://github.com/openai/openai-node/issues/3092)) ([784121e](https://github.com/openai/openai-node/commit/784121e6188916e14f300696158b62889e1f82dc))\n* **deps-dev:** bump webpack-dev-server from 5.2.6 to 5.2.7 in /ecosystem-tests/ts-browser-webpack ([#3097](https://github.com/openai/openai-node/issues/3097)) ([13be5dd](https://github.com/openai/openai-node/commit/13be5ddc26eff9e383c494d393813c131a435086))\n* **deps-dev:** bump wrangler from 4.151.1 to 4.152.0 in /ecosystem-tests/cloudflare-worker ([#3095](https://github.com/openai/openai-node/issues/3095)) ([b61074a](https://github.com/openai/openai-node/commit/b61074a74b584cdbc047d7735e918278b7ceb61e))",
+   "date": "2026-11-03T18:06:52Z",
+   "name": "v7.48.0",
+   "prerelease": false,
+   "tag": "v7.48.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.48.0"
+  },
   {
    "body": "## [7.47.0](https://github.com/openai/openai-node/compare/v7.46.0...v7.47.0) (2026-10-31)\n\n\n### Features\n\n* **api:** support typed Responses WebSocket warmup ([#3084](https://github.com/openai/openai-node/issues/3084)) ([a365b5c](https://github.com/openai/openai-node/commit/a365b5cabfea52b90c0abe808ab3123d55fb34ab))",
    "date": "2026-10-31T04:46:03Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "v7.4.0",
    "url": "https://github.com/openai/openai-node/releases/tag/v7.4.0"
-  },
-  {
-   "body": "## 7.3.0 (2026-07-31)\n\nFull Changelog: [v7.2.0...v7.3.0](https://github.com/openai/openai-node/compare/v7.2.0...v7.3.0)\n\n### Features\n\n* **api:** content provenance checks ([c6f9339](https://github.com/openai/openai-node/commit/c6f9339df44ff0e2180300c1452047592a867dc5))\n\n\n### Chores\n\n* remove Brewfile setup path ([#2031](https://github.com/openai/openai-node/issues/2031)) ([6b63159](https://github.com/openai/openai-node/commit/6b631599de7d91f90767f9c6df1e9d53e36768b5))\n* remove JSR publishing ([#2037](https://github.com/openai/openai-node/issues/2037)) ([b1fc7df](https://github.com/openai/openai-node/commit/b1fc7df4659aaf2cac0c78d3f5b6814251de2b0b))\n\n\n### Documentation\n\n* organize SDK guides and repository metadata ([#2032](https://github.com/openai/openai-node/issues/2032)) ([275dff4](https://github.com/openai/openai-node/commit/275dff4de124bf7aaa566ddecd7ada88c91eef81))\n* remove root-level provider guides ([98a2ae7](https://github.com/openai/openai-node/commit/98a2ae7cd801c8d09fda10be698816c52ddec059))",
-   "date": "2026-07-31T15:10:24Z",
-   "name": "v7.3.0",
-   "prerelease": false,
-   "tag": "v7.3.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.3.0"
-  },
-  {
-   "body": "## 7.2.0 (2026-07-30)\n\nFull Changelog: [v7.1.0...v7.2.0](https://github.com/openai/openai-node/compare/v7.1.0...v7.2.0)\n\n### Features\n\n* **api:** fast tier ([84dffed](https://github.com/openai/openai-node/commit/84dffedd7f238abac249671409ad11bdddc80567))",
-   "date": "2026-07-30T17:30:44Z",
-   "name": "v7.2.0",
-   "prerelease": false,
-   "tag": "v7.2.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.2.0"
-  },
-  {
-   "body": "## 7.1.0 (2026-07-28)\n\nFull Changelog: [v7.0.0...v7.1.0](https://github.com/openai/openai-node/compare/v7.0.0...v7.1.0)\n\n### Features\n\n* **api:** transcription model updates ([b35ca14](https://github.com/openai/openai-node/commit/b35ca14883ed662c81fa75a058dbd1aab4de1db3))\n\n\n### Chores\n\n* **internal:** codegen related update ([ee871e5](https://github.com/openai/openai-node/commit/ee871e58616be2c9f16bfd26cef23ca024690839))",
-   "date": "2026-07-28T22:11:33Z",
-   "name": "v7.1.0",
-   "prerelease": false,
-   "tag": "v7.1.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.1.0"
   }
  ],
  "repo": "openai/openai-node"

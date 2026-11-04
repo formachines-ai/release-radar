@@ -1,19 +1,70 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "7.47.0",
+ "latest": "7.50.0",
  "latest_stable": {
-  "date": "2026-10-31T05:06:22Z",
-  "version": "7.47.0"
+  "date": "2026-11-04T02:32:43Z",
+  "version": "7.50.0"
  },
- "metadata_fetched": "2026-11-03T06:00:27Z",
+ "metadata_fetched": "2026-11-04T06:00:28Z",
  "package": "openai",
  "page": "https://releases.formachines.ai/pkg/npm/openai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/openai",
  "releases": [
+  {
+   "date": "2026-11-04T02:32:43Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.50.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/42888e1974/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.50.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.50.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-03T20:42:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.49.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fd571dca7c/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.49.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.49.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-03T18:31:06Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.48.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/9b3317c83d/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.48.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.48.0",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-10-31T05:06:22Z",
    "ecosystem": "npm",
@@ -50,6 +101,6 @@
   }
  ],
  "repository": "https://github.com/openai/openai-node",
- "stable_in_window": 2,
+ "stable_in_window": 5,
  "summary": "The official TypeScript library for the OpenAI API"
 }

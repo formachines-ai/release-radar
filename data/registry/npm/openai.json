@@ -3,18 +3,33 @@
  "dist_tags": {
   "alpha": "5.0.0-alpha.0",
   "beta": "5.0.0-beta.0",
-  "latest": "7.47.0",
+  "latest": "7.50.0",
   "next": "4.0.0-beta.12"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T06:00:27Z",
+ "fetched": "2026-11-04T06:00:28Z",
  "homepage": "https://github.com/openai/openai-node#readme",
- "latest": "7.47.0",
+ "latest": "7.50.0",
  "name": "openai",
  "page": "https://www.npmjs.com/package/openai",
  "repo": "openai/openai-node",
  "summary": "The official TypeScript library for the OpenAI API",
  "versions": [
+  {
+   "date": "2026-11-04T02:32:43Z",
+   "deprecated": false,
+   "version": "7.50.0"
+  },
+  {
+   "date": "2026-11-03T20:42:30Z",
+   "deprecated": false,
+   "version": "7.49.0"
+  },
+  {
+   "date": "2026-11-03T18:31:06Z",
+   "deprecated": false,
+   "version": "7.48.0"
+  },
   {
    "date": "2026-10-31T05:06:22Z",
    "deprecated": false,

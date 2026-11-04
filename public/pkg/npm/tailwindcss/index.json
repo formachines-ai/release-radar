@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-02T21:30:42Z",
   "version": "4.3.4"
  },
- "metadata_fetched": "2026-11-03T06:00:50Z",
+ "metadata_fetched": "2026-11-04T06:00:48Z",
  "package": "tailwindcss",
  "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
  "prereleases_in_window": 5,

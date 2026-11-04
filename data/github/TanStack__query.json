@@ -9,7 +9,7 @@
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.1"
   }
  },
- "fetched": "2026-11-03T06:00:30Z",
+ "fetched": "2026-11-04T06:00:31Z",
  "releases": [
   {
    "body": "Release 2026-11-02 20:39\n\n## Changes\n\n### Fix\n\n- query-core: exclude queries without data from isStatic (#12497) (969e58019) by @TkDodo\n- query-core: skip pausing cancelled retries (#11537) (3f4de1b40) by @brennanbutler01\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.105.3\n- @tanstack/eslint-plugin-query@5.105.3\n- @tanstack/lit-query@0.2.34\n- @tanstack/preact-query@5.105.3\n- @tanstack/preact-query-devtools@5.105.3\n- @tanstack/preact-query-persist-client@5.105.3\n- @tanstack/query-async-storage-persister@5.105.3\n- @tanstack/query-broadcast-client-experimental@5.105.3\n- @tanstack/query-core@5.105.3\n- @tanstack/query-devtools@5.105.3\n- @tanstack/query-persist-client-core@5.105.3\n- @tanstack/query-sync-storage-persister@5.105.3\n- @tanstack/react-query@5.105.3\n- @tanstack/react-query-devtools@5.105.3\n- @tanstack/react-query-next-experimental@5.105.3\n- @tanstack/react-query-persist-client@5.105.3\n- @tanstack/solid-query@5.105.3\n- @tanstack/solid-query-devtools@5.105.3\n- @tanstack/solid-query-persist-client@5.105.3\n- @tanstack/svelte-query@6.3.9\n- @tanstack/svelte-query-devtools@6.3.9\n- @tanstack/svelte-query-persist-client@6.3.9\n- @tanstack/vue-query@5.105.3\n- @tanstack/vue-query-devtools@6.3.9\n",

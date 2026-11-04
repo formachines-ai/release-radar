@@ -10,7 +10,7 @@
   "rc": "19.0.0-rc.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-03T06:00:47Z",
+ "fetched": "2026-11-04T06:00:46Z",
  "homepage": "https://react.dev/",
  "latest": "19.3.1",
  "name": "react",
@@ -512,16 +512,6 @@
    "date": "2026-08-07T16:31:06Z",
    "deprecated": false,
    "version": "19.3.0-canary-ec61f187-20260806"
-  },
-  {
-   "date": "2026-08-05T16:49:40Z",
-   "deprecated": false,
-   "version": "0.0.0-experimental-11eddecd-20260805"
-  },
-  {
-   "date": "2026-08-05T16:45:58Z",
-   "deprecated": false,
-   "version": "19.3.0-canary-11eddecd-20260805"
   }
  ]
 }

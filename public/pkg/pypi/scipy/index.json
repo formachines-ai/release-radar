@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-08-21T23:23:44Z",
   "version": "1.18.1"
  },
- "metadata_fetched": "2026-11-03T06:00:12Z",
+ "metadata_fetched": "2026-11-04T06:00:13Z",
  "package": "scipy",
  "page": "https://releases.formachines.ai/pkg/pypi/scipy/",
  "prereleases_in_window": 0,

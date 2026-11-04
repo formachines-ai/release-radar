@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-03T06:00:04Z",
+ "fetched": "2026-11-04T06:00:05Z",
  "releases": [
+  {
+   "body": "Initial release\n\nrelease(typesafe): 0.0.1 (#41650)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(deps): bump certifi from 2026.7.22 to 2026.10.19 in /libs/partners/typesafe (#41375)\nfix: fix dependencies in some partner packages (#41266)\nrelease(typesafe): 0.0.1a3 (#40693)\nfeat(typesafe): make classifier questions invocation-scoped (#40659)\nrelease(typesafe): bump to 0.0.1a2 (#40576)\nfeat(typesafe): experimental `AutoModeMiddleware` (#40545)\nfeat(typesafe): experimental `ModelRouterMiddleware` (#40543)\nfix(typesafe): trace usage metadata (#40570)\nfeat(typesafe): `TypeSafeClassifier` (#40542)",
+   "date": "2026-11-04T00:11:25Z",
+   "name": "langchain-typesafe==0.0.1",
+   "prerelease": false,
+   "tag": "langchain-typesafe==0.0.1",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1"
+  },
   {
    "body": "> [!WARNING]\n> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Python 3.10. Please upgrade to Python 3.11 or later.\n\nChanges since langchain==1.4.7\n\nchore(langchain): bump langchain-core (#41640)\nrelease(langchain): 1.4.8 (#41636)\nchore(deps): bump pyasn1 from 0.6.4 to 0.6.5 in /libs/langchain_v1 (#41591)\nchore(deps): bump joserfc from 1.7.4 to 1.7.6 in /libs/langchain_v1 (#41587)\nchore(deps): bump authlib from 1.7.2 to 1.9.1 in /libs/langchain_v1 (#41539)\nchore(deps): bump the minor-and-patch group across 3 directories with 32 updates (#41465)\nrevert: patch vulnerable integration dependencies (#41481)\nbuild(deps): patch vulnerable integration dependencies (#41473)\nchore(deps): bump fastmcp from 4.0.11 to 4.1.2 in /libs/langchain_v1 (#41437)\nchore(deps): bump opentelemetry-api from 1.44.0 to 1.45.1 in /libs/langchain_v1 (#41423)\nchore(infra): relax third-party dependency upper bounds (#41407)",
    "date": "2026-11-02T15:45:02Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "langchain-typesafe==0.0.1a2",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a2"
-  },
-  {
-   "body": "Initial release\n\nfeat(typesafe): `TypeSafeClassifier` (#40542)",
-   "date": "2026-09-17T18:07:04Z",
-   "name": "langchain-typesafe==0.0.1a1",
-   "prerelease": false,
-   "tag": "langchain-typesafe==0.0.1a1",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a1"
   }
  ],
  "repo": "langchain-ai/langchain"

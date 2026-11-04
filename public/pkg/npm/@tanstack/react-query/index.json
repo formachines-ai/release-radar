@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-02T20:39:13Z",
   "version": "5.105.3"
  },
- "metadata_fetched": "2026-11-03T06:00:30Z",
+ "metadata_fetched": "2026-11-04T06:00:31Z",
  "package": "@tanstack/react-query",
  "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
  "prereleases_in_window": 0,

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-03T06:00:30Z",
+ "fetched": "2026-11-04T06:00:31Z",
  "releases": [
+  {
+   "body": "## 2.119.0-canary.5 (2026-11-03)\n\n### 🚀 Features\n\n- **realtime:** broadcast persistence ([#2690](https://github.com/supabase/supabase-js/pull/2690))\n\n### 🩹 Fixes\n\n- **realtime:** include vsn in the unsupported serializer error ([#2812](https://github.com/supabase/supabase-js/pull/2812))\n\n### ❤️ Thank You\n\n- Claude Opus 5.5\n- Guilherme Souza\n- Leandro Pereira @leandrocp\n- Rami Hersonsky @ramiscaleai",
+   "date": "2026-11-03T17:10:35Z",
+   "name": "v2.119.0-canary.5",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.5",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.5"
+  },
   {
    "body": "## 2.119.0-canary.4 (2026-10-28)\n\n### 🩹 Fixes\n\n- **auth:** `global` sign out cleared the local session when the server failed to log out ([#2786](https://github.com/supabase/supabase-js/pull/2786))\n\n### ❤️ Thank You\n\n- Christian Melchior",
    "date": "2026-10-28T13:27:35Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v2.112.0-beta.0",
    "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-beta.0"
-  },
-  {
-   "body": "## 2.111.1-canary.1 (2026-07-30)\n\n### 🩹 Fixes\n\n- **auth:** accept uppercase UUIDs in validateUUID ([#2467](https://github.com/supabase/supabase-js/pull/2467))\n- **storage:** resolve createSignedUrls return type mismatch ([#2474](https://github.com/supabase/supabase-js/pull/2474))\n\n### ❤️ Thank You\n\n- Anubhav Anand @i-anubhav-anand\n- Gourab Singha @gourabsingha1",
-   "date": "2026-07-30T14:08:36Z",
-   "name": "v2.111.1-canary.1",
-   "prerelease": true,
-   "tag": "v2.111.1-canary.1",
-   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.111.1-canary.1"
   }
  ],
  "repo": "supabase/supabase-js"

@@ -3,7 +3,7 @@
   "errata": 26,
   "error_signatures": 24,
   "packages": 19,
-  "packages_checked": 89
+  "packages_checked": 91
  },
  "errors": {
   "json": "https://formachines.ai/errata/errors/index.json",
@@ -21,25 +21,25 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "models": [
   {
-   "checked": 769,
+   "checked": 781,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-02",
+   "last_run": "2026-11-03",
    "model": "claude-sonnet-5-5",
-   "outdated": 83
+   "outdated": 87
   },
   {
-   "checked": 838,
+   "checked": 852,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-02",
+   "last_run": "2026-11-03",
    "model": "gpt-6.1-sol",
-   "outdated": 120
+   "outdated": 126
   },
   {
-   "checked": 633,
+   "checked": 647,
    "cutoff": "2026-04-01",
-   "last_run": "2026-11-02",
+   "last_run": "2026-11-03",
    "model": "gemini-3.8-flash",
-   "outdated": 62
+   "outdated": 67
   }
  ],
  "name": "Where AI models write outdated code, and the verified fix",
@@ -71,7 +71,7 @@
    "new_version": "13.1.0",
    "old_version": "12.11.0",
    "package": "firebase",
-   "updated": "2026-11-02",
+   "updated": "2026-11-03",
    "url": "https://formachines.ai/errata/npm/firebase/"
   },
   {
@@ -131,7 +131,7 @@
    "new_version": "7.0.2",
    "old_version": "6.0.2",
    "package": "typescript",
-   "updated": "2026-11-02",
+   "updated": "2026-11-03",
    "url": "https://formachines.ai/errata/npm/typescript/"
   },
   {
@@ -235,5 +235,5 @@
    "url": "https://formachines.ai/errata/pypi/websockets/"
   }
  ],
- "updated": "2026-11-02"
+ "updated": "2026-11-03"
 }

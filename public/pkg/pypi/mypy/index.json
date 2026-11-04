@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T05:10:32Z",
+ "built": "2026-11-04T06:00:03Z",
  "changelog": "https://github.com/python/mypy/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-28T19:21:04Z",
   "version": "2.4.1"
  },
- "metadata_fetched": "2026-11-03T06:00:09Z",
+ "metadata_fetched": "2026-11-04T06:00:11Z",
  "package": "mypy",
  "page": "https://releases.formachines.ai/pkg/pypi/mypy/",
  "prereleases_in_window": 0,

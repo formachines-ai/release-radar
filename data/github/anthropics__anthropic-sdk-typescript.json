@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-03T06:00:19Z",
+ "fetched": "2026-11-04T06:00:21Z",
  "releases": [
   {
    "body": "### Chores\n\n* **internal:** type-check the published declarations of every subpackage",
