@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:09Z",
  "package": "httpx",
  "page": "https://releases.formachines.ai/pkg/pypi/httpx/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/httpx/",
  "releases": [],
  "repository": "https://github.com/encode/httpx",
+ "stable_in_window": 0,
  "summary": "The next generation HTTP client."
 }

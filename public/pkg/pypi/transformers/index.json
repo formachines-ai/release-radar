@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:06Z",
  "package": "transformers",
  "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/transformers/",
  "releases": [
   {
@@ -75,5 +76,6 @@
   }
  ],
  "repository": "https://github.com/huggingface/transformers",
+ "stable_in_window": 3,
  "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
 }

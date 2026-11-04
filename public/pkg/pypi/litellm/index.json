@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:05Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+ "prereleases_in_window": 2,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
   {
@@ -80,25 +81,9 @@
    "quotes": [],
    "version": "1.106.6",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T02:57:32Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.109.0.dev1",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "1.109.0.dev1",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
+ "stable_in_window": 2,
  "summary": "Library to easily interface with LLM API providers"
 }

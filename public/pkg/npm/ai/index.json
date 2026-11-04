@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:20Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/ai",
  "releases": [
   {
@@ -279,5 +280,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
+ "stable_in_window": 15,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

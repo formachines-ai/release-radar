@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "redirects": {
   "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
   "089267f843": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2",
@@ -8,7 +8,6 @@
   "148361da47": "https://github.com/vercel/ai/releases/tag/ai%405.0.284",
   "150dc5180c": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.1",
   "17f8d511b6": "https://github.com/Automattic/mongoose/releases/tag/8.24.8",
-  "1ac0f6dea1": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.1",
   "1d6bd69592": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.107",
   "1d84f0f6ec": "https://formachines.ai/errata/npm/firebase/",
   "1da85efb08": "https://github.com/withastro/astro/releases/tag/astro%407.4.3",
@@ -18,7 +17,6 @@
   "2d152eb49d": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.36",
   "2d9737e1e5": "https://formachines.ai/errata/pypi/google-genai/",
   "2e7e35a388": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
-  "2f39683122": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.0",
   "2facf6327e": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.140",
   "316f75ce73": "https://github.com/vercel/ai/releases/tag/ai%407.0.156",
   "3323030b67": "https://github.com/googleapis/js-genai/releases/tag/v2.32.0",
@@ -55,7 +53,6 @@
   "79c3d0d6f6": "https://github.com/vercel/ai/releases/tag/ai%407.0.158",
   "7a1ea59b95": "https://github.com/vercel/ai/releases/tag/ai%407.0.157",
   "8123445296": "https://github.com/openai/openai-python/releases/tag/v3.42.1",
-  "822827f746": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.138",
   "8644055809": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.3",
   "88cbb8199f": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
   "8b649fb89d": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.1",
@@ -87,7 +84,6 @@
   "cbb7a86a1d": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.2",
   "d086106980": "https://github.com/BerriAI/litellm/releases/tag/v1.106.6",
   "d30320d3ec": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.108",
-  "d71155fc82": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.29",
   "d83ee97957": "https://github.com/vercel/ai/releases/tag/ai%407.0.159",
   "e0d2cd6d2f": "https://github.com/stripe/stripe-node/releases/tag/v23.1.0",
   "e174a0cca3": "https://github.com/react/react/releases",

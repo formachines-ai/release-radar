@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://github.com/openai/tiktoken/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:06Z",
  "package": "tiktoken",
  "page": "https://releases.formachines.ai/pkg/pypi/tiktoken/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/tiktoken/",
  "releases": [],
  "repository": "https://github.com/openai/tiktoken",
+ "stable_in_window": 0,
  "summary": "tiktoken is a fast BPE tokeniser for use with OpenAI's models"
 }

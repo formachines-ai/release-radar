@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:38Z",
  "package": "esbuild",
  "page": "https://releases.formachines.ai/pkg/npm/esbuild/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/esbuild",
  "releases": [],
  "repository": "https://github.com/evanw/esbuild",
+ "stable_in_window": 0,
  "summary": "An extremely fast JavaScript and CSS bundler and minifier."
 }

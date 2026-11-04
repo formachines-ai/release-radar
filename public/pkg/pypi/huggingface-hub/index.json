@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -18,6 +18,7 @@
  "metadata_fetched": "2026-11-03T06:00:03Z",
  "package": "huggingface-hub",
  "page": "https://releases.formachines.ai/pkg/pypi/huggingface-hub/",
+ "prereleases_in_window": 1,
  "registry": "https://pypi.org/project/huggingface-hub/",
  "releases": [
   {
@@ -61,5 +62,6 @@
   }
  ],
  "repository": "https://github.com/huggingface/huggingface_hub",
+ "stable_in_window": 1,
  "summary": "Client library to download and publish models, datasets and other repos on the huggingface.co hub"
 }
