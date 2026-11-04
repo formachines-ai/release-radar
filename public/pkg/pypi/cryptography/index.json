@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://cryptography.io/en/latest/changelog/",
  "ecosystem": "pypi",
  "errata": {
@@ -18,8 +18,10 @@
  "metadata_fetched": "2026-11-03T06:00:09Z",
  "package": "cryptography",
  "page": "https://releases.formachines.ai/pkg/pypi/cryptography/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/cryptography/",
  "releases": [],
  "repository": "https://github.com/pyca/cryptography",
+ "stable_in_window": 0,
  "summary": "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
 }

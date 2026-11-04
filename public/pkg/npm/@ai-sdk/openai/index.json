@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:13Z",
  "package": "@ai-sdk/openai",
  "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@ai-sdk/openai",
  "releases": [
   {
@@ -153,25 +154,9 @@
    "quotes": [],
    "version": "3.0.135",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-27T23:29:13Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@ai-sdk/openai/2.0.138",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/822827f746/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.138",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "2.0.138",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vercel/ai",
+ "stable_in_window": 8,
  "summary": ""
 }

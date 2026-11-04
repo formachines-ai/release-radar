@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:50Z",
  "package": "svelte",
  "page": "https://releases.formachines.ai/pkg/npm/svelte/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/svelte",
  "releases": [],
  "repository": "https://github.com/sveltejs/svelte",
+ "stable_in_window": 0,
  "summary": "Cybernetically enhanced web apps"
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:38Z",
  "package": "eslint",
  "page": "https://releases.formachines.ai/pkg/npm/eslint/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/eslint",
  "releases": [
   {
@@ -32,5 +33,6 @@
   }
  ],
  "repository": "https://github.com/eslint/eslint",
+ "stable_in_window": 1,
  "summary": "An AST-based pattern checker for JavaScript."
 }

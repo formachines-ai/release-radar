@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:31Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
+ "prereleases_in_window": 1,
  "registry": "https://www.npmjs.com/package/astro",
  "releases": [
   {
@@ -97,5 +98,6 @@
   }
  ],
  "repository": "https://github.com/withastro/astro",
+ "stable_in_window": 3,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

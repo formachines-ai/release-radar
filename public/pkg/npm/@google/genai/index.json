@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:19Z",
  "package": "@google/genai",
  "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@google/genai",
  "releases": [
   {
@@ -32,5 +33,6 @@
   }
  ],
  "repository": "https://github.com/googleapis/js-genai",
+ "stable_in_window": 1,
  "summary": "[![NPM Downloads](https://img.shields.io/npm/dw/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai) [![Node Current](https://img.shields.io/node/v/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)"
 }

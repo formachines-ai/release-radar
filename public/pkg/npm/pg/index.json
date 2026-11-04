@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:44Z",
  "package": "pg",
  "page": "https://releases.formachines.ai/pkg/npm/pg/",
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/pg",
  "releases": [],
  "repository": "https://github.com/brianc/node-postgres",
+ "stable_in_window": 0,
  "summary": "PostgreSQL client - pure javascript & libpq with the same API"
 }

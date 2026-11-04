@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://github.com/psf/black/blob/main/CHANGES.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:07Z",
  "package": "black",
  "page": "https://releases.formachines.ai/pkg/pypi/black/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/black/",
  "releases": [],
  "repository": "https://github.com/psf/black",
+ "stable_in_window": 0,
  "summary": "The uncompromising code formatter."
 }

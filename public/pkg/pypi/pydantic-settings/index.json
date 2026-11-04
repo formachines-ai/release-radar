@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://github.com/pydantic/pydantic-settings/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,6 +11,7 @@
  "metadata_fetched": "2026-11-03T06:00:11Z",
  "package": "pydantic-settings",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic-settings/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pydantic-settings/",
  "releases": [
   {
@@ -32,5 +33,6 @@
   }
  ],
  "repository": "https://github.com/pydantic/pydantic-settings",
+ "stable_in_window": 1,
  "summary": "Settings management using Pydantic"
 }

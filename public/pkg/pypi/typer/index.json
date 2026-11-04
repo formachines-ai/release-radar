@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,8 +11,10 @@
  "metadata_fetched": "2026-11-03T06:00:12Z",
  "package": "typer",
  "page": "https://releases.formachines.ai/pkg/pypi/typer/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/typer/",
  "releases": [],
  "repository": "https://github.com/fastapi/typer",
+ "stable_in_window": 0,
  "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints."
 }

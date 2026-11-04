@@ -853,7 +853,15 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<p class="latest-stable"><b>Latest stable:</b> <code>{esc(ls["version"])}</code> ({esc(ls_date)}, source: registry)</p>')
     else:
         body.append('<p class="latest-stable"><b>Latest stable:</b> unknown (source: registry)</p>')
-    body.append(f'<h2>Releases in the last {WINDOW_DAYS} days ({len(p["releases"])})</h2>')
+    n_pre = sum(1 for r in p["releases"] if r["prerelease"])
+    n_stable = len(p["releases"]) - n_pre
+    body.append(f'<h2>Releases in the last {WINDOW_DAYS} days ({len(p["releases"])}: {n_stable} stable, {n_pre} pre-releases)</h2>')
+    if p["releases"] and n_stable == 0:
+        if ls:
+            ls_d = fmt_date(ls["date"]) if ls.get("date") else "date unknown"
+            body.append(f'<p class="note no-stable">No stable release in the last {WINDOW_DAYS} days; latest stable: <code>{esc(ls["version"])}</code> ({esc(ls_d)}, source: registry)</p>')
+        else:
+            body.append(f'<p class="note no-stable">No stable release in the last {WINDOW_DAYS} days; latest stable: unknown (source: registry)</p>')
     if p["releases"]:
         ordered = sorted(p["releases"], key=lambda r: r["prerelease"])
         body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False) for r in ordered) + "</ul>")
@@ -1067,6 +1075,8 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "registry": p["page"], "repository": f"https://github.com/{p['repo']}" if p.get("repo") else None,
             "changelog": p.get("changelog"), "errata": p.get("errata"), "metadata_fetched": p.get("fetched"),
             "latest_stable": p.get("latest_stable"),
+            "stable_in_window": sum(1 for r in p["releases"] if not r["prerelease"]),
+            "prereleases_in_window": sum(1 for r in p["releases"] if r["prerelease"]),
             "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r) for r in p["releases"]],
         })
         if p.get("errata") and p["errata"].get("url"):

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-03T22:09:26Z",
+ "built": "2026-11-04T05:10:32Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -18,8 +18,10 @@
  "metadata_fetched": "2026-11-03T06:00:12Z",
  "package": "scipy",
  "page": "https://releases.formachines.ai/pkg/pypi/scipy/",
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/scipy/",
  "releases": [],
  "repository": "https://github.com/scipy/scipy",
+ "stable_in_window": 0,
  "summary": "Fundamental algorithms for scientific computing in Python"
 }
