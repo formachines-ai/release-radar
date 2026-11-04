@@ -728,7 +728,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
     if r["flagged"]:
         badges.append('<span class="badge flag">breaking / deprecated wording</span>')
     if r.get("errata_url"):
-        badges.append(f'<a class="badge errata" href="/go/{esc(r["errata_go"])}/">Errata: verified correction</a>')
+        badges.append(f'<a class="badge errata" href="/go/{esc(r["errata_go"])}/" rel="nofollow">Errata: verified correction</a>')
     pre = '<span class="pre">pre-release</span>' if r["prerelease"] else ""
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
     name_html = f'<a href="{esc(r["pkg_path"])}">{esc(r["name"])}</a>' if show_pkg_link else esc(r["name"])
@@ -804,7 +804,7 @@ def render_index(model: dict, errata_count: int) -> str:
     rows = []
     for p in model["packages"]:
         e = p.get("errata")
-        ebadge = f'<a class="badge errata" href="/go/{esc(go_id(e["url"]))}/">Errata ×{esc(e.get("errata"))}</a>' if e and e.get("url") else ""
+        ebadge = f'<a class="badge errata" href="/go/{esc(go_id(e["url"]))}/" rel="nofollow">Errata ×{esc(e.get("errata"))}</a>' if e and e.get("url") else ""
         latest_date = p["releases"][0]["date"] if p["releases"] else None
         rows.append(f'<tr><td>{esc(p["ecosystem"])}</td><td><a href="{esc(p["path"])}">{esc(p["name"])}</a></td>'
                     f'<td><code>{esc(p.get("latest") or "?")}</code></td><td>{len(p["releases"])}</td>'
@@ -844,7 +844,7 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<p class="lead">{esc(p["summary"])}</p>')
     body.append('<dl class="meta">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in meta) + "</dl>")
     if e and e.get("url"):
-        body.append(f'<h2>Errata</h2><p><a class="badge errata" href="/go/{esc(go_id(e["url"]))}/">Errata: {esc(e.get("errata"))} verified correction(s)</a> '
+        body.append(f'<h2>Errata</h2><p><a class="badge errata" href="/go/{esc(go_id(e["url"]))}/" rel="nofollow">Errata: {esc(e.get("errata"))} verified correction(s)</a> '
                     f'— checked on <code>{esc(e.get("old_version"))}</code> → <code>{esc(e.get("new_version"))}</code>, Errata entry updated {esc(e.get("updated"))}. '
                     f'The correction pages say on which versions the outdated code still reproduces; this site only links them.</p>')
     ls = p.get("latest_stable")

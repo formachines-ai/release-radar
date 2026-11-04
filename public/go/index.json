@@ -1,8 +1,7 @@
 {
- "built": "2026-11-04T06:16:18Z",
+ "built": "2026-11-04T13:13:40Z",
  "redirects": {
   "014d49577a": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
-  "01adc72391": "https://github.com/pydantic/pydantic-settings/releases",
   "073de2ab36": "https://docs.sqlalchemy.org/latest/changelog/index.html",
   "089267f843": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2",
   "0b18bc5995": "https://formachines.ai/errata/pypi/websockets/",
