@@ -1,19 +1,53 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "2.118.0",
+ "latest": "2.119.0",
  "latest_stable": {
-  "date": "2026-10-15T12:57:17Z",
-  "version": "2.118.0"
+  "date": "2026-11-04T13:11:11Z",
+  "version": "2.119.0"
  },
- "metadata_fetched": "2026-11-04T06:00:30Z",
+ "metadata_fetched": "2026-11-05T06:00:30Z",
  "package": "@supabase/supabase-js",
  "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
  "prereleases_in_window": 2,
  "registry": "https://www.npmjs.com/package/@supabase/supabase-js",
  "releases": [
+  {
+   "date": "2026-11-04T13:11:11Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@supabase/supabase-js/2.119.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/cca25c6b80/",
+   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0",
+   "package": "@supabase/supabase-js",
+   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "2.119.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-04T13:08:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@supabase/supabase-js/2.119.0-canary.6",
+   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/46a3fcb970/",
+   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.6",
+   "package": "@supabase/supabase-js",
+   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "2.119.0-canary.6",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-03T17:15:06Z",
    "ecosystem": "npm",
@@ -30,26 +64,9 @@
    "quotes": [],
    "version": "2.119.0-canary.5",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T13:29:43Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@supabase/supabase-js/2.119.0-canary.4",
-   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/5b5c02d2b2/",
-   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.4",
-   "package": "@supabase/supabase-js",
-   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "2.119.0-canary.4",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/supabase/supabase-js",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Isomorphic Javascript SDK for Supabase"
 }

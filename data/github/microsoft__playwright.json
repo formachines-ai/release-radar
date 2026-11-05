@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04T06:00:44Z",
+ "fetched": "2026-11-05T06:00:45Z",
  "releases": [
   {
    "body": "### Bug Fixes\r\n\r\n- #43247 [Bug]: _electron.launch intermittently loses a packaged app's first window since 1.64.0\r\n- #43242 [Regression]: Chromium 155+ aborts a preflighted cross-origin redirect whenever any route is registered (net::ERR_ABORTED)\r\n",

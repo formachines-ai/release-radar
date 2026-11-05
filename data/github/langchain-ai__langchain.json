@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-04T06:00:05Z",
+ "fetched": "2026-11-05T06:00:05Z",
  "releases": [
+  {
+   "body": "Changes since langchain-core==1.7.5\n\nrelease(core): 1.7.6 (#41698)\nperf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697)\nperf(core): stop `parse_partial_json` from retrying one character at a time (#41467)",
+   "date": "2026-11-05T00:22:12Z",
+   "name": "langchain-core==1.7.6",
+   "prerelease": false,
+   "tag": "langchain-core==1.7.6",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6"
+  },
+  {
+   "body": "Changes since langchain==1.4.8\n\nrelease(langchain): 1.4.9 (#41684)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): standardize model refusal content blocks (#41582)",
+   "date": "2026-11-04T17:07:37Z",
+   "name": "langchain==1.4.9",
+   "prerelease": false,
+   "tag": "langchain==1.4.9",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.9"
+  },
   {
    "body": "Initial release\n\nrelease(typesafe): 0.0.1 (#41650)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(deps): bump certifi from 2026.7.22 to 2026.10.19 in /libs/partners/typesafe (#41375)\nfix: fix dependencies in some partner packages (#41266)\nrelease(typesafe): 0.0.1a3 (#40693)\nfeat(typesafe): make classifier questions invocation-scoped (#40659)\nrelease(typesafe): bump to 0.0.1a2 (#40576)\nfeat(typesafe): experimental `AutoModeMiddleware` (#40545)\nfeat(typesafe): experimental `ModelRouterMiddleware` (#40543)\nfix(typesafe): trace usage metadata (#40570)\nfeat(typesafe): `TypeSafeClassifier` (#40542)",
    "date": "2026-11-04T00:11:25Z",
@@ -8,6 +24,38 @@
    "prerelease": false,
    "tag": "langchain-typesafe==0.0.1",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1"
+  },
+  {
+   "body": "Changes since langchain-openai==1.7.3\n\nrelease(openai): 1.7.4 (#41683)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): standardize model refusal content blocks (#41582)\nchore(model-profiles): refresh model profile data (#41556)",
+   "date": "2026-11-04T16:55:54Z",
+   "name": "langchain-openai==1.7.4",
+   "prerelease": false,
+   "tag": "langchain-openai==1.7.4",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.4"
+  },
+  {
+   "body": "Changes since langchain-fireworks==1.7.1\n\nfix(fireworks): report streamed token usage once (#41693)\nrelease(fireworks): 1.7.2 (#41690)\nfix(fireworks): report the served model in response metadata (#41686)\nchore(model-profiles): refresh model profile data (#41669)\nfix(fireworks): promote reranking out of beta (#41551)\nchore(model-profiles): refresh model profile data (#41432)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(model-profiles): refresh model profile data (#41354)\nchore(deps): bump certifi from 2025.8.3 to 2026.10.19 in /libs/partners/fireworks (#41387)\nchore(deps): bump aiohttp from 3.14.4 to 3.14.5 in /libs/partners/fireworks (#41359)\nchore(deps): bump orjson from 3.12.0 to 3.13.0 in /libs/partners/fireworks (#41340)\nchore(deps): bump aiohttp from 3.14.3 to 3.14.4 in /libs/partners/fireworks (#41314)\nchore(model-profiles): refresh model profile data (#41298)\nchore(model-profiles): refresh model profile data (#41265)\nfix: fix dependencies in some partner packages (#41266)\ntest(fireworks): stabilize forced tool-call extraction (#41139)",
+   "date": "2026-11-04T20:47:50Z",
+   "name": "langchain-fireworks==1.7.2",
+   "prerelease": false,
+   "tag": "langchain-fireworks==1.7.2",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.2"
+  },
+  {
+   "body": "Changes since langchain-core==1.7.4\n\nrelease(core): 1.7.5 (#41665)\nfeat(core): translate Gemini safety blocks to refusal content blocks (#41658)\nfix(core): end tool run on cancellation (#41660)\nfeat(core): standardize model refusal content blocks (#41582)\nfix(core): load RemoveMessage serialized by LangChain.js (#41642)",
+   "date": "2026-11-04T15:50:04Z",
+   "name": "langchain-core==1.7.5",
+   "prerelease": false,
+   "tag": "langchain-core==1.7.5",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.5"
+  },
+  {
+   "body": "Changes since langchain-anthropic==1.7.9\n\nrelease(anthropic): 1.7.10 (#41685)\nchore(deps): require `langchain-core>=1.7.5` for refusal handling (#41682)\nfeat(core): translate Gemini safety blocks to refusal content blocks (#41658)\nfeat(core): standardize model refusal content blocks (#41582)",
+   "date": "2026-11-04T16:51:12Z",
+   "name": "langchain-anthropic==1.7.10",
+   "prerelease": false,
+   "tag": "langchain-anthropic==1.7.10",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.10"
   },
   {
    "body": "> [!WARNING]\n> **Python 3.10 support will be dropped in `langchain-core` 1.8.0 and `langchain` 1.5.0.** The current minor versions are the last to support Python 3.10. Please upgrade to Python 3.11 or later.\n\nChanges since langchain==1.4.7\n\nchore(langchain): bump langchain-core (#41640)\nrelease(langchain): 1.4.8 (#41636)\nchore(deps): bump pyasn1 from 0.6.4 to 0.6.5 in /libs/langchain_v1 (#41591)\nchore(deps): bump joserfc from 1.7.4 to 1.7.6 in /libs/langchain_v1 (#41587)\nchore(deps): bump authlib from 1.7.2 to 1.9.1 in /libs/langchain_v1 (#41539)\nchore(deps): bump the minor-and-patch group across 3 directories with 32 updates (#41465)\nrevert: patch vulnerable integration dependencies (#41481)\nbuild(deps): patch vulnerable integration dependencies (#41473)\nchore(deps): bump fastmcp from 4.0.11 to 4.1.2 in /libs/langchain_v1 (#41437)\nchore(deps): bump opentelemetry-api from 1.44.0 to 1.45.1 in /libs/langchain_v1 (#41423)\nchore(infra): relax third-party dependency upper bounds (#41407)",
@@ -352,54 +400,6 @@
    "prerelease": false,
    "tag": "langchain-deepseek==1.1.1",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.1.1"
-  },
-  {
-   "body": "Changes since langchain-anthropic==1.7.2\n\nrelease(anthropic): 1.7.3 (#40773)\nchore(model-profiles): refresh anthropic model profile data (#40772)\nfix(anthropic): auto-route `with_structured_output` to `method=\"json_schema\"` for fable and opus 5.5 (#40766)\nchore(anthropic): update docs for Opus 5.5 (#40765)\nfeat(anthropic): send mid-conversation `SystemMessage`s in place (#40622)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/partners/anthropic (#40643)",
-   "date": "2026-09-22T22:08:13Z",
-   "name": "langchain-anthropic==1.7.3",
-   "prerelease": false,
-   "tag": "langchain-anthropic==1.7.3",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.3"
-  },
-  {
-   "body": "Changes since langchain-openai==1.6.2\n\nrelease(openai): 1.6.3 (#40719)\nfix(openai): expose inferred Responses API routing at initialization (#40715)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/partners/openai (#40629)\nfix(openai): support GPT-6 request constraints (#40443)",
-   "date": "2026-09-21T18:32:44Z",
-   "name": "langchain-openai==1.6.3",
-   "prerelease": false,
-   "tag": "langchain-openai==1.6.3",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3"
-  },
-  {
-   "body": "Changes since langchain-core==1.6.3\n\nrelease(core): 1.6.4 (#40718)\nchore(core): deprecate chat message history (#40711)\nchore(deps): bump anyio from 4.12.0 to 4.14.2 in /libs/core (#40634)\nchore(deps): bump soupsieve from 2.8.4 to 2.9 in /libs/core (#40574)",
-   "date": "2026-09-21T15:51:23Z",
-   "name": "langchain-core==1.6.4",
-   "prerelease": false,
-   "tag": "langchain-core==1.6.4",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.4"
-  },
-  {
-   "body": "Initial release\n\nrelease(typesafe): 0.0.1a3 (#40693)\nfeat(typesafe): make classifier questions invocation-scoped (#40659)\nrelease(typesafe): bump to 0.0.1a2 (#40576)\nfeat(typesafe): experimental `AutoModeMiddleware` (#40545)\nfeat(typesafe): experimental `ModelRouterMiddleware` (#40543)\nfix(typesafe): trace usage metadata (#40570)\nfeat(typesafe): `TypeSafeClassifier` (#40542)",
-   "date": "2026-09-20T18:54:54Z",
-   "name": "langchain-typesafe==0.0.1a3",
-   "prerelease": false,
-   "tag": "langchain-typesafe==0.0.1a3",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3"
-  },
-  {
-   "body": "Changes since langchain==1.4.1\n\nrelease(langchain): 1.4.2 (#40621)\nfix(langchain): preserve model-generated tool calls in HITL tool call edits and add notice to ToolMessage (#40463)",
-   "date": "2026-09-18T17:31:25Z",
-   "name": "langchain==1.4.2",
-   "prerelease": false,
-   "tag": "langchain==1.4.2",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.2"
-  },
-  {
-   "body": "Initial release\n\nrelease(typesafe): bump to 0.0.1a2 (#40576)\nfeat(typesafe): experimental `AutoModeMiddleware` (#40545)\nfeat(typesafe): experimental `ModelRouterMiddleware` (#40543)\nfix(typesafe): trace usage metadata (#40570)\nfeat(typesafe): `TypeSafeClassifier` (#40542)",
-   "date": "2026-09-17T22:24:57Z",
-   "name": "langchain-typesafe==0.0.1a2",
-   "prerelease": false,
-   "tag": "langchain-typesafe==0.0.1a2",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a2"
   }
  ],
  "repo": "langchain-ai/langchain"

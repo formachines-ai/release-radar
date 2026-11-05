@@ -1,20 +1,38 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": "https://pandas.pydata.org/docs/whatsnew/index.html",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "3.1.0",
+ "latest": "3.1.1",
  "latest_stable": {
-  "date": "2026-10-22T11:54:48Z",
-  "version": "3.1.0"
+  "date": "2026-11-04T15:05:30Z",
+  "version": "3.1.1"
  },
- "metadata_fetched": "2026-11-04T06:00:11Z",
+ "metadata_fetched": "2026-11-05T06:00:11Z",
  "package": "pandas",
  "page": "https://releases.formachines.ai/pkg/pypi/pandas/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pandas/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-04T15:05:30Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/pandas/3.1.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/pandas/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/71df572071/",
+   "notes_url": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.1",
+   "package": "pandas",
+   "page": "https://releases.formachines.ai/pkg/pypi/pandas/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "3.1.1",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pandas-dev/pandas",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Powerful data structures for data analysis, time series, and statistics"
 }

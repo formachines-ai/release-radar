@@ -1,19 +1,62 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "7.0.162",
+ "latest": "7.0.163",
  "latest_stable": {
-  "date": "2026-11-03T01:19:34Z",
-  "version": "7.0.162"
+  "date": "2026-11-05T01:12:02Z",
+  "version": "7.0.163"
  },
- "metadata_fetched": "2026-11-04T06:00:23Z",
+ "metadata_fetched": "2026-11-05T06:00:21Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/ai",
  "releases": [
+  {
+   "date": "2026-11-05T01:12:02Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/ai/7.0.163",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ff14ca29c0/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.163",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "- 933dae3: fix (ai): download deprecated `file-url` and `image-url` tool result content"
+    },
+    {
+     "match": "deprecated",
+     "quote": "Tool result content parts that use the deprecated `file-url` and `image-url`"
+    }
+   ],
+   "version": "7.0.163",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T01:10:40Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/6.0.323",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7e12948d71/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.323",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "6.0.323",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-03T01:20:11Z",
    "ecosystem": "npm",
@@ -260,26 +303,9 @@
    "quotes": [],
    "version": "6.0.318",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T18:35:30Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/ai/7.0.156",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/316f75ce73/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.156",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "7.0.156",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 15,
+ "stable_in_window": 16,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

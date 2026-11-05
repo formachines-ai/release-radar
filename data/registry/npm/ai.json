@@ -2,22 +2,32 @@
  "changelog": null,
  "dist_tags": {
   "ai-v5": "5.0.285",
-  "ai-v6": "6.0.322",
+  "ai-v6": "6.0.323",
   "alpha": "5.0.0-alpha.15",
   "beta": "7.0.0-beta.187",
   "canary": "7.0.0-canary.176",
-  "latest": "7.0.162",
+  "latest": "7.0.163",
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-04T06:00:23Z",
+ "fetched": "2026-11-05T06:00:21Z",
  "homepage": "https://ai-sdk.dev/docs",
- "latest": "7.0.162",
+ "latest": "7.0.163",
  "name": "ai",
  "page": "https://www.npmjs.com/package/ai",
  "repo": "vercel/ai",
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider.",
  "versions": [
+  {
+   "date": "2026-11-05T01:12:02Z",
+   "deprecated": false,
+   "version": "7.0.163"
+  },
+  {
+   "date": "2026-11-05T01:10:40Z",
+   "deprecated": false,
+   "version": "6.0.323"
+  },
   {
    "date": "2026-11-03T01:20:11Z",
    "deprecated": false,
@@ -1152,16 +1162,6 @@
    "date": "2026-08-07T18:08:04Z",
    "deprecated": false,
    "version": "7.0.57"
-  },
-  {
-   "date": "2026-08-07T02:59:18Z",
-   "deprecated": false,
-   "version": "6.0.246"
-  },
-  {
-   "date": "2026-08-07T02:27:54Z",
-   "deprecated": false,
-   "version": "7.0.56"
   }
  ]
 }

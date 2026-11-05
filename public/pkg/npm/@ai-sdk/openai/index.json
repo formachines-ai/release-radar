@@ -1,19 +1,53 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "4.0.108",
+ "latest": "4.0.109",
  "latest_stable": {
-  "date": "2026-11-03T01:21:55Z",
-  "version": "4.0.108"
+  "date": "2026-11-05T01:12:01Z",
+  "version": "4.0.109"
  },
- "metadata_fetched": "2026-11-04T06:00:17Z",
+ "metadata_fetched": "2026-11-05T06:00:16Z",
  "package": "@ai-sdk/openai",
  "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@ai-sdk/openai",
  "releases": [
+  {
+   "date": "2026-11-05T01:12:01Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@ai-sdk/openai/4.0.109",
+   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8200e4b360/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.109",
+   "package": "@ai-sdk/openai",
+   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "4.0.109",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T01:10:39Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@ai-sdk/openai/3.0.137",
+   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ab70ac38ca/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.137",
+   "package": "@ai-sdk/openai",
+   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "3.0.137",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-03T02:13:54Z",
    "ecosystem": "npm",
@@ -157,6 +191,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 8,
+ "stable_in_window": 10,
  "summary": ""
 }

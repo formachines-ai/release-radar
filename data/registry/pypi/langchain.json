@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
- "fetched": "2026-11-04T06:00:05Z",
+ "fetched": "2026-11-05T06:00:05Z",
  "homepage": "https://docs.langchain.com/",
- "latest": "1.4.8",
+ "latest": "1.4.9",
  "name": "langchain",
  "page": "https://pypi.org/project/langchain/",
  "repo": "langchain-ai/langchain",
  "summary": "Building applications with LLMs through composability",
  "versions": [
+  {
+   "date": "2026-11-04T17:07:20Z",
+   "version": "1.4.9",
+   "yanked": false
+  },
   {
    "date": "2026-11-02T15:44:45Z",
    "version": "1.4.8",
@@ -202,11 +207,6 @@
   {
    "date": "2026-04-29T21:02:42Z",
    "version": "1.2.16",
-   "yanked": false
-  },
-  {
-   "date": "2026-04-03T14:26:02Z",
-   "version": "1.2.15",
    "yanked": false
   }
  ]

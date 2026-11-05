@@ -1,19 +1,36 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "3.45.0",
+ "latest": "3.46.0",
  "latest_stable": {
-  "date": "2026-11-04T02:24:08Z",
-  "version": "3.45.0"
+  "date": "2026-11-05T00:55:53Z",
+  "version": "3.46.0"
  },
- "metadata_fetched": "2026-11-04T06:00:07Z",
+ "metadata_fetched": "2026-11-05T06:00:07Z",
  "package": "openai",
  "page": "https://releases.formachines.ai/pkg/pypi/openai/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/openai/",
  "releases": [
+  {
+   "date": "2026-11-05T00:55:53Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/openai/3.46.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/43e1365d98/",
+   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "3.46.0",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-04T02:24:08Z",
    "ecosystem": "pypi",
@@ -97,23 +114,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "3.42.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T22:27:50Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/openai/3.41.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/3b1d2ae6d5/",
-   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.41.0",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "3.41.0",
    "yanked_or_deprecated": false
   }
  ],

@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-04T06:00:31Z",
+ "fetched": "2026-11-05T06:00:31Z",
  "releases": [
+  {
+   "body": "## 2.119.0 (2026-11-04)\n\n### 🚀 Features\n\n- **postgrest:** expose query builder options to .from method - custom fetch per request ([#1570](https://github.com/supabase/supabase-js/pull/1570))\n- **realtime:** broadcast persistence ([#2690](https://github.com/supabase/supabase-js/pull/2690))\n\n### 🩹 Fixes\n\n- **auth:** `deleteUser` miscast empty object to `User` ([#2773](https://github.com/supabase/supabase-js/pull/2773))\n- **auth:** `global` sign out cleared the local session when the server failed to log out ([#2786](https://github.com/supabase/supabase-js/pull/2786))\n- **realtime:** include vsn in the unsupported serializer error ([#2812](https://github.com/supabase/supabase-js/pull/2812))\n- **storage:** `exists` reports invalid JWT or missing bucket as missing file ([#2783](https://github.com/supabase/supabase-js/pull/2783))\n- **storage:** ignore undefined FileOptions during upload ([#2789](https://github.com/supabase/supabase-js/pull/2789))\n\n### ❤️ Thank You\n\n- 7vignesh\n- 7vignesh <vigneshgopikrishnan7@gmail.com> and stenlan @stenlan\n- Christian Melchior\n- Claude Opus 5.5\n- Guilherme Souza\n- Katerina Skroumpelou\n- Leandro Pereira @leandrocp\n- Pintu Kumar @pintu544\n- Rami Hersonsky @ramiscaleai\n- stenlan @stenlan\n- Vignesh",
+   "date": "2026-11-04T13:09:33Z",
+   "name": "v2.119.0",
+   "prerelease": false,
+   "tag": "v2.119.0",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0"
+  },
+  {
+   "body": "## 2.119.0-canary.6 (2026-11-04)\n\nThis was a version bump only, there were no code changes.",
+   "date": "2026-11-04T13:06:31Z",
+   "name": "v2.119.0-canary.6",
+   "prerelease": true,
+   "tag": "v2.119.0-canary.6",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.6"
+  },
   {
    "body": "## 2.119.0-canary.5 (2026-11-03)\n\n### 🚀 Features\n\n- **realtime:** broadcast persistence ([#2690](https://github.com/supabase/supabase-js/pull/2690))\n\n### 🩹 Fixes\n\n- **realtime:** include vsn in the unsupported serializer error ([#2812](https://github.com/supabase/supabase-js/pull/2812))\n\n### ❤️ Thank You\n\n- Claude Opus 5.5\n- Guilherme Souza\n- Leandro Pereira @leandrocp\n- Rami Hersonsky @ramiscaleai",
    "date": "2026-11-03T17:10:35Z",
@@ -384,22 +400,6 @@
    "prerelease": true,
    "tag": "v2.112.0-canary.1",
    "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.1"
-  },
-  {
-   "body": "## 2.112.0-canary.0 (2026-07-31)\n\n### 🚀 Features\n\n- **supabase:** move OpenTelemetry tracing to opt-in /tracing subpath ([#2583](https://github.com/supabase/supabase-js/pull/2583))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou @mandarini",
-   "date": "2026-07-31T10:02:55Z",
-   "name": "v2.112.0-canary.0",
-   "prerelease": true,
-   "tag": "v2.112.0-canary.0",
-   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.0"
-  },
-  {
-   "body": "## 2.112.0-beta.0 (2026-07-30)\n\n### 🚀 Features\n\n- **supabase:** move OpenTelemetry tracing to opt-in /tracing subpath ([00cdfd5c](https://github.com/supabase/supabase-js/commit/00cdfd5c))\n\n### 🩹 Fixes\n\n- **supabase:** forward db retry option ([#2571](https://github.com/supabase/supabase-js/pull/2571))\n\n### ❤️ Thank You\n\n- Katerina Skroumpelou\n- Vaibhav @7ttp",
-   "date": "2026-07-30T14:39:58Z",
-   "name": "v2.112.0-beta.0",
-   "prerelease": true,
-   "tag": "v2.112.0-beta.0",
-   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-beta.0"
   }
  ],
  "repo": "supabase/supabase-js"

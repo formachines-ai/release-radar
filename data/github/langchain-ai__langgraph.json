@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-04T06:00:06Z",
+ "fetched": "2026-11-05T06:00:06Z",
  "releases": [
+  {
+   "body": "Changes since 1.2.19\n\n* release(langgraph): 1.2.20 (#9595)\n* feat(langgraph): give each interrupt() in a task its own id (#9589)\n* fix(langgraph): point the multiple-interrupts error at the current docs (#9590)\n* feat(langgraph): add a strict resume mode that refuses stale interrupt answers (#9574)\n* chore(deps-dev): bump types-requests from 2.33.0.20260906 to 2.33.0.20261006 in /libs/langgraph (#9535)\n* chore(deps-dev): bump pycryptodome from 3.23.0 to 4.2.0 in /libs/langgraph in the major group (#9534)",
+   "date": "2026-11-05T02:20:53Z",
+   "name": "langgraph==1.2.20",
+   "prerelease": false,
+   "tag": "1.2.20",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.20"
+  },
+  {
+   "body": "Changes since sdk==0.4.12\n\n* release(langgraph): 1.2.20 (#9595)\n* release(sdk-py): 0.4.13 (#9594)\n* feat(sdk-py): add cancel_reason to Run (#9571)\n* docs(sdk-py): show the run's status in the stream example's end event (#9588)\n* feat(sdk-py): add select to threads.get_state and get_history (#9568)",
+   "date": "2026-11-05T02:16:06Z",
+   "name": "langgraph-sdk==0.4.13",
+   "prerelease": false,
+   "tag": "sdk==0.4.13",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.13"
+  },
+  {
+   "body": "Changes since cli==0.4.40\n\n* release(cli): 0.4.41 (#9596)\n* chore(deps): bump langgraph from 1.2.3 to 1.2.14 in /libs/cli (#9512)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 9 updates (#9528)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 8 updates (#9526)\n* chore(deps): bump the uv group across 2 directories with 1 update (#9513)\n* chore(deps): bump langgraph-sdk from 0.4.5 to 0.4.6 in /libs/cli (#9514)\n* fix(cli): remove outdated deploy private-beta notice (#9506)\n* chore(deps): bump zod from 4.3.6 to 4.6.7 in /libs/cli/js-monorepo-example (#9431)",
+   "date": "2026-11-05T02:30:54Z",
+   "name": "langgraph-cli==0.4.41",
+   "prerelease": false,
+   "tag": "cli==0.4.41",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.41"
+  },
   {
    "body": "Changes since sdk==0.4.11\n\n* release(sdk-py): 0.4.12 (#9569)\n* feat(sdk-py): remove fairness_weight from PrioritySettings (#9441)\n* fix(sdk-py): rejoin a run stream that closes before the run ends (#9554)",
    "date": "2026-11-03T18:10:30Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "cli==0.4.30",
    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.30"
-  },
-  {
-   "body": "Changes since 1.2.4\n\n* release(langgraph): 1.2.5 (#8062)\n* fix(langgraph): merge `lc_versions` config metadata (#8052)\n* release(cli): 0.4.28 (#8041)\n* fix: updateState bug for deltaChannel on empty thread (#8011)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps-dev): bump types-requests from 2.33.0.20260408 to 2.33.0.20260518 in /libs/langgraph (#7977)\n* chore(deps): bump the minor-and-patch group in /libs/langgraph with 14 updates (#7975)",
-   "date": "2026-06-12T20:31:14Z",
-   "name": "langgraph==1.2.5",
-   "prerelease": false,
-   "tag": "1.2.5",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.5"
-  },
-  {
-   "body": "Changes since cli==0.4.28\n\n* release(cli): 0.4.29 (#8046)\n* feat(cli): add support for passing certfile and cert key to run dev server under HTTPS (#8031)",
-   "date": "2026-06-11T19:53:04Z",
-   "name": "langgraph-cli==0.4.29",
-   "prerelease": false,
-   "tag": "cli==0.4.29",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.29"
-  },
-  {
-   "body": "Changes since cli==0.4.27\n\n* release(cli): 0.4.28 (#8041)\n* chore(deps): bump starlette from 1.0.0 to 1.0.1 in /libs/cli (#8005)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 4 updates (#7962)\n* chore(deps): bump typescript from 5.9.3 to 6.0.3 in /libs/cli/js-monorepo-example (#7672)\n* chore(deps-dev): bump typescript from 5.9.3 to 6.0.3 in /libs/cli/js-examples in the major group across 1 directory (#7966)\n* chore(deps-dev): bump mypy from 1.20.2 to 2.1.0 in /libs/cli in the major group (#7968)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 7 updates (#7959)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 8 updates (#7963)\n* chore(deps): bump uv from 0.11.7 to 0.11.15 in /libs/cli (#7943)\n* chore(langgraph): Track ADK/other library usage when deploying using cli (#7939)",
-   "date": "2026-06-10T18:20:32Z",
-   "name": "langgraph-cli==0.4.28",
-   "prerelease": false,
-   "tag": "cli==0.4.28",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.28"
   }
  ],
  "repo": "langchain-ai/langgraph"

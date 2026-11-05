@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,17 +8,34 @@
   "date": "2026-11-04T03:31:18Z",
   "version": "1.108.0"
  },
- "metadata_fetched": "2026-11-04T06:00:06Z",
+ "metadata_fetched": "2026-11-05T06:00:06Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 3,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
   {
-   "date": "2026-11-04T04:16:49Z",
+   "date": "2026-11-05T02:02:00Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "id": "pypi/litellm/1.107.0rc3",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.107.0rc3",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-04T04:16:49Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
    "id": "pypi/litellm/1.106.7",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "notes_kind": "github_release",
@@ -27,7 +44,12 @@
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "We are readjusting how beta features work alongside LiteLLM, our core product. Starting with 1.106.7, the Lens beta is no longer packaged with the proxy or its Helm charts. If you use Lens today, v1.106.6 keeps working as it does now"
+    }
+   ],
    "version": "1.106.7",
    "yanked_or_deprecated": false
   },
@@ -94,60 +116,9 @@
    "quotes": [],
    "version": "1.109.0.dev2",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T03:18:19Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.108.0rc1",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "1.108.0rc1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T22:50:43Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.105.7",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4c7fd35580/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.105.7",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.105.7",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T22:48:55Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.106.6",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/d086106980/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.106.6",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.106.6",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 4,
+ "stable_in_window": 2,
  "summary": "Library to easily interface with LLM API providers"
 }

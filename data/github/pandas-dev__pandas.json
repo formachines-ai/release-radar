@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-05T06:00:11Z",
+ "releases": [
+  {
+   "body": "We are pleased to announce the release of pandas 3.1.1.\r\nThis is a patch release in the 3.1.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.1.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.1.1.html) for a list of all the changes.\r\n\r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.1.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.1\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.\r\n",
+   "date": "2026-11-04T15:46:25Z",
+   "name": "pandas 3.1.1",
+   "prerelease": false,
+   "tag": "v3.1.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.1.0.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nHighlights include:\r\n\r\n- [New `DataFrame.select()` and updated `DataFrame.filter()` method](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html#new-method-dataframe-select)\r\n- [Faster `pd.read_csv()`, with parallel reads of large files](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html#whatsnew-310-enhancements-read-csv)\r\n\r\nSee the [detailed release notes](https://pandas.pydata.org/docs/whatsnew/v3.1.0.html) for a list of all the changes.\r\n\r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.\r\n",
+   "date": "2026-10-22T13:20:42Z",
+   "name": "pandas 3.1.0",
+   "prerelease": false,
+   "tag": "v3.1.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 3.1.0.\r\n\r\nSee the [whatsnew](https://pandas.pydata.org/docs/dev/whatsnew/v3.1.0.html) for a list of all the changes.\r\n\r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade --pre pandas==3.1.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==3.1.0rc0\r\n\r\nPlease report any issues with the release candidate on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.\r\n",
+   "date": "2026-09-30T14:13:00Z",
+   "name": "pandas 3.1.0rc0",
+   "prerelease": true,
+   "tag": "v3.1.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.1.0rc0"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.6.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version. This is also the first release to support Python 3.15.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.0.6.html) for a list of all the changes.\r\n\r\nPandas 3.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-09-17T21:32:36Z",
+   "name": "pandas 3.0.6",
+   "prerelease": false,
+   "tag": "v3.0.6",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.6"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.5.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.0.5.html) for a list of all the changes.\r\n\r\nPandas 3.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-07-22T21:47:08Z",
+   "name": "pandas 3.0.5",
+   "prerelease": false,
+   "tag": "v3.0.5",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.5"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.4.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.0.4.html) for a list of all the changes.\r\n\r\nPandas 3.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-06-28T15:07:57Z",
+   "name": "pandas 3.0.4",
+   "prerelease": false,
+   "tag": "v3.0.4",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.4"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.3.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.0.3.html) for a list of all the changes.\r\n\r\nPandas 3.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-05-11T18:23:29Z",
+   "name": "pandas 3.0.3",
+   "prerelease": false,
+   "tag": "v3.0.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.3"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.2.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/dev/whatsnew/v3.0.2.html) for a list of all the changes.\r\n\r\nPandas 3.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-03-30T20:14:45Z",
+   "name": "pandas 3.0.2",
+   "prerelease": false,
+   "tag": "v3.0.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.2"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.1.\r\nThis is a patch release in the 3.0.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.0.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/dev/whatsnew/v3.0.1.html) for a list of all the changes.\r\n\r\nPandas 3.0.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-02-17T21:56:03Z",
+   "name": "pandas 3.0.1",
+   "prerelease": false,
+   "tag": "v3.0.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 3.0.0, a major release from the pandas 2.x series. This release includes various new features, bug fixes, and performance improvements, as well as possible breaking changes.  \r\n\r\nThe pandas 3.0 release removed a functionality that was deprecated in previous releases. It is recommended to first upgrade to pandas 2.3 and to ensure your code is working without warnings, before upgrading to pandas 3.0.\r\n\r\nHighlights include:\r\n\r\n- [Dedicated string data type by default](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html#whatsnew-300-enhancements-string-dtype)\r\n- [Consistent copy/view behaviour with Copy-on-Write](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html#whatsnew-300-enhancements-copy_on_write) (CoW) (a.k.a. getting rid of the SettingWithCopyWarning)\r\n- [New default resolution for datetime-like data](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html#whatsnew-300-api-breaking-datetime-resolution-inference)\r\n- [Initial support for the new `pd.col` syntax](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html#whatsnew-300-enhancements-col)\r\n\r\nSee the [announcement blog post](https://pandas.pydata.org/community/blog/pandas-3.0.html) and the [detailed release notes](https://pandas.pydata.org/docs/whatsnew/v3.0.0.html) for a list of all the changes.\r\n\r\nPandas 3.0.0 supports Python 3.11 and higher. \r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade pandas==3.0.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.0\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues/new/choose).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2026-01-21T15:23:43Z",
+   "name": "pandas 3.0.0",
+   "prerelease": false,
+   "tag": "v3.0.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.0"
+  },
+  {
+   "body": "",
+   "date": "2026-01-14T22:17:15Z",
+   "name": "Pandas 3.0.0rc2",
+   "prerelease": true,
+   "tag": "v3.0.0rc2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.0rc2"
+  },
+  {
+   "body": "",
+   "date": "2025-12-19T21:38:48Z",
+   "name": "Pandas 3.0.0rc1",
+   "prerelease": true,
+   "tag": "v3.0.0rc1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.0rc1"
+  },
+  {
+   "body": "We are pleased to announce a first release candidate for pandas 3.0.0. If all goes well, we'll release pandas 3.0.0 in a few weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release is available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==3.0.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==3.0.0rc0\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/docs/dev/whatsnew/v3.0.0.html",
+   "date": "2025-12-03T17:10:26Z",
+   "name": "Pandas 3.0.0rc0",
+   "prerelease": true,
+   "tag": "v3.0.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v3.0.0rc0"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.3.3.\r\nThis release includes some improvements and fixes to the future string data type (preview feature for the upcoming pandas 3.0). We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.3/whatsnew/v2.3.3.html) for a list of all the changes.\r\nPandas 2.3.3 supports Python 3.9 and higher, and is the first release to support Python 3.14.\r\n\r\nThe release will be available on the conda-forge channel:\r\n\r\n    conda install pandas --channel conda-forge\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2025-09-29T22:48:39Z",
+   "name": "Pandas 2.3.3",
+   "prerelease": false,
+   "tag": "v2.3.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.3.3"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.3.2.\r\nThis release includes some improvements and fixes to the future string data type (preview feature for the upcoming pandas 3.0). We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.3/whatsnew/v2.3.2.html) for a list of all the changes.\r\nPandas 2.3.2 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the conda-forge channel:\r\n\r\n    conda install pandas --channel conda-forge\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2025-08-21T10:22:44Z",
+   "name": "Pandas 2.3.2",
+   "prerelease": false,
+   "tag": "v2.3.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.3.2"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.3.1.\r\nThis release includes some improvements and fixes to the future string data type (preview feature for the upcoming pandas 3.0). We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.3.1/whatsnew/v2.3.1.html) for a list of all the changes.\r\nPandas 2.3.1 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the conda-forge channel:\r\n\r\n    conda install pandas --channel conda-forge\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2025-07-07T19:12:32Z",
+   "name": "Pandas 2.3.1",
+   "prerelease": false,
+   "tag": "v2.3.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.3.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.3.0.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.3.0/whatsnew/v2.3.0.html) for a list of all the changes.\r\nPandas 2.3.0 supports Python 3.10 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install -c conda-forge pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2025-06-05T03:17:32Z",
+   "name": "Pandas 2.3.0 ",
+   "prerelease": false,
+   "tag": "v2.3.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.3.0"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.2.3.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.2.3/whatsnew/v2.2.3.html) for a list of all the changes.\r\nPandas 2.2.3 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2024-09-20T13:10:41Z",
+   "name": "Pandas 2.2.3",
+   "prerelease": false,
+   "tag": "v2.2.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.3"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.2.2.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.2.2/whatsnew/v2.2.2.html) for a list of all the changes.\r\nPandas 2.2.2 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2024-04-10T19:47:02Z",
+   "name": "Pandas 2.2.2",
+   "prerelease": false,
+   "tag": "v2.2.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.2"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.2.1.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.2.1/whatsnew/v2.2.1.html) for a list of all the changes.\r\nPandas 2.2.1 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2024-02-23T15:29:27Z",
+   "name": "Pandas 2.2.1",
+   "prerelease": false,
+   "tag": "v2.2.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.2.0.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.2.0/whatsnew/v2.2.0.html) for a list of all the changes.\r\nPandas 2.2.0 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2024-01-20T03:33:20Z",
+   "name": "Pandas 2.2.0",
+   "prerelease": false,
+   "tag": "v2.2.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.0"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 2.2.0. If all goes well, we'll release pandas 2.2.0 in about two weeks.\r\n\r\nSee the [whatsnew](https://pandas.pydata.org/pandas-docs/version/2.2.0rc0/whatsnew/v2.2.0.html) for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\npython -m pip install --upgrade --pre pandas==2.2.0rc0\r\nOr from conda-forge\r\n\r\nconda install -c conda-forge/label/pandas_rc pandas==2.2.0rc0\r\nPlease report any issues with the release candidate on the pandas issue tracker.",
+   "date": "2023-12-22T19:57:46Z",
+   "name": "Pandas 2.2.0rc0",
+   "prerelease": true,
+   "tag": "v2.2.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.2.0rc0"
+  },
+  {
+   "body": "This is a patch release in the 2.1.x series and includes some regression and bug fixes, and a security fix. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.1.4/whatsnew/v2.1.4.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n```\r\nconda install pandas\r\n```\r\nOr via PyPI:\r\n```\r\npython3 -m pip install --upgrade pandas\r\n```\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-12-08T15:39:17Z",
+   "name": "Pandas 2.1.4",
+   "prerelease": false,
+   "tag": "v2.1.4",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.4"
+  },
+  {
+   "body": "This is a patch release in the 2.1.x series and includes some regression and bug fixes, and a security fix. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.1.3/whatsnew/v2.1.3.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n```\r\nconda install pandas\r\n```\r\nOr via PyPI:\r\n```\r\npython3 -m pip install --upgrade pandas\r\n```\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-11-10T19:07:37Z",
+   "name": "Pandas 2.1.3",
+   "prerelease": false,
+   "tag": "v2.1.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.3"
+  },
+  {
+   "body": "This is a patch release in the 2.1.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.1.2/whatsnew/v2.1.2.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n```\r\nconda install pandas\r\n```\r\nOr via PyPI:\r\n```\r\npython3 -m pip install --upgrade pandas\r\n```\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-10-26T21:16:59Z",
+   "name": "Pandas 2.1.2",
+   "prerelease": false,
+   "tag": "v2.1.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.2"
+  },
+  {
+   "body": "This is a patch release in the 2.1.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.1.1/whatsnew/v2.1.1.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n```\r\nconda install pandas\r\n```\r\nOr via PyPI:\r\n```\r\npython3 -m pip install --upgrade pandas\r\n```\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-09-20T21:02:05Z",
+   "name": "Pandas 2.1.1",
+   "prerelease": false,
+   "tag": "v2.1.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.1.0.\r\nThis release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.1.0/whatsnew/v2.1.0.html) for a list of all the changes.\r\nPandas 2.1.0 supports Python 3.9 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-08-30T13:24:32Z",
+   "name": "Pandas 2.1.0",
+   "prerelease": false,
+   "tag": "v2.1.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.0"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 2.1.0. If all goes well, we'll release pandas 2.1.0 in about two weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==2.1.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==2.1.0rc0\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/2.1.0rc0/whatsnew/v2.1.0.html",
+   "date": "2023-08-11T18:43:29Z",
+   "name": "Pandas 2.1.0rc0",
+   "prerelease": true,
+   "tag": "v2.1.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.1.0rc0"
+  },
+  {
+   "body": "This is a patch release in the 2.0.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.0.3/whatsnew/v2.0.3.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\nconda install pandas\r\nOr via PyPI:\r\n\r\npython3 -m pip install --upgrade pandas\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-06-28T23:24:00Z",
+   "name": "Pandas 2.0.3",
+   "prerelease": false,
+   "tag": "v2.0.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.3"
+  },
+  {
+   "body": "This is a patch release in the 2.0.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.0.2/whatsnew/v2.0.2.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-05-28T21:06:46Z",
+   "name": "Pandas 2.0.2",
+   "prerelease": false,
+   "tag": "v2.0.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.2"
+  },
+  {
+   "body": "This is a patch release in the 2.0.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/2.0.1/whatsnew/v2.0.1.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-04-24T00:20:53Z",
+   "name": "Pandas 2.0.1",
+   "prerelease": false,
+   "tag": "v2.0.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.1"
+  },
+  {
+   "body": "We are pleased to announce the release of pandas 2.0.0, a major release from the pandas 1 series. This release includes some new features, bug fixes, and performance improvements, as well as possible breaking changes. It is recommended that users with existing code upgrade to pandas 1.5.3 before they upgrade to pandas 2, and make sure their code does not generate FutureWarning or DeprecationWarning messages.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade pandas==2.0.0\r\n\r\nOr from conda-forge\r\n\r\n    mamba install -c conda-forge pandas==2.0.0\r\n\r\nPlease report any issues with the release candidate on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues/new/choose).\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/2.0/whatsnew/v2.0.0.html",
+   "date": "2023-04-03T13:01:27Z",
+   "name": "Pandas 2.0.0",
+   "prerelease": false,
+   "tag": "v2.0.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.0"
+  },
+  {
+   "body": "We are pleased to announce the second release candidate for pandas 2.0.0. If all goes well, we'll release pandas 2.0.0 in about two weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==2.0.0rc1\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==2.0.0rc1\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/2.0/whatsnew/v2.0.0.html",
+   "date": "2023-03-16T15:04:43Z",
+   "name": "Pandas 2.0.0rc1",
+   "prerelease": true,
+   "tag": "v2.0.0rc1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.0rc1"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 2.0.0. If all goes well, we'll release pandas 2.0.0 in about two weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==2.0.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==2.0.0rc0\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/2.0/whatsnew/v2.0.0.html",
+   "date": "2023-02-20T20:32:32Z",
+   "name": "Pandas 2.0.0rc0",
+   "prerelease": true,
+   "tag": "v2.0.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v2.0.0rc0"
+  },
+  {
+   "body": "This is a patch release in the 1.5.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.5.3/whatsnew/v1.5.3.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2023-01-19T03:34:05Z",
+   "name": "Pandas 1.5.3",
+   "prerelease": false,
+   "tag": "v1.5.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.5.3"
+  },
+  {
+   "body": "This is a patch release in the 1.5.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.5.2/whatsnew/v1.5.2.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2022-11-22T07:07:41Z",
+   "name": "Pandas 1.5.2",
+   "prerelease": false,
+   "tag": "v1.5.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.5.2"
+  },
+  {
+   "body": "This is a patch release in the 1.5.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.5.1/whatsnew/v1.5.1.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2022-10-19T06:04:06Z",
+   "name": "Pandas 1.5.1",
+   "prerelease": false,
+   "tag": "v1.5.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.5.1"
+  },
+  {
+   "body": "This release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.5.0/whatsnew/v1.5.0.html) for a list of all the changes. pandas 1.5.0 supports Python 3.8 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n`conda install -c conda-forge pandas`\r\n\r\nOr via PyPI:\r\n\r\n`python3 -m pip install --upgrade pandas`\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).",
+   "date": "2022-09-19T14:35:58Z",
+   "name": "Pandas 1.5.0",
+   "prerelease": false,
+   "tag": "v1.5.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.5.0"
+  },
+  {
+   "body": "This is a patch release in the 1.4.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.4.4/whatsnew/v1.4.4.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.",
+   "date": "2022-08-31T12:20:17Z",
+   "name": "Pandas 1.4.4",
+   "prerelease": false,
+   "tag": "v1.4.4",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.4"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 1.5.0. If all goes well, we'll release pandas 1.5.0 in about two weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==1.5.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==1.5.0rc0\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/1.5/whatsnew/v1.5.0.html",
+   "date": "2022-08-24T12:21:12Z",
+   "name": "Pandas 1.5.0rc0",
+   "prerelease": true,
+   "tag": "v1.5.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.5.0rc0"
+  },
+  {
+   "body": "This is a patch release in the 1.4.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.4.3/whatsnew/v1.4.3.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2022-06-23T13:29:00Z",
+   "name": "Pandas 1.4.3",
+   "prerelease": false,
+   "tag": "v1.4.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.3"
+  },
+  {
+   "body": "This is a patch release in the 1.4.x series and includes some regression and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.4.2/whatsnew/v1.4.2.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2022-04-02T10:30:42Z",
+   "name": "Pandas 1.4.2",
+   "prerelease": false,
+   "tag": "v1.4.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.2"
+  },
+  {
+   "body": "This is the first patch release in the 1.4.x series and includes some regression fixes and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.4.1/whatsnew/v1.4.1.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2022-02-12T11:19:26Z",
+   "name": "Pandas 1.4.1",
+   "prerelease": false,
+   "tag": "v1.4.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.1"
+  },
+  {
+   "body": "This release includes some new features, bug fixes, and performance improvements. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.4.0/whatsnew/v1.4.0.html) for a list of all the changes. pandas 1.4.0 supports Python 3.8 and higher.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install -c conda-forge pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2022-01-22T14:46:18Z",
+   "name": "Pandas 1.4.0",
+   "prerelease": false,
+   "tag": "v1.4.0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.0"
+  },
+  {
+   "body": "We are pleased to announce a release candidate for pandas 1.4.0. If all goes well, we'll release pandas 1.4.0 in about two weeks.\r\n\r\nSee the [whatsnew][0] for a list of all the changes. pandas 1.4.0 supports Python 3.8 and higher.\r\n\r\nThe release will be available on conda-forge and PyPI.\r\n\r\nThe release can be installed from PyPI\r\n\r\n    python -m pip install --upgrade --pre pandas==1.4.0rc0\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge/label/pandas_rc pandas==1.4.0rc0\r\n\r\nPlease report any issues with the release candidate on the pandas issue tracker.\r\n\r\n[0]: https://pandas.pydata.org/pandas-docs/version/1.4/whatsnew/v1.4.0.html",
+   "date": "2022-01-06T11:02:19Z",
+   "name": "Pandas 1.4.0rc0",
+   "prerelease": true,
+   "tag": "v1.4.0rc0",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.4.0rc0"
+  },
+  {
+   "body": "This is a patch release in the 1.3.x series and includes some regression fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.3.5/whatsnew/v1.3.5.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2021-12-12T14:25:33Z",
+   "name": "Pandas 1.3.5",
+   "prerelease": false,
+   "tag": "v1.3.5",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.3.5"
+  },
+  {
+   "body": "This is a patch release in the 1.3.x series and includes some regression fixes and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.3.4/whatsnew/v1.3.4.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2021-10-17T16:40:24Z",
+   "name": "Pandas 1.3.4",
+   "prerelease": false,
+   "tag": "v1.3.4",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.3.4"
+  },
+  {
+   "body": "This is a patch release in the 1.3.x series and includes some regression fixes and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.3.3/whatsnew/v1.3.3.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2021-09-12T13:20:06Z",
+   "name": "Pandas 1.3.3",
+   "prerelease": false,
+   "tag": "v1.3.3",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.3.3"
+  },
+  {
+   "body": "This is a patch release in the 1.3.x series and includes some regression fixes and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.3.2/whatsnew/v1.3.2.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2021-08-15T16:13:16Z",
+   "name": "Pandas 1.3.2",
+   "prerelease": false,
+   "tag": "v1.3.2",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.3.2"
+  },
+  {
+   "body": "This is the first patch release in the 1.3.x series and includes some regression fixes and bug fixes. We recommend that all users upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/pandas-docs/version/1.3.1/whatsnew/v1.3.1.html) for a list of all the changes.\r\n\r\nThe release will be available on the defaults and conda-forge channels:\r\n\r\n    conda install pandas\r\n\r\nOr via PyPI:\r\n\r\n    python3 -m pip install --upgrade pandas\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n",
+   "date": "2021-07-25T12:20:44Z",
+   "name": "Pandas 1.3.1",
+   "prerelease": false,
+   "tag": "v1.3.1",
+   "url": "https://github.com/pandas-dev/pandas/releases/tag/v1.3.1"
+  }
+ ],
+ "repo": "pandas-dev/pandas"
+}

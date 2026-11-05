@@ -1,5 +1,5 @@
 {
- "built": "2026-11-04T13:13:40Z",
+ "built": "2026-11-05T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-02T14:26:27Z",
   "version": "7.4.5"
  },
- "metadata_fetched": "2026-11-04T06:00:32Z",
+ "metadata_fetched": "2026-11-05T06:00:32Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "prereleases_in_window": 1,
@@ -52,52 +52,9 @@
    "quotes": [],
    "version": "7.4.4-beta.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T20:21:47Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/astro/7.4.4",
-   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4c3654a295/",
-   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.4",
-   "package": "astro",
-   "page": "https://releases.formachines.ai/pkg/npm/astro/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "7.4.4",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-28T14:57:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/astro/7.4.3",
-   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/1da85efb08/",
-   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.3",
-   "package": "astro",
-   "page": "https://releases.formachines.ai/pkg/npm/astro/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "…://github.com/withastro/astro/commit/e4e25fa7d47e702985cbb1ee633d4ffb92f8dad6) Thanks [@umeraamir69](https://github.com/umeraamir69)! - CSP no longer hashes empty children on external stylesheets and scripts, which was inserting the SHA-256 of the empty string into `script-src` a…"
-    },
-    {
-     "match": "deprecation",
-     "quote": "…/astro/commit/d0240b9d5738a97f0b8ad100b76bce8b7527e4cd) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes a `DEP0190` deprecation warning printed by `astro info` on Node.js 24 and later…"
-    }
-   ],
-   "version": "7.4.3",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/withastro/astro",
- "stable_in_window": 3,
+ "stable_in_window": 1,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-04T06:00:46Z",
+ "fetched": "2026-11-05T06:00:46Z",
  "releases": [
   {
    "body": "## What's Changed\n* Follow the products' released versions: @prisma/composer-cli 0.35.0 -> 0.36.0; @prisma/composer 0.35.0 -> 0.36.0 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/378\n* Follow the products' released versions: @prisma/orm-toolchain 8.0.0-rc.21 -> 8.0.0-rc.22 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/381\n* Bump to version 8.0.0-rc.30 by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/380\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.29...v8.0.0-rc.30",

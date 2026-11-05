@@ -1,13 +1,13 @@
 {
  "changelog": null,
  "dist_tags": {
-  "insiders": "0.0.0-insiders.2626ae6",
+  "insiders": "0.0.0-insiders.8c74689",
   "latest": "4.3.4",
   "next": "4.0.0",
   "v3-lts": "3.4.19"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-04T06:00:48Z",
+ "fetched": "2026-11-05T06:00:49Z",
  "homepage": "https://tailwindcss.com",
  "latest": "4.3.4",
  "name": "tailwindcss",
@@ -15,6 +15,31 @@
  "repo": "tailwindlabs/tailwindcss",
  "summary": "A utility-first CSS framework for rapidly building custom user interfaces.",
  "versions": [
+  {
+   "date": "2026-11-04T21:18:01Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.8c74689"
+  },
+  {
+   "date": "2026-11-04T21:09:12Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.adfb6f7"
+  },
+  {
+   "date": "2026-11-04T19:57:20Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.2c35bd7"
+  },
+  {
+   "date": "2026-11-04T18:39:53Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.669fcc1"
+  },
+  {
+   "date": "2026-11-04T18:19:14Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.7edc50e"
+  },
   {
    "date": "2026-11-02T21:30:42Z",
    "deprecated": false,
@@ -244,16 +269,6 @@
    "date": "2026-08-07T15:57:42Z",
    "deprecated": false,
    "version": "0.0.0-insiders.46df7ee"
-  },
-  {
-   "date": "2026-08-06T13:37:42Z",
-   "deprecated": false,
-   "version": "0.0.0-insiders.e566a92"
-  },
-  {
-   "date": "2026-08-06T13:04:09Z",
-   "deprecated": false,
-   "version": "0.0.0-insiders.b8a5f85"
   }
  ]
 }

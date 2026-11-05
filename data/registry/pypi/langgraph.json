@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-04T06:00:06Z",
+ "fetched": "2026-11-05T06:00:05Z",
  "homepage": "https://docs.langchain.com/oss/python/langgraph/overview",
- "latest": "1.2.19",
+ "latest": "1.2.20",
  "name": "langgraph",
  "page": "https://pypi.org/project/langgraph/",
  "repo": "langchain-ai/langgraph",
  "summary": "Building stateful, multi-actor applications with LLMs",
  "versions": [
+  {
+   "date": "2026-11-05T02:20:37Z",
+   "version": "1.2.20",
+   "yanked": false
+  },
   {
    "date": "2026-10-30T22:23:31Z",
    "version": "1.2.19",
@@ -202,11 +207,6 @@
   {
    "date": "2026-03-11T22:14:46Z",
    "version": "1.1.1",
-   "yanked": false
-  },
-  {
-   "date": "2026-03-10T12:46:32Z",
-   "version": "1.1.0",
    "yanked": false
   }
  ]

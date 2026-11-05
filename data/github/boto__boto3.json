@@ -1,10 +1,10 @@
 {
  "by_tag": {
-  "1.43.121": null,
   "1.43.122": null,
-  "1.43.123": null
+  "1.43.123": null,
+  "1.43.124": null
  },
- "fetched": "2026-11-04T06:00:09Z",
+ "fetched": "2026-11-05T06:00:09Z",
  "releases": [
   {
    "body": "-   feature:Resources: Update to the latest resource models for:\n  -   AWS CloudFormation\n  -   Amazon EC2\n  -   AWS IAM\n-   feature:Amazon S3: Add an `upload_file` and `download_file` to S3\n  clients that transparently handle parallel multipart transfers.\n-   feature:Botocore: Update to Botocore 0.102.0.\n  -   Add support for Amazon Machine Learning.\n  -   Add support for Amazon Workspaces.\n  -   Update `requests` to 2.6.0.\n  -   Update AWS Lambda to the latest API.\n  -   Update Amazon EC2 Container Service to the latest API.\n  -   Update Amazon S3 to the latest API.\n  -   Add `DBSnapshotCompleted` support to Amazon RDS waiters.\n  -   Fixes for the REST-JSON protocol.\n",

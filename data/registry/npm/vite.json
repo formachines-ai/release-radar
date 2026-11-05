@@ -3,18 +3,23 @@
  "dist_tags": {
   "alpha": "6.0.0-alpha.24",
   "beta": "8.3.0-beta.1",
-  "latest": "8.3.5",
+  "latest": "8.3.6",
   "previous": "6.4.5"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-04T06:00:51Z",
+ "fetched": "2026-11-05T06:00:52Z",
  "homepage": "https://vite.dev",
- "latest": "8.3.5",
+ "latest": "8.3.6",
  "name": "vite",
  "page": "https://www.npmjs.com/package/vite",
  "repo": "vitejs/vite",
  "summary": "Native-ESM powered web dev build tool",
  "versions": [
+  {
+   "date": "2026-11-05T05:40:52Z",
+   "deprecated": false,
+   "version": "8.3.6"
+  },
   {
    "date": "2026-10-21T06:38:54Z",
    "deprecated": false,
@@ -84,11 +89,6 @@
    "date": "2026-08-20T04:14:39Z",
    "deprecated": false,
    "version": "8.2.2"
-  },
-  {
-   "date": "2026-08-06T13:47:48Z",
-   "deprecated": false,
-   "version": "8.2.1"
   }
  ]
 }

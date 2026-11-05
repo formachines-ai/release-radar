@@ -189,7 +189,7 @@
   "rc": "3.0.0-rc.11"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-04T06:00:32Z",
+ "fetched": "2026-11-05T06:00:32Z",
  "homepage": "https://astro.build",
  "latest": "7.4.5",
  "name": "astro",
@@ -341,11 +341,6 @@
    "date": "2026-08-07T20:15:32Z",
    "deprecated": false,
    "version": "0.0.0-incremental-graph-hashing-20260807161014"
-  },
-  {
-   "date": "2026-08-06T10:48:55Z",
-   "deprecated": false,
-   "version": "7.2.0"
   }
  ]
 }

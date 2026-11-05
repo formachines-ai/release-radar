@@ -8,7 +8,7 @@
   "v4-beta": "4.30.2-v4-beta.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-04T06:00:40Z",
+ "fetched": "2026-11-05T06:00:41Z",
  "homepage": "https://github.com/redis/ioredis#readme",
  "latest": "6.0.0",
  "name": "ioredis",
