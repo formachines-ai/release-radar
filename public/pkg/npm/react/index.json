@@ -1,5 +1,5 @@
 {
- "built": "2026-11-05T06:00:03Z",
+ "built": "2026-11-06T01:11:27Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
  "metadata_fetched": "2026-11-05T06:00:47Z",
  "package": "react",
  "page": "https://releases.formachines.ai/pkg/npm/react/",
- "prereleases_in_window": 6,
+ "prereleases_in_window": 4,
  "registry": "https://www.npmjs.com/package/react",
  "releases": [
   {
@@ -80,40 +80,6 @@
    "prerelease": true,
    "quotes": [],
    "version": "19.3.0-canary-a703ca64-20261030",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T16:26:22Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/react/0.0.0-experimental-c5ec5c6d-20261029",
-   "json": "https://releases.formachines.ai/pkg/npm/react/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
-   "package": "react",
-   "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "0.0.0-experimental-c5ec5c6d-20261029",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T16:21:27Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/react/19.3.0-canary-c5ec5c6d-20261029",
-   "json": "https://releases.formachines.ai/pkg/npm/react/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
-   "package": "react",
-   "page": "https://releases.formachines.ai/pkg/npm/react/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "19.3.0-canary-c5ec5c6d-20261029",
    "yanked_or_deprecated": false
   }
  ],

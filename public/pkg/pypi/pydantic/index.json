@@ -1,5 +1,5 @@
 {
- "built": "2026-11-05T06:00:03Z",
+ "built": "2026-11-06T01:11:27Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
@@ -13,43 +13,8 @@
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pydantic/",
- "releases": [
-  {
-   "date": "2026-10-29T16:37:10Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/pydantic/2.14.2",
-   "json": "https://releases.formachines.ai/pkg/pypi/pydantic/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/9d9e39597a/",
-   "notes_url": "https://github.com/pydantic/pydantic/releases/tag/v2.14.2",
-   "package": "pydantic",
-   "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "2.14.2",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T15:35:33Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/pydantic/1.10.27",
-   "json": "https://releases.formachines.ai/pkg/pypi/pydantic/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/8e28c8feb1/",
-   "notes_url": "https://github.com/pydantic/pydantic/releases/tag/v1.10.27",
-   "package": "pydantic",
-   "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.10.27",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/pydantic/pydantic",
- "stable_in_window": 2,
+ "stable_in_window": 0,
  "summary": "Data validation using Python type hints"
 }

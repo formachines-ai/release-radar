@@ -1,5 +1,5 @@
 {
- "built": "2026-11-05T06:00:03Z",
+ "built": "2026-11-06T01:11:27Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -64,43 +64,9 @@
    "quotes": [],
    "version": "1.7.4",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T20:55:54Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/langchain-core/1.7.3",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4ce4fd59c1/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.3",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.7.3",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T19:04:12Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/langchain-core/1.7.2",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/089267f843/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.2",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.7.2",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 5,
+ "stable_in_window": 3,
  "summary": "Building applications with LLMs through composability"
 }
