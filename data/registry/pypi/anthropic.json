@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-05T06:00:03Z",
+ "fetched": "2026-11-06T06:00:02Z",
  "homepage": "https://github.com/anthropics/anthropic-sdk-python",
- "latest": "2.5.0",
+ "latest": "2.6.0",
  "name": "anthropic",
  "page": "https://pypi.org/project/anthropic/",
  "repo": "anthropics/anthropic-sdk-python",
  "summary": "The official Python library for the anthropic API",
  "versions": [
+  {
+   "date": "2026-11-05T18:59:09Z",
+   "version": "2.6.0",
+   "yanked": false
+  },
   {
    "date": "2026-11-04T20:27:46Z",
    "version": "2.5.0",
@@ -202,11 +207,6 @@
   {
    "date": "2026-07-01T21:54:17Z",
    "version": "0.115.1",
-   "yanked": false
-  },
-  {
-   "date": "2026-06-30T19:47:32Z",
-   "version": "0.115.0",
    "yanked": false
   }
  ]

@@ -16,14 +16,6 @@
    "tag": "@ai-sdk/openai@2.0.140",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.140"
   },
-  "@ai-sdk/openai@3.0.135": {
-   "body": "### Patch Changes\n\n- Updated dependencies [28252da]\n  - @ai-sdk/provider-utils@4.0.63",
-   "date": "2026-10-29T17:05:33Z",
-   "name": "@ai-sdk/openai@3.0.135",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@3.0.135",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.135"
-  },
   "@ai-sdk/openai@3.0.136": {
    "body": "### Patch Changes\n\n- d900e58: fix(openai): preserve valid JSON string tool arguments and serialize BigInt and cycles in tool calls and results, retaining malformed argument replay fallbacks\n- d900e58: Forward `languages` and `keywords` transcription hints as repeated multipart fields instead of silently dropping them.\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n  - @ai-sdk/provider-utils@4.0.64",
    "date": "2026-11-03T01:21:14Z",
@@ -31,14 +23,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/openai@3.0.136",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.136"
-  },
-  "@ai-sdk/openai@4.0.105": {
-   "body": "### Patch Changes\n\n- 47b1d8b: feat(openai): send native JSON input and prompt cache keys to Decisions\n- d07b475: fix(openai): map top-level `reasoning` to efforts supported by GPT-5.x models instead of sending unsupported values that OpenAI rejects with a 400. `max` is now only sent on the Responses API, and GPT-5.6 on Chat Completions sends `reasoning_effort: 'none'` when function tools are used, since it rejects function tools with reasoning. A warning is emitted when a reasoning level was requested.\n- 61a315e: fix: map the top-level `reasoning` option consistently across providers\n\n  Providers now resolve reasoning the same way:\n\n  1. A provider-specific reasoning setting in `providerOptions` is sent unchanged. OpenAI no longer drops `providerOptions.openai.reasoningEffort` values that are not in its list for the model, and Fireworks no longer rewrites `providerOptions.fireworks.reasoningEffort`. Fireworks also sends top-level `reasoning` values directly instead of rounding them to `'high'` at most, except for model families known to reject `'none'` (GPT-OSS, GLM-5.3, Muse Spark) or `'minimal'` (Nemotron, Inkling).\n  2. Otherwise, `reasoning` maps to the closest level the model supports, rounding down, and rounds up only when there is no lower level. For example, `'xhigh'` now maps to `'high'` instead of `'max'` on Anthropic and Bedrock models without `xhigh` effort, and `'medium'` maps to `'low'` instead of `'high'` on DeepSeek, Kimi K3, and Mistral GLM-5.3 models.\n  3. `'none'` on a model that cannot disable reasoning maps to the model's lowest level with a compatibility warning, instead of being dropped or sending a request the API rejects. This affects GPT-6 models without `'none'`, xAI grok-4.5 and later, Groq GPT-OSS, Kimi K3, Perplexity, QuiverAI, Bedrock OpenAI `gpt-oss` models, and Gemini 2.5 Pro (minimum thinking budget). Gemini 3 and Anthropic and Bedrock `between_tools` mappings now emit the compatibility warning too.\n\n  `mapReasoningToProviderEffort` now accepts any `reasoning` value, returns an optional `providerOptionsEffort` unchanged, and rounds levels that are missing from the effort map to the closest supported level. `mapReasoningToProviderBudget` maps `'none'` to the minimum reasoning budget, always returns a budget, and uses the default percentage for levels missing from `budgetPercentages`. `OpenAICompatibleChatConfig` adds an optional `mapReasoning` function for mapping the top-level `reasoning` option.\n\n- Updated dependencies [61a315e]\n  - @ai-sdk/provider-utils@5.0.71",
-   "date": "2026-10-29T17:13:13Z",
-   "name": "@ai-sdk/openai@4.0.105",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.105",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.105"
   },
   "@ai-sdk/openai@4.0.106": {
    "body": "### Patch Changes\n\n- 7716e18: Support promises and synchronous or asynchronous callbacks in provider API key and token settings. Resolve credentials per authenticated request while preserving existing authentication behavior and synchronous credential serialization.\n\n  The experimental OpenAI Live `getServerWebSocketConfig()` method can now resolve asynchronously. Await its result before using the connection settings.\n\n- dcd2f8d: Introduce a model entry contract with named capability sections and request configuration. Consolidate the OpenAI and Anthropic model catalogs so existing request behavior and generated capability documentation use the same source of truth. Catalogs also declare the provider options each provider accepts and which models support them.\n- Updated dependencies [7716e18]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
@@ -88,22 +72,6 @@
    "tag": "ai@5.0.285",
    "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.285"
   },
-  "ai@6.0.318": {
-   "body": "### Patch Changes\n\n- Updated dependencies [52988b9]\n- Updated dependencies [28252da]\n  - @ai-sdk/gateway@3.0.224\n  - @ai-sdk/provider-utils@4.0.63",
-   "date": "2026-10-29T17:03:39Z",
-   "name": "ai@6.0.318",
-   "prerelease": false,
-   "tag": "ai@6.0.318",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.318"
-  },
-  "ai@6.0.319": {
-   "body": "### Patch Changes\n\n- Updated dependencies [7313ce2]\n  - @ai-sdk/gateway@3.0.225",
-   "date": "2026-10-29T18:47:08Z",
-   "name": "ai@6.0.319",
-   "prerelease": false,
-   "tag": "ai@6.0.319",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.319"
-  },
   "ai@6.0.320": {
    "body": "### Patch Changes\n\n- Updated dependencies [e161391]\n  - @ai-sdk/gateway@3.0.226",
    "date": "2026-10-30T19:29:45Z",
@@ -127,14 +95,6 @@
    "prerelease": false,
    "tag": "ai@6.0.322",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.322"
-  },
-  "ai@7.0.157": {
-   "body": "### Patch Changes\n\n- 0cc4921: graduate LanguageModelStreamPart to stable and deprecate Experimental_LanguageModelStreamPart\n- 077cfb3: feat(ai): Graduate `filterActiveTools` from experimental. It is now exported as `filterActiveTools`; `experimental_filterActiveTools` remains as a deprecated alias.\n- eb768e2: Fix Next.js Edge Runtime warnings from Node.js runtime detection used by telemetry tracing.\n- Updated dependencies [9ca8bcf]\n- Updated dependencies [61a315e]\n  - @ai-sdk/gateway@4.0.130\n  - @ai-sdk/provider-utils@5.0.71",
-   "date": "2026-10-29T17:10:34Z",
-   "name": "ai@7.0.157",
-   "prerelease": false,
-   "tag": "ai@7.0.157",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.157"
   },
   "ai@7.0.158": {
    "body": "### Patch Changes\n\n- 8ba3a5c: fix(ai): repair partial JSON that ends with a minus sign at the start of an array\n- 5c247e9: feat(sandbox): add `stat`, `listDirectory`, and `deleteFile` to `Experimental_SandboxSession`, and specify that relative paths in every method resolve against the directory `run` and `spawn` start in\n\n  The just-bash and Vercel Sandbox adapters implement the new methods. Both now resolve a relative `workingDirectory` for `run` and `spawn` against the sandbox's working directory, and the just-bash adapter rejects writes to a directory instead of replacing it with a file.\n\n- Updated dependencies [7716e18]\n- Updated dependencies [f850782]\n- Updated dependencies [5c247e9]\n- Updated dependencies [dcd2f8d]\n  - @ai-sdk/gateway@4.0.131\n  - @ai-sdk/provider-utils@5.0.72\n  - @ai-sdk/provider@4.0.35",
@@ -177,7 +137,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.162"
   }
  },
- "fetched": "2026-11-05T06:00:16Z",
+ "fetched": "2026-11-06T06:00:20Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 5d18351: fix(ai): detect downloaded audio types from bytes when servers return a generic or non-audio content type such as application/octet-stream\n- 8da48db: Respect `recordInputs` and `recordOutputs` when delivering telemetry events to integrations and the `ai:telemetry` channel. Filter nested content and omit raw span results when content recording is disabled, while preserving application results.\n- fd7e8a7: Preserve the order of text and complete function calls in streamed Google responses, including standalone thought signatures on empty text or reasoning parts.\n\n  Keep provider metadata on empty text parts when converting results to response messages so it can be passed back in subsequent requests.\n\n  Omit foreign-provider empty signature text when replaying history through Anthropic or Bedrock, preserving Bedrock’s existing native reasoning-history handling.\n\n- 36802d4: Support native URL transcription with an optional provider capability, keeping existing file-generation contracts unchanged. Groq sends HTTP(S) audio URLs through its `url` parameter without downloading and re-uploading them, avoiding the attachment upload limit. Supplying a custom `download` function retains local download behavior.\n\n  For telemetry integrations, `TranscriptionEndEvent.audio.byteLength` and `audio.mediaType` can now be `undefined` when a provider fetches the audio URL natively. Check for missing values before using them as a number or string. Downloaded and inline audio continue to report their metadata; streaming transcription metadata is unchanged.\n\n  Strip media fragments before sending URLs to Groq. If Groq rejects a redirect, fall back to the existing secure local downloader and file upload rather than failing previously working URL inputs. Other provider errors are preserved.\n\n- 933dae3: fix (ai): download deprecated `file-url` and `image-url` tool result content\n\n  Tool result content parts that use the deprecated `file-url` and `image-url`\n  types were converted to `file` parts with `{ type: 'url' }` data, but they were\n  never passed to the download function. When the model does not support the URL,\n  the provider received a bare URL instead of the file contents, even though the\n  replacement `file` part with `{ type: 'url' }` data was downloaded and inlined.\n\n  Downloaded legacy URL parts now use the same media type normalization as file\n  parts, resolving generic types from the response header or image bytes.\n  Legacy base64 data URLs also normalize to inline data with the media type from\n  their data URL, matching replacement file parts.\n\n- e0143b0: feat(ai): support provider-owned realtime transports\n\n  Add an optional `createTransport` interface and `provider` connection capability.\n\n- 934100c: Report the actual OpenAI Chat HTTP endpoint (also used by Azure Chat and Bedrock Mantle Chat) through optional request metadata and model-call end events. Record its host and port on OpenTelemetry chat spans without exposing URL credentials, paths, queries, or fragments. Expose only the sanitized HTTP origin in text and object generation results and step/finish callbacks. Providers that do not report an endpoint leave these attributes unset.\n- c389374: fix(ai): infer union output types when passing a union of schemas to `Output.object` and `Output.array`\n\n  Previously, passing a schema whose type is a union of schemas (e.g. a schema selected from a map at runtime) failed to type-check because the output type was inferred from the first union member only. The output type is now inferred as the union of the schemas' output types.\n\n- 892af4d: feat (ai): re-export realtime server-connection and usage types\n\n  Adds `Experimental_RealtimeServerConnection`, `Experimental_RealtimeSessionIntent`, and `Experimental_RealtimeUsage` aliases for the new experimental `RealtimeModelV4` server-side spec types.\n\n- 1a1da8d: stream steering messages to the ui and keep them in converted messages\n- 41465fd: Expose optional transcription word timings separately from segments and accept shared timestampGranularities. Explicit provider timing settings take precedence. OpenAI now sends timestamp_granularities only with verbose_json and warns when a requested timing is unavailable or excluded.\n- 9754014: Add typed streaming heartbeat parts. Anthropic emits them only with `includePings: true` (disabled by default), without requiring raw chunks. Core forwards pings through stream retries without storing them as generated content or sending them to UI message streams. Consumers with exhaustive stream-part switches must handle the new `ping` union variant when upgrading, even when the opt-in is disabled. Typed pings do not flush partial words during stream smoothing.\n- 2e44144: Represent videos delivered directly to caller-managed storage with an explicit uploaded outcome. Video generation reports `uploadedVideos` without downloading or synthesizing video bytes; access `video` only when `videos` is nonempty.\n- Updated dependencies [722d4a9]\n- Updated dependencies [acea2b5]\n- Updated dependencies [89aff56]\n- Updated dependencies [41465fd]\n- Updated dependencies [2e44144]\n- Updated dependencies [36802d4]\n- Updated dependencies [ef2dfb5]\n- Updated dependencies [e0143b0]\n- Updated dependencies [934100c]\n- Updated dependencies [892af4d]\n- Updated dependencies [892af4d]\n- Updated dependencies [89aff56]\n- Updated dependencies [32acf43]\n- Updated dependencies [41465fd]\n- Updated dependencies [9754014]\n- Updated dependencies [4bb73b0]\n- Updated dependencies [2e44144]\n  - @ai-sdk/gateway@4.0.136\n  - @ai-sdk/provider@4.0.36\n  - @ai-sdk/provider-utils@5.0.75",

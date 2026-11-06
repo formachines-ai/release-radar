@@ -1,9 +1,9 @@
 {
  "counts": {
-  "errata": 26,
-  "error_signatures": 24,
-  "packages": 19,
-  "packages_checked": 91
+  "errata": 28,
+  "error_signatures": 25,
+  "packages": 21,
+  "packages_checked": 94
  },
  "errors": {
   "json": "https://formachines.ai/errata/errors/index.json",
@@ -21,25 +21,25 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "models": [
   {
-   "checked": 781,
+   "checked": 813,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-03",
+   "last_run": "2026-11-05",
    "model": "claude-sonnet-5-5",
-   "outdated": 87
+   "outdated": 92
   },
   {
-   "checked": 852,
+   "checked": 888,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-03",
+   "last_run": "2026-11-05",
    "model": "gpt-6.1-sol",
-   "outdated": 126
+   "outdated": 132
   },
   {
-   "checked": 647,
+   "checked": 681,
    "cutoff": "2026-04-01",
-   "last_run": "2026-11-03",
+   "last_run": "2026-11-05",
    "model": "gemini-3.8-flash",
-   "outdated": 67
+   "outdated": 73
   }
  ],
  "name": "Where AI models write outdated code, and the verified fix",
@@ -97,6 +97,16 @@
   {
    "ecosystem": "npm",
    "errata": 1,
+   "json": "https://formachines.ai/errata/npm/execa/index.json",
+   "new_version": "10.2.1",
+   "old_version": "9.6.1",
+   "package": "execa",
+   "updated": "2026-11-05",
+   "url": "https://formachines.ai/errata/npm/execa/"
+  },
+  {
+   "ecosystem": "npm",
+   "errata": 1,
    "json": "https://formachines.ai/errata/npm/firebase-admin/index.json",
    "new_version": "14.5.0",
    "old_version": "13.7.0",
@@ -107,11 +117,21 @@
   {
    "ecosystem": "npm",
    "errata": 1,
+   "json": "https://formachines.ai/errata/npm/got/index.json",
+   "new_version": "16.2.0",
+   "old_version": "14.6.6",
+   "package": "got",
+   "updated": "2026-11-05",
+   "url": "https://formachines.ai/errata/npm/got/"
+  },
+  {
+   "ecosystem": "npm",
+   "errata": 1,
    "json": "https://formachines.ai/errata/npm/graphql/index.json",
    "new_version": "17.0.2",
    "old_version": "16.13.2",
    "package": "graphql",
-   "updated": "2026-10-28",
+   "updated": "2026-11-05",
    "url": "https://formachines.ai/errata/npm/graphql/"
   },
   {
@@ -235,5 +255,5 @@
    "url": "https://formachines.ai/errata/pypi/websockets/"
   }
  ],
- "updated": "2026-11-03"
+ "updated": "2026-11-05"
 }

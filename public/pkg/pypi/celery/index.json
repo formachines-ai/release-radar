@@ -1,20 +1,51 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "5.6.3",
+ "latest": "5.7.0",
  "latest_stable": {
-  "date": "2026-03-26T12:14:49Z",
-  "version": "5.6.3"
+  "date": "2026-11-05T15:14:17Z",
+  "version": "5.7.0"
  },
- "metadata_fetched": "2026-11-05T06:00:10Z",
+ "metadata_fetched": "2026-11-06T06:00:10Z",
  "package": "celery",
  "page": "https://releases.formachines.ai/pkg/pypi/celery/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/celery/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-05T15:14:17Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/celery/5.7.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/celery/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ebfde3fad5/",
+   "notes_url": "https://github.com/celery/celery/releases/tag/v5.7.0",
+   "package": "celery",
+   "page": "https://releases.formachines.ai/pkg/pypi/celery/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "Removed",
+     "quote": "- Removed deprecated arguments from Redis connection calls."
+    },
+    {
+     "match": "deprecated",
+     "quote": "- Replaced deprecated `codecs.open()` usage in the settings upgrade command."
+    },
+    {
+     "match": "removed",
+     "quote": "Python 3.9 support has been removed from the package and its associated development and CI configurations."
+    }
+   ],
+   "version": "5.7.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/celery/celery",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Distributed Task Queue."
 }

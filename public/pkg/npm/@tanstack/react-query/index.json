@@ -1,19 +1,36 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "5.106.0",
+ "latest": "5.106.1",
  "latest_stable": {
-  "date": "2026-11-04T20:13:09Z",
-  "version": "5.106.0"
+  "date": "2026-11-05T08:07:42Z",
+  "version": "5.106.1"
  },
- "metadata_fetched": "2026-11-05T06:00:31Z",
+ "metadata_fetched": "2026-11-06T06:00:33Z",
  "package": "@tanstack/react-query",
  "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@tanstack/react-query",
  "releases": [
+  {
+   "date": "2026-11-05T08:07:42Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@tanstack/react-query/5.106.1",
+   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b6e583efa6/",
+   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.106.1",
+   "package": "@tanstack/react-query",
+   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.106.1",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-04T20:13:09Z",
    "ecosystem": "npm",
@@ -89,6 +106,6 @@
   }
  ],
  "repository": "https://github.com/TanStack/query",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Hooks for managing, caching and syncing asynchronous and remote data in React"
 }

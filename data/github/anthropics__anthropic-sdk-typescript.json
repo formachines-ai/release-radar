@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-05T06:00:20Z",
+ "fetched": "2026-11-06T06:00:22Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **client:** set the name of each error to its class name\n* **client:** set the name of WorkloadIdentityError\n\n\n### Chores\n\n* **docs:** describe the type and message of API errors\n* **internal:** generate the OpenTelemetry span attribute tables\n* **internal:** tell contributors when a runtime type check belongs\n\n\n### Documentation\n\n* add the rules the SDKs share to CLAUDE.md\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",
+   "date": "2026-11-05T19:00:33Z",
+   "name": "sdk-v1.6.0",
+   "prerelease": false,
+   "tag": "sdk-v1.6.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0"
+  },
   {
    "body": "### Bug Fixes\n\n* **vertex:** percent-encode the project ID, region and model in the request path, so a `/` in the model can't move the request outside `/publishers/anthropic/models/`, and throw an `AnthropicError` for an empty `model` or a project ID or region of `.` or `..`",
    "date": "2026-11-04T20:25:14Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "foundry-sdk-v0.5.3",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3"
-  },
-  {
-   "body": "## 0.34.3 (2026-10-07)\n\nFull Changelog: [bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/bedrock-sdk-v0.34.2...bedrock-sdk-v0.34.3)",
-   "date": "2026-10-07T17:57:13Z",
-   "name": "bedrock-sdk: v0.34.3",
-   "prerelease": false,
-   "tag": "bedrock-sdk-v0.34.3",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.3"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

@@ -7,7 +7,7 @@
   "next": "10.0.0-rc.2"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-05T06:00:38Z",
+ "fetched": "2026-11-06T06:00:42Z",
  "homepage": "https://eslint.org",
  "latest": "10.14.0",
  "name": "eslint",
@@ -49,11 +49,6 @@
    "date": "2026-08-21T13:07:47Z",
    "deprecated": false,
    "version": "10.9.0"
-  },
-  {
-   "date": "2026-08-07T20:21:24Z",
-   "deprecated": false,
-   "version": "10.8.1"
   }
  ]
 }

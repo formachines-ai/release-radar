@@ -1,19 +1,53 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "7.4.5",
+ "latest": "7.4.7",
  "latest_stable": {
-  "date": "2026-11-02T14:26:27Z",
-  "version": "7.4.5"
+  "date": "2026-11-05T19:59:28Z",
+  "version": "7.4.7"
  },
- "metadata_fetched": "2026-11-05T06:00:32Z",
+ "metadata_fetched": "2026-11-06T06:00:35Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/astro",
  "releases": [
+  {
+   "date": "2026-11-05T19:59:28Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.7",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/a667b12d21/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.7",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.4.7",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T16:18:53Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.6",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/db706a393b/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.6",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "7.4.6",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-02T14:26:27Z",
    "ecosystem": "npm",
@@ -38,6 +72,6 @@
   }
  ],
  "repository": "https://github.com/withastro/astro",
- "stable_in_window": 1,
+ "stable_in_window": 3,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

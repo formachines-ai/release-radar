@@ -1,5 +1,5 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -15,12 +15,29 @@
   "date": "2026-11-02T18:16:41Z",
   "version": "13.2.0"
  },
- "metadata_fetched": "2026-11-05T06:00:40Z",
+ "metadata_fetched": "2026-11-06T06:00:44Z",
  "package": "firebase",
  "page": "https://releases.formachines.ai/pkg/npm/firebase/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 2,
  "registry": "https://www.npmjs.com/package/firebase",
  "releases": [
+  {
+   "date": "2026-11-05T21:33:15Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": false,
+   "id": "npm/firebase/13.1.0-eap-sql.49c10c82f",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "13.1.0-eap-sql.49c10c82f",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-02T18:16:41Z",
    "ecosystem": "npm",

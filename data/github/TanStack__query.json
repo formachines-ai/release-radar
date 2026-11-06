@@ -7,10 +7,226 @@
    "prerelease": false,
    "tag": "@tanstack/react-query@5.105.1",
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.1"
+  },
+  "@tanstack/react-query@5.105.2": {
+   "body": "### Patch Changes\n\n- [#12230](https://github.com/TanStack/query/pull/12230) [`1e1caa5`](https://github.com/TanStack/query/commit/1e1caa5a32847969f7157627cd805bd8103cd873) - Update the observer options before subscribing so revealing an `<Activity>` tree whose query key changed while hidden no longer fetches the previous key.\n\n- [#12480](https://github.com/TanStack/query/pull/12480) [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1) - Exclude `status` from the filters accepted by `QueryClient.isMutating`, `useIsMutating`, and `injectIsMutating`. These APIs always count mutations with `status: 'pending'`.\n- Updated dependencies [[`2ee2fd9`](https://github.com/TanStack/query/commit/2ee2fd935acd88532255947c4b5e29baffd21ce8), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1), [`e69cac6`](https://github.com/TanStack/query/commit/e69cac69d99cc3c4f6f32b2ad8aad53da83b4a72), [`f2215d2`](https://github.com/TanStack/query/commit/f2215d25945e6461252b7c32bf822f31239e507e), [`86e7957`](https://github.com/TanStack/query/commit/86e79571fd45f29ab7d172102fdd718d3b8bde69), [`b6576b3`](https://github.com/TanStack/query/commit/b6576b388f2784839081358fa82744b0aacdeecd), [`af0e0ef`](https://github.com/TanStack/query/commit/af0e0ef5fc04e9d232fdc3aebd24ffe528b256d7), [`05d9b6a`](https://github.com/TanStack/query/commit/05d9b6a40b9d4ac49943e9d881789e098db5bdfa)]:\n  - @tanstack/query-core@5.105.2",
+   "date": "2026-11-02T13:55:28Z",
+   "name": "@tanstack/react-query@5.105.2",
+   "prerelease": false,
+   "tag": "@tanstack/react-query@5.105.2",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.2"
+  },
+  "@tanstack/react-query@5.105.3": {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`3f4de1b`](https://github.com/TanStack/query/commit/3f4de1b40cce4314f7572b515ad8fd26dd85fe04), [`969e580`](https://github.com/TanStack/query/commit/969e58019bf650fb17c273fddd0e8d2adf56d4d9)]:\n  - @tanstack/query-core@5.105.3",
+   "date": "2026-11-02T20:38:28Z",
+   "name": "@tanstack/react-query@5.105.3",
+   "prerelease": false,
+   "tag": "@tanstack/react-query@5.105.3",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.3"
   }
  },
- "fetched": "2026-11-05T06:00:31Z",
+ "fetched": "2026-11-06T06:00:33Z",
  "releases": [
+  {
+   "body": "Release 2026-11-05 08:08\n\n## Changes\n\n### Fix\n\n- {query,react-query,preact-query}-devtools: always render the devtools left-to-right regardless of the page direction or browser language (#12528) (c4ed956bb) by @sukvvon\n- solid-query-devtools: replace 'clientOnly' with a 'process.env.NODE_ENV' gate to fix hydration mismatch (#12524) (f078a2b2c) by @sukvvon\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.106.1\n- @tanstack/eslint-plugin-query@5.106.1\n- @tanstack/lit-query@0.2.36\n- @tanstack/preact-query@5.106.1\n- @tanstack/preact-query-devtools@5.106.1\n- @tanstack/preact-query-persist-client@5.106.1\n- @tanstack/query-async-storage-persister@5.106.1\n- @tanstack/query-broadcast-client-experimental@5.106.1\n- @tanstack/query-core@5.106.1\n- @tanstack/query-devtools@5.106.1\n- @tanstack/query-persist-client-core@5.106.1\n- @tanstack/query-sync-storage-persister@5.106.1\n- @tanstack/react-query@5.106.1\n- @tanstack/react-query-devtools@5.106.1\n- @tanstack/react-query-next-experimental@5.106.1\n- @tanstack/react-query-persist-client@5.106.1\n- @tanstack/solid-query@5.106.1\n- @tanstack/solid-query-devtools@5.106.1\n- @tanstack/solid-query-persist-client@5.106.1\n- @tanstack/svelte-query@6.3.11\n- @tanstack/svelte-query-devtools@6.3.11\n- @tanstack/svelte-query-persist-client@6.3.11\n- @tanstack/vue-query@5.106.1\n- @tanstack/vue-query-devtools@6.3.11\n",
+   "date": "2026-11-05T08:08:15Z",
+   "name": "Release 2026-11-05 08:08",
+   "prerelease": false,
+   "tag": "release-2026-11-05-0808",
+   "url": "https://github.com/TanStack/query/releases/tag/release-2026-11-05-0808"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:31Z",
+   "name": "@tanstack/vue-query@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/vue-query@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02)]:\n  - @tanstack/query-devtools@5.106.1\n  - @tanstack/vue-query@5.106.1",
+   "date": "2026-11-05T08:08:10Z",
+   "name": "@tanstack/vue-query-devtools@6.3.11",
+   "prerelease": false,
+   "tag": "@tanstack/vue-query-devtools@6.3.11",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query-devtools%406.3.11"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:29Z",
+   "name": "@tanstack/svelte-query@6.3.11",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query@6.3.11",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query%406.3.11"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.106.1\n  - @tanstack/svelte-query@6.3.11",
+   "date": "2026-11-05T08:08:07Z",
+   "name": "@tanstack/svelte-query-persist-client@6.3.11",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query-persist-client@6.3.11",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-persist-client%406.3.11"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02)]:\n  - @tanstack/query-devtools@5.106.1\n  - @tanstack/svelte-query@6.3.11",
+   "date": "2026-11-05T08:08:04Z",
+   "name": "@tanstack/svelte-query-devtools@6.3.11",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query-devtools@6.3.11",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-devtools%406.3.11"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:25Z",
+   "name": "@tanstack/solid-query@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.106.1\n  - @tanstack/solid-query@5.106.1",
+   "date": "2026-11-05T08:08:01Z",
+   "name": "@tanstack/solid-query-persist-client@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query-persist-client@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-persist-client%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12524](https://github.com/TanStack/query/pull/12524) [`f078a2b`](https://github.com/TanStack/query/commit/f078a2b2c81a3a278448e3c64de2dc773cab0ffa) - fix(solid-query-devtools): replace 'clientOnly' with a 'process.env.NODE_ENV' gate to fix hydration mismatch\n- Updated dependencies [[`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02)]:\n  - @tanstack/query-devtools@5.106.1\n  - @tanstack/solid-query@5.106.1",
+   "date": "2026-11-05T08:07:58Z",
+   "name": "@tanstack/solid-query-devtools@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query-devtools@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-devtools%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:22Z",
+   "name": "@tanstack/react-query@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/react-query@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.106.1\n  - @tanstack/react-query@5.106.1",
+   "date": "2026-11-05T08:07:55Z",
+   "name": "@tanstack/react-query-persist-client@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-persist-client@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-persist-client%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/react-query@5.106.1",
+   "date": "2026-11-05T08:07:52Z",
+   "name": "@tanstack/react-query-next-experimental@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-next-experimental@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-next-experimental%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12528](https://github.com/TanStack/query/pull/12528) [`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02) - fix({query,react-query,preact-query}-devtools): always render the devtools left-to-right regardless of the page direction or browser language\n- Updated dependencies [[`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02)]:\n  - @tanstack/query-devtools@5.106.1\n  - @tanstack/react-query@5.106.1",
+   "date": "2026-11-05T08:07:49Z",
+   "name": "@tanstack/react-query-devtools@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-devtools@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-devtools%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1\n  - @tanstack/query-persist-client-core@5.106.1",
+   "date": "2026-11-05T08:07:46Z",
+   "name": "@tanstack/query-sync-storage-persister@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-sync-storage-persister@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-sync-storage-persister%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:19Z",
+   "name": "@tanstack/query-persist-client-core@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-persist-client-core@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-persist-client-core%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12528](https://github.com/TanStack/query/pull/12528) [`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02) - fix({query,react-query,preact-query}-devtools): always render the devtools left-to-right regardless of the page direction or browser language\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:16Z",
+   "name": "@tanstack/query-devtools@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-devtools@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-devtools%405.106.1"
+  },
+  {
+   "body": "No changes in this release.",
+   "date": "2026-11-05T08:07:04Z",
+   "name": "@tanstack/query-core@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-core@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-core%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:13Z",
+   "name": "@tanstack/query-broadcast-client-experimental@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-broadcast-client-experimental@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-broadcast-client-experimental%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1\n  - @tanstack/query-persist-client-core@5.106.1",
+   "date": "2026-11-05T08:07:43Z",
+   "name": "@tanstack/query-async-storage-persister@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/query-async-storage-persister@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-async-storage-persister%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:10Z",
+   "name": "@tanstack/preact-query@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/preact-query@5.106.1\n  - @tanstack/query-persist-client-core@5.106.1",
+   "date": "2026-11-05T08:07:40Z",
+   "name": "@tanstack/preact-query-persist-client@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query-persist-client@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-persist-client%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12528](https://github.com/TanStack/query/pull/12528) [`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02) - fix({query,react-query,preact-query}-devtools): always render the devtools left-to-right regardless of the page direction or browser language\n- Updated dependencies [[`c4ed956`](https://github.com/TanStack/query/commit/c4ed956bb97e381a2875e59f134bb99eecb92a02)]:\n  - @tanstack/query-devtools@5.106.1\n  - @tanstack/preact-query@5.106.1",
+   "date": "2026-11-05T08:07:37Z",
+   "name": "@tanstack/preact-query-devtools@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query-devtools@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-devtools%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:07Z",
+   "name": "@tanstack/lit-query@0.2.36",
+   "prerelease": false,
+   "tag": "@tanstack/lit-query@0.2.36",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/lit-query%400.2.36"
+  },
+  {
+   "body": "No changes in this release.",
+   "date": "2026-11-05T08:07:01Z",
+   "name": "@tanstack/eslint-plugin-query@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/eslint-plugin-query@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/eslint-plugin-query%405.106.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
+   "date": "2026-11-05T08:07:34Z",
+   "name": "@tanstack/angular-query-experimental@5.106.1",
+   "prerelease": false,
+   "tag": "@tanstack/angular-query-experimental@5.106.1",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-experimental%405.106.1"
+  },
   {
    "body": "Release 2026-11-04 20:12\n\n## Changes\n\n### Features\n\n- devtools: add nested data search (#12522) (f69b28a1d) by @TkDodo\n\n### Fix\n\n- vue-query: accept shared options in imperative queries (#12525) (e7124128c) by @TkDodo\n- vue-query/queryClient: preserve union narrowing in 'setQueryData' updaters for tagged query keys (#12226) (3ccb007cb) by @sukvvon\n- devtools: let inline panels fill their container height (#12499) (46d0477df) by @TkDodo\n\n### Performance\n\n- query-devtools: virtualize query and mutation lists (#12502) (254350f9c) by @TkDodo\n\n### Chore\n\n- examples/solid: render 'SolidQueryDevtools' in 'auto-refetching', 'optimistic-updates' and 'prefetching' SolidStart 2 examples (#12521) (ac86d5b59) by @sukvvon\n- *: move Svelte config from 'svelte.config.js' into 'vite.config.ts' (#12519) (bd4cc6515) by @sukvvon\n- *: add 'UserConfig' and 'SvelteConfig' types to untyped config objects so typos are caught by type checking (#12518) (8652d3e96) by @sukvvon\n- query-devtools/tsdown.config: add '@refresh skip' banner so the app's 'solid-refresh' does not wrap the bundled Solid runtime (#12517) (1176d373d) by @sukvvon\n- integrations: convert to TypeScript and add 'test:types' so each integration type checks against the published types (#12516) (d5781a495) by @sukvvon\n- deps: align 'catalog', 'vue' and 'next' dev ranges with examples after the security update (#12515) (e877443ca) by @sukvvon\n- integrations: add missing 'preact', 'sveltekit', 'nuxt', 'solid-start' and 'astro' integrations and align existing ones (#12507) (b38ddac2b) by @sukvvon\n- deps: update security dependencies in examples and integrations (#12509) (b1243facc) by @TkDodo\n- *: update Angular to v22 and TypeScript to v6 in Angular examples and integration (#12506) (df4738d4e) by @sukvvon\n- examples: update dependencies that pull older 'esbuild' versions (#12505) (84f5b0f5b) by @sukvvon\n- pnpm-workspace.yaml: remove 'esbuild' override so each package uses its declared version (#12504) (224228917) by @sukvvon\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.106.0\n- @tanstack/eslint-plugin-query@5.106.0\n- @tanstack/lit-query@0.2.35\n- @tanstack/preact-query@5.106.0\n- @tanstack/preact-query-devtools@5.106.0\n- @tanstack/preact-query-persist-client@5.106.0\n- @tanstack/query-async-storage-persister@5.106.0\n- @tanstack/query-broadcast-client-experimental@5.106.0\n- @tanstack/query-core@5.106.0\n- @tanstack/query-devtools@5.106.0\n- @tanstack/query-persist-client-core@5.106.0\n- @tanstack/query-sync-storage-persister@5.106.0\n- @tanstack/react-query@5.106.0\n- @tanstack/react-query-devtools@5.106.0\n- @tanstack/react-query-next-experimental@5.106.0\n- @tanstack/react-query-persist-client@5.106.0\n- @tanstack/solid-query@5.106.0\n- @tanstack/solid-query-devtools@5.106.0\n- @tanstack/solid-query-persist-client@5.106.0\n- @tanstack/svelte-query@6.3.10\n- @tanstack/svelte-query-devtools@6.3.10\n- @tanstack/svelte-query-persist-client@6.3.10\n- @tanstack/vue-query@5.106.0\n- @tanstack/vue-query-devtools@6.3.10\n",
    "date": "2026-11-04T20:12:58Z",
@@ -210,206 +426,6 @@
    "prerelease": false,
    "tag": "@tanstack/angular-query-experimental@5.106.0",
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-experimental%405.106.0"
-  },
-  {
-   "body": "Release 2026-11-02 20:39\n\n## Changes\n\n### Fix\n\n- query-core: exclude queries without data from isStatic (#12497) (969e58019) by @TkDodo\n- query-core: skip pausing cancelled retries (#11537) (3f4de1b40) by @brennanbutler01\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.105.3\n- @tanstack/eslint-plugin-query@5.105.3\n- @tanstack/lit-query@0.2.34\n- @tanstack/preact-query@5.105.3\n- @tanstack/preact-query-devtools@5.105.3\n- @tanstack/preact-query-persist-client@5.105.3\n- @tanstack/query-async-storage-persister@5.105.3\n- @tanstack/query-broadcast-client-experimental@5.105.3\n- @tanstack/query-core@5.105.3\n- @tanstack/query-devtools@5.105.3\n- @tanstack/query-persist-client-core@5.105.3\n- @tanstack/query-sync-storage-persister@5.105.3\n- @tanstack/react-query@5.105.3\n- @tanstack/react-query-devtools@5.105.3\n- @tanstack/react-query-next-experimental@5.105.3\n- @tanstack/react-query-persist-client@5.105.3\n- @tanstack/solid-query@5.105.3\n- @tanstack/solid-query-devtools@5.105.3\n- @tanstack/solid-query-persist-client@5.105.3\n- @tanstack/svelte-query@6.3.9\n- @tanstack/svelte-query-devtools@6.3.9\n- @tanstack/svelte-query-persist-client@6.3.9\n- @tanstack/vue-query@5.105.3\n- @tanstack/vue-query-devtools@6.3.9\n",
-   "date": "2026-11-02T20:39:20Z",
-   "name": "Release 2026-11-02 20:39",
-   "prerelease": false,
-   "tag": "release-2026-11-02-2039",
-   "url": "https://github.com/TanStack/query/releases/tag/release-2026-11-02-2039"
-  },
-  {
-   "body": "Release 2026-11-02 13:56\n\n## Changes\n\n### Fix\n\n- query-core: share fetch results across silent cancellations (#12489) (b6576b388) by @TkDodo\n- query-core: stop cancelled streamed queries from updating the cache (#12481) (af0e0ef5f) by @TkDodo\n- query-core: exclude status from mutation count filters (#12480) (8d0dc278a) by @TkDodo\n- examples/{react,solid,vue}/contacts-*: wait for the seed before reading contacts and separate the unfiltered list key from a search for 'all' (#12482) (4223498dc) by @sukvvon\n- query-core: unpause a mutation that can start after its onMutate (#11788) (05d9b6a40) by @maxymlyskov\n- query-core: handle the rejection of paused refetches in 'refetchQueries' with 'throwOnError' (#12442) (e69cac69d) by @lazerg\n- query-core: addToEnd caps result to max when items already exceeds max (#10969) (2ee2fd935) by @JSap0914\n- query-core: use '() => void' instead of DOM-only 'VoidFunction' (#12447) (f2215d259) by @recallhyx\n- query-core: shallowEqualObjects ignores key-set differences when counts match (#10777) (86e79571f) by @francisjohnjohnston-web\n- {react,preact}-query: set the observer options before subscribing (#12230) (1e1caa5a3) by @lazerg\n\n### Refactor\n\n- examples: replace 'sort-by', 'localforage' and 'font-awesome' with built-in code (#12490) (59d11de87) by @sukvvon\n- examples/angular/basic: make 'postId' a required input and remove the always-true 'enabled' in 'PostComponent' (#12170) (604d0a5aa) by @sukvvon\n- examples/react/nextjs-app-optimistic-updates: type the form submit handlers with 'React.SubmitEvent' instead of the deprecated 'React.FormEvent' (#12095) (92c41c059) by @sukvvon\n\n### Chore\n\n- {examples,integrations}: fix configs that break with the installed tool versions (#12491) (d0ff9aef5) by @sukvvon\n- integrations: group by adapter and rename packages to '@tanstack/query-integration-<adapter>-<name>' to match examples (#12475) (9b52414c1) by @sukvvon\n- examples/vue/simple-nuxt3/.gitignore: align with the Nuxt starter template to ignore '.data', '.nitro' and '.cache' (#12474) (ada1f13f0) by @sukvvon\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.105.2\n- @tanstack/eslint-plugin-query@5.105.2\n- @tanstack/lit-query@0.2.33\n- @tanstack/preact-query@5.105.2\n- @tanstack/preact-query-devtools@5.105.2\n- @tanstack/preact-query-persist-client@5.105.2\n- @tanstack/query-async-storage-persister@5.105.2\n- @tanstack/query-broadcast-client-experimental@5.105.2\n- @tanstack/query-core@5.105.2\n- @tanstack/query-devtools@5.105.2\n- @tanstack/query-persist-client-core@5.105.2\n- @tanstack/query-sync-storage-persister@5.105.2\n- @tanstack/react-query@5.105.2\n- @tanstack/react-query-devtools@5.105.2\n- @tanstack/react-query-next-experimental@5.105.2\n- @tanstack/react-query-persist-client@5.105.2\n- @tanstack/solid-query@5.105.2\n- @tanstack/solid-query-devtools@5.105.2\n- @tanstack/solid-query-persist-client@5.105.2\n- @tanstack/svelte-query@6.3.8\n- @tanstack/svelte-query-devtools@6.3.8\n- @tanstack/svelte-query-persist-client@6.3.8\n- @tanstack/vue-query@5.105.2\n- @tanstack/vue-query-devtools@6.3.8\n",
-   "date": "2026-11-02T13:56:26Z",
-   "name": "Release 2026-11-02 13:56",
-   "prerelease": false,
-   "tag": "release-2026-11-02-1356",
-   "url": "https://github.com/TanStack/query/releases/tag/release-2026-11-02-1356"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`3f4de1b`](https://github.com/TanStack/query/commit/3f4de1b40cce4314f7572b515ad8fd26dd85fe04), [`969e580`](https://github.com/TanStack/query/commit/969e58019bf650fb17c273fddd0e8d2adf56d4d9)]:\n  - @tanstack/query-core@5.105.3",
-   "date": "2026-11-02T20:38:36Z",
-   "name": "@tanstack/vue-query@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12480](https://github.com/TanStack/query/pull/12480) [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1) - Exclude `status` from the filters accepted by `QueryClient.isMutating`, `useIsMutating`, and `injectIsMutating`. These APIs always count mutations with `status: 'pending'`.\n- Updated dependencies [[`2ee2fd9`](https://github.com/TanStack/query/commit/2ee2fd935acd88532255947c4b5e29baffd21ce8), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1), [`e69cac6`](https://github.com/TanStack/query/commit/e69cac69d99cc3c4f6f32b2ad8aad53da83b4a72), [`f2215d2`](https://github.com/TanStack/query/commit/f2215d25945e6461252b7c32bf822f31239e507e), [`86e7957`](https://github.com/TanStack/query/commit/86e79571fd45f29ab7d172102fdd718d3b8bde69), [`b6576b3`](https://github.com/TanStack/query/commit/b6576b388f2784839081358fa82744b0aacdeecd), [`af0e0ef`](https://github.com/TanStack/query/commit/af0e0ef5fc04e9d232fdc3aebd24ffe528b256d7), [`05d9b6a`](https://github.com/TanStack/query/commit/05d9b6a40b9d4ac49943e9d881789e098db5bdfa)]:\n  - @tanstack/query-core@5.105.2",
-   "date": "2026-11-02T13:55:37Z",
-   "name": "@tanstack/vue-query@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.105.3\n  - @tanstack/vue-query@5.105.3",
-   "date": "2026-11-02T20:39:15Z",
-   "name": "@tanstack/vue-query-devtools@6.3.9",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query-devtools@6.3.9",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query-devtools%406.3.9"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/vue-query@5.105.2\n  - @tanstack/query-devtools@5.105.2",
-   "date": "2026-11-02T13:56:16Z",
-   "name": "@tanstack/vue-query-devtools@6.3.8",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query-devtools@6.3.8",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query-devtools%406.3.8"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`3f4de1b`](https://github.com/TanStack/query/commit/3f4de1b40cce4314f7572b515ad8fd26dd85fe04), [`969e580`](https://github.com/TanStack/query/commit/969e58019bf650fb17c273fddd0e8d2adf56d4d9)]:\n  - @tanstack/query-core@5.105.3",
-   "date": "2026-11-02T20:38:33Z",
-   "name": "@tanstack/svelte-query@6.3.9",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query@6.3.9",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query%406.3.9"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12480](https://github.com/TanStack/query/pull/12480) [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1) - Exclude `status` from the filters accepted by `QueryClient.isMutating`, `useIsMutating`, and `injectIsMutating`. These APIs always count mutations with `status: 'pending'`.\n- Updated dependencies [[`2ee2fd9`](https://github.com/TanStack/query/commit/2ee2fd935acd88532255947c4b5e29baffd21ce8), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1), [`e69cac6`](https://github.com/TanStack/query/commit/e69cac69d99cc3c4f6f32b2ad8aad53da83b4a72), [`f2215d2`](https://github.com/TanStack/query/commit/f2215d25945e6461252b7c32bf822f31239e507e), [`86e7957`](https://github.com/TanStack/query/commit/86e79571fd45f29ab7d172102fdd718d3b8bde69), [`b6576b3`](https://github.com/TanStack/query/commit/b6576b388f2784839081358fa82744b0aacdeecd), [`af0e0ef`](https://github.com/TanStack/query/commit/af0e0ef5fc04e9d232fdc3aebd24ffe528b256d7), [`05d9b6a`](https://github.com/TanStack/query/commit/05d9b6a40b9d4ac49943e9d881789e098db5bdfa)]:\n  - @tanstack/query-core@5.105.2",
-   "date": "2026-11-02T13:55:34Z",
-   "name": "@tanstack/svelte-query@6.3.8",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query@6.3.8",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query%406.3.8"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.105.3\n  - @tanstack/svelte-query@6.3.9",
-   "date": "2026-11-02T20:39:12Z",
-   "name": "@tanstack/svelte-query-persist-client@6.3.9",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-persist-client@6.3.9",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-persist-client%406.3.9"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/svelte-query@6.3.8\n  - @tanstack/query-persist-client-core@5.105.2",
-   "date": "2026-11-02T13:56:13Z",
-   "name": "@tanstack/svelte-query-persist-client@6.3.8",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-persist-client@6.3.8",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-persist-client%406.3.8"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.105.3\n  - @tanstack/svelte-query@6.3.9",
-   "date": "2026-11-02T20:39:09Z",
-   "name": "@tanstack/svelte-query-devtools@6.3.9",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-devtools@6.3.9",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-devtools%406.3.9"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/svelte-query@6.3.8\n  - @tanstack/query-devtools@5.105.2",
-   "date": "2026-11-02T13:56:10Z",
-   "name": "@tanstack/svelte-query-devtools@6.3.8",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-devtools@6.3.8",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-devtools%406.3.8"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`3f4de1b`](https://github.com/TanStack/query/commit/3f4de1b40cce4314f7572b515ad8fd26dd85fe04), [`969e580`](https://github.com/TanStack/query/commit/969e58019bf650fb17c273fddd0e8d2adf56d4d9)]:\n  - @tanstack/query-core@5.105.3",
-   "date": "2026-11-02T20:38:30Z",
-   "name": "@tanstack/solid-query@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12480](https://github.com/TanStack/query/pull/12480) [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1) - Exclude `status` from the filters accepted by `QueryClient.isMutating`, `useIsMutating`, and `injectIsMutating`. These APIs always count mutations with `status: 'pending'`.\n- Updated dependencies [[`2ee2fd9`](https://github.com/TanStack/query/commit/2ee2fd935acd88532255947c4b5e29baffd21ce8), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1), [`e69cac6`](https://github.com/TanStack/query/commit/e69cac69d99cc3c4f6f32b2ad8aad53da83b4a72), [`f2215d2`](https://github.com/TanStack/query/commit/f2215d25945e6461252b7c32bf822f31239e507e), [`86e7957`](https://github.com/TanStack/query/commit/86e79571fd45f29ab7d172102fdd718d3b8bde69), [`b6576b3`](https://github.com/TanStack/query/commit/b6576b388f2784839081358fa82744b0aacdeecd), [`af0e0ef`](https://github.com/TanStack/query/commit/af0e0ef5fc04e9d232fdc3aebd24ffe528b256d7), [`05d9b6a`](https://github.com/TanStack/query/commit/05d9b6a40b9d4ac49943e9d881789e098db5bdfa)]:\n  - @tanstack/query-core@5.105.2",
-   "date": "2026-11-02T13:55:31Z",
-   "name": "@tanstack/solid-query@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.105.3\n  - @tanstack/solid-query@5.105.3",
-   "date": "2026-11-02T20:39:06Z",
-   "name": "@tanstack/solid-query-persist-client@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-persist-client@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-persist-client%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/solid-query@5.105.2\n  - @tanstack/query-persist-client-core@5.105.2",
-   "date": "2026-11-02T13:56:07Z",
-   "name": "@tanstack/solid-query-persist-client@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-persist-client@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-persist-client%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.105.3\n  - @tanstack/solid-query@5.105.3",
-   "date": "2026-11-02T20:39:03Z",
-   "name": "@tanstack/solid-query-devtools@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-devtools@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-devtools%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/solid-query@5.105.2\n  - @tanstack/query-devtools@5.105.2",
-   "date": "2026-11-02T13:56:04Z",
-   "name": "@tanstack/solid-query-devtools@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-devtools@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-devtools%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`3f4de1b`](https://github.com/TanStack/query/commit/3f4de1b40cce4314f7572b515ad8fd26dd85fe04), [`969e580`](https://github.com/TanStack/query/commit/969e58019bf650fb17c273fddd0e8d2adf56d4d9)]:\n  - @tanstack/query-core@5.105.3",
-   "date": "2026-11-02T20:38:28Z",
-   "name": "@tanstack/react-query@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/react-query@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12230](https://github.com/TanStack/query/pull/12230) [`1e1caa5`](https://github.com/TanStack/query/commit/1e1caa5a32847969f7157627cd805bd8103cd873) - Update the observer options before subscribing so revealing an `<Activity>` tree whose query key changed while hidden no longer fetches the previous key.\n\n- [#12480](https://github.com/TanStack/query/pull/12480) [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1) - Exclude `status` from the filters accepted by `QueryClient.isMutating`, `useIsMutating`, and `injectIsMutating`. These APIs always count mutations with `status: 'pending'`.\n- Updated dependencies [[`2ee2fd9`](https://github.com/TanStack/query/commit/2ee2fd935acd88532255947c4b5e29baffd21ce8), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1), [`e69cac6`](https://github.com/TanStack/query/commit/e69cac69d99cc3c4f6f32b2ad8aad53da83b4a72), [`f2215d2`](https://github.com/TanStack/query/commit/f2215d25945e6461252b7c32bf822f31239e507e), [`86e7957`](https://github.com/TanStack/query/commit/86e79571fd45f29ab7d172102fdd718d3b8bde69), [`b6576b3`](https://github.com/TanStack/query/commit/b6576b388f2784839081358fa82744b0aacdeecd), [`af0e0ef`](https://github.com/TanStack/query/commit/af0e0ef5fc04e9d232fdc3aebd24ffe528b256d7), [`05d9b6a`](https://github.com/TanStack/query/commit/05d9b6a40b9d4ac49943e9d881789e098db5bdfa)]:\n  - @tanstack/query-core@5.105.2",
-   "date": "2026-11-02T13:55:28Z",
-   "name": "@tanstack/react-query@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.105.3\n  - @tanstack/react-query@5.105.3",
-   "date": "2026-11-02T20:39:00Z",
-   "name": "@tanstack/react-query-persist-client@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-persist-client@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-persist-client%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`1e1caa5`](https://github.com/TanStack/query/commit/1e1caa5a32847969f7157627cd805bd8103cd873), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/react-query@5.105.2\n  - @tanstack/query-persist-client-core@5.105.2",
-   "date": "2026-11-02T13:56:01Z",
-   "name": "@tanstack/react-query-persist-client@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-persist-client@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-persist-client%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/react-query@5.105.3",
-   "date": "2026-11-02T20:38:57Z",
-   "name": "@tanstack/react-query-next-experimental@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-next-experimental@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-next-experimental%405.105.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`1e1caa5`](https://github.com/TanStack/query/commit/1e1caa5a32847969f7157627cd805bd8103cd873), [`8d0dc27`](https://github.com/TanStack/query/commit/8d0dc278a728a97eb677b6f2baf37d1677c2edc1)]:\n  - @tanstack/react-query@5.105.2",
-   "date": "2026-11-02T13:55:58Z",
-   "name": "@tanstack/react-query-next-experimental@5.105.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-next-experimental@5.105.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-next-experimental%405.105.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.105.3\n  - @tanstack/react-query@5.105.3",
-   "date": "2026-11-02T20:38:54Z",
-   "name": "@tanstack/react-query-devtools@5.105.3",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-devtools@5.105.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-devtools%405.105.3"
   }
  ],
  "repo": "TanStack/query"

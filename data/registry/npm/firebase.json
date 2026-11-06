@@ -13,6 +13,7 @@
   "eap-firestore-backfiller": "10.12.2-eap-firestore-backfiller.87babf60c",
   "eap-firestore-debug": "8.1.1-1.0.0-eap-firestore-debug.9c6096f43",
   "eap-firestore-pipelines": "12.5.0-eap-firestore-pipelines.2.e4cdd2e06",
+  "eap-sql": "13.1.0-eap-sql.49c10c82f",
   "eap-storage-emulator": "8.2.9-eap-storage-emulator.ed256f582",
   "eap-vertexai-hybgoog": "11.6.0-eap-vertexai-hybgoog.31261ca31",
   "eap-vertexai-hybridinference": "11.6.0-eap-vertexai-hybridinference.e83974308",
@@ -29,7 +30,7 @@
   "vertexai-preview": "10.13.2-vertexai-preview.6b035b7d3"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-05T06:00:40Z",
+ "fetched": "2026-11-06T06:00:44Z",
  "homepage": "https://firebase.google.com/",
  "latest": "13.2.0",
  "name": "firebase",
@@ -37,6 +38,11 @@
  "repo": "firebase/firebase-js-sdk",
  "summary": "Firebase JavaScript library for web and Node.js",
  "versions": [
+  {
+   "date": "2026-11-05T21:33:15Z",
+   "deprecated": false,
+   "version": "13.1.0-eap-sql.49c10c82f"
+  },
   {
    "date": "2026-11-02T18:16:41Z",
    "deprecated": false,

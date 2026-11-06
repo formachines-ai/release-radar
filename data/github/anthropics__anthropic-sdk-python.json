@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-05T06:00:03Z",
+ "fetched": "2026-11-06T06:00:03Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** raise error-code and status exception classes on platform clients\n* **bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options\n\n\n### Chores\n\n* **client:** stop recording sampling parameters on OpenTelemetry spans\n* **docs:** describe the type and message of API errors\n* **internal:** define the status error mapping once on the base client\n* **internal:** tell contributors when a runtime type check belongs\n* **tests:** remove ambient ANTHROPIC_ and AWS_ variables before the tests run\n\n\n### Documentation\n\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",
+   "date": "2026-11-05T18:58:47Z",
+   "name": "v2.6.0",
+   "prerelease": false,
+   "tag": "v2.6.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0"
+  },
   {
    "body": "### Features\n\n* **api:** add error details types and new error type values\n* **api:** add ids filter to list workspaces\n* **client:** add error classes for HTTP statuses and API error codes, and error_code, details and api_message on APIStatusError\n\n\n### Bug Fixes\n\n* **api:** capitalize CMEK in error details type names\n* **api:** move some error details types to the resource they describe\n* **bedrock:** raise a ValueError when model is \".\" or \"..\" instead of sending the request to a different path\n* **bedrock:** raise a ValueError when model is empty instead of sending the request to `/model//invoke`\n* **client:** make OverloadedError and ServiceUnavailableError subclasses of InternalServerError\n* **client:** make the first parse of each response model thread-safe\n* **client:** reject path parameters such as '..;x' and ';x'\n* **client:** validate unions correctly across threads on pydantic v1\n* **tools:** keep the memory tool from renaming or deleting the /memories directory\n* **vertex:** percent-encode the model, project ID and region in the request path\n\n\n### Chores\n\n* **api:** update example values for pattern-constrained string fields\n* **ci:** also run the tests with deferred pydantic model builds\n* **docs:** clarify plugin reach values\n* **docs:** clarify plugin version description and plugin reach\n* **docs:** clarify plugin version description length\n* **docs:** clarify some API field descriptions\n* **docs:** clarify three error descriptions\n* **docs:** clarify which blocks to send back around a fallback block\n* **docs:** correct Claude Tag direct message notes in usage reports\n* **docs:** reword Dream and RBAC role permission descriptions\n* **docs:** update the telemetry destination headers description\n* **docs:** use the Claude Platform name in analytics filter docs\n* **internal:** accept changelog entry files in the changelog check\n* **internal:** move error body helpers into the internal utils\n* **internal:** remove stale TODO comments and a test that could not pass\n* **tests:** check that a None path param is rejected\n\n\n### Documentation\n\n* **api:** show each field's own description for `speed`\n* clean up escapes and code spans in doc comments",
    "date": "2026-11-04T20:27:20Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v0.108.0",
    "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0"
-  },
-  {
-   "body": "## 0.107.1 (2026-06-07)\n\nFull Changelog: [v0.107.0...v0.107.1](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.0...v0.107.1)\n\n### Bug Fixes\n\n* **foundry:** send x-api-key header for API-key auth ([#62](https://github.com/anthropics/anthropic-sdk-python/issues/62)) ([1338141](https://github.com/anthropics/anthropic-sdk-python/commit/13381413d22ad14d85e66836c67cc8a13bd2b7bd)), closes [#1661](https://github.com/anthropics/anthropic-sdk-python/issues/1661)",
-   "date": "2026-06-07T17:18:45Z",
-   "name": "v0.107.1",
-   "prerelease": false,
-   "tag": "v0.107.1",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.107.1"
   }
  ],
  "repo": "anthropics/anthropic-sdk-python"

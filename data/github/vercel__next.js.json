@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-05T06:00:43Z",
+ "fetched": "2026-11-06T06:00:49Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Persist Request Insights session history: #97795\n- Show route module loading and preparation in Request Insights: #97362\n- Improve Request Insights request and fetch details: #96925\n- Automatically compress route handler responses if not already compressed: #101220\n- experimental_prepare: Don't refetch on commit due to stale inlining hints: #101234\n- Bump to swc v83: #101079\n- [image-optimizer] Remove optimizeImage from the public next/image-optimizer-transform API: #101133\n\n### Misc Changes\n\n- Add a server-router regression gate: pnpm test-routing: #100812\n- [turbopack] Fix GC/eviction race by dropping task resurrection: #100370\n- docs: buffer and re-serialize in the BFF proxy Route Handler example: #101199\n- Turbopack: test strict receivers in minified mixed chunks: #101239\n- Turbopack: retry chunk loads that failed with component chunks: #101179\n- Bump to swc v84: #101194\n- docs: require Cache Components compatibility for new e2e tests: #101222\n- [ci] Resolve the PR to comment on from the workflow run alone: #101090\n- test: capture finished OTel spans from console output in otel-middleware-trace: #100664\n- Turbopack: keep IIFEs with a PURE-annotated callee in production builds: #100477\n- docs: clarify directory-specific test gate guidance: #101200\n- eval: verify independent dashboard streaming: #101155\n- Turbopack: generate import.meta.glob as a synthetic module: #100535\n- Turbopack: report unknown module types at the import: #100534\n- Turbopack: use flat module context ids for dynamic requests: #100681\n- Turbopack: read block-scoping support during codegen: #101157\n- Make Firebase tracing fixture independent of backend connectivity: #101180\n- Pin Tailwind to 4.3.3 in no-double-tailwind-execution test: #101176\n\n### Credits \n\nHuge thanks to @jamiboym, @lukesandberg, @DavidIlie, @icyJoseph, @eps1lon, @timneutkens, @mischnic, @acdlite, @sokra, @aurorascharff, @bgw, and @wbinnssmith for helping!",
+   "date": "2026-11-05T23:45:35Z",
+   "name": "v16.5.0-canary.42",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.42",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.42"
+  },
   {
    "body": "### Core Changes\n\n- feat(next/image): add internal image redirects (to match existing external image redirects): #98271\n- Turbopack: show the source-mapped file in issue headers: #101161\n- Add Request Insights filters and pause controls: #96924\n- Avoid instrumenting Next.js telemetry requests: #97182\n- Classify framework request activity: #96914\n- Move optional lockfile parameters into options object: #101132\n- Record Instant Insights validation worker spans: #98677\n- Share local tracing across development runtimes: #98676\n- [image-optimizer] Replace handleDevOutput with an 'optimized' flag in ImageOptimizerResult, make the caller responsible for blur svg placeholder generation: #101167\n- [image-optimizer] Move previous cache entry reuse out of `next/image-optimizer-transform`: #101126\n- Deeply freeze the loaded config in test mode: #99943\n- fix: do not run onStage listeners for stages that were aborted: #95684\n- Update font data: #101129\n- Remove the experimental.lockDistDir opt-out option: #100747\n- Keep loaded config from sharing objects with defaults and callers: #99942\n\n### Misc Changes\n\n- Fix effects applying when they didn't need to because expression was replaced: #101166\n- fix: server actions entrypoint erroring build with `type: commonjs`: #101164\n- skills: improve cache-aware navigation workflows: #101169\n- docs: document experimental flags removed in Next.js 16: #101165\n- docs: useServerInsertedHTML: #98671\n- Turbopack: narrow async-module emptiness dependencies: #101154\n- eval: measure Next Dev Loop on Pokédex: #100962\n- Turbopack: internalize evaluation pool plumbing: #101143\n- Turbopack: generate require.context as a synthetic module: #100526\n- turbopack-node: linear IPC frame parsing with eager UTF-8 decoding: #99968\n- turbo-tasks-backend: keep recorded GC roots until their TTL expires: #100279\n- Turbopack: only read conditionally needed values where they are used: #101072\n\n### Credits \n\nHuge thanks to @styfle, @lukesandberg, @DavidIlie, @bgw, @jimmyhmiller, @lubieowoce, @aurorascharff, @icyJoseph, @jamiboym, and @mischnic for helping!",
    "date": "2026-11-04T23:42:03Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v16.4.0",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0"
-  },
-  {
-   "body": "### Misc Changes\n\n- Document next analyze export in the package bundling guide: #99735\n- Revert stabilization of `forbidden()` and `unauthorized()`: #99734\n- Preserve configured output directories during static export: #99507\n- Rename skill to next-bundle-optimizer and document its usage: #99731\n- [turbo-tasks-backend] Clean up task state before publishing execution completion: #99729\n\n### Credits \n\nHuge thanks to @wbinnssmith, @acdlite, @gnoff, and @sokra for helping!",
-   "date": "2026-10-06T17:29:39Z",
-   "name": "v16.4.0-canary.63",
-   "prerelease": true,
-   "tag": "v16.4.0-canary.63",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.4.0-canary.63"
   }
  ],
  "repo": "vercel/next.js"

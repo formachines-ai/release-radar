@@ -12,7 +12,7 @@
   "version-7": "7.18.5"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-05T06:00:48Z",
+ "fetched": "2026-11-06T06:00:54Z",
  "homepage": "",
  "latest": "8.5.1",
  "name": "react-router",
@@ -84,16 +84,6 @@
    "date": "2026-08-18T14:51:16Z",
    "deprecated": false,
    "version": "6.30.5"
-  },
-  {
-   "date": "2026-08-07T16:34:10Z",
-   "deprecated": false,
-   "version": "0.0.0-experimental-320d16107"
-  },
-  {
-   "date": "2026-08-07T15:56:56Z",
-   "deprecated": false,
-   "version": "0.0.0-experimental-2a01b6fd8"
   }
  ]
 }

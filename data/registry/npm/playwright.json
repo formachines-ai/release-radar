@@ -1,20 +1,50 @@
 {
  "changelog": null,
  "dist_tags": {
-  "beta": "1.65.0-beta-1793840934000",
-  "latest": "1.64.1",
-  "next": "1.66.0-alpha-2026-11-05",
+  "beta": "1.65.0-beta-1793921730000",
+  "latest": "1.65.0",
+  "next": "1.66.0-alpha-1793916328000",
   "rc": "1.18.0-rc1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-05T06:00:44Z",
+ "fetched": "2026-11-06T06:00:50Z",
  "homepage": "https://playwright.dev",
- "latest": "1.64.1",
+ "latest": "1.65.0",
  "name": "playwright",
  "page": "https://www.npmjs.com/package/playwright",
  "repo": "microsoft/playwright",
  "summary": "A high-level API to automate web browsers",
  "versions": [
+  {
+   "date": "2026-11-05T23:42:52Z",
+   "deprecated": false,
+   "version": "1.65.0-beta-1793921730000"
+  },
+  {
+   "date": "2026-11-05T23:00:08Z",
+   "deprecated": false,
+   "version": "1.65.0-beta-1793919248000"
+  },
+  {
+   "date": "2026-11-05T22:21:36Z",
+   "deprecated": false,
+   "version": "1.66.0-alpha-1793916328000"
+  },
+  {
+   "date": "2026-11-05T18:28:14Z",
+   "deprecated": false,
+   "version": "1.65.0"
+  },
+  {
+   "date": "2026-11-05T17:47:18Z",
+   "deprecated": false,
+   "version": "1.65.0-beta-1793900512000"
+  },
+  {
+   "date": "2026-11-05T16:22:34Z",
+   "deprecated": false,
+   "version": "1.65.0-beta-1793895462000"
+  },
   {
    "date": "2026-11-05T05:18:48Z",
    "deprecated": false,
@@ -654,21 +684,6 @@
    "date": "2026-08-09T05:49:47Z",
    "deprecated": false,
    "version": "1.63.0-alpha-2026-08-09"
-  },
-  {
-   "date": "2026-08-08T05:45:48Z",
-   "deprecated": false,
-   "version": "1.63.0-alpha-2026-08-08"
-  },
-  {
-   "date": "2026-08-07T23:35:46Z",
-   "deprecated": false,
-   "version": "1.63.0-alpha-1786143515000"
-  },
-  {
-   "date": "2026-08-07T17:21:01Z",
-   "deprecated": false,
-   "version": "1.63.0-alpha-1786107553000"
   }
  ]
 }

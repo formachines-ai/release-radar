@@ -1,20 +1,43 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "2.14.2",
+ "latest": "2.14.3",
  "latest_stable": {
-  "date": "2026-10-29T16:37:10Z",
-  "version": "2.14.2"
+  "date": "2026-11-05T09:17:02Z",
+  "version": "2.14.3"
  },
- "metadata_fetched": "2026-11-05T06:00:11Z",
+ "metadata_fetched": "2026-11-06T06:00:12Z",
  "package": "pydantic",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pydantic/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-05T09:17:02Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/pydantic/2.14.3",
+   "json": "https://releases.formachines.ai/pkg/pypi/pydantic/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fce0960ea1/",
+   "notes_url": "https://github.com/pydantic/pydantic/releases/tag/v2.14.3",
+   "package": "pydantic",
+   "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…yO3 version bump. A CI workflow issue made it so that the wheel wasn't tested before publishing. This is now fixed: starting in v2.14.3, we no longer publish GraalPy 3.11 wheels, and GraalPy 3.13 wheels are now published together with the existing 3.12 one.…"
+    }
+   ],
+   "version": "2.14.3",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pydantic/pydantic",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Data validation using Python type hints"
 }

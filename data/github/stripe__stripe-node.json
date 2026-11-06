@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-05T06:00:48Z",
+ "fetched": "2026-11-06T06:00:54Z",
  "releases": [
+  {
+   "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-2-0-alpha-2) for the full release notes.",
+   "date": "2026-11-06T04:20:46Z",
+   "name": "v23.2.0-alpha.2",
+   "prerelease": true,
+   "tag": "v23.2.0-alpha.2",
+   "url": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.2"
+  },
   {
    "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-2-0-alpha-1) for the full release notes.",
    "date": "2026-10-30T18:05:08Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v22.2.0-alpha.4",
    "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-alpha.4"
-  },
-  {
-   "body": "* [#2703](https://github.com/stripe/stripe-node/pull/2703) Export Decimal type from Stripe namespace\n  \r\n  - Added `Stripe.Decimal` as a usable type in the `Stripe` namespace, enabling type annotations like `function takesDecimal(d: Stripe.Decimal)`.\n* [#2704](https://github.com/stripe/stripe-node/pull/2704) Fix file upload regression: restore multipart request data processor\n  \r\n  - Fixed file uploads failing with `StripeInvalidRequestError` on the `/v1/files` endpoint since v22.\n\nSee [the changelog for more details](https://github.com/stripe/stripe-node/blob/v22.1.1/CHANGELOG.md).\n",
-   "date": "2026-05-06T21:25:51Z",
-   "name": "v22.1.1",
-   "prerelease": false,
-   "tag": "v22.1.1",
-   "url": "https://github.com/stripe/stripe-node/releases/tag/v22.1.1"
   }
  ],
  "repo": "stripe/stripe-node"

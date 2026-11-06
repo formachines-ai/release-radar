@@ -1,19 +1,36 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "1.5.0",
+ "latest": "1.6.0",
  "latest_stable": {
-  "date": "2026-11-04T20:29:51Z",
-  "version": "1.5.0"
+  "date": "2026-11-05T19:05:25Z",
+  "version": "1.6.0"
  },
- "metadata_fetched": "2026-11-05T06:00:20Z",
+ "metadata_fetched": "2026-11-06T06:00:22Z",
  "package": "@anthropic-ai/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/sdk",
  "releases": [
+  {
+   "date": "2026-11-05T19:05:25Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@anthropic-ai/sdk/1.6.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/a94ccf0ea5/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "1.6.0",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-04T20:29:51Z",
    "ecosystem": "npm",
@@ -50,6 +67,6 @@
   }
  ],
  "repository": "https://github.com/anthropics/anthropic-sdk-typescript",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "The official TypeScript library for the Anthropic API"
 }

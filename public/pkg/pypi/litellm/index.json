@@ -1,19 +1,36 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.108.0",
+ "latest": "1.108.1",
  "latest_stable": {
-  "date": "2026-11-04T03:31:18Z",
-  "version": "1.108.0"
+  "date": "2026-11-05T23:37:04Z",
+  "version": "1.108.1"
  },
- "metadata_fetched": "2026-11-05T06:00:06Z",
+ "metadata_fetched": "2026-11-06T06:00:05Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
- "prereleases_in_window": 3,
+ "prereleases_in_window": 2,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
+  {
+   "date": "2026-11-05T23:37:04Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.108.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6fa9a3b4e0/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.1",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "1.108.1",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-05T02:02:00Z",
    "ecosystem": "pypi",
@@ -99,26 +116,9 @@
    "quotes": [],
    "version": "1.109.0rc1",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-30T03:47:33Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.109.0.dev2",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "1.109.0.dev2",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "Library to easily interface with LLM API providers"
 }

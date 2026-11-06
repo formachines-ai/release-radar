@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-05T06:00:06Z",
+ "fetched": "2026-11-06T06:00:05Z",
  "releases": [
+  {
+   "body": "Changes since sdk==0.4.13\n\n* release(sdk-py): 0.4.14 (#9610)\n* feat(sdk-py): add strict_resume to runs.create, stream and wait (#9599)\n* feat(sdk-py): add tools and lifecycle to StreamMode (#9601)",
+   "date": "2026-11-06T03:03:34Z",
+   "name": "langgraph-sdk==0.4.14",
+   "prerelease": false,
+   "tag": "sdk==0.4.14",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/sdk%3D%3D0.4.14"
+  },
+  {
+   "body": "Changes since cli==0.4.41\n\n* release(cli): 0.4.42 (#9611)\n* feat(cli): add deploy metrics command (#9479)\n* chore(deps): bump filelock and langgraph-api for security fixes (#9606)",
+   "date": "2026-11-06T03:04:13Z",
+   "name": "langgraph-cli==0.4.42",
+   "prerelease": false,
+   "tag": "cli==0.4.42",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.42"
+  },
   {
    "body": "Changes since 1.2.19\n\n* release(langgraph): 1.2.20 (#9595)\n* feat(langgraph): give each interrupt() in a task its own id (#9589)\n* fix(langgraph): point the multiple-interrupts error at the current docs (#9590)\n* feat(langgraph): add a strict resume mode that refuses stale interrupt answers (#9574)\n* chore(deps-dev): bump types-requests from 2.33.0.20260906 to 2.33.0.20261006 in /libs/langgraph (#9535)\n* chore(deps-dev): bump pycryptodome from 3.23.0 to 4.2.0 in /libs/langgraph in the major group (#9534)",
    "date": "2026-11-05T02:20:53Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "1.2.7",
    "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.7"
-  },
-  {
-   "body": "Changes since 1.2.5\n\n* release(langgraph): 1.2.6 (#8139)\n* fix: nested subgraph inherits parent checkpoint_ns (regression in 1.2.3) (#8053)\n* fix: cancel running subgraphs on v3 stream abort [closes #8029] (#8057)\n* release(cli): 0.4.30 (#8101)\n* docs: standardize package `README.md` structure (#8064)\n* chore(deps): bump tornado from 6.5.5 to 6.5.6 in /libs/langgraph (#8063)",
-   "date": "2026-06-18T20:58:32Z",
-   "name": "langgraph==1.2.6",
-   "prerelease": false,
-   "tag": "1.2.6",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.6"
-  },
-  {
-   "body": "Changes since cli==0.4.29\n\n* release(cli): 0.4.30 (#8101)\n* feat(cli): support compatible api version ranges (#8023)\n* docs: standardize package `README.md` structure (#8064)",
-   "date": "2026-06-16T19:46:45Z",
-   "name": "langgraph-cli==0.4.30",
-   "prerelease": false,
-   "tag": "cli==0.4.30",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.30"
   }
  ],
  "repo": "langchain-ai/langgraph"

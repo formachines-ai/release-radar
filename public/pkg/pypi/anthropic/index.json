@@ -1,19 +1,36 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "2.5.0",
+ "latest": "2.6.0",
  "latest_stable": {
-  "date": "2026-11-04T20:27:46Z",
-  "version": "2.5.0"
+  "date": "2026-11-05T18:59:09Z",
+  "version": "2.6.0"
  },
- "metadata_fetched": "2026-11-05T06:00:03Z",
+ "metadata_fetched": "2026-11-06T06:00:02Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/anthropic/",
  "releases": [
+  {
+   "date": "2026-11-05T18:59:09Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/anthropic/2.6.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/44e40ff317/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "2.6.0",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-04T20:27:46Z",
    "ecosystem": "pypi",
@@ -55,6 +72,6 @@
   }
  ],
  "repository": "https://github.com/anthropics/anthropic-sdk-python",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "The official Python library for the anthropic API"
 }

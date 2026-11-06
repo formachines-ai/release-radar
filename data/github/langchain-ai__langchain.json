@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-05T06:00:05Z",
+ "fetched": "2026-11-06T06:00:04Z",
  "releases": [
+  {
+   "body": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
+   "date": "2026-11-05T22:56:58Z",
+   "name": "langchain-typesafe==0.0.2",
+   "prerelease": false,
+   "tag": "langchain-typesafe==0.0.2",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.2"
+  },
   {
    "body": "Changes since langchain-core==1.7.5\n\nrelease(core): 1.7.6 (#41698)\nperf(core): merge streamed `AIMessageChunk`s once when accumulating runnable streams (#41697)\nperf(core): stop `parse_partial_json` from retrying one character at a time (#41467)",
    "date": "2026-11-05T00:22:12Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "langchain-fireworks==1.6.2",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
-  },
-  {
-   "body": "Changes since langchain-deepseek==1.1.0\n\nfix(deepseek,infra): resolve compatible minimum OpenAI dependencies, bump min ver (#40738)\nrelease(deepseek): 1.1.1 (#40734)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/partners/deepseek (#40641)\nchore(model-profiles): refresh model profile data (#40399)\nfix(deepseek): route strict mode to the beta endpoint (#40249)\nchore(model-profiles): refresh model profile data (#39906)\nchore(model-profiles): refresh model profile data (#39844)\nfix(deepseek): map prompt_cache_hit_tokens to cache_read (#39668)\nchore(model-profiles): refresh model profile data (#39625)\nchore(model-profiles): refresh model profile data (#39166)\nchore(deps): refresh lockfiles (#38746)\nchore: bump vcrpy from 8.1.1 to 8.2.1 in /libs/partners/deepseek (#38318)\nchore: bump langsmith from 0.8.3 to 0.8.18 in /libs/partners/deepseek (#38320)\ndocs: refresh `README` installation and resources (#38119)\nrelease(core): 1.4.7 (#38111)\nfix(core,partners): rename package version trace metadata (#38110)\nrelease(core): 1.4.6 (#38061)\nfeat(core,partners): add package version tracking to tracing metadata (#35295)\nchore(infra): bump mypy to 2.1 and unify type-check config across the monorepo (#36470)\nfeat(standard-tests): validate tool call chunks during streaming (#34707)\nchore(partners): bump locks (#38052)\nhotfix(openai): min core dep (#37990)\ntest(langchain,partners): disable pytest-benchmark under xdist to silence `PytestBenchmarkWarning` (#37901)",
-   "date": "2026-09-22T04:30:11Z",
-   "name": "langchain-deepseek==1.1.1",
-   "prerelease": false,
-   "tag": "langchain-deepseek==1.1.1",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-deepseek%3D%3D1.1.1"
   }
  ],
  "repo": "langchain-ai/langchain"

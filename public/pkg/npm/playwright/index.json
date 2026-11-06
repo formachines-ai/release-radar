@@ -1,19 +1,134 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "1.64.1",
+ "latest": "1.65.0",
  "latest_stable": {
-  "date": "2026-10-14T11:54:49Z",
-  "version": "1.64.1"
+  "date": "2026-11-05T18:28:14Z",
+  "version": "1.65.0"
  },
- "metadata_fetched": "2026-11-05T06:00:44Z",
+ "metadata_fetched": "2026-11-06T06:00:50Z",
  "package": "playwright",
  "page": "https://releases.formachines.ai/pkg/npm/playwright/",
- "prereleases_in_window": 13,
+ "prereleases_in_window": 17,
  "registry": "https://www.npmjs.com/package/playwright",
  "releases": [
+  {
+   "date": "2026-11-05T23:42:52Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1793921730000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.65.0-beta-1793921730000",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T23:00:08Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1793919248000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.65.0-beta-1793919248000",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T22:21:36Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.66.0-alpha-1793916328000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.66.0-alpha-1793916328000",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T18:28:14Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/playwright/1.65.0",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f2676fb23c/",
+   "notes_url": "https://github.com/microsoft/playwright/releases/tag/v1.65.0",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "Breaking",
+     "quote": "## Breaking Changes ⚠️\n- TypeScript class fields now follow [`useDefineForClassFields`](https://playwright.dev/docs/test-typescript#tsconfig-class-fields) from your `tsconfig.json`, the same as `tsc`. It is enabled for `ES2022` and later targets, and when `target` is not specifie…"
+    },
+    {
+     "match": "no longer",
+     "quote": "…ser-context-cookies) and [apiRequestContext.cookies()](https://playwright.dev/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`. [API…"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`httpCredentials`](https://playwrig…"
+    }
+   ],
+   "version": "1.65.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T17:47:18Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1793900512000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.65.0-beta-1793900512000",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-05T16:22:34Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1793895462000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.65.0-beta-1793895462000",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-05T05:18:48Z",
    "ecosystem": "npm",
@@ -217,26 +332,9 @@
    "quotes": [],
    "version": "1.65.0-alpha-2026-10-31",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-30T05:18:49Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/playwright/1.65.0-alpha-2026-10-30",
-   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
-   "notes_url": "https://github.com/microsoft/playwright/releases",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "1.65.0-alpha-2026-10-30",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/microsoft/playwright",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "A high-level API to automate web browsers"
 }

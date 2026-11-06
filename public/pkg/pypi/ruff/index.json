@@ -1,20 +1,38 @@
 {
- "built": "2026-11-06T01:11:27Z",
+ "built": "2026-11-06T06:00:02Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "0.17.3",
+ "latest": "0.17.4",
  "latest_stable": {
-  "date": "2026-10-27T00:33:29Z",
-  "version": "0.17.3"
+  "date": "2026-11-05T18:51:36Z",
+  "version": "0.17.4"
  },
- "metadata_fetched": "2026-11-05T06:00:12Z",
+ "metadata_fetched": "2026-11-06T06:00:13Z",
  "package": "ruff",
  "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/ruff/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-05T18:51:36Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/ruff/0.17.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/ruff/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b98d8b356c/",
+   "notes_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.4",
+   "package": "ruff",
+   "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "0.17.4",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/astral-sh/ruff",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "An extremely fast Python linter and code formatter, written in Rust."
 }
