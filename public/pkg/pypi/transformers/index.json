@@ -1,5 +1,5 @@
 {
- "built": "2026-11-05T06:00:03Z",
+ "built": "2026-11-06T01:11:27Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -30,52 +30,9 @@
    "quotes": [],
    "version": "5.22.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T14:18:15Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/transformers/5.22.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fb0dc09296/",
-   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.22.0",
-   "package": "transformers",
-   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "## Breaking changes\n* 🚨 Separate EP logic into its own file (#49679) by @3outeille"
-    },
-    {
-     "match": "deprecation",
-     "quote": "* Remove deprecation cycle for candidate generators (#50034) by @Cyrilvallez in [#50034]"
-    }
-   ],
-   "version": "5.22.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-29T08:34:26Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/transformers/5.21.1",
-   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/88cbb8199f/",
-   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.21.1",
-   "package": "transformers",
-   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "5.21.1",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/huggingface/transformers",
- "stable_in_window": 3,
+ "stable_in_window": 1,
  "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
 }

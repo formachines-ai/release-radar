@@ -735,7 +735,8 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
     quotes = "".join(render_quote(q) for q in r["quotes"])
     kind = {"github_release": "release notes", "changelog": "changelog", "repo_releases": "releases on GitHub",
             "registry_page": "registry page"}.get(r["notes_kind"], "release notes")
-    links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">{kind} →</a>' if r.get("notes_go") else ""
+    kind_hint = f' <span class="note">({kind})</span>' if kind != "release notes" else ""
+    links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
     links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
     issue_title = urllib.parse.quote(f"Error in entry: {r['ecosystem']}/{r['name']} {r['version']}")
@@ -771,10 +772,14 @@ def render_index(model: dict, errata_count: int) -> str:
         f'<li><b>{len(model["packages"])}</b><span>packages tracked</span></li>'
         f'</ul>'
     )
+    flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
+    flagged_block.append('<ul class="cards">' + "".join(render_card(r, now) for r in flagged) + "</ul>" if flagged
+                else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
     body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>",
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
             'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
             'and no flag does not mean a safe update.</p>',
+            "\n".join(flagged_block),
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
     idx = [f'<details id="pkg-index"><summary>Find your package ({len(model["packages"])})</summary>']
@@ -792,9 +797,6 @@ def render_index(model: dict, errata_count: int) -> str:
     body.append(f'<p class="note">How flags work: the last {WINDOW_DAYS} days of releases are read for the exact lines of the release notes that say <em>breaking</em>, <em>deprecated</em>, <em>removed</em>, <em>renamed</em>, '
                 f'<em>dropped support</em> or <em>no longer</em>. Quotes are verbatim; the flag is a regular-expression match, not an opinion. '
                 f'Packages with a sandbox-verified fix on <a href="https://formachines.ai/errata/">Errata</a> ({errata_count} packages there) carry a green badge.</p>')
-    body.append('<h2 id="flagged">Flagged in the last 7 days</h2>')
-    body.append('<ul class="cards">' + "".join(render_card(r, now) for r in flagged) + "</ul>" if flagged
-                else '<p class="note">No release notes matched the breaking-change pattern this week.</p>')
     for eco, label in (("pypi", "PyPI"), ("npm", "npm")):
         sub = [r for r in rels if r["ecosystem"] == eco]
         body.append(f'<h2 id="{eco}">{esc(label)} — last {WINDOW_DAYS} days ({len(sub)})</h2>')
