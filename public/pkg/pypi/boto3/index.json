@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://pypi.org/project/boto3/",
  "releases": [
   {
+   "bump": "patch",
    "date": "2026-11-06T20:48:11Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -32,6 +33,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-05T20:24:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -49,6 +51,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-04T21:22:33Z",
    "ecosystem": "pypi",
    "errata_url": null,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://www.npmjs.com/package/fastify",
  "releases": [
   {
+   "bump": "patch",
    "date": "2026-11-02T10:46:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -32,6 +33,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T10:40:00Z",
    "ecosystem": "npm",
    "errata_url": null,

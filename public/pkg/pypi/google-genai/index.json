@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -22,6 +22,7 @@
  "registry": "https://pypi.org/project/google-genai/",
  "releases": [
   {
+   "bump": "major",
    "date": "2026-11-06T02:29:05Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
