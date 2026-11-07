@@ -103,6 +103,15 @@ public/                     the site — everything below is generated, do not e
 
 Signals for new packages: 404s on `/pkg/<eco>/<name>/` in the server log (see the analyst's metrics) and referers.
 
+## Bump label and honest notes on cards
+
+Each release has `bump` (`major|minor|patch|prerelease|unknown`) in `today.json` and `/pkg/*/index.json`, computed by
+`compute_bump()`: the version compared with the highest known stable numeric version below it (registry cache).
+Pre-releases are `prerelease`; no previous version or a non-numeric version is `unknown` (never guessed).
+Cards show the bump; flagged minor/patch releases get "regex flag in a minor/patch release". Unflagged cards say
+"No breaking keyword found in the release notes (checked <build date> UTC); notes can omit changes.", or
+"Release notes not fetched." when `notes_kind != github_release`. Labels are a version comparison plus the regex only.
+
 ## Breaking-change regex
 
 `BREAKING_RE` in `build.py`:

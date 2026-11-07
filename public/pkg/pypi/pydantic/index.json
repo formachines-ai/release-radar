@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://pypi.org/project/pydantic/",
  "releases": [
   {
+   "bump": "patch",
    "date": "2026-11-05T09:17:02Z",
    "ecosystem": "pypi",
    "errata_url": null,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://pypi.org/project/redis/",
  "releases": [
   {
+   "bump": "prerelease",
    "date": "2026-11-04T17:01:53Z",
    "ecosystem": "pypi",
    "errata_url": null,

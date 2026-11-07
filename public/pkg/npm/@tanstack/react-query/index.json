@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://www.npmjs.com/package/@tanstack/react-query",
  "releases": [
   {
+   "bump": "patch",
    "date": "2026-11-06T23:04:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -32,6 +33,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "minor",
    "date": "2026-11-06T21:19:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -49,6 +51,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-05T08:07:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -66,6 +69,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "minor",
    "date": "2026-11-04T20:13:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -83,6 +87,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-02T20:39:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -100,6 +105,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-02T13:57:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -122,6 +128,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "patch",
    "date": "2026-11-01T10:07:48Z",
    "ecosystem": "npm",
    "errata_url": null,

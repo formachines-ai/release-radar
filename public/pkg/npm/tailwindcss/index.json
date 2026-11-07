@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://www.npmjs.com/package/tailwindcss",
  "releases": [
   {
+   "bump": "patch",
    "date": "2026-11-06T15:16:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -37,6 +38,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-06T15:02:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -54,6 +56,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-05T23:23:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -71,6 +74,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-05T22:46:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -88,6 +92,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-05T14:51:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -105,6 +110,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T21:18:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -122,6 +128,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T21:09:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -139,6 +146,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T19:57:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -156,6 +164,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T18:39:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -173,6 +182,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T18:19:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -190,6 +200,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "unknown",
    "date": "2026-11-02T21:30:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -207,6 +218,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T19:02:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -224,6 +236,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T12:11:17Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -241,6 +254,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T10:38:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -258,6 +272,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T00:09:40Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -275,6 +290,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-01T21:47:49Z",
    "ecosystem": "npm",
    "errata_url": null,

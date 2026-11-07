@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T18:19:36Z",
+ "built": "2026-11-07T19:14:00Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -15,6 +15,7 @@
  "registry": "https://www.npmjs.com/package/@google/gemini-cli",
  "releases": [
   {
+   "bump": "minor",
    "date": "2026-11-04T20:32:45Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -37,6 +38,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T19:53:55Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -54,6 +56,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-04T01:24:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -71,6 +74,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-03T01:25:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -88,6 +92,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-02T01:42:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -105,6 +110,7 @@
    "yanked_or_deprecated": false
   },
   {
+   "bump": "prerelease",
    "date": "2026-11-01T01:17:34Z",
    "ecosystem": "npm",
    "errata_url": null,

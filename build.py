@@ -88,6 +88,29 @@ def is_prerelease(eco: str, ver: str) -> bool:
         return "-" in ver.split("+", 1)[0]
     return bool(PEP440_PRE_RE.search(ver)) or bool(PRERELEASE_RE.search(ver))
 
+SEMVER_NUM_RE = re.compile(r"^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?$")
+
+
+def version_tuple(ver: str) -> tuple[int, int, int] | None:
+    """(major, minor, patch) for plain numeric versions like 1, 1.2, v1.2.3; None for anything else."""
+    m = SEMVER_NUM_RE.match(ver.split("+", 1)[0].strip())
+    return tuple(int(g or 0) for g in m.groups()) if m else None
+
+
+def compute_bump(eco: str, ver: str, known: list[str]) -> str:
+    """major|minor|patch|prerelease|unknown vs the highest known stable version below this one."""
+    if is_prerelease(eco, ver):
+        return "prerelease"
+    cur = version_tuple(ver)
+    if cur is None:
+        return "unknown"
+    prevs = [t for v in known if not is_prerelease(eco, v) and (t := version_tuple(v)) is not None and t < cur]
+    if not prevs:
+        return "unknown"
+    prev = max(prevs)
+    return "major" if cur[0] != prev[0] else "minor" if cur[1] != prev[1] else "patch"
+
+
 log = logging.getLogger("build")
 
 
@@ -627,6 +650,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "prerelease": is_prerelease(eco, ver) or bool(gh and gh.get("prerelease")),
                 "yanked": bool(v.get("yanked")) or bool(v.get("deprecated")),
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
+                "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "flagged": bool(quotes), "quotes": quotes, "pkg_path": pkg["path"],
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
@@ -727,9 +751,19 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
     badges = []
     if r["flagged"]:
         badges.append('<span class="badge flag">breaking / deprecated wording</span>')
+    if r["flagged"] and r["bump"] in ("minor", "patch"):
+        badges.append('<span class="badge flag">regex flag in a minor/patch release</span>')
     if r.get("errata_url"):
         badges.append(f'<a class="badge errata" href="/go/{esc(r["errata_go"])}/" rel="nofollow">Errata: verified correction</a>')
     pre = '<span class="pre">pre-release</span>' if r["prerelease"] else ""
+    bump = f'<span class="pre bump">{esc(r["bump"])}</span>'
+    if r["flagged"]:
+        honest = ""
+    elif r["notes_kind"] != "github_release":
+        honest = '<p class="note nonote">Release notes not fetched.</p>'
+    else:
+        honest = (f'<p class="note nonote">No breaking keyword found in the release notes (checked {now.strftime("%Y-%m-%d")} UTC); '
+                  f'notes can omit changes.</p>')
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
     name_html = f'<a href="{esc(r["pkg_path"])}">{esc(r["name"])}</a>' if show_pkg_link else esc(r["name"])
     quotes = "".join(render_quote(q) for q in r["quotes"])
@@ -746,9 +780,9 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
                 f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
     return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
-            f'<span class="ver">{esc(r["version"])}</span>{pre}{yanked}'
+            f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{quotes}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
+            f'{" ".join(badges)}</div>{quotes}{honest}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -967,7 +1001,7 @@ def render_legal(built: str) -> str:
 def public_release(r: dict) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
-        "prerelease": r["prerelease"], "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"],
+        "prerelease": r["prerelease"], "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"],
         "quotes": [{"quote": q["quote"], "match": q["match"]} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
