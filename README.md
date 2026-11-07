@@ -60,6 +60,7 @@ public/                     the site — everything below is generated, do not e
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
+  pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (that package's releases in the window; valid empty channel if none)
   today.json                every release in the window with quotes and links
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   llms.txt · robots.txt · sitemap.xml · build.json
@@ -71,7 +72,7 @@ public/                     the site — everything below is generated, do not e
 
 ## Rules the code must keep (promises in VISION.md)
 
-1. **Addresses never change.** `/`, `/pkg/<eco>/<name>/`, `/pkg/<eco>/<name>/index.json`, `/today.json`, `/feed.xml`,
+1. **Addresses never change.** `/`, `/pkg/<eco>/<name>/`, `/pkg/<eco>/<name>/index.json`, `/pkg/<eco>/<name>/feed.xml`, `/today.json`, `/feed.xml`,
    `/llms.txt`, `/go/<id>/`, `/legal/` are stable. Removing a package from `config/packages.txt` removes its page —
    prefer not to; `build.py` never deletes `public/` wholesale.
 2. **AI disclosure on every page.** The footer line

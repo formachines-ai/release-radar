@@ -123,3 +123,4 @@ footer.site p { margin: 0.2rem 0; }
 .card .feedback a { color: var(--muted); display: inline-block; min-height: 24px; line-height: 24px; }
 
 .pkg-index { overflow-wrap: anywhere; line-height: 1.7; }
+.follow { margin: 0 0 1rem; overflow-wrap: anywhere; }
