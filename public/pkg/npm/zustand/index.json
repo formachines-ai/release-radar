@@ -1,20 +1,38 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "5.0.16",
+ "latest": "5.1.0",
  "latest_stable": {
-  "date": "2026-10-22T04:32:02Z",
-  "version": "5.0.16"
+  "date": "2026-11-06T14:07:48Z",
+  "version": "5.1.0"
  },
- "metadata_fetched": "2026-11-06T06:01:00Z",
+ "metadata_fetched": "2026-11-07T06:00:51Z",
  "package": "zustand",
  "page": "https://releases.formachines.ai/pkg/npm/zustand/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/zustand",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-06T14:07:48Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/zustand/5.1.0",
+   "json": "https://releases.formachines.ai/pkg/npm/zustand/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b275d2c9ce/",
+   "notes_url": "https://github.com/pmndrs/zustand/releases/tag/v5.1.0",
+   "package": "zustand",
+   "page": "https://releases.formachines.ai/pkg/npm/zustand/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "5.1.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pmndrs/zustand",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "🐻 Bear necessities for state management in React"
 }

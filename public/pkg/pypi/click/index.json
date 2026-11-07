@@ -1,5 +1,5 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": "https://click.palletsprojects.com/page/changes/",
  "ecosystem": "pypi",
  "errata": {
@@ -10,18 +10,49 @@
   "updated": "2026-10-27",
   "url": "https://formachines.ai/errata/pypi/click/"
  },
- "latest": "8.5.0",
+ "latest": "8.5.1",
  "latest_stable": {
-  "date": "2026-08-26T13:33:12Z",
-  "version": "8.5.0"
+  "date": "2026-11-06T17:36:59Z",
+  "version": "8.5.1"
  },
- "metadata_fetched": "2026-11-06T06:00:10Z",
+ "metadata_fetched": "2026-11-07T06:00:08Z",
  "package": "click",
  "page": "https://releases.formachines.ai/pkg/pypi/click/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/click/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-06T17:36:59Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/click/",
+   "flagged": true,
+   "id": "pypi/click/8.5.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/click/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8b3bed9670/",
+   "notes_url": "https://github.com/pallets/click/releases/tag/8.5.1",
+   "package": "click",
+   "page": "https://releases.formachines.ai/pkg/pypi/click/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "breaking",
+     "quote": "This is the Click 8.5.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release."
+    },
+    {
+     "match": "no longer",
+     "quote": "or while it exits, no longer escapes as an unhandled traceback. The command still"
+    },
+    {
+     "match": "no longer",
+     "quote": "- A command's short help no longer stops at an abbreviation such as `vs.` or `e.g.`"
+    }
+   ],
+   "version": "8.5.1",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pallets/click",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Composable command line interface toolkit"
 }

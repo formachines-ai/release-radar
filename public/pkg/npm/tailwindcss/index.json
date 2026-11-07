@@ -1,19 +1,58 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "4.3.4",
+ "latest": "4.3.5",
  "latest_stable": {
-  "date": "2026-11-02T21:30:42Z",
-  "version": "4.3.4"
+  "date": "2026-11-06T15:16:02Z",
+  "version": "4.3.5"
  },
- "metadata_fetched": "2026-11-06T06:00:55Z",
+ "metadata_fetched": "2026-11-07T06:00:46Z",
  "package": "tailwindcss",
  "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
- "prereleases_in_window": 13,
+ "prereleases_in_window": 14,
  "registry": "https://www.npmjs.com/package/tailwindcss",
  "releases": [
+  {
+   "date": "2026-11-06T15:16:02Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/tailwindcss/4.3.5",
+   "json": "https://releases.formachines.ai/pkg/npm/tailwindcss/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/325a338c43/",
+   "notes_url": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.5",
+   "package": "tailwindcss",
+   "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "breaks",
+     "quote": "- Remove `as: '*.css'` from the `@tailwindcss/turbopack` setup in its README, because it breaks CSS modules ([#20660](https://github.com/tailwindlabs/tailwindcss/pull/20660))"
+    }
+   ],
+   "version": "4.3.5",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-06T15:02:42Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/tailwindcss/0.0.0-insiders.9b2c925",
+   "json": "https://releases.formachines.ai/pkg/npm/tailwindcss/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/e519a046db/",
+   "notes_url": "https://github.com/tailwindlabs/tailwindcss/releases",
+   "package": "tailwindcss",
+   "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "0.0.0-insiders.9b2c925",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-05T23:23:10Z",
    "ecosystem": "npm",
@@ -254,6 +293,6 @@
   }
  ],
  "repository": "https://github.com/tailwindlabs/tailwindcss",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "A utility-first CSS framework for rapidly building custom user interfaces."
 }

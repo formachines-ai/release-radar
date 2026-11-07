@@ -1,0 +1,254 @@
+{
+ "fetched": "2026-11-07T06:00:09Z",
+ "releases": [
+  {
+   "body": "This is the Click 8.5.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.5.1/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-5-1\r\nMilestone: https://github.com/pallets/click/milestone/66\r\n\r\n- Fix `copy.deepcopy()` and `pickle` on a `Parameter`, `Option` or `Command`. #3805\r\n- A `KeyboardInterrupt` arriving while `Command.main()` reports an abort or an error,\r\n  or while it exits, no longer escapes as an unhandled traceback. The command still\r\n  exits with the intended code; only the message may be lost. #3802\r\n- Add `Option.get_help_spec()`, which returns the option's left help\r\n  column even when the option is hidden. `Option.get_help_record()` still\r\n  returns `None` for hidden options, so help screens are unchanged. #3821\r\n- The `Positional arguments` help section lists every argument of the command,\r\n  not only the documented ones. An argument with no `help` gets an empty\r\n  description, the same way an option with no `help` does. #3860\r\n- `Argument.get_help_record()` always returns a tuple. It used to return\r\n  `None` for an argument with no `help`. #3860\r\n- Document which types are inferred from `default`, and what an unrecognized\r\n  `type` callable does to a command-line value. #3036 #3808\r\n- `path_type` narrows the converted value's type for `convert` and `prompt`.\r\n  #3822 #3858\r\n- `Parameter` accepts a new `help` argument, and `Option` and `Argument`\r\n  inherit it. `Parameter.to_info_dict()` now reports `help` for every kind of parameter.\r\n  #3861\r\n- A command's short help no longer stops at an abbreviation such as `vs.` or `e.g.`\r\n  inside the first sentence. A period ends the sentence only when it closes the text\r\n  or the next word does not start in lowercase. #3865\r\n- With `show_envvar=True`, an option's error message now prints all variables of an\r\n  `envvar` sequence instead of the `repr` of the sequence. #3884\r\n- An empty `envvar`, such as `[]` or `\"\"`, shows the same help and error message as\r\n  no `envvar` when `show_envvar=True`. The help screen used to show `[env var: ]`.\r\n  #3884\r\n- Align command's deprecated help text to options and arguments: do not translate the\r\n  command's own help text, only the `(DEPRECATED)` label. #3901",
+   "date": "2026-11-06T17:38:44Z",
+   "name": "8.5.1",
+   "prerelease": false,
+   "tag": "8.5.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.5.1"
+  },
+  {
+   "body": "This is the Click 8.5.0 feature release. A feature release may include new features, remove previously deprecated code, add new deprecation, or introduce potentially breaking changes.\r\n\r\nWe encourage everyone to upgrade. You can read more about our [Version Support Policy][version] on our website.\r\n\r\n[version]: https://palletsprojects.com/versions\r\n\r\nPyPI: https://pypi.org/project/click/8.5.0/\r\nChanges:  https://click.palletsprojects.com/page/changes/#version-8-5-0\r\nMilestone https://github.com/pallets/click/milestone/33\r\n\r\n- Add built-in shell completion support for PowerShell (Windows PowerShell\r\n  5.1+ and pwsh 7+) alongside the existing `bash`, `zsh`, and `fish`\r\n  completers. Use `_FOO_BAR_COMPLETE=powershell_source foo-bar` to generate\r\n  the completion script. #2672 #3637\r\n- Supported versions of Windows enable ANSI terminal styles by default.\r\n  Colorama is no longer a dependency and is not used. #2986 #3505\r\n- {class}`Argument` accepts a `help` parameter, and help output includes\r\n  a `Positional arguments` section when argument help is available. #2983 #3473\r\n- `confirm()` and `prompt()` strip ANSI color and style codes from the\r\n  prompt when the output stream does not support them, matching `echo()`.\r\n  This stripping was lost in `8.4.0` when #2969 began writing the\r\n  prompt with `input()` directly. #3572 #3653\r\n- {class}`Path` with `allow_dash=True` no longer triggers a `BytesWarning`,\r\n  an error under `python -bb`, when checking a value against the `-`\r\n  convention. #2877 #3642\r\n- Add {func}`custom_version_option`, a `--version` option whose output is\r\n  produced by a callback, covering cases {func}`version_option` intentionally\r\n  does not. The feature set of {func}`version_option` is now frozen; see\r\n  [discussion #3527](https://github.com/pallets/click/discussions/3527). #3581\r\n- `style()` and `secho()` no longer silently drop the 256-color index `0`\r\n  (black) passed as `fg` or `bg`, and now validate color arguments. Invalid\r\n  colors raise a `ValueError` instead of a `TypeError`. #3677\r\n- The automatic help option stores its value under the reserved name\r\n  `_click_default_help` instead of `help`, so a parameter named `help` no\r\n  longer breaks parsing. The new name is visible in\r\n  {meth}`Command.to_info_dict` output. Parameters that overwrite each other's\r\n  value trigger a warning: an argument sharing its name with another\r\n  parameter, or any parameter claiming the reserved name. Options may still\r\n  share a name to compete for the same value (feature switches).\r\n  #2819 #3678\r\n- `unstyle` and the ANSI handling behind help-text wrapping now strip the full\r\n  CSI escape-sequence grammar. #3681\r\n- Streamline `Option` flag handling: the flag-kind, type, lazy-default and\r\n  validation steps in `Option.__init__` move into focused helpers, and\r\n  `flag_value` and `default` keep their unset sentinel at construction\r\n  (resolved lazily on read) so `is UNSET` reliably tells a user-supplied value\r\n  from an auto-derived one. Runtime behavior is unchanged, but\r\n  {meth}`Parameter.to_info_dict` now resolves `default=True` on a feature\r\n  switch to its `flag_value`, matching what the function receives at call\r\n  time. #3641\r\n- {func}`get_binary_stream` and {func}`get_text_stream` are deprecated and\r\n  will be removed in Click 9.0. #3481 #3695\r\n- The following `click.utils` names were never intentionally public and are\r\n  now private (`_`-prefixed). The old names remain available with a\r\n  `DeprecationWarning` until Click 9.0: `LazyFile`, `KeepOpenFile`,\r\n  `make_default_short_help`, `PacifyFlushWrapper`, and `safecall`.\r\n  #3099 #3695\r\n- Deprecate {meth}`CliRunner.isolated_filesystem`. It relies on\r\n  {func}`os.chdir`, which mutates process-global state and is not\r\n  thread-safe. The helper predates Python 3 and modern pytest: use a\r\n  temporary directory ({class}`tempfile.TemporaryDirectory` or pytest's\r\n  `tmp_path` fixture) with absolute paths instead. For running tests in\r\n  parallel, use process-based isolation (such as `pytest-xdist`) rather\r\n  than threads, since {meth}`CliRunner.invoke` also redirects the\r\n  process-global standard streams. #3501 #3700 #3704\r\n- `prompt()` is now generically typed and returns the type produced by\r\n  `type`, `value_proc`, or a matching `default` instead of `Any`.\r\n  {class}`ParamType` takes a second optional type parameter describing the\r\n  input value it accepts (`ParamType[int, str]` for a type converting\r\n  strings to integers), defaulting to `Any`. #3407\r\n- {meth}`Command.get_help_option_names` returns the help option names in the\r\n  order they were declared. #3728\r\n- {func}`get_pager_file` yields a text stream on Windows again. The temporary\r\n  file backend opened its file in binary mode, so writing a `str` to the pager\r\n  raised `TypeError: a bytes-like object is required, not 'str'`, and the\r\n  `color` argument was ignored on that path. Regression introduced in `8.4.0`\r\n  by #1572. #3731 #3732 #3740 #3739\r\n- {func}`progressbar` settles on its final position when `update_min_steps`\r\n  does not divide the total. Steps below that threshold are applied when the\r\n  bar finishes, so `show_pos` renders `20/20` rather than the last multiple\r\n  it reached. #3571 #3769\r\n- An error raised while writing to the pager no longer gets replaced by\r\n  `PermissionError: [WinError 32]` on Windows. The temporary file backend\r\n  unlinked its file without closing it first, and Windows refuses to remove a\r\n  file the process still holds open, so the cleanup failure masked the real\r\n  exception. #3731 #3764\r\n- The temporary file the pager writes to on Windows is opened with the encoding\r\n  {func}`get_pager_file` picked for the output stream, and with\r\n  `errors=\"replace\"` to match the pipe backend. Any text stdout can encode\r\n  reaches the pager.\r\n- The temporary file pager backend forwards any parameters the user set in\r\n  `PAGER` to the pager command instead of silently dropping them. On Windows,\r\n  `PAGER=\"less -R\"` now invokes `less -R` on the temporary file rather than\r\n  bare `less`. #3777\r\n- Improve raw mode detection by parsing the option tokens. #3416\r\n  #3777\r\n- {func}`edit` accepts `os.PathLike` values for `filename`, in addition to\r\n  strings. #2869 #3781",
+   "date": "2026-08-27T04:00:53Z",
+   "name": "8.5.0",
+   "prerelease": false,
+   "tag": "8.5.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.5.0"
+  },
+  {
+   "body": "This is the Click 8.4.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.4.2/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-4-2\r\nMilestone: https://github.com/pallets/click/milestone/34\r\n\r\n- Fix Fish shell completion broken in `8.4.0` by #3126. Newlines and\r\n  tabs in option help text are now escaped, keeping the original completion\r\n  format while still supporting multi-line help. #3502\r\n  #3043 #3504 #3508\r\n- Deprecated commands and options with empty or missing help text no longer\r\n  render a stray leading space before the `(DEPRECATED)` label. #3509\r\n- A {class}`Group` with `invoke_without_command=True` marks its subcommand as\r\n  optional in the usage help, showing `[COMMAND]` instead of `COMMAND`.\r\n  #3059 #3507\r\n- `echo_via_pager` flushes after each write, so passing a generator streams\r\n  output to the pager incrementally instead of staying hidden until the pipe\r\n  buffer fills. #3242 #2542 #3534\r\n- `echo_via_pager` and `get_pager_file` no longer close a borrowed stdout\r\n  stream when no external pager runs, completing the partial\r\n  `I/O operation on closed file` fix from #3482. #3449\r\n  #3533\r\n- Fix CLI usage symopsis for optional arguments producing double square brackets\r\n  `[[a|b|c]]...` whose type already brackets their metavar. #3578\r\n- {func}`version_option` resolves a `package_name` that does not match an\r\n  installed distribution as an import (top-level module) name via\r\n  {func}`importlib.metadata.packages_distributions`. Packages whose\r\n  top-level module name differs from their distribution name (`PIL` vs\r\n  `Pillow`, `jwt` vs `PyJWT`) no longer raise `RuntimeError` out of the\r\n  box. #2331 #1884 #3125 #3582",
+   "date": "2026-06-26T16:11:15Z",
+   "name": "8.4.2",
+   "prerelease": false,
+   "tag": "8.4.2",
+   "url": "https://github.com/pallets/click/releases/tag/8.4.2"
+  },
+  {
+   "body": "This is the Click 8.4.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.4.1/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-4-1\r\nMilestone: https://github.com/pallets/click/milestone/32\r\n\r\n- `get_parameter_source()` is available during eager callbacks and type conversion again. #3458 #3484\r\n- Zsh completion scripts parse correctly on Windows. #3277 # 3466\r\n- Shell completion of `Choice` `Enum` values produces a valid completion result. #3015\r\n- Fix empty byte-string handling in echo. #3487\r\n- Fix closed file error with `echo_via_pager`. #3449\r\n",
+   "date": "2026-05-22T04:08:49Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.4.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.4.1"
+  },
+  {
+   "body": "This is the Click 8.4.0 feature release. A feature release may include new features, remove previously deprecated code, add new deprecation, or introduce potentially breaking changes.\r\n\r\nWe encourage everyone to upgrade. You can read more about our [Version Support Policy][version] on our website.\r\n\r\n[version]: https://palletsprojects.com/versions\r\n\r\nPyPI: https://pypi.org/project/click/8.4.0/\r\nChanges:  https://click.palletsprojects.com/page/changes/#version-8-4-0\r\nMilestone https://github.com/pallets/click/milestone/30\r\n\r\n-   `ParamType` typing improvements. #3371\r\n\r\n    -   :class:`ParamType` is now a generic abstract base class,\r\n        parameterized by its converted value type.\r\n    -   :meth:`~ParamType.convert` return types are narrowed on all\r\n        concrete types (``str`` for :class:`STRING`, ``int`` for\r\n        :class:`INT`, etc.).\r\n    -   :meth:`~ParamType.to_info_dict` returns specific\r\n        :class:`~typing.TypedDict` subclasses instead of\r\n        ``dict[str, Any]``.\r\n    -   :class:`CompositeParamType` and the number-range base are now\r\n        generic with abstract methods.\r\n-   Refactor ``convert_type`` to extract type inference into a private\r\n    ``_guess_type`` helper, and add :func:`typing.overload` signatures.\r\n    #3372\r\n-   `Parameter` typing improvements. #2805\r\n\r\n    -   :class:`Parameter` is now an abstract base class, making explicit\r\n        that it cannot be instantiated directly.\r\n    -   :attr:`Parameter.name` is now ``str`` instead of ``str | None``.\r\n        When ``expose_value=False``, the name is set to ``\"\"`` instead\r\n        of ``None``.\r\n    -   The ``ctx`` parameter of :meth:`Parameter.get_error_hint` is now\r\n        typed as ``Context | None``, matching the runtime behavior.\r\n-   Split string values from ``default_map`` for parameters with ``nargs > 1``\r\n    or :class:`Tuple` type, matching environment variable behavior.\r\n    #2745 #3364\r\n-   Auto-detect ``type=UNPROCESSED`` for ``flag_value`` of non-basic types\r\n    (not ``str``, ``int``, ``float``, or ``bool``), so programmer-provided\r\n    Python objects like classes and enum members are passed through unchanged\r\n    instead of being stringified. Previously ``type=click.UNPROCESSED`` had\r\n    to be set explicitly. #2012 #3363\r\n-   The error hint now uses `Command.get_help_option_names` to pick\r\n    non-shadowed help option names, so ``Try '... -h'`` no longer points to a\r\n    subcommand option that shadows ``-h``. All surviving names are shown\r\n    (``-h/--help``). #2790  #3208\r\n-   Fix readline functionality on non-Windows platforms. Prompt text is now\r\n    passed directly to readline instead of being printed separately, allowing\r\n    proper backspace, line editing, and line wrapping behavior. #2968\r\n    #2969\r\n-   Use :func:`os.startfile` on Windows to open URLs in :func:`open_url`,\r\n    replacing the ``start`` built-in which cannot be invoked without\r\n    ``shell=True``. #3164 #3186\r\n-   Fix Fish shell completion errors when option help text contains newlines.\r\n    #3043 #3126\r\n-   Add :class:`NoSuchCommand` exception with suggestions for misspelled\r\n    commands. #3107 #3228\r\n-   Use :class:`ValueError` message when conversion in :class:`FuncParamType` would\r\n    fail. #3105 #3211\r\n-   Add ``click.get_pager_file`` for file-like access to an output\r\n    pager. #1572 #3405\r\n-   :class:`~click.formatting.TextWrapper` and\r\n    :func:`~click.formatting.wrap_text` now measure line width in visible\r\n    characters, ignoring ANSI escape sequences. #3420\r\n-   Fix :meth:`HelpFormatter.write_usage` emitting only a blank line when\r\n    called without ``args``. The usage prefix and program name are now\r\n    written even when no arguments follow, and the trailing separator\r\n    space is stripped so the line ends at the program name.\r\n    #3360 #3434\r\n-   Show custom error messages from types when :func:`prompt` with\r\n    ``hide_input=True`` fails validation, instead of always showing a\r\n    generic message. Built-in type messages mask the input value.\r\n    #2809 #3256\r\n-   Add ``capture`` parameter to :class:`CliRunner` with two modes: ``sys``\r\n    (default) and ``fd``. ``fd`` redirects file descriptors ``1`` and ``2``\r\n    via :func:`os.dup2` so output that bypasses ``sys.stdout`` (stale stream\r\n    references, C extensions, subprocesses, ``faulthandler``) is captured\r\n    with proper isolation. #854 #2412 #2468\r\n    #2497 #2761 #2827 #2865\r\n-   Revert the ``8.3.3`` change that exposed the original file descriptor\r\n    via ``fileno()`` on the redirected ``CliRunner`` streams in the default\r\n    capture mode. ``os.dup2(w, sys.stdout.fileno())`` calls inside a CLI no\r\n    longer mutate the host runner's stdout, which broke Pytest's ``fd``-level\r\n    capture teardown. C-level consumers that need a real ``fd`` should use\r\n    ``capture=\"fd\"``. #3384 #3391\r\n-   Mark additional built-in strings with ``gettext()`` to extend translation\r\n    coverage. #2902\r\n-   Fix feature switch groups (several ``flag_value`` options sharing one\r\n    parameter name) silently dropping an explicit ``default`` when a sibling\r\n    option without an explicit default was declared first. Arbitration is now\r\n    source-aware: a more explicit :class:`ParameterSource` always wins, and\r\n    within ``ParameterSource.DEFAULT``, an option that received an explicit\r\n    ``default=`` keyword wins over a sibling whose default was auto-derived.\r\n    The 8.3.x first-wins fallback for remaining ties was reverted to the\r\n    pre-8.3.x last-wins fallback. #3403 #3404\r\n-   Fix missing space between option help text and the ``(DEPRECATED)``\r\n    label, and localize the option label so it matches the command label.\r\n    The label and the ``DeprecationWarning`` reason suffix are now produced\r\n    by shared helpers. #3423\r\n-   Document short option stacking (``-abc`` is parsed as ``-a -b -c``) and\r\n    clarify that multi-character short option names are not supported.\r\n    #2779 #3431",
+   "date": "2026-05-17T05:12:31Z",
+   "name": "8.4.0",
+   "prerelease": false,
+   "tag": "8.4.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.4.0"
+  },
+  {
+   "body": "This is the Click 8.3.3 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.3.3/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-3-3\r\nMilestone: https://github.com/pallets/click/milestone/30\r\n\r\n-   Use :func:`shlex.split` to split pager and editor commands into ``argv``\r\n    lists for :class:`subprocess.Popen`, removing ``shell=True``.\r\n    #1026 #1477 #2775\r\n-   Fix ``TypeError`` when rendering help for an option whose default value is\r\n    an object that doesn't support equality comparison with strings, such as\r\n    ``semver.Version``. #3298 #3299\r\n-   Fix pager test pollution under parallel execution by using pytest's\r\n    ``tmp_path`` fixture instead of a shared temporary file path. #3238\r\n-   Treat ``Sentinel.UNSET`` values in a ``default_map`` as absent, so they fall\r\n    through to the next default source instead of being used as the value.\r\n    #3224 #3240\r\n-   Patch ``pdb.Pdb`` in ``CliRunner`` isolation so ``pdb.set_trace()``,\r\n    ``breakpoint()``, and debuggers subclassing ``pdb.Pdb`` (ipdb, pdbpp) can\r\n    interact with the real terminal instead of the captured I/O streams.\r\n    #654 #824 #843 #951 #3235\r\n-   Add optional randomized parallel test execution using ``pytest-randomly`` and\r\n    ``pytest-xdist`` to detect test pollution and race conditions. #3151\r\n-   Add contributor documentation for running stress tests, randomized\r\n    parallel tests, and Flask smoke tests. #3151 #3177\r\n-   Show custom ``show_default`` string in prompts, matching the existing\r\n    help text behavior. #2836 #2837 #3165 #3262 #3280\r\n    #3328\r\n-   Fix ``default=True`` with boolean ``flag_value`` always returning the\r\n    ``flag_value`` instead of ``True``. The ``default=True`` to ``flag_value``\r\n    substitution now only applies to non-boolean flags, where ``True`` acts as a\r\n    sentinel meaning \"activate this flag by default\". For boolean flags,\r\n    ``default=True`` is returned as a literal value. #3111 #3239\r\n-   Mark ``make_default_short_help`` as private API. #3189 #3250\r\n-   ``CliRunner``'s redirected streams now expose the original file descriptor\r\n    via ``fileno()``, so that ``faulthandler``, ``subprocess``, and other\r\n    C-level consumers no longer crash with ``io.UnsupportedOperation``.\r\n    #2865\r\n-   Change :class:`ParameterSource` to an :class:`~enum.IntEnum` and reorder\r\n    its members from most to least explicit, so values can be compared to\r\n    check whether a parameter was explicitly provided. #2879 #3248",
+   "date": "2026-04-22T16:22:12Z",
+   "name": "8.3.3",
+   "prerelease": false,
+   "tag": "8.3.3",
+   "url": "https://github.com/pallets/click/releases/tag/8.3.3"
+  },
+  {
+   "body": "This is the Click 8.3.2 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.3.2/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-3-2\r\nMilestone: https://github.com/pallets/click/milestone/29\r\n\r\n-   Fix handling of ``flag_value`` when ``is_flag=False`` to allow such options to be\r\n    used without an explicit value. #3084 #3152\r\n-   Hide ``Sentinel.UNSET`` values as ``None`` when using ``lookup_default()``.\r\n    #3136 #3199 #3202 #3209 #3212 #3224\r\n-   Prevent ``_NamedTextIOWrapper`` from closing streams owned by ``StreamMixer``.\r\n    #824 #2991 #2993 #3110 #3139 #3140\r\n-   Add comprehensive tests for ``CliRunner`` stream lifecycle, covering\r\n    logging interaction, multi-threaded safety, and sequential invocation\r\n    isolation. Add high-iteration stress tests behind a ``stress`` marker\r\n    with a dedicated CI job. #3139\r\n-   Fix callable ``flag_value`` being instantiated when used as a default via\r\n    ``default=True``. #3121 #3201 #3213 #3225",
+   "date": "2026-04-03T19:14:59Z",
+   "name": "8.3.2",
+   "prerelease": false,
+   "tag": "8.3.2",
+   "url": "https://github.com/pallets/click/releases/tag/8.3.2"
+  },
+  {
+   "body": "This is the Click 8.3.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.3.1/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-3-1\r\nMilestone: https://github.com/pallets/click/milestone/28\r\n\r\n-   Don't discard pager arguments by correctly using ``subprocess.Popen``. #3039 #3055\r\n-   Replace ``Sentinel.UNSET`` default values by ``None`` as they're passed through the ``Context.invoke()`` method. #3066 #3065 #3068\r\n-   Fix conversion of ``Sentinel.UNSET`` happening too early, which caused incorrect behavior for multiple parameters using the same name. #3071 #3079\r\n-   Fix rendering when ``prompt`` and ``confirm`` parameter ``prompt_suffix`` is empty. #3019 #3021\r\n-   When ``Sentinel.UNSET`` is found during parsing, it will skip calls to ``type_cast_value``. #3069 #3090 \r\n-   Hide ``Sentinel.UNSET`` values as ``None`` when looking up for other parameters through the context inside parameter callbacks. #3136 #3137",
+   "date": "2025-11-15T20:46:24Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.3.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.3.1"
+  },
+  {
+   "body": "This is the Click 8.3.0 feature release. A feature release may include new features, remove previously deprecated code, add new deprecation, or introduce potentially breaking changes.\r\n\r\nWe encourage everyone to upgrade. You can read more about our [Version Support Policy][version] on our website.\r\n\r\n[version]: https://palletsprojects.com/versions\r\n\r\nPyPI: https://pypi.org/project/click/8.3.0/\r\nChanges:  https://click.palletsprojects.com/page/changes/#version-8-3-0\r\nMilestone https://github.com/pallets/click/milestone/27\r\n\r\n-   **Improved flag option handling**: Reworked the relationship between ``flag_value``\r\n    and ``default`` parameters for better consistency:\r\n\r\n    * The ``default`` parameter value is now preserved as-is and passed directly\r\n      to CLI functions (no more unexpected transformations)\r\n    * Exception: flag options with ``default=True`` maintain backward compatibility\r\n      by defaulting to their ``flag_value``\r\n    * The ``default`` parameter can now be any type (``bool``, ``None``, etc.)\r\n    * Fixes inconsistencies reported in: #1992  #2514 #2610\r\n      #3024  #3030\r\n-   Allow ``default`` to be set on ``Argument`` for ``nargs = -1``. #2164\r\n    #3030\r\n-   Show correct auto complete value for ``nargs`` option in combination with flag\r\n    option #2813\r\n-   Show correct auto complete value for nargs option in combination with flag option #2813\r\n-   Fix handling of quoted and escaped parameters in Fish autocompletion. #2995 #3013\r\n-   Lazily import ``shutil``.  #3023\r\n-   Properly forward exception information to resources registered with\r\n    ``click.core.Context.with_resource()``. #2447  #3058\r\n-   Fix regression related to EOF handling in CliRunner.  #2939 #2940",
+   "date": "2025-09-18T17:34:57Z",
+   "name": "8.3.0",
+   "prerelease": false,
+   "tag": "8.3.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.3.0"
+  },
+  {
+   "body": "This is the Click 8.2.2 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.2.2/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-2-2\r\nMilestone: https://github.com/pallets/click/milestone/25\r\n\r\n-   Fix reconciliation of `default`, `flag_value` and `type` parameters for\r\n    flag options, as well as parsing and normalization of environment variables.\r\n    #2952  #2956\r\n-   Fix typing issue in ``BadParameter`` and ``MissingParameter`` exceptions for the\r\n    parameter ``param_hint`` that did not allow for a sequence of string where the\r\n    underlying functino ``_join_param_hints`` allows for it. #2777  #2990\r\n-   Use the value of ``Enum`` choices to render their default value in help\r\n    screen. #2911 #3004\r\n-   Fix completion for the Z shell (``zsh``) for completion items containing\r\n    colons. #2703 #2846\r\n-   Don't include envvar in error hint when not configured. #2971 #2972\r\n-   Fix a rare race in ``click.testing.StreamMixer``'s finalization that manifested\r\n    as a ``ValueError`` on close in a multi-threaded test session.\r\n    #2993 #2991",
+   "date": "2025-08-02T02:25:26Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.2.2",
+   "url": "https://github.com/pallets/click/releases/tag/8.2.2"
+  },
+  {
+   "body": "This is the Click 8.2.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.2.1/\r\nChanges: https://click.palletsprojects.com/page/changes/#version-8-2-1\r\nMilestone: https://github.com/pallets/click/milestone/24?closed=1\r\n\r\n-   Fix flag value handling for flag options with a provided type. #2894 #2897\r\n-   Fix shell completion for nested groups. #2906\r\n-   Flush `sys.stderr` at the end of `CliRunner.invoke`. #2682\r\n-   Fix EOF handling for stdin input in `CliRunner`. #2787",
+   "date": "2025-05-20T23:20:12Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.2.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.2.1"
+  },
+  {
+   "body": "This is the Click 8.2.0 feature release. A feature release may include new features, remove previously deprecated code, add new deprecation, or introduce potentially breaking changes.\r\n\r\nWe encourage everyone to upgrade. You can read more about our [Version Support Policy][version] on our website.\r\n\r\n[version]: https://palletsprojects.com/versions\r\n\r\nPyPI: https://pypi.org/project/click/8.2.0/\r\nChanges: https://click.palletsprojects.com/en/stable/changes/\r\nMilestone https://github.com/pallets/click/milestone/15\r\n\r\n- Drop support for Python 3.7, 3.8,and 3.9. #2588, #2893\r\n- Use modern packaging metadata with `pyproject.toml` instead of `setup.cfg`. #2438\r\n- Use `flit_core` instead of `setuptools` as build backend. #2543\r\n- Deprecate the `__version__` attribute. Use feature detection, or `importlib.metadata.version(\"click\")`, instead. #2598\r\n- `BaseCommand` is deprecated. `Command` is the base class for all commands. #2589\r\n- `MultiCommand` is deprecated. `Group` is the base class for all group commands. #2590\r\n- The current parser and related classes and methods, are deprecated.\r\n    #2205\r\n    - `OptionParser` and the `parser` module, which is a modified copy of `optparse` in the standard library.\r\n    - `Context.protected_args` is unneeded. `Context.args` contains any remaining arguments while parsing.\r\n    - `Parameter.add_to_parser` (on both `Argument` and `Option`) is unneeded. Parsing works directly without building a separate parser.\r\n    - `split_arg_string` is moved from `parser` to `shell_completion`.\r\n- Enable deferred evaluation of annotations with `from __future__ import annotations`. #2270\r\n- When generating a command's name from a decorated function's name, the suffixes `_command`, `_cmd`, `_group`, and `_grp` are removed. #2322\r\n- Show the `types.ParamType.name` for `types.Choice` options within `--help` message if `show_choices=False` is specified. #2356\r\n- Do not display default values in prompts when `Option.show_default` is `False`. #2509\r\n- Add `get_help_extra` method on `Option` to fetch the generated extra items used in `get_help_record` to render help text. #2516 #2517\r\n- Keep stdout and stderr streams independent in `CliRunner`. Always collect stderr output and never raise an exception. Add a new output stream to simulate what the user sees in its terminal. Removes the `mix_stderr` parameter in `CliRunner`. #2522 #2523\r\n- `Option.show_envvar` now also shows environment variable in error messages. #2695 #2696\r\n- `Context.close` will be called on exit. This results in all `Context.call_on_close` callbacks and context managers added via `Context.with_resource` to be closed on exit as well. #2680\r\n- Add `ProgressBar(hidden: bool)` to allow hiding the progressbar. #2609\r\n- A `UserWarning` will be shown when multiple parameters attempt to use the same name. #2396\r\n- When using `Option.envvar` with `Option.flag_value`, the `flag_value` will always be used instead of the value of the environment variable. #2746 #2788\r\n- Add `Choice.get_invalid_choice_message` method for customizing the invalid choice message. #2621 #2622\r\n- If help is shown because `no_args_is_help` is enabled (defaults to `True` for groups, `False` for commands), the exit code is 2 instead of 0. #1489 #1489\r\n- Contexts created during shell completion are closed properly, fixing a `ResourceWarning` when using `click.File`. #2644 #2800 #2767\r\n- `click.edit(filename)` now supports passing an iterable of filenames in case the editor supports editing multiple files at once. Its return type is now also typed: `AnyStr` if `text` is passed, otherwise `None`. #2067 #2068\r\n- Specialized typing of `progressbar(length=...)` as `ProgressBar[int]`. #2630\r\n- Improve `echo_via_pager` behaviour in face of errors. #2674\r\n    - Terminate the pager in case a generator passed to `echo_via_pager` raises an exception.\r\n    - Ensure to always close the pipe to the pager process and wait for it to terminate.\r\n    - `echo_via_pager` will not ignore `KeyboardInterrupt` anymore. This allows the user to search for future output of the generator when using less and then aborting the program using ctrl-c.\r\n- `deprecated: bool | str` can now be used on options and arguments. This previously was only available for `Command`. The message can now also be customised by using a `str` instead of a `bool`. #2263 #2271\r\n    - `Command.deprecated` formatting in `--help` changed from `(Deprecated) help` to `help (DEPRECATED)`.\r\n    - Parameters cannot be required nor prompted or an error is raised.\r\n    - A warning will be printed when something deprecated is used.\r\n- Add a `catch_exceptions` parameter to `CliRunner`. If `catch_exceptions` is not passed to `CliRunner.invoke`, the value from `CliRunner` is used. #2817 #2818 \r\n- `Option.flag_value` will no longer have a default value set based on `Option.default` if `Option.is_flag` is `False`. This results in `Option.default` not needing to implement `__bool__`. #2829\r\n- Incorrect `click.edit` typing has been corrected. #2804\r\n- `Choice` is now generic and supports any iterable value. This allows you to use enums and other non-`str` values. #2796 #605\r\n- Remove `click.HelpOption` that was introduced in 8.1.8 due to api incompatibility. #2832 \r\n\r\nPlease remember, applications _must_ lock their full dependency tree to control when updates are installed and ensure reproducible deployments. Use one of the various project management or lock tools available in the Python ecosystem. Test with warnings treated as errors to be able to adapt to deprecation warnings early.",
+   "date": "2025-05-10T22:22:29Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.2.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.2.0"
+  },
+  {
+   "body": "This is the Click 8.1.8 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.\r\n\r\nPyPI: https://pypi.org/project/click/8.1.8/\r\nChanges: https://click.palletsprojects.com/en/stable/changes/#version-8-1-8\r\nMilestone https://github.com/pallets/click/milestones/23?closed=1\r\n\r\n-   Fix an issue with type hints for `click.open_file()`. #2717\r\n-   Fix issue where error message for invalid `click.Path` displays on\r\n    multiple lines. #2697\r\n-   Fixed issue that prevented a default value of `\"\"` from being displayed in\r\n    the help for an option. #2500\r\n-   The test runner handles stripping color consistently on Windows. #2705\r\n-   Show correct value for flag default when using `default_map`. #2632\r\n-   Fix `click.echo(color=...)` passing `color` to coloroma so it can be\r\n    forced on Windows. #2606.\r\n-   More robust bash version check, fixing problem on Windows with git-bash. #2638\r\n-   Cache the help option generated by the `help_option_names` setting to\r\n    respect its eagerness. #2811\r\n-   Replace uses of `os.system` with `subprocess.Popen`. #1476\r\n-   Exceptions generated during a command will use the context's `color`\r\n    setting when being displayed. #2193\r\n-   Error message when defining option with invalid name is more descriptive. #2452\r\n-   Refactor code generating default `--help` option to deduplicate code. #2563\r\n-   Test `CLIRunner` resets patched `_compat.should_strip_ansi`. #2732",
+   "date": "2024-12-21T18:39:41Z",
+   "name": "8.1.8",
+   "prerelease": false,
+   "tag": "8.1.8",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.8"
+  },
+  {
+   "body": "This is a fix release for the 8.1.x feature branch.\r\n\r\n- Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-7\r\n- Milestone: https://github.com/pallets/click/milestone/22?closed=1",
+   "date": "2023-08-17T17:29:32Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.7",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.7"
+  },
+  {
+   "body": "This is a fix release for the 8.1.x feature branch. If you were having issues with type checking tools like pyright or mypy not accepting uses of Click's decorators, this should fix that.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-6\r\n* Milestone: https://github.com/pallets/click/milestone/21?closed=1",
+   "date": "2023-07-18T20:05:42Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.6",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.6"
+  },
+  {
+   "body": "This is a fix release for the 8.1.x feature branch. This fixes an issue with decorator type annotations that caused type checkers to fail for valid code. There are no runtime behavior changes.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-5\r\n* Milestone: https://github.com/pallets/click/milestone/20?closed=1",
+   "date": "2023-07-13T15:08:19Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.5",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.5"
+  },
+  {
+   "body": "This is a fix release for the 8.1.x feature branch.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-4\r\n* Milestone: https://github.com/pallets/click/milestone/19?closed=1",
+   "date": "2023-07-06T18:28:00Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.4",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.4"
+  },
+  {
+   "body": "This is a fix release for the [8.1.0](https://github.com/pallets/click/releases/tag/8.1.0) feature release.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-3\r\n* Milestone: https://github.com/pallets/click/milestone/18?closed=1",
+   "date": "2022-04-28T17:37:47Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.3",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.3"
+  },
+  {
+   "body": "This is a fix release for the [8.1.0](https://github.com/pallets/click/releases/tag/8.1.0) feature release.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-2\r\n* Milestone: https://github.com/pallets/click/milestone/17?closed=1",
+   "date": "2022-03-31T20:55:12Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.2",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.2"
+  },
+  {
+   "body": "This is a fix release for the [8.1.0](https://github.com/pallets/click/releases/tag/8.1.0) feature release.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-1\r\n* Milestone: https://github.com/pallets/click/milestone/14?closed=1",
+   "date": "2022-03-30T20:17:25Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.1"
+  },
+  {
+   "body": "This is a feature release, which includes new features and removes previously deprecated features. The 8.1.x branch is now the supported bugfix branch, the 8.0.x branch will become a tag marking the end of support for that branch. We encourage everyone to upgrade, and to use a tool such as [pip-tools](https://pypi.org/project/pip-tools/) to pin all dependencies and control upgrades.\r\n\r\n* Changes: https://click.palletsprojects.com/en/8.1.x/changes/#version-8-1-0\r\n* Milestone: https://github.com/pallets/click/milestone/9?closed=1",
+   "date": "2022-03-28T17:42:02Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.1.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.1.0"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/8.0.x/changes/#version-8-0-4\r\n* Milestone: https://github.com/pallets/click/milestone/13?closed=1",
+   "date": "2022-02-18T20:32:53Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.4",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.4"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/8.0.x/changes/#version-8-0-3",
+   "date": "2021-10-10T18:08:47Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.3",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.3"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/8.0.x/changes/#version-8-0-2",
+   "date": "2021-10-08T22:38:10Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.2",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.2"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/8.0.x/changes/#version-8-0-1",
+   "date": "2021-05-19T21:02:51Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.1",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.1"
+  },
+  {
+   "body": "New major versions of all the core Pallets libraries, including Click 8.0, have been released! :tada: \r\n\r\n* Read the announcement on our blog: https://palletsprojects.com/blog/flask-2-0-released/\r\n* Read the full list of changes: https://click.palletsprojects.com/changes/#version-8-0-0\r\n* Retweet the announcement on Twitter: https://twitter.com/PalletsTeam/status/1392266507296514048\r\n* Follow our blog, Twitter, or GitHub to see future announcements.\r\n\r\nThis represents a significant amount of work, and there are quite a few changes. Be sure to carefully read the changelog, and use tools such as pip-compile and Dependabot to pin your dependencies and control your updates.",
+   "date": "2021-05-12T00:10:32Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "8.0.0",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.0"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/master/changes/#version-8-0",
+   "date": "2021-04-16T14:10:41Z",
+   "name": "",
+   "prerelease": true,
+   "tag": "8.0.0rc1",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.0rc1"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/master/changelog/#version-8-0",
+   "date": "2020-11-29T14:42:02Z",
+   "name": "",
+   "prerelease": true,
+   "tag": "8.0.0a1",
+   "url": "https://github.com/pallets/click/releases/tag/8.0.0a1"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/7.x/changelog/#version-7-1-2",
+   "date": "2020-04-27T21:02:36Z",
+   "name": "7.1.2",
+   "prerelease": false,
+   "tag": "7.1.2",
+   "url": "https://github.com/pallets/click/releases/tag/7.1.2"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/7.x/changelog/#version-7-1-1\r\n* Blog: https://palletsprojects.com/blog/click-7-1-released/\r\n* Twitter: https://twitter.com/PalletsTeam/status/1237090317838340099",
+   "date": "2020-03-09T19:01:33Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "7.1.1",
+   "url": "https://github.com/pallets/click/releases/tag/7.1.1"
+  },
+  {
+   "body": "* Changes: https://click.palletsprojects.com/en/7.x/changelog/#version-7-1\r\n* Blog: https://palletsprojects.com/blog/click-7-1-released/\r\n* Twitter: https://twitter.com/PalletsTeam/status/1237090317838340099",
+   "date": "2020-03-09T19:00:29Z",
+   "name": "",
+   "prerelease": false,
+   "tag": "7.1",
+   "url": "https://github.com/pallets/click/releases/tag/7.1"
+  }
+ ],
+ "repo": "pallets/click"
+}

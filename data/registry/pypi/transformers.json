@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-06T06:00:06Z",
+ "fetched": "2026-11-07T06:00:06Z",
  "homepage": "https://github.com/huggingface/transformers",
- "latest": "5.22.1",
+ "latest": "5.22.2",
  "name": "transformers",
  "page": "https://pypi.org/project/transformers/",
  "repo": "huggingface/transformers",
  "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training.",
  "versions": [
+  {
+   "date": "2026-11-06T15:42:54Z",
+   "version": "5.22.2",
+   "yanked": false
+  },
   {
    "date": "2026-10-30T07:47:59Z",
    "version": "5.22.1",
@@ -202,11 +207,6 @@
   {
    "date": "2026-03-04T17:41:42Z",
    "version": "5.3.0",
-   "yanked": false
-  },
-  {
-   "date": "2026-02-16T18:53:59Z",
-   "version": "5.2.0",
    "yanked": false
   }
  ]

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": "https://websockets.readthedocs.io/en/stable/project/changelog.html",
  "ecosystem": "pypi",
  "errata": {
@@ -15,31 +15,13 @@
   "date": "2026-10-30T15:06:39Z",
   "version": "17.4"
  },
- "metadata_fetched": "2026-11-06T06:00:19Z",
+ "metadata_fetched": "2026-11-07T06:00:17Z",
  "package": "websockets",
  "page": "https://releases.formachines.ai/pkg/pypi/websockets/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/websockets/",
- "releases": [
-  {
-   "date": "2026-10-30T15:06:39Z",
-   "ecosystem": "pypi",
-   "errata_url": "https://formachines.ai/errata/pypi/websockets/",
-   "flagged": false,
-   "id": "pypi/websockets/17.4",
-   "json": "https://releases.formachines.ai/pkg/pypi/websockets/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/ba39a2e430/",
-   "notes_url": "https://github.com/python-websockets/websockets/releases/tag/17.4",
-   "package": "websockets",
-   "page": "https://releases.formachines.ai/pkg/pypi/websockets/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "17.4",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/python-websockets/websockets",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "An implementation of the WebSocket Protocol (RFC 6455 & 7692)"
 }

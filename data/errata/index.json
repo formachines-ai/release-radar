@@ -3,7 +3,7 @@
   "errata": 28,
   "error_signatures": 25,
   "packages": 21,
-  "packages_checked": 94
+  "packages_checked": 95
  },
  "errors": {
   "json": "https://formachines.ai/errata/errors/index.json",
@@ -21,16 +21,16 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "models": [
   {
-   "checked": 813,
+   "checked": 817,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-05",
+   "last_run": "2026-11-06",
    "model": "claude-sonnet-5-5",
    "outdated": 92
   },
   {
-   "checked": 888,
+   "checked": 894,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-05",
+   "last_run": "2026-11-06",
    "model": "gpt-6.1-sol",
    "outdated": 132
   },

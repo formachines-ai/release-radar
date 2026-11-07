@@ -1,5 +1,5 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,10 +8,10 @@
   "date": "2026-11-05T09:16:21Z",
   "version": "3.5.45"
  },
- "metadata_fetched": "2026-11-06T06:00:59Z",
+ "metadata_fetched": "2026-11-07T06:00:51Z",
  "package": "vue",
  "page": "https://releases.formachines.ai/pkg/npm/vue/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/vue",
  "releases": [
   {
@@ -29,23 +29,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "3.5.45",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-30T08:02:55Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/vue/3.6.0-rc.14",
-   "json": "https://releases.formachines.ai/pkg/npm/vue/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4ae2bb08a2/",
-   "notes_url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.14",
-   "package": "vue",
-   "page": "https://releases.formachines.ai/pkg/npm/vue/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "3.6.0-rc.14",
    "yanked_or_deprecated": false
   }
  ],

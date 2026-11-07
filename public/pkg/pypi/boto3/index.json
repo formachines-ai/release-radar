@@ -1,19 +1,36 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.43.125",
+ "latest": "1.43.126",
  "latest_stable": {
-  "date": "2026-11-05T20:24:12Z",
-  "version": "1.43.125"
+  "date": "2026-11-06T20:48:11Z",
+  "version": "1.43.126"
  },
- "metadata_fetched": "2026-11-06T06:00:07Z",
+ "metadata_fetched": "2026-11-07T06:00:07Z",
  "package": "boto3",
  "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/boto3/",
  "releases": [
+  {
+   "date": "2026-11-06T20:48:11Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/boto3/1.43.126",
+   "json": "https://releases.formachines.ai/pkg/pypi/boto3/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/0b85655c77/",
+   "notes_url": "https://github.com/boto/boto3/releases",
+   "package": "boto3",
+   "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "1.43.126",
+   "yanked_or_deprecated": false
+  },
   {
    "date": "2026-11-05T20:24:12Z",
    "ecosystem": "pypi",
@@ -46,23 +63,6 @@
    "prerelease": false,
    "quotes": [],
    "version": "1.43.124",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-30T19:18:47Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/boto3/1.43.123",
-   "json": "https://releases.formachines.ai/pkg/pypi/boto3/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/0b85655c77/",
-   "notes_url": "https://github.com/boto/boto3/releases",
-   "package": "boto3",
-   "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
-   "prerelease": false,
-   "quotes": [],
-   "version": "1.43.123",
    "yanked_or_deprecated": false
   }
  ],

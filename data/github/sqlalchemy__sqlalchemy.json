@@ -5,7 +5,7 @@
   "2.1.7": null,
   "2.1.8": null
  },
- "fetched": "2026-11-06T06:00:17Z",
+ "fetched": "2026-11-07T06:00:15Z",
  "releases": [
   {
    "body": "\n# 2.1.8\n\nReleased: November 3, 2026\n## general\n\n\n-   **[general] [change]** All files published to PyPI for a release, including the source\n    distribution as well as all wheels, are now uploaded using PyPI's trusted\n    publishing mechanism from SQLAlchemy's GitHub Actions workflow, and include\n    a [PEP 740](https://peps.python.org/pep-0740) attestation, so that every file in a release carries\n    provenance information.  Previously, the source distribution and some\n    wheels were uploaded without an attestation, which caused PyPI to display\n    provenance warnings for recent releases.\n    \n    This change is also **backported** to: 2.0.57\n    \n    References: [#13759](https://www.sqlalchemy.org/trac/ticket/13759)\n",

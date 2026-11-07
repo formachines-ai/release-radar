@@ -3,20 +3,25 @@
  "dist_tags": {
   "alpha": "1.0.0-alpha.9",
   "dev": "1.5.1-dev-1781824996270",
-  "latest": "1.6.2",
+  "latest": "1.6.3",
   "next": "1.0.0-alpha.9",
   "rc": "1.5.11-rc.0",
   "tag-for-publishing-older-releases": "0.2.20"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-06T06:00:29Z",
+ "fetched": "2026-11-07T06:00:25Z",
  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/libs/langchain/",
- "latest": "1.6.2",
+ "latest": "1.6.3",
  "name": "langchain",
  "page": "https://www.npmjs.com/package/langchain",
  "repo": "langchain-ai/langchainjs",
  "summary": "Typescript bindings for langchain",
  "versions": [
+  {
+   "date": "2026-11-07T04:27:12Z",
+   "deprecated": false,
+   "version": "1.6.3"
+  },
   {
    "date": "2026-11-05T20:24:21Z",
    "deprecated": false,

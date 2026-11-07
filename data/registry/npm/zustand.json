@@ -1,17 +1,22 @@
 {
  "changelog": null,
  "dist_tags": {
-  "latest": "5.0.16"
+  "latest": "5.1.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-06T06:01:00Z",
+ "fetched": "2026-11-07T06:00:51Z",
  "homepage": "https://github.com/pmndrs/zustand",
- "latest": "5.0.16",
+ "latest": "5.1.0",
  "name": "zustand",
  "page": "https://www.npmjs.com/package/zustand",
  "repo": "pmndrs/zustand",
  "summary": "🐻 Bear necessities for state management in React",
  "versions": [
+  {
+   "date": "2026-11-06T14:07:48Z",
+   "deprecated": false,
+   "version": "5.1.0"
+  },
   {
    "date": "2026-10-22T04:32:02Z",
    "deprecated": false,

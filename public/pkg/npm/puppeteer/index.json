@@ -1,5 +1,5 @@
 {
- "built": "2026-11-06T06:00:02Z",
+ "built": "2026-11-07T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-22T11:53:03Z",
   "version": "25.16.0"
  },
- "metadata_fetched": "2026-11-06T06:00:53Z",
+ "metadata_fetched": "2026-11-07T06:00:45Z",
  "package": "puppeteer",
  "page": "https://releases.formachines.ai/pkg/npm/puppeteer/",
  "prereleases_in_window": 0,

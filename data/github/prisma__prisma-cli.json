@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-06T06:00:53Z",
+ "fetched": "2026-11-07T06:00:44Z",
  "releases": [
+  {
+   "body": "## What's Changed\n* Release 8.0.0-rc.33: follow the products' released versions: @prisma/composer-cli 0.37.0 -> 0.38.0; @prisma/composer 0.37.0 -> 0.38.0 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/389\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.32...v8.0.0-rc.33",
+   "date": "2026-11-06T20:02:25Z",
+   "name": "v8.0.0-rc.33",
+   "prerelease": true,
+   "tag": "v8.0.0-rc.33",
+   "url": "https://github.com/prisma/prisma-cli/releases/tag/v8.0.0-rc.33"
+  },
+  {
+   "body": "## What's Changed\n* TML-3439: A product release releases the CLI, so prisma@latest never pins an older ORM toolchain by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/384\n* Run the bump script with node so the automatic CLI release does not stop at pnpm's frozen install by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/387\n* Release 8.0.0-rc.32: follow the products' released versions: @prisma/orm-toolchain 8.0.0-rc.22 -> 8.0.0-rc.23 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/388\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.31...v8.0.0-rc.32",
+   "date": "2026-11-06T18:48:12Z",
+   "name": "v8.0.0-rc.32",
+   "prerelease": true,
+   "tag": "v8.0.0-rc.32",
+   "url": "https://github.com/prisma/prisma-cli/releases/tag/v8.0.0-rc.32"
+  },
+  {
+   "body": "## What's Changed\n* docs: add the DEPLOY namespace to the error reference by @quicksilversel in https://github.com/prisma/prisma-cli/pull/377\n* Follow the products' released versions: @prisma/composer-cli 0.36.0 -> 0.37.0; @prisma/composer 0.36.0 -> 0.37.0 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/385\n* Bump to version 8.0.0-rc.31 by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/386\n\n## New Contributors\n* @quicksilversel made their first contribution in https://github.com/prisma/prisma-cli/pull/377\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.30...v8.0.0-rc.31",
+   "date": "2026-11-06T16:15:16Z",
+   "name": "v8.0.0-rc.31",
+   "prerelease": true,
+   "tag": "v8.0.0-rc.31",
+   "url": "https://github.com/prisma/prisma-cli/releases/tag/v8.0.0-rc.31"
+  },
   {
    "body": "## What's Changed\n* Follow the products' released versions: @prisma/composer-cli 0.35.0 -> 0.36.0; @prisma/composer 0.35.0 -> 0.36.0 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/378\n* Follow the products' released versions: @prisma/orm-toolchain 8.0.0-rc.21 -> 8.0.0-rc.22 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/381\n* Bump to version 8.0.0-rc.30 by @wmadden-electric in https://github.com/prisma/prisma-cli/pull/380\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.29...v8.0.0-rc.30",
    "date": "2026-11-03T13:32:46Z",

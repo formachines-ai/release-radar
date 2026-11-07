@@ -1,10 +1,10 @@
 {
  "changelog": null,
  "dist_tags": {
-  "dev": "8.0.0-rc.30-dev.179",
+  "dev": "8.0.0-rc.33-dev.185",
   "early-access": "5.12.0-dev.21",
   "integration": "7.10.0-integration-fix-prisma-publish-token.1",
-  "latest": "8.0.0-rc.30",
+  "latest": "8.0.0-rc.33",
   "next": "8.0.0-rc.10",
   "patch-dev": "7.9.1-dev.1",
   "prev": "7.10.1",
@@ -12,14 +12,64 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-06T06:00:52Z",
+ "fetched": "2026-11-07T06:00:44Z",
  "homepage": "https://github.com/prisma/prisma-cli#readme",
- "latest": "8.0.0-rc.30",
+ "latest": "8.0.0-rc.33",
  "name": "prisma",
  "page": "https://www.npmjs.com/package/prisma",
  "repo": "prisma/prisma-cli",
  "summary": "The Prisma CLI: one binary for the ORM, Composer, and the Prisma Developer Platform.",
  "versions": [
+  {
+   "date": "2026-11-06T20:01:51Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.33"
+  },
+  {
+   "date": "2026-11-06T19:57:59Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.33-dev.185"
+  },
+  {
+   "date": "2026-11-06T18:46:42Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.32"
+  },
+  {
+   "date": "2026-11-06T18:44:22Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.32-dev.184"
+  },
+  {
+   "date": "2026-11-06T18:37:47Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.31-dev.183"
+  },
+  {
+   "date": "2026-11-06T16:18:00Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.31-dev.182"
+  },
+  {
+   "date": "2026-11-06T16:14:47Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.31"
+  },
+  {
+   "date": "2026-11-06T16:09:43Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.31-dev.181"
+  },
+  {
+   "date": "2026-11-06T16:01:42Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.30-dev.180"
+  },
+  {
+   "date": "2026-11-06T09:38:41Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.10"
+  },
   {
    "date": "2026-11-05T10:06:03Z",
    "deprecated": false,

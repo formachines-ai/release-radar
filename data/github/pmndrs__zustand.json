@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-07T06:00:52Z",
+ "releases": [
+  {
+   "body": "The persist and devtools middleware are improved thanks to @Tnalxmsk and @dgesteves!\r\n\r\n## Release note\r\n\r\n- The `persist` middleware now supports `PromiseLike` results from storage reads, migrations, and migration writes. `persist.rehydrate()` now returns a native `Promise<void>`, which you can await to ensure hydration is complete.\r\n- The `devtools` middleware now supports dispatching store actions directly from Redux DevTools using the new `actionCreators` option. It also supports nested actions and arguments.\r\n\r\n## What's Changed\r\n* fix(middleware): persist migration supporting promise-like by @dai-shi in https://github.com/pmndrs/zustand/pull/3583\r\n* fix(middleware): devtools action dispatching by @dai-shi in https://github.com/pmndrs/zustand/pull/3595\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.16...v5.1.0",
+   "date": "2026-11-06T14:01:00Z",
+   "name": "v5.1.0",
+   "prerelease": false,
+   "tag": "v5.1.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.1.0"
+  },
+  {
+   "body": "This version has some improvements thanks to contributors: @MarshallOfSound @koreahghg @chungyo @Godsdar\r\n\r\n\r\n## What's Changed\r\n* perf(react): don't memoize getServerSnapshot in useStore by @dai-shi in https://github.com/pmndrs/zustand/pull/3563\r\n* fix(devtools): apply serialize.reviver when parsing devtools messages by @dai-shi in https://github.com/pmndrs/zustand/pull/3568\r\n* fix(devtools): preserve shared connections during store cleanup by @dai-shi in https://github.com/pmndrs/zustand/pull/3580\r\n* fix(persist): preserve external devtools action arguments by @dai-shi in https://github.com/pmndrs/zustand/pull/3592\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.15...v5.0.16",
+   "date": "2026-10-22T04:27:55Z",
+   "name": "v5.0.16",
+   "prerelease": false,
+   "tag": "v5.0.16",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.16"
+  },
+  {
+   "body": "Fix some issues in devtools and persist middleware.\r\n\r\n## What's Changed\r\n* fix(devtools): correct V8 stack regex when source path contains spaces by @dai-shi with @Copilot in https://github.com/pmndrs/zustand/pull/3531\r\n* fix(persist): clearStorage() should invalidate concurrent async rehydration by @dai-shi with @Copilot in https://github.com/pmndrs/zustand/pull/3555\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.14...v5.0.15",
+   "date": "2026-08-13T00:36:16Z",
+   "name": "v5.0.15",
+   "prerelease": false,
+   "tag": "v5.0.15",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.15"
+  },
+  {
+   "body": "This release fixes a type issue in devtools.\r\n\r\n## What's Changed\r\n* fix(devtools): improve type inference for Devtools initializer by @dbritto-dev in https://github.com/pmndrs/zustand/pull/3511\r\n\r\n## New Contributors\r\n* @TheSeydiCharyyev made their first contribution in https://github.com/pmndrs/zustand/pull/3487\r\n* @brofrong made their first contribution in https://github.com/pmndrs/zustand/pull/3496\r\n* @hyun907 made their first contribution in https://github.com/pmndrs/zustand/pull/3506\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.13...v5.0.14",
+   "date": "2026-05-28T10:17:28Z",
+   "name": "v5.0.14",
+   "prerelease": false,
+   "tag": "v5.0.14",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.14"
+  },
+  {
+   "body": "This release includes an improvement in the devtools middleware.\r\n\r\n## What's Changed\r\n* refactor(devtools): remove duplicate module augmentation by @mahmoodhamdi in https://github.com/pmndrs/zustand/pull/3443\r\n* fix(devtools): support Firefox/Safari stack format in findCallerName by @SBolsec in https://github.com/pmndrs/zustand/pull/3469\r\n\r\n## New Contributors\r\n* @mahmoodhamdi made their first contribution in https://github.com/pmndrs/zustand/pull/3443\r\n* @FelixEckl-vireq made their first contribution in https://github.com/pmndrs/zustand/pull/3466\r\n* @KimHyeongRae0 made their first contribution in https://github.com/pmndrs/zustand/pull/3471\r\n* @lstak made their first contribution in https://github.com/pmndrs/zustand/pull/3483\r\n* @AlexRixten made their first contribution in https://github.com/pmndrs/zustand/pull/3474\r\n* @SBolsec made their first contribution in https://github.com/pmndrs/zustand/pull/3469\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.12...v5.0.13",
+   "date": "2026-05-05T00:03:38Z",
+   "name": "v5.0.13",
+   "prerelease": false,
+   "tag": "v5.0.13",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.13"
+  },
+  {
+   "body": "Two small fixes.\r\n\r\n## What's Changed\r\n* fix(persist): use latest state in post-rehydration callback by @Shohjahon-n in https://github.com/pmndrs/zustand/pull/3391\r\n* fix(devtools): correct redux devtools config type extension by @grigoriy-reshetniak in https://github.com/pmndrs/zustand/pull/3414\r\n\r\n## New Contributors\r\n* @pavan-sh made their first contribution in https://github.com/pmndrs/zustand/pull/3378\r\n* @Copilot made their first contribution in https://github.com/pmndrs/zustand/pull/3395\r\n* @Aravindsreeni made their first contribution in https://github.com/pmndrs/zustand/pull/3400\r\n* @wallzero made their first contribution in https://github.com/pmndrs/zustand/pull/3401\r\n* @chaesunbak made their first contribution in https://github.com/pmndrs/zustand/pull/3405\r\n* @Shohjahon-n made their first contribution in https://github.com/pmndrs/zustand/pull/3391\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.11...v5.0.12",
+   "date": "2026-03-16T02:43:26Z",
+   "name": "v5.0.12",
+   "prerelease": false,
+   "tag": "v5.0.12",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.12"
+  },
+  {
+   "body": "This release includes small improvements in middleware thanks to contributors.\r\n\r\n## What's Changed\r\n* chore: improve typing in devtools middleware by @grigoriy-reshetniak in https://github.com/pmndrs/zustand/pull/3362\r\n* fix(persist): avoid relying on global localStorage by @honuuk in https://github.com/pmndrs/zustand/pull/3367\r\n* fix(immer): Proper typing for immer middleware in combination with slices  by @wheerd in https://github.com/pmndrs/zustand/pull/3371\r\n\r\n## New Contributors\r\n* @SeongYongLee made their first contribution in https://github.com/pmndrs/zustand/pull/3355\r\n* @grigoriy-reshetniak made their first contribution in https://github.com/pmndrs/zustand/pull/3351\r\n* @DormancyWang made their first contribution in https://github.com/pmndrs/zustand/pull/3363\r\n* @Ea-st-ring made their first contribution in https://github.com/pmndrs/zustand/pull/3369\r\n* @winner07 made their first contribution in https://github.com/pmndrs/zustand/pull/3373\r\n* @honuuk made their first contribution in https://github.com/pmndrs/zustand/pull/3367\r\n* @wheerd made their first contribution in https://github.com/pmndrs/zustand/pull/3371\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.10...v5.0.11",
+   "date": "2026-02-01T02:12:19Z",
+   "name": "v5.0.11",
+   "prerelease": false,
+   "tag": "v5.0.11",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.11"
+  },
+  {
+   "body": "This version includes a fix to the `persist` middleware for an edge case.\r\n\r\n## What's Changed\r\n* fix(persist): prevent race condition during concurrent rehydrate calls by @Niyaz-Mazhitov in https://github.com/pmndrs/zustand/pull/3336\r\n\r\n## New Contributors\r\n* @max-programming made their first contribution in https://github.com/pmndrs/zustand/pull/3310\r\n* @oleksandr-danylchenko made their first contribution in https://github.com/pmndrs/zustand/pull/3319\r\n* @MateuszSobiech made their first contribution in https://github.com/pmndrs/zustand/pull/3334\r\n* @EduardoRangelG made their first contribution in https://github.com/pmndrs/zustand/pull/3326\r\n* @1mehdifaraji made their first contribution in https://github.com/pmndrs/zustand/pull/3339\r\n* @kamja44 made their first contribution in https://github.com/pmndrs/zustand/pull/3349\r\n* @Niyaz-Mazhitov made their first contribution in https://github.com/pmndrs/zustand/pull/3336\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.9...v5.0.10",
+   "date": "2026-01-12T06:12:40Z",
+   "name": "v5.0.10",
+   "prerelease": false,
+   "tag": "v5.0.10",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.10"
+  },
+  {
+   "body": "This includes experimental middleware `unstable_ssrSafe` for a new usage with Next.js.\r\nRelated discussion: https://github.com/pmndrs/zustand/discussions/2740\r\n\r\n## What's Changed\r\n* experimental: unstable ssrSafe middleware by @dai-shi in https://github.com/pmndrs/zustand/pull/3308\r\n\r\n## New Contributors\r\n* @Dan503 made their first contribution in https://github.com/pmndrs/zustand/pull/3222\r\n* @01-binary made their first contribution in https://github.com/pmndrs/zustand/pull/3223\r\n* @ugouhar made their first contribution in https://github.com/pmndrs/zustand/pull/3233\r\n* @ehsanaslani made their first contribution in https://github.com/pmndrs/zustand/pull/3241\r\n* @totorototo made their first contribution in https://github.com/pmndrs/zustand/pull/3252\r\n* @yuraBezh made their first contribution in https://github.com/pmndrs/zustand/pull/3246\r\n* @davbrito made their first contribution in https://github.com/pmndrs/zustand/pull/3281\r\n* @Triumph-light made their first contribution in https://github.com/pmndrs/zustand/pull/3209\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.8...v5.0.9",
+   "date": "2025-11-30T01:03:10Z",
+   "name": "v5.0.9",
+   "prerelease": false,
+   "tag": "v5.0.9",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.9"
+  },
+  {
+   "body": "A bug fix in `shallow` and a tiny improvement in `persist`.\r\n\r\n## What's Changed\r\n* fix(shallow): undefined value by @dai-shi in https://github.com/pmndrs/zustand/pull/3205\r\n* feat(middleare/persist): return storage promise from setState by @dai-shi in https://github.com/pmndrs/zustand/pull/3206\r\n\r\n## New Contributors\r\n* @witch-factory made their first contribution in https://github.com/pmndrs/zustand/pull/3207\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.7...v5.0.8",
+   "date": "2025-08-19T23:18:40Z",
+   "name": "v5.0.8",
+   "prerelease": false,
+   "tag": "v5.0.8",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.8"
+  },
+  {
+   "body": "This enables a small optimization in some edge cases.\r\n\r\n## What's Changed\r\n* fix(react): useCallback for getSnapshot by @dai-shi in https://github.com/pmndrs/zustand/pull/3192\r\n\r\n## New Contributors\r\n* @noritaka1166 made their first contribution in https://github.com/pmndrs/zustand/pull/3161\r\n* @Henry8192 made their first contribution in https://github.com/pmndrs/zustand/pull/3170\r\n* @soyboi made their first contribution in https://github.com/pmndrs/zustand/pull/3171\r\n* @maltesa made their first contribution in https://github.com/pmndrs/zustand/pull/3183\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.6...v5.0.7",
+   "date": "2025-07-31T00:14:40Z",
+   "name": "v5.0.7",
+   "prerelease": false,
+   "tag": "v5.0.7",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.7"
+  },
+  {
+   "body": "Some very minor changes.\r\n\r\n## What's Changed\r\n* fix(devtools): Avoid inferring action type when explicit action name is provided by @vchirikov in https://github.com/pmndrs/zustand/pull/3147\r\n* refactor(middleware): replace export * with explicit named and type exports by @sukvvon in https://github.com/pmndrs/zustand/pull/3151\r\n\r\n## New Contributors\r\n* @csark0812 made their first contribution in https://github.com/pmndrs/zustand/pull/3135\r\n* @clonemycode made their first contribution in https://github.com/pmndrs/zustand/pull/3139\r\n* @vchirikov made their first contribution in https://github.com/pmndrs/zustand/pull/3147\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.5...v5.0.6",
+   "date": "2025-06-26T14:14:41Z",
+   "name": "v5.0.6",
+   "prerelease": false,
+   "tag": "v5.0.6",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.6"
+  },
+  {
+   "body": "It comes with some small improvements.\r\n\r\n## What's Changed\r\n* feat(vanilla): update shallow compare function and tests by @dbritto-dev in https://github.com/pmndrs/zustand/pull/3108\r\n* feat: add devtools.cleanup() method by @maxam2017 in https://github.com/pmndrs/zustand/pull/3111\r\n* refactor: remove unnecessary type assertion in createJSONStorage by @2yunseong in https://github.com/pmndrs/zustand/pull/3113\r\n* feat(devtool): inferred action type by @alimertcakar in https://github.com/pmndrs/zustand/pull/2987\r\n\r\n## New Contributors\r\n* @Josh68 made their first contribution in https://github.com/pmndrs/zustand/pull/3106\r\n* @wingedotter5 made their first contribution in https://github.com/pmndrs/zustand/pull/3115\r\n* @maxam2017 made their first contribution in https://github.com/pmndrs/zustand/pull/3111\r\n* @2yunseong made their first contribution in https://github.com/pmndrs/zustand/pull/3113\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.4...v5.0.5",
+   "date": "2025-05-21T12:07:50Z",
+   "name": "v5.0.5",
+   "prerelease": false,
+   "tag": "v5.0.5",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.5"
+  },
+  {
+   "body": "See: https://github.com/pmndrs/zustand/pull/3087#issuecomment-2876726564\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.6...4.5.7",
+   "date": "2025-05-15T02:29:22Z",
+   "name": "4.5.7",
+   "prerelease": false,
+   "tag": "4.5.7",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/4.5.7"
+  },
+  {
+   "body": "This fixes module resolution issue for React Native users.\r\n\r\n## What's Changed\r\n* refactor(traditional): remove duplicated ExtractState type declaration by @shinhyogeun in https://github.com/pmndrs/zustand/pull/2982\r\n* fix(package): react-native condition by @dai-shi in https://github.com/pmndrs/zustand/pull/3087\r\n\r\n## New Contributors\r\n* @zbeyens made their first contribution in https://github.com/pmndrs/zustand/pull/2958\r\n* @samirhembrom made their first contribution in https://github.com/pmndrs/zustand/pull/2963\r\n* @alimertcakar made their first contribution in https://github.com/pmndrs/zustand/pull/2980\r\n* @sidahmedabdelillah made their first contribution in https://github.com/pmndrs/zustand/pull/2978\r\n* @Sunjae95 made their first contribution in https://github.com/pmndrs/zustand/pull/2994\r\n* @chervyakovru made their first contribution in https://github.com/pmndrs/zustand/pull/3001\r\n* @andriyor made their first contribution in https://github.com/pmndrs/zustand/pull/3002\r\n* @theperfectpunk made their first contribution in https://github.com/pmndrs/zustand/pull/2998\r\n* @locothedev made their first contribution in https://github.com/pmndrs/zustand/pull/3004\r\n* @paulschoen made their first contribution in https://github.com/pmndrs/zustand/pull/3008\r\n* @mooalot made their first contribution in https://github.com/pmndrs/zustand/pull/3011\r\n* @rn0614 made their first contribution in https://github.com/pmndrs/zustand/pull/3037\r\n* @dngur9801 made their first contribution in https://github.com/pmndrs/zustand/pull/3042\r\n* @Shashikantyadavv made their first contribution in https://github.com/pmndrs/zustand/pull/3045\r\n* @mtilda made their first contribution in https://github.com/pmndrs/zustand/pull/3053\r\n* @jroitgrund made their first contribution in https://github.com/pmndrs/zustand/pull/2995\r\n* @oduntane made their first contribution in https://github.com/pmndrs/zustand/pull/3080\r\n* @B1u3B01t made their first contribution in https://github.com/pmndrs/zustand/pull/3082\r\n* @vikpe made their first contribution in https://github.com/pmndrs/zustand/pull/3094\r\n* @wy-luke made their first contribution in https://github.com/pmndrs/zustand/pull/3100\r\n* @shinhyogeun made their first contribution in https://github.com/pmndrs/zustand/pull/2982\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.3...v5.0.4",
+   "date": "2025-05-01T23:43:28Z",
+   "name": "v5.0.4",
+   "prerelease": false,
+   "tag": "v5.0.4",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.4"
+  },
+  {
+   "body": "`ExtractState` is a type util to extract state type from store type.\r\n\r\n## What's Changed\r\n* feat(types): Make ExtractState public by @vorant94 in https://github.com/pmndrs/zustand/pull/2935\r\n* fix(build): alias entries in rollup config by @dai-shi in https://github.com/pmndrs/zustand/pull/2942\r\n\r\n## New Contributors\r\n* @atticoos made their first contribution in https://github.com/pmndrs/zustand/pull/2883\r\n* @sukvvon made their first contribution in https://github.com/pmndrs/zustand/pull/2890\r\n* @Wxh16144 made their first contribution in https://github.com/pmndrs/zustand/pull/2891\r\n* @leweyse made their first contribution in https://github.com/pmndrs/zustand/pull/2913\r\n* @dmaskasky made their first contribution in https://github.com/pmndrs/zustand/pull/2936\r\n* @HoberMin made their first contribution in https://github.com/pmndrs/zustand/pull/2938\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.2...v5.0.3",
+   "date": "2025-01-07T14:22:57Z",
+   "name": "v5.0.3",
+   "prerelease": false,
+   "tag": "v5.0.3",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.3"
+  },
+  {
+   "body": "See: #2943\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.5...v4.5.6",
+   "date": "2025-01-07T13:01:07Z",
+   "name": "v4.5.6",
+   "prerelease": false,
+   "tag": "v4.5.6",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.6"
+  },
+  {
+   "body": "This fixes some issues in middleware.\r\n\r\n## What's Changed\r\n* fix(middleware): devtools type error #2700 by @AndyRightNow in https://github.com/pmndrs/zustand/pull/2875\r\n* fix(persist): fix async migrate on persist middleware by @dbritto-dev in https://github.com/pmndrs/zustand/pull/2877\r\n\r\n## New Contributors\r\n* @ennjin made their first contribution in https://github.com/pmndrs/zustand/pull/2834\r\n* @ytraddan made their first contribution in https://github.com/pmndrs/zustand/pull/2836\r\n* @m1nsuplee made their first contribution in https://github.com/pmndrs/zustand/pull/2847\r\n* @gonzalezfj made their first contribution in https://github.com/pmndrs/zustand/pull/2861\r\n* @mordv made their first contribution in https://github.com/pmndrs/zustand/pull/2869\r\n* @marcoamt made their first contribution in https://github.com/pmndrs/zustand/pull/2874\r\n* @AndyRightNow made their first contribution in https://github.com/pmndrs/zustand/pull/2875\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.1...v5.0.2",
+   "date": "2024-12-04T15:10:28Z",
+   "name": "v5.0.2",
+   "prerelease": false,
+   "tag": "v5.0.2",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.2"
+  },
+  {
+   "body": "This fixes `shallow` function for some edge cases.\r\n\r\n## What's Changed\r\n* fix(shallow): fallback map-like iterator comparison by @dai-shi in https://github.com/pmndrs/zustand/pull/2795\r\n* fix(shallow): iterable-like insensitive keys order comparison (alternate implementation) by @dai-shi in https://github.com/pmndrs/zustand/pull/2821\r\n\r\n## New Contributors\r\n* @legcy143 made their first contribution in https://github.com/pmndrs/zustand/pull/2799\r\n* @kretajak made their first contribution in https://github.com/pmndrs/zustand/pull/2822\r\n* @steaks made their first contribution in https://github.com/pmndrs/zustand/pull/2824\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.0...v5.0.1",
+   "date": "2024-10-30T12:05:02Z",
+   "name": "v5.0.1",
+   "prerelease": false,
+   "tag": "v5.0.1",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.1"
+  },
+  {
+   "body": "# 🎉🎉🎉 Zustand v5 🐻🐻🐻\r\n\r\n## TL;DR\r\n\r\n- No new features\r\n- Drop many old things\r\n- Migration from v4 should be smooth.\r\n\r\n## Changes in v5\r\n\r\n- Drop default exports\r\n- Drop deprecated features\r\n- Make React 18 the minimum required version\r\n- Make use-sync-external-store a peer dependency (required for `createWithEqualityFn` and `useStoreWithEqualityFn` in `zustand/traditional`)\r\n- Make TypeScript 4.5 the minimum required version\r\n- Drop UMD/SystemJS support\r\n- Organize entry points in the package.json\r\n- Drop ES5 support\r\n- Stricter types when setState's replace flag is set\r\n- Persist middleware behavioral change\r\n- Other small improvements (technically breaking changes)\r\n\r\n## Migration Guide\r\n\r\nRead the migration guide carefully:\r\nhttps://github.com/pmndrs/zustand/blob/main/docs/migrations/migrating-to-v5.md\r\n\r\n### Frequently Reported Issue\r\n\r\nDuring the RC period, some users encountered the following infinite loop error:\r\n```\r\nUncaught Error: Maximum update depth exceeded. This can happen when a component repeatedly calls setState inside componentWillUpdate or componentDidUpdate. React limits the number of nested updates to prevent infinite loops.\r\n```\r\n\r\nThis case was already a non-ideal behavior in v4 but appears more explicitly as an error in v5. While there are several ways to resolve this, using `useShallow` often fixes the problem.\r\n\r\n## What's Changed\r\n* v5 by @dai-shi in https://github.com/pmndrs/zustand/pull/2138\r\n* Fix Immer type inference for `setState` by @chrisvander in https://github.com/pmndrs/zustand/pull/2696\r\n\r\n## New Contributors\r\n* @abernier made their first contribution in https://github.com/pmndrs/zustand/pull/2674\r\n* @tthallos made their first contribution in https://github.com/pmndrs/zustand/pull/2501\r\n* @sagiereder made their first contribution in https://github.com/pmndrs/zustand/pull/2673\r\n* @melutovich made their first contribution in https://github.com/pmndrs/zustand/pull/2692\r\n* @rgksugan made their first contribution in https://github.com/pmndrs/zustand/pull/2695\r\n* @Anuovec made their first contribution in https://github.com/pmndrs/zustand/pull/2708\r\n* @EthanRBrown made their first contribution in https://github.com/pmndrs/zustand/pull/2717\r\n* @mym0404 made their first contribution in https://github.com/pmndrs/zustand/pull/2730\r\n* @87xie made their first contribution in https://github.com/pmndrs/zustand/pull/2745\r\n* @f312213213 made their first contribution in https://github.com/pmndrs/zustand/pull/2761\r\n* @DanThemes made their first contribution in https://github.com/pmndrs/zustand/pull/2764\r\n* @chaficnajjar made their first contribution in https://github.com/pmndrs/zustand/pull/2770\r\n* @goosewobbler made their first contribution in https://github.com/pmndrs/zustand/pull/2781\r\n* @Amyssyko made their first contribution in https://github.com/pmndrs/zustand/pull/2784\r\n* @MartinGamesCZ made their first contribution in https://github.com/pmndrs/zustand/pull/2785\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.5...v5.0.0",
+   "date": "2024-10-14T14:17:49Z",
+   "name": "v5.0.0",
+   "prerelease": false,
+   "tag": "v5.0.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0"
+  },
+  {
+   "body": "Hopefully, this will be the last RC, unless we have serious bug reports in #2741.\r\n\r\n## What's Changed\r\n* chore: enable isolatedDeclarations by @dai-shi in https://github.com/pmndrs/zustand/pull/2738\r\n* revert useShallow refactor in #2701 by @dai-shi in https://github.com/pmndrs/zustand/pull/2703\r\n\r\n## New Contributors\r\n* @Anuovec made their first contribution in https://github.com/pmndrs/zustand/pull/2708\r\n* @EthanRBrown made their first contribution in https://github.com/pmndrs/zustand/pull/2717\r\n* @mym0404 made their first contribution in https://github.com/pmndrs/zustand/pull/2730\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.0-rc.1...v5.0.0-rc.2",
+   "date": "2024-09-15T03:17:18Z",
+   "name": "v5.0.0-rc.2",
+   "prerelease": true,
+   "tag": "v5.0.0-rc.2",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0-rc.2"
+  },
+  {
+   "body": "This version includes some minor changes. Please report any issues if you find.\r\n\r\n## What's Changed\r\n* Fix Immer type inference for `setState` by @chrisvander in https://github.com/pmndrs/zustand/pull/2696\r\n* refactor useShallow by @dai-shi in https://github.com/pmndrs/zustand/pull/2701\r\n\r\n## New Contributors\r\n* @sagiereder made their first contribution in https://github.com/pmndrs/zustand/pull/2673\r\n* @melutovich made their first contribution in https://github.com/pmndrs/zustand/pull/2692\r\n* @rgksugan made their first contribution in https://github.com/pmndrs/zustand/pull/2695\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.0-rc.0...v5.0.0-rc.1",
+   "date": "2024-08-27T01:23:19Z",
+   "name": "v5.0.0-rc.1",
+   "prerelease": true,
+   "tag": "v5.0.0-rc.1",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0-rc.1"
+  },
+  {
+   "body": "Please see [the migration guide](https://github.com/pmndrs/zustand/blob/main/docs/migrations/migrating-to-v5.md) and share your feedback.\r\n\r\n## What's Changed\r\n* v5 by @dai-shi in https://github.com/pmndrs/zustand/pull/2138\r\n\r\n<img width=\"791\" alt=\"image\" src=\"https://github.com/user-attachments/assets/b1d6175f-2017-49f1-ab43-09470a82417b\">\r\n\r\n## New Contributors\r\n* @abernier made their first contribution in https://github.com/pmndrs/zustand/pull/2674\r\n* @tthallos made their first contribution in https://github.com/pmndrs/zustand/pull/2501\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.5...v5.0.0-rc.0",
+   "date": "2024-08-16T01:15:23Z",
+   "name": "v5.0.0-rc.0",
+   "prerelease": true,
+   "tag": "v5.0.0-rc.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v5.0.0-rc.0"
+  },
+  {
+   "body": "This improves the `persist` middleware behavior for an edge case.\r\n\r\n:warning: We thought this was fixing a bug, but it actually introduced a behavioral breaking change. Please use v4.5.4 if the change is troublesome. See: #2763 \r\n\r\n## What's Changed\r\n* fix(storage): avoid calling setItem with the state just retrieved by @double-thinker in https://github.com/pmndrs/zustand/pull/2678\r\n* chore(deps): update dependencies by @dai-shi in https://github.com/pmndrs/zustand/pull/2680\r\n\r\n## New Contributors\r\n* @alwalxed made their first contribution in https://github.com/pmndrs/zustand/pull/2634\r\n* @YashChauhan858 made their first contribution in https://github.com/pmndrs/zustand/pull/2636\r\n* @donutcube made their first contribution in https://github.com/pmndrs/zustand/pull/2650\r\n* @vorant94 made their first contribution in https://github.com/pmndrs/zustand/pull/2661\r\n* @jeppester made their first contribution in https://github.com/pmndrs/zustand/pull/2667\r\n* @ryota-murakami made their first contribution in https://github.com/pmndrs/zustand/pull/2668\r\n* @double-thinker made their first contribution in https://github.com/pmndrs/zustand/pull/2678\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.4...v4.5.5",
+   "date": "2024-08-15T02:31:47Z",
+   "name": "v4.5.5",
+   "prerelease": false,
+   "tag": "v4.5.5",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.5"
+  },
+  {
+   "body": "There was an issue in v4.5.3 with some bundlers.\r\n\r\n## What's Changed\r\n* fix: no type field in package.json by @dai-shi in https://github.com/pmndrs/zustand/pull/2622\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.3...v4.5.4",
+   "date": "2024-06-26T12:36:03Z",
+   "name": "v4.5.4",
+   "prerelease": false,
+   "tag": "v4.5.4",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.4"
+  },
+  {
+   "body": "It comes with a minor fix in types, but also some changes in configs.\r\n\r\n## What's Changed\r\n* Migrate to pnpm by @dai-shi in https://github.com/pmndrs/zustand/pull/2545\r\n* useStore uses ReadonlyStoreApi by @holic in https://github.com/pmndrs/zustand/pull/2586\r\n\r\n## New Contributors\r\n* @elie made their first contribution in https://github.com/pmndrs/zustand/pull/2416\r\n* @DawidWraga made their first contribution in https://github.com/pmndrs/zustand/pull/2435\r\n* @dreamfliper made their first contribution in https://github.com/pmndrs/zustand/pull/2510\r\n* @fredericoo made their first contribution in https://github.com/pmndrs/zustand/pull/2525\r\n* @algoORgoal made their first contribution in https://github.com/pmndrs/zustand/pull/2530\r\n* @StyleShit made their first contribution in https://github.com/pmndrs/zustand/pull/2550\r\n* @Aberratio made their first contribution in https://github.com/pmndrs/zustand/pull/2558\r\n* @prncss-xyz made their first contribution in https://github.com/pmndrs/zustand/pull/2564\r\n* @sunil-sharma-999 made their first contribution in https://github.com/pmndrs/zustand/pull/2585\r\n* @yasintz made their first contribution in https://github.com/pmndrs/zustand/pull/2598\r\n* @L-Qun made their first contribution in https://github.com/pmndrs/zustand/pull/2612\r\n* @holic made their first contribution in https://github.com/pmndrs/zustand/pull/2586\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.2...v4.5.3",
+   "date": "2024-06-26T03:45:08Z",
+   "name": "v4.5.3",
+   "prerelease": false,
+   "tag": "v4.5.3",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.3"
+  },
+  {
+   "body": "It should improve the compatibility with old browsers.\r\n\r\n## What's Changed\r\n* refactor(shallow): Use for..of instead of C-style for by @onlined in https://github.com/pmndrs/zustand/pull/2374\r\n* fix: return type of persist migrate function changed to PersistedState by @bobdepreziz in https://github.com/pmndrs/zustand/pull/2360\r\n* build: target es2018 by @dai-shi in https://github.com/pmndrs/zustand/pull/2361\r\n\r\n## New Contributors\r\n* @medyahyejoud made their first contribution in https://github.com/pmndrs/zustand/pull/2353\r\n* @yankycranky made their first contribution in https://github.com/pmndrs/zustand/pull/2348\r\n* @cheeZery made their first contribution in https://github.com/pmndrs/zustand/pull/2364\r\n* @Cadienvan made their first contribution in https://github.com/pmndrs/zustand/pull/2378\r\n* @bobdepreziz made their first contribution in https://github.com/pmndrs/zustand/pull/2360\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.1...v4.5.2",
+   "date": "2024-03-02T02:45:46Z",
+   "name": "v4.5.2",
+   "prerelease": false,
+   "tag": "v4.5.2",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.2"
+  },
+  {
+   "body": "People might have misunderstood with `useStore` deprecation message. Hope this mitigates it.\r\n\r\n## What's Changed\r\n* Relax types for `persist` middleware by @rafaeelaudibert in https://github.com/pmndrs/zustand/pull/2332\r\n* chore: clarify deprecation message by @dai-shi in https://github.com/pmndrs/zustand/pull/2337\r\n\r\n## New Contributors\r\n* @alexander-densley made their first contribution in https://github.com/pmndrs/zustand/pull/2321\r\n* @rafaeelaudibert made their first contribution in https://github.com/pmndrs/zustand/pull/2332\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.5.0...v4.5.1",
+   "date": "2024-02-17T02:13:22Z",
+   "name": "v4.5.1",
+   "prerelease": false,
+   "tag": "v4.5.1",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.1"
+  },
+  {
+   "body": "This version adds a new capability for SSR/Hydration.\r\n\r\n## What's Changed\r\n* feat: getInitialState by @TkDodo in https://github.com/pmndrs/zustand/pull/2277\r\n* fix: Add deprecation notice for getServerState() in WithReact type by @charkour in https://github.com/pmndrs/zustand/pull/2266\r\n\r\n## New Contributors\r\n* @Jontii made their first contribution in https://github.com/pmndrs/zustand/pull/2228\r\n* @wherehows made their first contribution in https://github.com/pmndrs/zustand/pull/2239\r\n* @ahulterstrom made their first contribution in https://github.com/pmndrs/zustand/pull/2252\r\n* @JaeBrian made their first contribution in https://github.com/pmndrs/zustand/pull/2267\r\n* @CodyCodes95 made their first contribution in https://github.com/pmndrs/zustand/pull/2218\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.7...v4.5.0",
+   "date": "2024-01-20T01:32:47Z",
+   "name": "v4.5.0",
+   "prerelease": false,
+   "tag": "v4.5.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.5.0"
+  },
+  {
+   "body": "There's a small fix for a use case with an non-object value in store.\r\n\r\n## What's Changed\r\n* fix(vanilla): unexpected null state update behavior by @wulimao49 in https://github.com/pmndrs/zustand/pull/2213\r\n\r\n## New Contributors\r\n* @isiagi made their first contribution in https://github.com/pmndrs/zustand/pull/2208\r\n* @ADTC made their first contribution in https://github.com/pmndrs/zustand/pull/2202\r\n* @wulimao49 made their first contribution in https://github.com/pmndrs/zustand/pull/2213\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.6...v4.4.7",
+   "date": "2023-11-28T00:30:43Z",
+   "name": "v4.4.7",
+   "prerelease": false,
+   "tag": "v4.4.7",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.7"
+  },
+  {
+   "body": "v4.4.5 has an issue with some TypeScript configs about module resolution. It should be fixed now. Thanks for the patience.\r\n\r\n## What's Changed\r\n* Update export types by @dbritto-dev in https://github.com/pmndrs/zustand/pull/2170\r\n\r\n## New Contributors\r\n* @cheatkey made their first contribution in https://github.com/pmndrs/zustand/pull/2147\r\n* @frixaco made their first contribution in https://github.com/pmndrs/zustand/pull/2166\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.5...v4.4.6",
+   "date": "2023-11-03T00:02:33Z",
+   "name": "v4.4.6",
+   "prerelease": false,
+   "tag": "v4.4.6",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.6"
+  },
+  {
+   "body": "Hopefully, it should fix some issues with Node.js environment including Next.js.\r\n\r\n## What's Changed\r\n* fix: importing CJS React in ESM by @dai-shi in https://github.com/pmndrs/zustand/pull/2154\r\n* Apply publint recommendations by @dbritto-dev in https://github.com/pmndrs/zustand/pull/2157\r\n\r\n## New Contributors\r\n* @plrs9816 made their first contribution in https://github.com/pmndrs/zustand/pull/2137\r\n* @Brammm made their first contribution in https://github.com/pmndrs/zustand/pull/2139\r\n* @sobies93 made their first contribution in https://github.com/pmndrs/zustand/pull/2142\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.4...v4.4.5",
+   "date": "2023-10-31T14:30:32Z",
+   "name": "v4.4.5",
+   "prerelease": false,
+   "tag": "v4.4.5",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.5"
+  },
+  {
+   "body": "There was a tiny issue in v4.4.3, which broke with some bundlers, which this version fixes.\r\n\r\n## What's Changed\r\n* fix(build): patch entry points zustand/shallow for CJS by @dai-shi in https://github.com/pmndrs/zustand/pull/2128\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.3...v4.4.4",
+   "date": "2023-10-21T14:05:41Z",
+   "name": "v4.4.4",
+   "prerelease": false,
+   "tag": "v4.4.4",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.4"
+  },
+  {
+   "body": "The changes in v4.4.2 were troublesome for some users. This version should fix/mitigate such cases.\r\n\r\n## What's Changed\r\n* fix(shallow): Extract shallow vanilla and react by @dbritto-dev in https://github.com/pmndrs/zustand/pull/2097\r\n* fix(types): mitigate devtools typing by @dai-shi in https://github.com/pmndrs/zustand/pull/2099\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.2...v4.4.3",
+   "date": "2023-10-05T14:27:25Z",
+   "name": "v4.4.3",
+   "prerelease": false,
+   "tag": "v4.4.3",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.3"
+  },
+  {
+   "body": "This adds `useShallow` hook to cover some use cases that are deprecated with v4.4.0 change. Check out [the guide](https://github.com/pmndrs/zustand/blob/ec538e9d4c0b9b5759e6dfd0fd3c9a21f8236949/docs/guides/prevent-rerenders-with-use-shallow.md).\r\n\r\n## Migration Guide\r\n\r\n#1991 requires something like below if you are using the `devtools` middleware _and_ TypeScript.\r\n```diff\r\n  import { devtools } from 'zustand/middleware'\r\n+ import type {} from '@redux-devtools/extension'\r\n```\r\n\r\n## What's Changed\r\n* fix(types)(middleware/devtools): avoid copying types by @dai-shi in https://github.com/pmndrs/zustand/pull/1991\r\n* fix(traditional): make defaultEqualityFn optional in TS Types by @charkour in https://github.com/pmndrs/zustand/pull/2060\r\n* feat: add useShallow by @FaberVitale in https://github.com/pmndrs/zustand/pull/2090\r\n\r\n## New Contributors\r\n* @aykutkardas made their first contribution in https://github.com/pmndrs/zustand/pull/1993\r\n* @michelts made their first contribution in https://github.com/pmndrs/zustand/pull/1997\r\n* @elusive made their first contribution in https://github.com/pmndrs/zustand/pull/2001\r\n* @mayank1513 made their first contribution in https://github.com/pmndrs/zustand/pull/2015\r\n* @fdb made their first contribution in https://github.com/pmndrs/zustand/pull/2029\r\n* @tmkx made their first contribution in https://github.com/pmndrs/zustand/pull/2032\r\n* @OshriAsulin made their first contribution in https://github.com/pmndrs/zustand/pull/2028\r\n* @ivanquirino made their first contribution in https://github.com/pmndrs/zustand/pull/2047\r\n* @stavkamil made their first contribution in https://github.com/pmndrs/zustand/pull/2071\r\n* @NaamuKim made their first contribution in https://github.com/pmndrs/zustand/pull/2088\r\n* @FaberVitale made their first contribution in https://github.com/pmndrs/zustand/pull/2090\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.1...v4.4.2",
+   "date": "2023-10-02T14:14:00Z",
+   "name": "v4.4.2",
+   "prerelease": false,
+   "tag": "v4.4.2",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.2"
+  },
+  {
+   "body": "Fixes some issues reported with the deprecated feature in v4.4.0.\r\n\r\n## What's Changed\r\n* fix(types): accept undefined equalityFn for the deprecated useStore by @dai-shi in https://github.com/pmndrs/zustand/pull/1972\r\n* fix: improve warning for deprecated equalityFn by @dai-shi in https://github.com/pmndrs/zustand/pull/1976\r\n\r\n## New Contributors\r\n* @kangju2000 made their first contribution in https://github.com/pmndrs/zustand/pull/1969\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.4.0...v4.4.1",
+   "date": "2023-08-06T23:46:27Z",
+   "name": "v4.4.1",
+   "prerelease": false,
+   "tag": "v4.4.1",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.1"
+  },
+  {
+   "body": "This adds new `zustand/traditional` entry point and deprecates equalityFn from `zustand`.\r\n\r\n## Migration Guide\r\n\r\nIf you don't use custom `equalityFn`, nothing is required.\r\n\r\nFor those who use custom equalityFn such as `shallow`:\r\n```js\r\n// previously\r\nimport { create } from 'zustand'\r\nconst useFooStore = create((set) => ...)\r\n\r\n// now\r\nimport { createWithEqualityFn } from 'zustand/traditional'\r\nconst useFooStore = createWithEqualityFn((set) => ..., Object.is)\r\n// Object.is is the default quailtyFn in zustand create; to match that behavior, pass that function here. This can be updated to shallow or anything else\r\n```\r\n\r\n## What's Changed\r\n* feat: deprecate equalityFn and add createWithEqualityFn by @dai-shi in https://github.com/pmndrs/zustand/pull/1945\r\n* fix: declare @types/react as peerDep to avoid phantom dep by @leviosa-e in https://github.com/pmndrs/zustand/pull/1963\r\n\r\n## New Contributors\r\n* @luizeboli made their first contribution in https://github.com/pmndrs/zustand/pull/1915\r\n* @mohammedmulazada made their first contribution in https://github.com/pmndrs/zustand/pull/1931\r\n* @coder054 made their first contribution in https://github.com/pmndrs/zustand/pull/1932\r\n* @itayperry made their first contribution in https://github.com/pmndrs/zustand/pull/1957\r\n* @cwtuan made their first contribution in https://github.com/pmndrs/zustand/pull/1953\r\n* @tiagobento made their first contribution in https://github.com/pmndrs/zustand/pull/1962\r\n* @leviosa-e made their first contribution in https://github.com/pmndrs/zustand/pull/1963\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.9...v4.4.0",
+   "date": "2023-08-01T02:08:05Z",
+   "name": "v4.4.0",
+   "prerelease": false,
+   "tag": "v4.4.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.4.0"
+  },
+  {
+   "body": "This includes a small improvement for production build mostly for Vite users. Docs have been improved too!\r\n\r\n## What's Changed\r\n* fix(build): mode env for \"import\" condition\" by @dai-shi in https://github.com/pmndrs/zustand/pull/1845\r\n\r\n## New Contributors\r\n* @Debbl made their first contribution in https://github.com/pmndrs/zustand/pull/1792\r\n* @Nipodemos made their first contribution in https://github.com/pmndrs/zustand/pull/1782\r\n* @vadimshvetsov made their first contribution in https://github.com/pmndrs/zustand/pull/1800\r\n* @bobylito made their first contribution in https://github.com/pmndrs/zustand/pull/1810\r\n* @celineling made their first contribution in https://github.com/pmndrs/zustand/pull/1804\r\n* @valerii15298 made their first contribution in https://github.com/pmndrs/zustand/pull/1819\r\n* @Hecmatyar made their first contribution in https://github.com/pmndrs/zustand/pull/1816\r\n* @203x made their first contribution in https://github.com/pmndrs/zustand/pull/1826\r\n* @Ciensprog made their first contribution in https://github.com/pmndrs/zustand/pull/1844\r\n* @Romainlg29 made their first contribution in https://github.com/pmndrs/zustand/pull/1843\r\n* @dcorb made their first contribution in https://github.com/pmndrs/zustand/pull/1847\r\n* @ivoilic made their first contribution in https://github.com/pmndrs/zustand/pull/1856\r\n* @Kiku-CN made their first contribution in https://github.com/pmndrs/zustand/pull/1889\r\n* @LartyHD made their first contribution in https://github.com/pmndrs/zustand/pull/1893\r\n* @ChoiHyunjin made their first contribution in https://github.com/pmndrs/zustand/pull/1903\r\n* @thesuryavivek made their first contribution in https://github.com/pmndrs/zustand/pull/1906\r\n* @thedipankarroy made their first contribution in https://github.com/pmndrs/zustand/pull/1913\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.8...v4.3.9",
+   "date": "2023-07-04T14:43:20Z",
+   "name": "v4.3.9",
+   "prerelease": false,
+   "tag": "v4.3.9",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.9"
+  },
+  {
+   "body": "For persist middleware, a new option for createJSONStorage in introduced to support more cases. Note that createJSONStorage isn't a required function (and it's not very recommended as it's not type safe), and one should create a custom storage for more use cases.\r\n\r\n## What's Changed\r\n* chore: add extension in imports by @dai-shi in https://github.com/pmndrs/zustand/pull/1678\r\n* feat(middleware/persist): improve createJSONStorage for Maps by @lauhon in https://github.com/pmndrs/zustand/pull/1763\r\n* chore(tests): migrate to vitest by @arjunvegda in https://github.com/pmndrs/zustand/pull/1753\r\n\r\n## New Contributors\r\n* @JacobWeisenburger made their first contribution in https://github.com/pmndrs/zustand/pull/1737\r\n* @spacemeowx2 made their first contribution in https://github.com/pmndrs/zustand/pull/1742\r\n* @arjunvegda made their first contribution in https://github.com/pmndrs/zustand/pull/1754\r\n* @zc627788 made their first contribution in https://github.com/pmndrs/zustand/pull/1752\r\n* @arvinxx made their first contribution in https://github.com/pmndrs/zustand/pull/1758\r\n* @SilentFlute made their first contribution in https://github.com/pmndrs/zustand/pull/1762\r\n* @dannobytes made their first contribution in https://github.com/pmndrs/zustand/pull/1779\r\n* @BLooDBRothER made their first contribution in https://github.com/pmndrs/zustand/pull/1777\r\n* @lauhon made their first contribution in https://github.com/pmndrs/zustand/pull/1763\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.7...v4.3.8",
+   "date": "2023-05-04T07:51:12Z",
+   "name": "v4.3.8",
+   "prerelease": false,
+   "tag": "v4.3.8",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.8"
+  },
+  {
+   "body": "This includes a couple of improvements in `persist` middleware.\r\n\r\n## What's Changed\r\n* feat(middleware/persist): add skip hydration option #405 by @gmanninglive in https://github.com/pmndrs/zustand/pull/1647\r\n* fix(middleware/persist): ensure `persist` does not drop updates in `onRehydrateStorage` when using a synchronous storage API by @coffeebeats in https://github.com/pmndrs/zustand/pull/1689\r\n* fix(middleware/persist): ensure argument for `onRehydrateStorage` and `onHydrate` is defined on first hydration by @coffeebeats in https://github.com/pmndrs/zustand/pull/1692\r\n\r\n## New Contributors\r\n* @hi-otto made their first contribution in https://github.com/pmndrs/zustand/pull/1687\r\n* @pastelmind made their first contribution in https://github.com/pmndrs/zustand/pull/1707\r\n* @gmanninglive made their first contribution in https://github.com/pmndrs/zustand/pull/1647\r\n* @coffeebeats made their first contribution in https://github.com/pmndrs/zustand/pull/1689\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.6...v4.3.7",
+   "date": "2023-03-31T15:16:39Z",
+   "name": "v4.3.7",
+   "prerelease": false,
+   "tag": "v4.3.7",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.7"
+  },
+  {
+   "body": "This has a little improvement for library authors.\r\n\r\n## What's Changed\r\n* fix(react, types): relax react types by @lukesmurray in https://github.com/pmndrs/zustand/pull/1589\r\n* fix: typo in shallow.ts by @ysulyma in https://github.com/pmndrs/zustand/pull/1667\r\n\r\n## New Contributors\r\n* @ctolmsted made their first contribution in https://github.com/pmndrs/zustand/pull/1670\r\n* @kevin51jiang made their first contribution in https://github.com/pmndrs/zustand/pull/1674\r\n* @lukesmurray made their first contribution in https://github.com/pmndrs/zustand/pull/1589\r\n* @ysulyma made their first contribution in https://github.com/pmndrs/zustand/pull/1667\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.5...v4.3.6",
+   "date": "2023-03-06T05:20:10Z",
+   "name": "v4.3.6",
+   "prerelease": false,
+   "tag": "v4.3.6",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.6"
+  },
+  {
+   "body": "v4.3.4 has a regression in CJS build. Please use this version instead.\r\n\r\n## What's Changed\r\n* fix(build): re-export createStore from index by @hiendv in https://github.com/pmndrs/zustand/pull/1661\r\n\r\n## New Contributors\r\n* @jmantonellini made their first contribution in https://github.com/pmndrs/zustand/pull/1485\r\n* @hiendv made their first contribution in https://github.com/pmndrs/zustand/pull/1661\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.4...v4.3.5",
+   "date": "2023-02-28T11:15:55Z",
+   "name": "v4.3.5",
+   "prerelease": false,
+   "tag": "v4.3.5",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.5"
+  },
+  {
+   "body": "This version fixes some build configs for some edge cases.\r\n\r\n⚠️ this version has an issue in CJS build. Please use v4.3.5.\r\n\r\n## What's Changed\r\n* fix(build): UMD names by @dai-shi in https://github.com/pmndrs/zustand/pull/1632\r\n* fix(build): possibly improve ESM for production build by @dai-shi in https://github.com/pmndrs/zustand/pull/1645\r\n* fix(build): add explicit export paths for cjs by @barelyhuman in https://github.com/pmndrs/zustand/pull/1659\r\n\r\n## New Contributors\r\n* @AwesomeDevin made their first contribution in https://github.com/pmndrs/zustand/pull/1633\r\n* @adimit made their first contribution in https://github.com/pmndrs/zustand/pull/1641\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.3...v4.3.4",
+   "date": "2023-02-27T03:03:10Z",
+   "name": "v4.3.4",
+   "prerelease": false,
+   "tag": "v4.3.4",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.4"
+  },
+  {
+   "body": "This version includes some small fixes and internal improvements.\r\n\r\n## What's Changed\r\n* fix(build): improve patch scripts by @dai-shi in https://github.com/pmndrs/zustand/pull/1593\r\n* fix(log): deprecated messages copyedit for consistency by @jareha in https://github.com/pmndrs/zustand/pull/1588\r\n* chore: remove `__DEV__` with ts-jest by @dai-shi in https://github.com/pmndrs/zustand/pull/1598\r\n* fix(build): reorder the types field in package.json by @HiChen404 in https://github.com/pmndrs/zustand/pull/1600\r\n\r\n## New Contributors\r\n* @nitedani made their first contribution in https://github.com/pmndrs/zustand/pull/1544\r\n* @nus3 made their first contribution in https://github.com/pmndrs/zustand/pull/1550\r\n* @holgergp made their first contribution in https://github.com/pmndrs/zustand/pull/1565\r\n* @JoaoPauloLousada made their first contribution in https://github.com/pmndrs/zustand/pull/1605\r\n* @sajadtorkamani made their first contribution in https://github.com/pmndrs/zustand/pull/1606\r\n* @zhangrenyang made their first contribution in https://github.com/pmndrs/zustand/pull/1608\r\n* @jareha made their first contribution in https://github.com/pmndrs/zustand/pull/1588\r\n* @HiChen404 made their first contribution in https://github.com/pmndrs/zustand/pull/1600\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.2...v4.3.3",
+   "date": "2023-02-10T12:33:27Z",
+   "name": "v4.3.3",
+   "prerelease": false,
+   "tag": "v4.3.3",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.3"
+  },
+  {
+   "body": "There was a regression with default export (which is deprecated) in v4.3.0 and v4.3.1. This should fix it.\r\n\r\n## What's Changed\r\n* fix(vanilla,shallow): default export regression in CJS by @dai-shi in https://github.com/pmndrs/zustand/pull/1531\r\n* fix(middleware/persist): Fix the storage type by @MOZGIII in https://github.com/pmndrs/zustand/pull/1540\r\n\r\n## New Contributors\r\n* @CatMonster made their first contribution in https://github.com/pmndrs/zustand/pull/1539\r\n* @MOZGIII made their first contribution in https://github.com/pmndrs/zustand/pull/1540\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.1...v4.3.2",
+   "date": "2023-01-14T00:05:23Z",
+   "name": "v4.3.2",
+   "prerelease": false,
+   "tag": "v4.3.2",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.2"
+  },
+  {
+   "body": "This version supersedes v4.3.0.\r\n\r\n## What's Changed\r\n* chore: show deprecated message only in DEV by @dai-shi in https://github.com/pmndrs/zustand/pull/1523\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.3.0...v4.3.1",
+   "date": "2023-01-10T11:15:36Z",
+   "name": "v4.3.1",
+   "prerelease": false,
+   "tag": "v4.3.1",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.1"
+  },
+  {
+   "body": "Throughout past years of development, we've learned the (mis)usage of the library. One of our goal is to provide smallest possible APIs. To go further, this version deprecates some features. They are still usable (with warnings), but will be removed in the future.\r\n\r\n## What's Changed\r\n* feat: deprecate some APIs toward v5 by @dai-shi in https://github.com/pmndrs/zustand/pull/1403\r\n* feat: deprecate default export by @dai-shi in https://github.com/pmndrs/zustand/pull/1514\r\n* fix(middleware/persist): hydrate in sync (new impl with storage option) by @dai-shi in https://github.com/pmndrs/zustand/pull/1518\r\n\r\n## New Contributors\r\n* @adil62 made their first contribution in https://github.com/pmndrs/zustand/pull/1502\r\n* @wcastand made their first contribution in https://github.com/pmndrs/zustand/pull/1512\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.2.0...v4.3.0",
+   "date": "2023-01-10T10:45:28Z",
+   "name": "v4.3.0",
+   "prerelease": false,
+   "tag": "v4.3.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.3.0"
+  },
+  {
+   "body": "This version adds some new features in middleware.\r\n\r\n## What's Changed\r\n* feat(middleware/devtools): Better redux devtools. One connection for all zustand stores by @pavlobu in https://github.com/pmndrs/zustand/pull/1435\r\n* feat(middleware/persist): new storage option by @dai-shi in https://github.com/pmndrs/zustand/pull/1463\r\n* fix(build): disable esModule and re-export for nodejs by @barelyhuman in https://github.com/pmndrs/zustand/pull/1486\r\n\r\n## New Contributors\r\n* @Guchii made their first contribution in https://github.com/pmndrs/zustand/pull/1476\r\n* @sewera made their first contribution in https://github.com/pmndrs/zustand/pull/1478\r\n* @pavlobu made their first contribution in https://github.com/pmndrs/zustand/pull/1435\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.1.5...v4.2.0",
+   "date": "2023-01-01T01:15:29Z",
+   "name": "v4.2.0",
+   "prerelease": false,
+   "tag": "v4.2.0",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.2.0"
+  },
+  {
+   "body": "This version has several small improvements.\r\n\r\n## What's Changed\r\n* fix(middleware/devtools): do not use optional catch binding syntax by @mskrzypek in https://github.com/pmndrs/zustand/pull/1431\r\n* feat(shallow): Add support of Maps and Sets to shallow comparator by @anton-lunev in https://github.com/pmndrs/zustand/pull/1451\r\n* refactor(vanilla/types): replace hardcoded types with StoreApi type by @Arsikod in https://github.com/pmndrs/zustand/pull/1459\r\n* Fix: Programmatic `module.exports` addition for named and default exports in CJS by @barelyhuman in https://github.com/pmndrs/zustand/pull/1460\r\n\r\n## New Contributors\r\n* @wmcb91 made their first contribution in https://github.com/pmndrs/zustand/pull/1398\r\n* @chrisvander made their first contribution in https://github.com/pmndrs/zustand/pull/1426\r\n* @boatilus made their first contribution in https://github.com/pmndrs/zustand/pull/1428\r\n* @chybisov made their first contribution in https://github.com/pmndrs/zustand/pull/1453\r\n* @hicucu made their first contribution in https://github.com/pmndrs/zustand/pull/1438\r\n* @mskrzypek made their first contribution in https://github.com/pmndrs/zustand/pull/1431\r\n* @anton-lunev made their first contribution in https://github.com/pmndrs/zustand/pull/1451\r\n* @Arsikod made their first contribution in https://github.com/pmndrs/zustand/pull/1459\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.1.4...v4.1.5",
+   "date": "2022-12-05T13:22:28Z",
+   "name": "v4.1.5",
+   "prerelease": false,
+   "tag": "v4.1.5",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.1.5"
+  },
+  {
+   "body": "This should improve some importing problems. Uncertain if it fixes everything.\r\n\r\n## What's Changed\r\n* fix(build): use *.d.mts for esm ('import' condition only) by @dai-shi in https://github.com/pmndrs/zustand/pull/1387\r\n* fix(build): no import.meta for \"module\" condition by @dai-shi in https://github.com/pmndrs/zustand/pull/1393\r\n\r\n## New Contributors\r\n* @guenyoo made their first contribution in https://github.com/pmndrs/zustand/pull/1388\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v4.1.3...v4.1.4",
+   "date": "2022-10-31T12:52:23Z",
+   "name": "v4.1.4",
+   "prerelease": false,
+   "tag": "v4.1.4",
+   "url": "https://github.com/pmndrs/zustand/releases/tag/v4.1.4"
+  }
+ ],
+ "repo": "pmndrs/zustand"
+}

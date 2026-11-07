@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-06T06:00:56Z",
+ "fetched": "2026-11-07T06:00:48Z",
  "releases": [
+  {
+   "body": "Bundles TypeScript 7.0.2 from commit b37cbdc6886df3c2a34cbde8d20fbb4637a35503.",
+   "date": "2026-11-06T16:43:23Z",
+   "name": "vscode-typescript/v1.0.2",
+   "prerelease": false,
+   "tag": "vscode-typescript/v1.0.2",
+   "url": "https://github.com/microsoft/TypeScript/releases/tag/vscode-typescript/v1.0.2"
+  },
   {
    "body": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/\r\n\r\nDownloads are available on [npm](https://www.npmjs.com/package/typescript/v/7.1.0-beta).",
    "date": "2026-10-20T17:38:20Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v5.0.2",
    "url": "https://github.com/microsoft/TypeScript/releases/tag/v5.0.2"
-  },
-  {
-   "body": "For release notes, check out the [release announcement](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0-rc/).\r\n",
-   "date": "2023-03-16T22:39:46Z",
-   "name": "TypeScript 5.0 RC",
-   "prerelease": true,
-   "tag": "v5.0-rc",
-   "url": "https://github.com/microsoft/TypeScript/releases/tag/v5.0-rc"
   }
  ],
  "repo": "microsoft/TypeScript"
