@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T07:11:50Z",
+ "built": "2026-11-07T18:19:36Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-06T15:42:54Z",
   "version": "5.22.2"
  },
- "metadata_fetched": "2026-11-07T06:00:06Z",
+ "metadata_fetched": "2026-11-07T18:18:35Z",
  "package": "transformers",
  "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
  "prereleases_in_window": 0,

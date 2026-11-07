@@ -1,14 +1,24 @@
 {
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
- "fetched": "2026-11-07T06:00:09Z",
+ "fetched": "2026-11-07T18:18:38Z",
  "homepage": "https://github.com/fastapi/fastapi",
- "latest": "0.162.0",
+ "latest": "0.162.2",
  "name": "fastapi",
  "page": "https://pypi.org/project/fastapi/",
  "repo": "fastapi/fastapi",
  "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production",
  "versions": [
+  {
+   "date": "2026-11-07T15:41:38Z",
+   "version": "0.162.2",
+   "yanked": false
+  },
+  {
+   "date": "2026-11-07T11:56:02Z",
+   "version": "0.162.1",
+   "yanked": false
+  },
   {
    "date": "2026-10-23T18:47:31Z",
    "version": "0.162.0",
@@ -197,16 +207,6 @@
   {
    "date": "2026-10-07T21:22:11Z",
    "version": "0.142.4",
-   "yanked": false
-  },
-  {
-   "date": "2026-10-07T19:22:07Z",
-   "version": "0.142.3",
-   "yanked": false
-  },
-  {
-   "date": "2026-09-30T09:51:09Z",
-   "version": "0.142.2",
    "yanked": false
   }
  ]

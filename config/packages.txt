@@ -4,6 +4,7 @@
 # Adding a package = one line here + `python3 build.py` + commit. Removing a package removes its /pkg/ page (avoid).
 
 # ---- PyPI: AI SDKs and agent tooling ----
+pypi:aider-chat
 pypi:anthropic
 pypi:google-genai
 pypi:huggingface-hub
@@ -58,10 +59,13 @@ pypi:websockets
 
 # ---- npm: AI SDKs and agent tooling ----
 npm:@ai-sdk/openai
+npm:@anthropic-ai/claude-code
 npm:@anthropic-ai/sdk
+npm:@google/gemini-cli
 npm:@google/genai
 npm:@langchain/core
 npm:@modelcontextprotocol/sdk
+npm:@openai/codex
 npm:ai
 npm:langchain
 npm:openai

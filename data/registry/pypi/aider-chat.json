@@ -1,0 +1,213 @@
+{
+ "changelog": null,
+ "ecosystem": "pypi",
+ "fetched": "2026-11-07T18:18:32Z",
+ "homepage": "https://github.com/Aider-AI/aider",
+ "latest": "0.86.2",
+ "name": "aider-chat",
+ "page": "https://pypi.org/project/aider-chat/",
+ "repo": "Aider-AI/aider",
+ "summary": "Aider is AI pair programming in your terminal",
+ "versions": [
+  {
+   "date": "2026-02-12T00:42:52Z",
+   "version": "0.86.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-13T15:46:27Z",
+   "version": "0.86.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-09T15:55:37Z",
+   "version": "0.86.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-07T20:55:22Z",
+   "version": "0.85.5",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-07T18:34:07Z",
+   "version": "0.85.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-08-07T13:42:44Z",
+   "version": "0.85.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-07-15T23:22:37Z",
+   "version": "0.85.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-30T12:51:29Z",
+   "version": "0.85.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-06-27T23:40:16Z",
+   "version": "0.85.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-30T23:27:52Z",
+   "version": "0.84.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-23T23:02:56Z",
+   "version": "0.83.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-10T19:37:13Z",
+   "version": "0.83.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-09T22:41:33Z",
+   "version": "0.83.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-05-06T03:24:12Z",
+   "version": "0.82.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-20T15:26:50Z",
+   "version": "0.82.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-17T01:28:17Z",
+   "version": "0.82.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-14T23:24:45Z",
+   "version": "0.82.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-12T20:26:19Z",
+   "version": "0.81.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-10T20:42:22Z",
+   "version": "0.81.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-04T20:01:35Z",
+   "version": "0.81.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-04T09:03:01Z",
+   "version": "0.81.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-04T02:34:32Z",
+   "version": "0.80.4",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-03T19:31:09Z",
+   "version": "0.80.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-02T19:34:03Z",
+   "version": "0.80.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-04-01T04:07:04Z",
+   "version": "0.80.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-31T01:24:49Z",
+   "version": "0.80.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-27T19:35:25Z",
+   "version": "0.79.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-26T01:06:43Z",
+   "version": "0.79.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-25T21:15:28Z",
+   "version": "0.79.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-21T18:59:57Z",
+   "version": "0.78.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-18T01:07:44Z",
+   "version": "0.77.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-13T21:45:12Z",
+   "version": "0.77.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-11T16:25:42Z",
+   "version": "0.76.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-11T00:44:08Z",
+   "version": "0.76.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-10T15:50:06Z",
+   "version": "0.76.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-03-04T21:23:43Z",
+   "version": "0.75.2",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-24T23:41:29Z",
+   "version": "0.75.1",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-24T20:35:20Z",
+   "version": "0.75.0",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-23T16:54:31Z",
+   "version": "0.74.3",
+   "yanked": false
+  },
+  {
+   "date": "2025-02-09T23:28:17Z",
+   "version": "0.74.2",
+   "yanked": false
+  }
+ ]
+}

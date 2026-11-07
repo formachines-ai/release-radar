@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T07:11:50Z",
+ "built": "2026-11-07T18:19:36Z",
  "changelog": "https://docs.pytest.org/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-27T21:30:19Z",
   "version": "9.2.0"
  },
- "metadata_fetched": "2026-11-07T06:00:11Z",
+ "metadata_fetched": "2026-11-07T18:18:40Z",
  "package": "pytest",
  "page": "https://releases.formachines.ai/pkg/pypi/pytest/",
  "prereleases_in_window": 0,
