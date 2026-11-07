@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T06:00:02Z",
+ "built": "2026-11-07T07:11:50Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
  "metadata_fetched": "2026-11-07T06:00:44Z",
  "package": "prisma",
  "page": "https://releases.formachines.ai/pkg/npm/prisma/",
- "prereleases_in_window": 14,
+ "prereleases_in_window": 13,
  "registry": "https://www.npmjs.com/package/prisma",
  "releases": [
   {
@@ -233,23 +233,6 @@
    "prerelease": true,
    "quotes": [],
    "version": "8.0.0-rc.30-dev.178",
-   "yanked_or_deprecated": false
-  },
-  {
-   "date": "2026-10-31T06:31:34Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prisma/8.0.0-rc.29-dev.177",
-   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
-   "notes_url": "https://github.com/prisma/prisma-cli/releases",
-   "package": "prisma",
-   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
-   "prerelease": true,
-   "quotes": [],
-   "version": "8.0.0-rc.29-dev.177",
    "yanked_or_deprecated": false
   }
  ],

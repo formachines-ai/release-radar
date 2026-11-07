@@ -642,7 +642,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
 # HTML rendering
 # ----------------------------------------------------------------------------------------------------------
 def layout(title: str, body: str, built: str, description: str = "", canonical: str = "", noindex: bool = False,
-           jsonld: dict | None = None, og_type: str = "website") -> str:
+           jsonld: dict | None = None, og_type: str = "website", extra_head: str = "") -> str:
     desc = description or "Daily feed of PyPI and npm releases with verbatim breaking-change quotes and links to verified Errata corrections."
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     canon = f'<link rel="canonical" href="{esc(canonical)}">\n' if canonical else ""
@@ -668,7 +668,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 {robots}{canon}<link rel="stylesheet" href="/style.css">
 <link rel="icon" href="/brand/avatar.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)} RSS" href="/feed.xml">
-</head>
+{extra_head}</head>
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="/">{esc(SITE_NAME)}</a>
@@ -779,6 +779,7 @@ def render_index(model: dict, errata_count: int) -> str:
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
             'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
             'and no flag does not mean a safe update.</p>',
+            '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
             "\n".join(flagged_block),
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
@@ -841,6 +842,7 @@ def render_package(p: dict, model: dict) -> str:
         meta.append(("Changelog", f'<a href="{esc(p["changelog"])}" rel="nofollow">{esc(p["changelog"])}</a>'))
     meta.append(("Metadata fetched", esc(fmt_date(p.get("fetched")))))
     meta.append(("Data", f'<a href="{esc(p["path"])}index.json">index.json</a>'))
+    meta.append(("Follow this package", f'<a href="{esc(p["path"])}feed.xml">RSS</a>'))
     body = [f'<h1>{esc(p["name"])} <span class="badge eco">{esc(p["ecosystem"])}</span></h1>']
     if p.get("summary"):
         body.append(f'<p class="lead">{esc(p["summary"])}</p>')
@@ -880,7 +882,8 @@ def render_package(p: dict, model: dict) -> str:
           "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                             "contentUrl": SITE_BASE + p["path"] + "index.json"}]}
     return layout(f"{p['name']} ({p['ecosystem']}) — {SITE_NAME}", "\n".join(body), model["built"],
-                  description=desc, canonical=SITE_BASE + p["path"], jsonld=ld)
+                  description=desc, canonical=SITE_BASE + p["path"], jsonld=ld,
+                  extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(p["name"])} releases" href="{esc(p["path"])}feed.xml">\n')
 
 
 def render_go(url: str, built: str, vote: bool = False) -> str:
@@ -971,9 +974,9 @@ def public_release(r: dict) -> dict:
     }
 
 
-def render_feed(model: dict) -> str:
+def render_feed(model: dict, releases: list | None = None, pkg: dict | None = None) -> str:
     items = []
-    for r in model["releases"]:
+    for r in (model["releases"] if releases is None else releases):
         title = f"{r['name']} {r['version']} ({r['ecosystem']})" + (" — breaking/deprecated wording" if r["flagged"] else "")
         desc_parts = []
         for q in r["quotes"]:
@@ -993,11 +996,19 @@ def render_feed(model: dict) -> str:
             "</item>"
         )
     built = parse_dt(model["built"]) or utcnow()
+    if pkg:
+        ctitle = f"{SITE_NAME} — {pkg['name']} ({pkg['ecosystem']})"
+        clink = SITE_BASE + pkg["path"]
+        self_url = clink + "feed.xml"
+        cdesc = f"Releases of {pkg['name']} ({pkg['ecosystem']}) in the last {WINDOW_DAYS} days; flagged ones carry a verbatim quote. "
+    else:
+        ctitle, clink, self_url = SITE_NAME, SITE_BASE + "/", SITE_BASE + "/feed.xml"
+        cdesc = f"PyPI and npm releases of the last {WINDOW_DAYS} days with verbatim breaking-change quotes. "
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
-            f"<title>{esc(SITE_NAME)}</title><link>{esc(SITE_BASE)}/</link>"
-            f"<description>PyPI and npm releases of the last {WINDOW_DAYS} days with verbatim breaking-change quotes. Built by AI agents (agent-team); responsible: {esc(RESPONSIBLE)}.</description>"
+            f"<title>{esc(ctitle)}</title><link>{esc(clink)}</link>"
+            f"<description>{esc(cdesc)}Built by AI agents (agent-team); responsible: {esc(RESPONSIBLE)}.</description>"
             f"<language>en</language><lastBuildDate>{built.strftime('%a, %d %b %Y %H:%M:%S +0000')}</lastBuildDate>"
-            f'<atom:link href="{esc(SITE_BASE)}/feed.xml" rel="self" type="application/rss+xml"/>'
+            f'<atom:link href="{esc(self_url)}" rel="self" type="application/rss+xml"/>'
             + "".join(items) + "</channel></rss>\n")
 
 
@@ -1012,6 +1023,7 @@ def render_llms(model: dict) -> str:
              f"- [feed.xml]({SITE_BASE}/feed.xml): RSS 2.0 of the same releases",
              f"- [build.json]({SITE_BASE}/build.json): build time, package and release counts, errors",
              f"- Per package: {SITE_BASE}/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)",
+             f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)",
              "", "## Pages", "",
              f"- [Front page]({SITE_BASE}/): last 24 h, flagged releases, PyPI and npm lists, all packages",
              f"- [Legal]({SITE_BASE}/legal/)",
@@ -1073,6 +1085,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     for p in model["packages"]:
         d = PUBLIC_DIR / p["path"].strip("/")
         write_text(d / "index.html", render_package(p, model))
+        write_text(d / "feed.xml", render_feed(model, p["releases"], p))
         write_json(d / "index.json", {
             "ecosystem": p["ecosystem"], "package": p["name"], "summary": p["summary"], "latest": p.get("latest"),
             "registry": p["page"], "repository": f"https://github.com/{p['repo']}" if p.get("repo") else None,
