@@ -1,0 +1,107 @@
+{
+ "built": "2026-11-07T18:19:36Z",
+ "changelog": null,
+ "ecosystem": "npm",
+ "errata": null,
+ "latest": "2.1.319",
+ "latest_stable": {
+  "date": "2026-11-06T00:58:56Z",
+  "version": "2.1.319"
+ },
+ "metadata_fetched": "2026-11-07T18:18:50Z",
+ "package": "@anthropic-ai/claude-code",
+ "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+ "prereleases_in_window": 0,
+ "registry": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
+ "releases": [
+  {
+   "date": "2026-11-06T00:58:56Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.319",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/df1346203f/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Changed auto mode so that a project's settings files or a plugin can no longer switch its server-side check back on once you have switched it off outside the project"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Changed Monitor's WebSocket watch to follow a rule on every Bash command: a deny refuses it, and under an ask rule an allow on Monitor, bypass mode or auto mode no longer skips the prompt"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
+    }
+   ],
+   "version": "2.1.319",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-03T21:55:17Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.318",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6385d8e47a/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "- Fixed `claude remote-control` hosts, the background daemon and self-hosted runners failing to start new sessions (`spawn ENOENT`) after an update or version cleanup removed the binary of a still-running process"
+    },
+    {
+     "match": "removed",
+     "quote": "- Fixed the iPhone app showing a cloud session's turn as finished while it kept running, after a response was cut off at a tool call or a refused image or document was removed"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Changed Claude Code to no longer install or update the IDE extension when started in an IDE terminal; use `/ide` from an outside terminal or your editor's extensions view"
+    }
+   ],
+   "version": "2.1.318",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-02T23:57:53Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.317",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8491ebd6e6/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "- Fixed a re-created agent teammate being removed from its team by an earlier shutdown approval"
+    },
+    {
+     "match": "Removed",
+     "quote": "- Removed the Read tool's \"file unchanged since your last Read\" stub: reading an unchanged file again returns its content"
+    }
+   ],
+   "version": "2.1.317",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "repository": "https://github.com/anthropics/claude-code",
+ "stable_in_window": 3,
+ "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
+}

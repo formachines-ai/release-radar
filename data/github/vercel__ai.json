@@ -121,7 +121,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.163"
   }
  },
- "fetched": "2026-11-07T06:00:17Z",
+ "fetched": "2026-11-07T18:18:47Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- Updated dependencies [bace553]\n- Updated dependencies [6737c77]\n- Updated dependencies [bb4e2d0]\n  - @ai-sdk/gateway@4.0.137",

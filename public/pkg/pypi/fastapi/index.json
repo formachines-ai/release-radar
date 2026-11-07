@@ -1,20 +1,55 @@
 {
- "built": "2026-11-07T07:11:50Z",
+ "built": "2026-11-07T18:19:36Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "0.162.0",
+ "latest": "0.162.2",
  "latest_stable": {
-  "date": "2026-10-23T18:47:31Z",
-  "version": "0.162.0"
+  "date": "2026-11-07T15:41:38Z",
+  "version": "0.162.2"
  },
- "metadata_fetched": "2026-11-07T06:00:09Z",
+ "metadata_fetched": "2026-11-07T18:18:38Z",
  "package": "fastapi",
  "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/fastapi/",
- "releases": [],
+ "releases": [
+  {
+   "date": "2026-11-07T15:41:38Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/fastapi/0.162.2",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f1e73fe7b2/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.2",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "0.162.2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "date": "2026-11-07T11:56:02Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/fastapi/0.162.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4667a3a879/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.1",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "0.162.1",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/fastapi/fastapi",
- "stable_in_window": 0,
+ "stable_in_window": 2,
  "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 }

@@ -3,7 +3,7 @@
   "errata": 28,
   "error_signatures": 25,
   "packages": 21,
-  "packages_checked": 95
+  "packages_checked": 97
  },
  "errors": {
   "json": "https://formachines.ai/errata/errors/index.json",
@@ -21,16 +21,16 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "models": [
   {
-   "checked": 817,
+   "checked": 829,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-06",
+   "last_run": "2026-11-07",
    "model": "claude-sonnet-5-5",
    "outdated": 92
   },
   {
-   "checked": 894,
+   "checked": 910,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-06",
+   "last_run": "2026-11-07",
    "model": "gpt-6.1-sol",
    "outdated": 132
   },
@@ -161,7 +161,7 @@
    "new_version": "8.5.0",
    "old_version": "8.3.1",
    "package": "click",
-   "updated": "2026-10-27",
+   "updated": "2026-11-07",
    "url": "https://formachines.ai/errata/pypi/click/"
   },
   {
@@ -181,7 +181,7 @@
    "new_version": "2.34.0",
    "old_version": "1.69.0",
    "package": "google-genai",
-   "updated": "2026-10-31",
+   "updated": "2026-11-07",
    "url": "https://formachines.ai/errata/pypi/google-genai/"
   },
   {
@@ -255,5 +255,5 @@
    "url": "https://formachines.ai/errata/pypi/websockets/"
   }
  ],
- "updated": "2026-11-05"
+ "updated": "2026-11-07"
 }
