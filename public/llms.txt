@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-08T14:12:54Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-08T19:13:25Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -119,6 +119,11 @@ Updated: 2026-11-08T14:12:54Z UTC (daily build 06:00 UTC)
 - [typer (pypi)](https://releases.formachines.ai/pkg/pypi/typer/): latest 0.28.0 · JSON: https://releases.formachines.ai/pkg/pypi/typer/index.json
 - [uvicorn (pypi)](https://releases.formachines.ai/pkg/pypi/uvicorn/): latest 0.54.0 · JSON: https://releases.formachines.ai/pkg/pypi/uvicorn/index.json
 - [websockets (pypi)](https://releases.formachines.ai/pkg/pypi/websockets/): latest 17.4 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/websockets/index.json
+
+## CI check
+
+- [ci-check.py](https://releases.formachines.ai/ci-check.py): Python 3.12 stdlib script. Reads your requirements.txt or package.json, fetches today.json and prints your dependencies released in the 48 h before `built`: package@version, date, flagged yes/no, verbatim quotes, notes URL. A flag is a regex match plus a quote; no flag does not mean safe.
+- Run: `curl -sO https://releases.formachines.ai/ci-check.py && python3 ci-check.py requirements.txt --fail-on-flag` (exit 0 unless --fail-on-flag and a listed release is flagged)
 
 ## Related
 
