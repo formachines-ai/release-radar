@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:15:45Z",
+ "built": "2026-11-08T08:10:03Z",
  "changelog": "https://github.com/ijl/orjson/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-07T14:07:54Z",
   "version": "3.13.0"
  },
- "metadata_fetched": "2026-11-08T06:15:57Z",
+ "metadata_fetched": "2026-11-08T08:10:16Z",
  "package": "orjson",
  "page": "https://releases.formachines.ai/pkg/pypi/orjson/",
  "prereleases_in_window": 0,

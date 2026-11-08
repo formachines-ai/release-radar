@@ -1,7 +1,7 @@
 {
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
- "fetched": "2026-11-08T06:15:56Z",
+ "fetched": "2026-11-08T08:10:15Z",
  "homepage": "https://github.com/fastapi/fastapi",
  "latest": "0.162.2",
  "name": "fastapi",

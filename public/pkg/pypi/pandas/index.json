@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:15:45Z",
+ "built": "2026-11-08T08:10:03Z",
  "changelog": "https://pandas.pydata.org/docs/whatsnew/index.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-04T15:05:30Z",
   "version": "3.1.1"
  },
- "metadata_fetched": "2026-11-08T06:15:57Z",
+ "metadata_fetched": "2026-11-08T08:10:16Z",
  "package": "pandas",
  "page": "https://releases.formachines.ai/pkg/pypi/pandas/",
  "prereleases_in_window": 0,

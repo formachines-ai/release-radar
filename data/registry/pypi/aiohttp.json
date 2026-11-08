@@ -1,7 +1,7 @@
 {
  "changelog": "https://docs.aiohttp.org/en/stable/changes.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-08T06:15:49Z",
+ "fetched": "2026-11-08T08:10:07Z",
  "homepage": "https://github.com/aio-libs/aiohttp",
  "latest": "3.14.5",
  "name": "aiohttp",

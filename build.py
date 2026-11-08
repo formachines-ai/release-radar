@@ -491,7 +491,8 @@ def candidate_tags(releases: list[dict], version: str, pkg_name: str) -> list[st
     out: list[str] = []
     first = guess_tag(releases, version, pkg_name)
     for t in (first, version, f"v{version}", f"{pkg_name}@{version}", f"{short}@{version}", f"{short}-v{version}",
-              f"{short}-{version}", f"rust-v{version}", f"{short}@v{version}", f"{pkg_name}@v{version}"):
+              f"{short}-{version}", f"rust-v{version}", f"{short}@v{version}", f"{pkg_name}@v{version}",
+              "rel_" + version.replace(".", "_")):  # sqlalchemy/sqlalchemy: rel_2_1_8
         if t and t not in out:
             out.append(t)
     return out

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T06:15:47Z",
+ "fetched": "2026-11-08T08:10:05Z",
  "releases": [
   {
    "body": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
