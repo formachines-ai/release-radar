@@ -1,13 +1,13 @@
 {
  "changelog": null,
  "dist_tags": {
-  "alpha": "0.169.0-alpha.2",
-  "alpha-darwin-arm64": "0.169.0-alpha.2-darwin-arm64",
-  "alpha-darwin-x64": "0.169.0-alpha.2-darwin-x64",
-  "alpha-linux-arm64": "0.169.0-alpha.2-linux-arm64",
-  "alpha-linux-x64": "0.169.0-alpha.2-linux-x64",
-  "alpha-win32-arm64": "0.169.0-alpha.2-win32-arm64",
-  "alpha-win32-x64": "0.169.0-alpha.2-win32-x64",
+  "alpha": "0.169.0-alpha.3",
+  "alpha-darwin-arm64": "0.169.0-alpha.3-darwin-arm64",
+  "alpha-darwin-x64": "0.169.0-alpha.3-darwin-x64",
+  "alpha-linux-arm64": "0.169.0-alpha.3-linux-arm64",
+  "alpha-linux-x64": "0.169.0-alpha.3-linux-x64",
+  "alpha-win32-arm64": "0.169.0-alpha.3-win32-arm64",
+  "alpha-win32-x64": "0.169.0-alpha.3-win32-x64",
   "beta": "0.1.2505172116",
   "darwin-arm64": "0.167.0-darwin-arm64",
   "darwin-x64": "0.167.0-darwin-x64",
@@ -124,7 +124,7 @@
   "win32-x64": "0.167.0-win32-x64"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-07T18:18:53Z",
+ "fetched": "2026-11-08T06:00:25Z",
  "homepage": "https://github.com/openai/codex#readme",
  "latest": "0.167.0",
  "name": "@openai/codex",
@@ -132,6 +132,41 @@
  "repo": "openai/codex",
  "summary": "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
  "versions": [
+  {
+   "date": "2026-11-07T19:46:11Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-darwin-x64"
+  },
+  {
+   "date": "2026-11-07T19:45:06Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-win32-arm64"
+  },
+  {
+   "date": "2026-11-07T19:44:47Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-darwin-arm64"
+  },
+  {
+   "date": "2026-11-07T19:44:19Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-win32-x64"
+  },
+  {
+   "date": "2026-11-07T19:43:41Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-linux-arm64"
+  },
+  {
+   "date": "2026-11-07T19:43:07Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3-linux-x64"
+  },
+  {
+   "date": "2026-11-07T19:41:09Z",
+   "deprecated": false,
+   "version": "0.169.0-alpha.3"
+  },
   {
    "date": "2026-11-06T22:32:26Z",
    "deprecated": false,

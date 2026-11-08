@@ -8,7 +8,7 @@
   "rc": "5.0.0-rc.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-07T18:19:09Z",
+ "fetched": "2026-11-08T06:00:42Z",
  "homepage": "https://tanstack.com/query",
  "latest": "5.107.1",
  "name": "@tanstack/react-query",

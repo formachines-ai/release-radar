@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T01:11:41Z",
+ "built": "2026-11-08T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-11-02T18:16:41Z",
   "version": "13.2.0"
  },
- "metadata_fetched": "2026-11-07T18:19:18Z",
+ "metadata_fetched": "2026-11-08T06:00:51Z",
  "package": "firebase",
  "page": "https://releases.formachines.ai/pkg/npm/firebase/",
  "prereleases_in_window": 1,

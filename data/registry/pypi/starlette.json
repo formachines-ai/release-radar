@@ -1,7 +1,7 @@
 {
  "changelog": "https://starlette.dev/release-notes/",
  "ecosystem": "pypi",
- "fetched": "2026-11-07T18:18:46Z",
+ "fetched": "2026-11-08T06:00:16Z",
  "homepage": "https://github.com/Kludex/starlette",
  "latest": "1.10.0",
  "name": "starlette",

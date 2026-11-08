@@ -1,19 +1,55 @@
 {
- "built": "2026-11-08T01:11:41Z",
+ "built": "2026-11-08T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.108.2",
+ "latest": "1.108.3",
  "latest_stable": {
-  "date": "2026-11-06T22:03:12Z",
-  "version": "1.108.2"
+  "date": "2026-11-07T22:25:38Z",
+  "version": "1.108.3"
  },
- "metadata_fetched": "2026-11-07T18:18:34Z",
+ "metadata_fetched": "2026-11-08T06:00:04Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
- "prereleases_in_window": 3,
+ "prereleases_in_window": 4,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-08T02:21:46Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.110.0.dev2",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "quotes": [],
+   "version": "1.110.0.dev2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-07T22:25:38Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.108.3",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e2a2e9fb0e/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.3",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "version": "1.108.3",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-07T04:32:27Z",
@@ -160,6 +196,6 @@
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Library to easily interface with LLM API providers"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-07T18:18:51Z",
+ "fetched": "2026-11-08T06:00:22Z",
  "releases": [
   {
    "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **client:** set the name of each error to its class name\n* **client:** set the name of WorkloadIdentityError\n\n\n### Chores\n\n* **docs:** describe the type and message of API errors\n* **internal:** generate the OpenTelemetry span attribute tables\n* **internal:** tell contributors when a runtime type check belongs\n\n\n### Documentation\n\n* add the rules the SDKs share to CLAUDE.md\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",
