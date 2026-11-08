@@ -947,7 +947,7 @@ def render_index(model: dict, errata_count: int) -> str:
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
             'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
             'and no flag does not mean a safe update.</p>',
-            '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
+            '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="/feed-breaking.xml">Breaking-only RSS (/feed-breaking.xml)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
             "\n".join(flagged_block),
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
@@ -984,7 +984,7 @@ def render_index(model: dict, errata_count: int) -> str:
     body.append('<div class="table-wrap"><table class="table"><thead><tr><th>eco</th><th>package</th><th>latest</th>'
                 f'<th>releases / {WINDOW_DAYS} d</th><th>newest release</th><th>Errata</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>")
     body.append('<h2>For machines</h2><p class="note"><a href="/today.json">/today.json</a> — this page as data · '
-                '<a href="/feed.xml">/feed.xml</a> — RSS · <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code> — per package · '
+                '<a href="/feed.xml">/feed.xml</a> — RSS · <a href="/feed-breaking.xml">/feed-breaking.xml</a> — RSS, flagged only · <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code> — per package · '
                 '<a href="/llms.txt">/llms.txt</a> · <a href="/build.json">/build.json</a>. Want a package added? It is one line in '
                 '<code>config/packages.txt</code> of the public repository.</p>')
     title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
@@ -996,7 +996,8 @@ def render_index(model: dict, errata_count: int) -> str:
           "distribution": [
               {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": SITE_BASE + "/today.json"},
               {"@type": "DataDownload", "encodingFormat": "application/rss+xml", "contentUrl": SITE_BASE + "/feed.xml"}]}
-    return layout(title, "\n".join(body), model["built"], description=desc, canonical=SITE_BASE + "/", jsonld=ld)
+    return layout(title, "\n".join(body), model["built"], description=desc, canonical=SITE_BASE + "/", jsonld=ld,
+                  extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)} — flagged releases only" href="/feed-breaking.xml">\n')
 
 
 def render_package(p: dict, model: dict) -> str:
@@ -1180,6 +1181,37 @@ def render_feed(model: dict, releases: list | None = None, pkg: dict | None = No
             + "".join(items) + "</channel></rss>\n")
 
 
+def render_breaking_feed(model: dict) -> str:
+    """RSS 2.0 with only the flagged releases of the window: verbatim quotes (max 3) and the /go/ notes link."""
+    items = []
+    for r in model["releases"]:
+        if not r["flagged"]:
+            continue
+        link = f"{SITE_BASE}/go/{r['notes_go']}/" if r.get("notes_go") else SITE_BASE + r["pkg_path"]
+        desc = [f"Quote: {q['quote']}" for q in r["quotes"][:3]]
+        desc.append(f"Release notes: {link}")
+        dt = parse_dt(r["date"]) or utcnow()
+        items.append(
+            "<item>"
+            f"<title>{esc(r['name'] + '@' + r['version'])} ({esc(r['ecosystem'])}) — {dt.strftime('%Y-%m-%d')}</title>"
+            f"<link>{esc(link)}</link>"
+            f"<guid isPermaLink=\"false\">{esc(r['id'])}</guid>"
+            f"<pubDate>{dt.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>"
+            f"<category>{esc(r['ecosystem'])}</category>"
+            f"<description>{esc(chr(10).join(desc))}</description>"
+            "</item>")
+    built = parse_dt(model["built"]) or utcnow()
+    cdesc = (f"Only the releases of the last {WINDOW_DAYS} days that are flagged. A flag is a regular-expression word match "
+             "(breaking, deprecated, removed, renamed, dropped support, no longer) in the release notes plus a verbatim quote; "
+             "no flag does not mean a release is safe. ")
+    return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
+            f"<title>{esc(SITE_NAME)} — flagged releases only</title><link>{esc(SITE_BASE + '/')}</link>"
+            f"<description>{esc(cdesc)}Built by AI agents (agent-team); responsible: {esc(RESPONSIBLE)}.</description>"
+            f"<language>en</language><lastBuildDate>{built.strftime('%a, %d %b %Y %H:%M:%S +0000')}</lastBuildDate>"
+            f'<atom:link href="{esc(SITE_BASE + "/feed-breaking.xml")}" rel="self" type="application/rss+xml"/>'
+            + "".join(items) + "</channel></rss>\n")
+
+
 def render_llms(model: dict) -> str:
     lines = [f"# {SITE_NAME}", "",
              f"> Daily feed of PyPI and npm releases ({len(model['packages'])} tracked packages, last {WINDOW_DAYS} days) with the verbatim lines of release notes that mention breaking, deprecated, removed, renamed, dropped support or no longer. Flags are regular-expression matches with a quote, never a model's judgement. Packages with a sandbox-verified fix on formachines.ai/errata carry a link.",
@@ -1189,6 +1221,7 @@ def render_llms(model: dict) -> str:
              "## Data", "",
              f"- [today.json]({SITE_BASE}/today.json): every release in the window — package, version, date, flagged, quotes, notes_url, errata_url; top-level counts object (releases, packages, flagged, prereleases, with_errata) matching build.json",
              f"- [feed.xml]({SITE_BASE}/feed.xml): RSS 2.0 of the same releases",
+             f"- [feed-breaking.xml]({SITE_BASE}/feed-breaking.xml): RSS 2.0 with only the flagged releases (regex match + verbatim quotes + notes link); valid empty channel if none",
              f"- [build.json]({SITE_BASE}/build.json): build time, package and release counts, errors",
              f"- Per package: {SITE_BASE}/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)",
              f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)",
@@ -1248,6 +1281,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     write_text(PUBLIC_DIR / "robots.txt", ROBOTS_TXT.replace("__SITE__", SITE_BASE))
     write_text(PUBLIC_DIR / "llms.txt", render_llms(model))
     write_text(PUBLIC_DIR / "feed.xml", render_feed(model))
+    write_text(PUBLIC_DIR / "feed-breaking.xml", render_breaking_feed(model))
     write_text(PUBLIC_DIR / "sitemap.xml", render_sitemap(model))
     go_map: dict[str, str] = {}
     for p in model["packages"]:

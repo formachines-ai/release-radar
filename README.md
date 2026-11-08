@@ -63,6 +63,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (that package's releases in the window; valid empty channel if none)
   today.json                every release in the window with quotes and links
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
+  feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt
   llms.txt · robots.txt · sitemap.xml · build.json
   go/<id>/index.html        meta-refresh redirect to an external URL; id = sha1(url)[:10]; go/index.json maps ids → URLs
   legal/index.html          responsible person, data sources, license, no-tracking statement
