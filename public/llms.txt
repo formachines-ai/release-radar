@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-08T19:13:25Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-08T20:10:29Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -122,8 +122,26 @@ Updated: 2026-11-08T19:13:25Z UTC (daily build 06:00 UTC)
 
 ## CI check
 
-- [ci-check.py](https://releases.formachines.ai/ci-check.py): Python 3.12 stdlib script. Reads your requirements.txt or package.json, fetches today.json and prints your dependencies released in the 48 h before `built`: package@version, date, flagged yes/no, verbatim quotes, notes URL. A flag is a regex match plus a quote; no flag does not mean safe.
+- [ci-check.txt](https://releases.formachines.ai/ci-check.txt): readable copy (text/plain) of the script, identical to ci-check.py. Python 3.12 stdlib script. Reads your requirements.txt or package.json, fetches today.json and prints your dependencies released in the 48 h before `built`: package@version, date, flagged yes/no, verbatim quotes, notes URL. A flag is a regex match plus a quote; no flag does not mean safe.
 - Run: `curl -sO https://releases.formachines.ai/ci-check.py && python3 ci-check.py requirements.txt --fail-on-flag` (exit 0 unless --fail-on-flag and a listed release is flagged)
+
+## today.json release fields
+
+https://releases.formachines.ai/today.json has top-level keys built, window_start, window_days, counts, site, disclosure and releases. Each item of `releases` has these keys:
+- id: `<ecosystem>/<package>/<version>`
+- ecosystem: `pypi` or `npm`
+- package, version: registry name and version string
+- date: UTC publication time, ISO 8601
+- prerelease: true if the version is a pre-release (PyPI a/b/rc/dev, npm semver `-` part) or GitHub marks it so
+- bump: `major`, `minor`, `patch`, `prerelease` or `unknown`; the step from the highest known stable version below this one
+- variant_of: base version string when this version is a platform build of another version (e.g. `1.2.3` for a variant of it), otherwise null
+- yanked_or_deprecated: true if the registry marks the version yanked or deprecated
+- flagged: true if the release notes matched the breaking regex; a regex match, not a judgement
+- quotes: list of `{match, quote}` objects, at most 3; `match` is the matched word, `quote` the verbatim line from the notes (≤ 280 characters); empty list if not flagged
+- notes_url: release notes URL; notes_redirect: the same via the site's /go/<id>/ page (null if none)
+- notes_kind: `github_release` (notes were read and checked), `changelog`, `repo_releases` or `registry_page` (a link only, nothing was read, so not flagged)
+- errata_url: URL of a verified Errata correction for the package, or null
+- page, json: this package's page and its index.json
 
 ## Related
 
