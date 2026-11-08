@@ -795,6 +795,8 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     canon = f'<link rel="canonical" href="{esc(canonical)}">\n' if canonical else ""
     og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
+          f'<meta name="twitter:card" content="summary">\n<meta name="twitter:title" content="{esc(title)}">\n'
+          f'<meta name="twitter:description" content="{esc(desc)}">\n'
           f'<meta property="og:type" content="{esc(og_type)}">\n'
           + (f'<meta property="og:url" content="{esc(canonical)}">\n' if canonical else "")
           + f'<meta property="og:site_name" content="{esc(SITE_NAME)}">\n')
@@ -986,8 +988,8 @@ def render_index(model: dict, errata_count: int) -> str:
                 '<a href="/llms.txt">/llms.txt</a> · <a href="/build.json">/build.json</a>. Want a package added? It is one line in '
                 '<code>config/packages.txt</code> of the public repository.</p>')
     title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
-    desc = (f"{len(rels)} releases across {len(model['packages'])} tracked PyPI and npm packages in the last {WINDOW_DAYS} days. "
-            f"Built {model['built'][:10]}.")
+    desc = ("Find recent PyPI and npm releases and open their original notes. "
+            "Flags mark wording matches, not confirmed breaking changes.")
     ld = {"@type": ["WebSite", "Dataset"], "name": SITE_NAME, "description": desc, "url": SITE_BASE + "/",
           "dateModified": model["built"], "inLanguage": "en", "license": LICENSE_URL,
           "isAccessibleForFree": True,
@@ -1039,8 +1041,8 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
     body.append('<p class="note"><a href="/">← all packages</a></p>')
     n = len(p["releases"])
-    desc = (f"{p['name']} ({p['ecosystem']}): {n} release{'' if n == 1 else 's'} in the last {WINDOW_DAYS} days. "
-            f"Built {model['built'][:10]}.")
+    desc = (f"{p['name']} ({p['ecosystem']}): recent releases and links to their original notes. "
+            "Flags mark wording matches, not confirmed breaking changes.")
     ld = {"@type": ["WebPage", "Dataset"], "name": f"{p['name']} ({p['ecosystem']})", "description": desc,
           "url": SITE_BASE + p["path"], "dateModified": model["built"], "inLanguage": "en",
           "license": LICENSE_URL, "keywords": [p["name"], p["ecosystem"]],
