@@ -1,10 +1,10 @@
 {
- "built": "2026-11-08T09:12:12Z",
+ "built": "2026-11-08T10:19:36Z",
  "counts": {
   "flagged": 27,
   "packages": 97,
   "prereleases": 176,
-  "releases": 290,
+  "releases": 289,
   "with_errata": 10
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -5738,28 +5738,9 @@
    "variant_of": null,
    "version": "0.167.0-alpha.2",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-01T10:07:48Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@tanstack/react-query/5.105.1",
-   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/eb1080777f/",
-   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.1",
-   "package": "@tanstack/react-query",
-   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "5.105.1",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-01T09:12:12Z"
+ "window_start": "2026-11-01T10:19:36Z"
 }

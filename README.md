@@ -181,3 +181,9 @@ T-0068: prisma needed no change (its repo is prisma/prisma-cli; rc.30–rc.33 al
 misses are `-dev.N` npm builds with no GitHub release). Added the `rel_` tag shape for sqlalchemy. Remaining misses (codex
 per-platform/alpha builds, playwright/tailwind/typescript/react nightlies, firebase eap, django, boto3 tag-only) have no
 GitHub release for that exact version and stay `no_matching_tag`.
+
+## Head tags carry no changing numbers (T-0070)
+
+`description`, `og:*` and `twitter:*` tags on `/` and `/pkg/<eco>/<name>/` are static sentences: no release counts, no
+build date (preview bots cache them per URL). Counts and the UTC build time stay in the page body and footer. There
+is no `og:image`.
