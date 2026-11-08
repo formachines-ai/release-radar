@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T06:16:10Z",
+ "fetched": "2026-11-08T08:10:30Z",
  "releases": [
   {
    "body": "### Fixes\r\n\r\n* 🐛 Ensure that the default option name is not changed by setting a metavar. PR [#1957](https://github.com/fastapi/typer/pull/1957) by [@svlandeg](https://github.com/svlandeg).\r\n\r\n### Docs\r\n\r\n* 🎨 Enable Ruff formatting for Python in Markdown. PR [#1978](https://github.com/fastapi/typer/pull/1978) by [@tiangolo](https://github.com/tiangolo).\r\n\r\n### Internal\r\n\r\n* ⬆ Bump certifi from 2025.11.12 to 2026.10.18. PR [#1990](https://github.com/fastapi/typer/pull/1990) by [@dependabot[bot]](https://github.com/apps/dependabot).\r\n* ⬆ Bump the python-packages group with 6 updates. PR [#1994](https://github.com/fastapi/typer/pull/1994) by [@dependabot[bot]](https://github.com/apps/dependabot).\r\n* ⬆ Bump the github-actions group with 6 updates. PR [#1993](https://github.com/fastapi/typer/pull/1993) by [@dependabot[bot]](https://github.com/apps/dependabot).\r\n* ⬆ Bump pre-commit hooks. PR [#1995](https://github.com/fastapi/typer/pull/1995) by [@pr-submit[bot]](https://github.com/apps/pr-submit).\r\n",

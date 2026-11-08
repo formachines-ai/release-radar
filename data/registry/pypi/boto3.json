@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-08T06:15:49Z",
+ "fetched": "2026-11-08T08:10:07Z",
  "homepage": "https://github.com/boto/boto3",
  "latest": "1.43.126",
  "name": "boto3",

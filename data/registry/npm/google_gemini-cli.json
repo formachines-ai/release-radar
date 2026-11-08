@@ -8,7 +8,7 @@
   "staging-tmp": "0.67.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T06:16:15Z",
+ "fetched": "2026-11-08T08:10:37Z",
  "homepage": "https://github.com/google-gemini/gemini-cli#readme",
  "latest": "0.67.0",
  "name": "@google/gemini-cli",

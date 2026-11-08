@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:15:45Z",
+ "built": "2026-11-08T08:10:03Z",
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-04T01:18:31Z",
   "version": "2.1.8"
  },
- "metadata_fetched": "2026-11-08T06:16:00Z",
+ "metadata_fetched": "2026-11-08T08:10:20Z",
  "package": "sqlalchemy",
  "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
  "prereleases_in_window": 0,
@@ -22,9 +22,9 @@
    "flagged": false,
    "id": "pypi/sqlalchemy/2.1.8",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
-   "notes_kind": "changelog",
-   "notes_redirect": "https://releases.formachines.ai/go/073de2ab36/",
-   "notes_url": "https://docs.sqlalchemy.org/latest/changelog/index.html",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8248c4689b/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_1_8",
    "package": "sqlalchemy",
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
@@ -40,9 +40,9 @@
    "flagged": false,
    "id": "pypi/sqlalchemy/2.0.57",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
-   "notes_kind": "changelog",
-   "notes_redirect": "https://releases.formachines.ai/go/073de2ab36/",
-   "notes_url": "https://docs.sqlalchemy.org/latest/changelog/index.html",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/c0a2cd6ddc/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_0_57",
    "package": "sqlalchemy",
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
@@ -55,16 +55,29 @@
    "date": "2026-11-03T20:34:34Z",
    "ecosystem": "pypi",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "pypi/sqlalchemy/2.1.7",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
-   "notes_kind": "changelog",
-   "notes_redirect": "https://releases.formachines.ai/go/073de2ab36/",
-   "notes_url": "https://docs.sqlalchemy.org/latest/changelog/index.html",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e2c30d7b2a/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_1_7",
    "package": "sqlalchemy",
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "no longer applied to a SELECT that's nested at any level within its own"
+    },
+    {
+     "match": "no longer",
+     "quote": "so that expressions such as `hstore_column.is_not(None)` no longer emit a"
+    },
+    {
+     "match": "deprecation",
+     "quote": "so that expressions such as `hstore_column.is_not(None)` no longer emit a\ndeprecation warning."
+    }
+   ],
    "version": "2.1.7",
    "yanked_or_deprecated": false
   },
@@ -73,16 +86,21 @@
    "date": "2026-11-03T20:25:53Z",
    "ecosystem": "pypi",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "pypi/sqlalchemy/2.0.56",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
-   "notes_kind": "changelog",
-   "notes_redirect": "https://releases.formachines.ai/go/073de2ab36/",
-   "notes_url": "https://docs.sqlalchemy.org/latest/changelog/index.html",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5cc2093647/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_0_56",
    "package": "sqlalchemy",
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "an expired object that is replaced in this way no longer causes the"
+    }
+   ],
    "version": "2.0.56",
    "yanked_or_deprecated": false
   }

@@ -106,7 +106,7 @@ Signals for new packages: 404s on `/pkg/<eco>/<name>/` in the server log (see th
 ## Release-notes coverage (T-0066)
 
 `notes_kind = github_release` means the GitHub release for exactly this version was found. Tags are matched by exact
-version only: `1.2.3`, `v1.2.3`, `<name>@1.2.3`, `<name>-v1.2.3`, `@scope/name@1.2.3`, `rust-v1.2.3` (openai/codex), and for
+version only: `1.2.3`, `v1.2.3`, `<name>@1.2.3`, `<name>-v1.2.3`, `@scope/name@1.2.3`, `rust-v1.2.3` (openai/codex), `rel_1_2_3` (sqlalchemy/sqlalchemy; confirmed in its releases list, T-0068), and for
 PyPI the PEP 440 spelling of the same pre-release (`1.107.0rc3` = tag `v1.107.0-rc.3`). If the newest-50 list lacks the
 tag, the exact candidate tags are requested one by one (404s are cached). No nearby or similar release is ever linked.
 
@@ -115,7 +115,7 @@ tag, the exact candidate tags are requested one by one (404s are cached). No nea
   (e.g. `npm react facebook/react`: the registry says `react/react`).
 - `build.json` → `notes_coverage`: `{releases, github_release, missing:[{eco,name,version,reason}]}`. `reason` is one of
   `no_repo_url` (no GitHub repo known), `no_matching_tag` (repo read fine, no release for this exact version: nightlies,
-  tag-only repos such as django/boto3/sqlalchemy, per-platform codex builds), `api_error` (GitHub HTTP error),
+  tag-only repos such as django/boto3, per-platform codex builds), `api_error` (GitHub HTTP error),
   `rate_limited` (403/429 or quota exhausted), `not_fetched` (`--no-github` / `--offline`).
 - Before/after: on the 08.11 06:00 build `github_release` was 124 of 291 releases (42.6 %); after T-0066 it is 129 of 291
   (44.3 %). The rest are mostly nightly/dev builds that have no GitHub release at all.
@@ -167,3 +167,8 @@ Deployed by the agent-team droplet scripts (`deploy/droplet/` in the dispatcher 
 ## License
 
 Site text and data files: CC BY 4.0. Quoted release notes remain under their authors' licenses. Code: MIT.
+
+T-0068: prisma needed no change (its repo is prisma/prisma-cli; rc.30–rc.33 already match `v<version>`; the remaining prisma
+misses are `-dev.N` npm builds with no GitHub release). Added the `rel_` tag shape for sqlalchemy. Remaining misses (codex
+per-platform/alpha builds, playwright/tailwind/typescript/react nightlies, firebase eap, django, boto3 tag-only) have no
+GitHub release for that exact version and stay `no_matching_tag`.
