@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T06:00:03Z",
+ "fetched": "2026-11-08T06:15:46Z",
  "releases": [
   {
    "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** raise error-code and status exception classes on platform clients\n* **bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options\n\n\n### Chores\n\n* **client:** stop recording sampling parameters on OpenTelemetry spans\n* **docs:** describe the type and message of API errors\n* **internal:** define the status error mapping once on the base client\n* **internal:** tell contributors when a runtime type check belongs\n* **tests:** remove ambient ANTHROPIC_ and AWS_ variables before the tests run\n\n\n### Documentation\n\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",

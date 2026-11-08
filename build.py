@@ -196,6 +196,7 @@ class Http:
     def __init__(self, offline: bool = False):
         self.offline = offline
         self.github_remaining: int | None = None
+        self.gh_problem: dict[str, str] = {}   # repo → "rate_limited" | "api_error" (last GitHub failure while reading it)
         self.github_reset: int | None = None
         self.errors: list[str] = []
         self.requests = 0
@@ -430,6 +431,14 @@ def fetch_npm(http: Http, name: str) -> dict | None:
 # ----------------------------------------------------------------------------------------------------------
 # GitHub release notes
 # ----------------------------------------------------------------------------------------------------------
+def note_gh_failure(http: Http, repo: str, status: int) -> None:
+    """Remember why GitHub could not be read for a repo (used for notes_coverage reasons)."""
+    if status in (403, 429):
+        http.gh_problem[repo] = "rate_limited"
+    elif status != 404:
+        http.gh_problem[repo] = "api_error"
+
+
 def fetch_github_releases(http: Http, repo: str, no_github: bool) -> list[dict]:
     """Newest releases of a repo (trimmed: tag, name, url, date, body). Cached in data/github/."""
     cache = DATA_DIR / "github" / f"{repo.replace('/', '__')}.json"
@@ -438,6 +447,7 @@ def fetch_github_releases(http: Http, repo: str, no_github: bool) -> list[dict]:
         return cached.get("releases", []) if isinstance(cached, dict) else []
     status, doc = http.github(f"/repos/{repo}/releases?per_page={GITHUB_RELEASES_PER_PAGE}")
     if status != 200 or not isinstance(doc, list):
+        note_gh_failure(http, repo, status)
         if isinstance(cached, dict):
             log.warning("github %s: HTTP %s — using cache from %s", repo, status, cached.get("fetched"))
             return cached.get("releases", [])
@@ -474,6 +484,19 @@ def guess_tag(releases: list[dict], version: str, pkg_name: str) -> str | None:
     return version
 
 
+def candidate_tags(releases: list[dict], version: str, pkg_name: str) -> list[str]:
+    """Exact tag spellings for this version: 1.2.3, v1.2.3, name@1.2.3, @scope/name@1.2.3, name-v1.2.3 …
+    Each is looked up by exact tag name; nothing is matched by similarity. The repo's own style comes first."""
+    short = pkg_name.split("/")[-1]
+    out: list[str] = []
+    first = guess_tag(releases, version, pkg_name)
+    for t in (first, version, f"v{version}", f"{pkg_name}@{version}", f"{short}@{version}", f"{short}-v{version}",
+              f"{short}-{version}", f"rust-v{version}", f"{short}@v{version}", f"{pkg_name}@v{version}"):
+        if t and t not in out:
+            out.append(t)
+    return out
+
+
 def fetch_release_by_tag(http: Http, repo: str, tag: str, no_github: bool) -> dict | None:
     """One GitHub release by tag (for monorepos whose newest-50 list does not reach the window). Cached, 404 too."""
     cache = DATA_DIR / "github" / f"{repo.replace('/', '__')}.json"
@@ -490,19 +513,33 @@ def fetch_release_by_tag(http: Http, repo: str, tag: str, no_github: bool) -> di
         rel = {"tag": r.get("tag_name") or tag, "name": r.get("name") or "", "url": r.get("html_url") or "",
                "date": r.get("published_at") or r.get("created_at") or "", "prerelease": bool(r.get("prerelease")),
                "body": (r.get("body") or "")[:NOTES_MAX_CHARS]}
+    if status not in (200, 404):
+        note_gh_failure(http, repo, status)
     if status in (200, 404):
         by_tag[tag] = rel
         write_json(cache, doc)
     return rel
 
 
-def match_release(releases: list[dict], version: str, pkg_name: str) -> dict | None:
+PEP440_NORM_RE = re.compile(r"[-_.]?(alpha|beta|preview|pre|rc|a|b|c|dev)[-_.]?(\d+)")
+
+
+def pep440_norm(s: str) -> str:
+    """PEP 440 spelling of a pre-release suffix: '1.107.0-rc.3' and '1.107.0rc3' are the same version."""
+    s = PEP440_NORM_RE.sub(lambda m: {"alpha": "a", "beta": "b", "preview": "rc", "pre": "rc", "c": "rc"}.get(
+        m.group(1), m.group(1)) + m.group(2), s.lower())
+    return s
+
+
+def match_release(releases: list[dict], version: str, pkg_name: str, eco: str = "") -> dict | None:
     """Find the GitHub release whose tag names this version (v1.2.3, 1.2.3, pkg@1.2.3, pkg-v1.2.3, pkg==1.2.3)."""
-    v = version.lower()
+    v0 = version.lower()
     short = pkg_name.lower().split("/")[-1]
-    best = None
     for r in releases:
+        v = v0
         tag = (r.get("tag") or "").lower()
+        if eco == "pypi" and not tag.endswith(v) and pep440_norm(tag).endswith(pep440_norm(v)):
+            tag, v = pep440_norm(tag), pep440_norm(version)
         if not tag.endswith(v):
             continue
         prefix = tag[: -len(v)]
@@ -511,9 +548,7 @@ def match_release(releases: list[dict], version: str, pkg_name: str) -> dict | N
         for sep in ("@", "@v", "-", "-v", "_", "_v", "/", "/v", "==", "=", "="):
             if prefix == short + sep or prefix.endswith("/" + short + sep) or prefix.endswith("-" + short + sep):
                 return r
-        if best is None and (short in prefix):
-            best = r
-    return best
+    return None
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -591,12 +626,43 @@ def fetch_errata(http: Http) -> dict[tuple[str, str], dict]:
 # ----------------------------------------------------------------------------------------------------------
 # Build model
 # ----------------------------------------------------------------------------------------------------------
+MISS_REASONS = ("no_repo_url", "no_matching_tag", "api_error", "rate_limited", "not_fetched")
+
+
+def load_repo_overrides() -> dict[tuple[str, str], str]:
+    """config/repo_overrides.txt: `<eco> <name> <owner/repo>` per line (optional file, # comments)."""
+    path = ROOT / "config" / "repo_overrides.txt"
+    out: dict[tuple[str, str], str] = {}
+    if not path.exists():
+        return out
+    for line in path.read_text(encoding="utf-8").splitlines():
+        parts = line.split("#", 1)[0].split()
+        if len(parts) == 3 and parts[0] in ("pypi", "npm") and re.fullmatch(r"[\w.-]+/[\w.-]+", parts[2]):
+            out[(parts[0], parts[1].lower())] = parts[2]
+        elif parts:
+            log.warning("repo_overrides.txt: bad line %r", line)
+    return out
+
+
+def miss_reason(http: Http, repo: str | None, gh_releases: list[dict], no_github: bool) -> str:
+    """Why a release has no GitHub release notes. One of MISS_REASONS."""
+    if not repo:
+        return "no_repo_url"
+    if repo in http.gh_problem:
+        return http.gh_problem[repo]
+    if no_github or http.offline:
+        return "not_fetched"
+    return "no_matching_tag"
+
+
 def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern], errata: dict, no_github: bool) -> dict:
     now = utcnow()
     window_start = now - timedelta(days=WINDOW_DAYS)
     pkgs: list[dict] = []
     releases: list[dict] = []
     repo_cache: dict[str, list[dict]] = {}
+    missing: list[dict] = []
+    overrides = load_repo_overrides()
     for n, (eco, name) in enumerate(packages, 1):
         log.info("[%d/%d] %s:%s", n, len(packages), eco, name)
         meta = fetch_pypi(http, name) if eco == "pypi" else fetch_npm(http, name)
@@ -605,6 +671,8 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             http.errors.append(f"{eco} {name}: no metadata")
             continue
         err = errata.get((eco, name.lower()))
+        if (eco, name.lower()) in overrides:
+            meta["repo"] = overrides[(eco, name.lower())]
         pkg = {
             "ecosystem": eco, "name": name, "summary": meta.get("summary") or "", "latest": meta.get("latest"),
             "page": meta.get("page"), "repo": meta.get("repo"), "changelog": meta.get("changelog"),
@@ -627,14 +695,18 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             gh_releases = repo_cache[pkg["repo"]]
         for v in recent:
             ver = v["version"]
-            gh = match_release(gh_releases, ver, name)
+            gh = match_release(gh_releases, ver, name, eco)
             if gh is None and gh_releases and pkg["repo"] and not is_prerelease(eco, ver):
-                tag = guess_tag(gh_releases, ver, name)
-                if tag:
+                for tag in candidate_tags(gh_releases, ver, name):
                     gh = fetch_release_by_tag(http, pkg["repo"], tag, no_github)
+                    if gh:
+                        break
             notes_url = None
             notes_kind = "fallback"
             quotes: list[dict] = []
+            if not (gh and gh.get("url")):
+                missing.append({"eco": eco, "name": name, "version": ver,
+                                "reason": miss_reason(http, pkg["repo"], gh_releases, no_github)})
             if gh and gh.get("url"):
                 notes_url = gh["url"]
                 notes_kind = "github_release"
@@ -659,7 +731,9 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
         pkgs.append(pkg)
     releases.sort(key=lambda r: r["date"], reverse=True)
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
-    return {"built": iso(now), "window_start": iso(window_start), "packages": pkgs, "releases": releases}
+    missing.sort(key=lambda m: (m["eco"], m["name"].lower(), m["version"]))
+    return {"built": iso(now), "window_start": iso(window_start), "packages": pkgs, "releases": releases,
+            "notes_missing": missing}
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -1158,6 +1232,11 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
         "built": built, "commit": GIT_SHA, "generator": "build.py", "packages": len(model["packages"]),
         "releases": len(model["releases"]), "flagged": len(flagged), "redirects": len(go_map),
         "http_requests": http.requests, "github_remaining": http.github_remaining, "errors": http.errors[:50],
+        "notes_coverage": {
+            "releases": len(model["releases"]),
+            "github_release": sum(1 for r in model["releases"] if r["notes_kind"] == "github_release"),
+            "missing": model["notes_missing"],
+        },
     }
     write_json(PUBLIC_DIR / "build.json", build_info)
     return build_info

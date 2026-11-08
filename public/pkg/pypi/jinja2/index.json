@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:00:02Z",
+ "built": "2026-11-08T06:15:45Z",
  "changelog": "https://jinja.palletsprojects.com/changes/",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2025-03-05T20:05:00Z",
   "version": "3.1.6"
  },
- "metadata_fetched": "2026-11-08T06:00:10Z",
+ "metadata_fetched": "2026-11-08T06:15:57Z",
  "package": "jinja2",
  "page": "https://releases.formachines.ai/pkg/pypi/jinja2/",
  "prereleases_in_window": 0,

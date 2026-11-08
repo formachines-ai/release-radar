@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T06:00:54Z",
+ "fetched": "2026-11-08T06:16:46Z",
  "releases": [
   {
    "body": "### Core Changes\n\n- docs: clarify refresh client cache behavior: #101160\n- Link Cache Components config errors to the migration guide: #101348\n- Bump `is-animated@3.0.19`: #101173\n\n### Example Changes\n\n- docs: use visible route locators with Cache Components: #101346\n\n### Misc Changes\n\n- docs: fix missing Roboto_Mono import in Pages Router font example: #88849\n- docs: fix crossOrigin wording: #97462\n- fix: update MDN link in route.mdx: #100753\n- docs: fix link reference for child Layout in documentation: #94327\n- docs: fix two links broken by the middleware to proxy rename: #99375\n- docs: clarify Image priority migration and loading choices: #101345\n- docs: clarify metadata image precedence: #101249\n- Upgrade Rust toolchain to nightly-2026-11-06: #101279\n\n### Credits \n\nHuge thanks to @codeandcore, @Rezakarimzadeh98, @robsimmons, @fediev, @adityareddy-dev, @aurorascharff, @styfle, and @mischnic for helping!",
