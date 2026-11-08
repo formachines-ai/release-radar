@@ -65,6 +65,7 @@ public/                     the site — everything below is generated, do not e
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt
   llms.txt · robots.txt · sitemap.xml · build.json
+  ci-check.py              CI helper script, copied from static/ci-check.py (T-0074)
   go/<id>/index.html        meta-refresh redirect to an external URL; id = sha1(url)[:10]; go/index.json maps ids → URLs
   legal/index.html          responsible person, data sources, license, no-tracking statement
   404.html                  with navigation; nginx serves it for unknown paths
@@ -157,6 +158,18 @@ product decision (VISION.md); extending the ignore list after a confirmed false 
 (count), `updated`, `old_version`, `new_version`. A tracked package present there gets the green badge linking (via
 `/go/`) to its Errata page, and the package page shows the checked version pair. Nothing else is derived from
 Errata; the Errata pages themselves say on which versions outdated code still reproduces.
+
+## CI check (T-0074)
+
+`static/ci-check.py` (Python 3.12 stdlib, copied by `build.py` to `public/ci-check.py`) reads a `requirements.txt` or
+`package.json` (dependencies + devDependencies), fetches `/today.json?src=ci` and prints the dependencies released in the
+48 h before `built`: package@version, date, flagged yes/no, verbatim quotes, notes URL. Exit 0 unless `--fail-on-flag`.
+A flag is a regex match plus a quote; no flag does not mean safe. GitHub Actions:
+
+```yaml
+- run: curl -sO https://releases.formachines.ai/ci-check.py
+- run: python3 ci-check.py requirements.txt --fail-on-flag
+```
 
 ## Checks before reporting a task done
 

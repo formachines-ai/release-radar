@@ -947,7 +947,7 @@ def render_index(model: dict, errata_count: int) -> str:
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
             'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
             'and no flag does not mean a safe update.</p>',
-            '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="/feed-breaking.xml">Breaking-only RSS (/feed-breaking.xml)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
+            '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="/feed-breaking.xml">Breaking-only RSS (/feed-breaking.xml)</a> · <a href="/ci-check.py">CI check (/ci-check.py)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
             "\n".join(flagged_block),
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
@@ -1231,7 +1231,10 @@ def render_llms(model: dict) -> str:
              "", "## Packages", ""]
     for p in model["packages"]:
         lines.append(f"- [{p['name']} ({p['ecosystem']})]({SITE_BASE}{p['path']}): latest {p.get('latest') or '?'}" + (" · Errata correction available" if p.get("errata") else "") + f" · JSON: {SITE_BASE}{p['path']}index.json")
-    lines += ["", "## Related", "", "- [Errata — where AI models write outdated code, and the verified fix](https://formachines.ai/errata/)",
+    lines += ["", "## CI check", "",
+              f"- [ci-check.py]({SITE_BASE}/ci-check.py): Python 3.12 stdlib script. Reads your requirements.txt or package.json, fetches today.json and prints your dependencies released in the 48 h before `built`: package@version, date, flagged yes/no, verbatim quotes, notes URL. A flag is a regex match plus a quote; no flag does not mean safe.",
+              "- Run: `curl -sO " + SITE_BASE + "/ci-check.py && python3 ci-check.py requirements.txt --fail-on-flag` (exit 0 unless --fail-on-flag and a listed release is flagged)",
+              "", "## Related", "", "- [Errata — where AI models write outdated code, and the verified fix](https://formachines.ai/errata/)",
               f"- [Errata skill for coding agents]({ERRATA_SKILL_URL})", ""]
     return "\n".join(lines)
 
@@ -1278,6 +1281,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     write_text(PUBLIC_DIR / "brand" / "index.html", render_brand(built))
     for f in (STATIC_DIR / "brand").glob("*.svg"):
         shutil.copyfile(f, PUBLIC_DIR / "brand" / f.name)
+    shutil.copyfile(STATIC_DIR / "ci-check.py", PUBLIC_DIR / "ci-check.py")
     write_text(PUBLIC_DIR / "robots.txt", ROBOTS_TXT.replace("__SITE__", SITE_BASE))
     write_text(PUBLIC_DIR / "llms.txt", render_llms(model))
     write_text(PUBLIC_DIR / "feed.xml", render_feed(model))
