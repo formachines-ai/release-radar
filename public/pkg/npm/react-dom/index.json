@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:00:02Z",
+ "built": "2026-11-08T06:15:45Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-14T16:49:10Z",
   "version": "19.3.1"
  },
- "metadata_fetched": "2026-11-08T06:00:59Z",
+ "metadata_fetched": "2026-11-08T06:16:50Z",
  "package": "react-dom",
  "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
  "prereleases_in_window": 4,
@@ -23,8 +23,8 @@
    "id": "npm/react-dom/0.0.0-experimental-5b610964-20261106",
    "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
    "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
+   "notes_redirect": "https://releases.formachines.ai/go/f1761af784/",
+   "notes_url": "https://github.com/facebook/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
@@ -41,8 +41,8 @@
    "id": "npm/react-dom/19.3.0-canary-5b610964-20261106",
    "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
    "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
+   "notes_redirect": "https://releases.formachines.ai/go/f1761af784/",
+   "notes_url": "https://github.com/facebook/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
@@ -59,8 +59,8 @@
    "id": "npm/react-dom/0.0.0-experimental-2363bc2b-20261105",
    "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
    "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
+   "notes_redirect": "https://releases.formachines.ai/go/f1761af784/",
+   "notes_url": "https://github.com/facebook/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
@@ -77,8 +77,8 @@
    "id": "npm/react-dom/19.3.0-canary-2363bc2b-20261105",
    "json": "https://releases.formachines.ai/pkg/npm/react-dom/index.json",
    "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e174a0cca3/",
-   "notes_url": "https://github.com/react/react/releases",
+   "notes_redirect": "https://releases.formachines.ai/go/f1761af784/",
+   "notes_url": "https://github.com/facebook/react/releases",
    "package": "react-dom",
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
@@ -87,7 +87,7 @@
    "yanked_or_deprecated": false
   }
  ],
- "repository": "https://github.com/react/react",
+ "repository": "https://github.com/facebook/react",
  "stable_in_window": 0,
  "summary": "React package for working with the DOM."
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:00:02Z",
+ "built": "2026-11-08T06:15:45Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-06T01:46:01Z",
   "version": "0.167.0"
  },
- "metadata_fetched": "2026-11-08T06:00:25Z",
+ "metadata_fetched": "2026-11-08T06:16:17Z",
  "package": "@openai/codex",
  "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
  "prereleases_in_window": 97,
@@ -379,16 +379,25 @@
    "date": "2026-11-06T01:46:01Z",
    "ecosystem": "npm",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "npm/@openai/codex/0.167.0",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/a9d2e8f986/",
-   "notes_url": "https://github.com/openai/codex/releases",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e2baf2e1c3/",
+   "notes_url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
    "package": "@openai/codex",
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": false,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "- The `openai-docs` skill recommends the documented replacement when migrating away from a deprecated model (#58134)."
+    },
+    {
+     "match": "deprecation",
+     "quote": "- #58134 Prefer documented replacements for deprecation-driven model migrations @kkahadze-oai"
+    }
+   ],
    "version": "0.167.0",
    "yanked_or_deprecated": false
   },

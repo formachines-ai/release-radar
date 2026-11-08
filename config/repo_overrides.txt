@@ -1,0 +1,5 @@
+# Release Radar — GitHub repository overrides for release notes (optional file).
+# One entry per line: <eco> <package name> <owner/repo>. Used instead of the repo found in registry metadata.
+# Only add a line after checking by hand that the repo publishes GitHub Releases for this package.
+npm react facebook/react             # registry metadata says react/react (does not exist)
+npm react-dom facebook/react

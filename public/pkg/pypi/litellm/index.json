@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:00:02Z",
+ "built": "2026-11-08T06:15:45Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-07T22:25:38Z",
   "version": "1.108.3"
  },
- "metadata_fetched": "2026-11-08T06:00:04Z",
+ "metadata_fetched": "2026-11-08T06:15:47Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 4,
@@ -22,9 +22,9 @@
    "flagged": false,
    "id": "pypi/litellm/1.110.0.dev2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f003828c0e/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-dev.2",
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
@@ -55,16 +55,29 @@
    "date": "2026-11-07T04:32:27Z",
    "ecosystem": "pypi",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "pypi/litellm/1.110.0.dev1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/87ca20d5e1/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-dev.1",
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
+    },
+    {
+     "match": "deprecating",
+     "quote": "* feat(model-catalog): read successor_model, the provider's recommended replacement for a deprecating row by @kerry-berri in https://github.com/BerriAI/litellm/pull/49791"
+    },
+    {
+     "match": "deprecating",
+     "quote": "* feat(cost-map): record the provider's recommended replacement as successor_model on deprecating rows and report it from /model/deprecations by @kerry-berri in https://github.com/BerriAI/litellm/pull/49789"
+    }
+   ],
    "version": "1.110.0.dev1",
    "yanked_or_deprecated": false
   },
@@ -112,9 +125,9 @@
    "flagged": false,
    "id": "pypi/litellm/1.107.0rc3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/89743b390c/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
@@ -181,16 +194,21 @@
    "date": "2026-11-04T02:13:21Z",
    "ecosystem": "pypi",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "pypi/litellm/1.109.0rc1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/3bffa45835/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/83ebd99111/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.109.0-rc.1",
    "package": "litellm",
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
+    }
+   ],
    "version": "1.109.0rc1",
    "yanked_or_deprecated": false
   }

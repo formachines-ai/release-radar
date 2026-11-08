@@ -124,7 +124,7 @@
   "win32-x64": "0.167.0-win32-x64"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T06:00:25Z",
+ "fetched": "2026-11-08T06:16:17Z",
  "homepage": "https://github.com/openai/codex#readme",
  "latest": "0.167.0",
  "name": "@openai/codex",

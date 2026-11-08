@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T06:00:02Z",
+ "built": "2026-11-08T06:15:45Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-08-08T20:00:55Z",
   "version": "0.28.2"
  },
- "metadata_fetched": "2026-11-08T06:00:50Z",
+ "metadata_fetched": "2026-11-08T06:16:42Z",
  "package": "esbuild",
  "page": "https://releases.formachines.ai/pkg/npm/esbuild/",
  "prereleases_in_window": 0,
