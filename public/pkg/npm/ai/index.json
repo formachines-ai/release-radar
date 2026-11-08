@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.165",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.325",
    "yanked_or_deprecated": false
   },
@@ -65,6 +67,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.286",
    "yanked_or_deprecated": false
   },
@@ -83,6 +86,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.324",
    "yanked_or_deprecated": false
   },
@@ -101,6 +105,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.164",
    "yanked_or_deprecated": false
   },
@@ -128,6 +133,7 @@
      "quote": "Tool result content parts that use the deprecated `file-url` and `image-url`"
     }
    ],
+   "variant_of": null,
    "version": "7.0.163",
    "yanked_or_deprecated": false
   },
@@ -146,6 +152,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.323",
    "yanked_or_deprecated": false
   },
@@ -164,6 +171,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.322",
    "yanked_or_deprecated": false
   },
@@ -182,6 +190,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.162",
    "yanked_or_deprecated": false
   },
@@ -200,6 +209,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.285",
    "yanked_or_deprecated": false
   },
@@ -218,6 +228,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.161",
    "yanked_or_deprecated": false
   },
@@ -236,6 +247,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.284",
    "yanked_or_deprecated": false
   },
@@ -254,6 +266,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.321",
    "yanked_or_deprecated": false
   },
@@ -272,6 +285,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.160",
    "yanked_or_deprecated": false
   }

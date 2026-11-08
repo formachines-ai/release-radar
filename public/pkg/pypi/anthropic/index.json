@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.6.0",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.5.0",
    "yanked_or_deprecated": false
   },
@@ -70,6 +72,7 @@
      "quote": "* link to the SDK documentation instead of removed README sections"
     }
    ],
+   "variant_of": null,
    "version": "2.4.0",
    "yanked_or_deprecated": false
   }

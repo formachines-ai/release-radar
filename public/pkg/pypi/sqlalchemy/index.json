@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.1.8",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.0.57",
    "yanked_or_deprecated": false
   },
@@ -78,6 +80,7 @@
      "quote": "so that expressions such as `hstore_column.is_not(None)` no longer emit a\ndeprecation warning."
     }
    ],
+   "variant_of": null,
    "version": "2.1.7",
    "yanked_or_deprecated": false
   },
@@ -101,6 +104,7 @@
      "quote": "an expired object that is replaced in this way no longer causes the"
     }
    ],
+   "variant_of": null,
    "version": "2.0.56",
    "yanked_or_deprecated": false
   }

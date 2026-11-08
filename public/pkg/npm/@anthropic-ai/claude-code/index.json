@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -42,6 +42,7 @@
      "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
     }
    ],
+   "variant_of": null,
    "version": "2.1.319",
    "yanked_or_deprecated": false
   },
@@ -73,6 +74,7 @@
      "quote": "- Changed Claude Code to no longer install or update the IDE extension when started in an IDE terminal; use `/ide` from an outside terminal or your editor's extensions view"
     }
    ],
+   "variant_of": null,
    "version": "2.1.318",
    "yanked_or_deprecated": false
   },
@@ -100,6 +102,7 @@
      "quote": "- Removed the Read tool's \"file unchanged since your last Read\" stub: reading an unchanged file again returns its content"
     }
    ],
+   "variant_of": null,
    "version": "2.1.317",
    "yanked_or_deprecated": false
   }

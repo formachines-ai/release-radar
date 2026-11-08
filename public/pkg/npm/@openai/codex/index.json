@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -65,6 +67,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -83,6 +86,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -101,6 +105,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -119,6 +124,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -137,6 +143,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.169.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -155,6 +162,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -173,6 +181,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -191,6 +200,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -209,6 +219,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -227,6 +238,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -245,6 +257,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -263,6 +276,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.169.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -281,6 +295,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -299,6 +314,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -317,6 +333,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -335,6 +352,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -353,6 +371,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -371,6 +390,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -398,6 +418,7 @@
      "quote": "- #58134 Prefer documented replacements for deprecation-driven model migrations @kkahadze-oai"
     }
    ],
+   "variant_of": null,
    "version": "0.167.0",
    "yanked_or_deprecated": false
   },
@@ -416,6 +437,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -434,6 +456,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -452,6 +475,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -470,6 +494,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -488,6 +513,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -506,6 +532,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -524,6 +551,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.7",
    "yanked_or_deprecated": false
   },
@@ -542,6 +570,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -560,6 +589,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -578,6 +608,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -596,6 +627,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -614,6 +646,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -632,6 +665,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -650,6 +684,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.6",
    "yanked_or_deprecated": false
   },
@@ -668,6 +703,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -686,6 +722,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -704,6 +741,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -722,6 +760,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -740,6 +779,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -758,6 +798,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -776,6 +817,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3.2",
    "yanked_or_deprecated": false
   },
@@ -794,6 +836,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -812,6 +855,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -830,6 +874,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -848,6 +893,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -866,6 +912,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -884,6 +931,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -902,6 +950,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -920,6 +969,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -938,6 +988,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -956,6 +1007,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -974,6 +1026,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -992,6 +1045,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1010,6 +1064,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1028,6 +1083,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -1046,6 +1102,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1064,6 +1121,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1082,6 +1140,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1100,6 +1159,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1118,6 +1178,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1136,6 +1197,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1154,6 +1216,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3.1",
    "yanked_or_deprecated": false
   },
@@ -1172,6 +1235,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1190,6 +1254,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1208,6 +1273,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1226,6 +1292,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1244,6 +1311,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1262,6 +1330,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1280,6 +1349,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.5",
    "yanked_or_deprecated": false
   },
@@ -1298,6 +1368,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1316,6 +1387,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1334,6 +1406,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1352,6 +1425,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1370,6 +1444,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1388,6 +1463,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1406,6 +1482,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.1",
    "yanked_or_deprecated": false
   },
@@ -1424,6 +1501,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1442,6 +1520,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1460,6 +1539,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1478,6 +1558,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1496,6 +1577,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1514,6 +1596,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1532,6 +1615,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.4",
    "yanked_or_deprecated": false
   },
@@ -1550,6 +1634,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1568,6 +1653,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1586,6 +1672,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1604,6 +1691,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1622,6 +1710,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1640,6 +1729,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1658,6 +1748,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -1676,6 +1767,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1694,6 +1786,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1712,6 +1805,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1730,6 +1824,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1748,6 +1843,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1766,6 +1862,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1784,6 +1881,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.2",
    "yanked_or_deprecated": false
   }

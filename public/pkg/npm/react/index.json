@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -65,6 +67,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
@@ -83,6 +86,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-2363bc2b-20261105",
    "yanked_or_deprecated": false
   }

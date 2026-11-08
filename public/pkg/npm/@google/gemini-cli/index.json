@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -34,6 +34,7 @@
      "quote": "* fix(cli): preserve ${VAR} placeholders during deprecated settings migration by @villahernandez-coder in https://github.com/google-gemini/gemini-cli/pull/29867"
     }
    ],
+   "variant_of": null,
    "version": "0.67.0",
    "yanked_or_deprecated": false
   },
@@ -52,6 +53,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.68.0-preview.0",
    "yanked_or_deprecated": false
   },
@@ -70,6 +72,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261104.g89e9d25d6",
    "yanked_or_deprecated": false
   },
@@ -88,6 +91,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261103.g0ac57c029",
    "yanked_or_deprecated": false
   },
@@ -106,6 +110,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261102.g6814e00d6",
    "yanked_or_deprecated": false
   }

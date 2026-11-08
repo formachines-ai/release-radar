@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.33",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.33-dev.185",
    "yanked_or_deprecated": false
   },
@@ -65,6 +67,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.32",
    "yanked_or_deprecated": false
   },
@@ -83,6 +86,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.32-dev.184",
    "yanked_or_deprecated": false
   },
@@ -101,6 +105,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.183",
    "yanked_or_deprecated": false
   },
@@ -119,6 +124,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.182",
    "yanked_or_deprecated": false
   },
@@ -137,6 +143,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31",
    "yanked_or_deprecated": false
   },
@@ -155,6 +162,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.181",
    "yanked_or_deprecated": false
   },
@@ -173,6 +181,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.180",
    "yanked_or_deprecated": false
   },
@@ -191,6 +200,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.1.0-dev.10",
    "yanked_or_deprecated": false
   },
@@ -209,6 +219,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.179",
    "yanked_or_deprecated": false
   },
@@ -227,6 +238,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30",
    "yanked_or_deprecated": false
   },
@@ -245,6 +257,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.178",
    "yanked_or_deprecated": false
   }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -36,6 +36,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "13.1.0-eap-sql.49c10c82f",
    "yanked_or_deprecated": false
   },
@@ -54,6 +55,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "13.2.0",
    "yanked_or_deprecated": false
   }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
@@ -34,6 +34,7 @@
      "quote": "…yO3 version bump. A CI workflow issue made it so that the wheel wasn't tested before publishing. This is now fixed: starting in v2.14.3, we no longer publish GraalPy 3.11 wheels, and GraalPy 3.13 wheels are now published together with the existing 3.12 one.…"
     }
    ],
+   "variant_of": null,
    "version": "2.14.3",
    "yanked_or_deprecated": false
   }
