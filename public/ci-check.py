@@ -58,11 +58,11 @@ def main():
     hits = [x for x in today["releases"] if x["ecosystem"] == eco and norm(x["package"], eco) in deps
             and parse_time(x["date"]) >= start]
     hits.sort(key=lambda x: x["date"], reverse=True)
-    print(f"# today.json built {today['built']}; {len(hits)} of {len(deps)} {eco} dependencies released in the last {args.hours} h")
+    print(f"# today.json built {today['built']}; {len(hits)} releases of your {len(deps)} {eco} dependencies in the last {args.hours} h")
     for x in hits:
         print(f"{x['package']}@{x['version']} | {x['date']} | flagged: {'yes' if x['flagged'] else 'no'} | {x['notes_url']}")
         for q in x.get("quotes", []):
-            print(f'  quote: "{q}"')
+            print(f"  quote: {q['quote'] if isinstance(q, dict) else q}")
     print("# A flag is a regex match plus a quote; no flag does not mean safe.")
     return 1 if args.fail_on_flag and any(x["flagged"] for x in hits) else 0
 
