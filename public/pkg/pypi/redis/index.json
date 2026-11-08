@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -42,6 +42,7 @@
      "quote": "## ⚠️ Deprecations\n- feat: decide client-side cache eligibility from command metadata (#4272)"
     }
    ],
+   "variant_of": null,
    "version": "8.2.0b1",
    "yanked_or_deprecated": false
   }

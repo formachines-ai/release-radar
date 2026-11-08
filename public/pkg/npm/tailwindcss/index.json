@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -34,6 +34,7 @@
      "quote": "- Remove `as: '*.css'` from the `@tailwindcss/turbopack` setup in its README, because it breaks CSS modules ([#20660](https://github.com/tailwindlabs/tailwindcss/pull/20660))"
     }
    ],
+   "variant_of": null,
    "version": "4.3.5",
    "yanked_or_deprecated": false
   },
@@ -52,6 +53,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.9b2c925",
    "yanked_or_deprecated": false
   },
@@ -70,6 +72,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.7e79802",
    "yanked_or_deprecated": false
   },
@@ -88,6 +91,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.e0f76e9",
    "yanked_or_deprecated": false
   },
@@ -106,6 +110,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.9369ddb",
    "yanked_or_deprecated": false
   },
@@ -124,6 +129,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.8c74689",
    "yanked_or_deprecated": false
   },
@@ -142,6 +148,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.adfb6f7",
    "yanked_or_deprecated": false
   },
@@ -160,6 +167,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2c35bd7",
    "yanked_or_deprecated": false
   },
@@ -178,6 +186,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.669fcc1",
    "yanked_or_deprecated": false
   },
@@ -196,6 +205,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.7edc50e",
    "yanked_or_deprecated": false
   },
@@ -214,6 +224,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.3.4",
    "yanked_or_deprecated": false
   },
@@ -232,6 +243,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2626ae6",
    "yanked_or_deprecated": false
   },
@@ -250,6 +262,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.cd5831f",
    "yanked_or_deprecated": false
   },
@@ -268,6 +281,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2570e00",
    "yanked_or_deprecated": false
   },
@@ -286,6 +300,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.410a465",
    "yanked_or_deprecated": false
   },
@@ -304,6 +319,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.654f89f",
    "yanked_or_deprecated": false
   }

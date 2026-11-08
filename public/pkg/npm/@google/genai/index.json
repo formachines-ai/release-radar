@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -38,6 +38,7 @@
      "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))"
     }
    ],
+   "variant_of": null,
    "version": "3.0.0",
    "yanked_or_deprecated": false
   }

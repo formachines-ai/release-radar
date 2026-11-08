@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.4.9",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.4.8",
    "yanked_or_deprecated": false
   }

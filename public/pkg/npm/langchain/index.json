@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.3",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.2",
    "yanked_or_deprecated": false
   },
@@ -65,6 +67,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.1",
    "yanked_or_deprecated": false
   }

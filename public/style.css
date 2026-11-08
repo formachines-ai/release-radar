@@ -128,3 +128,7 @@ footer.site p { margin: 0.2rem 0; }
 .card .nonote { margin: 0.35rem 0 0; font-size: 0.85rem; }
 
 .notes-top { margin: .4rem 0; font-weight: 600; }
+
+.card .variants { margin: 0.35rem 0; font-size: 0.9rem; }
+.card .variants summary { cursor: pointer; color: var(--muted); }
+.card .variants ul { margin: 0.3rem 0 0 1rem; padding: 0; overflow-wrap: anywhere; }

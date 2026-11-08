@@ -117,8 +117,17 @@ tag, the exact candidate tags are requested one by one (404s are cached). No nea
   `no_repo_url` (no GitHub repo known), `no_matching_tag` (repo read fine, no release for this exact version: nightlies,
   tag-only repos such as django/boto3, per-platform codex builds), `api_error` (GitHub HTTP error),
   `rate_limited` (403/429 or quota exhausted), `not_fetched` (`--no-github` / `--offline`).
-- Before/after: on the 08.11 06:00 build `github_release` was 124 of 291 releases (42.6 %); after T-0066 it is 129 of 291
-  (44.3 %). The rest are mostly nightly/dev builds that have no GitHub release at all.
+- Grouping (T-0069): when more than 5 `missing` entries share eco+name+reason they are replaced by one
+  `{eco,name,reason,count,versions}` entry (`count == len(versions)`); `notes_coverage.releases` still counts every release.
+- Coverage at the 08.11 06:00 build: `github_release` 124 of 291 releases (42.6 %) before T-0066, 129 of 291 (44.3 %) after it.
+  The remainder are mostly nightly/dev builds and per-platform npm builds that have no GitHub release of their own.
+
+## npm platform builds (T-0069)
+
+npm versions of the form `<base>-(darwin|linux|win32)-(x64|arm64)` (confirmed for `@openai/codex` in `today.json`) get
+`variant_of: "<base>"` in `today.json` and `/pkg/*/index.json`; every entry is kept. In the HTML (home and package pages)
+unflagged variants whose base version is in the same list fold into the base card as an "N platform builds" line with a
+`<details>` list of versions (no JS). Other versions, flagged variants, or variants without a base card stay separate cards.
 
 ## Bump label and honest notes on cards
 

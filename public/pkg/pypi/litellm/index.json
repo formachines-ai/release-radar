@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -29,6 +29,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.110.0.dev2",
    "yanked_or_deprecated": false
   },
@@ -47,6 +48,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.3",
    "yanked_or_deprecated": false
   },
@@ -78,6 +80,7 @@
      "quote": "* feat(cost-map): record the provider's recommended replacement as successor_model on deprecating rows and report it from /model/deprecations by @kerry-berri in https://github.com/BerriAI/litellm/pull/49789"
     }
    ],
+   "variant_of": null,
    "version": "1.110.0.dev1",
    "yanked_or_deprecated": false
   },
@@ -96,6 +99,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.2",
    "yanked_or_deprecated": false
   },
@@ -114,6 +118,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.1",
    "yanked_or_deprecated": false
   },
@@ -132,6 +137,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.107.0rc3",
    "yanked_or_deprecated": false
   },
@@ -155,6 +161,7 @@
      "quote": "We are readjusting how beta features work alongside LiteLLM, our core product. Starting with 1.106.7, the Lens beta is no longer packaged with the proxy or its Helm charts. If you use Lens today, v1.106.6 keeps working as it does now"
     }
    ],
+   "variant_of": null,
    "version": "1.106.7",
    "yanked_or_deprecated": false
   },
@@ -186,6 +193,7 @@
      "quote": "* fix: update stale source URLs and deprecation dates in model cost map by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/38801"
     }
    ],
+   "variant_of": null,
    "version": "1.108.0",
    "yanked_or_deprecated": false
   },
@@ -209,6 +217,7 @@
      "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
     }
    ],
+   "variant_of": null,
    "version": "1.109.0rc1",
    "yanked_or_deprecated": false
   }

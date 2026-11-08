@@ -88,6 +88,54 @@ def is_prerelease(eco: str, ver: str) -> bool:
         return "-" in ver.split("+", 1)[0]
     return bool(PEP440_PRE_RE.search(ver)) or bool(PRERELEASE_RE.search(ver))
 
+PLATFORM_VARIANT_RE = re.compile(r"^(?P<base>.+)-(?:darwin|linux|win32)-(?:x64|arm64)$")
+GROUP_MISSING_OVER = 5  # notes_coverage.missing: group entries sharing eco+name+reason when there are more than this
+
+
+def variant_base(eco: str, ver: str) -> str | None:
+    """npm per-platform build (e.g. 0.167.0-linux-x64, confirmed in today.json for @openai/codex) -> base version."""
+    if eco != "npm":
+        return None
+    m = PLATFORM_VARIANT_RE.match(ver)
+    return m.group("base") if m else None
+
+
+def group_variants(rels: list[dict]) -> list[tuple[dict, list[dict]]]:
+    """Fold unflagged platform builds into the card of their base version when that card is in the same list."""
+    present = {(r["ecosystem"], r["name"], r["version"]) for r in rels}
+    groups: dict[tuple, list[dict]] = {}
+    for r in rels:
+        b = r.get("variant_of")
+        if b and not r["flagged"] and (r["ecosystem"], r["name"], b) in present:
+            groups.setdefault((r["ecosystem"], r["name"], b), []).append(r)
+    out = []
+    for r in rels:
+        b = r.get("variant_of")
+        if b and not r["flagged"] and (r["ecosystem"], r["name"], b) in present:
+            continue
+        out.append((r, groups.get((r["ecosystem"], r["name"], r["version"]), [])))
+    return out
+
+
+def render_cards(rels: list[dict], now: datetime, **kw) -> str:
+    return "".join(render_card(r, now, variants=v, **kw) for r, v in group_variants(rels))
+
+
+def group_missing(missing: list[dict]) -> list[dict]:
+    by: dict[tuple, list[dict]] = {}
+    for m in missing:
+        by.setdefault((m["eco"], m["name"], m["reason"]), []).append(m)
+    out = []
+    for (eco, name, reason), items in by.items():
+        if len(items) > GROUP_MISSING_OVER:
+            vs = sorted(i["version"] for i in items)
+            out.append({"eco": eco, "name": name, "reason": reason, "count": len(vs), "versions": vs})
+        else:
+            out.extend(items)
+    out.sort(key=lambda m: (m["eco"], m["name"].lower(), m.get("version") or m["versions"][0]))
+    return out
+
+
 SEMVER_NUM_RE = re.compile(r"^v?(\d+)(?:\.(\d+))?(?:\.(\d+))?$")
 
 
@@ -720,6 +768,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 notes_url, notes_kind = pkg["page"], "registry_page"
             rel = {
                 "id": f"{eco}/{name}/{ver}", "ecosystem": eco, "name": name, "version": ver, "date": v["date"],
+                "variant_of": variant_base(eco, ver),
                 "prerelease": is_prerelease(eco, ver) or bool(gh and gh.get("prerelease")),
                 "yanked": bool(v.get("yanked")) or bool(v.get("deprecated")),
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
@@ -821,7 +870,7 @@ def vote_target(r: dict) -> str:
     return f'{r["pkg_path"]}#{safe_fs_name(r["id"])}'
 
 
-def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False) -> str:
+def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False, variants: list | None = None) -> str:
     flagged = ' flagged' if r["flagged"] else ""
     badges = []
     if r["flagged"]:
@@ -850,6 +899,10 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     if notes_top:
         top = f'<p class="notes-top">{links}</p>' if links else '<p class="notes-top note">release notes not fetched</p>'
         links = ""
+    vhtml = ""
+    if variants:
+        vs = "".join(f'<li><code>{esc(v["version"])}</code></li>' for v in variants)
+        vhtml = f'<details class="variants"><summary>{len(variants)} platform builds</summary><ul>{vs}</ul></details>'
     links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
     issue_title = urllib.parse.quote(f"Error in entry: {r['ecosystem']}/{r['name']} {r['version']}")
@@ -861,7 +914,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{top}{quotes}{honest}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
+            f'{" ".join(badges)}</div>{top}{quotes}{honest}{vhtml}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -886,7 +939,7 @@ def render_index(model: dict, errata_count: int) -> str:
         f'</ul>'
     )
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
-    flagged_block.append('<ul class="cards">' + "".join(render_card(r, now) for r in flagged) + "</ul>" if flagged
+    flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
     body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>",
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
@@ -906,7 +959,7 @@ def render_index(model: dict, errata_count: int) -> str:
     body.append("\n".join(idx))
     body.append(f'<h2 id="recent">Last {recent_hours} h{quiet_note}</h2>')
     body.append('<p class="note legend">Flag = regex word match + verbatim quote.</p>')
-    body.append('<ul class="cards">' + "".join(render_card(r, now) for r in recent) + "</ul>" if recent
+    body.append('<ul class="cards">' + render_cards(recent, now) + "</ul>" if recent
                 else f'<p class="note">No release in the last {QUIET_HOURS} h among tracked packages. The {WINDOW_DAYS}-day lists below are never empty on purpose.</p>')
     body.append(f'<p class="note">How flags work: the last {WINDOW_DAYS} days of releases are read for the exact lines of the release notes that say <em>breaking</em>, <em>deprecated</em>, <em>removed</em>, <em>renamed</em>, '
                 f'<em>dropped support</em> or <em>no longer</em>. Quotes are verbatim; the flag is a regular-expression match, not an opinion. '
@@ -914,7 +967,7 @@ def render_index(model: dict, errata_count: int) -> str:
     for eco, label in (("pypi", "PyPI"), ("npm", "npm")):
         sub = [r for r in rels if r["ecosystem"] == eco]
         body.append(f'<h2 id="{eco}">{esc(label)} — last {WINDOW_DAYS} days ({len(sub)})</h2>')
-        body.append('<ul class="cards">' + "".join(render_card(r, now) for r in sub) + "</ul>" if sub
+        body.append('<ul class="cards">' + render_cards(sub, now) + "</ul>" if sub
                     else f'<p class="note">No {label} release in the window.</p>')
     # package table
     rows = []
@@ -981,7 +1034,7 @@ def render_package(p: dict, model: dict) -> str:
             body.append(f'<p class="note no-stable">No stable release in the last {WINDOW_DAYS} days; latest stable: unknown (source: registry)</p>')
     if p["releases"]:
         ordered = sorted(p["releases"], key=lambda r: r["prerelease"])
-        body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False, notes_top=True) for r in ordered) + "</ul>")
+        body.append('<ul class="cards">' + render_cards(ordered, now, show_pkg_link=False, notes_top=True) + "</ul>")
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
     body.append('<p class="note"><a href="/">← all packages</a></p>')
@@ -1080,7 +1133,7 @@ def render_legal(built: str) -> str:
 def public_release(r: dict) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
-        "prerelease": r["prerelease"], "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"],
+        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"],
         "quotes": [{"quote": q["quote"], "match": q["match"]} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
@@ -1236,7 +1289,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
         "notes_coverage": {
             "releases": len(model["releases"]),
             "github_release": sum(1 for r in model["releases"] if r["notes_kind"] == "github_release"),
-            "missing": model["notes_missing"],
+            "missing": group_missing(model["notes_missing"]),
         },
     }
     write_json(PUBLIC_DIR / "build.json", build_info)

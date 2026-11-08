@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T08:10:03Z",
+ "built": "2026-11-08T09:12:12Z",
  "counts": {
   "flagged": 27,
   "packages": 97,
@@ -24,6 +24,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.66.0-alpha-2026-11-08",
    "yanked_or_deprecated": false
   },
@@ -42,6 +43,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.110.0.dev2",
    "yanked_or_deprecated": false
   },
@@ -60,6 +62,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.44",
    "yanked_or_deprecated": false
   },
@@ -78,6 +81,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.3",
    "yanked_or_deprecated": false
   },
@@ -96,6 +100,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -114,6 +119,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -132,6 +138,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -150,6 +157,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -168,6 +176,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -186,6 +195,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -204,6 +214,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.169.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -222,6 +233,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.0.111",
    "yanked_or_deprecated": false
   },
@@ -240,6 +252,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.0.139",
    "yanked_or_deprecated": false
   },
@@ -258,6 +271,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.165",
    "yanked_or_deprecated": false
   },
@@ -276,6 +290,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.325",
    "yanked_or_deprecated": false
   },
@@ -294,6 +309,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.0.141",
    "yanked_or_deprecated": false
   },
@@ -312,6 +328,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.286",
    "yanked_or_deprecated": false
   },
@@ -330,6 +347,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "0.162.2",
    "yanked_or_deprecated": false
   },
@@ -348,6 +366,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "0.162.1",
    "yanked_or_deprecated": false
   },
@@ -366,6 +385,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261107.1",
    "yanked_or_deprecated": false
   },
@@ -384,6 +404,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.66.0-alpha-2026-11-07",
    "yanked_or_deprecated": false
   },
@@ -402,6 +423,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/hono/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.13.17",
    "yanked_or_deprecated": false
   },
@@ -433,6 +455,7 @@
      "quote": "* feat(cost-map): record the provider's recommended replacement as successor_model on deprecating rows and report it from /model/deprecations by @kerry-berri in https://github.com/BerriAI/litellm/pull/49789"
     }
    ],
+   "variant_of": null,
    "version": "1.110.0.dev1",
    "yanked_or_deprecated": false
   },
@@ -451,6 +474,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.3",
    "yanked_or_deprecated": false
   },
@@ -474,6 +498,7 @@
      "quote": "### Deprecated\n- `cmd.storeOptionsAsProperties()` (#2561)"
     }
    ],
+   "variant_of": null,
    "version": "15.1.0",
    "yanked_or_deprecated": false
   },
@@ -492,6 +517,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.43",
    "yanked_or_deprecated": false
   },
@@ -510,6 +536,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.107.1",
    "yanked_or_deprecated": false
   },
@@ -528,6 +555,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.0.138",
    "yanked_or_deprecated": false
   },
@@ -546,6 +574,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -564,6 +593,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -582,6 +612,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -600,6 +631,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -618,6 +650,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -636,6 +669,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.324",
    "yanked_or_deprecated": false
   },
@@ -654,6 +688,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -672,6 +707,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.169.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -690,6 +726,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.2",
    "yanked_or_deprecated": false
   },
@@ -708,6 +745,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.107.0",
    "yanked_or_deprecated": false
   },
@@ -726,6 +764,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.43.126",
    "yanked_or_deprecated": false
   },
@@ -744,6 +783,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.33",
    "yanked_or_deprecated": false
   },
@@ -762,6 +802,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.33-dev.185",
    "yanked_or_deprecated": false
   },
@@ -780,6 +821,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.164",
    "yanked_or_deprecated": false
   },
@@ -798,6 +840,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.0.110",
    "yanked_or_deprecated": false
   },
@@ -816,6 +859,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.32",
    "yanked_or_deprecated": false
   },
@@ -834,6 +878,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.32-dev.184",
    "yanked_or_deprecated": false
   },
@@ -852,6 +897,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.183",
    "yanked_or_deprecated": false
   },
@@ -883,6 +929,7 @@
      "quote": "- A command's short help no longer stops at an abbreviation such as `vs.` or `e.g.`"
     }
    ],
+   "variant_of": null,
    "version": "8.5.1",
    "yanked_or_deprecated": false
   },
@@ -901,6 +948,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -919,6 +967,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -937,6 +986,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -955,6 +1005,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.182",
    "yanked_or_deprecated": false
   },
@@ -973,6 +1024,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-5b610964-20261106",
    "yanked_or_deprecated": false
   },
@@ -991,6 +1043,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31",
    "yanked_or_deprecated": false
   },
@@ -1009,6 +1062,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.31-dev.181",
    "yanked_or_deprecated": false
   },
@@ -1027,6 +1081,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.180",
    "yanked_or_deprecated": false
   },
@@ -1045,6 +1100,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.22.2",
    "yanked_or_deprecated": false
   },
@@ -1068,6 +1124,7 @@
      "quote": "- Remove `as: '*.css'` from the `@tailwindcss/turbopack` setup in its README, because it breaks CSS modules ([#20660](https://github.com/tailwindlabs/tailwindcss/pull/20660))"
     }
    ],
+   "variant_of": null,
    "version": "4.3.5",
    "yanked_or_deprecated": false
   },
@@ -1086,6 +1143,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.9b2c925",
    "yanked_or_deprecated": false
   },
@@ -1104,6 +1162,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/zustand/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.1.0",
    "yanked_or_deprecated": false
   },
@@ -1122,6 +1181,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.1.0-dev.10",
    "yanked_or_deprecated": false
   },
@@ -1140,6 +1200,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@prisma/client/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.1.0-dev.10",
    "yanked_or_deprecated": false
   },
@@ -1158,6 +1219,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.53.0",
    "yanked_or_deprecated": false
   },
@@ -1176,6 +1238,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/typer/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "0.28.0",
    "yanked_or_deprecated": false
   },
@@ -1194,6 +1257,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261106.1",
    "yanked_or_deprecated": false
   },
@@ -1221,6 +1285,7 @@
      "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))"
     }
    ],
+   "variant_of": null,
    "version": "3.0.0",
    "yanked_or_deprecated": false
   },
@@ -1239,6 +1304,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/stripe/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "23.2.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -1270,6 +1336,7 @@
      "quote": "* **`httpx` is no longer installed by default.** `httpx2` is now the required dependency and default HTTP client."
     }
    ],
+   "variant_of": null,
    "version": "3.0.0",
    "yanked_or_deprecated": false
   },
@@ -1288,6 +1355,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1306,6 +1374,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1324,6 +1393,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1342,6 +1412,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1360,6 +1431,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1378,6 +1450,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0",
    "version": "0.167.0-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1405,6 +1478,7 @@
      "quote": "- #58134 Prefer documented replacements for deprecation-driven model migrations @kkahadze-oai"
     }
    ],
+   "variant_of": null,
    "version": "0.167.0",
    "yanked_or_deprecated": false
   },
@@ -1436,6 +1510,7 @@
      "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
     }
    ],
+   "variant_of": null,
    "version": "2.1.319",
    "yanked_or_deprecated": false
   },
@@ -1454,6 +1529,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.42",
    "yanked_or_deprecated": false
   },
@@ -1472,6 +1548,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793921730000",
    "yanked_or_deprecated": false
   },
@@ -1490,6 +1567,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.108.1",
    "yanked_or_deprecated": false
   },
@@ -1508,6 +1586,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.7e79802",
    "yanked_or_deprecated": false
   },
@@ -1526,6 +1605,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1544,6 +1624,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1562,6 +1643,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1580,6 +1662,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1598,6 +1681,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1616,6 +1700,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1634,6 +1719,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.7",
    "yanked_or_deprecated": false
   },
@@ -1652,6 +1738,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793919248000",
    "yanked_or_deprecated": false
   },
@@ -1670,6 +1757,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.e0f76e9",
    "yanked_or_deprecated": false
   },
@@ -1688,6 +1776,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.66.0-alpha-1793916328000",
    "yanked_or_deprecated": false
   },
@@ -1706,6 +1795,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "13.1.0-eap-sql.49c10c82f",
    "yanked_or_deprecated": false
   },
@@ -1724,6 +1814,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.2",
    "yanked_or_deprecated": false
   },
@@ -1742,6 +1833,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.3.5",
    "yanked_or_deprecated": false
   },
@@ -1760,6 +1852,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.43.125",
    "yanked_or_deprecated": false
   },
@@ -1778,6 +1871,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -1796,6 +1890,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -1814,6 +1909,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -1832,6 +1928,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -1850,6 +1947,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -1868,6 +1966,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -1886,6 +1985,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.6",
    "yanked_or_deprecated": false
   },
@@ -1904,6 +2004,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/astro/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.4.7",
    "yanked_or_deprecated": false
   },
@@ -1922,6 +2023,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.0",
    "yanked_or_deprecated": false
   },
@@ -1940,6 +2042,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.6.0",
    "yanked_or_deprecated": false
   },
@@ -1958,6 +2061,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "0.17.4",
    "yanked_or_deprecated": false
   },
@@ -1989,6 +2093,7 @@
      "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`httpCredentials`](https://playwrig…"
     }
    ],
+   "variant_of": null,
    "version": "1.65.0",
    "yanked_or_deprecated": false
   },
@@ -2007,6 +2112,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.52.0",
    "yanked_or_deprecated": false
   },
@@ -2025,6 +2131,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793900512000",
    "yanked_or_deprecated": false
   },
@@ -2043,6 +2150,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793895462000",
    "yanked_or_deprecated": false
   },
@@ -2061,6 +2169,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
@@ -2079,6 +2188,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-experimental-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
@@ -2097,6 +2207,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
@@ -2115,6 +2226,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/react-dom/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "19.3.0-canary-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
@@ -2133,6 +2245,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/astro/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.4.6",
    "yanked_or_deprecated": false
   },
@@ -2164,6 +2277,7 @@
      "quote": "Python 3.9 support has been removed from the package and its associated development and CI configurations."
     }
    ],
+   "variant_of": null,
    "version": "5.7.0",
    "yanked_or_deprecated": false
   },
@@ -2182,6 +2296,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.9369ddb",
    "yanked_or_deprecated": false
   },
@@ -2200,6 +2315,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -2218,6 +2334,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -2236,6 +2353,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -2254,6 +2372,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -2272,6 +2391,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -2290,6 +2410,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -2308,6 +2429,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3.2",
    "yanked_or_deprecated": false
   },
@@ -2326,6 +2448,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.179",
    "yanked_or_deprecated": false
   },
@@ -2349,6 +2472,7 @@
      "quote": "…yO3 version bump. A CI workflow issue made it so that the wheel wasn't tested before publishing. This is now fixed: starting in v2.14.3, we no longer publish GraalPy 3.11 wheels, and GraalPy 3.13 wheels are now published together with the existing 3.12 one.…"
     }
    ],
+   "variant_of": null,
    "version": "2.14.3",
    "yanked_or_deprecated": false
   },
@@ -2367,6 +2491,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/vue/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.5.45",
    "yanked_or_deprecated": false
   },
@@ -2385,6 +2510,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261105.1",
    "yanked_or_deprecated": false
   },
@@ -2403,6 +2529,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.106.1",
    "yanked_or_deprecated": false
   },
@@ -2421,6 +2548,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/vite/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "8.3.6",
    "yanked_or_deprecated": false
   },
@@ -2439,6 +2567,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.66.0-alpha-2026-11-05",
    "yanked_or_deprecated": false
   },
@@ -2457,6 +2586,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -2475,6 +2605,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -2493,6 +2624,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -2511,6 +2643,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -2529,6 +2662,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -2547,6 +2681,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -2565,6 +2700,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -2583,6 +2719,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.2.20",
    "yanked_or_deprecated": false
   },
@@ -2601,6 +2738,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.107.0rc3",
    "yanked_or_deprecated": false
   },
@@ -2619,6 +2757,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793840934000",
    "yanked_or_deprecated": false
   },
@@ -2646,6 +2785,7 @@
      "quote": "Tool result content parts that use the deprecated `file-url` and `image-url`"
     }
    ],
+   "variant_of": null,
    "version": "7.0.163",
    "yanked_or_deprecated": false
   },
@@ -2664,6 +2804,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.0.109",
    "yanked_or_deprecated": false
   },
@@ -2682,6 +2823,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.323",
    "yanked_or_deprecated": false
   },
@@ -2700,6 +2842,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.0.137",
    "yanked_or_deprecated": false
   },
@@ -2718,6 +2861,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793840611000",
    "yanked_or_deprecated": false
   },
@@ -2736,6 +2880,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.51.0",
    "yanked_or_deprecated": false
   },
@@ -2754,6 +2899,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.46.0",
    "yanked_or_deprecated": false
   },
@@ -2772,6 +2918,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.7.6",
    "yanked_or_deprecated": false
   },
@@ -2795,6 +2942,7 @@
      "quote": "- docs: document experimental flags removed in Next.js 16: #101165"
     }
    ],
+   "variant_of": null,
    "version": "16.5.0-canary.41",
    "yanked_or_deprecated": false
   },
@@ -2813,6 +2961,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "9.12.0",
    "yanked_or_deprecated": false
   },
@@ -2831,6 +2980,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.43.124",
    "yanked_or_deprecated": false
   },
@@ -2849,6 +2999,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.8c74689",
    "yanked_or_deprecated": false
   },
@@ -2867,6 +3018,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -2885,6 +3037,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.adfb6f7",
    "yanked_or_deprecated": false
   },
@@ -2903,6 +3056,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -2921,6 +3075,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -2939,6 +3094,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -2957,6 +3113,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -2975,6 +3132,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.2",
    "version": "0.168.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -2993,6 +3151,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -3016,6 +3175,7 @@
      "quote": "* fix(cli): preserve ${VAR} placeholders during deprecated settings migration by @villahernandez-coder in https://github.com/google-gemini/gemini-cli/pull/29867"
     }
    ],
+   "variant_of": null,
    "version": "0.67.0",
    "yanked_or_deprecated": false
   },
@@ -3034,6 +3194,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.5.0",
    "yanked_or_deprecated": false
   },
@@ -3052,6 +3213,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.5.0",
    "yanked_or_deprecated": false
   },
@@ -3070,6 +3232,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.106.0",
    "yanked_or_deprecated": false
   },
@@ -3088,6 +3251,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2c35bd7",
    "yanked_or_deprecated": false
   },
@@ -3106,6 +3270,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.68.0-preview.0",
    "yanked_or_deprecated": false
   },
@@ -3124,6 +3289,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -3142,6 +3308,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -3160,6 +3327,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -3178,6 +3346,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -3196,6 +3365,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -3214,6 +3384,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3.1",
    "version": "0.167.0-alpha.3.1-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -3232,6 +3403,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3.1",
    "yanked_or_deprecated": false
   },
@@ -3250,6 +3422,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.669fcc1",
    "yanked_or_deprecated": false
   },
@@ -3268,6 +3441,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -3286,6 +3460,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -3304,6 +3479,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -3322,6 +3498,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -3340,6 +3517,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -3358,6 +3536,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.5",
    "version": "0.167.0-alpha.5-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -3376,6 +3555,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.7edc50e",
    "yanked_or_deprecated": false
   },
@@ -3394,6 +3574,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.5",
    "yanked_or_deprecated": false
   },
@@ -3412,6 +3593,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.4.9",
    "yanked_or_deprecated": false
   },
@@ -3443,6 +3625,7 @@
      "quote": "## ⚠️ Deprecations\n- feat: decide client-side cache eligibility from command metadata (#4272)"
     }
    ],
+   "variant_of": null,
    "version": "8.2.0b1",
    "yanked_or_deprecated": false
   },
@@ -3461,6 +3644,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.7.5",
    "yanked_or_deprecated": false
   },
@@ -3479,6 +3663,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/pandas/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.1.1",
    "yanked_or_deprecated": false
   },
@@ -3497,6 +3682,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.119.0",
    "yanked_or_deprecated": false
   },
@@ -3515,6 +3701,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "2.119.0-canary.6",
    "yanked_or_deprecated": false
   },
@@ -3533,6 +3720,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261104.1",
    "yanked_or_deprecated": false
   },
@@ -3551,6 +3739,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.66.0-alpha-2026-11-04",
    "yanked_or_deprecated": false
   },
@@ -3574,6 +3763,7 @@
      "quote": "We are readjusting how beta features work alongside LiteLLM, our core product. Starting with 1.106.7, the Lens beta is no longer packaged with the proxy or its Helm charts. If you use Lens today, v1.106.6 keeps working as it does now"
     }
    ],
+   "variant_of": null,
    "version": "1.106.7",
    "yanked_or_deprecated": false
   },
@@ -3605,6 +3795,7 @@
      "quote": "* fix: update stale source URLs and deprecation dates in model cost map by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/38801"
     }
    ],
+   "variant_of": null,
    "version": "1.108.0",
    "yanked_or_deprecated": false
   },
@@ -3623,6 +3814,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -3641,6 +3833,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -3659,6 +3852,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -3677,6 +3871,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -3695,6 +3890,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -3713,6 +3909,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.168.0-alpha.1",
    "version": "0.168.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -3731,6 +3928,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.168.0-alpha.1",
    "yanked_or_deprecated": false
   },
@@ -3749,6 +3947,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.50.0",
    "yanked_or_deprecated": false
   },
@@ -3767,6 +3966,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.45.0",
    "yanked_or_deprecated": false
   },
@@ -3790,6 +3990,7 @@
      "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
     }
    ],
+   "variant_of": null,
    "version": "1.109.0rc1",
    "yanked_or_deprecated": false
   },
@@ -3808,6 +4009,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261104.g89e9d25d6",
    "yanked_or_deprecated": false
   },
@@ -3826,6 +4028,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.1.8",
    "yanked_or_deprecated": false
   },
@@ -3844,6 +4047,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.0.57",
    "yanked_or_deprecated": false
   },
@@ -3862,6 +4066,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.40",
    "yanked_or_deprecated": false
   },
@@ -3880,6 +4085,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-beta-1793744581000",
    "yanked_or_deprecated": false
   },
@@ -3911,6 +4117,7 @@
      "quote": "- Changed Claude Code to no longer install or update the IDE extension when started in an IDE terminal; use `/ide` from an outside terminal or your editor's extensions view"
     }
    ],
+   "variant_of": null,
    "version": "2.1.318",
    "yanked_or_deprecated": false
   },
@@ -3929,6 +4136,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.49.0",
    "yanked_or_deprecated": false
   },
@@ -3960,6 +4168,7 @@
      "quote": "so that expressions such as `hstore_column.is_not(None)` no longer emit a\ndeprecation warning."
     }
    ],
+   "variant_of": null,
    "version": "2.1.7",
    "yanked_or_deprecated": false
   },
@@ -3978,6 +4187,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-alpha-1793732293000",
    "yanked_or_deprecated": false
   },
@@ -3996,6 +4206,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.44.0",
    "yanked_or_deprecated": false
   },
@@ -4019,6 +4230,7 @@
      "quote": "an expired object that is replaced in this way no longer causes the"
     }
    ],
+   "variant_of": null,
    "version": "2.0.56",
    "yanked_or_deprecated": false
   },
@@ -4037,6 +4249,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.39",
    "yanked_or_deprecated": false
   },
@@ -4055,6 +4268,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "15.5.29",
    "yanked_or_deprecated": false
   },
@@ -4073,6 +4287,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.48.0",
    "yanked_or_deprecated": false
   },
@@ -4091,6 +4306,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.43.0",
    "yanked_or_deprecated": false
   },
@@ -4109,6 +4325,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "16.4.5",
    "yanked_or_deprecated": false
   },
@@ -4127,6 +4344,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "2.119.0-canary.5",
    "yanked_or_deprecated": false
   },
@@ -4145,6 +4363,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/django/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.2.19",
    "yanked_or_deprecated": false
   },
@@ -4163,6 +4382,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/django/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.10",
    "yanked_or_deprecated": false
   },
@@ -4181,6 +4401,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/django/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.1.3",
    "yanked_or_deprecated": false
   },
@@ -4199,6 +4420,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30",
    "yanked_or_deprecated": false
   },
@@ -4217,6 +4439,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/prisma/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "8.0.0-rc.30-dev.178",
    "yanked_or_deprecated": false
   },
@@ -4235,6 +4458,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.38",
    "yanked_or_deprecated": false
   },
@@ -4253,6 +4477,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261103.1",
    "yanked_or_deprecated": false
   },
@@ -4284,6 +4509,7 @@
      "quote": "…unwrapped, sparse arrays are preserved, and non-canonical numeric field names survive JSON serialization. Inherited read-only numeric slots no longer block conversion or multipart serialization. (**#11243**)…"
     }
    ],
+   "variant_of": null,
    "version": "0.35.0",
    "yanked_or_deprecated": false
   },
@@ -4302,6 +4528,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.3.4",
    "yanked_or_deprecated": false
   },
@@ -4320,6 +4547,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.6.1",
    "yanked_or_deprecated": false
   },
@@ -4338,6 +4566,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-alpha-2026-11-03",
    "yanked_or_deprecated": false
   },
@@ -4356,6 +4585,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -4374,6 +4604,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -4392,6 +4623,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -4410,6 +4642,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -4428,6 +4661,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -4446,6 +4680,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.4",
    "version": "0.167.0-alpha.4-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -4464,6 +4699,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.4",
    "yanked_or_deprecated": false
   },
@@ -4482,6 +4718,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.0.136",
    "yanked_or_deprecated": false
   },
@@ -4500,6 +4737,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261103.g0ac57c029",
    "yanked_or_deprecated": false
   },
@@ -4518,6 +4756,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "2.0.140",
    "yanked_or_deprecated": false
   },
@@ -4536,6 +4775,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.0.108",
    "yanked_or_deprecated": false
   },
@@ -4554,6 +4794,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.322",
    "yanked_or_deprecated": false
   },
@@ -4572,6 +4813,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.162",
    "yanked_or_deprecated": false
   },
@@ -4590,6 +4832,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.285",
    "yanked_or_deprecated": false
   },
@@ -4617,6 +4860,7 @@
      "quote": "- Removed the Read tool's \"file unchanged since your last Read\" stub: reading an unchanged file again returns its content"
     }
    ],
+   "variant_of": null,
    "version": "2.1.317",
    "yanked_or_deprecated": false
   },
@@ -4635,6 +4879,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "16.5.0-canary.37",
    "yanked_or_deprecated": false
   },
@@ -4653,6 +4898,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.3.3",
    "yanked_or_deprecated": false
   },
@@ -4671,6 +4917,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.3.4",
    "yanked_or_deprecated": false
   },
@@ -4694,6 +4941,7 @@
      "quote": "4. **Nitropack cached routes.** `cache`, `swr` and `isr` route rules now only cache `GET` and `HEAD` requests, and no longer store responses that set a cookie or send `Cache-Control: private` or `no-store`. Wildcard `proxy` and `redirect` rules also reject requests whose resolved…"
     }
    ],
+   "variant_of": null,
    "version": "4.6.4",
    "yanked_or_deprecated": false
   },
@@ -4712,6 +4960,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.105.3",
    "yanked_or_deprecated": false
   },
@@ -4730,6 +4979,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "4.0.107",
    "yanked_or_deprecated": false
   },
@@ -4748,6 +4998,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.161",
    "yanked_or_deprecated": false
   },
@@ -4766,6 +5017,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.0.284",
    "yanked_or_deprecated": false
   },
@@ -4784,6 +5036,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "8.24.8",
    "yanked_or_deprecated": false
   },
@@ -4802,6 +5055,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.321",
    "yanked_or_deprecated": false
   },
@@ -4820,6 +5074,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.4.0",
    "yanked_or_deprecated": false
   },
@@ -4838,6 +5093,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/ai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "7.0.160",
    "yanked_or_deprecated": false
   },
@@ -4861,6 +5117,7 @@
      "quote": "* link to the SDK documentation instead of removed README sections"
     }
    ],
+   "variant_of": null,
    "version": "2.4.0",
    "yanked_or_deprecated": false
   },
@@ -4879,6 +5136,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2626ae6",
    "yanked_or_deprecated": false
   },
@@ -4897,6 +5155,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/firebase/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "13.2.0",
    "yanked_or_deprecated": false
   },
@@ -4915,6 +5174,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/vitest/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.1.0",
    "yanked_or_deprecated": false
   },
@@ -4933,6 +5193,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.4.8",
    "yanked_or_deprecated": false
   },
@@ -4951,6 +5212,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "1.7.4",
    "yanked_or_deprecated": false
   },
@@ -4974,6 +5236,7 @@
      "quote": "…amic tags, JSX, and MDX. Only the leading part of the string that is a valid element name is rendered, so characters such as `/` or `=` can no longer change the generated markup. A string that does not start with a valid element name (for example `'!--'` or `''`) now throws an er…"
     }
    ],
+   "variant_of": null,
    "version": "7.4.5",
    "yanked_or_deprecated": false
   },
@@ -4997,6 +5260,7 @@
      "quote": "…27cd805bd8103cd873) - Update the observer options before subscribing so revealing an `<Activity>` tree whose query key changed while hidden no longer fetches the previous key.…"
     }
    ],
+   "variant_of": null,
    "version": "5.105.2",
    "yanked_or_deprecated": false
   },
@@ -5015,6 +5279,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.cd5831f",
    "yanked_or_deprecated": false
   },
@@ -5033,6 +5298,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/next/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "16.4.4",
    "yanked_or_deprecated": false
   },
@@ -5051,6 +5317,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/fastify/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.12.8",
    "yanked_or_deprecated": false
   },
@@ -5069,6 +5336,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/fastify/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "6.0.0-alpha.6",
    "yanked_or_deprecated": false
   },
@@ -5087,6 +5355,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.2570e00",
    "yanked_or_deprecated": false
   },
@@ -5105,6 +5374,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/typescript/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "7.1.0-dev.20261102.1",
    "yanked_or_deprecated": false
   },
@@ -5123,6 +5393,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/playwright/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "1.65.0-alpha-2026-11-02",
    "yanked_or_deprecated": false
   },
@@ -5141,6 +5412,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.67.0-nightly.20261102.g6814e00d6",
    "yanked_or_deprecated": false
   },
@@ -5159,6 +5431,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.410a465",
    "yanked_or_deprecated": false
   },
@@ -5177,6 +5450,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -5195,6 +5469,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -5213,6 +5488,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -5231,6 +5507,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -5249,6 +5526,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -5267,6 +5545,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.3",
    "version": "0.167.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -5285,6 +5564,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.3",
    "yanked_or_deprecated": false
   },
@@ -5303,6 +5583,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.0.0-insiders.654f89f",
    "yanked_or_deprecated": false
   },
@@ -5321,6 +5602,7 @@
    "page": "https://releases.formachines.ai/pkg/pypi/openai/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "3.42.1",
    "yanked_or_deprecated": false
   },
@@ -5339,6 +5621,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
@@ -5357,6 +5640,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
@@ -5375,6 +5659,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
@@ -5393,6 +5678,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
@@ -5411,6 +5697,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
@@ -5429,6 +5716,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": "0.167.0-alpha.2",
    "version": "0.167.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
@@ -5447,6 +5735,7 @@
    "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
    "prerelease": true,
    "quotes": [],
+   "variant_of": null,
    "version": "0.167.0-alpha.2",
    "yanked_or_deprecated": false
   },
@@ -5465,11 +5754,12 @@
    "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
    "prerelease": false,
    "quotes": [],
+   "variant_of": null,
    "version": "5.105.1",
    "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-01T08:10:03Z"
+ "window_start": "2026-11-01T09:12:12Z"
 }
