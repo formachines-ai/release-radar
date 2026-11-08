@@ -126,3 +126,5 @@ footer.site p { margin: 0.2rem 0; }
 .follow { margin: 0 0 1rem; overflow-wrap: anywhere; }
 .card .pre.bump { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
 .card .nonote { margin: 0.35rem 0 0; font-size: 0.85rem; }
+
+.notes-top { margin: .4rem 0; font-weight: 600; }
