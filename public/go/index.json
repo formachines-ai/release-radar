@@ -1,5 +1,5 @@
 {
- "built": "2026-11-07T19:14:00Z",
+ "built": "2026-11-08T01:11:41Z",
  "redirects": {
   "014d49577a": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
   "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
@@ -23,7 +23,6 @@
   "219da15097": "https://github.com/prisma/prisma-cli/releases/tag/v8.0.0-rc.33",
   "23884ddf6d": "https://github.com/huggingface/transformers/releases/tag/v5.22.2",
   "2c89484360": "https://github.com/vercel/ai/releases/tag/ai%405.0.285",
-  "2d152eb49d": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.36",
   "2d9737e1e5": "https://formachines.ai/errata/pypi/google-genai/",
   "2e7e35a388": "https://github.com/vercel/next.js/releases/tag/v16.4.4",
   "2facf6327e": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.140",

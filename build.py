@@ -746,7 +746,7 @@ def vote_target(r: dict) -> str:
     return f'{r["pkg_path"]}#{safe_fs_name(r["id"])}'
 
 
-def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
+def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False) -> str:
     flagged = ' flagged' if r["flagged"] else ""
     badges = []
     if r["flagged"]:
@@ -771,6 +771,10 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
             "registry_page": "registry page"}.get(r["notes_kind"], "release notes")
     kind_hint = f' <span class="note">({kind})</span>' if kind != "release notes" else ""
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
+    top = ""
+    if notes_top:
+        top = f'<p class="notes-top">{links}</p>' if links else '<p class="notes-top note">release notes not fetched</p>'
+        links = ""
     links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
     issue_title = urllib.parse.quote(f"Error in entry: {r['ecosystem']}/{r['name']} {r['version']}")
@@ -782,7 +786,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True) -> str:
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{quotes}{honest}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
+            f'{" ".join(badges)}</div>{top}{quotes}{honest}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -902,7 +906,7 @@ def render_package(p: dict, model: dict) -> str:
             body.append(f'<p class="note no-stable">No stable release in the last {WINDOW_DAYS} days; latest stable: unknown (source: registry)</p>')
     if p["releases"]:
         ordered = sorted(p["releases"], key=lambda r: r["prerelease"])
-        body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False) for r in ordered) + "</ul>")
+        body.append('<ul class="cards">' + "".join(render_card(r, now, show_pkg_link=False, notes_top=True) for r in ordered) + "</ul>")
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
     body.append('<p class="note"><a href="/">← all packages</a></p>')
