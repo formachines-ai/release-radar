@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-08T08:11:07Z",
+ "fetched": "2026-11-09T01:14:17Z",
  "releases": [
   {
    "body": "9.12.0 / 2026-11-04\r\n===================\r\n * feat: upgrade to mongodb driver 7.8 #16772 #16667\r\n * perf: improve for document arrays: cache paths with defaults and schemas with select paths; avoid unnecessary $isModified() lookup #16595\r\n * fix: make recompileSchema recompute derived caches and delay _preCompile() until an actual model is compiled (not subdocs or doc arrays) #16595\r\n * fix(array): compare UUIDs by value in indexOf() so pull() and addToSet() work #16606 [luantaraschi](https://github.com/luantaraschi)\r\n * docs(query): remove unused use$geoWithin docs and property #16589 #16583",

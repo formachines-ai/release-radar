@@ -1,20 +1,40 @@
 {
- "built": "2026-11-08T20:10:29Z",
+ "built": "2026-11-09T01:13:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "18.0.9",
+ "latest": "18.0.10",
  "latest_stable": {
-  "date": "2026-10-22T18:28:31Z",
-  "version": "18.0.9"
+  "date": "2026-11-09T00:53:33Z",
+  "version": "18.0.10"
  },
- "metadata_fetched": "2026-11-08T08:10:59Z",
+ "metadata_fetched": "2026-11-09T01:14:08Z",
  "package": "dotenv",
  "page": "https://releases.formachines.ai/pkg/npm/dotenv/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/dotenv",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T00:53:33Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/dotenv/18.0.10",
+   "json": "https://releases.formachines.ai/pkg/npm/dotenv/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/5fa7c3ea02/",
+   "notes_url": "https://github.com/motdotla/dotenv/releases",
+   "package": "dotenv",
+   "page": "https://releases.formachines.ai/pkg/npm/dotenv/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "18.0.10",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/motdotla/dotenv",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Loads environment variables from .env file"
 }

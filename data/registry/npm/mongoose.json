@@ -11,7 +11,7 @@
   "unstable": "3.9.7"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T08:11:06Z",
+ "fetched": "2026-11-09T01:14:16Z",
  "homepage": "https://mongoosejs.com",
  "latest": "9.12.0",
  "name": "mongoose",
@@ -123,26 +123,6 @@
    "date": "2026-08-17T17:26:37Z",
    "deprecated": false,
    "version": "9.9.3"
-  },
-  {
-   "date": "2026-08-10T20:03:06Z",
-   "deprecated": false,
-   "version": "6.13.11"
-  },
-  {
-   "date": "2026-08-10T19:27:04Z",
-   "deprecated": false,
-   "version": "7.8.12"
-  },
-  {
-   "date": "2026-08-10T18:42:37Z",
-   "deprecated": false,
-   "version": "8.24.3"
-  },
-  {
-   "date": "2026-08-10T18:23:25Z",
-   "deprecated": false,
-   "version": "9.9.2"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T20:10:29Z",
+ "built": "2026-11-09T01:13:10Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-07T22:25:38Z",
   "version": "1.108.3"
  },
- "metadata_fetched": "2026-11-08T08:10:05Z",
+ "metadata_fetched": "2026-11-09T01:13:13Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 4,

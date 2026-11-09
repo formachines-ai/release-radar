@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/python/mypy/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-08T08:10:16Z",
+ "fetched": "2026-11-09T01:13:23Z",
  "homepage": "https://www.mypy-lang.org/",
  "latest": "2.4.1",
  "name": "mypy",

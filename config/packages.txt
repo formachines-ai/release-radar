@@ -68,6 +68,7 @@ npm:@modelcontextprotocol/sdk
 npm:@openai/codex
 npm:ai
 npm:langchain
+npm:opencode-ai
 npm:openai
 
 # ---- npm: frameworks, build, data ----

@@ -1,17 +1,22 @@
 {
  "changelog": null,
  "dist_tags": {
-  "latest": "18.0.9"
+  "latest": "18.0.10"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T08:10:59Z",
+ "fetched": "2026-11-09T01:14:08Z",
  "homepage": "https://github.com/motdotla/dotenv#readme",
- "latest": "18.0.9",
+ "latest": "18.0.10",
  "name": "dotenv",
  "page": "https://www.npmjs.com/package/dotenv",
  "repo": "motdotla/dotenv",
  "summary": "Loads environment variables from .env file",
  "versions": [
+  {
+   "date": "2026-11-09T00:53:33Z",
+   "deprecated": false,
+   "version": "18.0.10"
+  },
   {
    "date": "2026-10-22T18:28:31Z",
    "deprecated": false,
