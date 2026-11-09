@@ -7,7 +7,7 @@
   "public-preview": "23.2.0-beta.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T08:11:13Z",
+ "fetched": "2026-11-09T01:14:22Z",
  "homepage": "https://github.com/stripe/stripe-node",
  "latest": "23.1.0",
  "name": "stripe",
@@ -129,11 +129,6 @@
    "date": "2026-08-13T00:34:20Z",
    "deprecated": false,
    "version": "22.6.0-alpha.1"
-  },
-  {
-   "date": "2026-08-10T22:19:03Z",
-   "deprecated": false,
-   "version": "22.5.0"
   }
  ]
 }

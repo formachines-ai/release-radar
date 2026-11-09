@@ -1,10 +1,10 @@
 # Release Radar
 
-> Daily feed of PyPI and npm releases (97 tracked packages, last 7 days) with the verbatim lines of release notes that mention breaking, deprecated, removed, renamed, dropped support or no longer. Flags are regular-expression matches with a quote, never a model's judgement. Packages with a sandbox-verified fix on formachines.ai/errata carry a link.
+> Daily feed of PyPI and npm releases (98 tracked packages, last 7 days) with the verbatim lines of release notes that mention breaking, deprecated, removed, renamed, dropped support or no longer. Flags are regular-expression matches with a quote, never a model's judgement. Packages with a sandbox-verified fix on formachines.ai/errata carry a link.
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-08T20:10:29Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-09T01:13:10Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -37,7 +37,7 @@ Updated: 2026-11-08T20:10:29Z UTC (daily build 06:00 UTC)
 - [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.7 · JSON: https://releases.formachines.ai/pkg/npm/astro/index.json
 - [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.0 · JSON: https://releases.formachines.ai/pkg/npm/axios/index.json
 - [commander (npm)](https://releases.formachines.ai/pkg/npm/commander/): latest 15.1.0 · JSON: https://releases.formachines.ai/pkg/npm/commander/index.json
-- [dotenv (npm)](https://releases.formachines.ai/pkg/npm/dotenv/): latest 18.0.9 · JSON: https://releases.formachines.ai/pkg/npm/dotenv/index.json
+- [dotenv (npm)](https://releases.formachines.ai/pkg/npm/dotenv/): latest 18.0.10 · JSON: https://releases.formachines.ai/pkg/npm/dotenv/index.json
 - [drizzle-orm (npm)](https://releases.formachines.ai/pkg/npm/drizzle-orm/): latest 0.45.4 · JSON: https://releases.formachines.ai/pkg/npm/drizzle-orm/index.json
 - [esbuild (npm)](https://releases.formachines.ai/pkg/npm/esbuild/): latest 0.28.2 · JSON: https://releases.formachines.ai/pkg/npm/esbuild/index.json
 - [eslint (npm)](https://releases.formachines.ai/pkg/npm/eslint/): latest 10.14.0 · JSON: https://releases.formachines.ai/pkg/npm/eslint/index.json
@@ -52,6 +52,7 @@ Updated: 2026-11-08T20:10:29Z UTC (daily build 06:00 UTC)
 - [next (npm)](https://releases.formachines.ai/pkg/npm/next/): latest 16.4.5 · JSON: https://releases.formachines.ai/pkg/npm/next/index.json
 - [nuxt (npm)](https://releases.formachines.ai/pkg/npm/nuxt/): latest 4.6.4 · JSON: https://releases.formachines.ai/pkg/npm/nuxt/index.json
 - [openai (npm)](https://releases.formachines.ai/pkg/npm/openai/): latest 7.53.0 · JSON: https://releases.formachines.ai/pkg/npm/openai/index.json
+- [opencode-ai (npm)](https://releases.formachines.ai/pkg/npm/opencode-ai/): latest 1.19.5 · JSON: https://releases.formachines.ai/pkg/npm/opencode-ai/index.json
 - [pg (npm)](https://releases.formachines.ai/pkg/npm/pg/): latest 8.23.1 · JSON: https://releases.formachines.ai/pkg/npm/pg/index.json
 - [playwright (npm)](https://releases.formachines.ai/pkg/npm/playwright/): latest 1.65.0 · JSON: https://releases.formachines.ai/pkg/npm/playwright/index.json
 - [prettier (npm)](https://releases.formachines.ai/pkg/npm/prettier/): latest 3.9.10 · JSON: https://releases.formachines.ai/pkg/npm/prettier/index.json

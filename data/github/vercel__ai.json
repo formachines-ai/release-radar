@@ -177,7 +177,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.164"
   }
  },
- "fetched": "2026-11-08T08:10:31Z",
+ "fetched": "2026-11-09T01:13:38Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 883fcde: remove transcription word timings from telemetry when recordOutputs is false\n- 6d21e8e: Sanitize provider request URLs before text generation results reach telemetry integrations and tracing subscribers, preventing endpoint credentials from being exposed.\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37\n  - @ai-sdk/gateway@4.0.138",

@@ -1,7 +1,7 @@
 {
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-08T08:10:20Z",
+ "fetched": "2026-11-09T01:13:27Z",
  "homepage": "https://www.sqlalchemy.org",
  "latest": "2.1.8",
  "name": "SQLAlchemy",

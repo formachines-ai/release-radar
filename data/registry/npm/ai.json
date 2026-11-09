@@ -10,7 +10,7 @@
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-08T08:10:48Z",
+ "fetched": "2026-11-09T01:13:57Z",
  "homepage": "https://ai-sdk.dev/docs",
  "latest": "7.0.165",
  "name": "ai",
@@ -1157,26 +1157,6 @@
    "date": "2026-08-11T05:03:41Z",
    "deprecated": false,
    "version": "6.0.248"
-  },
-  {
-   "date": "2026-08-10T20:27:00Z",
-   "deprecated": false,
-   "version": "6.0.247"
-  },
-  {
-   "date": "2026-08-10T20:22:26Z",
-   "deprecated": false,
-   "version": "7.0.59"
-  },
-  {
-   "date": "2026-08-10T20:21:25Z",
-   "deprecated": false,
-   "version": "5.0.230"
-  },
-  {
-   "date": "2026-08-10T17:07:44Z",
-   "deprecated": false,
-   "version": "5.0.229"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T20:10:29Z",
+ "built": "2026-11-09T01:13:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,10 +8,10 @@
   "date": "2026-11-06T15:16:02Z",
   "version": "4.3.5"
  },
- "metadata_fetched": "2026-11-08T08:11:14Z",
+ "metadata_fetched": "2026-11-09T01:14:23Z",
  "package": "tailwindcss",
  "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
- "prereleases_in_window": 14,
+ "prereleases_in_window": 12,
  "registry": "https://www.npmjs.com/package/tailwindcss",
  "releases": [
   {
@@ -283,44 +283,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "0.0.0-insiders.2570e00",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-02T00:09:40Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/tailwindcss/0.0.0-insiders.410a465",
-   "json": "https://releases.formachines.ai/pkg/npm/tailwindcss/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e519a046db/",
-   "notes_url": "https://github.com/tailwindlabs/tailwindcss/releases",
-   "package": "tailwindcss",
-   "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.0.0-insiders.410a465",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-01T21:47:49Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/tailwindcss/0.0.0-insiders.654f89f",
-   "json": "https://releases.formachines.ai/pkg/npm/tailwindcss/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e519a046db/",
-   "notes_url": "https://github.com/tailwindlabs/tailwindcss/releases",
-   "package": "tailwindcss",
-   "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.0.0-insiders.654f89f",
    "yanked_or_deprecated": false
   }
  ],

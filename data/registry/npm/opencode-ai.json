@@ -1,0 +1,2114 @@
+{
+ "changelog": null,
+ "dist_tags": {
+  "beta": "0.0.0-beta-202608110357",
+  "brendan-cli-codesign": "0.0.0-brendan-cli-codesign-202603250532",
+  "ci": "0.0.0-ci-202601291809",
+  "dev": "0.0.0-dev-202611080442",
+  "latest": "1.19.5",
+  "latest-0": "1.0.142",
+  "latest-1": "1.1.4",
+  "next": "0.0.0-next-202606270058",
+  "snapshot-cleaner-view-subagents": "0.0.0-snapshot-cleaner-view-subagents-202512310424",
+  "snapshot-current-agent-animation-color": "0.0.0-snapshot-current-agent-animation-color-202601160010",
+  "snapshot-e2e-tests": "0.0.0-snapshot-e2e-tests-202601191506",
+  "snapshot-file-tree": "0.0.0-snapshot-file-tree-202601251233",
+  "snapshot-kmdr-debug": "0.0.0-snapshot-kmdr-debug-202601122237",
+  "snapshot-lander-tui": "0.0.0-snapshot-lander-tui-202601070150",
+  "snapshot-layout": "0.0.0-snapshot-layout-202601191714",
+  "snapshot-learn-agent": "0.0.0-snapshot-learn-agent-202601011707",
+  "snapshot-memory": "0.0.0-snapshot-memory-202603261432",
+  "snapshot-minimal-interrupt": "0.0.0-snapshot-minimal-interrupt-202601051453",
+  "snapshot-node-logic": "0.0.0-snapshot-node-logic-202602200818",
+  "snapshot-node-pty": "0.0.0-snapshot-node-pty-202602201113",
+  "snapshot-opentui-upgrade": "0.0.0-snapshot-opentui-upgrade-202601260132",
+  "snapshot-plz-help": "0.0.0-snapshot-plz-help-202512122319",
+  "snapshot-pnpm": "0.0.0-snapshot-pnpm-202511302105",
+  "snapshot-proxy": "0.0.0-snapshot-proxy-202512080622",
+  "snapshot-selection": "0.0.0-snapshot-selection-202602061133",
+  "snapshot-session-perf": "0.0.0-snapshot-session-perf-202601082348",
+  "snapshot-settings": "0.0.0-snapshot-settings-202601070200",
+  "snapshot-sort-diffs": "0.0.0-snapshot-sort-diffs-202601052145",
+  "snapshot-spawn-server-logs": "0.0.0-snapshot-spawn-server-logs-202603052132",
+  "snapshot-start-screen-tips": "0.0.0-snapshot-start-screen-tips-202512231927",
+  "snapshot-symlink-fix": "0.0.0-snapshot-symlink-fix-202601130539",
+  "snapshot-terminal-title-animation": "0.0.0-snapshot-terminal-title-animation-202512231827",
+  "snapshot-thinking-toggle": "0.0.0-snapshot-thinking-toggle-202512300328",
+  "snapshot-thinking-toggle-animated": "0.0.0-snapshot-thinking-toggle-animated-202512291322",
+  "snapshot-timeline": "0.0.0-snapshot-timeline-202602192036",
+  "snapshot-tui-plugins": "0.0.0-snapshot-tui-plugins-202603271347",
+  "snapshot-virtualized-diffs": "0.0.0-snapshot-virtualized-diffs-202602121142",
+  "snapshot-windows-desktop": "0.0.0-snapshot-windows-desktop-202602121945",
+  "tui-v2": "0.0.0-tui-v2-202606261840"
+ },
+ "ecosystem": "npm",
+ "fetched": "2026-11-09T01:14:02Z",
+ "homepage": "",
+ "latest": "1.19.5",
+ "name": "opencode-ai",
+ "page": "https://www.npmjs.com/package/opencode-ai",
+ "repo": null,
+ "summary": "",
+ "versions": [
+  {
+   "date": "2026-11-08T05:51:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202611080442"
+  },
+  {
+   "date": "2026-10-28T06:17:11Z",
+   "deprecated": false,
+   "version": "1.19.5"
+  },
+  {
+   "date": "2026-10-28T06:01:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610280534"
+  },
+  {
+   "date": "2026-10-28T03:30:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610280301"
+  },
+  {
+   "date": "2026-10-28T01:22:24Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610280102"
+  },
+  {
+   "date": "2026-10-26T05:09:15Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610260443"
+  },
+  {
+   "date": "2026-10-26T04:43:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610260419"
+  },
+  {
+   "date": "2026-10-25T06:25:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610250607"
+  },
+  {
+   "date": "2026-10-22T13:27:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610221304"
+  },
+  {
+   "date": "2026-10-22T13:03:43Z",
+   "deprecated": false,
+   "version": "1.19.4"
+  },
+  {
+   "date": "2026-10-22T12:48:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610221224"
+  },
+  {
+   "date": "2026-10-16T12:53:47Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610161232"
+  },
+  {
+   "date": "2026-10-16T12:32:00Z",
+   "deprecated": false,
+   "version": "1.19.3"
+  },
+  {
+   "date": "2026-10-16T12:15:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610161157"
+  },
+  {
+   "date": "2026-10-16T11:57:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610161137"
+  },
+  {
+   "date": "2026-10-16T02:48:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610160231"
+  },
+  {
+   "date": "2026-10-16T02:29:31Z",
+   "deprecated": false,
+   "version": "1.19.2"
+  },
+  {
+   "date": "2026-10-16T01:42:02Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610160120"
+  },
+  {
+   "date": "2026-10-15T19:45:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610151921"
+  },
+  {
+   "date": "2026-10-15T19:20:16Z",
+   "deprecated": false,
+   "version": "1.19.1"
+  },
+  {
+   "date": "2026-10-15T18:44:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610151819"
+  },
+  {
+   "date": "2026-10-14T19:20:09Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610141901"
+  },
+  {
+   "date": "2026-10-13T05:07:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610130450"
+  },
+  {
+   "date": "2026-10-11T01:56:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610110139"
+  },
+  {
+   "date": "2026-10-11T01:38:53Z",
+   "deprecated": false,
+   "version": "1.19.0"
+  },
+  {
+   "date": "2026-10-11T01:23:38Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610110108"
+  },
+  {
+   "date": "2026-10-11T01:10:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610110054"
+  },
+  {
+   "date": "2026-10-10T23:37:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610102323"
+  },
+  {
+   "date": "2026-10-09T22:55:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610092229"
+  },
+  {
+   "date": "2026-10-09T22:20:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610092204"
+  },
+  {
+   "date": "2026-10-08T14:56:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610081429"
+  },
+  {
+   "date": "2026-10-08T14:31:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610081410"
+  },
+  {
+   "date": "2026-10-08T14:08:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610081348"
+  },
+  {
+   "date": "2026-10-08T13:39:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610081323"
+  },
+  {
+   "date": "2026-10-08T06:28:15Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610080611"
+  },
+  {
+   "date": "2026-10-08T06:08:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610080552"
+  },
+  {
+   "date": "2026-10-08T03:50:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610080331"
+  },
+  {
+   "date": "2026-10-07T19:56:18Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610071936"
+  },
+  {
+   "date": "2026-10-07T19:36:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610071918"
+  },
+  {
+   "date": "2026-10-07T17:48:05Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610071728"
+  },
+  {
+   "date": "2026-10-07T16:28:18Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610071607"
+  },
+  {
+   "date": "2026-10-06T23:17:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062254"
+  },
+  {
+   "date": "2026-10-06T22:54:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062230"
+  },
+  {
+   "date": "2026-10-06T22:34:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062213"
+  },
+  {
+   "date": "2026-10-06T22:13:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062156"
+  },
+  {
+   "date": "2026-10-06T21:49:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062133"
+  },
+  {
+   "date": "2026-10-06T20:37:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610062019"
+  },
+  {
+   "date": "2026-10-06T20:21:30Z",
+   "deprecated": false,
+   "version": "1.18.35"
+  },
+  {
+   "date": "2026-10-06T16:49:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610061629"
+  },
+  {
+   "date": "2026-10-06T16:33:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610061612"
+  },
+  {
+   "date": "2026-10-06T10:46:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610061030"
+  },
+  {
+   "date": "2026-10-06T02:50:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610060234"
+  },
+  {
+   "date": "2026-10-06T02:34:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610060212"
+  },
+  {
+   "date": "2026-10-05T22:07:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610052145"
+  },
+  {
+   "date": "2026-10-05T20:28:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610052007"
+  },
+  {
+   "date": "2026-10-05T20:08:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610051942"
+  },
+  {
+   "date": "2026-10-05T19:05:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610051847"
+  },
+  {
+   "date": "2026-10-03T05:12:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610030456"
+  },
+  {
+   "date": "2026-10-02T21:14:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610022056"
+  },
+  {
+   "date": "2026-10-02T16:22:14Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610021559"
+  },
+  {
+   "date": "2026-10-02T03:41:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610020321"
+  },
+  {
+   "date": "2026-10-01T21:58:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610012141"
+  },
+  {
+   "date": "2026-10-01T21:39:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610012120"
+  },
+  {
+   "date": "2026-10-01T21:20:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610012059"
+  },
+  {
+   "date": "2026-10-01T16:55:27Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610011625"
+  },
+  {
+   "date": "2026-10-01T15:53:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610011513"
+  },
+  {
+   "date": "2026-10-01T05:08:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610010447"
+  },
+  {
+   "date": "2026-10-01T04:48:57Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610010422"
+  },
+  {
+   "date": "2026-10-01T02:56:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202610010240"
+  },
+  {
+   "date": "2026-09-30T23:05:46Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609302240"
+  },
+  {
+   "date": "2026-09-30T22:38:58Z",
+   "deprecated": false,
+   "version": "1.18.34"
+  },
+  {
+   "date": "2026-09-30T20:59:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609302040"
+  },
+  {
+   "date": "2026-09-30T18:12:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609301753"
+  },
+  {
+   "date": "2026-09-30T16:40:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609301623"
+  },
+  {
+   "date": "2026-09-29T22:06:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609292145"
+  },
+  {
+   "date": "2026-09-29T19:58:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609291934"
+  },
+  {
+   "date": "2026-09-28T23:20:14Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609282300"
+  },
+  {
+   "date": "2026-09-28T20:30:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609282011"
+  },
+  {
+   "date": "2026-09-28T20:11:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281952"
+  },
+  {
+   "date": "2026-09-28T16:55:45Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281631"
+  },
+  {
+   "date": "2026-09-28T16:29:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281608"
+  },
+  {
+   "date": "2026-09-28T16:07:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281545"
+  },
+  {
+   "date": "2026-09-28T14:04:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281346"
+  },
+  {
+   "date": "2026-09-28T13:50:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281326"
+  },
+  {
+   "date": "2026-09-28T13:23:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281305"
+  },
+  {
+   "date": "2026-09-28T11:59:47Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281134"
+  },
+  {
+   "date": "2026-09-28T10:57:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609281039"
+  },
+  {
+   "date": "2026-09-28T05:57:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280537"
+  },
+  {
+   "date": "2026-09-28T05:37:46Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280509"
+  },
+  {
+   "date": "2026-09-28T05:13:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280445"
+  },
+  {
+   "date": "2026-09-28T04:43:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280423"
+  },
+  {
+   "date": "2026-09-28T04:23:28Z",
+   "deprecated": false,
+   "version": "1.18.33"
+  },
+  {
+   "date": "2026-09-28T04:21:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280402"
+  },
+  {
+   "date": "2026-09-28T03:40:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609280323"
+  },
+  {
+   "date": "2026-09-26T20:17:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609261957"
+  },
+  {
+   "date": "2026-09-26T16:11:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609261555"
+  },
+  {
+   "date": "2026-09-26T13:37:39Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609261316"
+  },
+  {
+   "date": "2026-09-25T23:57:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609252333"
+  },
+  {
+   "date": "2026-09-25T23:34:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609252310"
+  },
+  {
+   "date": "2026-09-25T16:55:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609251636"
+  },
+  {
+   "date": "2026-09-25T16:38:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609251614"
+  },
+  {
+   "date": "2026-09-25T11:20:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609251101"
+  },
+  {
+   "date": "2026-09-24T19:43:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609241927"
+  },
+  {
+   "date": "2026-09-22T20:05:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609221946"
+  },
+  {
+   "date": "2026-09-22T19:45:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609221924"
+  },
+  {
+   "date": "2026-09-22T19:01:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609221838"
+  },
+  {
+   "date": "2026-09-21T23:13:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609212252"
+  },
+  {
+   "date": "2026-09-21T22:50:42Z",
+   "deprecated": false,
+   "version": "1.18.32"
+  },
+  {
+   "date": "2026-09-21T20:14:24Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609211956"
+  },
+  {
+   "date": "2026-09-21T19:56:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609211937"
+  },
+  {
+   "date": "2026-09-21T15:56:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609211533"
+  },
+  {
+   "date": "2026-09-21T08:58:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210841"
+  },
+  {
+   "date": "2026-09-21T08:21:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210803"
+  },
+  {
+   "date": "2026-09-21T03:48:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210332"
+  },
+  {
+   "date": "2026-09-21T02:39:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210221"
+  },
+  {
+   "date": "2026-09-21T02:24:31Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210202"
+  },
+  {
+   "date": "2026-09-21T00:58:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609210041"
+  },
+  {
+   "date": "2026-09-20T18:03:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609201743"
+  },
+  {
+   "date": "2026-09-20T17:22:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609201705"
+  },
+  {
+   "date": "2026-09-20T17:05:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609201651"
+  },
+  {
+   "date": "2026-09-20T16:51:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609201623"
+  },
+  {
+   "date": "2026-09-20T01:22:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609200100"
+  },
+  {
+   "date": "2026-09-20T00:59:55Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609200042"
+  },
+  {
+   "date": "2026-09-19T22:09:48Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609192147"
+  },
+  {
+   "date": "2026-09-19T14:50:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609191432"
+  },
+  {
+   "date": "2026-09-19T09:19:16Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190902"
+  },
+  {
+   "date": "2026-09-19T08:23:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190806"
+  },
+  {
+   "date": "2026-09-19T08:06:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190751"
+  },
+  {
+   "date": "2026-09-19T07:51:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190735"
+  },
+  {
+   "date": "2026-09-19T07:35:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190715"
+  },
+  {
+   "date": "2026-09-19T04:57:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190440"
+  },
+  {
+   "date": "2026-09-19T04:39:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190416"
+  },
+  {
+   "date": "2026-09-19T03:49:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190331"
+  },
+  {
+   "date": "2026-09-19T01:49:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609190128"
+  },
+  {
+   "date": "2026-09-18T16:18:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609181558"
+  },
+  {
+   "date": "2026-09-18T10:25:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609181007"
+  },
+  {
+   "date": "2026-09-18T09:50:09Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609180930"
+  },
+  {
+   "date": "2026-09-18T09:31:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609180913"
+  },
+  {
+   "date": "2026-09-18T02:09:05Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609180152"
+  },
+  {
+   "date": "2026-09-17T09:50:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609170926"
+  },
+  {
+   "date": "2026-09-16T18:34:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161816"
+  },
+  {
+   "date": "2026-09-16T18:06:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161748"
+  },
+  {
+   "date": "2026-09-16T17:08:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161648"
+  },
+  {
+   "date": "2026-09-16T15:56:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161532"
+  },
+  {
+   "date": "2026-09-16T14:24:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161404"
+  },
+  {
+   "date": "2026-09-16T14:04:26Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161342"
+  },
+  {
+   "date": "2026-09-16T13:27:16Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609161308"
+  },
+  {
+   "date": "2026-09-14T22:15:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609142154"
+  },
+  {
+   "date": "2026-09-14T21:54:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609142136"
+  },
+  {
+   "date": "2026-09-14T21:36:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609142117"
+  },
+  {
+   "date": "2026-09-14T18:23:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609141748"
+  },
+  {
+   "date": "2026-09-14T17:51:02Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609141727"
+  },
+  {
+   "date": "2026-09-14T17:47:43Z",
+   "deprecated": false,
+   "version": "1.18.31"
+  },
+  {
+   "date": "2026-09-14T17:28:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609141709"
+  },
+  {
+   "date": "2026-09-14T07:41:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609140717"
+  },
+  {
+   "date": "2026-09-13T21:55:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609132139"
+  },
+  {
+   "date": "2026-09-13T17:30:44Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609131715"
+  },
+  {
+   "date": "2026-09-13T17:13:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609131657"
+  },
+  {
+   "date": "2026-09-13T15:57:39Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609131541"
+  },
+  {
+   "date": "2026-09-13T15:42:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609131524"
+  },
+  {
+   "date": "2026-09-10T20:53:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609102034"
+  },
+  {
+   "date": "2026-09-10T20:11:55Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609101951"
+  },
+  {
+   "date": "2026-09-10T18:15:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609101754"
+  },
+  {
+   "date": "2026-09-10T09:44:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609100926"
+  },
+  {
+   "date": "2026-09-10T03:26:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609100309"
+  },
+  {
+   "date": "2026-09-10T03:10:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609100252"
+  },
+  {
+   "date": "2026-09-09T23:24:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609092302"
+  },
+  {
+   "date": "2026-09-09T23:02:02Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609092244"
+  },
+  {
+   "date": "2026-09-09T18:05:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609091746"
+  },
+  {
+   "date": "2026-09-09T16:02:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609091543"
+  },
+  {
+   "date": "2026-09-09T03:55:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609090335"
+  },
+  {
+   "date": "2026-09-09T03:33:55Z",
+   "deprecated": false,
+   "version": "1.18.30"
+  },
+  {
+   "date": "2026-09-09T02:56:47Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609090228"
+  },
+  {
+   "date": "2026-09-08T17:02:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609081644"
+  },
+  {
+   "date": "2026-09-08T16:44:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609081621"
+  },
+  {
+   "date": "2026-09-08T07:29:26Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609080711"
+  },
+  {
+   "date": "2026-09-08T07:11:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609080651"
+  },
+  {
+   "date": "2026-09-07T16:42:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609071625"
+  },
+  {
+   "date": "2026-09-07T16:26:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609071604"
+  },
+  {
+   "date": "2026-09-07T06:29:18Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609070612"
+  },
+  {
+   "date": "2026-09-07T04:43:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609070426"
+  },
+  {
+   "date": "2026-09-07T04:26:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609070401"
+  },
+  {
+   "date": "2026-09-07T04:01:15Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609070344"
+  },
+  {
+   "date": "2026-09-06T22:08:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609062152"
+  },
+  {
+   "date": "2026-09-06T21:52:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609062135"
+  },
+  {
+   "date": "2026-09-06T21:19:44Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609062100"
+  },
+  {
+   "date": "2026-09-06T20:58:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609062041"
+  },
+  {
+   "date": "2026-09-06T05:05:24Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609060450"
+  },
+  {
+   "date": "2026-09-06T04:50:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609060432"
+  },
+  {
+   "date": "2026-09-05T14:49:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609051424"
+  },
+  {
+   "date": "2026-09-05T03:56:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609050337"
+  },
+  {
+   "date": "2026-09-05T00:17:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609042357"
+  },
+  {
+   "date": "2026-09-04T23:58:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609042335"
+  },
+  {
+   "date": "2026-09-04T23:46:25Z",
+   "deprecated": false,
+   "version": "1.18.29"
+  },
+  {
+   "date": "2026-09-04T19:08:39Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609041848"
+  },
+  {
+   "date": "2026-09-04T15:55:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609041539"
+  },
+  {
+   "date": "2026-09-04T15:40:40Z",
+   "deprecated": false,
+   "version": "1.18.28"
+  },
+  {
+   "date": "2026-09-04T13:50:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609041332"
+  },
+  {
+   "date": "2026-09-04T13:15:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609041258"
+  },
+  {
+   "date": "2026-09-04T12:58:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609041234"
+  },
+  {
+   "date": "2026-09-04T08:42:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609040823"
+  },
+  {
+   "date": "2026-09-04T06:03:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609040544"
+  },
+  {
+   "date": "2026-09-04T05:44:09Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609040530"
+  },
+  {
+   "date": "2026-09-04T05:34:31Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609040508"
+  },
+  {
+   "date": "2026-09-03T20:37:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609032018"
+  },
+  {
+   "date": "2026-09-03T20:19:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609031958"
+  },
+  {
+   "date": "2026-09-03T18:18:39Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609031800"
+  },
+  {
+   "date": "2026-09-03T17:59:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609031741"
+  },
+  {
+   "date": "2026-09-03T15:26:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609031506"
+  },
+  {
+   "date": "2026-09-03T14:10:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609031353"
+  },
+  {
+   "date": "2026-09-03T09:24:27Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609030903"
+  },
+  {
+   "date": "2026-09-03T02:13:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609030155"
+  },
+  {
+   "date": "2026-09-03T01:54:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609030136"
+  },
+  {
+   "date": "2026-09-03T00:00:14Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609022340"
+  },
+  {
+   "date": "2026-09-02T23:40:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609022319"
+  },
+  {
+   "date": "2026-09-02T22:05:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609022142"
+  },
+  {
+   "date": "2026-09-02T21:39:46Z",
+   "deprecated": false,
+   "version": "1.18.27"
+  },
+  {
+   "date": "2026-09-02T21:23:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609022103"
+  },
+  {
+   "date": "2026-09-02T20:59:05Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609022034"
+  },
+  {
+   "date": "2026-09-02T19:47:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609021926"
+  },
+  {
+   "date": "2026-09-02T17:14:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609021651"
+  },
+  {
+   "date": "2026-09-02T16:52:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609021632"
+  },
+  {
+   "date": "2026-09-02T16:31:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609021611"
+  },
+  {
+   "date": "2026-09-02T16:18:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609021553"
+  },
+  {
+   "date": "2026-09-02T04:49:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609020429"
+  },
+  {
+   "date": "2026-09-02T04:13:55Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609020355"
+  },
+  {
+   "date": "2026-09-01T22:37:38Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609012219"
+  },
+  {
+   "date": "2026-09-01T21:51:32Z",
+   "deprecated": false,
+   "version": "1.18.26"
+  },
+  {
+   "date": "2026-09-01T21:30:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609012104"
+  },
+  {
+   "date": "2026-09-01T21:04:38Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609012044"
+  },
+  {
+   "date": "2026-09-01T20:45:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609012025"
+  },
+  {
+   "date": "2026-09-01T20:25:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609012002"
+  },
+  {
+   "date": "2026-09-01T20:01:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609011942"
+  },
+  {
+   "date": "2026-09-01T19:45:16Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609011923"
+  },
+  {
+   "date": "2026-09-01T19:23:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609011857"
+  },
+  {
+   "date": "2026-09-01T17:55:31Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609011737"
+  },
+  {
+   "date": "2026-09-01T17:36:14Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609011714"
+  },
+  {
+   "date": "2026-09-01T07:30:32Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010712"
+  },
+  {
+   "date": "2026-09-01T03:13:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010256"
+  },
+  {
+   "date": "2026-09-01T02:56:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010238"
+  },
+  {
+   "date": "2026-09-01T02:36:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010218"
+  },
+  {
+   "date": "2026-09-01T02:19:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010202"
+  },
+  {
+   "date": "2026-09-01T02:01:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202609010135"
+  },
+  {
+   "date": "2026-08-31T18:21:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608311804"
+  },
+  {
+   "date": "2026-08-31T18:04:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608311745"
+  },
+  {
+   "date": "2026-08-31T05:36:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608310521"
+  },
+  {
+   "date": "2026-08-30T04:53:45Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608300437"
+  },
+  {
+   "date": "2026-08-29T02:38:45Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608290223"
+  },
+  {
+   "date": "2026-08-28T12:25:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608281206"
+  },
+  {
+   "date": "2026-08-28T10:48:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608281022"
+  },
+  {
+   "date": "2026-08-28T06:31:24Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280613"
+  },
+  {
+   "date": "2026-08-28T06:13:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280557"
+  },
+  {
+   "date": "2026-08-28T06:00:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280539"
+  },
+  {
+   "date": "2026-08-28T05:57:34Z",
+   "deprecated": false,
+   "version": "1.18.25"
+  },
+  {
+   "date": "2026-08-28T05:35:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280518"
+  },
+  {
+   "date": "2026-08-28T04:27:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280411"
+  },
+  {
+   "date": "2026-08-28T04:09:47Z",
+   "deprecated": false,
+   "version": "1.18.24"
+  },
+  {
+   "date": "2026-08-28T00:26:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608280009"
+  },
+  {
+   "date": "2026-08-28T00:07:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608272351"
+  },
+  {
+   "date": "2026-08-27T23:06:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608272250"
+  },
+  {
+   "date": "2026-08-27T20:39:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608272023"
+  },
+  {
+   "date": "2026-08-27T20:23:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608272004"
+  },
+  {
+   "date": "2026-08-27T17:44:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608271722"
+  },
+  {
+   "date": "2026-08-27T11:58:27Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608271137"
+  },
+  {
+   "date": "2026-08-27T11:37:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608271113"
+  },
+  {
+   "date": "2026-08-26T16:50:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261632"
+  },
+  {
+   "date": "2026-08-26T15:02:14Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261440"
+  },
+  {
+   "date": "2026-08-26T14:25:48Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261408"
+  },
+  {
+   "date": "2026-08-26T14:09:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261350"
+  },
+  {
+   "date": "2026-08-26T13:05:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261241"
+  },
+  {
+   "date": "2026-08-26T11:58:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261140"
+  },
+  {
+   "date": "2026-08-26T11:42:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261120"
+  },
+  {
+   "date": "2026-08-26T11:15:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261059"
+  },
+  {
+   "date": "2026-08-26T11:01:37Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608261042"
+  },
+  {
+   "date": "2026-08-26T08:09:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608260750"
+  },
+  {
+   "date": "2026-08-26T07:50:02Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608260732"
+  },
+  {
+   "date": "2026-08-25T20:23:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608251959"
+  },
+  {
+   "date": "2026-08-25T17:47:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608251729"
+  },
+  {
+   "date": "2026-08-25T15:52:04Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608251527"
+  },
+  {
+   "date": "2026-08-25T11:23:45Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608251106"
+  },
+  {
+   "date": "2026-08-25T08:39:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250823"
+  },
+  {
+   "date": "2026-08-25T08:11:51Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250754"
+  },
+  {
+   "date": "2026-08-25T07:53:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250731"
+  },
+  {
+   "date": "2026-08-25T07:32:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250715"
+  },
+  {
+   "date": "2026-08-25T06:49:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250631"
+  },
+  {
+   "date": "2026-08-25T06:33:58Z",
+   "deprecated": false,
+   "version": "1.18.23"
+  },
+  {
+   "date": "2026-08-25T06:16:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250555"
+  },
+  {
+   "date": "2026-08-25T03:51:06Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250334"
+  },
+  {
+   "date": "2026-08-25T03:18:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250302"
+  },
+  {
+   "date": "2026-08-25T02:54:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608250233"
+  },
+  {
+   "date": "2026-08-24T22:49:27Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608242231"
+  },
+  {
+   "date": "2026-08-24T22:11:22Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608242154"
+  },
+  {
+   "date": "2026-08-24T21:54:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608242136"
+  },
+  {
+   "date": "2026-08-24T21:34:44Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608242116"
+  },
+  {
+   "date": "2026-08-24T20:46:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608242026"
+  },
+  {
+   "date": "2026-08-24T16:32:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241609"
+  },
+  {
+   "date": "2026-08-24T14:59:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241438"
+  },
+  {
+   "date": "2026-08-24T14:37:31Z",
+   "deprecated": false,
+   "version": "1.18.22"
+  },
+  {
+   "date": "2026-08-24T13:31:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241310"
+  },
+  {
+   "date": "2026-08-24T13:09:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241250"
+  },
+  {
+   "date": "2026-08-24T11:20:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241053"
+  },
+  {
+   "date": "2026-08-24T10:44:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241023"
+  },
+  {
+   "date": "2026-08-24T10:27:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608241003"
+  },
+  {
+   "date": "2026-08-24T08:17:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608240755"
+  },
+  {
+   "date": "2026-08-24T07:51:35Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608240735"
+  },
+  {
+   "date": "2026-08-24T07:37:26Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608240717"
+  },
+  {
+   "date": "2026-08-23T17:39:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231723"
+  },
+  {
+   "date": "2026-08-23T17:23:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231705"
+  },
+  {
+   "date": "2026-08-23T17:06:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231648"
+  },
+  {
+   "date": "2026-08-23T15:51:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231534"
+  },
+  {
+   "date": "2026-08-23T15:35:37Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231519"
+  },
+  {
+   "date": "2026-08-23T14:52:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231435"
+  },
+  {
+   "date": "2026-08-23T14:35:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231418"
+  },
+  {
+   "date": "2026-08-23T14:19:25Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608231400"
+  },
+  {
+   "date": "2026-08-22T13:08:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608221251"
+  },
+  {
+   "date": "2026-08-22T11:52:00Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608221137"
+  },
+  {
+   "date": "2026-08-22T00:42:46Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608220026"
+  },
+  {
+   "date": "2026-08-21T22:39:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608212222"
+  },
+  {
+   "date": "2026-08-21T22:24:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608212206"
+  },
+  {
+   "date": "2026-08-21T22:06:26Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608212140"
+  },
+  {
+   "date": "2026-08-21T21:38:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608212123"
+  },
+  {
+   "date": "2026-08-21T21:25:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608212100"
+  },
+  {
+   "date": "2026-08-21T15:26:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211508"
+  },
+  {
+   "date": "2026-08-21T15:08:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211450"
+  },
+  {
+   "date": "2026-08-21T14:52:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211431"
+  },
+  {
+   "date": "2026-08-21T14:51:28Z",
+   "deprecated": false,
+   "version": "1.18.21"
+  },
+  {
+   "date": "2026-08-21T14:02:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211346"
+  },
+  {
+   "date": "2026-08-21T13:46:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211330"
+  },
+  {
+   "date": "2026-08-21T13:30:16Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211314"
+  },
+  {
+   "date": "2026-08-21T13:15:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608211258"
+  },
+  {
+   "date": "2026-08-21T09:29:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210909"
+  },
+  {
+   "date": "2026-08-21T09:13:17Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210853"
+  },
+  {
+   "date": "2026-08-21T08:54:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210837"
+  },
+  {
+   "date": "2026-08-21T08:39:31Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210822"
+  },
+  {
+   "date": "2026-08-21T08:22:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210805"
+  },
+  {
+   "date": "2026-08-21T08:09:54Z",
+   "deprecated": false,
+   "version": "1.18.20"
+  },
+  {
+   "date": "2026-08-21T08:05:38Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210743"
+  },
+  {
+   "date": "2026-08-21T07:44:28Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210727"
+  },
+  {
+   "date": "2026-08-21T07:27:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210712"
+  },
+  {
+   "date": "2026-08-21T07:13:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210656"
+  },
+  {
+   "date": "2026-08-21T07:04:46Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210640"
+  },
+  {
+   "date": "2026-08-21T06:41:43Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210625"
+  },
+  {
+   "date": "2026-08-21T03:31:58Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210315"
+  },
+  {
+   "date": "2026-08-21T03:15:54Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210258"
+  },
+  {
+   "date": "2026-08-21T01:02:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210046"
+  },
+  {
+   "date": "2026-08-21T00:46:12Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608210030"
+  },
+  {
+   "date": "2026-08-20T19:14:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608201855"
+  },
+  {
+   "date": "2026-08-20T18:12:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608201751"
+  },
+  {
+   "date": "2026-08-20T17:52:24Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608201733"
+  },
+  {
+   "date": "2026-08-20T16:10:05Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608201547"
+  },
+  {
+   "date": "2026-08-20T14:48:37Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608201430"
+  },
+  {
+   "date": "2026-08-20T06:45:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200628"
+  },
+  {
+   "date": "2026-08-20T06:29:37Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200609"
+  },
+  {
+   "date": "2026-08-20T06:21:26Z",
+   "deprecated": false,
+   "version": "1.18.19"
+  },
+  {
+   "date": "2026-08-20T06:04:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200548"
+  },
+  {
+   "date": "2026-08-20T05:52:37Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200529"
+  },
+  {
+   "date": "2026-08-20T05:28:55Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200513"
+  },
+  {
+   "date": "2026-08-20T04:59:30Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200443"
+  },
+  {
+   "date": "2026-08-20T03:20:42Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200302"
+  },
+  {
+   "date": "2026-08-20T00:59:26Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608200041"
+  },
+  {
+   "date": "2026-08-19T19:22:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608191904"
+  },
+  {
+   "date": "2026-08-19T17:44:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608191727"
+  },
+  {
+   "date": "2026-08-19T17:27:59Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608191710"
+  },
+  {
+   "date": "2026-08-19T13:56:20Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608191337"
+  },
+  {
+   "date": "2026-08-19T07:09:36Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190652"
+  },
+  {
+   "date": "2026-08-19T06:53:53Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190636"
+  },
+  {
+   "date": "2026-08-19T05:20:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190501"
+  },
+  {
+   "date": "2026-08-19T05:01:02Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190414"
+  },
+  {
+   "date": "2026-08-19T04:15:39Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190357"
+  },
+  {
+   "date": "2026-08-19T02:28:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608190213"
+  },
+  {
+   "date": "2026-08-18T23:21:05Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608182300"
+  },
+  {
+   "date": "2026-08-18T19:08:03Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608181849"
+  },
+  {
+   "date": "2026-08-18T14:39:13Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608181420"
+  },
+  {
+   "date": "2026-08-18T05:06:10Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608180449"
+  },
+  {
+   "date": "2026-08-18T03:56:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608180339"
+  },
+  {
+   "date": "2026-08-18T03:27:21Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608180309"
+  },
+  {
+   "date": "2026-08-17T20:01:40Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171943"
+  },
+  {
+   "date": "2026-08-17T19:43:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171920"
+  },
+  {
+   "date": "2026-08-17T19:20:18Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171902"
+  },
+  {
+   "date": "2026-08-17T18:59:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171837"
+  },
+  {
+   "date": "2026-08-17T17:35:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171704"
+  },
+  {
+   "date": "2026-08-17T11:54:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608171132"
+  },
+  {
+   "date": "2026-08-17T05:58:31Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608170540"
+  },
+  {
+   "date": "2026-08-17T05:27:48Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608170510"
+  },
+  {
+   "date": "2026-08-17T05:09:52Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608170454"
+  },
+  {
+   "date": "2026-08-16T22:16:01Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608162159"
+  },
+  {
+   "date": "2026-08-16T16:40:50Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608161619"
+  },
+  {
+   "date": "2026-08-16T06:29:29Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608160609"
+  },
+  {
+   "date": "2026-08-14T18:43:47Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608141824"
+  },
+  {
+   "date": "2026-08-14T06:05:32Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608140549"
+  },
+  {
+   "date": "2026-08-14T04:50:48Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608140432"
+  },
+  {
+   "date": "2026-08-14T04:32:18Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608140416"
+  },
+  {
+   "date": "2026-08-14T03:43:49Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608140326"
+  },
+  {
+   "date": "2026-08-14T02:44:11Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608140225"
+  },
+  {
+   "date": "2026-08-13T21:06:48Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608131959"
+  },
+  {
+   "date": "2026-08-13T19:58:33Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608131633"
+  },
+  {
+   "date": "2026-08-13T01:13:43Z",
+   "deprecated": false,
+   "version": "1.18.18"
+  },
+  {
+   "date": "2026-08-12T20:23:26Z",
+   "deprecated": false,
+   "version": "1.18.17"
+  },
+  {
+   "date": "2026-08-12T17:04:56Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608121637"
+  },
+  {
+   "date": "2026-08-11T21:45:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608112126"
+  },
+  {
+   "date": "2026-08-11T21:27:16Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608112106"
+  },
+  {
+   "date": "2026-08-11T20:46:57Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608112026"
+  },
+  {
+   "date": "2026-08-11T19:31:19Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608111906"
+  },
+  {
+   "date": "2026-08-11T19:04:41Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608111842"
+  },
+  {
+   "date": "2026-08-11T14:59:57Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608111440"
+  },
+  {
+   "date": "2026-08-11T14:42:08Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608111417"
+  },
+  {
+   "date": "2026-08-11T05:23:34Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608110459"
+  },
+  {
+   "date": "2026-08-11T04:55:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202608110434"
+  },
+  {
+   "date": "2026-08-11T04:23:44Z",
+   "deprecated": false,
+   "version": "0.0.0-beta-202608110357"
+  },
+  {
+   "date": "2026-08-11T03:56:24Z",
+   "deprecated": false,
+   "version": "0.0.0-beta-202608110326"
+  },
+  {
+   "date": "2026-08-11T02:10:00Z",
+   "deprecated": false,
+   "version": "0.0.0-beta-202608110147"
+  },
+  {
+   "date": "2026-08-11T01:44:13Z",
+   "deprecated": false,
+   "version": "0.0.0-beta-202608110121"
+  }
+ ]
+}

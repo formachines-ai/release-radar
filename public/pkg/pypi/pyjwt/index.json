@@ -1,5 +1,5 @@
 {
- "built": "2026-11-08T20:10:29Z",
+ "built": "2026-11-09T01:13:10Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-09-28T18:40:41Z",
   "version": "2.15.1"
  },
- "metadata_fetched": "2026-11-08T08:10:17Z",
+ "metadata_fetched": "2026-11-09T01:13:24Z",
  "package": "pyjwt",
  "page": "https://releases.formachines.ai/pkg/pypi/pyjwt/",
  "prereleases_in_window": 0,
