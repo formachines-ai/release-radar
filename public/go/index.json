@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T01:13:10Z",
+ "built": "2026-11-09T03:10:39Z",
  "redirects": {
   "014d49577a": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
   "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
@@ -40,7 +40,6 @@
   "42888e1974": "https://github.com/openai/openai-node/releases/tag/v7.50.0",
   "43e1365d98": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
   "44e40ff317": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
-  "454f7e53de": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0-nightly.20261102.g6814e00d6",
   "4667a3a879": "https://github.com/fastapi/fastapi/releases/tag/0.162.1",
   "46a3fcb970": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.6",
   "479e7b88d5": "https://github.com/openai/openai-node/releases/tag/v7.52.0",

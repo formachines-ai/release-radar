@@ -1,10 +1,10 @@
 {
- "built": "2026-11-09T01:13:10Z",
+ "built": "2026-11-09T03:10:39Z",
  "counts": {
   "flagged": 27,
   "packages": 98,
-  "prereleases": 163,
-  "releases": 276,
+  "prereleases": 162,
+  "releases": 275,
   "with_errata": 11
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -5472,28 +5472,9 @@
    "variant_of": null,
    "version": "1.65.0-alpha-2026-11-02",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-02T01:42:16Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@google/gemini-cli/0.67.0-nightly.20261102.g6814e00d6",
-   "json": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/454f7e53de/",
-   "notes_url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0-nightly.20261102.g6814e00d6",
-   "package": "@google/gemini-cli",
-   "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.67.0-nightly.20261102.g6814e00d6",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-02T01:13:10Z"
+ "window_start": "2026-11-02T03:10:39Z"
 }
