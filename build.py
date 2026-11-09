@@ -878,7 +878,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     if r["flagged"]:
         badges.append('<span class="badge flag">breaking / deprecated wording</span>')
     if r["flagged"] and r["bump"] in ("minor", "patch"):
-        badges.append('<span class="badge flag">regex flag in a minor/patch release</span>')
+        badges.append(f'<span class="badge flag bumpflag">Breaking keyword in a {r["bump"]} release</span>')
     if r.get("errata_url"):
         badges.append(f'<a class="badge errata" href="/go/{esc(r["errata_go"])}/" rel="nofollow">Errata: verified correction</a>')
     pre = '<span class="pre">pre-release</span>' if r["prerelease"] else ""

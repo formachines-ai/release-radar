@@ -137,7 +137,7 @@ unflagged variants whose base version is in the same list fold into the base car
 Each release has `bump` (`major|minor|patch|prerelease|unknown`) in `today.json` and `/pkg/*/index.json`, computed by
 `compute_bump()`: the version compared with the highest known stable numeric version below it (registry cache).
 Pre-releases are `prerelease`; no previous version or a non-numeric version is `unknown` (never guessed).
-Cards show the bump; flagged minor/patch releases get "regex flag in a minor/patch release". Unflagged cards say
+Cards show the bump; flagged minor/patch releases get "Breaking keyword in a minor release" / "Breaking keyword in a patch release" (text from the `bump` field only; none for major, unknown or unflagged). Unflagged cards say
 "No breaking keyword found in the release notes (checked <build date> UTC); notes can omit changes.", or
 "Release notes not fetched." when `notes_kind != github_release`. Labels are a version comparison plus the regex only.
 
