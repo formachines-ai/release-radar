@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-09T01:14:18Z",
+ "fetched": "2026-11-09T06:01:09Z",
  "releases": [
   {
    "body": "### Core Changes\n\n- docs: clarify agent feedback workspace context: #101358\n\n### Misc Changes\n\n- Turbopack: support turbopackIgnore on new URL(): #99965\n- turbo-tasks-backend: release unused capacity in task storage: #101344\n- turbopack-ecmascript: store AstPathTrie nodes as parent and kind indices: #101370\n\n### Credits \n\nHuge thanks to @lukesandberg and @aurorascharff for helping!",

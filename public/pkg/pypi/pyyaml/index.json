@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T03:10:39Z",
+ "built": "2026-11-09T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2025-09-25T21:31:46Z",
   "version": "6.0.3"
  },
- "metadata_fetched": "2026-11-09T01:13:24Z",
+ "metadata_fetched": "2026-11-09T06:00:18Z",
  "package": "pyyaml",
  "page": "https://releases.formachines.ai/pkg/pypi/pyyaml/",
  "prereleases_in_window": 0,

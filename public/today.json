@@ -1,14 +1,71 @@
 {
- "built": "2026-11-09T03:10:39Z",
+ "built": "2026-11-09T06:00:03Z",
  "counts": {
   "flagged": 27,
   "packages": 98,
   "prereleases": 162,
-  "releases": 275,
+  "releases": 277,
   "with_errata": 11
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-09T05:20:34Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.66.0-alpha-2026-11-09",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.66.0-alpha-2026-11-09",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-09T03:02:24Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/6.0.326",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e2d43b03a8/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.326",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "6.0.326",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-09T02:55:51Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/7.0.166",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/bfbba95a7a/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.166",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.0.166",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-09T00:53:33Z",
@@ -5453,28 +5510,9 @@
    "variant_of": null,
    "version": "7.1.0-dev.20261102.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-02T05:18:36Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/playwright/1.65.0-alpha-2026-11-02",
-   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
-   "notes_url": "https://github.com/microsoft/playwright/releases",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.65.0-alpha-2026-11-02",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-02T03:10:39Z"
+ "window_start": "2026-11-02T06:00:03Z"
 }

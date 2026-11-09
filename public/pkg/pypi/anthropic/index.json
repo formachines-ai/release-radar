@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T03:10:39Z",
+ "built": "2026-11-09T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-05T18:59:09Z",
   "version": "2.6.0"
  },
- "metadata_fetched": "2026-11-09T01:13:11Z",
+ "metadata_fetched": "2026-11-09T06:00:03Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,

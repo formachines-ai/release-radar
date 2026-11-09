@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
- "fetched": "2026-11-09T01:13:12Z",
+ "fetched": "2026-11-09T06:00:04Z",
  "homepage": "https://docs.langchain.com/",
  "latest": "1.4.9",
  "name": "langchain",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T03:10:39Z",
+ "built": "2026-11-09T06:00:03Z",
  "redirects": {
   "014d49577a": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
   "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
@@ -110,6 +110,7 @@
   "bd270a2d99": "https://formachines.ai/errata/pypi/click/",
   "bde7970484": "https://github.com/openai/openai-python/releases/tag/v3.44.0",
   "be9944a258": "https://github.com/BerriAI/litellm/releases/tag/v1.106.7",
+  "bfbba95a7a": "https://github.com/vercel/ai/releases/tag/ai%407.0.166",
   "bfcc9fbc29": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.41",
   "c0a2cd6ddc": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_0_57",
   "c9288812f6": "https://github.com/tailwindlabs/tailwindcss/releases/tag/v4.3.4",
@@ -128,6 +129,7 @@
   "e2ac6ea85b": "https://github.com/vercel/ai/releases/tag/ai%407.0.160",
   "e2baf2e1c3": "https://github.com/openai/codex/releases/tag/rust-v0.167.0",
   "e2c30d7b2a": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_1_7",
+  "e2d43b03a8": "https://github.com/vercel/ai/releases/tag/ai%406.0.326",
   "e519a046db": "https://github.com/tailwindlabs/tailwindcss/releases",
   "e51bc3cd34": "https://github.com/fastapi/typer/releases/tag/0.28.0",
   "e62cc6f476": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.5",

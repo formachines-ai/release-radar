@@ -1,7 +1,7 @@
 {
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
- "fetched": "2026-11-09T01:13:37Z",
+ "fetched": "2026-11-09T06:00:31Z",
  "homepage": "https://github.com/fastapi/typer",
  "latest": "0.28.0",
  "name": "typer",
