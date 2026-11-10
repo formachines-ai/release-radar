@@ -1023,8 +1023,12 @@ def related_packages(p: dict, model: dict, n: int = 4) -> list[dict]:
 def package_seo(p: dict) -> tuple[str, str]:
     """<title> and meta description of a package page: data and a verbatim quote fragment only."""
     name, eco, lat = p["name"], p["ecosystem"], p.get("latest")
-    title = f"{name} {lat} release notes & breaking changes ({eco}) — {SITE_NAME}" if lat else \
-        f"{name} release notes & breaking changes ({eco}) — {SITE_NAME}"
+    nv = f"{name} {lat}" if lat else name
+    forms = [f"{nv} release notes & breaking changes ({eco}) — {SITE_NAME}",
+             f"{nv} release notes & breaking changes ({eco})",
+             f"{nv} release notes & breaking changes",
+             f"{nv} breaking changes"]
+    title = next((t for t in forms if len(t) <= 70), forms[-1])  # T-0096: first form that fits 70 chars
     rel = next((r for r in p["releases"] if r["version"] == lat), None)
     date = rel["date"] if rel else (p["latest_stable"].get("date") if p.get("latest_stable") and p["latest_stable"]["version"] == lat else None)
     nflag = sum(1 for r in p["releases"] if r["flagged"])
