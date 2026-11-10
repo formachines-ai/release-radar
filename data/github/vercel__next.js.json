@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-09T06:01:09Z",
+ "fetched": "2026-11-10T06:01:11Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Resolve parallel route params from the URL when predicting routes: #101477\n- Prevent prerenders from changing foreground response status: #101295\n- Release fetch cache locks when origin fetch throws synchronously: #101461\n- Don't block the dev overlay on the npm registry version check: #100628\n- Fix deployed RSC responses after static-to-partial revalidation: #101454\n- docs: enable the testing API at build and server startup: #101443\n\n### Misc Changes\n\n- turbo-tasks: pack CellKey into one word: #101393\n- Turbopack: use bincode fixint encoding for ids and persisted hashes: #101419\n- [evals] Move fixtures to AI SDK 7: #101470\n- Turbopack: migrate CSS snapshot tests to execution tests: #101232\n- Turbopack: migrate basic snapshot tests to execution tests: #101231\n- Turbopack: migrate tree-shaking and scope-hoisting snapshot tests to execution tests: #101230\n- Turbopack: migrate ESM export optimization snapshot tests to execution tests: #101229\n- Turbopack: migrate CommonJS tree-shaking snapshot tests to execution tests: #101228\n- Turbopack: migrate comptime snapshot tests to execution tests: #101227\n- Turbopack: migrate import and resolution snapshot tests to execution tests: #101211\n- Require real router interactions in navigation tests: #101462\n- [create-next-app] Output next steps commands when creating app from template: #99769\n\n### Credits \n\nHuge thanks to @lukesandberg, @acdlite, @unstubbable, @swarnava, @sokra, @ShakilUrRehman21, and @aurorascharff for helping!",
+   "date": "2026-11-09T23:50:26Z",
+   "name": "v16.5.0-canary.46",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.46",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.46"
+  },
+  {
+   "body": "> [!NOTE]\r\n> This release is backporting bug fixes. It does **not** include all pending features/changes on canary.\r\n\r\n### Core Changes\r\n\r\n- [lts-active] Pin Tailwind to 4.3.3 in create-next-app and tests (#101061, #101176) (#101307)\r\n- [lts-active] Automatically compress route handler responses if not already compressed (#101280)\r\n- [lts-active] Turbopack GC fixes for dev (#100279, #100370) (#101308)\r\n\r\n### Credits\r\n\r\nHuge thanks to @lukesandberg and @eps1lon for helping!\r\n",
+   "date": "2026-11-09T20:27:17Z",
+   "name": "v16.4.6",
+   "prerelease": false,
+   "tag": "v16.4.6",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.4.6"
+  },
   {
    "body": "### Core Changes\n\n- docs: clarify agent feedback workspace context: #101358\n\n### Misc Changes\n\n- Turbopack: support turbopackIgnore on new URL(): #99965\n- turbo-tasks-backend: release unused capacity in task storage: #101344\n- turbopack-ecmascript: store AstPathTrie nodes as parent and kind indices: #101370\n\n### Credits \n\nHuge thanks to @lukesandberg and @aurorascharff for helping!",
    "date": "2026-11-08T23:47:13Z",
@@ -384,22 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.4",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.4"
-  },
-  {
-   "body": "### Misc Changes\n\n- Document `next analyze export` and skill are added in 16.4: #99738\n- create-next-app: write agent feedback block to AGENTS.md when enabled: #99813\n- [turbopack] fix some unused dependencies: #99825\n- Fix next-bundle-optimizer skill handoffs: #99818\n- [ci] Increase deploy test concurrency to 8: #99770\n- Upgrade React from `278794d7-20261002` to `d75b0697-20261006`: #99819\n- Turbopack: fix turbo-trace-size test after MemorySample gained active_worker_threads: #99824\n- Turbopack: batch EsmBinding codegen: #99722\n- Turbopack: add no-memory flag to NEXT_TURBOPACK_TRACING: #99777\n- Turbopack: add turbo-trace-size CLI to inspect trace file size: #99765\n- Use ESLint 10 in new create-next-app projects: #99814\n- Fix instant codemod matching colocated test files: #99795\n- turbo-trace-server: speed up loading compressed traces: #99775\n- Upgrade rustc to nightly-2026-10-04: #99682\n- Bump to swc v81: #99720\n\n### Credits \n\nHuge thanks to @wbinnssmith, @aurorascharff, @kassens, @eps1lon, @sokra, @mischnic, and @devjiwonchoi for helping!",
-   "date": "2026-10-07T23:50:30Z",
-   "name": "v16.5.0-canary.3",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.3",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.3"
-  },
-  {
-   "body": "### Misc Changes\n\n- [cd] Use pnpm to manage the version: #99041\n- fix: Bump vendored @mswjs/interceptors from 0.42.5 to 0.42.6: #99485\n- Turbopack: Minor cleanup from review of #99711: #99748\n- Exclude blocking spans from trace work accounting: #99685\n- Sample global trace concurrency across span ranges: #99254\n- Trace active Tokio worker threads with memory samples: #99233\n- Turbopack: report next/font/google font file fetch failures instead of Module not found: #99574\n- Update font data and fix no-subsets font fixture: #99753\n\n### Credits \n\nHuge thanks to @eps1lon, @blz-ea, @bgw, @sokra, @abhayymishraa, and @wbinnssmith for helping!",
-   "date": "2026-10-07T07:40:30Z",
-   "name": "v16.5.0-canary.2",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.2",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.2"
   }
  ],
  "repo": "vercel/next.js"

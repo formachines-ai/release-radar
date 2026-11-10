@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-04T13:11:11Z",
   "version": "2.119.0"
  },
- "metadata_fetched": "2026-11-09T06:00:56Z",
+ "metadata_fetched": "2026-11-10T06:00:59Z",
  "package": "@supabase/supabase-js",
  "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
  "prereleases_in_window": 2,

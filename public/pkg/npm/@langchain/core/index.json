@@ -1,19 +1,43 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "1.3.5",
+ "latest": "1.3.6",
  "latest_stable": {
-  "date": "2026-11-05T20:24:14Z",
-  "version": "1.3.5"
+  "date": "2026-11-09T23:57:01Z",
+  "version": "1.3.6"
  },
- "metadata_fetched": "2026-11-09T06:00:38Z",
+ "metadata_fetched": "2026-11-10T06:00:42Z",
  "package": "@langchain/core",
  "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@langchain/core",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T23:57:01Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@langchain/core/1.3.6",
+   "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/062cf66ad8/",
+   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.6",
+   "package": "@langchain/core",
+   "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "breaks",
+     "quote": "…top `streamEvents` v2 from hanging or leaking an unhandled rejection when aborted, and from throwing its own `AbortError` when the consumer breaks early.…"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.3.6",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-05T20:24:14Z",
@@ -50,25 +74,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.3.4",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T23:17:04Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@langchain/core/1.3.3",
-   "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/50a125c6a2/",
-   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.3",
-   "package": "@langchain/core",
-   "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.3.3",
    "yanked_or_deprecated": false
   }
  ],

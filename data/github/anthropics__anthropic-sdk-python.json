@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-09T06:00:03Z",
+ "fetched": "2026-11-10T06:00:03Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** add the parse and count_tokens methods missing from beta.messages.with_raw_response and with_streaming_response\n* **bedrock,vertex:** send the X-Stainless-Async header and stream raw requests that name no stream class\n* **bedrock:** sign requests that have no Connection header instead of raising KeyError\n* **bedrock:** write a list in a query as a[]=1&a[]=2 on the Bedrock Mantle clients, as Anthropic does\n* **client:** allow API errors to be unpickled and copied\n* **client:** read ANTHROPIC_CUSTOM_HEADERS on the Bedrock, Bedrock Mantle and Vertex clients\n* **foundry:** stop copy, with_options and with_middleware from raising when ANTHROPIC_FOUNDRY_RESOURCE is set\n* **parse:** keep const in structured output schemas, and drop type beside const and enum\n\n\n### Chores\n\n* **api:** remove some error detail types and update descriptions\n* **docs:** say when a work heartbeat does not compare its value\n* **internal:** add this repository's review rules\n* **internal:** remove two comments from the error classes",
+   "date": "2026-11-09T18:52:17Z",
+   "name": "v2.7.0",
+   "prerelease": false,
+   "tag": "v2.7.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0"
+  },
   {
    "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **bedrock,vertex:** raise error-code and status exception classes on platform clients\n* **bedrock:** keep a custom http_client and aws_profile on copies made with copy and with_options\n\n\n### Chores\n\n* **client:** stop recording sampling parameters on OpenTelemetry spans\n* **docs:** describe the type and message of API errors\n* **internal:** define the status error mapping once on the base client\n* **internal:** tell contributors when a runtime type check belongs\n* **tests:** remove ambient ANTHROPIC_ and AWS_ variables before the tests run\n\n\n### Documentation\n\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",
    "date": "2026-11-05T18:58:47Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v0.109.0",
    "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.109.0"
-  },
-  {
-   "body": "## 0.108.0 (2026-06-09)\n\nFull Changelog: [v0.107.1...v0.108.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.107.1...v0.108.0)\n\n### Features\n\n* **api:** add support for claude-mythos-5 and claude-fable-5, with support for server-side fallbacks on refusal ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040af324))\n* **client:** adds client-side fallbacks middleware for API providers that do not support server-side fallbacks ([6b76649](https://github.com/anthropics/anthropic-sdk-python/commit/6b76649f99bd782d2300f2a6aa3f4a3f040af324))",
-   "date": "2026-06-09T16:37:30Z",
-   "name": "v0.108.0",
-   "prerelease": false,
-   "tag": "v0.108.0",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.108.0"
   }
  ],
  "repo": "anthropics/anthropic-sdk-python"

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,52 +8,13 @@
   "date": "2026-11-02T10:46:39Z",
   "version": "5.12.8"
  },
- "metadata_fetched": "2026-11-09T06:01:05Z",
+ "metadata_fetched": "2026-11-10T06:01:08Z",
  "package": "fastify",
  "page": "https://releases.formachines.ai/pkg/npm/fastify/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/fastify",
- "releases": [
-  {
-   "bump": "patch",
-   "date": "2026-11-02T10:46:39Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/fastify/5.12.8",
-   "json": "https://releases.formachines.ai/pkg/npm/fastify/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/5b0b8a4d99/",
-   "notes_url": "https://github.com/fastify/fastify/releases/tag/v5.12.8",
-   "package": "fastify",
-   "page": "https://releases.formachines.ai/pkg/npm/fastify/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "5.12.8",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-02T10:40:00Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/fastify/6.0.0-alpha.6",
-   "json": "https://releases.formachines.ai/pkg/npm/fastify/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b0e8d1de1e/",
-   "notes_url": "https://github.com/fastify/fastify/releases/tag/v6.0.0-alpha.6",
-   "package": "fastify",
-   "page": "https://releases.formachines.ai/pkg/npm/fastify/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "6.0.0-alpha.6",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/fastify/fastify",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Fast and low overhead web framework, for Node.js"
 }

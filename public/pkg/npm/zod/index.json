@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-12T16:29:37Z",
   "version": "4.6.7"
  },
- "metadata_fetched": "2026-11-09T06:01:19Z",
+ "metadata_fetched": "2026-11-10T06:01:21Z",
  "package": "zod",
  "page": "https://releases.formachines.ai/pkg/npm/zod/",
  "prereleases_in_window": 0,

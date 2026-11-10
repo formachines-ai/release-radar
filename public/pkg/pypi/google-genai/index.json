@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-11-06T02:29:05Z",
   "version": "3.0.0"
  },
- "metadata_fetched": "2026-11-09T06:00:04Z",
+ "metadata_fetched": "2026-11-10T06:00:03Z",
  "package": "google-genai",
  "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
  "prereleases_in_window": 0,

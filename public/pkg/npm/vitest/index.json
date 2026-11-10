@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,33 +8,13 @@
   "date": "2026-11-02T16:12:37Z",
   "version": "5.1.0"
  },
- "metadata_fetched": "2026-11-09T06:01:18Z",
+ "metadata_fetched": "2026-11-10T06:01:20Z",
  "package": "vitest",
  "page": "https://releases.formachines.ai/pkg/npm/vitest/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/vitest",
- "releases": [
-  {
-   "bump": "minor",
-   "date": "2026-11-02T16:12:37Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/vitest/5.1.0",
-   "json": "https://releases.formachines.ai/pkg/npm/vitest/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/ec69bd6ee9/",
-   "notes_url": "https://github.com/vitest-dev/vitest/releases/tag/v5.1.0",
-   "package": "vitest",
-   "page": "https://releases.formachines.ai/pkg/npm/vitest/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "5.1.0",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/vitest-dev/vitest",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Next generation testing framework powered by Vite"
 }

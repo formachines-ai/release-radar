@@ -1,20 +1,53 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.64.1",
+ "latest": "1.65.0",
  "latest_stable": {
-  "date": "2026-10-22T16:29:58Z",
-  "version": "1.64.1"
+  "date": "2026-11-09T21:09:30Z",
+  "version": "1.65.0"
  },
- "metadata_fetched": "2026-11-09T06:00:17Z",
+ "metadata_fetched": "2026-11-10T06:00:20Z",
  "package": "playwright",
  "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/playwright/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T21:09:30Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/playwright/1.65.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/9f6e27bf42/",
+   "notes_url": "https://github.com/microsoft/playwright-python/releases/tag/v1.65.0",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…xt-cookies) and [api_request_context.cookies()](https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`. [API…"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/python/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`http_credentials`](https://…"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Text that the browser does not render, such as text that is not assigned to a slot or text directly inside a closed `<details>`, is no longer part of accessible names and aria snapshots. This can change the results of [page.get_by_role()](https://playwright.dev/python/docs/api/…"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.65.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/microsoft/playwright-python",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "A high-level API to automate web browsers"
 }

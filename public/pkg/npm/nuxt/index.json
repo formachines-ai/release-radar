@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,38 +8,13 @@
   "date": "2026-11-02T20:48:01Z",
   "version": "4.6.4"
  },
- "metadata_fetched": "2026-11-09T06:01:09Z",
+ "metadata_fetched": "2026-11-10T06:01:11Z",
  "package": "nuxt",
  "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/nuxt",
- "releases": [
-  {
-   "bump": "patch",
-   "date": "2026-11-02T20:48:01Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/nuxt/4.6.4",
-   "json": "https://releases.formachines.ai/pkg/npm/nuxt/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/a65aa83df4/",
-   "notes_url": "https://github.com/nuxt/nuxt/releases/tag/v4.6.4",
-   "package": "nuxt",
-   "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "4. **Nitropack cached routes.** `cache`, `swr` and `isr` route rules now only cache `GET` and `HEAD` requests, and no longer store responses that set a cookie or send `Cache-Control: private` or `no-store`. Wildcard `proxy` and `redirect` rules also reject requests whose resolved…"
-    }
-   ],
-   "variant_of": null,
-   "version": "4.6.4",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/nuxt/nuxt",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Nuxt is a free and open-source framework with an intuitive and extendable way to create type-safe, performant and production-grade full-stack web applications and websites with Vue.js."
 }

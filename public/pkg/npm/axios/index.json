@@ -1,19 +1,43 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "1.21.0",
+ "latest": "1.21.1",
  "latest_stable": {
-  "date": "2026-10-27T07:18:54Z",
-  "version": "1.21.0"
+  "date": "2026-11-09T16:17:55Z",
+  "version": "1.21.1"
  },
- "metadata_fetched": "2026-11-09T06:00:59Z",
+ "metadata_fetched": "2026-11-10T06:01:02Z",
  "package": "axios",
  "page": "https://releases.formachines.ai/pkg/npm/axios/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/axios",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T16:17:55Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/axios/1.21.1",
+   "json": "https://releases.formachines.ai/pkg/npm/axios/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/789904bb3f/",
+   "notes_url": "https://github.com/axios/axios/releases/tag/v1.21.1",
+   "package": "axios",
+   "page": "https://releases.formachines.ai/pkg/npm/axios/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…`), because Next.js rejects `Date.now()` while prerendering. The duration is still a whole number of milliseconds, and system clock changes no longer affect it. (__#11411__)…"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.21.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-03T07:17:49Z",
@@ -48,6 +72,6 @@
   }
  ],
  "repository": "https://github.com/axios/axios",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Promise based HTTP client for the browser and node.js"
 }

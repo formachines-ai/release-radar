@@ -1,19 +1,70 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "2.1.319",
+ "latest": "2.1.322",
  "latest_stable": {
-  "date": "2026-11-06T00:58:56Z",
-  "version": "2.1.319"
+  "date": "2026-11-10T01:58:41Z",
+  "version": "2.1.322"
  },
- "metadata_fetched": "2026-11-09T06:00:36Z",
+ "metadata_fetched": "2026-11-10T06:00:39Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-10T01:58:41Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@anthropic-ai/claude-code/2.1.322",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f7d3d2f1a8/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "2.1.322",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-09T19:02:47Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.321",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1393243560/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "- Fixed project skills, commands and agents staying missing after their folder was removed and came back mid-session, such as with `git stash`, including after entering a worktree"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Fixed remote sessions giving no reply after a restart when a `UserPromptSubmit` hook blocked a replayed permission answer; these hooks no longer run on that replay"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Fixed Claude not being told when you stop or pause a running workflow, so it no longer says the workflow is still running"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.321",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-06T00:58:56Z",
@@ -77,37 +128,9 @@
    "variant_of": null,
    "version": "2.1.318",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T23:57:53Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@anthropic-ai/claude-code/2.1.317",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/8491ebd6e6/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "- Fixed a re-created agent teammate being removed from its team by an earlier shutdown approval"
-    },
-    {
-     "match": "Removed",
-     "quote": "- Removed the Read tool's \"file unchanged since your last Read\" stub: reading an unchanged file again returns its content"
-    }
-   ],
-   "variant_of": null,
-   "version": "2.1.317",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }

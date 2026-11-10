@@ -15,8 +15,32 @@
   },
   "v0.167.0": null
  },
- "fetched": "2026-11-09T06:00:46Z",
+ "fetched": "2026-11-10T06:00:50Z",
  "releases": [
+  {
+   "body": "Release 0.169.0-alpha.7\n\n",
+   "date": "2026-11-09T21:55:10Z",
+   "name": "0.169.0-alpha.7",
+   "prerelease": true,
+   "tag": "rust-v0.169.0-alpha.7",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.7"
+  },
+  {
+   "body": "Release 0.169.0-alpha.6\n\n",
+   "date": "2026-11-09T19:25:26Z",
+   "name": "0.169.0-alpha.6",
+   "prerelease": true,
+   "tag": "rust-v0.169.0-alpha.6",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0-alpha.6"
+  },
+  {
+   "body": "Release 0.167.0-alpha.4.1\n\n",
+   "date": "2026-11-09T23:45:38Z",
+   "name": "0.167.0-alpha.4.1",
+   "prerelease": true,
+   "tag": "rust-v0.167.0-alpha.4.1",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0-alpha.4.1"
+  },
   {
    "body": "Release 0.169.0-alpha.3\n\n",
    "date": "2026-11-07T19:31:41Z",
@@ -392,30 +416,6 @@
    "prerelease": true,
    "tag": "rust-v0.163.0-alpha.11",
    "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.11"
-  },
-  {
-   "body": "Release 0.163.0-alpha.10.1\n\n",
-   "date": "2026-10-14T20:45:55Z",
-   "name": "0.163.0-alpha.10.1",
-   "prerelease": true,
-   "tag": "rust-v0.163.0-alpha.10.1",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.10.1"
-  },
-  {
-   "body": "Release 0.163.0-alpha.9\n\n",
-   "date": "2026-10-13T15:47:20Z",
-   "name": "0.163.0-alpha.9",
-   "prerelease": true,
-   "tag": "rust-v0.163.0-alpha.9",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.9"
-  },
-  {
-   "body": "Release 0.163.0-alpha.8\n\n",
-   "date": "2026-10-13T13:14:41Z",
-   "name": "0.163.0-alpha.8",
-   "prerelease": true,
-   "tag": "rust-v0.163.0-alpha.8",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.163.0-alpha.8"
   }
  ],
  "repo": "openai/codex"

@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.108.3",
+ "latest": "1.108.4",
  "latest_stable": {
-  "date": "2026-11-07T22:25:38Z",
-  "version": "1.108.3"
+  "date": "2026-11-09T22:56:38Z",
+  "version": "1.108.4"
  },
- "metadata_fetched": "2026-11-09T06:00:05Z",
+ "metadata_fetched": "2026-11-10T06:00:05Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 4,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T22:56:38Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.108.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5205d7543f/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.4",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.108.4",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-08T02:21:46Z",
@@ -223,6 +242,6 @@
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 5,
+ "stable_in_window": 6,
  "summary": "Library to easily interface with LLM API providers"
 }

@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.43.126",
+ "latest": "1.43.127",
  "latest_stable": {
-  "date": "2026-11-06T20:48:11Z",
-  "version": "1.43.126"
+  "date": "2026-11-09T20:52:15Z",
+  "version": "1.43.127"
  },
- "metadata_fetched": "2026-11-09T06:00:08Z",
+ "metadata_fetched": "2026-11-10T06:00:07Z",
  "package": "boto3",
  "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/boto3/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T20:52:15Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/boto3/1.43.127",
+   "json": "https://releases.formachines.ai/pkg/pypi/boto3/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/0b85655c77/",
+   "notes_url": "https://github.com/boto/boto3/releases",
+   "package": "boto3",
+   "page": "https://releases.formachines.ai/pkg/pypi/boto3/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.43.127",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-06T20:48:11Z",
@@ -73,6 +92,6 @@
   }
  ],
  "repository": "https://github.com/boto/boto3",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "The AWS SDK for Python (Boto3)"
 }

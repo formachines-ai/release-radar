@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.7.6",
+ "latest": "1.7.7",
  "latest_stable": {
-  "date": "2026-11-05T00:21:54Z",
-  "version": "1.7.6"
+  "date": "2026-11-10T04:08:08Z",
+  "version": "1.7.7"
  },
- "metadata_fetched": "2026-11-09T06:00:05Z",
+ "metadata_fetched": "2026-11-10T06:00:04Z",
  "package": "langchain-core",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/langchain-core/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-10T04:08:08Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langchain-core/1.7.7",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/20f33e9dae/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7",
+   "package": "langchain-core",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.7.7",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-05T00:21:54Z",
@@ -50,25 +69,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.7.5",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T15:31:16Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/langchain-core/1.7.4",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b90745e917/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.4",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.7.4",
    "yanked_or_deprecated": false
   }
  ],

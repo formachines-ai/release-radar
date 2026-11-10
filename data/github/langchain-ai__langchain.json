@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-09T06:00:05Z",
+ "fetched": "2026-11-10T06:00:04Z",
  "releases": [
+  {
+   "body": "Changes since langchain-core==1.7.6\n\nrelease(core): 1.7.7 (#41776)\nfix(core): cap nesting depth in `load()` (#41742)\nchore(deps): patch newer-python security lock resolutions (#41585)",
+   "date": "2026-11-10T04:08:27Z",
+   "name": "langchain-core==1.7.7",
+   "prerelease": false,
+   "tag": "langchain-core==1.7.7",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.7"
+  },
+  {
+   "body": "Changes since langchain-fireworks==1.7.2\n\nrelease(fireworks): 1.7.3 (#41773)\nfix(fireworks): default `max_tokens` from model profiles (#41772)\nchore(model-profiles): refresh model profile data (#41762)\nchore(model-profiles): refresh model profile data (#41745)",
+   "date": "2026-11-09T20:54:19Z",
+   "name": "langchain-fireworks==1.7.3",
+   "prerelease": false,
+   "tag": "langchain-fireworks==1.7.3",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.7.3"
+  },
   {
    "body": "Changes since langchain-typesafe==0.0.1\n\nrelease(typesafe): 0.0.2 (#41720)\nfeat(typesafe): accept a `classifier` in experimental middleware (#41657)",
    "date": "2026-11-05T22:56:58Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "langchain-openrouter==0.2.9",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.9"
-  },
-  {
-   "body": "Changes since langchain-openai==1.6.3\n\nrelease(openai): 1.6.4 (#40775)\nchore(model-profiles): refresh openai model profile data (#40774)",
-   "date": "2026-09-22T22:37:09Z",
-   "name": "langchain-openai==1.6.4",
-   "prerelease": false,
-   "tag": "langchain-openai==1.6.4",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.4"
-  },
-  {
-   "body": "Changes since langchain-fireworks==1.6.1\n\nfix(fireworks): use current completions model in LLM tests (#40740)\nhotfix(fireworks): use available model in LLM tests (#40737)\nrelease(fireworks): 1.6.2 (#40735)\nchore(model-profiles): refresh model profile data (#40665)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/partners/fireworks (#40639)\nchore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/partners/fireworks (#40587)\nchore(deps): bump langsmith from 0.12.1 to 0.12.6 in /libs/partners/fireworks (#40586)\nchore(deps): bump pygments from 2.20.0 to 2.21.0 in /libs/partners/fireworks (#40585)\nchore(deps): bump idna from 3.19 to 3.20 in /libs/partners/fireworks (#40584)\nchore(model-profiles): refresh model profile data (#40541)\nchore(model-profiles): refresh model profile data (#40500)\nchore(model-profiles): refresh model profile data (#40452)\nchore(model-profiles): refresh model profile data (#40416)\nchore(model-profiles): refresh model profile data (#40399)\nchore(model-profiles): refresh model profile data (#40277)\nchore(model-profiles): refresh model profile data (#40217)\nchore(model-profiles): refresh model profile data (#40198)\nchore(model-profiles): refresh model profile data (#40171)\nchore(model-profiles): refresh model profile data (#40009)\nchore(deps): bump orjson from 3.11.6 to 3.12.0 in /libs/partners/fireworks (#40129)\nchore(deps): bump langsmith from 0.10.16 to 0.12.1 in /libs/partners/fireworks (#40130)",
-   "date": "2026-09-22T04:44:04Z",
-   "name": "langchain-fireworks==1.6.2",
-   "prerelease": false,
-   "tag": "langchain-fireworks==1.6.2",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.2"
   }
  ],
  "repo": "langchain-ai/langchain"

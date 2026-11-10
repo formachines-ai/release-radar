@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": "https://click.palletsprojects.com/page/changes/",
  "ecosystem": "pypi",
  "errata": {
@@ -15,7 +15,7 @@
   "date": "2026-11-06T17:36:59Z",
   "version": "8.5.1"
  },
- "metadata_fetched": "2026-11-09T06:00:15Z",
+ "metadata_fetched": "2026-11-10T06:00:18Z",
  "package": "click",
  "page": "https://releases.formachines.ai/pkg/pypi/click/",
  "prereleases_in_window": 0,

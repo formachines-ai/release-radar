@@ -1,20 +1,25 @@
 {
  "changelog": null,
  "dist_tags": {
-  "latest": "1.21.0",
+  "latest": "1.21.1",
   "next": "1.7.0-beta.2",
   "old-version": "0.30.0",
   "v0x": "0.35.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-09T06:00:59Z",
+ "fetched": "2026-11-10T06:01:02Z",
  "homepage": "https://axios-http.com",
- "latest": "1.21.0",
+ "latest": "1.21.1",
  "name": "axios",
  "page": "https://www.npmjs.com/package/axios",
  "repo": "axios/axios",
  "summary": "Promise based HTTP client for the browser and node.js",
  "versions": [
+  {
+   "date": "2026-11-09T16:17:55Z",
+   "deprecated": false,
+   "version": "1.21.1"
+  },
   {
    "date": "2026-11-03T07:17:49Z",
    "deprecated": false,

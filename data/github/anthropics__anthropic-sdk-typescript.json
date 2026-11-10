@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-09T06:00:37Z",
+ "fetched": "2026-11-10T06:00:41Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **client:** include the body of a failed response in debug logs\n* **helpers:** keep const and enum in structured output schemas\n\n\n### Chores\n\n* **api:** remove some error detail types and update descriptions\n* **docs:** say when a work heartbeat does not compare its value\n* **internal:** add this repository's review rules\n\n\n### Documentation\n\n* **client:** list error code types in api.md\n* **client:** say where the default logger writes and how to log to stderr\n* **helpers:** import from zod/v4 in the examples, for Zod 3.25 users\n\n\n### Refactors\n\n* **client:** declare the name of every AnthropicError subclass the same way",
+   "date": "2026-11-09T18:52:24Z",
+   "name": "sdk-v1.7.0",
+   "prerelease": false,
+   "tag": "sdk-v1.7.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0"
+  },
   {
    "body": "### Features\n\n* **api:** add error code for ramp limit errors\n* **api:** add error codes for External Key validation failures\n* **api:** add support for signing organization members out everywhere\n\n\n### Bug Fixes\n\n* **client:** set the name of each error to its class name\n* **client:** set the name of WorkloadIdentityError\n\n\n### Chores\n\n* **docs:** describe the type and message of API errors\n* **internal:** generate the OpenTelemetry span attribute tables\n* **internal:** tell contributors when a runtime type check belongs\n\n\n### Documentation\n\n* add the rules the SDKs share to CLAUDE.md\n* **client:** describe the type, message, code and details of API errors\n* **client:** list each method's errors without their descriptions",
    "date": "2026-11-05T19:00:33Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "google-cloud-sdk-v0.0.18",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18"
-  },
-  {
-   "body": "## 0.5.3 (2026-10-07)\n\nFull Changelog: [foundry-sdk-v0.5.2...foundry-sdk-v0.5.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/foundry-sdk-v0.5.2...foundry-sdk-v0.5.3)",
-   "date": "2026-10-07T17:57:19Z",
-   "name": "foundry-sdk: v0.5.3",
-   "prerelease": false,
-   "tag": "foundry-sdk-v0.5.3",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/foundry-sdk-v0.5.3"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

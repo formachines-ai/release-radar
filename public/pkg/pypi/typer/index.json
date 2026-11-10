@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "0.28.0",
+ "latest": "0.29.0",
  "latest_stable": {
-  "date": "2026-11-06T08:37:18Z",
-  "version": "0.28.0"
+  "date": "2026-11-09T18:48:11Z",
+  "version": "0.29.0"
  },
- "metadata_fetched": "2026-11-09T06:00:31Z",
+ "metadata_fetched": "2026-11-10T06:00:35Z",
  "package": "typer",
  "page": "https://releases.formachines.ai/pkg/pypi/typer/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/typer/",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T18:48:11Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/typer/0.29.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/typer/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6087292979/",
+   "notes_url": "https://github.com/fastapi/typer/releases/tag/0.29.0",
+   "package": "typer",
+   "page": "https://releases.formachines.ai/pkg/pypi/typer/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.29.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-06T08:37:18Z",
@@ -35,6 +54,6 @@
   }
  ],
  "repository": "https://github.com/fastapi/typer",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints."
 }

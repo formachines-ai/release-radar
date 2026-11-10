@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-09T06:01:08Z",
+ "fetched": "2026-11-10T06:01:10Z",
  "releases": [
+  {
+   "body": "9.12.1 / 2026-11-09\r\n===================\r\n * perf(update): avoid quadratic ancestor lookup in update validators and validate nested array subdocs once #16586 [https://github.com/Re-cool](https://github.com/Re-cool)\r\n * perf: keep lib/ source within Latin-1 #16681 [orgads](https://github.com/orgads)\r\n * perf(map): avoid quadratic concat() when creating a MongooseMap from an object #16677 [ptweezy](https://github.com/ptweezy)\r\n * fix(array): keep earlier pushed values when push() is called again with $each #16619 #16618 [maxymlyskov](https://github.com/maxymlyskov)\r\n * fix(model+query): handle inherited read preference and read concern on cloned queries #16668 #16632\r\n * fix(timestamps): set timestamps on subdocs pushed via array filters #16615 #8809 [vaidehi-snk](https://github.com/vaidehi-snk)\r\n * fix(model): validate paths under a nested path passed to Model.validate() #16653 [NotAFlightRisk](https://github.com/NotAFlightRisk)\r\n * fix(update): skip array-level validators for $pull with $in #16666 [AnkitKumar61](https://github.com/AnkitKumar61)\r\n * fix(cursor): finish destruction after terminal initialization #16612 [IbrahimHafez1](https://github.com/IbrahimHafez1)",
+   "date": "2026-11-09T20:58:53Z",
+   "name": "9.12.1",
+   "prerelease": false,
+   "tag": "9.12.1",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/9.12.1"
+  },
   {
    "body": "9.12.0 / 2026-11-04\r\n===================\r\n * feat: upgrade to mongodb driver 7.8 #16772 #16667\r\n * perf: improve for document arrays: cache paths with defaults and schemas with select paths; avoid unnecessary $isModified() lookup #16595\r\n * fix: make recompileSchema recompute derived caches and delay _preCompile() until an actual model is compiled (not subdocs or doc arrays) #16595\r\n * fix(array): compare UUIDs by value in indexOf() so pull() and addToSet() work #16606 [luantaraschi](https://github.com/luantaraschi)\r\n * docs(query): remove unused use$geoWithin docs and property #16589 #16583",
    "date": "2026-11-04T22:24:47Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "9.3.0",
    "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.0"
-  },
-  {
-   "body": "9.2.4 / 2026-03-03\n==================\n * types(models): allow unknown keys in subdocs while retaining autocomplete suggestions #16048\n * types(schema): fix issues related to defining timestamps and virtuals with methods and/or statics in schema options #16052 #16046\n * docs: use lowercase primitive types in JSDoc and fix incorrect `@returns` declarations #16036 #16018\n * docs(field-level-encryption): improve CSFLE docs with model registration guidance and schema definition example #16065 #16015",
-   "date": "2026-03-04T00:06:43Z",
-   "name": "9.2.4",
-   "prerelease": false,
-   "tag": "9.2.4",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.2.4"
   }
  ],
  "repo": "Automattic/mongoose"

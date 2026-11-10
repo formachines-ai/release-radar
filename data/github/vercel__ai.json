@@ -1,13 +1,5 @@
 {
  "by_tag": {
-  "@ai-sdk/openai@2.0.140": {
-   "body": "### Patch Changes\n\n- 0a069bd: fix(openai): preserve valid JSON string tool arguments and serialize BigInt and cycles in tool calls and results, retaining malformed argument replay fallbacks\n- 0a069bd: Forward `languages` and `keywords` transcription hints as repeated multipart fields instead of silently dropping them.\n- Updated dependencies [0a069bd]\n- Updated dependencies [0a069bd]\n- Updated dependencies [0a069bd]\n  - @ai-sdk/provider-utils@3.0.44",
-   "date": "2026-11-03T01:21:38Z",
-   "name": "@ai-sdk/openai@2.0.140",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@2.0.140",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.140"
-  },
   "@ai-sdk/openai@2.0.141": {
    "body": "### Patch Changes\n\n- 6b6433f: fix(openai): surface Chat Completions refusals as text content\n\n  The Chat Completions model ignored `message.refusal` (non-streaming) and `delta.refusal` (streaming). When the model refused to answer, `content` was `null`, so the AI SDK returned empty text with a `stop` finish reason and silently dropped the refusal. Refusal text is now emitted as text content in both `generateText` and `streamText` results, and it is emitted in addition to content when the API returns both. A refusal with a `stop` finish reason is now reported as a `content-filter` finish reason, matching the Anthropic provider and the Responses API.\n\n- ce27f15: fix(openai,openai-compatible): surface refusal logprobs and openai-compatible refusals\n\n  `@ai-sdk/openai`: Chat Completions responses that contain a refusal can return `logprobs.refusal` next to `logprobs.content`. The provider previously read only `logprobs.content`, so `providerMetadata.openai.logprobs` was empty or missing for refusals. Refusal logprobs are now included in emission order (content logprobs followed by refusal logprobs) in both `generateText` and `streamText`.\n\n  Streaming logprobs are now collected across all chunks in `streamText`: previously only the logprobs of the last streamed chunk were reported. This applies to content logprobs as well, so `providerMetadata.openai.logprobs` now contains the logprobs of every streamed token instead of only the last chunk's tokens. Explicitly empty logprobs (`logprobs: { content: [], refusal: null }`) are reported as an empty array, as before.\n\n  A refusal that arrives in the same streamed chunk as the `finish_reason` is now taken into account: such a response is reported with a `content-filter` finish reason instead of `stop`.\n\n  `@ai-sdk/openai-compatible`: Chat Completions responses that carry `message.refusal` (non-streaming) or `delta.refusal` (streaming) were ignored, so providers such as OpenAI served through `createOpenAICompatible` lost the refusal text and reported an empty `stop` response. Refusals are now returned as text content after any content text, and a non-empty refusal with a `stop` finish reason is reported as a `content-filter` finish reason. This also applies when the refusal and the finish reason arrive in the same streamed chunk. Non-string refusals (for example `refusal: false` from servers that use booleans) are ignored instead of failing the response.\n\n- 0e51536: fix(openai): handle refusal content parts in the Responses API\n\n  The Responses API returns a `refusal` content part instead of `output_text` when the model declines a request. The response schema rejected these parts, so non-streaming calls failed with an `APICallError` (\"Invalid JSON response\"), and streamed `response.refusal.delta` / `response.refusal.done` events were dropped, producing empty text. Refusal content parts and stream events are now parsed: the refusal explanation is surfaced as text and the finish reason is mapped to `content-filter`. When the response also contains a client-side function call, the finish reason stays `tool-calls` so the tools are still executed.\n\n- Updated dependencies [49c554d]\n- Updated dependencies [b753c03]\n  - @ai-sdk/provider-utils@3.0.45",
    "date": "2026-11-07T19:24:15Z",
@@ -15,14 +7,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/openai@2.0.141",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.141"
-  },
-  "@ai-sdk/openai@3.0.136": {
-   "body": "### Patch Changes\n\n- d900e58: fix(openai): preserve valid JSON string tool arguments and serialize BigInt and cycles in tool calls and results, retaining malformed argument replay fallbacks\n- d900e58: Forward `languages` and `keywords` transcription hints as repeated multipart fields instead of silently dropping them.\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n  - @ai-sdk/provider-utils@4.0.64",
-   "date": "2026-11-03T01:21:14Z",
-   "name": "@ai-sdk/openai@3.0.136",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@3.0.136",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.136"
   },
   "@ai-sdk/openai@3.0.137": {
    "body": "### Patch Changes\n\n- afde897: feat(openai): support GPT Image 2.6 models with `complexity`, markup-guided edits (`markup`), animated GIF output (`outputFormat: 'gif'`, `frameCount`, `frameDurationMs`), and `safetyIdentifier` for image models",
@@ -48,22 +32,6 @@
    "tag": "@ai-sdk/openai@3.0.139",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.139"
   },
-  "@ai-sdk/openai@4.0.107": {
-   "body": "### Patch Changes\n\n- 4ae6986: fix(openai): preserve valid JSON string tool arguments and serialize BigInt and cycles in tool calls and results, retaining malformed argument replay fallbacks\n- 226b7da: Forward `languages` and `keywords` transcription hints as repeated multipart fields instead of silently dropping them. Warn when these REST-only options are supplied to streaming transcription.\n- Updated dependencies [51ca5b7]\n- Updated dependencies [dc6f1c3]\n- Updated dependencies [4ae6986]\n  - @ai-sdk/provider-utils@5.0.73",
-   "date": "2026-11-02T20:26:57Z",
-   "name": "@ai-sdk/openai@4.0.107",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.107",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.107"
-  },
-  "@ai-sdk/openai@4.0.108": {
-   "body": "### Patch Changes\n\n- Updated dependencies [fa15312]\n  - @ai-sdk/provider-utils@5.0.74",
-   "date": "2026-11-03T01:23:11Z",
-   "name": "@ai-sdk/openai@4.0.108",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.108",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.108"
-  },
   "@ai-sdk/openai@4.0.109": {
    "body": "### Patch Changes\n\n- 27528db: Expose `customTool` through `azure.tools` for Azure Responses models, sharing the OpenAI custom tool factory and its raw string input support.\n- 7bb309d: add memoryLimit and networkPolicy properties in codeInterpreter tool\n- 7a90522: Add Secure MCP tunnel support to the OpenAI MCP tool via `tunnelId`. Tunnel targets cannot be combined with `serverUrl` or `connectorId`; existing URL and connector configurations remain compatible.\n- 6549344: feat(openai): support GPT Image 2.6 models with `complexity`, markup-guided edits (`markup`), animated GIF output (`outputFormat: 'gif'`, `frameCount`, `frameDurationMs`), and `safetyIdentifier` for image models\n- 5f9bb8e: feat (provider/openai): forward the `moderation` option to `/images/edits`\n- 934100c: Report the actual OpenAI Chat HTTP endpoint (also used by Azure Chat and Bedrock Mantle Chat) through optional request metadata and model-call end events. Record its host and port on OpenTelemetry chat spans without exposing URL credentials, paths, queries, or fragments. Expose only the sanitized HTTP origin in text and object generation results and step/finish callbacks. Providers that do not report an endpoint leave these attributes unset.\n- 892af4d: feat (provider/openai): implement server-side realtime extensions\n\n  `OpenAIRealtimeModel` now implements `getServerWebSocketConfig()`, returning the upstream realtime WebSocket URL for `conversation` and `transcription` intents plus header auth derived from the model's configured credentials. Dedicated transcription sessions serialize with `session.type: \"transcription\"` and the selected realtime model id. Translation is rejected until the normalized realtime codec supports its distinct wire protocol. The event mapper now populates normalized `usage` on `response-done` and `input-transcription-completed` (gross input/output token counts with cached portions reported separately; duration usage for duration-billed transcription).\n\n  Transcription serialization honors the explicit transcription model and rejects unsupported output settings. Gross token totals and reported modality/cache counts are retained; duration uses `seconds`. OpenAI Live retains its existing connection API and rejects unsupported intents.\n\n- 243bf22: Forward per-message `providerOptions.openai.name` on Chat Completions system, developer, user, and assistant messages. Validate names as strings and warn when configured on unsupported tool messages.\n- 5cc6d28: Expose `azure.tools.shell` for local and hosted shell execution through the Azure Responses API.\n- 41465fd: Expose optional transcription word timings separately from segments and accept shared timestampGranularities. Explicit provider timing settings take precedence. OpenAI now sends timestamp_granularities only with verbose_json and warns when a requested timing is unavailable or excluded.\n- Updated dependencies [36802d4]\n- Updated dependencies [e0143b0]\n- Updated dependencies [934100c]\n- Updated dependencies [892af4d]\n- Updated dependencies [89aff56]\n- Updated dependencies [41465fd]\n- Updated dependencies [9754014]\n- Updated dependencies [4bb73b0]\n- Updated dependencies [2e44144]\n  - @ai-sdk/provider@4.0.36\n  - @ai-sdk/provider-utils@5.0.75",
    "date": "2026-11-05T01:15:05Z",
@@ -88,37 +56,13 @@
    "tag": "@ai-sdk/openai@4.0.111",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.111"
   },
-  "ai@5.0.284": {
-   "body": "### Patch Changes\n\n- Updated dependencies [80dca68]\n- Updated dependencies [74e240d]\n- Updated dependencies [a16b8df]\n  - @ai-sdk/gateway@2.0.175",
-   "date": "2026-11-02T20:21:32Z",
-   "name": "ai@5.0.284",
+  "ai@5.0.286": {
+   "body": "### Patch Changes\n\n- f15d448: hide provider metadata from telemetry when recordOutputs is false\n- 417a92c: Preserve `toolChoice: 'none'` when SDK tools are omitted or empty so providers can disable native tools configured through provider options.\n\n  For Perplexity native tools, also update `@ai-sdk/perplexity` to `2.1.6` or a later compatible version, which includes the provider-side guard.\n\n- Updated dependencies [c6c7ae0]\n- Updated dependencies [49c554d]\n- Updated dependencies [ebc2cd9]\n- Updated dependencies [b753c03]\n- Updated dependencies [a7ebf30]\n  - @ai-sdk/gateway@2.0.177\n  - @ai-sdk/provider-utils@3.0.45",
+   "date": "2026-11-07T19:22:42Z",
+   "name": "ai@5.0.286",
    "prerelease": false,
-   "tag": "ai@5.0.284",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.284"
-  },
-  "ai@5.0.285": {
-   "body": "### Patch Changes\n\n- 0a069bd: fix(ai): support cross-realm Uint8Array and ArrayBuffer in DefaultGeneratedFile\n- 0a069bd: fix(ai): handle cross-realm Uint8Array and ArrayBuffer in prompt data validation and conversion\n- Updated dependencies [0a069bd]\n- Updated dependencies [0a069bd]\n- Updated dependencies [0a069bd]\n  - @ai-sdk/provider-utils@3.0.44\n  - @ai-sdk/gateway@2.0.176",
-   "date": "2026-11-03T01:20:10Z",
-   "name": "ai@5.0.285",
-   "prerelease": false,
-   "tag": "ai@5.0.285",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.285"
-  },
-  "ai@6.0.321": {
-   "body": "### Patch Changes\n\n- Updated dependencies [3f6b482]\n- Updated dependencies [0b6be6d]\n- Updated dependencies [c8b17f0]\n  - @ai-sdk/gateway@3.0.227",
-   "date": "2026-11-02T19:21:50Z",
-   "name": "ai@6.0.321",
-   "prerelease": false,
-   "tag": "ai@6.0.321",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.321"
-  },
-  "ai@6.0.322": {
-   "body": "### Patch Changes\n\n- d900e58: fix(ai): support cross-realm Uint8Array and ArrayBuffer in DefaultGeneratedFile\n- d900e58: fix(ai): handle cross-realm Uint8Array and ArrayBuffer in prompt data validation and conversion\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n- Updated dependencies [d900e58]\n  - @ai-sdk/provider-utils@4.0.64\n  - @ai-sdk/gateway@3.0.228",
-   "date": "2026-11-03T01:19:41Z",
-   "name": "ai@6.0.322",
-   "prerelease": false,
-   "tag": "ai@6.0.322",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.322"
+   "tag": "ai@5.0.286",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.286"
   },
   "ai@6.0.323": {
    "body": "### Patch Changes\n\n- Updated dependencies [8b1acb6]\n- Updated dependencies [cafcf53]\n  - @ai-sdk/gateway@3.0.229",
@@ -136,29 +80,13 @@
    "tag": "ai@6.0.324",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.324"
   },
-  "ai@7.0.160": {
-   "body": "### Patch Changes\n\n- a71172d: fix(ai): clarify inverted smoothStream prefix error message\n- cf27969: add steering.queue() to send a message once the current task is done\n- 17b6923: fix(ai): validate streamed data parts against `dataPartSchemas`\n\n  `processUIMessageStream` looked up `dataPartSchemas` by the full chunk type (`data-weather`) instead of the bare part name (`weather`), so `useChat` / `Chat` never validated streamed data parts. Invalid data parts now raise a `TypeValidationError`.\n\n- Updated dependencies [2099d45]\n- Updated dependencies [d05ff62]\n  - @ai-sdk/gateway@4.0.133",
-   "date": "2026-11-02T19:20:33Z",
-   "name": "ai@7.0.160",
+  "ai@6.0.325": {
+   "body": "### Patch Changes\n\n- 4ac871e: hide provider metadata from telemetry when recordOutputs is false\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65\n  - @ai-sdk/gateway@3.0.231",
+   "date": "2026-11-07T19:25:47Z",
+   "name": "ai@6.0.325",
    "prerelease": false,
-   "tag": "ai@7.0.160",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.160"
-  },
-  "ai@7.0.161": {
-   "body": "### Patch Changes\n\n- 51ca5b7: fix(ai): support cross-realm Uint8Array and ArrayBuffer in DefaultGeneratedFile\n- 51ca5b7: fix(ai): handle cross-realm Uint8Array and ArrayBuffer in data-content and file-part-data\n- 51ca5b7: fix(ai): support cross-realm binary buffers and circular structures in cloneModelMessages\n- Updated dependencies [51ca5b7]\n- Updated dependencies [dc6f1c3]\n- Updated dependencies [4ae6986]\n  - @ai-sdk/provider-utils@5.0.73\n  - @ai-sdk/gateway@4.0.134",
-   "date": "2026-11-02T20:24:18Z",
-   "name": "ai@7.0.161",
-   "prerelease": false,
-   "tag": "ai@7.0.161",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.161"
-  },
-  "ai@7.0.162": {
-   "body": "### Patch Changes\n\n- 857ca45: Restore server-defined tool metadata, dynamic status, and title when validating tool approval continuations so approval policies receive the same tool definition fields as new model calls.\n- 4d6d830: Support a single telemetry operation for durable `WorkflowAgent` runs, including the prompt, final output, steps, and tools. Events recorded in the workflow are reported on completion or suspension with their original timestamps. For OpenTelemetry, pass the same `OpenTelemetryIdGenerator` instance as the tracer provider's `idGenerator` and `sampler` and as `new OpenTelemetry({ durable })`. This explicit bridge carries parent trace context and sampling across steps, reports model spans live with provider requests nested beneath them, and reconstructs the enclosing `invoke_agent` tree when the run completes. Without the bridge, existing live per-model tracing is preserved. Add typed experimental durable context hooks for telemetry integrations; remove reliance on process-global ID-generator detection.\n- Updated dependencies [fa15312]\n  - @ai-sdk/provider-utils@5.0.74\n  - @ai-sdk/gateway@4.0.135",
-   "date": "2026-11-03T01:20:31Z",
-   "name": "ai@7.0.162",
-   "prerelease": false,
-   "tag": "ai@7.0.162",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.162"
+   "tag": "ai@6.0.325",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.325"
   },
   "ai@7.0.163": {
    "body": "### Patch Changes\n\n- 5d18351: fix(ai): detect downloaded audio types from bytes when servers return a generic or non-audio content type such as application/octet-stream\n- 8da48db: Respect `recordInputs` and `recordOutputs` when delivering telemetry events to integrations and the `ai:telemetry` channel. Filter nested content and omit raw span results when content recording is disabled, while preserving application results.\n- fd7e8a7: Preserve the order of text and complete function calls in streamed Google responses, including standalone thought signatures on empty text or reasoning parts.\n\n  Keep provider metadata on empty text parts when converting results to response messages so it can be passed back in subsequent requests.\n\n  Omit foreign-provider empty signature text when replaying history through Anthropic or Bedrock, preserving Bedrock’s existing native reasoning-history handling.\n\n- 36802d4: Support native URL transcription with an optional provider capability, keeping existing file-generation contracts unchanged. Groq sends HTTP(S) audio URLs through its `url` parameter without downloading and re-uploading them, avoiding the attachment upload limit. Supplying a custom `download` function retains local download behavior.\n\n  For telemetry integrations, `TranscriptionEndEvent.audio.byteLength` and `audio.mediaType` can now be `undefined` when a provider fetches the audio URL natively. Check for missing values before using them as a number or string. Downloaded and inline audio continue to report their metadata; streaming transcription metadata is unchanged.\n\n  Strip media fragments before sending URLs to Groq. If Groq rejects a redirect, fall back to the existing secure local downloader and file upload rather than failing previously working URL inputs. Other provider errors are preserved.\n\n- 933dae3: fix (ai): download deprecated `file-url` and `image-url` tool result content\n\n  Tool result content parts that use the deprecated `file-url` and `image-url`\n  types were converted to `file` parts with `{ type: 'url' }` data, but they were\n  never passed to the download function. When the model does not support the URL,\n  the provider received a bare URL instead of the file contents, even though the\n  replacement `file` part with `{ type: 'url' }` data was downloaded and inlined.\n\n  Downloaded legacy URL parts now use the same media type normalization as file\n  parts, resolving generic types from the response header or image bytes.\n  Legacy base64 data URLs also normalize to inline data with the media type from\n  their data URL, matching replacement file parts.\n\n- e0143b0: feat(ai): support provider-owned realtime transports\n\n  Add an optional `createTransport` interface and `provider` connection capability.\n\n- 934100c: Report the actual OpenAI Chat HTTP endpoint (also used by Azure Chat and Bedrock Mantle Chat) through optional request metadata and model-call end events. Record its host and port on OpenTelemetry chat spans without exposing URL credentials, paths, queries, or fragments. Expose only the sanitized HTTP origin in text and object generation results and step/finish callbacks. Providers that do not report an endpoint leave these attributes unset.\n- c389374: fix(ai): infer union output types when passing a union of schemas to `Output.object` and `Output.array`\n\n  Previously, passing a schema whose type is a union of schemas (e.g. a schema selected from a map at runtime) failed to type-check because the output type was inferred from the first union member only. The output type is now inferred as the union of the schemas' output types.\n\n- 892af4d: feat (ai): re-export realtime server-connection and usage types\n\n  Adds `Experimental_RealtimeServerConnection`, `Experimental_RealtimeSessionIntent`, and `Experimental_RealtimeUsage` aliases for the new experimental `RealtimeModelV4` server-side spec types.\n\n- 1a1da8d: stream steering messages to the ui and keep them in converted messages\n- 41465fd: Expose optional transcription word timings separately from segments and accept shared timestampGranularities. Explicit provider timing settings take precedence. OpenAI now sends timestamp_granularities only with verbose_json and warns when a requested timing is unavailable or excluded.\n- 9754014: Add typed streaming heartbeat parts. Anthropic emits them only with `includePings: true` (disabled by default), without requiring raw chunks. Core forwards pings through stream retries without storing them as generated content or sending them to UI message streams. Consumers with exhaustive stream-part switches must handle the new `ping` union variant when upgrading, even when the opt-in is disabled. Typed pings do not flush partial words during stream smoothing.\n- 2e44144: Represent videos delivered directly to caller-managed storage with an explicit uploaded outcome. Video generation reports `uploadedVideos` without downloading or synthesizing video bytes; access `video` only when `videos` is nonempty.\n- Updated dependencies [722d4a9]\n- Updated dependencies [acea2b5]\n- Updated dependencies [89aff56]\n- Updated dependencies [41465fd]\n- Updated dependencies [2e44144]\n- Updated dependencies [36802d4]\n- Updated dependencies [ef2dfb5]\n- Updated dependencies [e0143b0]\n- Updated dependencies [934100c]\n- Updated dependencies [892af4d]\n- Updated dependencies [892af4d]\n- Updated dependencies [89aff56]\n- Updated dependencies [32acf43]\n- Updated dependencies [41465fd]\n- Updated dependencies [9754014]\n- Updated dependencies [4bb73b0]\n- Updated dependencies [2e44144]\n  - @ai-sdk/gateway@4.0.136\n  - @ai-sdk/provider@4.0.36\n  - @ai-sdk/provider-utils@5.0.75",
@@ -175,9 +103,17 @@
    "prerelease": false,
    "tag": "ai@7.0.164",
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.164"
+  },
+  "ai@7.0.165": {
+   "body": "### Patch Changes\n\n- 883fcde: remove transcription word timings from telemetry when recordOutputs is false\n- 6d21e8e: Sanitize provider request URLs before text generation results reach telemetry integrations and tracing subscribers, preventing endpoint credentials from being exposed.\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37\n  - @ai-sdk/gateway@4.0.138",
+   "date": "2026-11-07T19:27:48Z",
+   "name": "ai@7.0.165",
+   "prerelease": false,
+   "tag": "ai@7.0.165",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165"
   }
  },
- "fetched": "2026-11-09T06:00:32Z",
+ "fetched": "2026-11-10T06:00:36Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- Updated dependencies [44db225]\n  - @ai-sdk/gateway@4.0.139",
@@ -194,6 +130,14 @@
    "prerelease": false,
    "tag": "ai@6.0.326",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.326"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [e0eb120]\n- Updated dependencies [5111655]\n  - @ai-sdk/gateway@2.0.178",
+   "date": "2026-11-09T19:46:56Z",
+   "name": "ai@5.0.287",
+   "prerelease": false,
+   "tag": "ai@5.0.287",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.287"
   },
   {
    "body": "### Patch Changes\n\n- ai@7.0.166",
@@ -226,6 +170,14 @@
    "prerelease": false,
    "tag": "@ai-sdk/vue@3.0.326",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.326"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:32Z",
+   "name": "@ai-sdk/vue@2.0.287",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@2.0.287",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.287"
   },
   {
    "body": "### Patch Changes\n\n- ai@7.0.166",
@@ -268,6 +220,14 @@
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.326"
   },
   {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:29Z",
+   "name": "@ai-sdk/svelte@3.0.287",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@3.0.287",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%403.0.287"
+  },
+  {
    "body": "### Patch Changes\n\n- @ai-sdk/harness@1.0.177",
    "date": "2026-11-09T02:56:10Z",
    "name": "@ai-sdk/sandbox-vercel@1.0.177",
@@ -300,6 +260,14 @@
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%402.0.326"
   },
   {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:26Z",
+   "name": "@ai-sdk/rsc@1.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@1.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%401.0.289"
+  },
+  {
    "body": "### Patch Changes\n\n- ai@7.0.166",
    "date": "2026-11-09T02:56:01Z",
    "name": "@ai-sdk/react@4.0.170",
@@ -314,6 +282,14 @@
    "prerelease": false,
    "tag": "@ai-sdk/react@3.0.329",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.329"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:23Z",
+   "name": "@ai-sdk/react@2.0.290",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@2.0.290",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%402.0.290"
   },
   {
    "body": "### Patch Changes\n\n- ai@7.0.166",
@@ -348,6 +324,14 @@
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/llamaindex%402.0.326"
   },
   {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:20Z",
+   "name": "@ai-sdk/llamaindex@1.0.287",
+   "prerelease": false,
+   "tag": "@ai-sdk/llamaindex@1.0.287",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/llamaindex%401.0.287"
+  },
+  {
    "body": "### Patch Changes\n\n- ai@7.0.166",
    "date": "2026-11-09T02:55:49Z",
    "name": "@ai-sdk/langchain@3.0.166",
@@ -362,6 +346,14 @@
    "prerelease": false,
    "tag": "@ai-sdk/langchain@2.0.334",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/langchain%402.0.334"
+  },
+  {
+   "body": "### Patch Changes\n\n- ai@5.0.287",
+   "date": "2026-11-09T19:47:17Z",
+   "name": "@ai-sdk/langchain@1.0.287",
+   "prerelease": false,
+   "tag": "@ai-sdk/langchain@1.0.287",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/langchain%401.0.287"
   },
   {
    "body": "### Patch Changes\n\n- ai@7.0.166",
@@ -460,6 +452,14 @@
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/harness-acp%401.0.117"
   },
   {
+   "body": "### Patch Changes\n\n- e0eb120: feat(anthropic): add Claude Fable 5.2 support\n\n  - add the `claude-fable-5-2` model ID to `@ai-sdk/anthropic` and `@ai-sdk/google-vertex`, `anthropic.claude-fable-5-2` and `us.anthropic.claude-fable-5-2` to `@ai-sdk/amazon-bedrock`, and `anthropic/claude-fable-5.2` to `@ai-sdk/gateway`\n  - recognize `claude-fable-5-2` as a known model with the same capabilities as `claude-fable-5-1`: 128k max output tokens, always-on adaptive thinking, no sampling parameters, no forced tool use, and native structured outputs by default\n\n- Updated dependencies [e0eb120]\n  - @ai-sdk/anthropic@2.0.114",
+   "date": "2026-11-09T19:47:11Z",
+   "name": "@ai-sdk/google-vertex@3.0.189",
+   "prerelease": false,
+   "tag": "@ai-sdk/google-vertex@3.0.189",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/google-vertex%403.0.189"
+  },
+  {
    "body": "### Patch Changes\n\n- 44db225: feat(provider/gateway): type the headquarters provider option",
    "date": "2026-11-09T02:55:10Z",
    "name": "@ai-sdk/gateway@4.0.139",
@@ -474,6 +474,14 @@
    "prerelease": false,
    "tag": "@ai-sdk/gateway@3.0.232",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/gateway%403.0.232"
+  },
+  {
+   "body": "### Patch Changes\n\n- e0eb120: feat(anthropic): add Claude Fable 5.2 support\n\n  - add the `claude-fable-5-2` model ID to `@ai-sdk/anthropic` and `@ai-sdk/google-vertex`, `anthropic.claude-fable-5-2` and `us.anthropic.claude-fable-5-2` to `@ai-sdk/amazon-bedrock`, and `anthropic/claude-fable-5.2` to `@ai-sdk/gateway`\n  - recognize `claude-fable-5-2` as a known model with the same capabilities as `claude-fable-5-1`: 128k max output tokens, always-on adaptive thinking, no sampling parameters, no forced tool use, and native structured outputs by default\n\n- 5111655: Add `meta/muse-ember` to the available language model IDs.",
+   "date": "2026-11-09T19:47:14Z",
+   "name": "@ai-sdk/gateway@2.0.178",
+   "prerelease": false,
+   "tag": "@ai-sdk/gateway@2.0.178",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/gateway%402.0.178"
   },
   {
    "body": "### Patch Changes\n\n- ai@7.0.166",
@@ -492,92 +500,20 @@
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/code-mode%401.0.123"
   },
   {
-   "body": "### Patch Changes\n\n- ai@7.0.166",
-   "date": "2026-11-09T02:55:01Z",
-   "name": "@ai-sdk/angular@3.0.166",
+   "body": "### Patch Changes\n\n- e0eb120: feat(anthropic): add Claude Fable 5.2 support\n\n  - add the `claude-fable-5-2` model ID to `@ai-sdk/anthropic` and `@ai-sdk/google-vertex`, `anthropic.claude-fable-5-2` and `us.anthropic.claude-fable-5-2` to `@ai-sdk/amazon-bedrock`, and `anthropic/claude-fable-5.2` to `@ai-sdk/gateway`\n  - recognize `claude-fable-5-2` as a known model with the same capabilities as `claude-fable-5-1`: 128k max output tokens, always-on adaptive thinking, no sampling parameters, no forced tool use, and native structured outputs by default",
+   "date": "2026-11-09T19:47:05Z",
+   "name": "@ai-sdk/anthropic@2.0.114",
    "prerelease": false,
-   "tag": "@ai-sdk/angular@3.0.166",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/angular%403.0.166"
+   "tag": "@ai-sdk/anthropic@2.0.114",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/anthropic%402.0.114"
   },
   {
-   "body": "### Patch Changes\n\n- ai@6.0.326",
-   "date": "2026-11-09T02:57:28Z",
-   "name": "@ai-sdk/angular@2.0.327",
+   "body": "### Patch Changes\n\n- Updated dependencies [e0eb120]\n  - @ai-sdk/anthropic@2.0.114",
+   "date": "2026-11-09T19:47:09Z",
+   "name": "@ai-sdk/anthropic-aws@0.1.30",
    "prerelease": false,
-   "tag": "@ai-sdk/angular@2.0.327",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/angular%402.0.327"
-  },
-  {
-   "body": "### Patch Changes\n\n- 883fcde: remove transcription word timings from telemetry when recordOutputs is false\n- 6d21e8e: Sanitize provider request URLs before text generation results reach telemetry integrations and tracing subscribers, preventing endpoint credentials from being exposed.\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37\n  - @ai-sdk/gateway@4.0.138",
-   "date": "2026-11-07T19:27:48Z",
-   "name": "ai@7.0.165",
-   "prerelease": false,
-   "tag": "ai@7.0.165",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165"
-  },
-  {
-   "body": "### Patch Changes\n\n- 4ac871e: hide provider metadata from telemetry when recordOutputs is false\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65\n  - @ai-sdk/gateway@3.0.231",
-   "date": "2026-11-07T19:25:47Z",
-   "name": "ai@6.0.325",
-   "prerelease": false,
-   "tag": "ai@6.0.325",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.325"
-  },
-  {
-   "body": "### Patch Changes\n\n- f15d448: hide provider metadata from telemetry when recordOutputs is false\n- 417a92c: Preserve `toolChoice: 'none'` when SDK tools are omitted or empty so providers can disable native tools configured through provider options.\n\n  For Perplexity native tools, also update `@ai-sdk/perplexity` to `2.1.6` or a later compatible version, which includes the provider-side guard.\n\n- Updated dependencies [c6c7ae0]\n- Updated dependencies [49c554d]\n- Updated dependencies [ebc2cd9]\n- Updated dependencies [b753c03]\n- Updated dependencies [a7ebf30]\n  - @ai-sdk/gateway@2.0.177\n  - @ai-sdk/provider-utils@3.0.45",
-   "date": "2026-11-07T19:22:42Z",
-   "name": "ai@5.0.286",
-   "prerelease": false,
-   "tag": "ai@5.0.286",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.286"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/openai-compatible@3.0.87\n  - @ai-sdk/provider@4.0.37",
-   "date": "2026-11-07T19:31:54Z",
-   "name": "@ai-sdk/zai@3.0.49",
-   "prerelease": false,
-   "tag": "@ai-sdk/zai@3.0.49",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%403.0.49"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65\n  - @ai-sdk/openai-compatible@2.0.92",
-   "date": "2026-11-07T19:28:35Z",
-   "name": "@ai-sdk/zai@2.0.20",
-   "prerelease": false,
-   "tag": "@ai-sdk/zai@2.0.20",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%402.0.20"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [49c554d]\n- Updated dependencies [db18e4f]\n- Updated dependencies [ce27f15]\n- Updated dependencies [b753c03]\n  - @ai-sdk/provider-utils@3.0.45\n  - @ai-sdk/openai-compatible@1.0.62",
-   "date": "2026-11-07T19:25:00Z",
-   "name": "@ai-sdk/zai@1.0.11",
-   "prerelease": false,
-   "tag": "@ai-sdk/zai@1.0.11",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/zai%401.0.11"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37",
-   "date": "2026-11-07T19:31:51Z",
-   "name": "@ai-sdk/xai@5.0.40",
-   "prerelease": false,
-   "tag": "@ai-sdk/xai@5.0.40",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%405.0.40"
-  },
-  {
-   "body": "### Patch Changes\n\n- 7957cfa: feat(xai): add `safetyIdentifier` Responses provider option\n\n  Sends `safety_identifier` with Responses API requests so xAI can attribute a policy violation to one end user, and exposes the echoed value on `providerMetadata.xai.safetyIdentifier`.\n\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65\n  - @ai-sdk/openai-compatible@2.0.92",
-   "date": "2026-11-07T19:28:32Z",
-   "name": "@ai-sdk/xai@3.0.151",
-   "prerelease": false,
-   "tag": "@ai-sdk/xai@3.0.151",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%403.0.151"
-  },
-  {
-   "body": "### Patch Changes\n\n- 8549a1d: feat(xai): add `safetyIdentifier` Responses provider option\n\n  Sends `safety_identifier` with Responses API requests so xAI can attribute a policy violation to one end user, and exposes the echoed value on `providerMetadata.xai.safetyIdentifier`.\n\n- Updated dependencies [49c554d]\n- Updated dependencies [db18e4f]\n- Updated dependencies [ce27f15]\n- Updated dependencies [b753c03]\n  - @ai-sdk/provider-utils@3.0.45\n  - @ai-sdk/openai-compatible@1.0.62",
-   "date": "2026-11-07T19:24:57Z",
-   "name": "@ai-sdk/xai@2.0.103",
-   "prerelease": false,
-   "tag": "@ai-sdk/xai@2.0.103",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/xai%402.0.103"
+   "tag": "@ai-sdk/anthropic-aws@0.1.30",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/anthropic-aws%400.1.30"
   }
  ],
  "repo": "vercel/ai"

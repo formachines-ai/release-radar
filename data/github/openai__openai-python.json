@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-09T06:00:07Z",
+ "fetched": "2026-11-10T06:00:06Z",
  "releases": [
+  {
+   "body": "## [3.48.0](https://github.com/openai/openai-python/compare/v3.47.0...v3.48.0) (2026-11-09)\n\n\n### Features\n\n* **api:** add stream options for agent sessions ([#4251](https://github.com/openai/openai-python/issues/4251)) ([c6fc264](https://github.com/openai/openai-python/commit/c6fc264689d384d5caec150fafa1a9567c4a3f56))\n* **api:** recognize gpt-6-rosalind in beta Responses ([#4257](https://github.com/openai/openai-python/issues/4257)) ([3774b7e](https://github.com/openai/openai-python/commit/3774b7ed775b4bff99b45ef961c5d1f6c82b8e99))\n\n\n### Chores\n\n* **api:** retain agent scheduling support ([#4255](https://github.com/openai/openai-python/issues/4255)) ([a1175a3](https://github.com/openai/openai-python/commit/a1175a35ba6aa2d6bf98d26088a572ab0c5f4453))\n* **deps:** bump locked multidict from 6.9.1 to 7.1.0 ([#4259](https://github.com/openai/openai-python/pull/4259)) ([28cdb1b](https://github.com/openai/openai-python/commit/28cdb1beef191368a61a25bbf56371065387deb4))\n* **deps-dev:** bump the python-maintenance group with 5 updates ([#4258](https://github.com/openai/openai-python/issues/4258)) ([4b10e22](https://github.com/openai/openai-python/commit/4b10e223452ae7450a5423ee30c13115ae9652ef))\n* **deps-dev:** bump types-requests from 2.33.0.20261006 to 2.33.0.20261030 ([#4260](https://github.com/openai/openai-python/issues/4260)) ([de498d7](https://github.com/openai/openai-python/commit/de498d730cafa51f5fb0640f0335719957ea1733))\n\n\n### Documentation\n\n* consolidate AGENTS.md guidance ([#4254](https://github.com/openai/openai-python/issues/4254)) ([44b1555](https://github.com/openai/openai-python/commit/44b1555aff1c22998c008c84400e7acce39fb928))",
+   "date": "2026-11-09T16:12:58Z",
+   "name": "v3.48.0",
+   "prerelease": false,
+   "tag": "v3.48.0",
+   "url": "https://github.com/openai/openai-python/releases/tag/v3.48.0"
+  },
   {
    "body": "## [3.47.0](https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0) (2026-11-05)\n\n\n### Features\n\n* **api:** add a model option for Responses ([#4249](https://github.com/openai/openai-python/issues/4249)) ([090098f](https://github.com/openai/openai-python/commit/090098fd3f00fd46c529c4fd19edc2c762ce7a34))",
    "date": "2026-11-05T18:04:10Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v3.9.0",
    "url": "https://github.com/openai/openai-python/releases/tag/v3.9.0"
-  },
-  {
-   "body": "## [3.8.0](https://github.com/openai/openai-python/compare/v3.7.0...v3.8.0) (2026-09-03)\n\n\n### Features\n\n* **api:** add gpt-6-astra and related features ([#3791](https://github.com/openai/openai-python/issues/3791)) ([09f446f](https://github.com/openai/openai-python/commit/09f446f5f8623d79464568dc91b9dc258e74bcae))\n\n\n### Documentation\n\n* add canonical SDK security model ([#3778](https://github.com/openai/openai-python/issues/3778)) ([2a097b9](https://github.com/openai/openai-python/commit/2a097b991bb23a26bde9da8ea286f850ac1329f1))",
-   "date": "2026-09-03T19:50:24Z",
-   "name": "v3.8.0",
-   "prerelease": false,
-   "tag": "v3.8.0",
-   "url": "https://github.com/openai/openai-python/releases/tag/v3.8.0"
   }
  ],
  "repo": "openai/openai-python"

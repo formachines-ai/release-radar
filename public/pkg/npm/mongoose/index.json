@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "9.12.0",
+ "latest": "9.12.1",
  "latest_stable": {
-  "date": "2026-11-04T22:27:27Z",
-  "version": "9.12.0"
+  "date": "2026-11-09T21:01:27Z",
+  "version": "9.12.1"
  },
- "metadata_fetched": "2026-11-09T06:01:07Z",
+ "metadata_fetched": "2026-11-10T06:01:10Z",
  "package": "mongoose",
  "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/mongoose",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T21:01:27Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/mongoose/9.12.1",
+   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/345219f08c/",
+   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/9.12.1",
+   "package": "mongoose",
+   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "9.12.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-04T22:27:27Z",
@@ -31,25 +50,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "9.12.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T20:01:17Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/mongoose/8.24.8",
-   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/17f8d511b6/",
-   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/8.24.8",
-   "package": "mongoose",
-   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.24.8",
    "yanked_or_deprecated": false
   }
  ],

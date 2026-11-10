@@ -3,8 +3,14 @@
   "errata": 28,
   "error_signatures": 25,
   "packages": 21,
-  "packages_checked": 97
+  "packages_checked": 100,
+  "readiness": {
+   "lead": 11,
+   "partial": 7,
+   "patch": 10
+  }
  },
+ "description": "28 incompatibilities verified in a sandbox: 10 with a patch that applies word for word, 18 leads.",
  "errors": {
   "json": "https://formachines.ai/errata/errors/index.json",
   "search": {
@@ -21,18 +27,18 @@
  "license": "https://creativecommons.org/licenses/by/4.0/",
  "models": [
   {
-   "checked": 829,
+   "checked": 857,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-07",
+   "last_run": "2026-11-09",
    "model": "claude-sonnet-5-5",
    "outdated": 92
   },
   {
-   "checked": 910,
+   "checked": 938,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-07",
+   "last_run": "2026-11-09",
    "model": "gpt-6.1-sol",
-   "outdated": 132
+   "outdated": 133
   },
   {
    "checked": 681,
@@ -51,7 +57,12 @@
    "new_version": "2.3.0",
    "old_version": "1.26.0",
    "package": "mcp",
-   "updated": "2026-10-27",
+   "readiness": {
+    "lead": 1,
+    "partial": 1,
+    "patch": 1
+   },
+   "updated": "2026-11-09",
    "url": "https://formachines.ai/errata/pypi/mcp/"
   },
   {
@@ -61,6 +72,11 @@
    "new_version": "26.4.0",
    "old_version": "26.0.0",
    "package": "pyopenssl",
+   "readiness": {
+    "lead": 2,
+    "partial": 1,
+    "patch": 0
+   },
    "updated": "2026-11-02",
    "url": "https://formachines.ai/errata/pypi/pyopenssl/"
   },
@@ -71,6 +87,11 @@
    "new_version": "13.1.0",
    "old_version": "12.11.0",
    "package": "firebase",
+   "readiness": {
+    "lead": 0,
+    "partial": 2,
+    "patch": 0
+   },
    "updated": "2026-11-03",
    "url": "https://formachines.ai/errata/npm/firebase/"
   },
@@ -81,6 +102,11 @@
    "new_version": "1.45.1",
    "old_version": "1.40.0",
    "package": "opentelemetry-api",
+   "readiness": {
+    "lead": 2,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-11-02",
    "url": "https://formachines.ai/errata/pypi/opentelemetry-api/"
   },
@@ -91,6 +117,11 @@
    "new_version": "1.18.1",
    "old_version": "1.17.1",
    "package": "scipy",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-10-27",
    "url": "https://formachines.ai/errata/pypi/scipy/"
   },
@@ -101,6 +132,11 @@
    "new_version": "10.2.1",
    "old_version": "9.6.1",
    "package": "execa",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-11-05",
    "url": "https://formachines.ai/errata/npm/execa/"
   },
@@ -111,6 +147,11 @@
    "new_version": "14.5.0",
    "old_version": "13.7.0",
    "package": "firebase-admin",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-10-28",
    "url": "https://formachines.ai/errata/npm/firebase-admin/"
   },
@@ -121,6 +162,11 @@
    "new_version": "16.2.0",
    "old_version": "14.6.6",
    "package": "got",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-11-05",
    "url": "https://formachines.ai/errata/npm/got/"
   },
@@ -131,6 +177,11 @@
    "new_version": "17.0.2",
    "old_version": "16.13.2",
    "package": "graphql",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-11-05",
    "url": "https://formachines.ai/errata/npm/graphql/"
   },
@@ -141,7 +192,12 @@
    "new_version": "1.1.2",
    "old_version": "0.3.28",
    "package": "typeorm",
-   "updated": "2026-10-27",
+   "readiness": {
+    "lead": 0,
+    "partial": 1,
+    "patch": 0
+   },
+   "updated": "2026-11-09",
    "url": "https://formachines.ai/errata/npm/typeorm/"
   },
   {
@@ -151,6 +207,11 @@
    "new_version": "7.0.2",
    "old_version": "6.0.2",
    "package": "typescript",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-11-03",
    "url": "https://formachines.ai/errata/npm/typescript/"
   },
@@ -161,6 +222,11 @@
    "new_version": "8.5.0",
    "old_version": "8.3.1",
    "package": "click",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-11-07",
    "url": "https://formachines.ai/errata/pypi/click/"
   },
@@ -171,7 +237,12 @@
    "new_version": "50.0.2",
    "old_version": "46.0.6",
    "package": "cryptography",
-   "updated": "2026-10-27",
+   "readiness": {
+    "lead": 0,
+    "partial": 1,
+    "patch": 0
+   },
+   "updated": "2026-11-09",
    "url": "https://formachines.ai/errata/pypi/cryptography/"
   },
   {
@@ -181,6 +252,11 @@
    "new_version": "2.34.0",
    "old_version": "1.69.0",
    "package": "google-genai",
+   "readiness": {
+    "lead": 0,
+    "partial": 1,
+    "patch": 0
+   },
    "updated": "2026-11-07",
    "url": "https://formachines.ai/errata/pypi/google-genai/"
   },
@@ -191,7 +267,12 @@
    "new_version": "2.2.0",
    "old_version": "1.8.0",
    "package": "huggingface-hub",
-   "updated": "2026-10-30",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
+   "updated": "2026-11-09",
    "url": "https://formachines.ai/errata/pypi/huggingface-hub/"
   },
   {
@@ -201,6 +282,11 @@
    "new_version": "1.6.0",
    "old_version": "1.5.3",
    "package": "joblib",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-10-27",
    "url": "https://formachines.ai/errata/pypi/joblib/"
   },
@@ -211,6 +297,11 @@
    "new_version": "11.2.1",
    "old_version": "10.8.0",
    "package": "more-itertools",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-10-27",
    "url": "https://formachines.ai/errata/pypi/more-itertools/"
   },
@@ -221,7 +312,12 @@
    "new_version": "3.7",
    "old_version": "3.6.1",
    "package": "networkx",
-   "updated": "2026-10-27",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
+   "updated": "2026-11-09",
    "url": "https://formachines.ai/errata/pypi/networkx/"
   },
   {
@@ -231,6 +327,11 @@
    "new_version": "4.0.0",
    "old_version": "3.3.1",
    "package": "oauthlib",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-11-02",
    "url": "https://formachines.ai/errata/pypi/oauthlib/"
   },
@@ -241,6 +342,11 @@
    "new_version": "1.45.1",
    "old_version": "1.40.0",
    "package": "opentelemetry-sdk",
+   "readiness": {
+    "lead": 1,
+    "partial": 0,
+    "patch": 0
+   },
    "updated": "2026-10-30",
    "url": "https://formachines.ai/errata/pypi/opentelemetry-sdk/"
   },
@@ -251,9 +357,14 @@
    "new_version": "17.3",
    "old_version": "16.0",
    "package": "websockets",
+   "readiness": {
+    "lead": 0,
+    "partial": 0,
+    "patch": 1
+   },
    "updated": "2026-11-01",
    "url": "https://formachines.ai/errata/pypi/websockets/"
   }
  ],
- "updated": "2026-11-07"
+ "updated": "2026-11-09"
 }

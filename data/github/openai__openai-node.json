@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-09T06:00:54Z",
+ "fetched": "2026-11-10T06:00:57Z",
  "releases": [
+  {
+   "body": "## [7.54.0](https://github.com/openai/openai-node/compare/v7.53.0...v7.54.0) (2026-11-08)\n\n\n### Features\n\n* **api:** recognize gpt-6-rosalind in beta Responses ([#3126](https://github.com/openai/openai-node/issues/3126)) ([8fb5a99](https://github.com/openai/openai-node/commit/8fb5a99e7fa3245b53307762317484eee10a49f7))\n\n\n### Chores\n\n* **api:** retain agent scheduling support ([#3123](https://github.com/openai/openai-node/issues/3123)) ([47bade0](https://github.com/openai/openai-node/commit/47bade063b0277e56a8352997a55e857424d482c))\n\n\n### Documentation\n\n* consolidate AGENTS.md guidance ([#3121](https://github.com/openai/openai-node/issues/3121)) ([9ba922c](https://github.com/openai/openai-node/commit/9ba922c5cc88c49120de36ebb9920df466b628b1))",
+   "date": "2026-11-09T16:04:55Z",
+   "name": "v7.54.0",
+   "prerelease": false,
+   "tag": "v7.54.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.54.0"
+  },
   {
    "body": "## [7.53.0](https://github.com/openai/openai-node/compare/v7.52.0...v7.53.0) (2026-11-06)\n\n\n### Features\n\n* **agents:** deliver session errors as stream events ([#3120](https://github.com/openai/openai-node/issues/3120)) ([c48e5aa](https://github.com/openai/openai-node/commit/c48e5aa56c1f55ee8a19dab6578860d6a0ad1395))\n\n\n### Bug Fixes\n\n* **deps-dev:** bump @aws-sdk/credential-provider-node from 3.972.84 to 3.972.88 ([#3099](https://github.com/openai/openai-node/issues/3099)) ([101175b](https://github.com/openai/openai-node/commit/101175bd5077dc8e7cb24435cefee0aac14dd1c3))\n* **deps-dev:** bump oxfmt from 0.72.0 to 0.75.0 ([#3091](https://github.com/openai/openai-node/issues/3091)) ([77012af](https://github.com/openai/openai-node/commit/77012aff4531c2939eb74a9ad2b14f0fb113a3ff))\n* **deps-dev:** bump oxlint from 1.87.0 to 1.90.0 ([#3096](https://github.com/openai/openai-node/issues/3096)) ([75903b2](https://github.com/openai/openai-node/commit/75903b20ef3959c0457e4cc6895339611cd2bd1e))\n* **deps-dev:** bump ultracite from 7.11.1 to 8.1.0 ([#3098](https://github.com/openai/openai-node/issues/3098)) ([a523d74](https://github.com/openai/openai-node/commit/a523d74b7c82fc4379259eb2352a13ee400d8b4b))\n* **deps:** bump @azure/identity from 4.13.3 to 4.14.0 ([#3094](https://github.com/openai/openai-node/issues/3094)) ([6a3d573](https://github.com/openai/openai-node/commit/6a3d5739c85511bba0e6f581d3bfeac72fd7922f))\n* **deps:** bump @azure/identity from 4.13.3 to 4.14.0 ([#3094](https://github.com/openai/openai-node/issues/3094)) ([3f56f57](https://github.com/openai/openai-node/commit/3f56f574f87a7c7117db0ae75a19cfc4025864fd))",
    "date": "2026-11-06T09:06:02Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v7.8.0",
    "url": "https://github.com/openai/openai-node/releases/tag/v7.8.0"
-  },
-  {
-   "body": "## [7.7.0](https://github.com/openai/openai-node/compare/v7.6.0...v7.7.0) (2026-08-26)\n\n\n### Features\n\n* **api:** make function call output call IDs optional ([#2488](https://github.com/openai/openai-node/issues/2488)) ([b932ae6](https://github.com/openai/openai-node/commit/b932ae62bc4054da760c1f82329b1cc24bc05fbe))\n\n\n### Bug Fixes\n\n* **streaming:** honor cancellation while decoding SSE responses ([#2487](https://github.com/openai/openai-node/issues/2487)) ([ababe12](https://github.com/openai/openai-node/commit/ababe129507a48d6c4d2be12bbef2ae442c1632f))",
-   "date": "2026-08-27T01:04:11Z",
-   "name": "v7.7.0",
-   "prerelease": false,
-   "tag": "v7.7.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.7.0"
   }
  ],
  "repo": "openai/openai-node"

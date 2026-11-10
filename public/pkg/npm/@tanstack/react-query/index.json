@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-06T23:04:47Z",
   "version": "5.107.1"
  },
- "metadata_fetched": "2026-11-09T06:00:57Z",
+ "metadata_fetched": "2026-11-10T06:01:00Z",
  "package": "@tanstack/react-query",
  "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
  "prereleases_in_window": 0,
@@ -89,52 +89,9 @@
    "variant_of": null,
    "version": "5.106.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T20:39:13Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@tanstack/react-query/5.105.3",
-   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/8644055809/",
-   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.3",
-   "package": "@tanstack/react-query",
-   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "5.105.3",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T13:57:22Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@tanstack/react-query/5.105.2",
-   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b5c1eca3c1/",
-   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.105.2",
-   "package": "@tanstack/react-query",
-   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "…27cd805bd8103cd873) - Update the observer options before subscribing so revealing an `<Activity>` tree whose query key changed while hidden no longer fetches the previous key.…"
-    }
-   ],
-   "variant_of": null,
-   "version": "5.105.2",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/TanStack/query",
- "stable_in_window": 6,
+ "stable_in_window": 4,
  "summary": "Hooks for managing, caching and syncing asynchronous and remote data in React"
 }

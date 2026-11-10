@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "2.6.0",
+ "latest": "2.7.0",
  "latest_stable": {
-  "date": "2026-11-05T18:59:09Z",
-  "version": "2.6.0"
+  "date": "2026-11-09T18:52:39Z",
+  "version": "2.7.0"
  },
- "metadata_fetched": "2026-11-09T06:00:03Z",
+ "metadata_fetched": "2026-11-10T06:00:02Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/anthropic/",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T18:52:39Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/anthropic/2.7.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ed676a60e9/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.7.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "2.7.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-05T18:59:09Z",
@@ -50,30 +69,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "2.5.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-02T19:08:03Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/anthropic/2.4.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/998ac2d864/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.4.0",
-   "package": "anthropic",
-   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "* link to the SDK documentation instead of removed README sections"
-    }
-   ],
-   "variant_of": null,
-   "version": "2.4.0",
    "yanked_or_deprecated": false
   }
  ],

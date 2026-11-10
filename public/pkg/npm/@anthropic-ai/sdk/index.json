@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "1.6.0",
+ "latest": "1.7.0",
  "latest_stable": {
-  "date": "2026-11-05T19:05:25Z",
-  "version": "1.6.0"
+  "date": "2026-11-09T18:56:57Z",
+  "version": "1.7.0"
  },
- "metadata_fetched": "2026-11-09T06:00:37Z",
+ "metadata_fetched": "2026-11-10T06:00:40Z",
  "package": "@anthropic-ai/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/sdk",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T18:56:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@anthropic-ai/sdk/1.7.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/2c6898ad11/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.7.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-05T19:05:25Z",
@@ -50,25 +69,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.5.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-02T19:22:43Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@anthropic-ai/sdk/1.4.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/710c895592/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.4.0",
-   "package": "@anthropic-ai/sdk",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.4.0",
    "yanked_or_deprecated": false
   }
  ],

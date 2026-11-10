@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -7,7 +7,7 @@
   "json": "https://formachines.ai/errata/pypi/mcp/index.json",
   "new_version": "2.3.0",
   "old_version": "1.26.0",
-  "updated": "2026-10-27",
+  "updated": "2026-11-09",
   "url": "https://formachines.ai/errata/pypi/mcp/"
  },
  "latest": "2.3.0",
@@ -15,7 +15,7 @@
   "date": "2026-10-02T22:06:52Z",
   "version": "2.3.0"
  },
- "metadata_fetched": "2026-11-09T06:00:06Z",
+ "metadata_fetched": "2026-11-10T06:00:05Z",
  "package": "mcp",
  "page": "https://releases.formachines.ai/pkg/pypi/mcp/",
  "prereleases_in_window": 0,

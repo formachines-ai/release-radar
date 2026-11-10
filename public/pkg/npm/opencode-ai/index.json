@@ -1,5 +1,5 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,12 +8,31 @@
   "date": "2026-10-28T06:17:11Z",
   "version": "1.19.5"
  },
- "metadata_fetched": "2026-11-09T06:00:53Z",
+ "metadata_fetched": "2026-11-10T06:00:56Z",
  "package": "opencode-ai",
  "page": "https://releases.formachines.ai/pkg/npm/opencode-ai/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 2,
  "registry": "https://www.npmjs.com/package/opencode-ai",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-09T21:45:22Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/opencode-ai/0.0.0-dev-202611092046",
+   "json": "https://releases.formachines.ai/pkg/npm/opencode-ai/index.json",
+   "notes_kind": "registry_page",
+   "notes_redirect": "https://releases.formachines.ai/go/9c9e1e7f3f/",
+   "notes_url": "https://www.npmjs.com/package/opencode-ai",
+   "package": "opencode-ai",
+   "page": "https://releases.formachines.ai/pkg/npm/opencode-ai/",
+   "prerelease": true,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.0.0-dev-202611092046",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-08T05:51:00Z",

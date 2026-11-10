@@ -1,19 +1,38 @@
 {
- "built": "2026-11-09T06:00:03Z",
+ "built": "2026-11-10T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "7.4.7",
+ "latest": "7.4.8",
  "latest_stable": {
-  "date": "2026-11-05T19:59:28Z",
-  "version": "7.4.7"
+  "date": "2026-11-09T14:51:52Z",
+  "version": "7.4.8"
  },
- "metadata_fetched": "2026-11-09T06:00:59Z",
+ "metadata_fetched": "2026-11-10T06:01:01Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/astro",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T14:51:52Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.8",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/338832886d/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.8",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.4.8",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-05T19:59:28Z",
@@ -50,30 +69,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "7.4.6",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-02T14:26:27Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/astro/7.4.5",
-   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/200b27eec9/",
-   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.5",
-   "package": "astro",
-   "page": "https://releases.formachines.ai/pkg/npm/astro/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "…amic tags, JSX, and MDX. Only the leading part of the string that is a valid element name is rendered, so characters such as `/` or `=` can no longer change the generated markup. A string that does not start with a valid element name (for example `'!--'` or `''`) now throws an er…"
-    }
-   ],
-   "variant_of": null,
-   "version": "7.4.5",
    "yanked_or_deprecated": false
   }
  ],

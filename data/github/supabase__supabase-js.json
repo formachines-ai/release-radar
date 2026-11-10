@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-09T06:00:57Z",
+ "fetched": "2026-11-10T06:01:00Z",
  "releases": [
   {
    "body": "## 2.119.0 (2026-11-04)\n\n### 🚀 Features\n\n- **postgrest:** expose query builder options to .from method - custom fetch per request ([#1570](https://github.com/supabase/supabase-js/pull/1570))\n- **realtime:** broadcast persistence ([#2690](https://github.com/supabase/supabase-js/pull/2690))\n\n### 🩹 Fixes\n\n- **auth:** `deleteUser` miscast empty object to `User` ([#2773](https://github.com/supabase/supabase-js/pull/2773))\n- **auth:** `global` sign out cleared the local session when the server failed to log out ([#2786](https://github.com/supabase/supabase-js/pull/2786))\n- **realtime:** include vsn in the unsupported serializer error ([#2812](https://github.com/supabase/supabase-js/pull/2812))\n- **storage:** `exists` reports invalid JWT or missing bucket as missing file ([#2783](https://github.com/supabase/supabase-js/pull/2783))\n- **storage:** ignore undefined FileOptions during upload ([#2789](https://github.com/supabase/supabase-js/pull/2789))\n\n### ❤️ Thank You\n\n- 7vignesh\n- 7vignesh <vigneshgopikrishnan7@gmail.com> and stenlan @stenlan\n- Christian Melchior\n- Claude Opus 5.5\n- Guilherme Souza\n- Katerina Skroumpelou\n- Leandro Pereira @leandrocp\n- Pintu Kumar @pintu544\n- Rami Hersonsky @ramiscaleai\n- stenlan @stenlan\n- Vignesh",
