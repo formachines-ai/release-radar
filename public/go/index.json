@@ -1,5 +1,5 @@
 {
- "built": "2026-11-10T12:13:32Z",
+ "built": "2026-11-10T16:14:35Z",
  "redirects": {
   "014d49577a": "https://github.com/vercel/next.js/releases/tag/v16.4.5",
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
@@ -76,7 +76,6 @@
   "89743b390c": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
   "8ace0b088d": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.45",
   "8b3bed9670": "https://github.com/pallets/click/releases/tag/8.5.1",
-  "8c149007ca": "https://docs.djangoproject.com/en/stable/releases/",
   "90581f54ed": "https://github.com/openai/openai-node/releases/tag/v7.54.0",
   "9444946144": "https://github.com/vitejs/vite/releases/tag/v7.3.8",
   "95b77f2bf4": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.107.1",
@@ -108,7 +107,6 @@
   "cca25c6b80": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0",
   "cf283aab99": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.139",
   "d14c8a0b72": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.3",
-  "d4bc984b95": "https://github.com/prisma/prisma-cli/releases/tag/v8.0.0-rc.30",
   "d7952f8579": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.5.0",
   "db706a393b": "https://github.com/withastro/astro/releases/tag/astro%407.4.6",
   "de8551a748": "https://github.com/vitejs/vite/releases/tag/v6.4.6",
