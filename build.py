@@ -790,13 +790,14 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
 # HTML rendering
 # ----------------------------------------------------------------------------------------------------------
 def layout(title: str, body: str, built: str, description: str = "", canonical: str = "", noindex: bool = False,
-           jsonld: dict | None = None, og_type: str = "website", extra_head: str = "") -> str:
+           jsonld: dict | None = None, og_type: str = "website", extra_head: str = "", og_description: str = "") -> str:
     desc = description or "Daily feed of PyPI and npm releases with verbatim breaking-change quotes and links to verified Errata corrections."
+    ogd = og_description or desc
     robots = '<meta name="robots" content="noindex">\n' if noindex else ""
     canon = f'<link rel="canonical" href="{esc(canonical)}">\n' if canonical else ""
-    og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(desc)}">\n'
+    og = (f'<meta property="og:title" content="{esc(title)}">\n<meta property="og:description" content="{esc(ogd)}">\n'
           f'<meta name="twitter:card" content="summary">\n<meta name="twitter:title" content="{esc(title)}">\n'
-          f'<meta name="twitter:description" content="{esc(desc)}">\n'
+          f'<meta name="twitter:description" content="{esc(ogd)}">\n'
           f'<meta property="og:type" content="{esc(og_type)}">\n'
           + (f'<meta property="og:url" content="{esc(canonical)}">\n' if canonical else "")
           + f'<meta property="og:site_name" content="{esc(SITE_NAME)}">\n')
@@ -1000,6 +1001,46 @@ def render_index(model: dict, errata_count: int) -> str:
                   extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(SITE_NAME)} — flagged releases only" href="/feed-breaking.xml">\n')
 
 
+def related_packages(p: dict, model: dict, n: int = 4) -> list[dict]:
+    """Deterministic: the n alphabetical neighbours (wrapping) of the same ecosystem."""
+    same = sorted((x for x in model["packages"] if x["ecosystem"] == p["ecosystem"]), key=lambda x: x["name"].lower())
+    names = [x["name"] for x in same]
+    if p["name"] not in names or len(same) < 2:
+        return []
+    i = names.index(p["name"])
+    n = min(n, len(same) - 1)
+    out, step = [], 1
+    while len(out) < n:
+        for j in (i - step, i + step):  # previous then next neighbour
+            if len(out) < n and 0 <= j < len(same):
+                out.append(same[j])
+        step += 1
+        if step > len(same):
+            break
+    return sorted(out, key=lambda x: x["name"].lower())
+
+
+def package_seo(p: dict) -> tuple[str, str]:
+    """<title> and meta description of a package page: data and a verbatim quote fragment only."""
+    name, eco, lat = p["name"], p["ecosystem"], p.get("latest")
+    title = f"{name} {lat} release notes & breaking changes ({eco}) — {SITE_NAME}" if lat else \
+        f"{name} release notes & breaking changes ({eco}) — {SITE_NAME}"
+    rel = next((r for r in p["releases"] if r["version"] == lat), None)
+    date = rel["date"] if rel else (p["latest_stable"].get("date") if p.get("latest_stable") and p["latest_stable"]["version"] == lat else None)
+    nflag = sum(1 for r in p["releases"] if r["flagged"])
+    head = f"{name} {lat or '?'}" + (f", released {fmt_date(date)}" if date else "") + \
+        f"; {nflag} flagged release{'' if nflag == 1 else 's'} in the last {WINDOW_DAYS} days."
+    fr = next((r for r in ([rel] if rel and rel["flagged"] else []) + [r for r in p["releases"] if r["flagged"]]), None)
+    desc = head
+    if fr:
+        q = " ".join(fr["quotes"][0]["quote"].split())
+        room = 160 - len(head) - len(' Quote: "…"') - 1
+        if room >= 20:
+            frag = q if len(q) <= room else q[:room].rsplit(" ", 1)[0].rstrip(" ,;:.") + "…"
+            desc = f'{head} Quote: "{frag}"'
+    return title, desc
+
+
 def render_package(p: dict, model: dict) -> str:
     now = parse_dt(model["built"]) or utcnow()
     e = p.get("errata")
@@ -1040,18 +1081,22 @@ def render_package(p: dict, model: dict) -> str:
         body.append('<ul class="cards">' + render_cards(ordered, now, show_pkg_link=False, notes_top=True) + "</ul>")
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
-    body.append('<p class="note"><a href="/">← all packages</a></p>')
-    n = len(p["releases"])
-    desc = (f"{p['name']} ({p['ecosystem']}): recent releases and links to their original notes. "
-            "Flags mark wording matches, not confirmed breaking changes.")
+    sib = related_packages(p, model)
+    if sib:
+        body.append(f'<h2>Other {esc(p["ecosystem"])} packages tracked</h2><p class="pkg-index">' + " · ".join(
+            f'<a href="{esc(x["path"])}">{esc(x["name"])}</a>' for x in sib) + "</p>")
+    body.append('<p class="note"><a href="/">← Release Radar home: all tracked packages</a></p>')
+    title, desc = package_seo(p)
+    og_desc = (f"{p['name']} ({p['ecosystem']}): recent releases and links to their original notes. "
+               "Flags mark wording matches, not confirmed breaking changes.")
     ld = {"@type": ["WebPage", "Dataset"], "name": f"{p['name']} ({p['ecosystem']})", "description": desc,
           "url": SITE_BASE + p["path"], "dateModified": model["built"], "inLanguage": "en",
           "license": LICENSE_URL, "keywords": [p["name"], p["ecosystem"]],
           "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_BASE + "/"},
           "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                             "contentUrl": SITE_BASE + p["path"] + "index.json"}]}
-    return layout(f"{p['name']} ({p['ecosystem']}) — {SITE_NAME}", "\n".join(body), model["built"],
-                  description=desc, canonical=SITE_BASE + p["path"], jsonld=ld,
+    return layout(title, "\n".join(body), model["built"],
+                  description=desc, og_description=og_desc, canonical=SITE_BASE + p["path"], jsonld=ld,
                   extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(p["name"])} releases" href="{esc(p["path"])}feed.xml">\n')
 
 

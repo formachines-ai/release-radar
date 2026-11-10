@@ -1,11 +1,11 @@
 {
- "built": "2026-11-10T06:00:02Z",
+ "built": "2026-11-10T12:13:32Z",
  "counts": {
-  "flagged": 26,
+  "flagged": 25,
   "packages": 98,
-  "prereleases": 178,
-  "releases": 288,
-  "with_errata": 10
+  "prereleases": 176,
+  "releases": 283,
+  "with_errata": 9
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
@@ -5618,117 +5618,9 @@
    "variant_of": null,
    "version": "8.0.0-rc.30-dev.178",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-03T09:22:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/next/16.5.0-canary.38",
-   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/0e991c3d22/",
-   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.38",
-   "package": "next",
-   "page": "https://releases.formachines.ai/pkg/npm/next/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "16.5.0-canary.38",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-03T08:07:59Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261103.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.1.0-dev.20261103.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-03T07:17:49Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/axios/0.35.0",
-   "json": "https://releases.formachines.ai/pkg/npm/axios/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/83453911c7/",
-   "notes_url": "https://github.com/axios/axios/releases/tag/v0.35.0",
-   "package": "axios",
-   "page": "https://releases.formachines.ai/pkg/npm/axios/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "## ⚠️ Breaking Changes & Deprecations\n- **Parameter Depth Limit:** `params` nested deeper than 100 levels now reject with `ERR_BAD_OPTION_VALUE`. (**#11243**)"
-    },
-    {
-     "match": "removed",
-     "quote": "…ts, and the configured agent's `destroy()` also cleans up its direct pool. Cached direct pools stay selected after public proxy options are removed or replaced. (**#11243**)…"
-    },
-    {
-     "match": "no longer",
-     "quote": "…unwrapped, sparse arrays are preserved, and non-canonical numeric field names survive JSON serialization. Inherited read-only numeric slots no longer block conversion or multipart serialization. (**#11243**)…"
-    }
-   ],
-   "variant_of": null,
-   "version": "0.35.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-03T06:26:56Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@langchain/core/1.3.4",
-   "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/57044a6a21/",
-   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.4",
-   "package": "@langchain/core",
-   "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.3.4",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-03T06:23:11Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/langchain/1.6.1",
-   "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/f6fc69564f/",
-   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.1",
-   "package": "langchain",
-   "page": "https://releases.formachines.ai/pkg/npm/langchain/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.6.1",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-03T06:00:02Z"
+ "window_start": "2026-11-03T12:13:32Z"
 }

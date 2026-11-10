@@ -61,6 +61,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
   pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (that package's releases in the window; valid empty channel if none)
+  (package page <title>/meta description, T-0089: built only from the package's data — latest version, its date, flagged count, start of the first verbatim quote ≤160 chars; plus 4 same-ecosystem alphabetical-neighbour links and a link to /)
   today.json                every release in the window with quotes and links
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt
