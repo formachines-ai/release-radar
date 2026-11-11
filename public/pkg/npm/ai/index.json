@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,12 +8,50 @@
   "date": "2026-11-10T20:18:05Z",
   "version": "7.0.169"
  },
- "metadata_fetched": "2026-11-11T06:00:47Z",
+ "metadata_fetched": "2026-11-11T18:14:13Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/ai",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T06:19:12Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/6.0.330",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/59093d0a3d/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.330",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "6.0.330",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-11T06:15:28Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/5.0.289",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0ae1cd608e/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.289",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "5.0.289",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-10T20:18:05Z",
@@ -310,6 +348,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 15,
+ "stable_in_window": 17,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

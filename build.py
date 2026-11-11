@@ -65,6 +65,7 @@ HTTP_RETRIES = 2
 USER_AGENT = f"{SITE_NAME} ({SITE_BASE}; agent-team bot; responsible: owner@formachines.ai)"
 GITHUB_API = "https://api.github.com"
 GITHUB_RELEASES_PER_PAGE = 50
+CHANGELOG_RAW_URL = "https://raw.githubusercontent.com/{repo}/HEAD/CHANGELOG.md"
 GITHUB_MIN_REMAINING = 2   # stop calling GitHub when the remaining quota drops to this
 NOTES_MAX_CHARS = 60_000   # release body is cached up to this many characters
 QUOTE_MAX_CHARS = 280      # verbatim quote length cap (cut with an ellipsis, never rewritten)
@@ -246,6 +247,8 @@ class Http:
         self.github_remaining: int | None = None
         self.gh_problem: dict[str, str] = {}   # repo → "rate_limited" | "api_error" (last GitHub failure while reading it)
         self.github_reset: int | None = None
+        self.gh_list_ok: set[str] = set()      # repos whose releases list was read (HTTP 200) in this build
+        self.changelogs: dict[str, tuple[int, str]] = {}   # repo → (status, text) of CHANGELOG.md, once per build
         self.errors: list[str] = []
         self.requests = 0
 
@@ -502,6 +505,7 @@ def fetch_github_releases(http: Http, repo: str, no_github: bool) -> list[dict]:
         if status not in (0, 200):
             http.errors.append(f"github {repo}: HTTP {status}")
         return []
+    http.gh_list_ok.add(repo)
     rels = []
     for r in doc:
         if not isinstance(r, dict) or r.get("draft"):
@@ -693,6 +697,32 @@ def load_repo_overrides() -> dict[tuple[str, str], str]:
     return out
 
 
+def fetch_changelog(http: Http, repo: str) -> tuple[int, str]:
+    """CHANGELOG.md of a repo from raw.githubusercontent.com, once per build. Status 0 = fetch error.
+    Only used to test whether a version string is mentioned; the text is never quoted or stored."""
+    if repo not in http.changelogs:
+        n_err = len(http.errors)
+        status, body, _ = http.get(CHANGELOG_RAW_URL.format(repo=repo), accept_json=False)
+        del http.errors[n_err:]   # a failed optional fetch is not a build error: the card just keeps "not fetched"
+        text = body.decode("utf-8", "replace") if status == 200 else ""
+        http.changelogs[repo] = (status, text)
+    return http.changelogs[repo]
+
+
+def changelog_mentions(text: str, version: str) -> bool:
+    return re.search(r"(?<![0-9A-Za-z.])" + re.escape(version) + r"(?![0-9A-Za-z]|\.\d)", text, re.I) is not None
+
+
+def no_notes_anywhere(http: Http, repo: str | None, ver: str) -> bool:
+    """True only if the releases list was read, CHANGELOG.md answered 200/404 and neither mentions the version."""
+    if not repo or repo not in http.gh_list_ok or repo in http.gh_problem or http.offline:
+        return False
+    status, text = fetch_changelog(http, repo)
+    if status == 404:
+        return True
+    return status == 200 and not changelog_mentions(text, ver)
+
+
 def miss_reason(http: Http, repo: str | None, gh_releases: list[dict], no_github: bool) -> str:
     """Why a release has no GitHub release notes. One of MISS_REASONS."""
     if not repo:
@@ -756,6 +786,9 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             if not (gh and gh.get("url")):
                 missing.append({"eco": eco, "name": name, "version": ver,
                                 "reason": miss_reason(http, pkg["repo"], gh_releases, no_github)})
+            no_notes = False
+            if not (gh and gh.get("url")) and not no_github:
+                no_notes = no_notes_anywhere(http, pkg["repo"], ver)
             if gh and gh.get("url"):
                 notes_url = gh["url"]
                 notes_kind = "github_release"
@@ -773,7 +806,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "yanked": bool(v.get("yanked")) or bool(v.get("deprecated")),
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
                 "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
-                "flagged": bool(quotes), "quotes": quotes, "pkg_path": pkg["path"],
+                "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes, "pkg_path": pkg["path"],
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
             pkg["releases"].append(rel)
@@ -886,6 +919,9 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     bump = f'<span class="pre bump">{esc(r["bump"])}</span>'
     if r["flagged"]:
         honest = ""
+    elif r.get("no_notes"):
+        honest = (f'<p class="note nonote">No release notes found on GitHub Releases or in CHANGELOG.md for '
+                  f'{esc(r["version"])} (checked {now.strftime("%Y-%m-%d")} UTC)</p>')
     elif r["notes_kind"] != "github_release":
         honest = '<p class="note nonote">Release notes not fetched.</p>'
     else:
@@ -941,6 +977,12 @@ def render_index(model: dict, errata_count: int) -> str:
         f'<li><b>{len(model["packages"])}</b><span>packages tracked</span></li>'
         f'</ul>'
     )
+    nonotes = [r for r in rels if r.get("no_notes")]
+    nn_items = "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in nonotes)
+    nonotes_block = (f'<h2 id="no-notes">Versions without release notes ({len(nonotes)})</h2>'
+                     f'<p class="note">Releases of the last {WINDOW_DAYS} days with no matching GitHub release and no mention in the repository CHANGELOG.md '
+                     f'(checked {now.strftime("%Y-%m-%d")} UTC). {len(nonotes)} shown.</p>'
+                     + (f'<ul class="nonotes">{nn_items}</ul>' if nonotes else ''))
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
     flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
@@ -950,6 +992,7 @@ def render_index(model: dict, errata_count: int) -> str:
             'and no flag does not mean a safe update.</p>',
             '<p class="follow"><b>Follow:</b> <a href="/feed.xml">RSS (/feed.xml)</a> · <a href="/feed-breaking.xml">Breaking-only RSS (/feed-breaking.xml)</a> · <a href="/ci-check.txt">CI check (/ci-check.txt)</a> · <a href="https://t.me/relesae_radar" rel="nofollow">Telegram (https://t.me/relesae_radar)</a></p>',
             "\n".join(flagged_block),
+            nonotes_block,
             stats,
             f'<p class="toc"><a href="#recent">Last {recent_hours} h</a><a href="#flagged">Flagged</a><a href="#pypi">PyPI, {WINDOW_DAYS} days</a><a href="#npm">npm, {WINDOW_DAYS} days</a><a href="#packages">All packages</a></p>']
     idx = [f'<details id="pkg-index"><summary>Find your package ({len(model["packages"])})</summary>']

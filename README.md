@@ -143,6 +143,7 @@ Pre-releases are `prerelease`; no previous version or a non-numeric version is `
 Cards show the bump; flagged minor/patch releases get "Breaking keyword in a minor release" / "Breaking keyword in a patch release" (text from the `bump` field only; none for major, unknown or unflagged). Unflagged cards say
 "No breaking keyword found in the release notes (checked <build date> UTC); notes can omit changes.", or
 "Release notes not fetched." when `notes_kind != github_release`. Labels are a version comparison plus the regex only.
+Card label (T-0111): when the repo's releases list was read (HTTP 200) and `raw.githubusercontent.com/<repo>/HEAD/CHANGELOG.md` (fetched once per repo per build) answered 200/404 without mentioning the version, the card says "No release notes found on GitHub Releases or in CHANGELOG.md for <version> (checked <date> UTC)" and the home page lists these in "Versions without release notes"; any fetch error keeps "Release notes not fetched". CHANGELOG text is never quoted.
 
 ## Breaking-change regex
 

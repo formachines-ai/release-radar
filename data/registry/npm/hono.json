@@ -1,19 +1,24 @@
 {
  "changelog": null,
  "dist_tags": {
-  "latest": "4.13.17",
+  "latest": "4.13.18",
   "next": "5.0.0-rc.1",
   "v4": "4.0.0-rc.4"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T06:01:06Z",
+ "fetched": "2026-11-11T18:14:34Z",
  "homepage": "https://hono.dev",
- "latest": "4.13.17",
+ "latest": "4.13.18",
  "name": "hono",
  "page": "https://www.npmjs.com/package/hono",
  "repo": "honojs/hono",
  "summary": "Web framework built on Web Standards",
  "versions": [
+  {
+   "date": "2026-11-11T08:54:02Z",
+   "deprecated": false,
+   "version": "4.13.18"
+  },
   {
    "date": "2026-11-07T04:56:44Z",
    "deprecated": false,
@@ -98,11 +103,6 @@
    "date": "2026-08-18T10:56:09Z",
    "deprecated": false,
    "version": "4.13.3"
-  },
-  {
-   "date": "2026-08-13T11:55:37Z",
-   "deprecated": false,
-   "version": "4.13.2"
   }
  ]
 }

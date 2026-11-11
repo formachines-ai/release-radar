@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-11T00:53:12Z",
   "version": "1.109.0"
  },
- "metadata_fetched": "2026-11-11T06:00:05Z",
+ "metadata_fetched": "2026-11-11T18:13:30Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 4,
@@ -50,15 +50,15 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "* fix(proxy): unset DB environment variables removed from the row on every worker by row revision by @mateo-berri in https://github.com/BerriAI/litellm/pull/46709"
+     "quote": "982 PRs. 144 added, 424 fixed, 60 changed, 17 improved, 9 removed. 5 need action"
+    },
+    {
+     "match": "removed",
+     "quote": "- **Caching:** Switch `cache_params.type` from `disk` to `local` or `redis`, since the `disk` cache backend (diskcache) has been removed (#48114)"
     },
     {
      "match": "deprecation",
-     "quote": "* fix(model_prices): registry audit 2026-10-17, Perplexity decider v1.2 rows, Azure Mistral and Vertex Gemini deprecation dates by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/47114"
-    },
-    {
-     "match": "deprecation",
-     "quote": "* chore(pricing): add github_copilot/claude-opus-4.8 deprecation date by @berriai-litellm-provider-info-sync[bot] in https://github.com/BerriAI/litellm/pull/47370"
+     "quote": "- Added a 2026-06-30 deprecation date to `vertex_ai/veo-2.0-generate-001` (#47847)"
     }
    ],
    "variant_of": null,

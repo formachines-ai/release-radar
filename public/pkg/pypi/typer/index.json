@@ -1,25 +1,44 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "0.29.0",
+ "latest": "0.29.1",
  "latest_stable": {
-  "date": "2026-11-09T18:48:11Z",
-  "version": "0.29.0"
+  "date": "2026-11-11T09:18:38Z",
+  "version": "0.29.1"
  },
- "metadata_fetched": "2026-11-11T06:00:28Z",
+ "metadata_fetched": "2026-11-11T18:13:52Z",
  "package": "typer",
  "page": "https://releases.formachines.ai/pkg/pypi/typer/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/typer/",
  "releases": [
   {
+   "bump": "patch",
+   "date": "2026-11-11T09:18:38Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/typer/0.29.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/typer/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5924f9b49c/",
+   "notes_url": "https://github.com/fastapi/typer/releases/tag/0.29.1",
+   "package": "typer",
+   "page": "https://releases.formachines.ai/pkg/pypi/typer/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.29.1",
+   "yanked_or_deprecated": false
+  },
+  {
    "bump": "minor",
    "date": "2026-11-09T18:48:11Z",
    "ecosystem": "pypi",
    "errata_url": null,
-   "flagged": false,
+   "flagged": true,
    "id": "pypi/typer/0.29.0",
    "json": "https://releases.formachines.ai/pkg/pypi/typer/index.json",
    "notes_kind": "github_release",
@@ -28,7 +47,16 @@
    "package": "typer",
    "page": "https://releases.formachines.ai/pkg/pypi/typer/",
    "prerelease": false,
-   "quotes": [],
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "* `click_type` has been removed from `typer.Option()` and `typer.Argument()`. New ways to provide custom types will be provided with Pydantic, with much more flexibility."
+    },
+    {
+     "match": "no longer",
+     "quote": "* Callback parameter objects no longer expose Click's `.type`, `.make_metavar()`, `.human_readable_name`, or `.type_cast_value()`. Custom integrations using these need updating."
+    }
+   ],
    "variant_of": null,
    "version": "0.29.0",
    "yanked_or_deprecated": false
@@ -54,6 +82,6 @@
   }
  ],
  "repository": "https://github.com/fastapi/typer",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints."
 }

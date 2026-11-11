@@ -7,7 +7,7 @@
   "three": "3.29.5"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T06:01:05Z",
+ "fetched": "2026-11-11T18:14:32Z",
  "homepage": "https://fastify.dev/",
  "latest": "5.12.8",
  "name": "fastify",
@@ -79,16 +79,6 @@
    "date": "2026-08-18T19:51:15Z",
    "deprecated": false,
    "version": "5.12.1"
-  },
-  {
-   "date": "2026-08-13T15:59:58Z",
-   "deprecated": false,
-   "version": "5.12.0"
-  },
-  {
-   "date": "2026-08-13T15:59:55Z",
-   "deprecated": false,
-   "version": "6.0.0-alpha.1"
   }
  ]
 }

@@ -169,8 +169,208 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.166"
   }
  },
- "fetched": "2026-11-11T06:00:29Z",
+ "fetched": "2026-11-11T18:13:53Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- 1b19ee5: Fix excessive CPU usage when streaming long arrays with `Output.array` or `streamObject`. Parse and validate completed elements incrementally instead of repeatedly processing the entire accumulated array on every text chunk.",
+   "date": "2026-11-11T06:16:25Z",
+   "name": "ai@6.0.330",
+   "prerelease": false,
+   "tag": "ai@6.0.330",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.330"
+  },
+  {
+   "body": "### Patch Changes\n\n- bdbf015: Fix excessive CPU usage when streaming long arrays with `streamObject` array output. Parse and validate completed elements incrementally instead of repeatedly processing the entire accumulated array on every text chunk.\n- Updated dependencies [71955f0]\n- Updated dependencies [7d50c2f]\n  - @ai-sdk/gateway@2.0.180",
+   "date": "2026-11-11T06:14:35Z",
+   "name": "ai@5.0.289",
+   "prerelease": false,
+   "tag": "ai@5.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:58Z",
+   "name": "@ai-sdk/vue@3.0.330",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@3.0.330",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%403.0.330"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:15:11Z",
+   "name": "@ai-sdk/vue@2.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/vue@2.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vue%402.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:55Z",
+   "name": "@ai-sdk/svelte@4.0.330",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@4.0.330",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%404.0.330"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:15:08Z",
+   "name": "@ai-sdk/svelte@3.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/svelte@3.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%403.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:52Z",
+   "name": "@ai-sdk/rsc@2.0.330",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@2.0.330",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%402.0.330"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:15:05Z",
+   "name": "@ai-sdk/rsc@1.0.291",
+   "prerelease": false,
+   "tag": "@ai-sdk/rsc@1.0.291",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/rsc%401.0.291"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:49Z",
+   "name": "@ai-sdk/react@3.0.333",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@3.0.333",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%403.0.333"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:15:02Z",
+   "name": "@ai-sdk/react@2.0.292",
+   "prerelease": false,
+   "tag": "@ai-sdk/react@2.0.292",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/react%402.0.292"
+  },
+  {
+   "body": "### Patch Changes\n\n- cbfe771: Support positioned Responses API format updates so changing structured output schemas can preserve earlier reasoning and prompt cache reuse. Add a stable request-level text format override and expose prompt cache comparison diagnostics for generation and streaming results.",
+   "date": "2026-11-11T06:16:46Z",
+   "name": "@ai-sdk/openai@3.0.141",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@3.0.141",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.141"
+  },
+  {
+   "body": "### Patch Changes\n\n- 3f019a6: Support positioned Responses API format updates so changing structured output schemas can preserve earlier reasoning and prompt cache reuse. Add a stable request-level text format override and expose prompt cache comparison diagnostics for generation and streaming results.",
+   "date": "2026-11-11T06:14:59Z",
+   "name": "@ai-sdk/openai@2.0.143",
+   "prerelease": false,
+   "tag": "@ai-sdk/openai@2.0.143",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.143"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:43Z",
+   "name": "@ai-sdk/llamaindex@2.0.330",
+   "prerelease": false,
+   "tag": "@ai-sdk/llamaindex@2.0.330",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/llamaindex%402.0.330"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:14:56Z",
+   "name": "@ai-sdk/llamaindex@1.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/llamaindex@1.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/llamaindex%401.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:40Z",
+   "name": "@ai-sdk/langchain@2.0.338",
+   "prerelease": false,
+   "tag": "@ai-sdk/langchain@2.0.338",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/langchain%402.0.338"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:14:53Z",
+   "name": "@ai-sdk/langchain@1.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/langchain@1.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/langchain%401.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- 71955f0: Add support for the `gemini-4-carbon` model with the same capabilities as `gemini-4-argon`.",
+   "date": "2026-11-11T06:14:47Z",
+   "name": "@ai-sdk/google@2.0.111",
+   "prerelease": false,
+   "tag": "@ai-sdk/google@2.0.111",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/google%402.0.111"
+  },
+  {
+   "body": "### Patch Changes\n\n- 3ea9b26: Reject invalid Cloud Speech transcription regions and default locations before resolving credentials or sending requests, preventing URL delimiters from redirecting bearer tokens and audio to another host.",
+   "date": "2026-11-11T06:16:37Z",
+   "name": "@ai-sdk/google-vertex@4.0.232",
+   "prerelease": false,
+   "tag": "@ai-sdk/google-vertex@4.0.232",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/google-vertex%404.0.232"
+  },
+  {
+   "body": "### Patch Changes\n\n- 71955f0: Add support for the `gemini-4-carbon` model with the same capabilities as `gemini-4-argon`.\n- Updated dependencies [71955f0]\n  - @ai-sdk/google@2.0.111",
+   "date": "2026-11-11T06:14:50Z",
+   "name": "@ai-sdk/google-vertex@3.0.191",
+   "prerelease": false,
+   "tag": "@ai-sdk/google-vertex@3.0.191",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/google-vertex%403.0.191"
+  },
+  {
+   "body": "### Patch Changes\n\n- 71955f0: Add support for the `gemini-4-carbon` model with the same capabilities as `gemini-4-argon`.\n- 7d50c2f: Backport: chore(provider/gateway): update gateway model settings files",
+   "date": "2026-11-11T06:14:44Z",
+   "name": "@ai-sdk/gateway@2.0.180",
+   "prerelease": false,
+   "tag": "@ai-sdk/gateway@2.0.180",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/gateway%402.0.180"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [cbfe771]\n  - @ai-sdk/openai@3.0.141",
+   "date": "2026-11-11T06:16:34Z",
+   "name": "@ai-sdk/azure@3.0.152",
+   "prerelease": false,
+   "tag": "@ai-sdk/azure@3.0.152",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/azure%403.0.152"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [3f019a6]\n  - @ai-sdk/openai@2.0.143",
+   "date": "2026-11-11T06:14:41Z",
+   "name": "@ai-sdk/azure@2.0.150",
+   "prerelease": false,
+   "tag": "@ai-sdk/azure@2.0.150",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/azure%402.0.150"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [1b19ee5]\n  - ai@6.0.330",
+   "date": "2026-11-11T06:16:31Z",
+   "name": "@ai-sdk/angular@2.0.331",
+   "prerelease": false,
+   "tag": "@ai-sdk/angular@2.0.331",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/angular%402.0.331"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [bdbf015]\n  - ai@5.0.289",
+   "date": "2026-11-11T06:14:38Z",
+   "name": "@ai-sdk/angular@1.0.289",
+   "prerelease": false,
+   "tag": "@ai-sdk/angular@1.0.289",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/angular%401.0.289"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [cbfe771]\n  - @ai-sdk/openai@3.0.141",
+   "date": "2026-11-11T06:16:28Z",
+   "name": "@ai-sdk/amazon-bedrock@4.0.214",
+   "prerelease": false,
+   "tag": "@ai-sdk/amazon-bedrock@4.0.214",
+   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/amazon-bedrock%404.0.214"
+  },
   {
    "body": "### Patch Changes\n\n- 4311fa1: Use Zod Mini for internal validation schemas to reduce bundle size while preserving the public message schemas' classic Zod methods, error messages, and compatibility with supported Zod 3 and Zod 4 versions.\n- d9dd2b7: keep the request options when the useChat queue sends a tool approval first, and hold the queue while an async sendAutomaticallyWhen decides\n- Updated dependencies [4311fa1]\n- Updated dependencies [c160b74]\n- Updated dependencies [4311fa1]\n- Updated dependencies [838dd53]\n  - @ai-sdk/provider-utils@5.0.79\n  - @ai-sdk/gateway@4.0.142",
    "date": "2026-11-10T20:17:26Z",
@@ -370,206 +570,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/voyage@1.0.43",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/voyage%401.0.43"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88bb257]\n  - @ai-sdk/provider-utils@4.0.66\n  - @ai-sdk/openai-compatible@2.0.93",
-   "date": "2026-11-10T17:48:15Z",
-   "name": "@ai-sdk/vercel@2.0.95",
-   "prerelease": false,
-   "tag": "@ai-sdk/vercel@2.0.95",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vercel%402.0.95"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [c31e0a2]\n  - @ai-sdk/provider-utils@3.0.46\n  - @ai-sdk/openai-compatible@1.0.63",
-   "date": "2026-11-10T17:42:03Z",
-   "name": "@ai-sdk/vercel@1.0.64",
-   "prerelease": false,
-   "tag": "@ai-sdk/vercel@1.0.64",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/vercel%401.0.64"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n  - @ai-sdk/provider-utils@5.0.79",
-   "date": "2026-11-10T20:21:14Z",
-   "name": "@ai-sdk/valibot@3.0.79",
-   "prerelease": false,
-   "tag": "@ai-sdk/valibot@3.0.79",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%403.0.79"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78",
-   "date": "2026-11-10T17:52:47Z",
-   "name": "@ai-sdk/valibot@3.0.78",
-   "prerelease": false,
-   "tag": "@ai-sdk/valibot@3.0.78",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%403.0.78"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88bb257]\n  - @ai-sdk/provider-utils@4.0.66",
-   "date": "2026-11-10T17:48:12Z",
-   "name": "@ai-sdk/valibot@2.0.67",
-   "prerelease": false,
-   "tag": "@ai-sdk/valibot@2.0.67",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%402.0.67"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [c31e0a2]\n  - @ai-sdk/provider-utils@3.0.46",
-   "date": "2026-11-10T17:42:00Z",
-   "name": "@ai-sdk/valibot@1.0.46",
-   "prerelease": false,
-   "tag": "@ai-sdk/valibot@1.0.46",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/valibot%401.0.46"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n  - @ai-sdk/provider-utils@5.0.79",
-   "date": "2026-11-10T20:21:11Z",
-   "name": "@ai-sdk/typesafe-ai@3.0.38",
-   "prerelease": false,
-   "tag": "@ai-sdk/typesafe-ai@3.0.38",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/typesafe-ai%403.0.38"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78",
-   "date": "2026-11-10T17:52:45Z",
-   "name": "@ai-sdk/typesafe-ai@3.0.37",
-   "prerelease": false,
-   "tag": "@ai-sdk/typesafe-ai@3.0.37",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/typesafe-ai%403.0.37"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [d9dd2b7]\n  - ai@7.0.169",
-   "date": "2026-11-10T20:21:08Z",
-   "name": "@ai-sdk/tui@1.0.170",
-   "prerelease": false,
-   "tag": "@ai-sdk/tui@1.0.170",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.170"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [65aa669]\n- Updated dependencies [8585d7e]\n  - ai@7.0.168",
-   "date": "2026-11-10T17:52:42Z",
-   "name": "@ai-sdk/tui@1.0.169",
-   "prerelease": false,
-   "tag": "@ai-sdk/tui@1.0.169",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tui%401.0.169"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n  - @ai-sdk/provider-utils@5.0.79",
-   "date": "2026-11-10T20:21:05Z",
-   "name": "@ai-sdk/topaz@3.0.26",
-   "prerelease": false,
-   "tag": "@ai-sdk/topaz@3.0.26",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/topaz%403.0.26"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78",
-   "date": "2026-11-10T17:52:38Z",
-   "name": "@ai-sdk/topaz@3.0.25",
-   "prerelease": false,
-   "tag": "@ai-sdk/topaz@3.0.25",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/topaz%403.0.25"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88bb257]\n  - @ai-sdk/provider-utils@4.0.66",
-   "date": "2026-11-10T17:48:09Z",
-   "name": "@ai-sdk/topaz@2.0.9",
-   "prerelease": false,
-   "tag": "@ai-sdk/topaz@2.0.9",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/topaz%402.0.9"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n- Updated dependencies [d9dd2b7]\n  - @ai-sdk/provider-utils@5.0.79\n  - ai@7.0.169",
-   "date": "2026-11-10T20:21:02Z",
-   "name": "@ai-sdk/tool-web-fetch@1.0.19",
-   "prerelease": false,
-   "tag": "@ai-sdk/tool-web-fetch@1.0.19",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-web-fetch%401.0.19"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [65aa669]\n- Updated dependencies [8585d7e]\n- Updated dependencies [88b9575]\n  - ai@7.0.168\n  - @ai-sdk/provider-utils@5.0.78",
-   "date": "2026-11-10T17:52:35Z",
-   "name": "@ai-sdk/tool-web-fetch@1.0.18",
-   "prerelease": false,
-   "tag": "@ai-sdk/tool-web-fetch@1.0.18",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-web-fetch%401.0.18"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [d9dd2b7]\n  - ai@7.0.169",
-   "date": "2026-11-10T20:20:59Z",
-   "name": "@ai-sdk/tool-bash@1.0.23",
-   "prerelease": false,
-   "tag": "@ai-sdk/tool-bash@1.0.23",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-bash%401.0.23"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [65aa669]\n- Updated dependencies [8585d7e]\n  - ai@7.0.168",
-   "date": "2026-11-10T17:52:32Z",
-   "name": "@ai-sdk/tool-bash@1.0.22",
-   "prerelease": false,
-   "tag": "@ai-sdk/tool-bash@1.0.22",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tool-bash%401.0.22"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n  - @ai-sdk/provider-utils@5.0.79\n  - @ai-sdk/openai-compatible@3.0.90",
-   "date": "2026-11-10T20:20:56Z",
-   "name": "@ai-sdk/togetherai@3.0.91",
-   "prerelease": false,
-   "tag": "@ai-sdk/togetherai@3.0.91",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%403.0.91"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78\n  - @ai-sdk/openai-compatible@3.0.89",
-   "date": "2026-11-10T17:52:29Z",
-   "name": "@ai-sdk/togetherai@3.0.90",
-   "prerelease": false,
-   "tag": "@ai-sdk/togetherai@3.0.90",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%403.0.90"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [88bb257]\n  - @ai-sdk/provider-utils@4.0.66\n  - @ai-sdk/openai-compatible@2.0.93",
-   "date": "2026-11-10T17:48:06Z",
-   "name": "@ai-sdk/togetherai@2.0.99",
-   "prerelease": false,
-   "tag": "@ai-sdk/togetherai@2.0.99",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%402.0.99"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [c31e0a2]\n  - @ai-sdk/provider-utils@3.0.46\n  - @ai-sdk/openai-compatible@1.0.63",
-   "date": "2026-11-10T17:41:57Z",
-   "name": "@ai-sdk/togetherai@1.0.67",
-   "prerelease": false,
-   "tag": "@ai-sdk/togetherai@1.0.67",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/togetherai%401.0.67"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n  - @ai-sdk/provider-utils@5.0.79\n  - @ai-sdk/openai-compatible@3.0.90",
-   "date": "2026-11-10T20:20:53Z",
-   "name": "@ai-sdk/tencent@3.0.1",
-   "prerelease": false,
-   "tag": "@ai-sdk/tencent@3.0.1",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tencent%403.0.1"
-  },
-  {
-   "body": "### Major Changes\n\n- 1c7a311: feat(tencent): add Tencent Cloud provider with TokenHub language models and TokenHub Kling and VOD AIGC video models\n\n### Patch Changes\n\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78\n  - @ai-sdk/openai-compatible@3.0.89",
-   "date": "2026-11-10T17:52:26Z",
-   "name": "@ai-sdk/tencent@3.0.0",
-   "prerelease": false,
-   "tag": "@ai-sdk/tencent@3.0.0",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tencent%403.0.0"
-  },
-  {
-   "body": "### Major Changes\n\n- 09c3500: feat(tencent): add Tencent Cloud provider with TokenHub language models and TokenHub Kling and VOD AIGC video models",
-   "date": "2026-11-10T20:12:36Z",
-   "name": "@ai-sdk/tencent@2.0.0",
-   "prerelease": false,
-   "tag": "@ai-sdk/tencent@2.0.0",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/tencent%402.0.0"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [4311fa1]\n- Updated dependencies [4311fa1]\n- Updated dependencies [d9dd2b7]\n  - @ai-sdk/provider-utils@5.0.79\n  - ai@7.0.169",
-   "date": "2026-11-10T20:20:50Z",
-   "name": "@ai-sdk/svelte@5.0.169",
-   "prerelease": false,
-   "tag": "@ai-sdk/svelte@5.0.169",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/svelte%405.0.169"
   }
  ],
  "repo": "vercel/ai"
