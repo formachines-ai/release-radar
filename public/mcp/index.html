@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MCP server: what was flagged in package X — Release Radar</title>
+<meta name="description" content="Stdlib MCP server for coding agents over releases.formachines.ai JSON: flagged releases with verbatim quotes.">
+<meta property="og:title" content="MCP server: what was flagged in package X — Release Radar">
+<meta property="og:description" content="Stdlib MCP server for coding agents over releases.formachines.ai JSON: flagged releases with verbatim quotes.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MCP server: what was flagged in package X — Release Radar">
+<meta name="twitter:description" content="Stdlib MCP server for coding agents over releases.formachines.ai JSON: flagged releases with verbatim quotes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://releases.formachines.ai/mcp/">
+<meta property="og:site_name" content="Release Radar">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebPage",
+ "name": "MCP server: what was flagged in package X \u2014 Release Radar",
+ "description": "Stdlib MCP server for coding agents over releases.formachines.ai JSON: flagged releases with verbatim quotes.",
+ "inLanguage": "en",
+ "url": "https://releases.formachines.ai/mcp/"
+}
+</script>
+<meta name="generator" content="Release Radar build.py (agent-team)">
+<link rel="canonical" href="https://releases.formachines.ai/mcp/">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/brand/avatar.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="Release Radar RSS" href="/feed.xml">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="brand" href="/">Release Radar</a>
+<nav><a href="/#pkg-index">jump to package index</a><a href="/#pypi">PyPI</a><a href="/#npm">npm</a><a href="/#packages">Packages</a><a href="/feed.xml">RSS</a><a href="/today.json">today.json</a><a href="/llms.txt">llms.txt</a><a href="/legal/">Legal</a></nav>
+</div></header>
+<main><div class="wrap">
+<h1>MCP server for coding agents</h1><p class="lead">Ask your coding agent what was flagged in a package before it writes code against a new major. A stdio MCP server in one Python file (standard library only) that reads only our public JSON: <a href="/today.json">/today.json</a> and <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code>. It returns the fields as they are in the JSON — version, date, flag, verbatim quotes, notes link, Errata link — with no model-written text. A flag is a regex match, not a judgement.</p><h2>Tools</h2><ul><li><code>get_package_releases(ecosystem, name)</code> — the package's releases in the 7-day window.</li><li><code>list_flagged(days≤7, ecosystem?)</code> — flagged releases of the last days.</li></ul><h2>Source</h2><p><a href="https://releases.formachines.ai/mcp/release_radar_mcp.py">https://releases.formachines.ai/mcp/release_radar_mcp.py</a> (<a href="/mcp/release_radar_mcp.py.txt">readable text copy</a>, <a href="/mcp/README.md">README</a>). Download it and save it anywhere; nothing is installed.</p><h2>Claude Code</h2><pre><code>curl -sO https://releases.formachines.ai/mcp/release_radar_mcp.py
+claude mcp add release-radar -- python3 release_radar_mcp.py</code></pre><h2>Cursor (<code>.cursor/mcp.json</code>)</h2><pre><code>{&quot;mcpServers&quot;: {&quot;release-radar&quot;: {&quot;command&quot;: &quot;python3&quot;, &quot;args&quot;: [&quot;/path/to/release_radar_mcp.py&quot;]}}}</code></pre><p>Only GET requests to this site are made. Not published to npm or any registry.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p>Built by AI agents (agent-team) without human editing · responsible: <a href="https://formachines.ai/">Dmitry, formachines.ai</a> · updated 2026-11-11T14:13:17Z UTC</p>
+<p class="build">build 2026-11-11T14:13:17Z UTC · 6fa3710</p>
+<p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · <a href="/mcp/">MCP</a> · no cookies, no tracking, no JavaScript.</p>
+</div></footer>
+</body>
+</html>

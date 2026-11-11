@@ -831,7 +831,7 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 <footer class="site"><div class="wrap">
 <p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p>
 <p class="build">{build_line(built)}</p>
-<p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="{esc(LICENSE_URL)}">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · no cookies, no tracking, no JavaScript.</p>
+<p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="{esc(LICENSE_URL)}">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · <a href="/mcp/">MCP</a> · no cookies, no tracking, no JavaScript.</p>
 </div></footer>
 </body>
 </html>
@@ -1136,6 +1136,27 @@ def render_404(built: str) -> str:
     return layout(f"404 — {SITE_NAME}", body, built, noindex=True)
 
 
+def render_mcp(built: str) -> str:
+    src = f"{SITE_BASE}/mcp/release_radar_mcp.py"
+    cc = f"claude mcp add release-radar -- python3 release_radar_mcp.py"
+    cur = '{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release_radar_mcp.py"]}}}'
+    body = (f"<h1>MCP server for coding agents</h1>"
+            f"<p class=\"lead\">Ask your coding agent what was flagged in a package before it writes code against a new major. "
+            f"A stdio MCP server in one Python file (standard library only) that reads only our public JSON: "
+            f"<a href=\"/today.json\">/today.json</a> and <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code>. "
+            f"It returns the fields as they are in the JSON — version, date, flag, verbatim quotes, notes link, Errata link — with no model-written text. A flag is a regex match, not a judgement.</p>"
+            f"<h2>Tools</h2><ul><li><code>get_package_releases(ecosystem, name)</code> — the package's releases in the 7-day window.</li>"
+            f"<li><code>list_flagged(days≤7, ecosystem?)</code> — flagged releases of the last days.</li></ul>"
+            f"<h2>Source</h2><p><a href=\"{src}\">{src}</a> (<a href=\"/mcp/release_radar_mcp.py.txt\">readable text copy</a>, "
+            f"<a href=\"/mcp/README.md\">README</a>). Download it and save it anywhere; nothing is installed.</p>"
+            f"<h2>Claude Code</h2><pre><code>curl -sO {src}\n{esc(cc)}</code></pre>"
+            f"<h2>Cursor (<code>.cursor/mcp.json</code>)</h2><pre><code>{esc(cur)}</code></pre>"
+            f"<p>Only GET requests to this site are made. Not published to npm or any registry.</p>")
+    return layout(f"MCP server: what was flagged in package X — {SITE_NAME}", body, built,
+                  description="Stdlib MCP server for coding agents over releases.formachines.ai JSON: flagged releases with verbatim quotes.",
+                  canonical=f"{SITE_BASE}/mcp/")
+
+
 def render_brand(built: str) -> str:
     def img(src: str, px: int) -> str:
         return f'<img src="{src}" width="{px}" height="{px}" alt="" style="border-radius:50%;vertical-align:middle;margin-right:.6rem">'
@@ -1276,6 +1297,7 @@ def render_llms(model: dict) -> str:
              f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)",
              "", "## Pages", "",
              f"- [Front page]({SITE_BASE}/): last 24 h, flagged releases, PyPI and npm lists, all packages",
+             f"- [MCP server]({SITE_BASE}/mcp/): stdio MCP wrapper (Python stdlib, source {SITE_BASE}/mcp/release_radar_mcp.py) with tools get_package_releases and list_flagged over today.json and /pkg/*/index.json",
              f"- [Legal]({SITE_BASE}/legal/)",
              "", "## Packages", ""]
     for p in model["packages"]:
@@ -1348,6 +1370,9 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
         shutil.copyfile(f, PUBLIC_DIR / "brand" / f.name)
     shutil.copyfile(STATIC_DIR / "ci-check.py", PUBLIC_DIR / "ci-check.py")
     shutil.copyfile(STATIC_DIR / "ci-check.py", PUBLIC_DIR / "ci-check.txt")  # same bytes; nginx serves .py as octet-stream
+    write_text(PUBLIC_DIR / "mcp" / "index.html", render_mcp(built))
+    for n, t in (("release_radar_mcp.py", "release_radar_mcp.py"), ("release_radar_mcp.py", "release_radar_mcp.py.txt"), ("README.md", "README.md")):
+        shutil.copyfile(Path(__file__).parent / "mcp" / n, PUBLIC_DIR / "mcp" / t)
     write_text(PUBLIC_DIR / "robots.txt", ROBOTS_TXT.replace("__SITE__", SITE_BASE))
     write_text(PUBLIC_DIR / "llms.txt", render_llms(model))
     write_text(PUBLIC_DIR / "feed.xml", render_feed(model))

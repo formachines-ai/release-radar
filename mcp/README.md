@@ -60,3 +60,18 @@ python3 mcp/test_conformance.py   # full stdio session against the live site (ne
   only if we add resources/prompts, structured output, streamable HTTP or auth, or if a real client reports an incompatibility;
   for an npm package the official TypeScript SDK would be the natural choice then, at the cost of a dependency and a rewrite.
   Before publishing, do one manual check with real Claude Code (`claude mcp add …`, call each tool).
+
+## Single-file server (T-0106): `release_radar_mcp.py`
+
+`release_radar_mcp.py` is the standalone stdio server published at
+<https://releases.formachines.ai/mcp/release_radar_mcp.py>. Stdlib only; reads only `releases.formachines.ai` JSON.
+
+| Tool | Arguments | Returns |
+|---|---|---|
+| `get_package_releases` | `ecosystem` (`pypi`/`npm`), `name` | the package's releases from `/pkg/<eco>/<name>/index.json`: version, date, flag, verbatim quotes, notes link, Errata link |
+| `list_flagged` | `days` (1–7, default 7), `ecosystem?` | flagged releases from `/today.json` of the last `days` days, same fields |
+
+Claude Code: `claude mcp add release-radar -- python3 /path/to/release_radar_mcp.py`
+Cursor (`.cursor/mcp.json`): `{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release_radar_mcp.py"]}}}`
+
+Test: `python3 -m unittest mcp/test_release_radar_mcp.py` (fixtures, no network).
