@@ -1,19 +1,146 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.108.4",
+ "latest": "1.109.0",
  "latest_stable": {
-  "date": "2026-11-09T22:56:38Z",
-  "version": "1.108.4"
+  "date": "2026-11-11T00:53:12Z",
+  "version": "1.109.0"
  },
- "metadata_fetched": "2026-11-10T06:00:05Z",
+ "metadata_fetched": "2026-11-11T06:00:05Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 4,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T03:18:23Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.106.8",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d23854f5c4/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.106.8",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.106.8",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "minor",
+   "date": "2026-11-11T00:53:12Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/litellm/1.109.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7f331045a0/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.109.0",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "* fix(proxy): unset DB environment variables removed from the row on every worker by row revision by @mateo-berri in https://github.com/BerriAI/litellm/pull/46709"
+    },
+    {
+     "match": "deprecation",
+     "quote": "* fix(model_prices): registry audit 2026-10-17, Perplexity decider v1.2 rows, Azure Mistral and Vertex Gemini deprecation dates by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/47114"
+    },
+    {
+     "match": "deprecation",
+     "quote": "* chore(pricing): add github_copilot/claude-opus-4.8 deprecation date by @berriai-litellm-provider-info-sync[bot] in https://github.com/BerriAI/litellm/pull/47370"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.109.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "prerelease",
+   "date": "2026-11-11T00:02:39Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.110.0rc1",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/34cb990f49/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-rc.1",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.110.0rc1",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-10T22:47:45Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.108.5",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/78845ddb42/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.5",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.108.5",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-10T20:24:16Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.104.9",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/2c89bb9455/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.104.9",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.104.9",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-10T20:20:12Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.103.11",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/274039aff7/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.103.11",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.103.11",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-09T22:56:38Z",
@@ -159,89 +286,9 @@
    "variant_of": null,
    "version": "1.107.0rc3",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-04T04:16:49Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/litellm/1.106.7",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/be9944a258/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.106.7",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "We are readjusting how beta features work alongside LiteLLM, our core product. Starting with 1.106.7, the Lens beta is no longer packaged with the proxy or its Helm charts. If you use Lens today, v1.106.6 keeps working as it does now"
-    }
-   ],
-   "variant_of": null,
-   "version": "1.106.7",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-04T03:31:18Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/litellm/1.108.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4ea9315215/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.0",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "* test(e2e): unskip four tests whose blockers no longer hold by @yuneng-berri in https://github.com/BerriAI/litellm/pull/38640"
-    },
-    {
-     "match": "deprecation",
-     "quote": "* fix(models): registry audit: new Together/Fireworks/Gemini/Mistral/xAI models, xai retirement repricing, bedrock grok-4.6 caching, deprecation dates by @mateo-berri in https://github.com/BerriAI/litellm/pull/38804"
-    },
-    {
-     "match": "deprecation",
-     "quote": "* fix: update stale source URLs and deprecation dates in model cost map by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/38801"
-    }
-   ],
-   "variant_of": null,
-   "version": "1.108.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-04T02:13:21Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/litellm/1.109.0rc1",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/83ebd99111/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.109.0-rc.1",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "quotes": [
-    {
-     "match": "deprecated",
-     "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
-    }
-   ],
-   "variant_of": null,
-   "version": "1.109.0rc1",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 6,
+ "stable_in_window": 9,
  "summary": "Library to easily interface with LLM API providers"
 }

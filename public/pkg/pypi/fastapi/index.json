@@ -1,19 +1,57 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "0.162.2",
+ "latest": "0.162.4",
  "latest_stable": {
-  "date": "2026-11-07T15:41:38Z",
-  "version": "0.162.2"
+  "date": "2026-11-10T17:51:16Z",
+  "version": "0.162.4"
  },
- "metadata_fetched": "2026-11-10T06:00:19Z",
+ "metadata_fetched": "2026-11-11T06:00:22Z",
  "package": "fastapi",
  "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/fastapi/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-10T17:51:16Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/fastapi/0.162.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/9924f1308e/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.4",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.162.4",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-10T14:23:09Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/fastapi/0.162.3",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8124e0fad7/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.3",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.162.3",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-07T15:41:38Z",
@@ -54,6 +92,6 @@
   }
  ],
  "repository": "https://github.com/fastapi/fastapi",
- "stable_in_window": 2,
+ "stable_in_window": 4,
  "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 }

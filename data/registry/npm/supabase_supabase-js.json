@@ -8,7 +8,7 @@
   "rc": "2.100.0-rc.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:00:59Z",
+ "fetched": "2026-11-11T06:00:56Z",
  "homepage": "https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js",
  "latest": "2.119.0",
  "name": "@supabase/supabase-js",
@@ -200,11 +200,6 @@
    "date": "2026-08-24T09:26:29Z",
    "deprecated": false,
    "version": "2.112.4-canary.2"
-  },
-  {
-   "date": "2026-08-12T10:13:06Z",
-   "deprecated": false,
-   "version": "2.112.4-canary.1"
   }
  ]
 }

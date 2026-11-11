@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-10T06:00:20Z",
+ "fetched": "2026-11-11T06:00:23Z",
  "releases": [
+  {
+   "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Fixes\n\n* 🐛 Require AnyIO 4.1.0 or newer at runtime. PR [#16730](https://github.com/fastapi/fastapi/pull/16730) by [@tiangolo](https://github.com/tiangolo).\n",
+   "date": "2026-11-10T17:50:03Z",
+   "name": "0.162.4",
+   "prerelease": false,
+   "tag": "0.162.4",
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.162.4"
+  },
+  {
+   "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Upgrades\n\n* ⬆️ Add support for Python 3.15. PR [#16727](https://github.com/fastapi/fastapi/pull/16727) by [@tiangolo](https://github.com/tiangolo).\n* ⬆️ Update locked Pydantic to 2.14.3. PR [#16728](https://github.com/fastapi/fastapi/pull/16728) by [@tiangolo](https://github.com/tiangolo).\n* ⬆️ Upgrade `markdown-include-variants` to 0.0.10. PR [#16705](https://github.com/fastapi/fastapi/pull/16705) by [@tiangolo](https://github.com/tiangolo).\n\n### Docs\n\n* 📝 Adopt unversioned snippets and `_non_an` variants. PR [#16707](https://github.com/fastapi/fastapi/pull/16707) by [@tiangolo](https://github.com/tiangolo).\n* 🎨 Use the Zensical modern theme for docs. PR [#16701](https://github.com/fastapi/fastapi/pull/16701) by [@tiangolo](https://github.com/tiangolo).\n* 🐛 Fix AI coding agent notice links in previews. PR [#16700](https://github.com/fastapi/fastapi/pull/16700) by [@tiangolo](https://github.com/tiangolo).\n* 📝 Add an AI coding agent notice to the docs. PR [#16699](https://github.com/fastapi/fastapi/pull/16699) by [@tiangolo](https://github.com/tiangolo).\n\n### Translations\n\n* 🌐 Update Traditional Chinese translations. PR [#16719](https://github.com/fastapi/fastapi/pull/16719) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Chinese translations. PR [#16718](https://github.com/fastapi/fastapi/pull/16718) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Ukrainian translations. PR [#16717](https://github.com/fastapi/fastapi/pull/16717) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Turkish translations. PR [#16716](https://github.com/fastapi/fastapi/pull/16716) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Russian translations. PR [#16715](https://github.com/fastapi/fastapi/pull/16715) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Portuguese translations. PR [#16714](https://github.com/fastapi/fastapi/pull/16714) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Korean translations. PR [#16713](https://github.com/fastapi/fastapi/pull/16713) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Japanese translations. PR [#16712](https://github.com/fastapi/fastapi/pull/16712) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Hindi translations. PR [#16711](https://github.com/fastapi/fastapi/pull/16711) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update French translations. PR [#16710](https://github.com/fastapi/fastapi/pull/16710) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Spanish translations. PR [#16709](https://github.com/fastapi/fastapi/pull/16709) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update German translations. PR [#16708](https://github.com/fastapi/fastapi/pull/16708) by [@tiangolo](https://github.com/tiangolo).\n* 🌐 Update Korean translations to match the English docs. PR [#16706](https://github.com/fastapi/fastapi/pull/16706) by [@tiangolo](https://github.com/tiangolo).\n\n### Internal\n\n* 🔥 Remove obsolete docs snippet commands. PR [#16724](https://github.com/fastapi/fastapi/pull/16724) by [@tiangolo](https://github.com/tiangolo).\n* 🐛 Preserve snippet variants when cleaning up docs sources. PR [#16722](https://github.com/fastapi/fastapi/pull/16722) by [@tiangolo](https://github.com/tiangolo).\n",
+   "date": "2026-11-10T14:21:32Z",
+   "name": "0.162.3",
+   "prerelease": false,
+   "tag": "0.162.3",
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.162.3"
+  },
   {
    "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Docs\n\n* 📝 Add FastAPI Cloud guidance to the FastAPI skill. PR [#16697](https://github.com/fastapi/fastapi/pull/16697) by [@tiangolo](https://github.com/tiangolo).\n* 📝 Add guidance for developing FastAPI apps with AI. PR [#16695](https://github.com/fastapi/fastapi/pull/16695) by [@tiangolo](https://github.com/tiangolo).\n\n### Internal\n\n* 🔧 Add an agent skills note to GitHub releases. PR [#16696](https://github.com/fastapi/fastapi/pull/16696) by [@tiangolo](https://github.com/tiangolo).\n",
    "date": "2026-11-07T15:41:00Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "0.140.12",
    "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.12"
-  },
-  {
-   "body": "### Fixes\r\n\r\n* 🐛 Fix `response_model_*` params ignored for non-generator endpoints with `Iterable[..]` return type. PR [#15093](https://github.com/fastapi/fastapi/pull/15093) by [@YuriiMotov](https://github.com/YuriiMotov).\r\n",
-   "date": "2026-07-28T14:33:49Z",
-   "name": "0.140.11",
-   "prerelease": false,
-   "tag": "0.140.11",
-   "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.11"
-  },
-  {
-   "body": "### Fixes\r\n\r\n* 🐛 Fix handling sequences with nested Annotated types. PR [#14874](https://github.com/fastapi/fastapi/pull/14874) by [@YuriiMotov](https://github.com/YuriiMotov).\r\n\r\n### Internal\r\n\r\n* 🐛 Accept any base test failure as regression. PR [#16092](https://github.com/fastapi/fastapi/pull/16092) by [@tiangolo](https://github.com/tiangolo).\r\n* 🐛 Preserve pytest exit code in regression check. PR [#16091](https://github.com/fastapi/fastapi/pull/16091) by [@tiangolo](https://github.com/tiangolo).\r\n* ✅ Test PR regressions against base code. PR [#16090](https://github.com/fastapi/fastapi/pull/16090) by [@tiangolo](https://github.com/tiangolo).\r\n",
-   "date": "2026-07-28T14:21:00Z",
-   "name": "0.140.10",
-   "prerelease": false,
-   "tag": "0.140.10",
-   "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.10"
   }
  ],
  "repo": "fastapi/fastapi"

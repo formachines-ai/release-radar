@@ -1,6 +1,102 @@
 {
- "fetched": "2026-11-10T06:00:42Z",
+ "fetched": "2026-11-11T06:00:36Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#12121](https://github.com/langchain-ai/langchainjs/pull/12121) [`fbd2c1b`](https://github.com/langchain-ai/langchainjs/commit/fbd2c1b6603e256e96a6a2c2899745e6abfe4e57) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(langchain): add `modelRefusalMiddleware`\n\n  `modelRefusalMiddleware()` throws `ModelRefusalError` when the model refuses, instead of ending the run as if it succeeded. Middleware now passes `ModelRefusalError` through unwrapped instead of as a `MiddlewareError`.",
+   "date": "2026-11-10T18:39:28Z",
+   "name": "langchain@1.6.4",
+   "prerelease": false,
+   "tag": "langchain@1.6.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:55Z",
+   "name": "@langchain/xai@1.5.5",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.5",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:52Z",
+   "name": "@langchain/together-ai@0.2.24",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.24",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.24"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:49Z",
+   "name": "@langchain/openrouter@0.4.24",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.24",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.24"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(openai): surface model refusals as `ModelRefusalError`\n\n  Chat Completions keeps `refusal` from responses, refusals are sent back natively on assistant messages (including `v1` messages), and `withStructuredOutput` with `jsonSchema` throws `ModelRefusalError` on a refusal.",
+   "date": "2026-11-10T18:39:37Z",
+   "name": "@langchain/openai@1.8.3",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.8.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.60",
+   "date": "2026-11-10T18:39:58Z",
+   "name": "@langchain/neo4j@0.1.32",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.32",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.32"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(google): surface model refusals as `ModelRefusalError`\n\n  Blocked prompts throw `PromptRefusedError`, which matches `ModelRefusalError.isInstance`, including when streaming. A streamed safety stop keeps the text already streamed and ends with a refusal block, and refusal blocks are dropped when history is sent back.",
+   "date": "2026-11-10T18:39:34Z",
+   "name": "@langchain/google@0.2.14",
+   "prerelease": false,
+   "tag": "@langchain/google@0.2.14",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google%400.2.14"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:46Z",
+   "name": "@langchain/fireworks@0.2.24",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.24",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.24"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:43Z",
+   "name": "@langchain/deepseek@1.1.24",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.24",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.24"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12120](https://github.com/langchain-ai/langchainjs/pull/12120) [`a4fb396`](https://github.com/langchain-ai/langchainjs/commit/a4fb396d7b323b9f3f8c7e45875376ec5fb88d72) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add a standard `refusal` content block and `ModelRefusalError`\n\n  Model refusals from OpenAI, Anthropic, and Gemini now appear as a `refusal` content block in `message.contentBlocks`. JSON, tool-call, and structured output parsers throw `ModelRefusalError` (from `@langchain/core/errors`) when the model refuses, instead of a generic parsing error.",
+   "date": "2026-11-10T18:39:25Z",
+   "name": "@langchain/core@1.3.7",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
+   "date": "2026-11-10T18:39:40Z",
+   "name": "@langchain/classic@1.0.60",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.60",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.60"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(anthropic): surface model refusals as `ModelRefusalError`\n\n  A `refusal` stop reason maps to the `content_filter` finish reason in stream events, and `withStructuredOutput` throws `ModelRefusalError` on a refusal, including when thinking is enabled.",
+   "date": "2026-11-10T18:39:31Z",
+   "name": "@langchain/anthropic@1.6.3",
+   "prerelease": false,
+   "tag": "@langchain/anthropic@1.6.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.3"
+  },
   {
    "body": "### Patch Changes\n\n- [`9ec213b`](https://github.com/langchain-ai/langchainjs/commit/9ec213b8aba71c3d2870f478b8a18c647957fb7a) Thanks [@afirstenberg](https://github.com/afirstenberg)! - Adds **experimental** support for the Google Interactions API on AI Studio and\n  Google Cloud (Vertex).\n\n  - Add `InteractionsApiHandler` (`apiHandler: \"interactions\"`) supporting `.invoke()`, `.stream()`, and `.streamEvents()` across AI Studio (`gai`) and Vertex AI (`gcp`)\n  - Add Interactions API converters for messages, tools, parameters, and streaming SSE events\n  - Generate Interactions API TypeScript types from the OpenAPI specification (`src/chat_models/api_types/interactions.ts`)\n  - Export `GoogleChatApiHandler`, `GenerateContentApiHandler`, `InteractionsApiHandler`, and Interactions converters\n  - Supports backwards compatibility with the current API.\n  - Parameters for the Integrations API are exposed, but no specific feature changes are included.\n\n- [#12141](https://github.com/langchain-ai/langchainjs/pull/12141) [`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d) Thanks [@hntrl](https://github.com/hntrl)! - Only route Google chat models through the LangSmith gateway when no credentials are passed. Explicit `apiKey`, `authOptions`, `credentials`, or `googleAuthOptions` now go straight to Google.",
    "date": "2026-11-09T22:43:49Z",
@@ -304,102 +400,6 @@
    "prerelease": false,
    "tag": "@langchain/mcp-adapters@2.0.2",
    "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/mcp-adapters%402.0.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#11567](https://github.com/langchain-ai/langchainjs/pull/11567) [`d92aba6`](https://github.com/langchain-ai/langchainjs/commit/d92aba67d3ffef8e1e0fa62cdb97cbd6e7022582) Thanks [@hntrl](https://github.com/hntrl)! - Add `tracePolicy` to `RunnableSequence`. Its `processInputs`/`processOutputs` shape only what `LangChainTracer` sends to LangSmith for the sequence's own run. Batched sequence runs now each record their own output.",
-   "date": "2026-11-02T23:11:04Z",
-   "name": "@langchain/core@1.3.3",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.3",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12100](https://github.com/langchain-ai/langchainjs/pull/12100) [`dc74e55`](https://github.com/langchain-ai/langchainjs/commit/dc74e55a6473962dafcc266e18b9f978fd9495cb) Thanks [@hntrl](https://github.com/hntrl)! - Replay signed Bedrock reasoning blocks whose text is empty or missing instead of dropping them, so models that omit the thinking summary (e.g. Claude Sonnet 5, which defaults to `display: \"omitted\"`) no longer fail with an HTTP 400 on the turn after a tool call. A missing `text` is sent as `\"\"`, and an empty signature counts as unsigned. Whitespace-only text after reasoning is no longer merged into the reasoning block, and a standard reasoning block split into parts is joined before replay.\n\n- [#12052](https://github.com/langchain-ai/langchainjs/pull/12052) [`8635df6`](https://github.com/langchain-ai/langchainjs/commit/8635df6a875e8409b141e41a2507f4680460938b) Thanks [@hntrl](https://github.com/hntrl)! - Fix ChatBedrockConverse retry classification for AWS HTTP errors and content-filter failures while keeping ThrottlingException and ModelNotReadyException retryable. Internally created Bedrock clients now default to `maxAttempts: 1` so SDK retries do not stack with LangChain retries; explicit `clientOptions.maxAttempts` values and injected clients remain unchanged.\n\n- [#11905](https://github.com/langchain-ai/langchainjs/pull/11905) [`e81c689`](https://github.com/langchain-ai/langchainjs/commit/e81c689cce85aa439bdd390b1f674009b23d25d5) Thanks [@mbarinov](https://github.com/mbarinov)! - Preserve reasoning signatures in native Bedrock Converse stream events so streamed messages can be replayed in subsequent requests.\n\n- [#11368](https://github.com/langchain-ai/langchainjs/pull/11368) [`55c4edc`](https://github.com/langchain-ai/langchainjs/commit/55c4edc580f9d8674759977fc6aa7db83daa237d) Thanks [@LizunovSergey](https://github.com/LizunovSergey)! - fix(aws): preserve Bedrock text block indices when streaming",
-   "date": "2026-11-02T23:11:10Z",
-   "name": "@langchain/aws@1.5.2",
-   "prerelease": false,
-   "tag": "@langchain/aws@1.5.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/aws%401.5.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12051](https://github.com/langchain-ai/langchainjs/pull/12051) [`71fd01a`](https://github.com/langchain-ai/langchainjs/commit/71fd01ab6edb530a3d52cebcfc191674c10138d2) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add `addNotificationMetadata`, `getNotificationMetadata` and the `NotificationMetadata` type for marking messages the agent harness adds.",
-   "date": "2026-10-29T17:52:51Z",
-   "name": "@langchain/core@1.3.2",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.2"
-  },
-  {
-   "body": "### Minor Changes\n\n- [#11930](https://github.com/langchain-ai/langchainjs/pull/11930) [`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977) Thanks [@hntrl](https://github.com/hntrl)! - Add a beta `OpenAIDecisions` runnable with typed predicate, choice and score questions, plus model-routing and tool-risk agent middleware.",
-   "date": "2026-10-28T00:55:04Z",
-   "name": "langchain@1.6.0",
-   "prerelease": false,
-   "tag": "langchain@1.6.0",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.0"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
-   "date": "2026-10-28T00:55:28Z",
-   "name": "@langchain/xai@1.5.2",
-   "prerelease": false,
-   "tag": "@langchain/xai@1.5.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
-   "date": "2026-10-28T00:55:25Z",
-   "name": "@langchain/together-ai@0.2.21",
-   "prerelease": false,
-   "tag": "@langchain/together-ai@0.2.21",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.21"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
-   "date": "2026-10-28T00:55:22Z",
-   "name": "@langchain/openrouter@0.4.21",
-   "prerelease": false,
-   "tag": "@langchain/openrouter@0.4.21",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.21"
-  },
-  {
-   "body": "### Minor Changes\n\n- [#11930](https://github.com/langchain-ai/langchainjs/pull/11930) [`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977) Thanks [@hntrl](https://github.com/hntrl)! - Add a beta `OpenAIDecisions` runnable with typed predicate, choice and score questions, plus model-routing and tool-risk agent middleware.",
-   "date": "2026-10-28T00:55:10Z",
-   "name": "@langchain/openai@1.8.0",
-   "prerelease": false,
-   "tag": "@langchain/openai@1.8.0",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.0"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.57",
-   "date": "2026-10-28T00:55:31Z",
-   "name": "@langchain/neo4j@0.1.29",
-   "prerelease": false,
-   "tag": "@langchain/neo4j@0.1.29",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.29"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
-   "date": "2026-10-28T00:55:19Z",
-   "name": "@langchain/fireworks@0.2.21",
-   "prerelease": false,
-   "tag": "@langchain/fireworks@0.2.21",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.21"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`b5135cc`](https://github.com/langchain-ai/langchainjs/commit/b5135cc189adbf313f4e92c1527f96a40a546977)]:\n  - @langchain/openai@1.8.0",
-   "date": "2026-10-28T00:55:16Z",
-   "name": "@langchain/deepseek@1.1.21",
-   "prerelease": false,
-   "tag": "@langchain/deepseek@1.1.21",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.21"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12026](https://github.com/langchain-ai/langchainjs/pull/12026) [`178af31`](https://github.com/langchain-ai/langchainjs/commit/178af31ee41b7e36fa2971af61ade6a5460b6d2e) Thanks [@eliornl](https://github.com/eliornl)! - fix(core): deliver callbacks once to a handler registered twice by merged configs\n\n  Merging two runnable configs that both carry the same callback handler, as happens when an agent's `streamEvents()` runs inside a LangGraph node with tracing on, registered that handler twice, so it received every callback twice: every streamed chunk arrived twice. The configured callback manager now keeps each handler once, in order, including a handler passed as a plain object of methods that merged configs wrapped twice.\n\n- [#12042](https://github.com/langchain-ai/langchainjs/pull/12042) [`50343ba`](https://github.com/langchain-ai/langchainjs/commit/50343ba94c2388b3d3a7d4d6cd0977fa60a90294) Thanks [@sera-wi](https://github.com/sera-wi)! - fix(core): include node `metadata` in `Graph.toJSON()` output when set, matching Python\n\n- [#12048](https://github.com/langchain-ai/langchainjs/pull/12048) [`304d190`](https://github.com/langchain-ai/langchainjs/commit/304d190a30343ecb8ae5f06081a2b5a6d93d9968) Thanks [@sera-wi](https://github.com/sera-wi)! - fix(core): escape `drawMermaid` node metadata labels and leave out object values, so metadata with brackets or objects no longer breaks Mermaid parsing",
-   "date": "2026-10-28T00:55:01Z",
-   "name": "@langchain/core@1.3.1",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.1",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.1"
   }
  ],
  "repo": "langchain-ai/langchainjs"

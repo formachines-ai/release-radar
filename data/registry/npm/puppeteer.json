@@ -22,17 +22,22 @@
   "chrome-84": "5.1.0",
   "chrome-85": "5.2.1",
   "chrome-86": "5.3.1",
-  "latest": "25.16.0"
+  "latest": "25.17.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:01:14Z",
+ "fetched": "2026-11-11T06:01:11Z",
  "homepage": "https://github.com/puppeteer/puppeteer/tree/main#readme",
- "latest": "25.16.0",
+ "latest": "25.17.0",
  "name": "puppeteer",
  "page": "https://www.npmjs.com/package/puppeteer",
  "repo": "puppeteer/puppeteer",
  "summary": "A high-level API to control headless Chrome over the DevTools Protocol",
  "versions": [
+  {
+   "date": "2026-11-10T14:07:21Z",
+   "deprecated": false,
+   "version": "25.17.0"
+  },
   {
    "date": "2026-10-22T11:53:03Z",
    "deprecated": false,

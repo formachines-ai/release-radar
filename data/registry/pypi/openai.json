@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-10T06:00:05Z",
+ "fetched": "2026-11-11T06:00:06Z",
  "homepage": "https://github.com/openai/openai-python",
- "latest": "3.48.0",
+ "latest": "3.49.0",
  "name": "openai",
  "page": "https://pypi.org/project/openai/",
  "repo": "openai/openai-python",
  "summary": "The official Python library for the openai API",
  "versions": [
+  {
+   "date": "2026-11-10T06:47:52Z",
+   "version": "3.49.0",
+   "yanked": false
+  },
   {
    "date": "2026-11-09T16:13:48Z",
    "version": "3.48.0",
@@ -202,11 +207,6 @@
   {
    "date": "2026-09-18T21:27:20Z",
    "version": "3.16.2",
-   "yanked": false
-  },
-  {
-   "date": "2026-09-18T19:01:50Z",
-   "version": "3.16.1",
    "yanked": false
   }
  ]

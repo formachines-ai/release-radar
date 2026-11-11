@@ -1,23 +1,48 @@
 {
  "changelog": null,
  "dist_tags": {
-  "ai-v5": "5.0.287",
-  "ai-v6": "6.0.326",
+  "ai-v5": "5.0.288",
+  "ai-v6": "6.0.329",
   "alpha": "5.0.0-alpha.15",
   "beta": "7.0.0-beta.187",
   "canary": "7.0.0-canary.176",
-  "latest": "7.0.166",
+  "latest": "7.0.169",
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:00:52Z",
+ "fetched": "2026-11-11T06:00:47Z",
  "homepage": "https://ai-sdk.dev/docs",
- "latest": "7.0.166",
+ "latest": "7.0.169",
  "name": "ai",
  "page": "https://www.npmjs.com/package/ai",
  "repo": "vercel/ai",
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider.",
  "versions": [
+  {
+   "date": "2026-11-10T20:18:05Z",
+   "deprecated": false,
+   "version": "7.0.169"
+  },
+  {
+   "date": "2026-11-10T20:13:51Z",
+   "deprecated": false,
+   "version": "6.0.329"
+  },
+  {
+   "date": "2026-11-10T17:49:32Z",
+   "deprecated": false,
+   "version": "7.0.168"
+  },
+  {
+   "date": "2026-11-10T17:46:40Z",
+   "deprecated": false,
+   "version": "6.0.328"
+  },
+  {
+   "date": "2026-11-10T17:42:37Z",
+   "deprecated": false,
+   "version": "5.0.288"
+  },
   {
    "date": "2026-11-09T19:47:30Z",
    "deprecated": false,
@@ -1092,36 +1117,6 @@
    "date": "2026-08-13T18:55:22Z",
    "deprecated": false,
    "version": "5.0.236"
-  },
-  {
-   "date": "2026-08-12T17:41:44Z",
-   "deprecated": false,
-   "version": "5.0.235"
-  },
-  {
-   "date": "2026-08-12T17:41:32Z",
-   "deprecated": false,
-   "version": "6.0.253"
-  },
-  {
-   "date": "2026-08-12T17:40:07Z",
-   "deprecated": false,
-   "version": "7.0.64"
-  },
-  {
-   "date": "2026-08-12T16:01:08Z",
-   "deprecated": false,
-   "version": "6.0.252"
-  },
-  {
-   "date": "2026-08-12T15:59:10Z",
-   "deprecated": false,
-   "version": "7.0.63"
-  },
-  {
-   "date": "2026-08-12T15:57:39Z",
-   "deprecated": false,
-   "version": "5.0.234"
   }
  ]
 }

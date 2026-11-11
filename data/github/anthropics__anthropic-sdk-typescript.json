@@ -1,6 +1,38 @@
 {
- "fetched": "2026-11-10T06:00:41Z",
+ "fetched": "2026-11-11T06:00:35Z",
  "releases": [
+  {
+   "body": "### Bug Fixes\n\n* **vertex:** send a `;` in the model as `%3B`\n* **vertex:** throw an `AnthropicError` for a project ID, region or model such as `;x`, `.;x` or `..;x`",
+   "date": "2026-11-10T16:33:35Z",
+   "name": "vertex-sdk-v1.1.3",
+   "prerelease": false,
+   "tag": "vertex-sdk-v1.1.3",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v1.1.3"
+  },
+  {
+   "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Chores\n\n* **docs:** clarify display_name for RBAC Roles created by Anthropic\n* **docs:** clarify plugin delete and skill name conflict descriptions\n* **docs:** clarify when to omit user_profile_id on external keys\n* **docs:** note that Claude Tag settings accept self-hosted runner pools\n\n\n### Documentation\n\n* **examples:** show multiagent when creating a Managed Agents agent",
+   "date": "2026-11-10T16:33:32Z",
+   "name": "sdk-v1.8.0",
+   "prerelease": false,
+   "tag": "sdk-v1.8.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0"
+  },
+  {
+   "body": "### Bug Fixes\n\n* **google-cloud:** throw an `AnthropicError` for a project, location or workspace ID such as `;x`, `.;x` or `..;x`",
+   "date": "2026-11-10T16:33:40Z",
+   "name": "google-cloud-sdk-v1.1.4",
+   "prerelease": false,
+   "tag": "google-cloud-sdk-v1.1.4",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v1.1.4"
+  },
+  {
+   "body": "### Bug Fixes\n\n* **bedrock:** throw an `AnthropicError` for a model such as `;x`, `.;x` or `..;x`",
+   "date": "2026-11-10T16:33:38Z",
+   "name": "bedrock-sdk-v1.1.2",
+   "prerelease": false,
+   "tag": "bedrock-sdk-v1.1.2",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.2"
+  },
   {
    "body": "### Features\n\n* **api:** accept user_profile.program_status_updated on organization webhook endpoints\n* **api:** add claude-fable-5-2 and claude-mythos-5-2\n* **api:** add parent organization filtering and grouping to the usage and cost reports\n* **api:** add the sandbox_egress_restricted error to Admin API write methods\n* **api:** add the user_profile.program_status_updated webhook event\n\n\n### Bug Fixes\n\n* **client:** include the body of a failed response in debug logs\n* **helpers:** keep const and enum in structured output schemas\n\n\n### Chores\n\n* **api:** remove some error detail types and update descriptions\n* **docs:** say when a work heartbeat does not compare its value\n* **internal:** add this repository's review rules\n\n\n### Documentation\n\n* **client:** list error code types in api.md\n* **client:** say where the default logger writes and how to log to stderr\n* **helpers:** import from zod/v4 in the examples, for Zod 3.25 users\n\n\n### Refactors\n\n* **client:** declare the name of every AnthropicError subclass the same way",
    "date": "2026-11-09T18:52:24Z",
@@ -368,38 +400,6 @@
    "prerelease": false,
    "tag": "bedrock-sdk-v0.34.4",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.34.4"
-  },
-  {
-   "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
-   "date": "2026-10-08T03:07:09Z",
-   "name": "aws-sdk-v0.7.9",
-   "prerelease": false,
-   "tag": "aws-sdk-v0.7.9",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.7.9"
-  },
-  {
-   "body": "## 0.20.3 (2026-10-07)\n\nFull Changelog: [vertex-sdk-v0.20.2...vertex-sdk-v0.20.3](https://github.com/anthropics/anthropic-sdk-typescript/compare/vertex-sdk-v0.20.2...vertex-sdk-v0.20.3)",
-   "date": "2026-10-07T17:57:07Z",
-   "name": "vertex-sdk: v0.20.3",
-   "prerelease": false,
-   "tag": "vertex-sdk-v0.20.3",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.3"
-  },
-  {
-   "body": "## 0.132.0 (2026-10-07)\n\nFull Changelog: [sdk-v0.131.0...sdk-v0.132.0](https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v0.131.0...sdk-v0.132.0)\n\n### Features\n\n* **api:** add claude-haiku-5-5 and typed computer and browser toolset tool calls ([1fd8261](https://github.com/anthropics/anthropic-sdk-typescript/commit/1fd826175b5742df1dc9fd69db708be1434fdc15))\n* **api:** add disabled to thinking types in model capabilities ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **api:** add display_name to RBAC roles and deprecate name ([7735ac3](https://github.com/anthropics/anthropic-sdk-typescript/commit/7735ac3d2823c6d74377269772a5ae2b1ed939dc))\n* **api:** add include_default parameter to list workspaces ([c4019df](https://github.com/anthropics/anthropic-sdk-typescript/commit/c4019df3ad38e1ce985c1d8177c815ae36528d61))\n* **api:** add lifecycle stage fields and filter to /v1/models ([fe8a762](https://github.com/anthropics/anthropic-sdk-typescript/commit/fe8a762e0cdbc01aa2b4161865f44cdab70f502c))\n* **api:** add line to model objects ([018aed4](https://github.com/anthropics/anthropic-sdk-typescript/commit/018aed463f7125ef7c8ee6eec2fd3610be585cc4))\n* **api:** add url_sources to the Managed Agents web_fetch tool config ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **api:** add web search and code execution support to model capabilities ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n\n\n### Bug Fixes\n\n* **api:** send the beta header by default when listing spend limits ([8f58ca4](https://github.com/anthropics/anthropic-sdk-typescript/commit/8f58ca41ae4097e82fe0efccfae94e0b7c5719b1))\n* **client:** throw when a JSONL stream is iterated twice ([a34266c](https://github.com/anthropics/anthropic-sdk-typescript/commit/a34266cf1ed3483eae7d44d275f761ab29d79748))\n* **tools:** keep a local edit made after a memory upload whose response was lost ([#893](https://github.com/anthropics/anthropic-sdk-typescript/issues/893)) ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n\n\n### Chores\n\n* **api:** mark the Text Completions API as deprecated ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **docs:** correct example groups in rate limit list description ([f0e6394](https://github.com/anthropics/anthropic-sdk-typescript/commit/f0e63949cf58aeb877a9d695af519f29245522ef))\n* **docs:** correct when usage and cost report data becomes final ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **docs:** describe a federation rule's target by its type ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **docs:** fix example IDs in sessions, agents and vault credentials ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **docs:** update Managed Agents multiagent and thread descriptions ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **docs:** update the activity summaries endpoint description ([24f13f2](https://github.com/anthropics/anthropic-sdk-typescript/commit/24f13f20aa606415f0906ce3d3331dcb80fc2247))\n* **docs:** update the description of the Model line field ([e3bfc76](https://github.com/anthropics/anthropic-sdk-typescript/commit/e3bfc76831144a52d6b2dfa7153ae98bd2f849c9))\n* **internal:** add REVIEW.md with review instructions ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n* **internal:** refactor deprecated models ([5927033](https://github.com/anthropics/anthropic-sdk-typescript/commit/59270330d1a1d68e469b06ece5e0819263e17877))\n* **tests:** run tests skipped for a query param bug that is now fixed ([4c74721](https://github.com/anthropics/anthropic-sdk-typescript/commit/4c74721d93ea751758fb5eac987ea6541e8c64fa))\n* **tests:** run tests that an older mock server could not serve ([8100a49](https://github.com/anthropics/anthropic-sdk-typescript/commit/8100a490769086b56775f3e4f8f1bff9ea678a02))\n* **tests:** run the skipped MCP resource upload test ([#888](https://github.com/anthropics/anthropic-sdk-typescript/issues/888)) ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))\n\n\n### Documentation\n\n* **api:** state the agent tools limit as 256 ([7d2a9ef](https://github.com/anthropics/anthropic-sdk-typescript/commit/7d2a9ef98f39602eaf8cef12ad3f9dfc20c7c839))\n* **examples:** show initial_events when creating a Managed Agents session ([2b75b49](https://github.com/anthropics/anthropic-sdk-typescript/commit/2b75b497792ab23c7cac350829354a0027a93246))",
-   "date": "2026-10-07T17:57:01Z",
-   "name": "sdk: v0.132.0",
-   "prerelease": false,
-   "tag": "sdk-v0.132.0",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.0"
-  },
-  {
-   "body": "## 0.0.18 (2026-10-07)\n\nFull Changelog: [google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18](https://github.com/anthropics/anthropic-sdk-typescript/compare/google-cloud-sdk-v0.0.17...google-cloud-sdk-v0.0.18)",
-   "date": "2026-10-07T17:57:35Z",
-   "name": "google-cloud-sdk: v0.0.18",
-   "prerelease": false,
-   "tag": "google-cloud-sdk-v0.0.18",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/google-cloud-sdk-v0.0.18"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

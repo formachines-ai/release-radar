@@ -1,5 +1,5 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-10T01:58:41Z",
   "version": "2.1.322"
  },
- "metadata_fetched": "2026-11-10T06:00:39Z",
+ "metadata_fetched": "2026-11-11T06:00:33Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
@@ -96,41 +96,9 @@
    "variant_of": null,
    "version": "2.1.319",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-03T21:55:17Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@anthropic-ai/claude-code/2.1.318",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/6385d8e47a/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.318",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "- Fixed `claude remote-control` hosts, the background daemon and self-hosted runners failing to start new sessions (`spawn ENOENT`) after an update or version cleanup removed the binary of a still-running process"
-    },
-    {
-     "match": "removed",
-     "quote": "- Fixed the iPhone app showing a cloud session's turn as finished while it kept running, after a response was cut off at a tool call or a refused image or document was removed"
-    },
-    {
-     "match": "no longer",
-     "quote": "- Changed Claude Code to no longer install or update the IDE extension when started in an IDE terminal; use `/ide` from an outside terminal or your editor's extensions view"
-    }
-   ],
-   "variant_of": null,
-   "version": "2.1.318",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 4,
+ "stable_in_window": 3,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }

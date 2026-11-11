@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "dist_tags": {
-  "dev": "8.0.0-rc.33-dev.185",
+  "dev": "8.1.0-dev.11",
   "early-access": "5.12.0-dev.21",
   "integration": "7.10.0-integration-fix-prisma-publish-token.1",
   "latest": "8.0.0-rc.33",
@@ -12,7 +12,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:01:13Z",
+ "fetched": "2026-11-11T06:01:10Z",
  "homepage": "https://github.com/prisma/prisma-cli#readme",
  "latest": "8.0.0-rc.33",
  "name": "prisma",
@@ -20,6 +20,11 @@
  "repo": "prisma/prisma-cli",
  "summary": "The Prisma CLI: one binary for the ORM, Composer, and the Prisma Developer Platform.",
  "versions": [
+  {
+   "date": "2026-11-10T21:31:16Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.11"
+  },
   {
    "date": "2026-11-06T20:01:51Z",
    "deprecated": false,

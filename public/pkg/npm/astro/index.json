@@ -1,19 +1,62 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "7.4.8",
+ "latest": "7.4.10",
  "latest_stable": {
-  "date": "2026-11-09T14:51:52Z",
-  "version": "7.4.8"
+  "date": "2026-11-10T20:11:04Z",
+  "version": "7.4.10"
  },
- "metadata_fetched": "2026-11-10T06:01:01Z",
+ "metadata_fetched": "2026-11-11T06:00:58Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/astro",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-10T20:11:04Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/astro/7.4.10",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4d6a8687e0/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.10",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…stro-factory)! - Fixes duplicate CSS loading for hydrated islands that share modules or are imported through a path alias. The client build no longer emits and preloads stylesheets that are already linked on the page by the server build.…"
+    }
+   ],
+   "variant_of": null,
+   "version": "7.4.10",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-10T18:35:03Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.9",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/df8431c22c/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.9",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.4.9",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-09T14:51:52Z",
@@ -73,6 +116,6 @@
   }
  ],
  "repository": "https://github.com/withastro/astro",
- "stable_in_window": 3,
+ "stable_in_window": 5,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

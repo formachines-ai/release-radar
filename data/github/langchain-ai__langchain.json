@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-10T06:00:04Z",
+ "fetched": "2026-11-11T06:00:05Z",
  "releases": [
+  {
+   "body": "Changes since langchain==1.4.9\n\nrelease(langchain): 1.4.10 (#41778)\nfix(langchain): keep middleware-internal model calls off the `messages` stream (#41579)\nchore(deps): patch newer-python security lock resolutions (#41585)\nfix(langchain): omit trace inputs from `ModelRefusalMiddleware` (#41689)",
+   "date": "2026-11-10T18:37:31Z",
+   "name": "langchain==1.4.10",
+   "prerelease": false,
+   "tag": "langchain==1.4.10",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10"
+  },
   {
    "body": "Changes since langchain-core==1.7.6\n\nrelease(core): 1.7.7 (#41776)\nfix(core): cap nesting depth in `load()` (#41742)\nchore(deps): patch newer-python security lock resolutions (#41585)",
    "date": "2026-11-10T04:08:27Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "langchain-anthropic==1.7.4",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4"
-  },
-  {
-   "body": "Changes since langchain-openrouter==0.2.8\n\nrelease(openrouter): 0.2.9 (#40736)\nchore(model-profiles): refresh model profile data (#40705)\nchore(model-profiles): refresh model profile data (#40685)\nchore(model-profiles): refresh model profile data (#40665)\nchore(deps): bump anyio from 4.13.0 to 4.14.2 in /libs/partners/openrouter (#40627)\nchore(model-profiles): refresh model profile data (#40600)\nchore(model-profiles): refresh model profile data (#40541)\nchore(model-profiles): refresh model profile data (#40500)\nchore(model-profiles): refresh model profile data (#40452)\nchore(model-profiles): refresh model profile data (#40436)\nchore(model-profiles): refresh model profile data (#40416)\nchore(model-profiles): refresh model profile data (#40399)\nchore(model-profiles): refresh model profile data (#40358)\nchore(model-profiles): refresh model profile data (#40317)\nchore(model-profiles): refresh model profile data (#40277)\nchore(model-profiles): refresh model profile data (#40258)\nchore(model-profiles): refresh model profile data (#40217)\nchore(model-profiles): refresh model profile data (#40198)\nchore(model-profiles): refresh model profile data (#40171)\nchore(model-profiles): refresh model profile data (#40009)\nchore(model-profiles): refresh model profile data (#39954)\nchore(model-profiles): refresh model profile data (#39928)\nchore(model-profiles): refresh model profile data (#39906)\nchore(model-profiles): refresh model profile data (#39875)\nchore(model-profiles): refresh model profile data (#39844)\nchore(model-profiles): refresh model profile data (#39824)\nchore(model-profiles): refresh model profile data (#39789)\nchore(model-profiles): refresh model profile data (#39751)\nchore(model-profiles): refresh model profile data (#39710)\nchore(model-profiles): refresh model profile data (#39692)\nchore(model-profiles): refresh model profile data (#39670)",
-   "date": "2026-09-22T04:16:11Z",
-   "name": "langchain-openrouter==0.2.9",
-   "prerelease": false,
-   "tag": "langchain-openrouter==0.2.9",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.9"
   }
  ],
  "repo": "langchain-ai/langchain"

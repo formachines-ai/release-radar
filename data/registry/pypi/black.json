@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/psf/black/blob/main/CHANGES.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-10T06:00:07Z",
+ "fetched": "2026-11-11T06:00:08Z",
  "homepage": "",
  "latest": "26.10.1",
  "name": "black",

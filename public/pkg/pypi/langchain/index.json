@@ -1,19 +1,38 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.4.9",
+ "latest": "1.4.10",
  "latest_stable": {
-  "date": "2026-11-04T17:07:20Z",
-  "version": "1.4.9"
+  "date": "2026-11-10T18:37:17Z",
+  "version": "1.4.10"
  },
- "metadata_fetched": "2026-11-10T06:00:03Z",
+ "metadata_fetched": "2026-11-11T06:00:04Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/langchain/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-10T18:37:17Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langchain/1.4.10",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/c6f845d088/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10",
+   "package": "langchain",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.4.10",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-04T17:07:20Z",
@@ -35,6 +54,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Building applications with LLMs through composability"
 }

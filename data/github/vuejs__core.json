@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T06:01:21Z",
+ "fetched": "2026-11-11T06:01:18Z",
  "releases": [
   {
    "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",

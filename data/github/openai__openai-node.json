@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-10T06:00:57Z",
+ "fetched": "2026-11-11T06:00:54Z",
  "releases": [
+  {
+   "body": "## [7.55.0](https://github.com/openai/openai-node/compare/v7.54.0...v7.55.0) (2026-11-10)\n\n\n### Features\n\n* **api:** add typed async function tools ([#3140](https://github.com/openai/openai-node/issues/3140)) ([5bc31e1](https://github.com/openai/openai-node/commit/5bc31e1b29afb54b9e41161f92ffdef2ff3b4366))\n\n\n### Bug Fixes\n\n* **deps-dev:** bump @smithy/signature-v4 from 5.7.4 to 5.7.5 ([#3129](https://github.com/openai/openai-node/issues/3129)) ([d780d4c](https://github.com/openai/openai-node/commit/d780d4c052d69697c2796981b3e3914525e3be49))\n* **deps-dev:** bump @types/node from 26.6.5 to 26.6.6 ([#3130](https://github.com/openai/openai-node/issues/3130)) ([bd9862b](https://github.com/openai/openai-node/commit/bd9862baacd89b680f7b770098811642858aaf13))\n* **deps-dev:** bump start-server-and-test from 3.0.12 to 3.0.13 in /ecosystem-tests/vercel-edge ([#3133](https://github.com/openai/openai-node/issues/3133)) ([c2e007c](https://github.com/openai/openai-node/commit/c2e007cbd85bf8cb336140a119f008c7af71c0cb))\n* **deps-dev:** bump ts-jest from 29.4.12 to 29.4.15 ([#3135](https://github.com/openai/openai-node/issues/3135)) ([2528b6d](https://github.com/openai/openai-node/commit/2528b6db07b842d1d779bb0a84ddf55120cfdff7))\n* **deps-dev:** bump wrangler from 4.152.0 to 4.156.0 in /ecosystem-tests/cloudflare-worker ([#3128](https://github.com/openai/openai-node/issues/3128)) ([df6dc96](https://github.com/openai/openai-node/commit/df6dc96dcf0bc23cdddd2eedf2530eb6af9c285b))\n* **deps-dev:** bump ws from 8.22.0 to 8.22.1 ([#3132](https://github.com/openai/openai-node/issues/3132)) ([63f3f98](https://github.com/openai/openai-node/commit/63f3f98251e34c6d668957809df3920d6ae5dca2))\n* **deps:** bump zod from 4.6.5 to 4.6.7 ([#3134](https://github.com/openai/openai-node/issues/3134)) ([d82bc5b](https://github.com/openai/openai-node/commit/d82bc5b354d90f1b0c8ebbcfce632260dca94bec))",
+   "date": "2026-11-10T06:47:51Z",
+   "name": "v7.55.0",
+   "prerelease": false,
+   "tag": "v7.55.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.55.0"
+  },
   {
    "body": "## [7.54.0](https://github.com/openai/openai-node/compare/v7.53.0...v7.54.0) (2026-11-08)\n\n\n### Features\n\n* **api:** recognize gpt-6-rosalind in beta Responses ([#3126](https://github.com/openai/openai-node/issues/3126)) ([8fb5a99](https://github.com/openai/openai-node/commit/8fb5a99e7fa3245b53307762317484eee10a49f7))\n\n\n### Chores\n\n* **api:** retain agent scheduling support ([#3123](https://github.com/openai/openai-node/issues/3123)) ([47bade0](https://github.com/openai/openai-node/commit/47bade063b0277e56a8352997a55e857424d482c))\n\n\n### Documentation\n\n* consolidate AGENTS.md guidance ([#3121](https://github.com/openai/openai-node/issues/3121)) ([9ba922c](https://github.com/openai/openai-node/commit/9ba922c5cc88c49120de36ebb9920df466b628b1))",
    "date": "2026-11-09T16:04:55Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v7.9.0",
    "url": "https://github.com/openai/openai-node/releases/tag/v7.9.0"
-  },
-  {
-   "body": "## [7.8.0](https://github.com/openai/openai-node/compare/v7.7.0...v7.8.0) (2026-08-27)\n\n\n### Features\n\n* **api:** add compute_units to Responses and Chat Completions usage ([#2505](https://github.com/openai/openai-node/issues/2505)) ([f9b1313](https://github.com/openai/openai-node/commit/f9b131388a270451eec7242aa0d302e2135b1d3e))\n* **api:** add default WebSocket User-Agent and audit log events ([#2504](https://github.com/openai/openai-node/issues/2504)) ([9b2f089](https://github.com/openai/openai-node/commit/9b2f0892c9fde399163bea59d4aa9bc4ba0ae03e))\n\n\n### Bug Fixes\n\n* **auth:** clamp the workload-identity refresh buffer to the token lifetime ([#2490](https://github.com/openai/openai-node/issues/2490)) ([76b73a9](https://github.com/openai/openai-node/commit/76b73a9c73aafe11c60a425a82898705f1db966d))\n* **auth:** secure first-class X.509 workload credentials ([#2479](https://github.com/openai/openai-node/issues/2479)) ([1b36c19](https://github.com/openai/openai-node/commit/1b36c19c011bcb9775a5cecb0d8a1bd072b74cd6))\n* **deps:** harden dependency and release boundaries ([#2484](https://github.com/openai/openai-node/issues/2484)) ([b21ff45](https://github.com/openai/openai-node/commit/b21ff456e7bd578547c456e5f7abd1d494a02090))\n* **events:** settle WebSocket waiters when listeners throw ([#2491](https://github.com/openai/openai-node/issues/2491)) ([b5a13a7](https://github.com/openai/openai-node/commit/b5a13a7dc8c95669440ec87662bcae8227b398d9))\n* restore native browser ESM imports ([#2495](https://github.com/openai/openai-node/issues/2495)) ([c8cab1e](https://github.com/openai/openai-node/commit/c8cab1e90eb5daf05d17d5c90492e6728afa91b7))\n* **uploads:** detect multipart bodies from own properties only ([#2492](https://github.com/openai/openai-node/issues/2492)) ([559ffc8](https://github.com/openai/openai-node/commit/559ffc8079d0ae716bbf7915305e7db6ecc016a1))",
-   "date": "2026-08-27T16:46:42Z",
-   "name": "v7.8.0",
-   "prerelease": false,
-   "tag": "v7.8.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.8.0"
   }
  ],
  "repo": "openai/openai-node"

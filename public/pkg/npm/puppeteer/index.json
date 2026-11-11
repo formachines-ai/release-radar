@@ -1,20 +1,40 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "25.16.0",
+ "latest": "25.17.0",
  "latest_stable": {
-  "date": "2026-10-22T11:53:03Z",
-  "version": "25.16.0"
+  "date": "2026-11-10T14:07:21Z",
+  "version": "25.17.0"
  },
- "metadata_fetched": "2026-11-10T06:01:14Z",
+ "metadata_fetched": "2026-11-11T06:01:11Z",
  "package": "puppeteer",
  "page": "https://releases.formachines.ai/pkg/npm/puppeteer/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/puppeteer",
- "releases": [],
+ "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-10T14:07:21Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/puppeteer/25.17.0",
+   "json": "https://releases.formachines.ai/pkg/npm/puppeteer/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6a0d54dfe4/",
+   "notes_url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.17.0",
+   "package": "puppeteer",
+   "page": "https://releases.formachines.ai/pkg/npm/puppeteer/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "25.17.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/puppeteer/puppeteer",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "A high-level API to control headless Chrome over the DevTools Protocol"
 }

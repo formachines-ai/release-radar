@@ -3,7 +3,7 @@
   "errata": 28,
   "error_signatures": 25,
   "packages": 21,
-  "packages_checked": 100,
+  "packages_checked": 101,
   "readiness": {
    "lead": 11,
    "partial": 7,
@@ -25,18 +25,19 @@
   "url": "https://formachines.ai/errata/pypi/networkx/0001-random-lobster/"
  },
  "license": "https://creativecommons.org/licenses/by/4.0/",
+ "maintained": false,
  "models": [
   {
-   "checked": 857,
+   "checked": 867,
    "cutoff": "2026-07-01",
-   "last_run": "2026-11-09",
+   "last_run": "2026-11-10",
    "model": "claude-sonnet-5-5",
-   "outdated": 92
+   "outdated": 96
   },
   {
-   "checked": 938,
+   "checked": 948,
    "cutoff": "2026-05-01",
-   "last_run": "2026-11-09",
+   "last_run": "2026-11-10",
    "model": "gpt-6.1-sol",
    "outdated": 133
   },
@@ -49,6 +50,7 @@
   }
  ],
  "name": "Where AI models write outdated code, and the verified fix",
+ "notice": "Errata was stopped on 10 November 2026. The data is frozen as of that date: new releases and existing entries are no longer checked. Pages stay online as an archive; do not treat them as current.",
  "packages": [
   {
    "ecosystem": "pypi",

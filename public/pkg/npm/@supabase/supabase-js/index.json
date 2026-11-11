@@ -1,5 +1,5 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,10 +8,10 @@
   "date": "2026-11-04T13:11:11Z",
   "version": "2.119.0"
  },
- "metadata_fetched": "2026-11-10T06:00:59Z",
+ "metadata_fetched": "2026-11-11T06:00:56Z",
  "package": "@supabase/supabase-js",
  "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
- "prereleases_in_window": 2,
+ "prereleases_in_window": 1,
  "registry": "https://www.npmjs.com/package/@supabase/supabase-js",
  "releases": [
   {
@@ -50,25 +50,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "2.119.0-canary.6",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-03T17:15:06Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@supabase/supabase-js/2.119.0-canary.5",
-   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/f0b8d64208/",
-   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.5",
-   "package": "@supabase/supabase-js",
-   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "2.119.0-canary.5",
    "yanked_or_deprecated": false
   }
  ],

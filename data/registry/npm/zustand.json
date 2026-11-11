@@ -4,7 +4,7 @@
   "latest": "5.1.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:01:21Z",
+ "fetched": "2026-11-11T06:01:18Z",
  "homepage": "https://github.com/pmndrs/zustand",
  "latest": "5.1.0",
  "name": "zustand",
@@ -21,11 +21,6 @@
    "date": "2026-10-22T04:32:02Z",
    "deprecated": false,
    "version": "5.0.16"
-  },
-  {
-   "date": "2026-08-13T00:39:55Z",
-   "deprecated": false,
-   "version": "5.0.15"
   }
  ]
 }

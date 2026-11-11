@@ -1,19 +1,38 @@
 {
- "built": "2026-11-10T16:14:35Z",
+ "built": "2026-11-11T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "3.0.0",
+ "latest": "3.1.0",
  "latest_stable": {
-  "date": "2026-11-06T04:34:38Z",
-  "version": "3.0.0"
+  "date": "2026-11-10T20:47:12Z",
+  "version": "3.1.0"
  },
- "metadata_fetched": "2026-11-10T06:00:41Z",
+ "metadata_fetched": "2026-11-11T06:00:35Z",
  "package": "@google/genai",
  "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@google/genai",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-10T20:47:12Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@google/genai/3.1.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b2358d5e39/",
+   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.1.0",
+   "package": "@google/genai",
+   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.1.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "major",
    "date": "2026-11-06T04:34:38Z",
@@ -44,6 +63,6 @@
   }
  ],
  "repository": "https://github.com/googleapis/js-genai",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "[![NPM Downloads](https://img.shields.io/npm/dw/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai) [![Node Current](https://img.shields.io/node/v/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)"
 }

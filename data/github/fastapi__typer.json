@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T06:00:35Z",
+ "fetched": "2026-11-11T06:00:28Z",
  "releases": [
   {
    "body": "### Features\r\n\r\n* ✨ Use Pydantic for parameter validation. PR [#1831](https://github.com/fastapi/typer/pull/1831) by [@svlandeg](https://github.com/svlandeg).\r\n\r\n    Typer now uses Pydantic internally to validate command-line parameters. This is a gradual migration focused on preserving compatibility with existing Typer applications. Some validation error messages have changed.\r\n\r\n### Fixes\r\n\r\n* 🐛 Escape terminal controls in Pydantic validation errors. PR [#2005](https://github.com/fastapi/typer/pull/2005) by [@tiangolo](https://github.com/tiangolo).\r\n\r\n### Docs\r\n\r\n* 📝 Explain Pydantic validation in the release notes. PR [#2006](https://github.com/fastapi/typer/pull/2006) by [@tiangolo](https://github.com/tiangolo).\r\n* 🎨 Use the Zensical modern theme for docs. PR [#2004](https://github.com/fastapi/typer/pull/2004) by [@tiangolo](https://github.com/tiangolo).\r\n* 📝 Add AI development guidance and coding agent notices. PR [#2003](https://github.com/fastapi/typer/pull/2003) by [@tiangolo](https://github.com/tiangolo).\r\n",

@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "dist_tags": {
-  "dev": "8.1.0-dev.10",
+  "dev": "8.1.0-dev.11",
   "early-access": "5.12.0-dev.21",
   "integration": "7.10.0-integration-fix-prisma-publish-token.1",
   "latest": "7.10.1",
@@ -11,7 +11,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-10T06:00:58Z",
+ "fetched": "2026-11-11T06:00:56Z",
  "homepage": "https://www.prisma.io",
  "latest": "7.10.1",
  "name": "@prisma/client",
@@ -19,6 +19,11 @@
  "repo": "prisma/orm",
  "summary": "Prisma Client is an auto-generated, type-safe and modern JavaScript/TypeScript ORM for Node.js that's tailored to your data. Supports PostgreSQL, CockroachDB, MySQL, MariaDB, SQL Server, SQLite & MongoDB databases.",
  "versions": [
+  {
+   "date": "2026-11-10T21:30:31Z",
+   "deprecated": false,
+   "version": "8.1.0-dev.11"
+  },
   {
    "date": "2026-11-06T09:36:48Z",
    "deprecated": false,

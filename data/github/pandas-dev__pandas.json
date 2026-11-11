@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-10T06:00:20Z",
+ "fetched": "2026-11-11T06:00:23Z",
  "releases": [
   {
    "body": "We are pleased to announce the release of pandas 3.1.1.\r\nThis is a patch release in the 3.1.x series and includes some regression fixes and bug fixes. We recommend that all users of the 3.1.x series upgrade to this version.\r\n\r\nSee the [full whatsnew](https://pandas.pydata.org/docs/whatsnew/v3.1.1.html) for a list of all the changes.\r\n\r\nThe release can be installed from PyPI:\r\n\r\n    python -m pip install --upgrade pandas==3.1.*\r\n\r\nOr from conda-forge\r\n\r\n    conda install -c conda-forge pandas=3.1\r\n\r\nPlease report any issues with the release on the [pandas issue tracker](https://github.com/pandas-dev/pandas/issues).\r\n\r\nThanks to all the contributors who made this release possible.\r\n",
