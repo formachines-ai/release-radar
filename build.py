@@ -979,10 +979,13 @@ def render_index(model: dict, errata_count: int) -> str:
     )
     nonotes = [r for r in rels if r.get("no_notes")]
     nn_items = "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in nonotes)
-    nonotes_block = (f'<h2 id="no-notes">Versions without release notes ({len(nonotes)})</h2>'
-                     f'<p class="note">Releases of the last {WINDOW_DAYS} days with no matching GitHub release and no mention in the repository CHANGELOG.md '
-                     f'(checked {now.strftime("%Y-%m-%d")} UTC). {len(nonotes)} shown.</p>'
-                     + (f'<ul class="nonotes">{nn_items}</ul>' if nonotes else ''))
+    nn_note = (f'<p class="note">Releases of the last {WINDOW_DAYS} days with no matching GitHub release and no mention in the repository CHANGELOG.md '
+               f'(checked {now.strftime("%Y-%m-%d")} UTC). {len(nonotes)} shown.</p>')
+    if nonotes:
+        nonotes_block = (f'<details id="no-notes" class="nonotes-block"><summary>Versions without release notes ({len(nonotes)})</summary>'
+                         f'{nn_note}<ul class="nonotes">{nn_items}</ul></details>')
+    else:
+        nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
     flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')

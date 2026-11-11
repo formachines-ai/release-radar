@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-11T18:13:30Z",
+ "fetched": "2026-11-11T19:13:55Z",
  "releases": [
   {
    "body": "## Verify this release\n\n```bash\ncosign verify \\\n  --key https://raw.githubusercontent.com/BerriAI/litellm/e82a3c646908ba0a6ee0beddc4310d7a6cac4065/cosign.pub \\\n  ghcr.io/berriai/litellm:v1.106.8\n```\n\nSame command for `litellm-database`, `litellm-non_root` and the `docker.io/litellm/*` images\n\n## What's new in 1.106.8\n\n2 PRs. 1 fixed, 1 changed. No action needed to upgrade\n\n### Changes\n\n- **Cost tracking and pricing:** Fixed incorrect transcription cost for some FLAC files, which could push a key over its budget (#50842) <sup>Also in [1.108.5](https://github.com/BerriAI/litellm/releases/tag/v1.108.5)</sup>\n- **Cost tracking and pricing:** Changed per-second transcriptions to bill the `usage.seconds` the provider reports instead of the measured length (#50727) <sup>Also in [1.108.5](https://github.com/BerriAI/litellm/releases/tag/v1.108.5)</sup>\n\n---\n\nBackport #50861 · [Full changelog](https://github.com/BerriAI/litellm/compare/v1.106.7...v1.106.8)\n",

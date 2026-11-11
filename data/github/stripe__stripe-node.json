@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-11T18:14:43Z",
+ "fetched": "2026-11-11T19:15:08Z",
  "releases": [
+  {
+   "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-2-0-alpha-3) for the full release notes.",
+   "date": "2026-11-11T18:50:12Z",
+   "name": "v23.2.0-alpha.3",
+   "prerelease": true,
+   "tag": "v23.2.0-alpha.3",
+   "url": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.3"
+  },
   {
    "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-2-0-alpha-2) for the full release notes.",
    "date": "2026-11-06T04:20:46Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v22.2.0-beta.3",
    "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-beta.3"
-  },
-  {
-   "body": "* [#2699](https://github.com/stripe/stripe-node/pull/2699) Update generated code for private-preview\n  * Add support for new resource `PaymentLocation`\n  * Add support for `create`, `del`, `retrieve`, and `update` methods on resource `PaymentLocation`\n  * Add support for `protections` on `AccountCreateParams.capabilities.card_payments`, `AccountUpdateParams.capabilities.card_payments`, and `Capability`\n  * Add support for `gift_card` on `ConfirmationToken.payment_method_preview`, `ConfirmationTokenCreateParams.testHelpers.payment_method_data`, `PaymentIntentConfirmParams.payment_method_data`, `PaymentIntentCreateParams.payment_method_data`, `PaymentIntentUpdateParams.payment_method_data`, `PaymentMethodCreateParams`, `PaymentMethod`, `SetupIntentConfirmParams.payment_method_data`, `SetupIntentCreateParams.payment_method_data`, `SetupIntentUpdateParams.payment_method_data`, and `SharedPayment.GrantedToken.payment_method_details`\n  * Add support for new value `gift_card` on enums `ConfirmationTokenCreateParams.testHelpers.payment_method_data.type`, `PaymentIntentConfirmParams.payment_method_data.type`, `PaymentIntentCreateParams.payment_method_data.type`, `PaymentIntentUpdateParams.payment_method_data.type`, `SetupIntentConfirmParams.payment_method_data.type`, `SetupIntentCreateParams.payment_method_data.type`, and `SetupIntentUpdateParams.payment_method_data.type`\n  * ⚠️ Add support for new value `gift_card` on enums `ConfirmationToken.payment_method_preview.type`, `PaymentMethod.type`, and `SharedPayment.GrantedToken.payment_method_details.type`\n  * Add support for new value `gift_card` on enums `CustomerListPaymentMethodsParams.type`, `PaymentMethodCreateParams.type`, and `PaymentMethodListParams.type`\n  * Add support for `metadata` on `DelegatedCheckout.RequestedSessionConfirmParams`\n  * Add support for `credited_items` on `InvoiceItem.proration_details`\n  * Add support for `network_lifecycle` on `Issuing.Dispute`\n  * Add support for new value `gift_card` on enums `PaymentIntentConfirmParams.excluded_payment_method_types`, `PaymentIntentCreateParams.excluded_payment_method_types`, `PaymentIntentUpdateParams.excluded_payment_method_types`, `SetupIntentCreateParams.excluded_payment_method_types`, and `SetupIntentUpdateParams.excluded_payment_method_types`\n  * ⚠️ Add support for new value `gift_card` on enums `PaymentIntent.excluded_payment_method_types` and `SetupIntent.excluded_payment_method_types`\n  * Add support for `status_details` on `Subscription`\n* [#2702](https://github.com/stripe/stripe-node/pull/2702) Add EventNotificationHandler (private preview)\n\nSee [the changelog for more details](https://github.com/stripe/stripe-node/blob/v22.2.0-alpha.4/CHANGELOG.md).\n",
-   "date": "2026-05-06T21:02:18Z",
-   "name": "v22.2.0-alpha.4",
-   "prerelease": true,
-   "tag": "v22.2.0-alpha.4",
-   "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-alpha.4"
   }
  ],
  "repo": "stripe/stripe-node"

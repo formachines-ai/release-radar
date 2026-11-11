@@ -1,18 +1,18 @@
 {
- "duration_s": 82.2,
+ "duration_s": 83.7,
  "last_build": {
-  "built": "2026-11-11T18:13:27Z",
-  "commit": "b42b84b",
+  "built": "2026-11-11T19:13:51Z",
+  "commit": "76903b5",
   "errors": [],
   "flagged": 24,
   "generator": "build.py",
-  "github_remaining": 4869,
-  "http_requests": 232,
+  "github_remaining": 4741,
+  "http_requests": 237,
   "notes_coverage": {
-   "github_release": 140,
+   "github_release": 143,
    "missing": [
     {
-     "count": 124,
+     "count": 117,
      "eco": "npm",
      "name": "@openai/codex",
      "reason": "no_matching_tag",
@@ -45,13 +45,6 @@
       "0.167.0-alpha.4.2-linux-x64",
       "0.167.0-alpha.4.2-win32-arm64",
       "0.167.0-alpha.4.2-win32-x64",
-      "0.167.0-alpha.5",
-      "0.167.0-alpha.5-darwin-arm64",
-      "0.167.0-alpha.5-darwin-x64",
-      "0.167.0-alpha.5-linux-arm64",
-      "0.167.0-alpha.5-linux-x64",
-      "0.167.0-alpha.5-win32-arm64",
-      "0.167.0-alpha.5-win32-x64",
       "0.167.0-darwin-arm64",
       "0.167.0-darwin-x64",
       "0.167.0-linux-arm64",
@@ -192,7 +185,7 @@
      "version": "0.0.0-dev-202611092046"
     },
     {
-     "count": 16,
+     "count": 17,
      "eco": "npm",
      "name": "playwright",
      "reason": "no_matching_tag",
@@ -205,6 +198,7 @@
       "1.65.0-beta-1793921730000",
       "1.65.0-beta-1794401539000",
       "1.65.0-beta-1794414684000",
+      "1.65.0-beta-1794421487000",
       "1.66.0-alpha-1793916328000",
       "1.66.0-alpha-1794252756000",
       "1.66.0-alpha-2026-11-05",
@@ -269,17 +263,15 @@
      ]
     },
     {
-     "count": 16,
+     "count": 14,
      "eco": "npm",
      "name": "tailwindcss",
      "reason": "no_matching_tag",
      "versions": [
       "0.0.0-insiders.2c35bd7",
       "0.0.0-insiders.3603b3a",
-      "0.0.0-insiders.669fcc1",
       "0.0.0-insiders.7c22203",
       "0.0.0-insiders.7e79802",
-      "0.0.0-insiders.7edc50e",
       "0.0.0-insiders.8c74689",
       "0.0.0-insiders.9369ddb",
       "0.0.0-insiders.9b2c925",
@@ -338,10 +330,10 @@
      "version": "1.44.0"
     }
    ],
-   "releases": 345
+   "releases": 340
   },
   "packages": 98,
-  "redirects": 160,
-  "releases": 345
+  "redirects": 163,
+  "releases": 340
  }
 }

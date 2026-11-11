@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-11T18:13:27Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-11T19:13:51Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -23,7 +23,7 @@ Updated: 2026-11-11T18:13:27Z UTC (daily build 06:00 UTC)
 
 ## Packages
 
-- [@ai-sdk/openai (npm)](https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/): latest 4.0.114 · JSON: https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json
+- [@ai-sdk/openai (npm)](https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/): latest 4.0.115 · JSON: https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json
 - [@anthropic-ai/claude-code (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/): latest 2.1.322 · JSON: https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json
 - [@anthropic-ai/sdk (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/): latest 1.8.0 · JSON: https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json
 - [@google/gemini-cli (npm)](https://releases.formachines.ai/pkg/npm/@google/gemini-cli/): latest 0.68.0 · JSON: https://releases.formachines.ai/pkg/npm/@google/gemini-cli/index.json
@@ -34,7 +34,7 @@ Updated: 2026-11-11T18:13:27Z UTC (daily build 06:00 UTC)
 - [@prisma/client (npm)](https://releases.formachines.ai/pkg/npm/@prisma/client/): latest 7.10.1 · JSON: https://releases.formachines.ai/pkg/npm/@prisma/client/index.json
 - [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.119.0 · JSON: https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json
 - [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.107.1 · JSON: https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json
-- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.169 · JSON: https://releases.formachines.ai/pkg/npm/ai/index.json
+- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.170 · JSON: https://releases.formachines.ai/pkg/npm/ai/index.json
 - [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.11 · JSON: https://releases.formachines.ai/pkg/npm/astro/index.json
 - [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.1 · JSON: https://releases.formachines.ai/pkg/npm/axios/index.json
 - [commander (npm)](https://releases.formachines.ai/pkg/npm/commander/): latest 15.1.0 · JSON: https://releases.formachines.ai/pkg/npm/commander/index.json
