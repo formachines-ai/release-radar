@@ -9,14 +9,16 @@ responsible: Dmitry, formachines.ai.
 Claude Code:
 
 ```bash
-claude mcp add release-radar -- python3 /path/to/release-radar/mcp/server.py
+claude mcp add release-radar -- python3 /path/to/release-radar/mcp/release_radar_mcp.py
 ```
 
 Any client (Cursor, Codex …), JSON config:
 
 ```json
-{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release-radar/mcp/server.py"]}}}
+{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release-radar/mcp/release_radar_mcp.py"]}}}
 ```
+
+The single server file is also published at <https://releases.formachines.ai/mcp/release_radar_mcp.py>.
 
 (npm / MCP-registry packaging is a follow-up task.)
 
@@ -24,9 +26,9 @@ Any client (Cursor, Codex …), JSON config:
 
 | Tool | Arguments | Returns |
 |---|---|---|
-| `releases_today` | `ecosystem?` (`pypi`/`npm`), `stable_only?`, `limit?` (≤200) | releases in the 7-day window from `/today.json`, plus `count` (same as `counts.releases`) |
-| `package_releases` | `ecosystem`, `name` | `/pkg/<eco>/<name>/index.json` of one tracked package |
-| `flagged_breaking` | `ecosystem?`, `stable_only?`, `limit?` | releases whose notes match the breaking regex, with the verbatim quote and notes link |
+| `releases_today` | `ecosystem?` (`pypi`/`npm`), `stable_only?`, `limit?` (1–200, default 50) | releases in the 7-day window from `/today.json`, plus `count` (same as `counts.releases`) |
+| `get_package_releases` | `ecosystem` (`pypi`/`npm`), `name` | the package's releases from `/pkg/<eco>/<name>/index.json`: version, date, flag, verbatim quotes, notes link, Errata link |
+| `list_flagged` | `days?` (1–7, default 7), `ecosystem?` | flagged releases from `/today.json` of the last `days` days, same fields |
 
 The flag is a regex match, not a judgement; quotes are verbatim. No data leaves your machine except the GET requests
 to the site. `RELEASE_RADAR_BASE` overrides the base URL.
@@ -34,7 +36,7 @@ to the site. `RELEASE_RADAR_BASE` overrides the base URL.
 ## Test
 
 ```bash
-python3 mcp/test_server.py        # serves ./public locally, no network
+python3 -m unittest mcp/test_release_radar_mcp.py   # fixtures, no network
 python3 mcp/test_conformance.py   # full stdio session against the live site (needs network)
 ```
 
@@ -52,7 +54,7 @@ python3 mcp/test_conformance.py   # full stdio session against the live site (ne
 - **Config** (Claude Code `.mcp.json` / Cursor `mcp.json`):
 
 ```json
-{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release-radar/mcp/server.py"]}}}
+{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release-radar/mcp/release_radar_mcp.py"]}}}
 ```
 
 - **SDK recommendation:** publish the current stdlib server as is for the first release: it exposes only three read-only
@@ -61,17 +63,3 @@ python3 mcp/test_conformance.py   # full stdio session against the live site (ne
   for an npm package the official TypeScript SDK would be the natural choice then, at the cost of a dependency and a rewrite.
   Before publishing, do one manual check with real Claude Code (`claude mcp add …`, call each tool).
 
-## Single-file server (T-0106): `release_radar_mcp.py`
-
-`release_radar_mcp.py` is the standalone stdio server published at
-<https://releases.formachines.ai/mcp/release_radar_mcp.py>. Stdlib only; reads only `releases.formachines.ai` JSON.
-
-| Tool | Arguments | Returns |
-|---|---|---|
-| `get_package_releases` | `ecosystem` (`pypi`/`npm`), `name` | the package's releases from `/pkg/<eco>/<name>/index.json`: version, date, flag, verbatim quotes, notes link, Errata link |
-| `list_flagged` | `days` (1–7, default 7), `ecosystem?` | flagged releases from `/today.json` of the last `days` days, same fields |
-
-Claude Code: `claude mcp add release-radar -- python3 /path/to/release_radar_mcp.py`
-Cursor (`.cursor/mcp.json`): `{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release_radar_mcp.py"]}}}`
-
-Test: `python3 -m unittest mcp/test_release_radar_mcp.py` (fixtures, no network).

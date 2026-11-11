@@ -1,5 +1,5 @@
 """Conformance session over stdio against the live site. Run: python3 mcp/test_conformance.py
-Starts server.py as a subprocess, speaks newline-delimited JSON-RPC like a real MCP client."""
+Starts release_radar_mcp.py as a subprocess, speaks newline-delimited JSON-RPC like a real MCP client."""
 import json, os, subprocess, sys, unittest, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -8,7 +8,7 @@ LIVE = os.environ.get("RELEASE_RADAR_BASE", "https://releases.formachines.ai").r
 
 class Client:
     def __init__(self):
-        self.p = subprocess.Popen([sys.executable, os.path.join(HERE, "server.py")], stdin=subprocess.PIPE,
+        self.p = subprocess.Popen([sys.executable, os.path.join(HERE, "release_radar_mcp.py")], stdin=subprocess.PIPE,
                                   stdout=subprocess.PIPE, text=True, env={**os.environ, "RELEASE_RADAR_BASE": LIVE})
         self.n = 0
 
@@ -56,7 +56,7 @@ class Session(unittest.TestCase):
         self.assertEqual(c.send("ping")["result"], {})
         # tools/list
         tools = c.send("tools/list")["result"]["tools"]
-        self.assertEqual({t["name"] for t in tools}, {"releases_today", "package_releases", "flagged_breaking"})
+        self.assertEqual({t["name"] for t in tools}, {"releases_today", "get_package_releases", "list_flagged"})
         for t in tools:
             self.assertTrue(t["description"])
             s = t["inputSchema"]
@@ -72,13 +72,12 @@ class Session(unittest.TestCase):
         self.assertEqual(today["count"], live["counts"]["releases"])
         self.assertEqual(today["count"], len(live["releases"]))
         self.assertLessEqual(len(today["releases"]), 5)
-        fl = payload(c.tool("flagged_breaking", {"limit": 200}))
-        self.assertEqual(fl["count"], live["counts"]["flagged"])
+        fl = payload(c.tool("list_flagged", {}))
         for x in fl["releases"]:
             self.assertTrue(x["flagged"])
-        pk = payload(c.tool("package_releases", {"ecosystem": "pypi", "name": "anthropic"}))
+        pk = payload(c.tool("get_package_releases", {"ecosystem": "pypi", "name": "anthropic"}))
         self.assertEqual(pk["package"], "anthropic")
-        bad = c.tool("package_releases", {"ecosystem": "pypi", "name": "no-such-pkg-xyz"})
+        bad = c.tool("get_package_releases", {"ecosystem": "pypi", "name": "no-such-pkg-xyz"})
         self.assertTrue(bad["result"]["isError"])
         # errors
         r = c.tool("no_such_tool", {})

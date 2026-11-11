@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-11T19:13:51Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-11T20:13:38Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -18,7 +18,7 @@ Updated: 2026-11-11T19:13:51Z UTC (daily build 06:00 UTC)
 ## Pages
 
 - [Front page](https://releases.formachines.ai/): last 24 h, flagged releases, PyPI and npm lists, all packages
-- [MCP server](https://releases.formachines.ai/mcp/): stdio MCP wrapper (Python stdlib, source https://releases.formachines.ai/mcp/release_radar_mcp.py) with tools get_package_releases and list_flagged over today.json and /pkg/*/index.json
+- [MCP server](https://releases.formachines.ai/mcp/): stdio MCP wrapper (Python stdlib, source https://releases.formachines.ai/mcp/release_radar_mcp.py) with tools releases_today, get_package_releases and list_flagged over today.json and /pkg/*/index.json
 - [Legal](https://releases.formachines.ai/legal/)
 
 ## Packages
