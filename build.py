@@ -122,6 +122,13 @@ def render_cards(rels: list[dict], now: datetime, **kw) -> str:
     return "".join(render_card(r, now, variants=v, **kw) for r, v in group_variants(rels))
 
 
+def notes_counts(missing: list[dict], checked_no_notes: int) -> dict:
+    """Coverage counts (versions) from the same list that feeds build.json notes_coverage.missing."""
+    return {"checked_no_notes": checked_no_notes,
+            "not_fetched": sum(1 for m in missing if m["reason"] == "not_fetched"),
+            "no_repo_url": sum(1 for m in missing if m["reason"] == "no_repo_url")}
+
+
 def group_missing(missing: list[dict]) -> list[dict]:
     by: dict[tuple, list[dict]] = {}
     for m in missing:
@@ -979,13 +986,31 @@ def render_index(model: dict, errata_count: int) -> str:
     )
     nonotes = [r for r in rels if r.get("no_notes")]
     nn_items = "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in nonotes)
-    nn_note = (f'<p class="note">Releases of the last {WINDOW_DAYS} days with no matching GitHub release and no mention in the repository CHANGELOG.md '
-               f'(checked {now.strftime("%Y-%m-%d")} UTC). {len(nonotes)} shown.</p>')
+    cov = notes_counts(model["notes_missing"], len(nonotes))
+    by_ver = {(r["ecosystem"], r["name"], r["version"]): r for r in rels}
+    unchecked = [m for m in model["notes_missing"] if m["reason"] in ("not_fetched", "no_repo_url")]
+    nn_note = (f'<p class="note">No release notes found for {cov["checked_no_notes"]} of the versions checked; '
+               f'{cov["not_fetched"]} versions could not be fetched and {cov["no_repo_url"]} have no known repository, '
+               f'so they were not checked (build {now.strftime("%Y-%m-%d %H:%M")} UTC). '
+               f'Checked = no matching GitHub release and no mention in the repository CHANGELOG.md, last {WINDOW_DAYS} days.</p>'
+               f'<ul class="note nn-counts"><li>Checked, no notes found: <b>{cov["checked_no_notes"]}</b></li>'
+               f'<li>Not checked, notes fetch failed (not_fetched): <b>{cov["not_fetched"]}</b></li>'
+               f'<li>Not checked, no repository URL known (no_repo_url): <b>{cov["no_repo_url"]}</b></li></ul>')
+    unchecked_html = ""
+    if unchecked:
+        items = []
+        for m in unchecked:
+            rr = by_ver.get((m["eco"], m["name"], m["version"]))
+            path = rr["pkg_path"] if rr else f'/pkg/{m["eco"]}/{m["name"]}/'
+            frag = f'#{esc(safe_fs_name(rr["id"]))}' if rr else ""
+            items.append(f'<li><a href="{esc(path)}{frag}">{esc(m["name"])} {esc(m["version"])}</a> ({m["reason"]})</li>')
+        unchecked_html = (f'<details id="not-checked" class="nonotes-block"><summary>Not checked: {len(unchecked)} versions</summary>'
+                          f'<ul class="nonotes">{"".join(items)}</ul></details>')
     if nonotes:
         nonotes_block = (f'<details id="no-notes" class="nonotes-block"><summary>Versions without release notes ({len(nonotes)})</summary>'
-                         f'{nn_note}<ul class="nonotes">{nn_items}</ul></details>')
+                         f'{nn_note}<ul class="nonotes">{nn_items}</ul></details>{unchecked_html}')
     else:
-        nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note
+        nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note + unchecked_html
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
     flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
@@ -1485,6 +1510,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "releases": len(model["releases"]),
             "github_release": sum(1 for r in model["releases"] if r["notes_kind"] == "github_release"),
             "missing": group_missing(model["notes_missing"]),
+            "counts": notes_counts(model["notes_missing"], sum(1 for r in model["releases"] if r.get("no_notes"))),
         },
     }
     write_json(PUBLIC_DIR / "build.json", build_info)

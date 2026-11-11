@@ -134,3 +134,4 @@ footer.site p { margin: 0.2rem 0; }
 .card .variants ul { margin: 0.3rem 0 0 1rem; padding: 0; overflow-wrap: anywhere; }
 .nonotes { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; padding-left: 1.2rem; overflow-wrap: anywhere; }
 .nonotes-block > summary { cursor: pointer; font-size: 1.25rem; font-weight: 700; margin: 1.2rem 0 0.5rem; overflow-wrap: anywhere; }
+.nn-counts { padding-left: 1.2rem; overflow-wrap: anywhere; }
