@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T18:13:27Z",
+ "built": "2026-11-11T19:13:51Z",
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-05T15:14:17Z",
   "version": "5.7.0"
  },
- "metadata_fetched": "2026-11-11T18:13:46Z",
+ "metadata_fetched": "2026-11-11T19:14:09Z",
  "package": "celery",
  "page": "https://releases.formachines.ai/pkg/pypi/celery/",
  "prereleases_in_window": 0,

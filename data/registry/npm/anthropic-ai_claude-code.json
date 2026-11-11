@@ -6,7 +6,7 @@
   "stable": "2.1.311"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T18:13:58Z",
+ "fetched": "2026-11-11T19:14:22Z",
  "homepage": "https://github.com/anthropics/claude-code",
  "latest": "2.1.322",
  "name": "@anthropic-ai/claude-code",

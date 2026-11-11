@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T18:13:27Z",
+ "built": "2026-11-11T19:13:51Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-11-02T20:48:01Z",
   "version": "4.6.4"
  },
- "metadata_fetched": "2026-11-11T18:14:36Z",
+ "metadata_fetched": "2026-11-11T19:15:02Z",
  "package": "nuxt",
  "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
  "prereleases_in_window": 0,

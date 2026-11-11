@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-11T18:13:49Z",
+ "fetched": "2026-11-11T19:14:13Z",
  "homepage": "https://github.com/redis/redis-py",
  "latest": "8.1.0",
  "name": "redis",

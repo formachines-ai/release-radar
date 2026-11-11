@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T18:13:27Z",
+ "built": "2026-11-11T19:13:51Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,12 +8,31 @@
   "date": "2026-11-05T18:28:14Z",
   "version": "1.65.0"
  },
- "metadata_fetched": "2026-11-11T18:14:36Z",
+ "metadata_fetched": "2026-11-11T19:15:03Z",
  "package": "playwright",
  "page": "https://releases.formachines.ai/pkg/npm/playwright/",
- "prereleases_in_window": 16,
+ "prereleases_in_window": 17,
  "registry": "https://www.npmjs.com/package/playwright",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-11T18:35:14Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1794421487000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.65.0-beta-1794421487000",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-11T16:34:51Z",
