@@ -6,7 +6,7 @@
   "stable": "2.1.311"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T19:14:22Z",
+ "fetched": "2026-11-11T23:09:38Z",
  "homepage": "https://github.com/anthropics/claude-code",
  "latest": "2.1.322",
  "name": "@anthropic-ai/claude-code",
@@ -398,11 +398,6 @@
    "date": "2026-08-14T18:50:44Z",
    "deprecated": false,
    "version": "2.1.233"
-  },
-  {
-   "date": "2026-08-13T21:30:53Z",
-   "deprecated": false,
-   "version": "2.1.232"
   }
  ]
 }

@@ -7,7 +7,7 @@
   "v3-lts": "3.4.19"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T19:15:09Z",
+ "fetched": "2026-11-11T23:10:24Z",
  "homepage": "https://tailwindcss.com",
  "latest": "4.3.5",
  "name": "tailwindcss",
@@ -284,16 +284,6 @@
    "date": "2026-08-14T10:28:56Z",
    "deprecated": false,
    "version": "0.0.0-insiders.021b7fe"
-  },
-  {
-   "date": "2026-08-13T21:30:12Z",
-   "deprecated": false,
-   "version": "0.0.0-insiders.f7f58f0"
-  },
-  {
-   "date": "2026-08-13T19:46:16Z",
-   "deprecated": false,
-   "version": "0.0.0-insiders.de9e71c"
   }
  ]
 }

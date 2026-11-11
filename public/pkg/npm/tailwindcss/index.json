@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T21:09:52Z",
+ "built": "2026-11-11T23:09:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,10 +8,10 @@
   "date": "2026-11-06T15:16:02Z",
   "version": "4.3.5"
  },
- "metadata_fetched": "2026-11-11T19:15:09Z",
+ "metadata_fetched": "2026-11-11T23:10:24Z",
  "package": "tailwindcss",
  "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
- "prereleases_in_window": 12,
+ "prereleases_in_window": 11,
  "registry": "https://www.npmjs.com/package/tailwindcss",
  "releases": [
   {
@@ -245,25 +245,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "0.0.0-insiders.9369ddb",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-04T21:18:01Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/tailwindcss/0.0.0-insiders.8c74689",
-   "json": "https://releases.formachines.ai/pkg/npm/tailwindcss/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/e519a046db/",
-   "notes_url": "https://github.com/tailwindlabs/tailwindcss/releases",
-   "package": "tailwindcss",
-   "page": "https://releases.formachines.ai/pkg/npm/tailwindcss/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.0.0-insiders.8c74689",
    "yanked_or_deprecated": false
   }
  ],

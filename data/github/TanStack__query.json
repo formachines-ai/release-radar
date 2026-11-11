@@ -1,13 +1,5 @@
 {
  "by_tag": {
-  "@tanstack/react-query@5.106.0": {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.0",
-   "date": "2026-11-04T20:11:58Z",
-   "name": "@tanstack/react-query@5.106.0",
-   "prerelease": false,
-   "tag": "@tanstack/react-query@5.106.0",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.106.0"
-  },
   "@tanstack/react-query@5.106.1": {
    "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.106.1",
    "date": "2026-11-05T08:07:22Z",
@@ -17,7 +9,7 @@
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.106.1"
   }
  },
- "fetched": "2026-11-11T19:14:49Z",
+ "fetched": "2026-11-11T23:10:05Z",
  "releases": [
   {
    "body": "Release 2026-11-06 23:04\n\n## Changes\n\n### Features\n\n- vue-query: return a reactive `state` from `useQuery` so `status=== 'success'` narrows `data` without unwrapping refs (#12541) (f4199ab51) by @DamianOsipiuk\n\n### Fix\n\n- vue-query: keep query-core's `enabled(query)` callback (#12542) (025773a83) by @DamianOsipiuk\n\n\n## Packages\n\n- @tanstack/angular-query-experimental@5.107.1\n- @tanstack/eslint-plugin-query@5.107.1\n- @tanstack/lit-query@0.2.38\n- @tanstack/preact-query@5.107.1\n- @tanstack/preact-query-devtools@5.107.1\n- @tanstack/preact-query-persist-client@5.107.1\n- @tanstack/query-async-storage-persister@5.107.1\n- @tanstack/query-broadcast-client-experimental@5.107.1\n- @tanstack/query-core@5.107.1\n- @tanstack/query-devtools@5.107.1\n- @tanstack/query-persist-client-core@5.107.1\n- @tanstack/query-sync-storage-persister@5.107.1\n- @tanstack/react-query@5.107.1\n- @tanstack/react-query-devtools@5.107.1\n- @tanstack/react-query-next-experimental@5.107.1\n- @tanstack/react-query-persist-client@5.107.1\n- @tanstack/solid-query@5.107.1\n- @tanstack/solid-query-devtools@5.107.1\n- @tanstack/solid-query-persist-client@5.107.1\n- @tanstack/svelte-query@6.4.1\n- @tanstack/svelte-query-devtools@6.4.1\n- @tanstack/svelte-query-persist-client@6.4.1\n- @tanstack/vue-query@5.107.1\n- @tanstack/vue-query-devtools@6.4.1\n",

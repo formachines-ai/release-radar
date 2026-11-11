@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T21:09:52Z",
+ "built": "2026-11-11T23:09:10Z",
  "redirects": {
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
   "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
@@ -69,6 +69,7 @@
   "78845ddb42": "https://github.com/BerriAI/litellm/releases/tag/v1.108.5",
   "789904bb3f": "https://github.com/axios/axios/releases/tag/v1.21.1",
   "7aa9874710": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+  "7ac6e59be6": "https://github.com/firebase/firebase-js-sdk/releases/tag/firebase%4013.3.0",
   "7adc772ea5": "https://github.com/vercel/ai/releases/tag/ai%406.0.325",
   "7b5416dbcf": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
   "7b898ab8bb": "https://github.com/googleapis/js-genai/releases/tag/v3.2.0",
@@ -98,11 +99,13 @@
   "a2566817ac": "https://github.com/vercel/ai/releases/tag/ai%407.0.168",
   "a667b12d21": "https://github.com/withastro/astro/releases/tag/astro%407.4.7",
   "a7b6eb6de6": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.2",
+  "a88694d506": "https://github.com/openai/codex/releases/tag/rust-v0.167.2",
   "a94ccf0ea5": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.6.0",
   "a9d2e8f986": "https://github.com/openai/codex/releases",
   "aa1a247c74": "https://github.com/vitejs/vite/releases/tag/v8.2.6",
   "ab67a05cd3": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.142",
   "ab70ac38ca": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.137",
+  "ae47e266f7": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.5",
   "b16cb756e0": "https://github.com/vercel/ai/releases/tag/ai%406.0.328",
   "b2358d5e39": "https://github.com/googleapis/js-genai/releases/tag/v3.1.0",
   "b275d2c9ce": "https://github.com/pmndrs/zustand/releases/tag/v5.1.0",
@@ -113,12 +116,14 @@
   "b84ea70efa": "https://formachines.ai/errata/pypi/cryptography/",
   "b98d8b356c": "https://github.com/astral-sh/ruff/releases/tag/0.17.4",
   "bb025bc05e": "https://github.com/honojs/hono/releases/tag/v4.13.17",
+  "bcbeeec7d1": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.4.0",
   "bd270a2d99": "https://formachines.ai/errata/pypi/click/",
   "bfbba95a7a": "https://github.com/vercel/ai/releases/tag/ai%407.0.166",
   "bfcc9fbc29": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.41",
   "c1417edaec": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.141",
   "c6f845d088": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10",
   "ca33dba588": "https://github.com/prisma/orm/releases",
+  "ccedb7d55e": "https://github.com/fastapi/fastapi/releases/tag/0.162.5",
   "cf283aab99": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.139",
   "d14c8a0b72": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.3",
   "d23854f5c4": "https://github.com/BerriAI/litellm/releases/tag/v1.106.8",
@@ -157,7 +162,6 @@
   "f8dbe20817": "https://github.com/withastro/astro/releases/tag/astro%407.4.11",
   "fbe0e62934": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.44",
   "fce0960ea1": "https://github.com/pydantic/pydantic/releases/tag/v2.14.3",
-  "ff14ca29c0": "https://github.com/vercel/ai/releases/tag/ai%407.0.163",
-  "ff77bd0438": "https://github.com/Automattic/mongoose/releases/tag/9.12.0"
+  "ff14ca29c0": "https://github.com/vercel/ai/releases/tag/ai%407.0.163"
  }
 }
