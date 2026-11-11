@@ -34,7 +34,7 @@ def call(name, args):
 class T(unittest.TestCase):
     def test_tools_listed(self):
         names = [t["name"] for t in rpc({"method": "tools/list"})["result"]["tools"]]
-        self.assertEqual(names, ["get_package_releases", "list_flagged"])
+        self.assertEqual(names, ["releases_today", "get_package_releases", "list_flagged"])
 
     def test_list_flagged_default(self):
         _, d = call("list_flagged", {})
@@ -47,6 +47,16 @@ class T(unittest.TestCase):
         self.assertEqual([r["version"] for r in d["releases"]], ["1"])
         _, d = call("list_flagged", {"ecosystem": "npm"})
         self.assertEqual([r["version"] for r in d["releases"]], ["3"])
+
+    def test_releases_today(self):
+        _, d = call("releases_today", {})
+        self.assertEqual([r["version"] for r in d["releases"]], ["1", "2", "3", "4"])
+        self.assertEqual(d["releases"][0]["quotes"], [Q])
+        self.assertNotIn("extra", d["releases"][0])
+        _, d = call("releases_today", {"ecosystem": "npm", "limit": 1})
+        self.assertEqual([r["version"] for r in d["releases"]], ["3"])
+        r, _ = call("releases_today", {"limit": 0})
+        self.assertTrue(r["isError"])
 
     def test_days_limit(self):
         r, _ = call("list_flagged", {"days": 8})

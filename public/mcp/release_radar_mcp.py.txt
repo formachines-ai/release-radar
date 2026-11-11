@@ -53,6 +53,21 @@ def list_flagged(args):
     return {"built": d.get("built"), "days": days, "count": len(rels), "releases": rels, "source": BASE + "/today.json"}
 
 
+def releases_today(args):
+    eco, limit = args.get("ecosystem"), args.get("limit", 50)
+    if eco is not None and eco not in ("pypi", "npm"):
+        raise ValueError("ecosystem must be 'pypi' or 'npm'")
+    if isinstance(limit, bool) or not isinstance(limit, int) or not 1 <= limit <= 200:
+        raise ValueError("limit must be an integer from 1 to 200")
+    d = fetch("/today.json")
+    allr = d.get("releases", [])
+    rels = [_pick(r) for r in allr if (not eco or r.get("ecosystem") == eco)
+            and not (args.get("stable_only") and r.get("prerelease"))][:limit]
+    return {"built": d.get("built"), "window_days": d.get("window_days"),
+            "count": d.get("counts", {}).get("releases", len(allr)), "returned": len(rels),
+            "releases": rels, "source": BASE + "/today.json"}
+
+
 def get_package_releases(args):
     eco, name = args.get("ecosystem"), args.get("name")
     if eco not in ("pypi", "npm") or not name or not isinstance(name, str):
@@ -71,6 +86,8 @@ def get_package_releases(args):
 
 _ECO = {"type": "string", "enum": ["pypi", "npm"]}
 TOOLS = {
+    "releases_today": (releases_today, "Releases of the tracked PyPI/npm packages in the site's 7-day window (from /today.json), newest first, with flag, verbatim quotes and links.",
+                       {"ecosystem": _ECO, "stable_only": {"type": "boolean"}, "limit": {"type": "integer", "minimum": 1, "maximum": 200}}, []),
     "get_package_releases": (get_package_releases, "What was flagged in one tracked package: its releases in the site's 7-day window with version, date, flag, verbatim quotes, notes link and Errata link (from /pkg/<eco>/<name>/index.json). Regex flag only, no judgement.",
                              {"ecosystem": _ECO, "name": {"type": "string", "description": "e.g. requests or @anthropic-ai/sdk"}}, ["ecosystem", "name"]),
     "list_flagged": (list_flagged, "Flagged releases (notes match the breaking/deprecated/removed regex) of the last N days (1-7) across tracked packages, with verbatim quotes and links (from /today.json).",

@@ -1343,7 +1343,7 @@ def render_llms(model: dict) -> str:
              f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)",
              "", "## Pages", "",
              f"- [Front page]({SITE_BASE}/): last 24 h, flagged releases, PyPI and npm lists, all packages",
-             f"- [MCP server]({SITE_BASE}/mcp/): stdio MCP wrapper (Python stdlib, source {SITE_BASE}/mcp/release_radar_mcp.py) with tools get_package_releases and list_flagged over today.json and /pkg/*/index.json",
+             f"- [MCP server]({SITE_BASE}/mcp/): stdio MCP wrapper (Python stdlib, source {SITE_BASE}/mcp/release_radar_mcp.py) with tools releases_today, get_package_releases and list_flagged over today.json and /pkg/*/index.json",
              f"- [Legal]({SITE_BASE}/legal/)",
              "", "## Packages", ""]
     for p in model["packages"]:
