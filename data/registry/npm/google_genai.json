@@ -5,7 +5,7 @@
   "next": "2.9.0-rc.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T19:14:24Z",
+ "fetched": "2026-11-11T23:09:40Z",
  "homepage": "https://github.com/googleapis/js-genai#readme",
  "latest": "3.2.0",
  "name": "@google/genai",
@@ -107,11 +107,6 @@
    "date": "2026-08-19T23:11:32Z",
    "deprecated": false,
    "version": "2.18.0"
-  },
-  {
-   "date": "2026-08-13T21:55:20Z",
-   "deprecated": false,
-   "version": "2.17.1"
   }
  ]
 }

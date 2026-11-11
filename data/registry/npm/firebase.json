@@ -13,7 +13,7 @@
   "eap-firestore-backfiller": "10.12.2-eap-firestore-backfiller.87babf60c",
   "eap-firestore-debug": "8.1.1-1.0.0-eap-firestore-debug.9c6096f43",
   "eap-firestore-pipelines": "12.5.0-eap-firestore-pipelines.2.e4cdd2e06",
-  "eap-sql": "13.1.0-eap-sql.49c10c82f",
+  "eap-sql": "13.2.0-eap-sql.a9a137e67",
   "eap-storage-emulator": "8.2.9-eap-storage-emulator.ed256f582",
   "eap-vertexai-hybgoog": "11.6.0-eap-vertexai-hybgoog.31261ca31",
   "eap-vertexai-hybridinference": "11.6.0-eap-vertexai-hybridinference.e83974308",
@@ -21,7 +21,7 @@
   "exp-types-exploration": "8.9.1-8.9.1-exp-types-exploration.635c9e3fd",
   "firebase-studio-sdk-integration": "12.1.0-firebase-studio-sdk-integration.556d1bed2",
   "firestore-bundles-alpha": "7.22.1-alpha.96ae6a5fe",
-  "latest": "13.2.0",
+  "latest": "13.3.0",
   "longpoll": "8.2.2-longpoll.66863f547",
   "next": "13.3.0-20261111165442",
   "passkey-preview": "10.11.0-passkey-preview.103ead202",
@@ -30,14 +30,24 @@
   "vertexai-preview": "10.13.2-vertexai-preview.6b035b7d3"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T19:14:59Z",
+ "fetched": "2026-11-11T23:10:14Z",
  "homepage": "https://firebase.google.com/",
- "latest": "13.2.0",
+ "latest": "13.3.0",
  "name": "firebase",
  "page": "https://www.npmjs.com/package/firebase",
  "repo": "firebase/firebase-js-sdk",
  "summary": "Firebase JavaScript library for web and Node.js",
  "versions": [
+  {
+   "date": "2026-11-11T23:09:34Z",
+   "deprecated": false,
+   "version": "13.2.0-eap-sql.a9a137e67"
+  },
+  {
+   "date": "2026-11-11T20:34:37Z",
+   "deprecated": false,
+   "version": "13.3.0"
+  },
   {
    "date": "2026-11-11T17:09:07Z",
    "deprecated": false,

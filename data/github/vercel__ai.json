@@ -209,7 +209,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.169"
   }
  },
- "fetched": "2026-11-11T19:14:17Z",
+ "fetched": "2026-11-11T23:09:34Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 91a67c2: Fix excessive CPU usage when streaming long arrays with `Output.array` or `streamObject`. Parse and validate completed elements incrementally instead of repeatedly processing the entire accumulated array on every text chunk.\n- 84b1cb0: Cancel pending send-now operations when a later stop or dispose occurs, preventing an abandoned chat's queued messages and history from being sent through a replacement transport.\n- Updated dependencies [eaeb37e]\n  - @ai-sdk/gateway@4.0.143",

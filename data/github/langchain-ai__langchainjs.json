@@ -1,6 +1,144 @@
 {
- "fetched": "2026-11-11T19:14:25Z",
+ "by_tag": {
+  "@langchain/core@1.3.5": {
+   "body": "### Patch Changes\n\n- [#10961](https://github.com/langchain-ai/langchainjs/pull/10961) [`674b755`](https://github.com/langchain-ai/langchainjs/commit/674b755e17008b3875228feb63eeaec13c21c52a) Thanks [@hntrl](https://github.com/hntrl)! - fix(prompts): enforce maximum prompt template nesting depth\n\n  Add recursion depth guards for mustache template parsing and dict prompt template traversal to prevent stack-exhaustion DoS from deeply nested attacker-controlled templates.\n\n- [#12108](https://github.com/langchain-ai/langchainjs/pull/12108) [`fb61799`](https://github.com/langchain-ai/langchainjs/commit/fb6179926d70c76cc81a238aed4f2ad8c9531d4b) Thanks [@casparb](https://github.com/casparb)! - fix(core): end the `tool()` run when its signal is already aborted",
+   "date": "2026-11-05T20:21:45Z",
+   "name": "@langchain/core@1.3.5",
+   "prerelease": false,
+   "tag": "@langchain/core@1.3.5",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.5"
+  },
+  "langchain@1.6.2": {
+   "body": "### Patch Changes\n\n- [#11596](https://github.com/langchain-ai/langchainjs/pull/11596) [`db829f1`](https://github.com/langchain-ai/langchainjs/commit/db829f1cf96241215006acbaaa6c9138d6b24b09) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Add `tracePolicy` to `createMiddleware`, applied to the middleware's lifecycle hook runs. It only changes what `LangChainTracer` sends to LangSmith (use `omitPayload` from `@langchain/core/tracers/tracer_langchain`). Requires `@langchain/langgraph` >= 1.6.1.",
+   "date": "2026-11-05T20:21:48Z",
+   "name": "langchain@1.6.2",
+   "prerelease": false,
+   "tag": "langchain@1.6.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.2"
+  }
+ },
+ "fetched": "2026-11-11T23:09:41Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#12183](https://github.com/langchain-ai/langchainjs/pull/12183) [`e220aee`](https://github.com/langchain-ai/langchainjs/commit/e220aeed6fd91ec8a1b91b1e9f25b6d87c856d31) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(langchain): add model router and auto mode middleware\n\n  - Add `modelRouterMiddleware`, which picks the agent's model for each run from a decision model's `Choice` answer\n  - Add `autoModeMiddleware`, which blocks listed tool calls that a decision model judges risky\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:37Z",
+   "name": "langchain@1.6.5",
+   "prerelease": false,
+   "tag": "langchain@1.6.5",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:03:13Z",
+   "name": "@langchain/xai@1.5.6",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.6",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.6"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#12184](https://github.com/langchain-ai/langchainjs/pull/12184) [`5a21380`](https://github.com/langchain-ai/langchainjs/commit/5a213808e6038c822ce323426174229f7da3c924) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(typesafe)!: implement `TypeSafeClassifier` as a decision model\n\n  `TypeSafeClassifier` now extends `BaseDecisionModel` from `@langchain/core/decisions` and requires `@langchain/core` >= 1.4.0. This is a breaking change:\n\n  - Questions are passed with each request instead of to the constructor: `new TypeSafeClassifier().invoke({ state, questions })` replaces `new TypeSafeClassifier({ questions }).invoke(state)`\n  - Responses are core's `ClassifierResponse`. Token usage is `usage_metadata` (`input_tokens`, `output_tokens`, `total_tokens`) instead of `usage` (`inputTokens`, `outputTokens`)\n  - Question and answer types are re-exported from core, and every question requires `instructions`. `ClassificationResponse`, `QuestionContent` (now `Content`), `Usage`, `ValidatedQuestions`, `JsonValue`, and `TypeSafeClassifierCallOptions` are removed\n  - Add `Box` questions, and send image content blocks in state or question content as TypeSafe image assets\n  - An invalid question now throws a plain `Error` from `invoke` instead of a `TypeSafeError` from the constructor\n  - `State` is core's type, which no longer lists `Date`; dates are still sent as ISO strings\n\n### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.\n\n- [#12186](https://github.com/langchain-ai/langchainjs/pull/12186) [`035b74b`](https://github.com/langchain-ai/langchainjs/commit/035b74b136cec186231715b457803364fc2ffb37) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - refactor(typesafe): deprecate experimental middleware\n\n  - Deprecate `autoModeMiddleware` and `modelRouterMiddleware` from `@langchain/typesafe/middleware`. They warn once when called and will be removed in 0.2.0\n  - Use `autoModeMiddleware` and `modelRouterMiddleware` from `langchain` with `classifier: new TypeSafeClassifier()` instead",
+   "date": "2026-11-11T22:03:10Z",
+   "name": "@langchain/typesafe@0.1.0",
+   "prerelease": false,
+   "tag": "@langchain/typesafe@0.1.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/typesafe%400.1.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:03:07Z",
+   "name": "@langchain/together-ai@0.2.25",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.25",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.25"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:52Z",
+   "name": "@langchain/tavily@1.2.1",
+   "prerelease": false,
+   "tag": "@langchain/tavily@1.2.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/tavily%401.2.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:03:04Z",
+   "name": "@langchain/openrouter@0.4.25",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.25",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.25"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:49Z",
+   "name": "@langchain/openai@1.8.4",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.8.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/classic@1.0.61",
+   "date": "2026-11-11T22:03:16Z",
+   "name": "@langchain/neo4j@0.1.33",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.33",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.33"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:40Z",
+   "name": "@langchain/mcp-adapters@2.0.3",
+   "prerelease": false,
+   "tag": "@langchain/mcp-adapters@2.0.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/mcp-adapters%402.0.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:46Z",
+   "name": "@langchain/ibm@0.2.1",
+   "prerelease": false,
+   "tag": "@langchain/ibm@0.2.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/ibm%400.2.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:03:01Z",
+   "name": "@langchain/fireworks@0.2.25",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.25",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.25"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:02:58Z",
+   "name": "@langchain/deepseek@1.1.25",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.25",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.25"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#12178](https://github.com/langchain-ai/langchainjs/pull/12178) [`01e5f2d`](https://github.com/langchain-ai/langchainjs/commit/01e5f2dbbf30823045fc82c69bef7b2c032315f4) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add decision models\n\n  - Add `@langchain/core/decisions` with `BaseDecisionModel`, a `Runnable` that answers typed `Noul`, `Choice`, `Score`, and `Box` questions about text, messages, or JSON state\n  - Add question and answer types, `parseQuestions`, and `parseClassifierResponse` for providers\n  - Type `invoke` answers from the questions asked, including `Choice` labels, and reject provider responses that leave a question unanswered or answer it with the wrong type or label\n\n### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:34Z",
+   "name": "@langchain/core@1.4.0",
+   "prerelease": false,
+   "tag": "@langchain/core@1.4.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.4.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.\n- Updated dependencies [[`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb)]:\n  - @langchain/openai@1.8.4",
+   "date": "2026-11-11T22:02:55Z",
+   "name": "@langchain/classic@1.0.61",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.61",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.61"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",
+   "date": "2026-11-11T22:02:43Z",
+   "name": "@langchain/anthropic@1.6.4",
+   "prerelease": false,
+   "tag": "@langchain/anthropic@1.6.4",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.4"
+  },
   {
    "body": "### Patch Changes\n\n- [#12121](https://github.com/langchain-ai/langchainjs/pull/12121) [`fbd2c1b`](https://github.com/langchain-ai/langchainjs/commit/fbd2c1b6603e256e96a6a2c2899745e6abfe4e57) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(langchain): add `modelRefusalMiddleware`\n\n  `modelRefusalMiddleware()` throws `ModelRefusalError` when the model refuses, instead of ending the run as if it succeeded. Middleware now passes `ModelRefusalError` through unwrapped instead of as a `MiddlewareError`.",
    "date": "2026-11-10T18:39:28Z",
@@ -280,126 +418,6 @@
    "prerelease": false,
    "tag": "@langchain/openai@1.8.1",
    "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.1"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.58",
-   "date": "2026-11-06T20:57:19Z",
-   "name": "@langchain/neo4j@0.1.30",
-   "prerelease": false,
-   "tag": "@langchain/neo4j@0.1.30",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.30"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a903bf5`](https://github.com/langchain-ai/langchainjs/commit/a903bf5e37b6ec9108424f7062c14fa5a31e2a36)]:\n  - @langchain/google-common@2.3.5",
-   "date": "2026-11-06T20:57:01Z",
-   "name": "@langchain/google-webauth@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-webauth@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-webauth%402.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-gauth@2.3.5",
-   "date": "2026-11-06T20:57:13Z",
-   "name": "@langchain/google-vertexai@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-vertexai@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai%402.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-webauth@2.3.5",
-   "date": "2026-11-06T20:57:16Z",
-   "name": "@langchain/google-vertexai-web@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-vertexai-web@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai-web%402.3.5"
-  },
-  {
-   "body": "No changes in this release.",
-   "date": "2026-11-06T20:56:43Z",
-   "name": "@langchain/google-genai@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-genai@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a903bf5`](https://github.com/langchain-ai/langchainjs/commit/a903bf5e37b6ec9108424f7062c14fa5a31e2a36)]:\n  - @langchain/google-common@2.3.5",
-   "date": "2026-11-06T20:56:58Z",
-   "name": "@langchain/google-gauth@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-gauth@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12123](https://github.com/langchain-ai/langchainjs/pull/12123) [`a903bf5`](https://github.com/langchain-ai/langchainjs/commit/a903bf5e37b6ec9108424f7062c14fa5a31e2a36) Thanks [@hntrl](https://github.com/hntrl)! - Preserve streamed Claude tool-call arguments on replay and system prompt cache-control blocks on Vertex AI.",
-   "date": "2026-11-06T20:56:40Z",
-   "name": "@langchain/google-common@2.3.5",
-   "prerelease": false,
-   "tag": "@langchain/google-common@2.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-common%402.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`0c268f5`](https://github.com/langchain-ai/langchainjs/commit/0c268f53cadcddf6884162ed608333224c05868d), [`8103487`](https://github.com/langchain-ai/langchainjs/commit/8103487c55784c5befd84c1bc803546f720f806e)]:\n  - @langchain/openai@1.8.1",
-   "date": "2026-11-06T20:56:55Z",
-   "name": "@langchain/fireworks@0.2.22",
-   "prerelease": false,
-   "tag": "@langchain/fireworks@0.2.22",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.22"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`0c268f5`](https://github.com/langchain-ai/langchainjs/commit/0c268f53cadcddf6884162ed608333224c05868d), [`8103487`](https://github.com/langchain-ai/langchainjs/commit/8103487c55784c5befd84c1bc803546f720f806e)]:\n  - @langchain/openai@1.8.1",
-   "date": "2026-11-06T20:56:52Z",
-   "name": "@langchain/deepseek@1.1.22",
-   "prerelease": false,
-   "tag": "@langchain/deepseek@1.1.22",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.22"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`0c268f5`](https://github.com/langchain-ai/langchainjs/commit/0c268f53cadcddf6884162ed608333224c05868d), [`8103487`](https://github.com/langchain-ai/langchainjs/commit/8103487c55784c5befd84c1bc803546f720f806e)]:\n  - @langchain/openai@1.8.1",
-   "date": "2026-11-06T20:56:49Z",
-   "name": "@langchain/classic@1.0.58",
-   "prerelease": false,
-   "tag": "@langchain/classic@1.0.58",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.58"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#11596](https://github.com/langchain-ai/langchainjs/pull/11596) [`db829f1`](https://github.com/langchain-ai/langchainjs/commit/db829f1cf96241215006acbaaa6c9138d6b24b09) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Add `tracePolicy` to `createMiddleware`, applied to the middleware's lifecycle hook runs. It only changes what `LangChainTracer` sends to LangSmith (use `omitPayload` from `@langchain/core/tracers/tracer_langchain`). Requires `@langchain/langgraph` >= 1.6.1.",
-   "date": "2026-11-05T20:21:48Z",
-   "name": "langchain@1.6.2",
-   "prerelease": false,
-   "tag": "langchain@1.6.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#10961](https://github.com/langchain-ai/langchainjs/pull/10961) [`674b755`](https://github.com/langchain-ai/langchainjs/commit/674b755e17008b3875228feb63eeaec13c21c52a) Thanks [@hntrl](https://github.com/hntrl)! - fix(prompts): enforce maximum prompt template nesting depth\n\n  Add recursion depth guards for mustache template parsing and dict prompt template traversal to prevent stack-exhaustion DoS from deeply nested attacker-controlled templates.\n\n- [#12108](https://github.com/langchain-ai/langchainjs/pull/12108) [`fb61799`](https://github.com/langchain-ai/langchainjs/commit/fb6179926d70c76cc81a238aed4f2ad8c9531d4b) Thanks [@casparb](https://github.com/casparb)! - fix(core): end the `tool()` run when its signal is already aborted",
-   "date": "2026-11-05T20:21:45Z",
-   "name": "@langchain/core@1.3.5",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#11437](https://github.com/langchain-ai/langchainjs/pull/11437) [`272d651`](https://github.com/langchain-ai/langchainjs/commit/272d65140496b12c4895d6585c84d2640cd48383) Thanks [@zhdanovartur](https://github.com/zhdanovartur)! - fix(langchain): humanInTheLoopMiddleware — execute approved, edited and auto-approved tool calls when other calls in the same interrupt are rejected, instead of dropping them without a ToolMessage (caused \"400 No tool output found for function call\" on subsequent model requests)",
-   "date": "2026-11-03T06:22:00Z",
-   "name": "langchain@1.6.1",
-   "prerelease": false,
-   "tag": "langchain@1.6.1",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.1"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12104](https://github.com/langchain-ai/langchainjs/pull/12104) [`e006308`](https://github.com/langchain-ai/langchainjs/commit/e006308a58a746da8ca10b8ca483611d869e9a19) Thanks [@hntrl](https://github.com/hntrl)! - Export `omitPayload` from `@langchain/core/tracers/tracer_langchain`, a `TracePolicy` processor that records an empty payload while keeping the run.\n\n- [#12102](https://github.com/langchain-ai/langchainjs/pull/12102) [`6d157ae`](https://github.com/langchain-ai/langchainjs/commit/6d157ae5c0816851ea30f5d14fe68184da44c69e) Thanks [@hntrl](https://github.com/hntrl)! - `LangChainTracer` now still sends and ends a run when its trace policy's `processInputs` or `processOutputs` throws, with that payload dropped and the error set, instead of skipping the run or leaving it pending in LangSmith.",
-   "date": "2026-11-03T06:21:57Z",
-   "name": "@langchain/core@1.3.4",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.4",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.4"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12101](https://github.com/langchain-ai/langchainjs/pull/12101) [`a947c9c`](https://github.com/langchain-ai/langchainjs/commit/a947c9c3ead4225ff111e30145abe684c3652a43) Thanks [@hntrl](https://github.com/hntrl)! - Connect to and list tools from configured MCP servers concurrently during discovery instead of one server at a time, so `listTools()`/`listToolsets()` take as long as the slowest server rather than the sum of all of them.",
-   "date": "2026-11-02T23:11:07Z",
-   "name": "@langchain/mcp-adapters@2.0.2",
-   "prerelease": false,
-   "tag": "@langchain/mcp-adapters@2.0.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/mcp-adapters%402.0.2"
   }
  ],
  "repo": "langchain-ai/langchainjs"

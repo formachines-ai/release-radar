@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T22:12:52Z",
+ "built": "2026-11-11T23:09:10Z",
  "changelog": "https://uvicorn.dev/release-notes",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-09-25T06:52:35Z",
   "version": "0.54.0"
  },
- "metadata_fetched": "2026-11-11T19:14:16Z",
+ "metadata_fetched": "2026-11-11T23:09:33Z",
  "package": "uvicorn",
  "page": "https://releases.formachines.ai/pkg/pypi/uvicorn/",
  "prereleases_in_window": 0,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T22:12:52Z",
+ "built": "2026-11-11T23:09:10Z",
  "changelog": "https://github.com/psf/black/blob/main/CHANGES.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-10T04:13:38Z",
   "version": "26.10.1"
  },
- "metadata_fetched": "2026-11-11T19:13:56Z",
+ "metadata_fetched": "2026-11-11T23:09:15Z",
  "package": "black",
  "page": "https://releases.formachines.ai/pkg/pypi/black/",
  "prereleases_in_window": 0,

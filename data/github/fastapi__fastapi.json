@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-11T19:14:11Z",
+ "fetched": "2026-11-11T23:09:29Z",
  "releases": [
+  {
+   "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Fixes\n\n* 🐛 Fix synchronous dependency cleanup on cancellation. PR [#16734](https://github.com/fastapi/fastapi/pull/16734) by [@tiangolo](https://github.com/tiangolo).\n\n### Internal\n\n* ➖ Drop `pydantic-ai` dependency, use `pydantic-ai-slim[openai]` instead. PR [#16526](https://github.com/fastapi/fastapi/pull/16526) by [@YuriiMotov](https://github.com/YuriiMotov).\n",
+   "date": "2026-11-11T22:29:35Z",
+   "name": "0.162.5",
+   "prerelease": false,
+   "tag": "0.162.5",
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.162.5"
+  },
   {
    "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Fixes\n\n* 🐛 Require AnyIO 4.1.0 or newer at runtime. PR [#16730](https://github.com/fastapi/fastapi/pull/16730) by [@tiangolo](https://github.com/tiangolo).\n",
    "date": "2026-11-10T17:50:03Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "0.140.13",
    "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.13"
-  },
-  {
-   "body": "### Fixes\r\n\r\n* 🐛 Fix line splitting in `format_sse_event` to comply with SSE spec. PR [#15515](https://github.com/fastapi/fastapi/pull/15515) by [@Zawwarsami16](https://github.com/Zawwarsami16).\r\n",
-   "date": "2026-07-28T15:04:48Z",
-   "name": "0.140.12",
-   "prerelease": false,
-   "tag": "0.140.12",
-   "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.12"
   }
  ],
  "repo": "fastapi/fastapi"
