@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T06:00:03Z",
+ "built": "2026-11-11T14:13:17Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -18,7 +18,7 @@
  "metadata_fetched": "2026-11-11T06:01:15Z",
  "package": "typescript",
  "page": "https://releases.formachines.ai/pkg/npm/typescript/",
- "prereleases_in_window": 7,
+ "prereleases_in_window": 6,
  "registry": "https://www.npmjs.com/package/typescript",
  "releases": [
   {
@@ -133,25 +133,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "7.1.0-dev.20261105.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-04T08:26:09Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261104.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.1.0-dev.20261104.1",
    "yanked_or_deprecated": false
   }
  ],

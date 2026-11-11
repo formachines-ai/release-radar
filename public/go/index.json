@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T06:00:03Z",
+ "built": "2026-11-11T14:13:17Z",
  "redirects": {
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
   "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
@@ -42,7 +42,6 @@
   "43e1365d98": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
   "44e40ff317": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
   "4667a3a879": "https://github.com/fastapi/fastapi/releases/tag/0.162.1",
-  "46a3fcb970": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0-canary.6",
   "479e7b88d5": "https://github.com/openai/openai-node/releases/tag/v7.52.0",
   "4bdd9affcd": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.110",
   "4c68e64133": "https://github.com/vercel/ai/releases/tag/ai%405.0.287",
@@ -114,7 +113,6 @@
   "bfcc9fbc29": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.41",
   "c6f845d088": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10",
   "ca33dba588": "https://github.com/prisma/orm/releases",
-  "cca25c6b80": "https://github.com/supabase/supabase-js/releases/tag/v2.119.0",
   "cf283aab99": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.139",
   "d14c8a0b72": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.3",
   "d23854f5c4": "https://github.com/BerriAI/litellm/releases/tag/v1.106.8",
