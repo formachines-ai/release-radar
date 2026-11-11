@@ -1,6 +1,152 @@
 {
- "fetched": "2026-11-11T06:00:59Z",
+ "by_tag": {
+  "astro@7.4.6": {
+   "body": "### Patch Changes\n\n- [#18565](https://github.com/withastro/astro/pull/18565) [`cd09986`](https://github.com/withastro/astro/commit/cd0998612eb9f48946991479d68590a1407ee5e0) Thanks [@praveen-kumary](https://github.com/praveen-kumary)! - Avoids attributing client-only components or scripts to unrelated pages importing `astro:i18n` by bounding top-level page graph traversal at virtual page entries\n\n- [#18608](https://github.com/withastro/astro/pull/18608) [`babd96d`](https://github.com/withastro/astro/commit/babd96d1f16b8ea5a699693fb725a759d9fa03de) Thanks [@umeraamir69](https://github.com/umeraamir69)! - Fixes an extra page reload on the first page load after starting `astro dev` without an existing `.astro` directory\n\n- [#18589](https://github.com/withastro/astro/pull/18589) [`402c0fa`](https://github.com/withastro/astro/commit/402c0fae01d251c97298c255804008ff566802f9) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro check` exiting with code 0 when `@astrojs/check` or `typescript` is not installed. The command now exits with code 1 so CI fails instead of silently skipping type checking.\n\n- [#18503](https://github.com/withastro/astro/pull/18503) [`54fcdd5`](https://github.com/withastro/astro/commit/54fcdd5dedc982a77f1590e26247d57dd1802da9) Thanks [@SwastikTripathi](https://github.com/SwastikTripathi)! - Preserves the last-modified date of cached font files and unchanged public files when copying them into the build output. Public-file timestamp preservation respects the resolved public-directory configuration, follows source symlinks, and avoids backdating files overwritten by build plugins.\n\n- [#18605](https://github.com/withastro/astro/pull/18605) [`76cd239`](https://github.com/withastro/astro/commit/76cd2398642bd77b61b9880dcfc7b78d513cb048) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes the `glob()` loader adding files from a folder excluded with a negation pattern such as `!_docs` when they change during `astro dev`\n\n- [#18432](https://github.com/withastro/astro/pull/18432) [`ed60d82`](https://github.com/withastro/astro/commit/ed60d82935d5768c3fcf67ce508e1f4edbfe25d6) Thanks [@alexmv](https://github.com/alexmv)! - Improves the `MissingSharp` error to include the reason Sharp failed to load, such as its prebuilt binaries not supporting the current CPU\n\n- [#18474](https://github.com/withastro/astro/pull/18474) [`59543c3`](https://github.com/withastro/astro/commit/59543c3ad52e7141bcd6365cd70e8b51f18ccbd4) Thanks [@miottid](https://github.com/miottid)! - Fixes i18n fallback for on-demand rendered pages. A locale-prefixed request for a page that only exists in the fallback locale (for example `/de/about` with `fallback: { de: 'en' }`) was answered with status `302` and no `Location` header. Such requests are now rewritten or redirected to the fallback locale according to `i18n.routing.fallbackType`, including encoded paths and sites with a configured `base`. Query strings are preserved, and explicit page statuses and redirects are left unchanged.\n\n- [#18541](https://github.com/withastro/astro/pull/18541) [`cfa2d2b`](https://github.com/withastro/astro/commit/cfa2d2b9e36ad610f6e7c27643e9157be3584a79) Thanks [@ump45nose](https://github.com/ump45nose)! - Fixes `matchAllRoutes` to consider `fallbackRoutes`, matching `matchRoute` and the production router. Dev-server i18n fallback requests now resolve to the source route's metadata instead of the 404 route, and SSR-only fallback candidates can fall through the prerender handler.\n\n- [#18602](https://github.com/withastro/astro/pull/18602) [`d856064`](https://github.com/withastro/astro/commit/d8560645033aac84fe61d4f4b3462f55a9d2eb89) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro check` losing the end of its output, including the `Result` summary, when stdout is piped to a slow reader. When the reader closes the pipe early, for example `astro check | head`, `astro check` now exits with code 1 instead of crashing with an `EPIPE` stack trace.\n\n- [#18574](https://github.com/withastro/astro/pull/18574) [`da0f149`](https://github.com/withastro/astro/commit/da0f149de58001fa5564d083acbae34e7b4a1b1f) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes an unnecessary full page reload in `astro dev` when a content loader calls `store.clear()` or `store.delete()` and the content store has no asset imports\n\n- [#18570](https://github.com/withastro/astro/pull/18570) [`e71c038`](https://github.com/withastro/astro/commit/e71c038f31194280b44515bf53cf449a5313baf9) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes pages using `<ClientRouter />` briefly showing the top of the page on reload before jumping back to the previous scroll position. Full reloads now use the browser's native scroll restoration.\n\n- [#18531](https://github.com/withastro/astro/pull/18531) [`f75553b`](https://github.com/withastro/astro/commit/f75553b8bbe6cb9b72d8fda0059198ab3330f089) Thanks [@praveen-kumary](https://github.com/praveen-kumary)! - Fixes an unhandled `TypeError: Cannot convert undefined or null to object` when calling `route.generate()` without arguments on static routes",
+   "date": "2026-11-05T16:16:57Z",
+   "name": "astro@7.4.6",
+   "prerelease": false,
+   "tag": "astro@7.4.6",
+   "url": "https://github.com/withastro/astro/releases/tag/astro%407.4.6"
+  },
+  "astro@7.4.7": {
+   "body": "### Patch Changes\n\n- [`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes the image endpoint treating directories whose names differ only by letter case as being inside the build output directory on case-sensitive filesystems\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1\n  - @astrojs/markdown-satteri@0.4.7",
+   "date": "2026-11-05T19:57:55Z",
+   "name": "astro@7.4.7",
+   "prerelease": false,
+   "tag": "astro@7.4.7",
+   "url": "https://github.com/withastro/astro/releases/tag/astro%407.4.7"
+  }
+ },
+ "fetched": "2026-11-11T18:14:23Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#18641](https://github.com/withastro/astro/pull/18641) [`08e2cee`](https://github.com/withastro/astro/commit/08e2cee8b3ca41db0aa158549e51d2046fbd57a4) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Validates the protocol, host and port from `X-Forwarded-Proto`, `X-Forwarded-Host` and `X-Forwarded-Port` together against each `security.allowedDomains` entry, instead of one at a time:\n  \n  - A forwarded protocol is only applied when an entry allows it for the host in use.\n  - A forwarded port is only applied when the entry for that host lists it.\n  - A forwarded host without a forwarded protocol is validated with the protocol of the server.\n  - An entry with `port: '443'` (or `'80'` for `http`) now matches a host that doesn't include a port.\n\n- [#18651](https://github.com/withastro/astro/pull/18651) [`93a9057`](https://github.com/withastro/astro/commit/93a9057fdcee6273a3b2199bc80b788039c3ac87) Thanks [@umeraamir69](https://github.com/umeraamir69)! - Returns 400 Bad Request for malformed percent-encoded paths in the dev server and static preview instead of bubbling into a 500\n\n- [#18672](https://github.com/withastro/astro/pull/18672) [`e901468`](https://github.com/withastro/astro/commit/e901468eafb752f51192940040d4217e8e88e5bf) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro check` reporting `@astrojs/check` as missing when the package is installed but throws while loading. The original error is now shown instead of an install prompt.\n\n- [#18641](https://github.com/withastro/astro/pull/18641) [`08e2cee`](https://github.com/withastro/astro/commit/08e2cee8b3ca41db0aa158549e51d2046fbd57a4) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `security.allowedDomains` accepting non-HTTP(S) `X-Forwarded-Proto` values (such as `ftp` or `ws`) when the list mixes patterns with and without a `protocol`\n\n- [#18686](https://github.com/withastro/astro/pull/18686) [`62bb716`](https://github.com/withastro/astro/commit/62bb716444159e733dad6c82a436e82577c53d05) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro build` deleting the license file generated by Vite's `build.license` option. Astro now removes only its own Vite manifest from the `.vite/` output folder.\n\n- [#18629](https://github.com/withastro/astro/pull/18629) [`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf) Thanks [@decrek](https://github.com/decrek)! - Fixes spreading an object onto an element with scoped styles changing that object. When the same object was spread on every render, for example a constant imported from another module, its `class` grew with every request.\n\n- [#18641](https://github.com/withastro/astro/pull/18641) [`08e2cee`](https://github.com/withastro/astro/commit/08e2cee8b3ca41db0aa158549e51d2046fbd57a4) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Tightens how `security.allowedDomains` validates the `Host` and `X-Forwarded-Host` headers. Only a plain hostname with an optional port is accepted, and the validated host is applied to `Astro.url` exactly as it was matched.\n- Updated dependencies [[`d13beeb`](https://github.com/withastro/astro/commit/d13beeb66c753f03cbdbf4509cf2c527c816f1a4), [`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/markdown-satteri@0.4.9\n  - @astrojs/runtime@0.1.1\n  - @astrojs/vite-plugin-astro@0.1.2",
+   "date": "2026-11-11T17:33:59Z",
+   "name": "astro@7.4.11",
+   "prerelease": false,
+   "tag": "astro@7.4.11",
+   "url": "https://github.com/withastro/astro/releases/tag/astro%407.4.11"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @astrojs/vue-renderer@0.1.1",
+   "date": "2026-11-11T17:34:17Z",
+   "name": "@astrojs/vue@7.1.5",
+   "prerelease": false,
+   "tag": "@astrojs/vue@7.1.5",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/vue%407.1.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:53Z",
+   "name": "@astrojs/vue-renderer@0.1.1",
+   "prerelease": false,
+   "tag": "@astrojs/vue-renderer@0.1.1",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/vue-renderer%400.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:56Z",
+   "name": "@astrojs/vite-plugin-astro@0.1.2",
+   "prerelease": false,
+   "tag": "@astrojs/vite-plugin-astro@0.1.2",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/vite-plugin-astro%400.1.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @astrojs/svelte-renderer@0.1.1",
+   "date": "2026-11-11T17:34:14Z",
+   "name": "@astrojs/svelte@9.1.5",
+   "prerelease": false,
+   "tag": "@astrojs/svelte@9.1.5",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/svelte%409.1.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:50Z",
+   "name": "@astrojs/svelte-renderer@0.1.1",
+   "prerelease": false,
+   "tag": "@astrojs/svelte-renderer@0.1.1",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/svelte-renderer%400.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @astrojs/solid-js-renderer@0.1.1",
+   "date": "2026-11-11T17:34:08Z",
+   "name": "@astrojs/solid-js@7.1.5",
+   "prerelease": false,
+   "tag": "@astrojs/solid-js@7.1.5",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js%407.1.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:47Z",
+   "name": "@astrojs/solid-js-renderer@0.1.1",
+   "prerelease": false,
+   "tag": "@astrojs/solid-js-renderer@0.1.1",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/solid-js-renderer%400.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#18629](https://github.com/withastro/astro/pull/18629) [`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf) Thanks [@decrek](https://github.com/decrek)! - Fixes spreading an object onto an element with scoped styles changing that object. When the same object was spread on every render, for example a constant imported from another module, its `class` grew with every request.",
+   "date": "2026-11-11T17:33:38Z",
+   "name": "@astrojs/runtime@0.1.1",
+   "prerelease": false,
+   "tag": "@astrojs/runtime@0.1.1",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/runtime%400.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @astrojs/react-renderer@0.1.2",
+   "date": "2026-11-11T17:34:05Z",
+   "name": "@astrojs/react@7.1.8",
+   "prerelease": false,
+   "tag": "@astrojs/react@7.1.8",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react%407.1.8"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:44Z",
+   "name": "@astrojs/react-renderer@0.1.2",
+   "prerelease": false,
+   "tag": "@astrojs/react-renderer@0.1.2",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react-renderer%400.1.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @astrojs/preact-renderer@0.1.2",
+   "date": "2026-11-11T17:34:02Z",
+   "name": "@astrojs/preact@6.1.5",
+   "prerelease": false,
+   "tag": "@astrojs/preact@6.1.5",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/preact%406.1.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`e9916e1`](https://github.com/withastro/astro/commit/e9916e1bff5f3e740d533a6f504630bd6c528ddf)]:\n  - @astrojs/runtime@0.1.1",
+   "date": "2026-11-11T17:33:41Z",
+   "name": "@astrojs/preact-renderer@0.1.2",
+   "prerelease": false,
+   "tag": "@astrojs/preact-renderer@0.1.2",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/preact-renderer%400.1.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`d13beeb`](https://github.com/withastro/astro/commit/d13beeb66c753f03cbdbf4509cf2c527c816f1a4)]:\n  - @astrojs/markdown-satteri@0.4.9",
+   "date": "2026-11-11T17:34:11Z",
+   "name": "@astrojs/mdx@8.1.5",
+   "prerelease": false,
+   "tag": "@astrojs/mdx@8.1.5",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.1.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#18698](https://github.com/withastro/astro/pull/18698) [`d13beeb`](https://github.com/withastro/astro/commit/d13beeb66c753f03cbdbf4509cf2c527c816f1a4) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes MDX `optimize` emptying `<style>` and `<script>` elements nested in static HTML from plugins, and turning SVG attributes like `marker-end` into `markerEnd` when `ignoreElementNames` is set",
+   "date": "2026-11-11T17:33:35Z",
+   "name": "@astrojs/markdown-satteri@0.4.9",
+   "prerelease": false,
+   "tag": "@astrojs/markdown-satteri@0.4.9",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.4.9"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#18698](https://github.com/withastro/astro/pull/18698) [`d13beeb`](https://github.com/withastro/astro/commit/d13beeb66c753f03cbdbf4509cf2c527c816f1a4) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes MDX `optimize` emptying `<style>` and `<script>` elements nested in static HTML from plugins, and turning SVG attributes like `marker-end` into `markerEnd` when `ignoreElementNames` is set",
+   "date": "2026-11-11T17:33:32Z",
+   "name": "@astrojs/markdown-remark@7.3.8",
+   "prerelease": false,
+   "tag": "@astrojs/markdown-remark@7.3.8",
+   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-remark%407.3.8"
+  },
   {
    "body": "### Patch Changes\n\n- [#18681](https://github.com/withastro/astro/pull/18681) [`bf1828b`](https://github.com/withastro/astro/commit/bf1828be165eacff239f752c394d9048ecc02ee5) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes static builds skipping or failing on pages whose `getStaticPaths()` params contain characters like `%` or `\\`, and warns when a prerendered page is skipped because it returned an empty error response\n\n- [#18630](https://github.com/withastro/astro/pull/18630) [`c904827`](https://github.com/withastro/astro/commit/c904827015f4a71e890ac51919adada9c219a3e9) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes bundled scripts and hydrated islands being blocked when `security.csp.scriptDirective.strictDynamic` is enabled. Astro now adds the hash of every bundled script to `script-src` and renders an import map with their `integrity` in the `<head>`.\n\n- [#18611](https://github.com/withastro/astro/pull/18611) [`f98e8a8`](https://github.com/withastro/astro/commit/f98e8a8a90d25d0423763c61badc005c92c282d9) Thanks [@matthewp](https://github.com/matthewp)! - Fixes bundling of a `<script src>` that uses a root-relative path to a project file outside `src/`, such as `/lib/analytics.ts`. The error asking for `is:inline` is now shown only when the path points to a file in `public/`.\n\n- [#18688](https://github.com/withastro/astro/pull/18688) [`1999c84`](https://github.com/withastro/astro/commit/1999c842f8c9e2cd577207550359941f6a2e5691) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes errors thrown after a page has started streaming bypassing the configured `logger`. They are now reported once through it, as one `error` record, in both production and `astro dev`\n- Updated dependencies [[`c904827`](https://github.com/withastro/astro/commit/c904827015f4a71e890ac51919adada9c219a3e9), [`5083c65`](https://github.com/withastro/astro/commit/5083c6540cfe47fb9658ce71f424a3a03448ffaf), [`1999c84`](https://github.com/withastro/astro/commit/1999c842f8c9e2cd577207550359941f6a2e5691), [`5083c65`](https://github.com/withastro/astro/commit/5083c6540cfe47fb9658ce71f424a3a03448ffaf), [`f98e8a8`](https://github.com/withastro/astro/commit/f98e8a8a90d25d0423763c61badc005c92c282d9), [`f98e8a8`](https://github.com/withastro/astro/commit/f98e8a8a90d25d0423763c61badc005c92c282d9)]:\n  - @astrojs/runtime@0.1.0\n  - @astrojs/vite-plugin-astro@0.1.0",
    "date": "2026-11-10T18:33:06Z",
@@ -272,134 +418,6 @@
    "prerelease": false,
    "tag": "astro-vscode@2.17.3",
    "url": "https://github.com/withastro/astro/releases/tag/astro-vscode%402.17.3"
-  },
-  {
-   "body": "### Minor Changes\n\n- [#18647](https://github.com/withastro/astro/pull/18647) [`f1c5a5f`](https://github.com/withastro/astro/commit/f1c5a5fa8f7478f1424efbc0883e8bbfe75e6e86) Thanks [@florian-lefebvre](https://github.com/florian-lefebvre)! - Updates the Node.js version requirement to `^20.19.0 || >=22.12.0`.\n\n### Patch Changes\n\n- [#18647](https://github.com/withastro/astro/pull/18647) [`f1c5a5f`](https://github.com/withastro/astro/commit/f1c5a5fa8f7478f1424efbc0883e8bbfe75e6e86) Thanks [@florian-lefebvre](https://github.com/florian-lefebvre)! - Fixes TypeScript auto-import suggestions to use the `.astro` component name instead of its generated TSX name.",
-   "date": "2026-11-09T14:49:56Z",
-   "name": "@astrojs/ts-plugin@1.11.0",
-   "prerelease": false,
-   "tag": "@astrojs/ts-plugin@1.11.0",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/ts-plugin%401.11.0"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#18664](https://github.com/withastro/astro/pull/18664) [`1713dc0`](https://github.com/withastro/astro/commit/1713dc0f88435cd2f8b78624b73cd8bb5154045f) Thanks [@ocavue](https://github.com/ocavue)! - Expands the peer dependency version range for `oxc-transform-react` from `^0.145.0` to `>=0.145.0 <0.157.0`.",
-   "date": "2026-11-09T14:49:53Z",
-   "name": "@astrojs/react@7.1.5",
-   "prerelease": false,
-   "tag": "@astrojs/react@7.1.5",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react%407.1.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- [`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a) Thanks [@matthewp](https://github.com/matthewp)! - Fixes the image endpoint treating directories whose names differ only by letter case as being inside the build output directory on case-sensitive filesystems\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1\n  - @astrojs/markdown-satteri@0.4.7",
-   "date": "2026-11-05T19:57:55Z",
-   "name": "astro@7.4.7",
-   "prerelease": false,
-   "tag": "astro@7.4.7",
-   "url": "https://github.com/withastro/astro/releases/tag/astro%407.4.7"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#18565](https://github.com/withastro/astro/pull/18565) [`cd09986`](https://github.com/withastro/astro/commit/cd0998612eb9f48946991479d68590a1407ee5e0) Thanks [@praveen-kumary](https://github.com/praveen-kumary)! - Avoids attributing client-only components or scripts to unrelated pages importing `astro:i18n` by bounding top-level page graph traversal at virtual page entries\n\n- [#18608](https://github.com/withastro/astro/pull/18608) [`babd96d`](https://github.com/withastro/astro/commit/babd96d1f16b8ea5a699693fb725a759d9fa03de) Thanks [@umeraamir69](https://github.com/umeraamir69)! - Fixes an extra page reload on the first page load after starting `astro dev` without an existing `.astro` directory\n\n- [#18589](https://github.com/withastro/astro/pull/18589) [`402c0fa`](https://github.com/withastro/astro/commit/402c0fae01d251c97298c255804008ff566802f9) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro check` exiting with code 0 when `@astrojs/check` or `typescript` is not installed. The command now exits with code 1 so CI fails instead of silently skipping type checking.\n\n- [#18503](https://github.com/withastro/astro/pull/18503) [`54fcdd5`](https://github.com/withastro/astro/commit/54fcdd5dedc982a77f1590e26247d57dd1802da9) Thanks [@SwastikTripathi](https://github.com/SwastikTripathi)! - Preserves the last-modified date of cached font files and unchanged public files when copying them into the build output. Public-file timestamp preservation respects the resolved public-directory configuration, follows source symlinks, and avoids backdating files overwritten by build plugins.\n\n- [#18605](https://github.com/withastro/astro/pull/18605) [`76cd239`](https://github.com/withastro/astro/commit/76cd2398642bd77b61b9880dcfc7b78d513cb048) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes the `glob()` loader adding files from a folder excluded with a negation pattern such as `!_docs` when they change during `astro dev`\n\n- [#18432](https://github.com/withastro/astro/pull/18432) [`ed60d82`](https://github.com/withastro/astro/commit/ed60d82935d5768c3fcf67ce508e1f4edbfe25d6) Thanks [@alexmv](https://github.com/alexmv)! - Improves the `MissingSharp` error to include the reason Sharp failed to load, such as its prebuilt binaries not supporting the current CPU\n\n- [#18474](https://github.com/withastro/astro/pull/18474) [`59543c3`](https://github.com/withastro/astro/commit/59543c3ad52e7141bcd6365cd70e8b51f18ccbd4) Thanks [@miottid](https://github.com/miottid)! - Fixes i18n fallback for on-demand rendered pages. A locale-prefixed request for a page that only exists in the fallback locale (for example `/de/about` with `fallback: { de: 'en' }`) was answered with status `302` and no `Location` header. Such requests are now rewritten or redirected to the fallback locale according to `i18n.routing.fallbackType`, including encoded paths and sites with a configured `base`. Query strings are preserved, and explicit page statuses and redirects are left unchanged.\n\n- [#18541](https://github.com/withastro/astro/pull/18541) [`cfa2d2b`](https://github.com/withastro/astro/commit/cfa2d2b9e36ad610f6e7c27643e9157be3584a79) Thanks [@ump45nose](https://github.com/ump45nose)! - Fixes `matchAllRoutes` to consider `fallbackRoutes`, matching `matchRoute` and the production router. Dev-server i18n fallback requests now resolve to the source route's metadata instead of the 404 route, and SSR-only fallback candidates can fall through the prerender handler.\n\n- [#18602](https://github.com/withastro/astro/pull/18602) [`d856064`](https://github.com/withastro/astro/commit/d8560645033aac84fe61d4f4b3462f55a9d2eb89) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes `astro check` losing the end of its output, including the `Result` summary, when stdout is piped to a slow reader. When the reader closes the pipe early, for example `astro check | head`, `astro check` now exits with code 1 instead of crashing with an `EPIPE` stack trace.\n\n- [#18574](https://github.com/withastro/astro/pull/18574) [`da0f149`](https://github.com/withastro/astro/commit/da0f149de58001fa5564d083acbae34e7b4a1b1f) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes an unnecessary full page reload in `astro dev` when a content loader calls `store.clear()` or `store.delete()` and the content store has no asset imports\n\n- [#18570](https://github.com/withastro/astro/pull/18570) [`e71c038`](https://github.com/withastro/astro/commit/e71c038f31194280b44515bf53cf449a5313baf9) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes pages using `<ClientRouter />` briefly showing the top of the page on reload before jumping back to the previous scroll position. Full reloads now use the browser's native scroll restoration.\n\n- [#18531](https://github.com/withastro/astro/pull/18531) [`f75553b`](https://github.com/withastro/astro/commit/f75553b8bbe6cb9b72d8fda0059198ab3330f089) Thanks [@praveen-kumary](https://github.com/praveen-kumary)! - Fixes an unhandled `TypeError: Cannot convert undefined or null to object` when calling `route.generate()` without arguments on static routes",
-   "date": "2026-11-05T16:16:57Z",
-   "name": "astro@7.4.6",
-   "prerelease": false,
-   "tag": "astro@7.4.6",
-   "url": "https://github.com/withastro/astro/releases/tag/astro%407.4.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:58:13Z",
-   "name": "@astrojs/vercel@11.0.20",
-   "prerelease": false,
-   "tag": "@astrojs/vercel@11.0.20",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/vercel%4011.0.20"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#18631](https://github.com/withastro/astro/pull/18631) [`3106e0a`](https://github.com/withastro/astro/commit/3106e0ad80573b507ee64ce38ff9310a5924c2bf) Thanks [@florian-lefebvre](https://github.com/florian-lefebvre)! - Fixes Vercel builds that crash on unrecognized NFT dependency-resolution warnings",
-   "date": "2026-11-05T16:17:09Z",
-   "name": "@astrojs/vercel@11.0.19",
-   "prerelease": false,
-   "tag": "@astrojs/vercel@11.0.19",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/vercel%4011.0.19"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:57:46Z",
-   "name": "@astrojs/react@7.1.4",
-   "prerelease": false,
-   "tag": "@astrojs/react@7.1.4",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react%407.1.4"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#18535](https://github.com/withastro/astro/pull/18535) [`b21d724`](https://github.com/withastro/astro/commit/b21d72469403c7bac8b0000829dd3582d135a174) Thanks [@praveen-kumary](https://github.com/praveen-kumary)! - Preserves component-rendered resource links, including stylesheets, preloads, and modulepreloads, in React island output. Automatic React resource hints are also preserved so that authored links are not removed during server rendering.",
-   "date": "2026-11-05T16:17:00Z",
-   "name": "@astrojs/react@7.1.3",
-   "prerelease": false,
-   "tag": "@astrojs/react@7.1.3",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/react%407.1.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:57:43Z",
-   "name": "@astrojs/preact@6.1.2",
-   "prerelease": false,
-   "tag": "@astrojs/preact@6.1.2",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/preact%406.1.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:58:10Z",
-   "name": "@astrojs/node@11.1.11",
-   "prerelease": false,
-   "tag": "@astrojs/node@11.1.11",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/node%4011.1.11"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#18563](https://github.com/withastro/astro/pull/18563) [`8a92f7c`](https://github.com/withastro/astro/commit/8a92f7c7cc2df893a23ba0d75e40d2825741761d) Thanks [@astro-factory](https://github.com/apps/astro-factory)! - Fixes on-demand routes receiving an empty request body on Node.js 26 when `staticHeaders` is enabled",
-   "date": "2026-11-05T16:17:06Z",
-   "name": "@astrojs/node@11.1.10",
-   "prerelease": false,
-   "tag": "@astrojs/node@11.1.10",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/node%4011.1.10"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1\n  - @astrojs/underscore-redirects@1.0.4",
-   "date": "2026-11-05T19:58:04Z",
-   "name": "@astrojs/netlify@8.2.12",
-   "prerelease": false,
-   "tag": "@astrojs/netlify@8.2.12",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/netlify%408.2.12"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1\n  - @astrojs/markdown-satteri@0.4.7",
-   "date": "2026-11-05T19:58:07Z",
-   "name": "@astrojs/mdx@8.1.3",
-   "prerelease": false,
-   "tag": "@astrojs/mdx@8.1.3",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/mdx%408.1.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:57:52Z",
-   "name": "@astrojs/markdown-satteri@0.4.7",
-   "prerelease": false,
-   "tag": "@astrojs/markdown-satteri@0.4.7",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-satteri%400.4.7"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:57:49Z",
-   "name": "@astrojs/markdown-remark@7.3.6",
-   "prerelease": false,
-   "tag": "@astrojs/markdown-remark@7.3.6",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/markdown-remark%407.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7da442b`](https://github.com/withastro/astro/commit/7da442bb286e0c29e1c9e1add6727b7cbf434f1a)]:\n  - @astrojs/internal-helpers@0.13.1",
-   "date": "2026-11-05T19:58:01Z",
-   "name": "@astrojs/markdoc@2.1.3",
-   "prerelease": false,
-   "tag": "@astrojs/markdoc@2.1.3",
-   "url": "https://github.com/withastro/astro/releases/tag/%40astrojs/markdoc%402.1.3"
   }
  ],
  "repo": "withastro/astro"

@@ -1,19 +1,43 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "latest": "4.13.17",
+ "latest": "4.13.18",
  "latest_stable": {
-  "date": "2026-11-07T04:56:44Z",
-  "version": "4.13.17"
+  "date": "2026-11-11T08:54:02Z",
+  "version": "4.13.18"
  },
- "metadata_fetched": "2026-11-11T06:01:06Z",
+ "metadata_fetched": "2026-11-11T18:14:34Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/hono",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T08:54:02Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/hono/4.13.18",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0b461bb161/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.18",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "…no/mount` and `app.mount()` on 4.13.16 and 4.13.17. With a `getPath` that prepends a prefix such as the host name, one segment too many was removed from the forwarded path, so middleware scoped inside the mount prefix could be skipped. The prefix is removed from the routed path a…"
+    }
+   ],
+   "variant_of": null,
+   "version": "4.13.18",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-07T04:56:44Z",
@@ -35,6 +59,6 @@
   }
  ],
  "repository": "https://github.com/honojs/hono",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Web framework built on Web Standards"
 }

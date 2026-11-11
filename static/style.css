@@ -132,3 +132,4 @@ footer.site p { margin: 0.2rem 0; }
 .card .variants { margin: 0.35rem 0; font-size: 0.9rem; }
 .card .variants summary { cursor: pointer; color: var(--muted); }
 .card .variants ul { margin: 0.3rem 0 0 1rem; padding: 0; overflow-wrap: anywhere; }
+.nonotes { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; padding-left: 1.2rem; overflow-wrap: anywhere; }

@@ -3,14 +3,14 @@
  "dist_tags": {
   "backport": "19.1.10",
   "beta": "19.0.0-beta-26f2496093-20240514",
-  "canary": "19.3.0-canary-b05c0b75-20261109",
-  "experimental": "0.0.0-experimental-b05c0b75-20261109",
+  "canary": "19.3.0-canary-1620f7b9-20261111",
+  "experimental": "0.0.0-experimental-1620f7b9-20261111",
   "latest": "19.3.1",
   "next": "19.3.0-canary-d5736f09-20260507",
   "rc": "19.0.0-rc.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T06:01:12Z",
+ "fetched": "2026-11-11T18:14:42Z",
  "homepage": "https://react.dev/",
  "latest": "19.3.1",
  "name": "react-dom",
@@ -18,6 +18,16 @@
  "repo": "react/react",
  "summary": "React package for working with the DOM.",
  "versions": [
+  {
+   "date": "2026-11-11T16:22:01Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-1620f7b9-20261111"
+  },
+  {
+   "date": "2026-11-11T16:20:08Z",
+   "deprecated": false,
+   "version": "19.3.0-canary-1620f7b9-20261111"
+  },
   {
    "date": "2026-11-10T16:22:31Z",
    "deprecated": false,
@@ -502,16 +512,6 @@
    "date": "2026-08-14T17:36:38Z",
    "deprecated": false,
    "version": "0.0.0-experimental-eb8feb71-20260814"
-  },
-  {
-   "date": "2026-08-13T16:33:41Z",
-   "deprecated": false,
-   "version": "19.3.0-canary-beef6d60-20260813"
-  },
-  {
-   "date": "2026-08-13T16:33:04Z",
-   "deprecated": false,
-   "version": "0.0.0-experimental-beef6d60-20260813"
   }
  ]
 }

@@ -1,19 +1,43 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
- "latest": "1.4.10",
+ "latest": "1.5.0",
  "latest_stable": {
-  "date": "2026-11-10T18:37:17Z",
-  "version": "1.4.10"
+  "date": "2026-11-11T15:47:07Z",
+  "version": "1.5.0"
  },
- "metadata_fetched": "2026-11-11T06:00:04Z",
+ "metadata_fetched": "2026-11-11T18:13:28Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/langchain/",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T15:47:07Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/langchain/1.5.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1f12e43f88/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0",
+   "package": "langchain",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
+   "prerelease": false,
+   "quotes": [
+    {
+     "match": "drops support",
+     "quote": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain` 1.4.x."
+    }
+   ],
+   "variant_of": null,
+   "version": "1.5.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-10T18:37:17Z",
@@ -31,25 +55,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.4.10",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-04T17:07:20Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/langchain/1.4.9",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/10e3120830/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.9",
-   "package": "langchain",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
-   "prerelease": false,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.4.9",
    "yanked_or_deprecated": false
   }
  ],

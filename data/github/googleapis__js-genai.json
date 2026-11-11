@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-11T06:00:36Z",
+ "fetched": "2026-11-11T18:14:01Z",
  "releases": [
+  {
+   "body": "## [3.2.0](https://github.com/googleapis/js-genai/compare/v3.1.0...v3.2.0) (2026-11-11)\n\n\n### Features\n\n* add the Decisions API (`client.decisions.create`) to the GenAI SDKs ([3712be2](https://github.com/googleapis/js-genai/commit/3712be237dc9ba6d4d5e3fab9306cf1d74216490))\n* **environments:** introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([ac855bd](https://github.com/googleapis/js-genai/commit/ac855bd788e25a4b14aeacfe49ffa1c0e9d03040))",
+   "date": "2026-11-11T17:22:34Z",
+   "name": "v3.2.0",
+   "prerelease": false,
+   "tag": "v3.2.0",
+   "url": "https://github.com/googleapis/js-genai/releases/tag/v3.2.0"
+  },
   {
    "body": "## [3.1.0](https://github.com/googleapis/js-genai/compare/v3.0.0...v3.1.0) (2026-11-10)\n\n\n### Features\n\n* add `gemini-omni-1.2-flash` and make it the `gemini-api video` default ([cd31e9f](https://github.com/googleapis/js-genai/commit/cd31e9f9ea3aac359be9666a37180b5a908b8293))\n* Add `proactive_video` to `ProactivityConfig` for the Live API. ([2164fe7](https://github.com/googleapis/js-genai/commit/2164fe72de77aea191c1e43e7d8f346426752c0d))\n* add `xhigh` thinking level to Interactions ThinkingLevel ([eff6729](https://github.com/googleapis/js-genai/commit/eff6729f1cedc97167b670625ce6385c294c8208))\n* add usage_metadata (including traffic_type) and truncated to EmbedContentResponse for Gemini Enterprise API ([81d42ca](https://github.com/googleapis/js-genai/commit/81d42caa5c24bbb7823538762ba2ef707ba7dad4))\n* **interactions:** add gemini-4-carbon and gemini-omni-1.2-flash to Model enum ([d406013](https://github.com/googleapis/js-genai/commit/d406013f9f46384dc53e4729be48923fb9fb3942))",
    "date": "2026-11-10T20:17:01Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.44.0",
    "url": "https://github.com/googleapis/js-genai/releases/tag/v1.44.0"
-  },
-  {
-   "body": "## [1.43.0](https://github.com/googleapis/js-genai/compare/v1.42.0...v1.43.0) (2026-02-26)\n\n\n### Features\n\n* Add gemini-3.1-pro-preview to list of models in Interactions ([14775fe](https://github.com/googleapis/js-genai/commit/14775fefb814c21d8f34b776935b72d7f20896bd))\n* Add Image Grounding support to GoogleSearch tool ([9187ca7](https://github.com/googleapis/js-genai/commit/9187ca748b9de10037134e34e4da8ca06f0d2696))\n* enable server side MCP and disable all other AFC when server side MCP is configured. ([c7888c4](https://github.com/googleapis/js-genai/commit/c7888c4aec34b7f86983ea0c55c499c1f8d089c2))\n* Support more image sizes and resolutions ([54f4145](https://github.com/googleapis/js-genai/commit/54f41457984fc451e659ab594086bc462486e9d0))\n\n\n### Bug Fixes\n\n* change interactions media mime type to enum (breaking change for experimental feature) ([7c2d5b2](https://github.com/googleapis/js-genai/commit/7c2d5b29b8e7d2a146ec1a117ccef4fe13b4362e))",
-   "date": "2026-02-26T01:49:30Z",
-   "name": "v1.43.0",
-   "prerelease": false,
-   "tag": "v1.43.0",
-   "url": "https://github.com/googleapis/js-genai/releases/tag/v1.43.0"
   }
  ],
  "repo": "googleapis/js-genai"

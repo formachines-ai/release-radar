@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-11T06:00:05Z",
+ "fetched": "2026-11-11T18:13:29Z",
  "releases": [
+  {
+   "body": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain` 1.4.x.\n\nChanges since langchain==1.4.10\n\nrelease(langchain): 1.5.0 (#41798)\nfix(langchain): mark `ModelRouterMiddleware` as beta (#41797)\nfeat(langchain): Remove EOL'd Python 3.10 from langchain_v1 (#41301)\nfeat(langchain): add model router and auto mode middleware (#41766)\ndocs(langchain): explain Baseten minimum version (#41777)",
+   "date": "2026-11-11T15:47:22Z",
+   "name": "langchain==1.5.0",
+   "prerelease": false,
+   "tag": "langchain==1.5.0",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0"
+  },
+  {
+   "body": "**`langchain-typesafe` 0.1.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0 (`langchain` 1.5.0 for the `experimental` extra). Users on Python 3.10 will continue to resolve `langchain-typesafe` 0.0.x.\n\nChanges since langchain-typesafe==0.0.2\n\nrelease(typesafe): 0.1.0 (#41800)\nrefactor(typesafe): deprecate experimental middleware (#41768)\nfeat(typesafe): implement TypeSafeClassifier as a decision model (#41767)",
+   "date": "2026-11-11T16:14:24Z",
+   "name": "langchain-typesafe==0.1.0",
+   "prerelease": false,
+   "tag": "langchain-typesafe==0.1.0",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.1.0"
+  },
+  {
+   "body": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10 will continue to resolve `langchain-core` 1.7.x.\n\nChanges since langchain-core==1.7.7\n\nrelease(core): 1.8.0 (#41796)\nfeat(core): Remove EOL Python 3.10 support (#41267)\nfeat(core): add decision models (#41765)",
+   "date": "2026-11-11T15:22:07Z",
+   "name": "langchain-core==1.8.0",
+   "prerelease": false,
+   "tag": "langchain-core==1.8.0",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0"
+  },
   {
    "body": "Changes since langchain==1.4.9\n\nrelease(langchain): 1.4.10 (#41778)\nfix(langchain): keep middleware-internal model calls off the `messages` stream (#41579)\nchore(deps): patch newer-python security lock resolutions (#41585)\nfix(langchain): omit trace inputs from `ModelRefusalMiddleware` (#41689)",
    "date": "2026-11-10T18:37:31Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "langchain-core==1.6.5",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.5"
-  },
-  {
-   "body": "Changes since langchain-openai==1.6.5\n\nrelease(openai): 1.6.6 (#40800)\nfix(openai): raise on error events in stream path (#40791)",
-   "date": "2026-09-24T11:31:31Z",
-   "name": "langchain-openai==1.6.6",
-   "prerelease": false,
-   "tag": "langchain-openai==1.6.6",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.6"
-  },
-  {
-   "body": "Changes since langchain-openai==1.6.4\n\nrelease(openai): 1.6.5 (#40787)\nfix(anthropic): add Opus 5.5 and GPT-6 profile augmentations (#40785)\nfeat(anthropic,openai): mid-conversation tool changes on `SystemMessage` (#40758)",
-   "date": "2026-09-23T15:31:52Z",
-   "name": "langchain-openai==1.6.5",
-   "prerelease": false,
-   "tag": "langchain-openai==1.6.5",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.5"
-  },
-  {
-   "body": "Changes since langchain-anthropic==1.7.3\n\nchore(anthropic): fix integration test cassette (#40790)\nrelease(anthropic): 1.7.4 (#40786)\nfix(anthropic): add Opus 5.5 and GPT-6 profile augmentations (#40785)\nfeat(anthropic,openai): mid-conversation tool changes on `SystemMessage` (#40758)",
-   "date": "2026-09-23T17:56:03Z",
-   "name": "langchain-anthropic==1.7.4",
-   "prerelease": false,
-   "tag": "langchain-anthropic==1.7.4",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.4"
   }
  ],
  "repo": "langchain-ai/langchain"

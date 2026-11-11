@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-11T06:00:04Z",
+ "fetched": "2026-11-11T18:13:28Z",
  "releases": [
+  {
+   "body": "## [3.2.0](https://github.com/googleapis/python-genai/compare/v3.1.0...v3.2.0) (2026-11-11)\n\n\n### Features\n\n* Add the Decisions API (`client.decisions.create`) to the GenAI SDKs ([9efe1e4](https://github.com/googleapis/python-genai/commit/9efe1e4ac8831fd3bc793c0733320e6a0d3cd324))\n* **environments:** Introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([96b79b3](https://github.com/googleapis/python-genai/commit/96b79b3a4434abedfa9953891e77a617acdd7c3f))",
+   "date": "2026-11-11T17:22:30Z",
+   "name": "v3.2.0",
+   "prerelease": false,
+   "tag": "v3.2.0",
+   "url": "https://github.com/googleapis/python-genai/releases/tag/v3.2.0"
+  },
   {
    "body": "## [3.1.0](https://github.com/googleapis/python-genai/compare/v3.0.0...v3.1.0) (2026-11-10)\n\n\n### Features\n\n* Add `gemini-omni-1.2-flash` and make it the `gemini-api video` default ([8e9cce3](https://github.com/googleapis/python-genai/commit/8e9cce37cfd6d10b62e7cbd3649ec96f1d63f6a4))\n* Add `proactive_video` to `ProactivityConfig` for the Live API. ([97d0678](https://github.com/googleapis/python-genai/commit/97d0678602c95caa268a819a1dffd01ce52c1580))\n* Add `xhigh` thinking level to Interactions ThinkingLevel ([0f29f4d](https://github.com/googleapis/python-genai/commit/0f29f4d16c1e37af293398b708d056f30599385d))\n* Add usage_metadata (including traffic_type) and truncated to EmbedContentResponse for Gemini Enterprise API ([2958fb1](https://github.com/googleapis/python-genai/commit/2958fb1a7ca559aa74329232ec3174ae09776143))\n* **interactions:** Add gemini-4-carbon and gemini-omni-1.2-flash to Model enum ([9610220](https://github.com/googleapis/python-genai/commit/96102204c4eb1d5b1612ca020dcfca1e547bd0bb))\n\n\n### Documentation\n\n* Update documentation links from ai.google.dev to aistudio.google.com. ([caf4c4f](https://github.com/googleapis/python-genai/commit/caf4c4f8203a116aa8822d48e12eb50ed146787b))",
    "date": "2026-11-10T20:13:56Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.71.0",
    "url": "https://github.com/googleapis/python-genai/releases/tag/v1.71.0"
-  },
-  {
-   "body": "## [1.70.0](https://github.com/googleapis/python-genai/compare/v1.69.0...v1.70.0) (2026-03-31)\n\n\n### Features\n\n* Support dedicated TextAnnotationDelta for streaming tool responses ([5c820f2](https://github.com/googleapis/python-genai/commit/5c820f26122c911dd9d7d48bdd4156ade46c3636))\n\n\n### Bug Fixes\n\n* Fix service_tier enums. ([855e431](https://github.com/googleapis/python-genai/commit/855e4317b6245d4cae02d538138fb6cab0d433a9))",
-   "date": "2026-04-01T03:07:25Z",
-   "name": "v1.70.0",
-   "prerelease": false,
-   "tag": "v1.70.0",
-   "url": "https://github.com/googleapis/python-genai/releases/tag/v1.70.0"
   }
  ],
  "repo": "googleapis/python-genai"

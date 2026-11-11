@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -8,45 +8,12 @@
   "date": "2026-07-30T08:50:58Z",
   "version": "8.1.0"
  },
- "metadata_fetched": "2026-11-11T06:00:25Z",
+ "metadata_fetched": "2026-11-11T18:13:49Z",
  "package": "redis",
  "page": "https://releases.formachines.ai/pkg/pypi/redis/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/redis/",
- "releases": [
-  {
-   "bump": "prerelease",
-   "date": "2026-11-04T17:01:53Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/redis/8.2.0b1",
-   "json": "https://releases.formachines.ai/pkg/pypi/redis/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/83d550ad29/",
-   "notes_url": "https://github.com/redis/redis-py/releases/tag/v8.2.0b1",
-   "package": "redis",
-   "page": "https://releases.formachines.ai/pkg/pypi/redis/",
-   "prerelease": true,
-   "quotes": [
-    {
-     "match": "deprecated",
-     "quote": "…adataResolver` can be passed with `metadata_resolver=` to `Redis`, `ConnectionPool` and `RedisCluster`. `CacheConfig.DEFAULT_ALLOW_LIST` is deprecated and is no longer read. (#4272)…"
-    },
-    {
-     "match": "deprecated",
-     "quote": "… FalkorDB, use replica reads through custom metadata. `redis.asyncio.RedisCluster` now accepts `metadata_resolver=` too. `READ_COMMANDS` is deprecated and is no longer read. (#4265)…"
-    },
-    {
-     "match": "Deprecations",
-     "quote": "## ⚠️ Deprecations\n- feat: decide client-side cache eligibility from command metadata (#4272)"
-    }
-   ],
-   "variant_of": null,
-   "version": "8.2.0b1",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/redis/redis-py",
  "stable_in_window": 0,
  "summary": "Python client for Redis database and key-value store"

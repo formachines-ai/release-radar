@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -10,17 +10,36 @@
   "updated": "2026-11-07",
   "url": "https://formachines.ai/errata/pypi/google-genai/"
  },
- "latest": "3.1.0",
+ "latest": "3.2.0",
  "latest_stable": {
-  "date": "2026-11-10T20:30:36Z",
-  "version": "3.1.0"
+  "date": "2026-11-11T17:49:07Z",
+  "version": "3.2.0"
  },
- "metadata_fetched": "2026-11-11T06:00:03Z",
+ "metadata_fetched": "2026-11-11T18:13:27Z",
  "package": "google-genai",
  "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/google-genai/",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T17:49:07Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
+   "flagged": false,
+   "id": "pypi/google-genai/3.2.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f4c8bad7b8/",
+   "notes_url": "https://github.com/googleapis/python-genai/releases/tag/v3.2.0",
+   "package": "google-genai",
+   "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
+   "prerelease": false,
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.2.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-10T20:30:36Z",
@@ -74,6 +93,6 @@
   }
  ],
  "repository": "https://github.com/googleapis/python-genai",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "GenAI Python SDK"
 }

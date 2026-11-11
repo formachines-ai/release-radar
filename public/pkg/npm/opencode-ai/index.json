@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T14:13:17Z",
+ "built": "2026-11-11T18:13:27Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-10-28T06:17:11Z",
   "version": "1.19.5"
  },
- "metadata_fetched": "2026-11-11T06:00:54Z",
+ "metadata_fetched": "2026-11-11T18:14:18Z",
  "package": "opencode-ai",
  "page": "https://releases.formachines.ai/pkg/npm/opencode-ai/",
  "prereleases_in_window": 2,
