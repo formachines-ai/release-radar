@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T20:13:38Z",
+ "built": "2026-11-11T21:09:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -51,33 +51,9 @@
    "variant_of": null,
    "version": "0.69.0-preview.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-04T20:32:45Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@google/gemini-cli/0.67.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b9a9b99bb9/",
-   "notes_url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.67.0",
-   "package": "@google/gemini-cli",
-   "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
-   "prerelease": false,
-   "quotes": [
-    {
-     "match": "deprecated",
-     "quote": "* fix(cli): preserve ${VAR} placeholders during deprecated settings migration by @villahernandez-coder in https://github.com/google-gemini/gemini-cli/pull/29867"
-    }
-   ],
-   "variant_of": null,
-   "version": "0.67.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/google-gemini/gemini-cli",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Gemini CLI"
 }

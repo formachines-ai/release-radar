@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Release Radar MCP server (T-0106) (read-only, stdio). Python stdlib only.
 
-Reads only the public JSON of https://releases.formachines.ai and exposes two tools:
-get_package_releases, list_flagged. Quotes are returned verbatim
+Reads only the public JSON of https://releases.formachines.ai and exposes three tools:
+releases_today, get_package_releases, list_flagged. Quotes are returned verbatim
 from the site; nothing is summarised or judged here.
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai.
 """
