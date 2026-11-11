@@ -1182,17 +1182,35 @@ def render_404(built: str) -> str:
     return layout(f"404 — {SITE_NAME}", body, built, noindex=True)
 
 
+def mcp_tools() -> list[tuple[str, str, list[str], list[str]]]:
+    """Tool registry of mcp/release_radar_mcp.py (the TOOLS dict), read with ast: (name, description, args, required)."""
+    import ast
+    tree = ast.parse((Path(__file__).parent / "mcp" / "release_radar_mcp.py").read_text(encoding="utf-8"))
+    for node in tree.body:
+        if isinstance(node, ast.Assign) and any(getattr(t, "id", "") == "TOOLS" for t in node.targets):
+            out = []
+            for k, v in zip(node.value.keys, node.value.values):
+                desc = v.elts[1].value
+                props = [p.value for p in v.elts[2].keys] if isinstance(v.elts[2], ast.Dict) else []
+                req = [e.value for e in v.elts[3].elts]
+                out.append((k.value, desc, props, req))
+            return out
+    raise RuntimeError("TOOLS registry not found in mcp/release_radar_mcp.py")
+
+
 def render_mcp(built: str) -> str:
     src = f"{SITE_BASE}/mcp/release_radar_mcp.py"
     cc = f"claude mcp add release-radar -- python3 release_radar_mcp.py"
     cur = '{"mcpServers": {"release-radar": {"command": "python3", "args": ["/path/to/release_radar_mcp.py"]}}}'
+    tools_html = "".join(
+        f"<li><code>{esc(n)}({esc(', '.join(a if a in req else a + '?' for a in args))})</code> — {esc(d)}</li>"
+        for n, d, args, req in mcp_tools())
     body = (f"<h1>MCP server for coding agents</h1>"
             f"<p class=\"lead\">Ask your coding agent what was flagged in a package before it writes code against a new major. "
             f"A stdio MCP server in one Python file (standard library only) that reads only our public JSON: "
             f"<a href=\"/today.json\">/today.json</a> and <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code>. "
             f"It returns the fields as they are in the JSON — version, date, flag, verbatim quotes, notes link, Errata link — with no model-written text. A flag is a regex match, not a judgement.</p>"
-            f"<h2>Tools</h2><ul><li><code>get_package_releases(ecosystem, name)</code> — the package's releases in the 7-day window.</li>"
-            f"<li><code>list_flagged(days≤7, ecosystem?)</code> — flagged releases of the last days.</li></ul>"
+            f"<h2>Tools</h2><ul>{tools_html}</ul>"
             f"<h2>Source</h2><p><a href=\"{src}\">{src}</a> (<a href=\"/mcp/release_radar_mcp.py.txt\">readable text copy</a>, "
             f"<a href=\"/mcp/README.md\">README</a>). Download it and save it anywhere; nothing is installed.</p>"
             f"<h2>Claude Code</h2><pre><code>curl -sO {src}\n{esc(cc)}</code></pre>"
