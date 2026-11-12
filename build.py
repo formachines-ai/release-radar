@@ -769,6 +769,7 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
         "notes_url": rec.get("notes_url"), "notes_kind": rec.get("notes_kind") or "fallback", "notes_go": notes_go,
         "bump": rec.get("bump") or "unknown", "prev_version": rec.get("prev_version"),
         "flagged": bool(rec.get("flagged")), "quotes": list(rec.get("quotes") or []), "no_notes": bool(rec.get("no_notes")),
+        "no_notes_checked": (str(rec.get("no_notes_checked"))[:10] if rec.get("no_notes") and rec.get("no_notes_checked") else None),
         "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
     }
 
@@ -786,6 +787,8 @@ def merge_history(pkg: dict, now: datetime, window_start: datetime) -> None:
         if not isinstance(rec, dict):
             continue
         r = restore_release(rec, pkg)
+        if r and r["no_notes"] and not r["no_notes_checked"] and parse_dt(old.get("built")):
+            r["no_notes_checked"] = parse_dt(old.get("built")).strftime("%Y-%m-%d")  # legacy record: date it was stored
         d = parse_dt(r["date"]) if r else None
         if r and d and cutoff <= d < window_start and r["version"] not in have:
             hist[r["version"]] = r
@@ -871,7 +874,8 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
                 "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "prev_version": None if gh and gh.get("prerelease") else compute_prev(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
-                "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes, "pkg_path": pkg["path"],
+                "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes,
+                "no_notes_checked": now.strftime("%Y-%m-%d") if no_notes else None, "pkg_path": pkg["path"],
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
             pkg["releases"].append(rel)
@@ -995,7 +999,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
         honest = ""
     elif r.get("no_notes"):
         honest = (f'<p class="note nonote">No release notes found on GitHub Releases or in CHANGELOG.md for '
-                  f'{esc(r["version"])} (checked {now.strftime("%Y-%m-%d")} UTC)</p>')
+                  f'{esc(r["version"])} (checked {esc(r.get("no_notes_checked") or now.strftime("%Y-%m-%d"))} UTC)</p>')
     elif r["notes_kind"] != "github_release":
         honest = '<p class="note nonote">Release notes not fetched.</p>'
     else:
@@ -1387,7 +1391,8 @@ def public_release(r: dict) -> dict:
         "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
         "quotes": [{"quote": q["quote"], "match": q["match"]} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
-        "errata_url": r["errata_url"], "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
+        "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
+        "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
     }
 
 
@@ -1569,7 +1574,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "stable_in_window": sum(1 for r in p["releases"] if not r["prerelease"]),
             "prereleases_in_window": sum(1 for r in p["releases"] if r["prerelease"]),
             "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r) for r in p["releases"]],
-            "history": [{**public_release(r), "no_notes": r["no_notes"]} for r in p["history"]],
+            "history": [public_release(r) for r in p["history"]],
             "history_since": p["history_since"], "history_days": HISTORY_DAYS,
         })
         if p.get("errata") and p["errata"].get("url"):
