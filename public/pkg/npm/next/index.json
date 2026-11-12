@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T23:09:10Z",
+ "built": "2026-11-12T00:11:47Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -8,12 +8,31 @@
   "date": "2026-11-09T20:33:38Z",
   "version": "16.4.6"
  },
- "metadata_fetched": "2026-11-11T23:10:17Z",
+ "metadata_fetched": "2026-11-12T00:12:55Z",
  "package": "next",
  "page": "https://releases.formachines.ai/pkg/npm/next/",
  "prereleases_in_window": 7,
  "registry": "https://www.npmjs.com/package/next",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-11T23:56:33Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/next/16.5.0-canary.48",
+   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b743266540/",
+   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.48",
+   "package": "next",
+   "page": "https://releases.formachines.ai/pkg/npm/next/",
+   "prerelease": true,
+   "quotes": [],
+   "variant_of": null,
+   "version": "16.5.0-canary.48",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-10T23:54:06Z",
@@ -145,30 +164,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "16.5.0-canary.42",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-04T23:52:22Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/next/16.5.0-canary.41",
-   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/bfcc9fbc29/",
-   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.41",
-   "package": "next",
-   "page": "https://releases.formachines.ai/pkg/npm/next/",
-   "prerelease": true,
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "- docs: document experimental flags removed in Next.js 16: #101165"
-    }
-   ],
-   "variant_of": null,
-   "version": "16.5.0-canary.41",
    "yanked_or_deprecated": false
   }
  ],

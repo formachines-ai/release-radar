@@ -127,6 +127,13 @@
   "release-0.167.0-alpha.4.2-alpha-linux-x64": "0.167.0-alpha.4.2-linux-x64",
   "release-0.167.0-alpha.4.2-alpha-win32-arm64": "0.167.0-alpha.4.2-win32-arm64",
   "release-0.167.0-alpha.4.2-alpha-win32-x64": "0.167.0-alpha.4.2-win32-x64",
+  "release-0.167.0-alpha.4.3-alpha": "0.167.0-alpha.4.3",
+  "release-0.167.0-alpha.4.3-alpha-darwin-arm64": "0.167.0-alpha.4.3-darwin-arm64",
+  "release-0.167.0-alpha.4.3-alpha-darwin-x64": "0.167.0-alpha.4.3-darwin-x64",
+  "release-0.167.0-alpha.4.3-alpha-linux-arm64": "0.167.0-alpha.4.3-linux-arm64",
+  "release-0.167.0-alpha.4.3-alpha-linux-x64": "0.167.0-alpha.4.3-linux-x64",
+  "release-0.167.0-alpha.4.3-alpha-win32-arm64": "0.167.0-alpha.4.3-win32-arm64",
+  "release-0.167.0-alpha.4.3-alpha-win32-x64": "0.167.0-alpha.4.3-win32-x64",
   "release-0.167.0-alpha.5-alpha": "0.167.0-alpha.5",
   "release-0.167.0-alpha.5-alpha-darwin-arm64": "0.167.0-alpha.5-darwin-arm64",
   "release-0.167.0-alpha.5-alpha-darwin-x64": "0.167.0-alpha.5-darwin-x64",
@@ -145,7 +152,7 @@
   "win32-x64": "0.167.2-win32-x64"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T23:09:42Z",
+ "fetched": "2026-11-12T00:12:19Z",
  "homepage": "https://github.com/openai/codex#readme",
  "latest": "0.167.2",
  "name": "@openai/codex",
@@ -153,6 +160,41 @@
  "repo": "openai/codex",
  "summary": "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
  "versions": [
+  {
+   "date": "2026-11-12T00:09:53Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-win32-x64"
+  },
+  {
+   "date": "2026-11-12T00:08:23Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-win32-arm64"
+  },
+  {
+   "date": "2026-11-12T00:08:02Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-darwin-arm64"
+  },
+  {
+   "date": "2026-11-12T00:07:24Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-darwin-x64"
+  },
+  {
+   "date": "2026-11-12T00:05:55Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-linux-arm64"
+  },
+  {
+   "date": "2026-11-12T00:04:23Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3-linux-x64"
+  },
+  {
+   "date": "2026-11-12T00:03:18Z",
+   "deprecated": false,
+   "version": "0.167.0-alpha.4.3"
+  },
   {
    "date": "2026-11-11T22:57:02Z",
    "deprecated": false,

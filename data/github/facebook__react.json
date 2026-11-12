@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-11T23:10:22Z",
+ "fetched": "2026-11-12T00:13:00Z",
  "releases": [
   {
    "body": "## React Server Components\r\n\r\n- Improve transport protocol ([#37845](https://github.com/facebook/react/pull/37845) by @unstubbable and @eps1lon)",

@@ -1,21 +1,21 @@
 {
- "built": "2026-11-11T23:09:10Z",
- "commit": "068cb1a",
+ "built": "2026-11-12T00:11:47Z",
+ "commit": "a1ce4ce",
  "errors": [],
- "flagged": 24,
+ "flagged": 23,
  "generator": "build.py",
- "github_remaining": 4840,
+ "github_remaining": 4973,
  "http_requests": 245,
  "notes_coverage": {
   "counts": {
-   "checked_no_notes": 198,
+   "checked_no_notes": 205,
    "no_repo_url": 2,
    "not_fetched": 0
   },
-  "github_release": 142,
+  "github_release": 143,
   "missing": [
    {
-    "count": 123,
+    "count": 130,
     "eco": "npm",
     "name": "@openai/codex",
     "reason": "no_matching_tag",
@@ -41,6 +41,13 @@
      "0.167.0-alpha.4.2-linux-x64",
      "0.167.0-alpha.4.2-win32-arm64",
      "0.167.0-alpha.4.2-win32-x64",
+     "0.167.0-alpha.4.3",
+     "0.167.0-alpha.4.3-darwin-arm64",
+     "0.167.0-alpha.4.3-darwin-x64",
+     "0.167.0-alpha.4.3-linux-arm64",
+     "0.167.0-alpha.4.3-linux-x64",
+     "0.167.0-alpha.4.3-win32-arm64",
+     "0.167.0-alpha.4.3-win32-x64",
      "0.167.0-darwin-arm64",
      "0.167.0-darwin-x64",
      "0.167.0-linux-arm64",
@@ -342,9 +349,9 @@
     "version": "1.44.1"
    }
   ],
-  "releases": 343
+  "releases": 351
  },
  "packages": 98,
- "redirects": 162,
- "releases": 343
+ "redirects": 163,
+ "releases": 351
 }

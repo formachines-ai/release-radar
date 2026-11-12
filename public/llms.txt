@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-11T23:09:10Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-12T00:11:47Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -101,7 +101,7 @@ Updated: 2026-11-11T23:09:10Z UTC (daily build 06:00 UTC)
 - [orjson (pypi)](https://releases.formachines.ai/pkg/pypi/orjson/): latest 3.13.0 · JSON: https://releases.formachines.ai/pkg/pypi/orjson/index.json
 - [pandas (pypi)](https://releases.formachines.ai/pkg/pypi/pandas/): latest 3.1.1 · JSON: https://releases.formachines.ai/pkg/pypi/pandas/index.json
 - [pillow (pypi)](https://releases.formachines.ai/pkg/pypi/pillow/): latest 13.0.0 · JSON: https://releases.formachines.ai/pkg/pypi/pillow/index.json
-- [playwright (pypi)](https://releases.formachines.ai/pkg/pypi/playwright/): latest 1.65.0 · JSON: https://releases.formachines.ai/pkg/pypi/playwright/index.json
+- [playwright (pypi)](https://releases.formachines.ai/pkg/pypi/playwright/): latest 1.65.1 · JSON: https://releases.formachines.ai/pkg/pypi/playwright/index.json
 - [polars (pypi)](https://releases.formachines.ai/pkg/pypi/polars/): latest 2.1.0 · JSON: https://releases.formachines.ai/pkg/pypi/polars/index.json
 - [pydantic (pypi)](https://releases.formachines.ai/pkg/pypi/pydantic/): latest 2.14.3 · JSON: https://releases.formachines.ai/pkg/pypi/pydantic/index.json
 - [pydantic-settings (pypi)](https://releases.formachines.ai/pkg/pypi/pydantic-settings/): latest 2.16.2 · JSON: https://releases.formachines.ai/pkg/pypi/pydantic-settings/index.json
