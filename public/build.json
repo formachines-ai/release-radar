@@ -1,10 +1,10 @@
 {
- "built": "2026-11-12T04:15:23Z",
- "commit": "1c0e079",
+ "built": "2026-11-12T06:00:04Z",
+ "commit": "639f453",
  "errors": [],
  "flagged": 22,
  "generator": "build.py",
- "github_remaining": 4864,
+ "github_remaining": 4867,
  "http_requests": 240,
  "notes_coverage": {
   "counts": {
@@ -12,7 +12,7 @@
    "no_repo_url": 2,
    "not_fetched": 0
   },
-  "github_release": 138,
+  "github_release": 137,
   "missing": [
    {
     "count": 130,
@@ -221,12 +221,12 @@
      "1.65.0-beta-1794421487000",
      "1.66.0-alpha-1793916328000",
      "1.66.0-alpha-1794252756000",
-     "1.66.0-alpha-2026-11-05",
      "1.66.0-alpha-2026-11-07",
      "1.66.0-alpha-2026-11-08",
      "1.66.0-alpha-2026-11-09",
      "1.66.0-alpha-2026-11-10",
-     "1.66.0-alpha-2026-11-11"
+     "1.66.0-alpha-2026-11-11",
+     "1.66.0-alpha-2026-11-12"
     ]
    },
    {
@@ -347,9 +347,9 @@
     "version": "1.44.1"
    }
   ],
-  "releases": 344
+  "releases": 343
  },
  "packages": 98,
- "redirects": 158,
- "releases": 344
+ "redirects": 157,
+ "releases": 343
 }

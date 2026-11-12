@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-10T21:22:49Z",
   "version": "0.68.0"
  },
- "metadata_fetched": "2026-11-12T04:15:50Z",
+ "metadata_fetched": "2026-11-12T06:00:33Z",
  "package": "@google/gemini-cli",
  "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
  "prereleases_in_window": 1,

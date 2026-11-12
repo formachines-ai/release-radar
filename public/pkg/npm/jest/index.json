@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-09-18T13:58:07Z",
   "version": "30.5.2"
  },
- "metadata_fetched": "2026-11-12T04:16:26Z",
+ "metadata_fetched": "2026-11-12T06:01:09Z",
  "package": "jest",
  "page": "https://releases.formachines.ai/pkg/npm/jest/",
  "prereleases_in_window": 0,

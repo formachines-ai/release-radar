@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -166,7 +166,7 @@
   "date": "2026-11-11T22:50:04Z",
   "version": "0.167.2"
  },
- "metadata_fetched": "2026-11-12T04:15:53Z",
+ "metadata_fetched": "2026-11-12T06:00:35Z",
  "package": "@openai/codex",
  "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
  "prereleases_in_window": 130,

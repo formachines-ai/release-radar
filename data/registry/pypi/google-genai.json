@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-12T04:15:23Z",
+ "fetched": "2026-11-12T06:00:05Z",
  "homepage": "https://github.com/googleapis/python-genai",
  "latest": "3.2.0",
  "name": "google-genai",

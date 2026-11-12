@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T04:15:41Z",
+ "fetched": "2026-11-12T06:00:24Z",
  "releases": [
   {
    "body": "### Highlights\r\n\r\nhttps://github.com/microsoft/playwright-python/pull/3337 - chore: roll Node.js to 26.13.1\r\nhttps://github.com/microsoft/playwright-python/pull/3331 - devops(docker): install libatomic1 for the Node.js binary of the driver\r\nhttps://github.com/microsoft/playwright-python/pull/3336 - fix(docker): upgrade base image packages during the build\r\n\r\nThe bundled Node.js 26.13.1 is a [security release](https://github.com/nodejs/node/releases/tag/v26.13.1) with fixes in `tls`, `http`, `https` and `http2`. The driver uses Node.js for its own network connections, for example `connect_over_cdp` to a `wss://` endpoint.\r\n\r\nThe Docker images now include `libatomic1`, which the Node.js binary of the driver needs, and the latest security updates of the Ubuntu packages.\r\n\r\n## Browser Versions\r\n\r\n- Chromium 158.0.8127.18\r\n- Mozilla Firefox 159.0\r\n- WebKit 27.2\r\n\r\nThis version was also tested against the following stable channels:\r\n\r\n- Google Chrome 157\r\n- Microsoft Edge 156\r\n",

@@ -1,14 +1,36 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "counts": {
   "flagged": 22,
   "packages": 98,
   "prereleases": 217,
-  "releases": 344,
+  "releases": 343,
   "with_errata": 16
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-12T05:19:51Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.66.0-alpha-2026-11-12",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-12",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.66.0-alpha-2026-11-12",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-12T02:49:14Z",
@@ -7734,53 +7756,9 @@
    "variant_of": null,
    "version": "5.106.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-05T05:40:52Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/vite/8.3.6",
-   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/36e9b01369/",
-   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
-   "package": "vite",
-   "page": "https://releases.formachines.ai/pkg/npm/vite/",
-   "prerelease": false,
-   "prev_version": "8.3.5",
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.3.6",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-05T05:18:48Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/playwright/1.66.0-alpha-2026-11-05",
-   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-12",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
-   "notes_url": "https://github.com/microsoft/playwright/releases",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.66.0-alpha-2026-11-05",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-05T04:15:23Z"
+ "window_start": "2026-11-05T06:00:04Z"
 }

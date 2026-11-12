@@ -1,9 +1,32 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-05T05:40:52Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/vite/8.3.6",
+   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/36e9b01369/",
+   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
+   "package": "vite",
+   "page": "https://releases.formachines.ai/pkg/npm/vite/",
+   "prerelease": false,
+   "prev_version": "8.3.5",
+   "quotes": [],
+   "variant_of": null,
+   "version": "8.3.6",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
  "latest": "8.3.8",
@@ -11,7 +34,7 @@
   "date": "2026-11-11T02:49:46Z",
   "version": "8.3.8"
  },
- "metadata_fetched": "2026-11-12T04:16:37Z",
+ "metadata_fetched": "2026-11-12T06:01:22Z",
  "package": "vite",
  "page": "https://releases.formachines.ai/pkg/npm/vite/",
  "prereleases_in_window": 0,
@@ -148,31 +171,9 @@
    "variant_of": null,
    "version": "8.3.7",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-05T05:40:52Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/vite/8.3.6",
-   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/36e9b01369/",
-   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
-   "package": "vite",
-   "page": "https://releases.formachines.ai/pkg/npm/vite/",
-   "prerelease": false,
-   "prev_version": "8.3.5",
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.3.6",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vitejs/vite",
- "stable_in_window": 7,
+ "stable_in_window": 6,
  "summary": "Native-ESM powered web dev build tool"
 }

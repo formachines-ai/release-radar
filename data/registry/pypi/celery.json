@@ -1,7 +1,7 @@
 {
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T04:15:39Z",
+ "fetched": "2026-11-12T06:00:21Z",
  "homepage": "https://docs.celeryq.dev/",
  "latest": "5.7.0",
  "name": "celery",

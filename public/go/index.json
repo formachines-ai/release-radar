@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T04:15:23Z",
+ "built": "2026-11-12T06:00:04Z",
  "redirects": {
   "0193140656": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-rc.2",
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
@@ -41,7 +41,6 @@
   "33c2792a70": "https://github.com/vercel/next.js/releases/tag/v16.4.6",
   "345219f08c": "https://github.com/Automattic/mongoose/releases/tag/9.12.1",
   "34cb990f49": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-rc.1",
-  "36e9b01369": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
   "3eb598f89e": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.2",
   "3ef223dfe8": "https://github.com/vercel/ai/releases/tag/ai%407.0.165",
   "44e40ff317": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",

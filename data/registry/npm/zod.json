@@ -8,7 +8,7 @@
   "next": "3.25.0-beta.20250519T094321"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T04:16:38Z",
+ "fetched": "2026-11-12T06:01:23Z",
  "homepage": "https://zod.dev",
  "latest": "4.6.7",
  "name": "zod",
@@ -520,26 +520,6 @@
    "date": "2026-08-15T04:09:57Z",
    "deprecated": false,
    "version": "4.5.0-canary.20260814T233931"
-  },
-  {
-   "date": "2026-08-14T05:58:43Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260814T055530"
-  },
-  {
-   "date": "2026-08-14T05:58:23Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260814T055510"
-  },
-  {
-   "date": "2026-08-14T05:41:22Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260814T053909"
-  },
-  {
-   "date": "2026-08-14T05:22:03Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260814T051949"
   }
  ]
 }
