@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T01:15:50Z",
+ "built": "2026-11-12T02:15:46Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -10,6 +10,9 @@
   "updated": "2026-11-09",
   "url": "https://formachines.ai/errata/pypi/mcp/"
  },
+ "history": [],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
  "latest": "2.3.0",
  "latest_stable": {
   "date": "2026-10-02T22:06:52Z",
