@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T00:13:07Z",
+ "fetched": "2026-11-12T04:16:39Z",
  "releases": [
   {
    "body": "The persist and devtools middleware are improved thanks to @Tnalxmsk and @dgesteves!\r\n\r\n## Release note\r\n\r\n- The `persist` middleware now supports `PromiseLike` results from storage reads, migrations, and migration writes. `persist.rehydrate()` now returns a native `Promise<void>`, which you can await to ensure hydration is complete.\r\n- The `devtools` middleware now supports dispatching store actions directly from Redux DevTools using the new `actionCreators` option. It also supports nested actions and arguments.\r\n\r\n## What's Changed\r\n* fix(middleware): persist migration supporting promise-like by @dai-shi in https://github.com/pmndrs/zustand/pull/3583\r\n* fix(middleware): devtools action dispatching by @dai-shi in https://github.com/pmndrs/zustand/pull/3595\r\n\r\n\r\n**Full Changelog**: https://github.com/pmndrs/zustand/compare/v5.0.16...v5.1.0",

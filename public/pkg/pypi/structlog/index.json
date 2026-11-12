@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T03:09:52Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-06-06T07:33:38Z",
   "version": "26.1.0"
  },
- "metadata_fetched": "2026-11-12T00:12:09Z",
+ "metadata_fetched": "2026-11-12T04:15:44Z",
  "package": "structlog",
  "page": "https://releases.formachines.ai/pkg/pypi/structlog/",
  "prereleases_in_window": 0,

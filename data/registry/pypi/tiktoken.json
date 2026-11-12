@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/openai/tiktoken/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T00:11:50Z",
+ "fetched": "2026-11-12T04:15:26Z",
  "homepage": "",
  "latest": "0.14.0",
  "name": "tiktoken",

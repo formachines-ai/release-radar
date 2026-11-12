@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-12T03:09:52Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-12T04:15:23Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -91,7 +91,7 @@ Updated: 2026-11-12T03:09:52Z UTC (daily build 06:00 UTC)
 - [langchain (pypi)](https://releases.formachines.ai/pkg/pypi/langchain/): latest 1.5.0 · JSON: https://releases.formachines.ai/pkg/pypi/langchain/index.json
 - [langchain-core (pypi)](https://releases.formachines.ai/pkg/pypi/langchain-core/): latest 1.8.0 · JSON: https://releases.formachines.ai/pkg/pypi/langchain-core/index.json
 - [langgraph (pypi)](https://releases.formachines.ai/pkg/pypi/langgraph/): latest 1.2.20 · JSON: https://releases.formachines.ai/pkg/pypi/langgraph/index.json
-- [litellm (pypi)](https://releases.formachines.ai/pkg/pypi/litellm/): latest 1.109.0 · JSON: https://releases.formachines.ai/pkg/pypi/litellm/index.json
+- [litellm (pypi)](https://releases.formachines.ai/pkg/pypi/litellm/): latest 1.109.1 · JSON: https://releases.formachines.ai/pkg/pypi/litellm/index.json
 - [llama-index (pypi)](https://releases.formachines.ai/pkg/pypi/llama-index/): latest 0.14.25 · JSON: https://releases.formachines.ai/pkg/pypi/llama-index/index.json
 - [mcp (pypi)](https://releases.formachines.ai/pkg/pypi/mcp/): latest 2.3.0 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/mcp/index.json
 - [mypy (pypi)](https://releases.formachines.ai/pkg/pypi/mypy/): latest 2.4.1 · JSON: https://releases.formachines.ai/pkg/pypi/mypy/index.json

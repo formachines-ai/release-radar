@@ -1,7 +1,7 @@
 {
  "changelog": "https://uvicorn.dev/release-notes",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T00:12:10Z",
+ "fetched": "2026-11-12T04:15:44Z",
  "homepage": "https://uvicorn.dev/",
  "latest": "0.54.0",
  "name": "uvicorn",

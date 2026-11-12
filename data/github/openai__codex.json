@@ -43,8 +43,16 @@
   "v0.167.1": null,
   "v0.167.2": null
  },
- "fetched": "2026-11-12T00:12:25Z",
+ "fetched": "2026-11-12T04:15:59Z",
  "releases": [
+  {
+   "body": "Release 0.170.0-alpha.2\n\n",
+   "date": "2026-11-12T01:30:28Z",
+   "name": "0.170.0-alpha.2",
+   "prerelease": true,
+   "tag": "rust-v0.170.0-alpha.2",
+   "url": "https://github.com/openai/codex/releases/tag/rust-v0.170.0-alpha.2"
+  },
   {
    "body": "## New Features\n\n- Codex now sends tool updates incrementally by default on Google Cloud Vertex AI. To opt out, set `incremental_tools_legacy_gcp = false` under `[features]` in `config.toml`. ([#60617](https://github.com/openai/codex/pull/60617), [#60848](https://github.com/openai/codex/pull/60848))\n\n## Changelog\n\nFull Changelog: https://github.com/openai/codex/compare/rust-v0.167.1...rust-v0.167.2\n\n\n\n",
    "date": "2026-11-11T22:44:46Z",
@@ -436,14 +444,6 @@
    "prerelease": true,
    "tag": "rust-v0.164.0-alpha.8",
    "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.8"
-  },
-  {
-   "body": "Release 0.164.0-alpha.7\n\n",
-   "date": "2026-10-20T13:47:31Z",
-   "name": "0.164.0-alpha.7",
-   "prerelease": true,
-   "tag": "rust-v0.164.0-alpha.7",
-   "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0-alpha.7"
   }
  ],
  "repo": "openai/codex"
