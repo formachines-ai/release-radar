@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-11T23:10:17Z",
+ "fetched": "2026-11-12T00:12:55Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Prerender route handlers that await immediates: #101593\n- Fix orphaned detached telemetry flush processes: #101588\n- Upgrade React from `e84e1492-20261031` to `1620f7b9-20261111`: #101587\n- docs: clarify tag invalidation client effects: #101504\n- Keep dev overlay errors across no-op webpack hot updates: #101532\n\n### Misc Changes\n\n- Turbopack: don't grow effect vectors inside the analyzer arena: #101480\n- Fix metadata route selection with `--debug-build-paths`: #101585\n- eval: generate the docs pointer from the tested Next.js package: #101558\n- Turbopack: scale default disk write concurrency: #101519\n- eval: correct graders for Proxy, instant navigation, and category prefetching: #101523\n- docs: clarify Server Actions configuration: #101549\n- Turbopack: add build cache portability e2e test and fix location-dependent tasks: #100780\n- Turbopack: replace SwcComments with a lightweight MutableComments store: #101543\n- turbo-tasks-backend: merge aggregated data updates for new followers: #100435\n- test: fix keep-alive socket reuse in CSS HMR race helper: #101530\n- turbo-tasks: count task executions in task statistics: #101025\n- test: fix repeated-slashes router push navigation race: #101528\n- next-core: deserialize next.config env and output file tracing globs into typed maps: #100971\n- turbo-tasks: add OrderedJsonValue/OrderedJsonMap with key-order-sensitive equality: #100964\n- turbo-tasks: use OrderedAutoMap/OrderedAutoSet for order-observing values: #100940\n- auto-hash-map: add positional access and IndexMap/IndexSet conversions for ordered maps: #101497\n- test: close lingering prerender-export server connections: #101527\n- test: fix flaky app-root-params-getters/simple: #101525\n- test: fix flaky dev-validation-worker-source-maps: #101524\n- turbo-tasks-malloc: use official mimalloc Rust bindings (v3.6.1): #101518\n- docs: explain complementary Web Vitals and custom metrics APIs: #98968\n\n### Credits \n\nHuge thanks to @unstubbable, @timneutkens, @jimmyhmiller, @aurorascharff, @sokra, @lukesandberg, and @adityareddy-dev for helping!",
+   "date": "2026-11-11T23:45:08Z",
+   "name": "v16.5.0-canary.48",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.48",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.48"
+  },
   {
    "body": "### Core Changes\n\n- fix(next/image): detect distortion using intrinsic proportions: #101349\n- Write CPU profiles for next build static workers: #100614\n\n### Misc Changes\n\n- turbo-tasks-backend: process aggregation edge removals after additions and balancing: #100892\n- turbo-tasks-backend: track early aggregation edge removals as follower debt instead of retrying: #100873\n- Skip unused URL effects in web worker constructors: #101297\n- Turbopack: discover snapshot fixtures with custom entries: #101495\n- turbo-tasks: Add AutoSet and OrderedAutoSet benchmarks: #100952\n- turbo-tasks: Support IndexMap backed AutoMap and AutoSet: #100948\n- Turbopack: fix scope-hoisted imports of missing exports: #101482\n- Turbopack: don't suggest already-imported names for missing exports: #101479\n\n### Credits \n\nHuge thanks to @sokra, @jimmyhmiller, and @aurorascharff for helping!",
    "date": "2026-11-10T23:42:35Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.6",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.6"
-  },
-  {
-   "body": "### Misc Changes\n\n- Update error strings for a few deployment tests: #99886\n- Increase timeout on module-scope deployment test: #99891\n- Fix google tag manager e2e test, assume GTM 200s instead of 404ing: #99896\n\n### Credits \n\nHuge thanks to @bgw for helping!",
-   "date": "2026-10-08T23:55:20Z",
-   "name": "v16.5.0-canary.5",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.5",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.5"
   }
  ],
  "repo": "vercel/next.js"

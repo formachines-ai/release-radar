@@ -1,5 +1,5 @@
 {
- "built": "2026-11-11T23:09:10Z",
+ "built": "2026-11-12T00:11:47Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -8,7 +8,7 @@
   "date": "2026-02-12T00:42:52Z",
   "version": "0.86.2"
  },
- "metadata_fetched": "2026-11-11T23:09:10Z",
+ "metadata_fetched": "2026-11-12T00:11:47Z",
  "package": "aider-chat",
  "page": "https://releases.formachines.ai/pkg/pypi/aider-chat/",
  "prereleases_in_window": 0,

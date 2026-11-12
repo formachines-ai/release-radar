@@ -9,7 +9,7 @@
   "tag-for-publishing-older-releases": "0.2.20"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-11T23:10:01Z",
+ "fetched": "2026-11-12T00:12:38Z",
  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/libs/langchain/",
  "latest": "1.6.5",
  "name": "langchain",

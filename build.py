@@ -985,7 +985,6 @@ def render_index(model: dict, errata_count: int) -> str:
         f'</ul>'
     )
     nonotes = [r for r in rels if r.get("no_notes")]
-    nn_items = "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in nonotes)
     cov = notes_counts(model["notes_missing"], len(nonotes))
     by_ver = {(r["ecosystem"], r["name"], r["version"]): r for r in rels}
     unchecked = [m for m in model["notes_missing"] if m["reason"] in ("not_fetched", "no_repo_url")]
@@ -1007,8 +1006,20 @@ def render_index(model: dict, errata_count: int) -> str:
         unchecked_html = (f'<details id="not-checked" class="nonotes-block"><summary>Not checked: {len(unchecked)} versions</summary>'
                           f'<ul class="nonotes">{"".join(items)}</ul></details>')
     if nonotes:
-        nonotes_block = (f'<details id="no-notes" class="nonotes-block"><summary>Versions without release notes ({len(nonotes)})</summary>'
-                         f'{nn_note}<ul class="nonotes">{nn_items}</ul></details>{unchecked_html}')
+        def _nn_pre(r):
+            v = r["version"]
+            return bool(r.get("prerelease")) or "-" in v.split("+", 1)[0] or bool(PEP440_PRE_RE.search(v)) or bool(PRERELEASE_RE.search(v))
+        nn_pre = [r for r in nonotes if _nn_pre(r)]
+        nn_st = [r for r in nonotes if not _nn_pre(r)]
+        def _nn_li(rs):
+            return "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in rs)
+        nonotes_block = (f'<h2 id="no-notes">Versions without release notes ({len(nonotes)})</h2>'
+                         f'<p class="note nn-split">No release notes found: {len(nn_st)} stable versions, {len(nn_pre)} pre-release/dev builds (pre-releases often ship without notes)</p>'
+                         f'{nn_note}'
+                         f'<details id="no-notes-stable" class="nonotes-block"><summary>Stable versions without release notes ({len(nn_st)})</summary>'
+                         f'<ul class="nonotes">{_nn_li(nn_st)}</ul></details>'
+                         f'<details id="no-notes-pre" class="nonotes-block"><summary>Pre-release/dev builds without release notes ({len(nn_pre)})</summary>'
+                         f'<ul class="nonotes">{_nn_li(nn_pre)}</ul></details>{unchecked_html}')
     else:
         nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note + unchecked_html
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
