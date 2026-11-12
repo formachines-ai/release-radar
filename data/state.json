@@ -1,26 +1,26 @@
 {
- "duration_s": 80.2,
+ "duration_s": 0.3,
  "last_build": {
-  "built": "2026-11-12T00:11:47Z",
-  "commit": "a1ce4ce",
+  "built": "2026-11-12T01:15:50Z",
+  "commit": "7e9cc66",
   "errors": [],
-  "flagged": 23,
+  "flagged": 22,
   "generator": "build.py",
-  "github_remaining": 4973,
-  "http_requests": 245,
+  "github_remaining": null,
+  "http_requests": 0,
   "notes_coverage": {
    "counts": {
-    "checked_no_notes": 205,
+    "checked_no_notes": 0,
     "no_repo_url": 2,
-    "not_fetched": 0
+    "not_fetched": 204
    },
-   "github_release": 143,
+   "github_release": 136,
    "missing": [
     {
      "count": 130,
      "eco": "npm",
      "name": "@openai/codex",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "0.167.0-alpha.3.2",
       "0.167.0-alpha.3.2-darwin-arm64",
@@ -157,43 +157,43 @@
     {
      "eco": "npm",
      "name": "@prisma/client",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "8.1.0-dev.10"
     },
     {
      "eco": "npm",
      "name": "@prisma/client",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "8.1.0-dev.11"
     },
     {
      "eco": "npm",
      "name": "dotenv",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "18.0.10"
     },
     {
      "eco": "npm",
      "name": "firebase",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "13.1.0-eap-sql.49c10c82f"
     },
     {
      "eco": "npm",
      "name": "firebase",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "13.2.0-eap-sql.a9a137e67"
     },
     {
      "eco": "npm",
      "name": "firebase",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "13.3.0-20261110194028"
     },
     {
      "eco": "npm",
      "name": "firebase",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "13.3.0-20261111165442"
     },
     {
@@ -209,13 +209,11 @@
      "version": "0.0.0-dev-202611092046"
     },
     {
-     "count": 17,
+     "count": 15,
      "eco": "npm",
      "name": "playwright",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
-      "1.65.0-beta-1793840611000",
-      "1.65.0-beta-1793840934000",
       "1.65.0-beta-1793895462000",
       "1.65.0-beta-1793900512000",
       "1.65.0-beta-1793919248000",
@@ -237,7 +235,7 @@
      "count": 9,
      "eco": "npm",
      "name": "prisma",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "8.0.0-rc.30-dev.179",
       "8.0.0-rc.30-dev.180",
@@ -254,7 +252,7 @@
      "count": 10,
      "eco": "npm",
      "name": "react",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "0.0.0-experimental-1620f7b9-20261111",
       "0.0.0-experimental-2363bc2b-20261105",
@@ -272,7 +270,7 @@
      "count": 10,
      "eco": "npm",
      "name": "react-dom",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "0.0.0-experimental-1620f7b9-20261111",
       "0.0.0-experimental-2363bc2b-20261105",
@@ -290,7 +288,7 @@
      "count": 11,
      "eco": "npm",
      "name": "tailwindcss",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "0.0.0-insiders.3603b3a",
       "0.0.0-insiders.7c22203",
@@ -309,7 +307,7 @@
      "count": 7,
      "eco": "npm",
      "name": "typescript",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "versions": [
       "7.1.0-dev.20261105.1",
       "7.1.0-dev.20261106.1",
@@ -323,38 +321,38 @@
     {
      "eco": "pypi",
      "name": "boto3",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "1.43.125"
     },
     {
      "eco": "pypi",
      "name": "boto3",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "1.43.126"
     },
     {
      "eco": "pypi",
      "name": "boto3",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "1.43.127"
     },
     {
      "eco": "pypi",
      "name": "boto3",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "1.44.0"
     },
     {
      "eco": "pypi",
      "name": "boto3",
-     "reason": "no_matching_tag",
+     "reason": "not_fetched",
      "version": "1.44.1"
     }
    ],
-   "releases": 351
+   "releases": 342
   },
   "packages": 98,
-  "redirects": 163,
-  "releases": 351
+  "redirects": 156,
+  "releases": 342
  }
 }

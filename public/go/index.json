@@ -1,8 +1,7 @@
 {
- "built": "2026-11-12T00:11:47Z",
+ "built": "2026-11-12T01:15:50Z",
  "redirects": {
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
-  "033e48d2d8": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.7.6",
   "039525991b": "https://github.com/prettier/prettier/releases/tag/3.10.0",
   "04373f0a46": "https://github.com/openai/openai-node/releases/tag/v7.55.0",
   "04862a8bda": "https://github.com/googleapis/js-genai/releases/tag/v3.0.0",
@@ -41,7 +40,6 @@
   "36e9b01369": "https://github.com/vitejs/vite/releases/tag/v8.3.6",
   "3eb598f89e": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.2",
   "3ef223dfe8": "https://github.com/vercel/ai/releases/tag/ai%407.0.165",
-  "43e1365d98": "https://github.com/openai/openai-python/releases/tag/v3.46.0",
   "44e40ff317": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.6.0",
   "4667a3a879": "https://github.com/fastapi/fastapi/releases/tag/0.162.1",
   "479e7b88d5": "https://github.com/openai/openai-node/releases/tag/v7.52.0",
@@ -73,14 +71,11 @@
   "7adc772ea5": "https://github.com/vercel/ai/releases/tag/ai%406.0.325",
   "7b5416dbcf": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
   "7b898ab8bb": "https://github.com/googleapis/js-genai/releases/tag/v3.2.0",
-  "7e12948d71": "https://github.com/vercel/ai/releases/tag/ai%406.0.323",
   "7f132ffd1f": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.138",
   "7f331045a0": "https://github.com/BerriAI/litellm/releases/tag/v1.109.0",
   "8124e0fad7": "https://github.com/fastapi/fastapi/releases/tag/0.162.3",
-  "8200e4b360": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.109",
   "84092ed2bb": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.69.0-preview.0",
   "84f9355823": "https://github.com/vitejs/vite/releases/tag/v8.3.8",
-  "867769386f": "https://github.com/openai/openai-node/releases/tag/v7.51.0",
   "87ca20d5e1": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-dev.1",
   "8911b7f20a": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.107.0",
   "89743b390c": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
@@ -104,7 +99,6 @@
   "a9d2e8f986": "https://github.com/openai/codex/releases",
   "aa1a247c74": "https://github.com/vitejs/vite/releases/tag/v8.2.6",
   "ab67a05cd3": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.142",
-  "ab70ac38ca": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.137",
   "ae47e266f7": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.5",
   "b16cb756e0": "https://github.com/vercel/ai/releases/tag/ai%406.0.328",
   "b2358d5e39": "https://github.com/googleapis/js-genai/releases/tag/v3.1.0",
@@ -162,7 +156,6 @@
   "f7d3d2f1a8": "https://github.com/anthropics/claude-code/releases/tag/v2.1.322",
   "f8dbe20817": "https://github.com/withastro/astro/releases/tag/astro%407.4.11",
   "fbe0e62934": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.44",
-  "fce0960ea1": "https://github.com/pydantic/pydantic/releases/tag/v2.14.3",
-  "ff14ca29c0": "https://github.com/vercel/ai/releases/tag/ai%407.0.163"
+  "fce0960ea1": "https://github.com/pydantic/pydantic/releases/tag/v2.14.3"
  }
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T00:11:47Z",
+ "built": "2026-11-12T01:15:50Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -28,6 +28,7 @@
    "package": "langchain",
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
+   "prev_version": "1.4.10",
    "quotes": [
     {
      "match": "drops support",
@@ -52,6 +53,7 @@
    "package": "langchain",
    "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
    "prerelease": false,
+   "prev_version": "1.4.9",
    "quotes": [],
    "variant_of": null,
    "version": "1.4.10",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T00:11:47Z",
+ "built": "2026-11-12T01:15:50Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -28,6 +28,7 @@
    "package": "commander",
    "page": "https://releases.formachines.ai/pkg/npm/commander/",
    "prerelease": false,
+   "prev_version": null,
    "quotes": [
     {
      "match": "Deprecated",
