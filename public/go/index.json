@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T01:15:50Z",
+ "built": "2026-11-12T02:15:46Z",
  "redirects": {
   "024f8077f8": "https://github.com/vitejs/vite/releases/tag/v8.3.7",
   "039525991b": "https://github.com/prettier/prettier/releases/tag/3.10.0",
@@ -78,7 +78,6 @@
   "84f9355823": "https://github.com/vitejs/vite/releases/tag/v8.3.8",
   "87ca20d5e1": "https://github.com/BerriAI/litellm/releases/tag/v1.110.0-dev.1",
   "8911b7f20a": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.107.0",
-  "89743b390c": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
   "8ace0b088d": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.45",
   "8b3bed9670": "https://github.com/pallets/click/releases/tag/8.5.1",
   "8ffaadf3c0": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",

@@ -1,10 +1,10 @@
 {
- "built": "2026-11-12T01:15:50Z",
+ "built": "2026-11-12T02:15:46Z",
  "counts": {
   "flagged": 22,
   "packages": 98,
-  "prereleases": 217,
-  "releases": 342,
+  "prereleases": 216,
+  "releases": 341,
   "with_errata": 16
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -7030,29 +7030,9 @@
    "variant_of": null,
    "version": "1.2.20",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-05T02:02:00Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.107.0rc3",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/89743b390c/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.107.0rc3",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-05T01:15:50Z"
+ "window_start": "2026-11-05T02:15:46Z"
 }

@@ -58,6 +58,7 @@ IGNORE_FILE = CONFIG_DIR / "ignore_patterns.txt"
 STATE_FILE = DATA_DIR / "state.json"
 
 WINDOW_DAYS = 7            # releases shown on the front page and in the feed
+HISTORY_DAYS = 90          # package pages / index.json "history" keep records this long (T-0118)
 RECENT_HOURS = 24          # "last 24 h" block
 QUIET_HOURS = 48           # if nothing in 24 h, widen the recent block to this
 HTTP_TIMEOUT = 15          # seconds per request
@@ -754,6 +755,49 @@ def miss_reason(http: Http, repo: str | None, gh_releases: list[dict], no_github
     return "no_matching_tag"
 
 
+def restore_release(rec: dict, pkg: dict) -> dict | None:
+    """Rebuild an internal release dict from a stored public record (no re-fetch)."""
+    if not rec.get("version") or not parse_dt(rec.get("date")):
+        return None
+    red = rec.get("notes_redirect") or ""
+    notes_go = red.rstrip("/").rsplit("/", 1)[-1] if red else None
+    eu = rec.get("errata_url")
+    return {
+        "id": rec.get("id") or f"{pkg['ecosystem']}/{pkg['name']}/{rec['version']}", "ecosystem": pkg["ecosystem"],
+        "name": pkg["name"], "version": rec["version"], "date": rec["date"], "variant_of": rec.get("variant_of"),
+        "prerelease": bool(rec.get("prerelease")), "yanked": bool(rec.get("yanked_or_deprecated")),
+        "notes_url": rec.get("notes_url"), "notes_kind": rec.get("notes_kind") or "fallback", "notes_go": notes_go,
+        "bump": rec.get("bump") or "unknown", "prev_version": rec.get("prev_version"),
+        "flagged": bool(rec.get("flagged")), "quotes": list(rec.get("quotes") or []), "no_notes": bool(rec.get("no_notes")),
+        "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
+    }
+
+
+def merge_history(pkg: dict, now: datetime, window_start: datetime) -> None:
+    """T-0118: records older than the 7-day window come only from earlier committed index.json files."""
+    old = read_json(PUBLIC_DIR / pkg["path"].strip("/") / "index.json")
+    pkg["history"], pkg["history_since"] = [], None
+    if not isinstance(old, dict):
+        return
+    cutoff = now - timedelta(days=HISTORY_DAYS)
+    have = {r["version"] for r in pkg["releases"]}
+    hist: dict[str, dict] = {}
+    for rec in list(old.get("history") or []) + list(old.get("releases") or []):
+        if not isinstance(rec, dict):
+            continue
+        r = restore_release(rec, pkg)
+        d = parse_dt(r["date"]) if r else None
+        if r and d and cutoff <= d < window_start and r["version"] not in have:
+            hist[r["version"]] = r
+    pkg["history"] = sorted(hist.values(), key=lambda r: r["date"], reverse=True)
+    since = parse_dt(old.get("history_since"))
+    if not since:
+        ob = parse_dt(old.get("built"))
+        since = ob - timedelta(days=WINDOW_DAYS) if ob else None
+    if since:
+        pkg["history_since"] = iso(max(since, cutoff))
+
+
 def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern], errata: dict, no_github: bool) -> dict:
     now = utcnow()
     window_start = now - timedelta(days=WINDOW_DAYS)
@@ -832,6 +876,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             }
             pkg["releases"].append(rel)
             releases.append(rel)
+        merge_history(pkg, now, window_start)
         pkgs.append(pkg)
     releases.sort(key=lambda r: r["date"], reverse=True)
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
@@ -1192,6 +1237,14 @@ def render_package(p: dict, model: dict) -> str:
         body.append('<ul class="cards">' + render_cards(ordered, now, show_pkg_link=False, notes_top=True) + "</ul>")
     else:
         body.append(f'<p class="note">No release in the last {WINDOW_DAYS} days. Latest known version: <code>{esc(p.get("latest") or "?")}</code>.</p>')
+    if p.get("history_since"):
+        hs = fmt_date(p["history_since"])[:10]
+        body.append(f'<h2 id="earlier">Earlier releases (history kept since {esc(hs)} UTC, up to {HISTORY_DAYS} days)</h2>')
+        if p["history"]:
+            hordered = sorted(p["history"], key=lambda r: r["prerelease"])
+            body.append('<ul class="cards">' + render_cards(hordered, now, show_pkg_link=False, notes_top=True) + "</ul>")
+        else:
+            body.append(f'<p class="note">No earlier release held yet; this list grows with each daily build.</p>')
     sib = related_packages(p, model)
     if sib:
         body.append(f'<h2>Other {esc(p["ecosystem"])} packages tracked</h2><p class="pkg-index">' + " · ".join(
@@ -1516,6 +1569,8 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "stable_in_window": sum(1 for r in p["releases"] if not r["prerelease"]),
             "prereleases_in_window": sum(1 for r in p["releases"] if r["prerelease"]),
             "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r) for r in p["releases"]],
+            "history": [{**public_release(r), "no_notes": r["no_notes"]} for r in p["history"]],
+            "history_since": p["history_since"], "history_days": HISTORY_DAYS,
         })
         if p.get("errata") and p["errata"].get("url"):
             go_map[go_id(p["errata"]["url"])] = p["errata"]["url"]

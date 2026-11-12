@@ -60,6 +60,7 @@ public/                     the site — everything below is generated, do not e
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
+                                (T-0118: `history` key = records older than 7 days up to 90, merged from the previous committed index.json, no re-fetch; `history_since` = first date held)
   pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (that package's releases in the window; valid empty channel if none)
   (package page <title>, T-0096: first of `<name> <ver> release notes & breaking changes (<eco>) — Release Radar` → without ` — Release Radar` → without `(<eco>)` → `<name> <ver> breaking changes` that is ≤70 chars)
   (package page <title>/meta description, T-0089: built only from the package's data — latest version, its date, flagged count, start of the first verbatim quote ≤160 chars; plus 4 same-ecosystem alphabetical-neighbour links and a link to /)

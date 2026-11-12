@@ -1,8 +1,33 @@
 {
- "built": "2026-11-12T01:15:50Z",
+ "built": "2026-11-12T02:15:46Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
+ "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-05T02:02:00Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.107.0rc3",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/89743b390c/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.107.0rc3",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
  "latest": "1.109.0",
  "latest_stable": {
   "date": "2026-11-11T00:53:12Z",
@@ -11,7 +36,7 @@
  "metadata_fetched": "2026-11-12T00:11:49Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
- "prereleases_in_window": 4,
+ "prereleases_in_window": 3,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
   {
@@ -278,26 +303,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.108.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-05T02:02:00Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.107.0rc3",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/89743b390c/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.107.0-rc.3",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.107.0rc3",
    "yanked_or_deprecated": false
   }
  ],
