@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T00:11:47Z",
+ "built": "2026-11-12T01:15:50Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -28,6 +28,7 @@
    "package": "hono",
    "page": "https://releases.formachines.ai/pkg/npm/hono/",
    "prerelease": false,
+   "prev_version": "4.13.17",
    "quotes": [
     {
      "match": "removed",
@@ -52,6 +53,7 @@
    "package": "hono",
    "page": "https://releases.formachines.ai/pkg/npm/hono/",
    "prerelease": false,
+   "prev_version": "4.13.16",
    "quotes": [],
    "variant_of": null,
    "version": "4.13.17",

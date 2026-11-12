@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T00:11:47Z",
+ "built": "2026-11-12T01:15:50Z",
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -28,6 +28,7 @@
    "package": "celery",
    "page": "https://releases.formachines.ai/pkg/pypi/celery/",
    "prerelease": false,
+   "prev_version": "5.6.3",
    "quotes": [
     {
      "match": "Removed",

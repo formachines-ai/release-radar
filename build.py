@@ -167,6 +167,19 @@ def compute_bump(eco: str, ver: str, known: list[str]) -> str:
     return "major" if cur[0] != prev[0] else "minor" if cur[1] != prev[1] else "patch"
 
 
+def compute_prev(eco: str, ver: str, known: list[str]) -> str | None:
+    """Highest known stable version below this one (the string as in the registry), None for pre-releases/unknown."""
+    cur = version_tuple(ver)
+    if cur is None or is_prerelease(eco, ver):
+        return None
+    best = None
+    for v in known:
+        t = version_tuple(v)
+        if t is not None and t < cur and not is_prerelease(eco, v) and (best is None or t > best[0]):
+            best = (t, v)
+    return best[1] if best else None
+
+
 log = logging.getLogger("build")
 
 
@@ -813,6 +826,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "yanked": bool(v.get("yanked")) or bool(v.get("deprecated")),
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
                 "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
+                "prev_version": None if gh and gh.get("prerelease") else compute_prev(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes, "pkg_path": pkg["path"],
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
@@ -913,6 +927,14 @@ def vote_target(r: dict) -> str:
     return f'{r["pkg_path"]}#{safe_fs_name(r["id"])}'
 
 
+def bump_step_line(r: dict) -> str:
+    """Version step of a flagged, stable minor/patch release; empty when the previous stable version is unknown."""
+    if not (r["flagged"] and not r["prerelease"] and r["bump"] in ("minor", "patch") and r.get("prev_version")):
+        return ""
+    kind = "0.x minor" if r["bump"] == "minor" and (version_tuple(r["version"]) or (1,))[0] == 0 else "minor/patch"
+    return f'<p class="note bumpstep">Flagged in a {kind} release ({esc(r["prev_version"])} → {esc(r["version"])})</p>'
+
+
 def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False, variants: list | None = None) -> str:
     flagged = ' flagged' if r["flagged"] else ""
     badges = []
@@ -960,7 +982,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{top}{quotes}{honest}{vhtml}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
+            f'{" ".join(badges)}</div>{top}{bump_step_line(r)}{quotes}{honest}{vhtml}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -1023,6 +1045,9 @@ def render_index(model: dict, errata_count: int) -> str:
     else:
         nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note + unchecked_html
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
+    if flagged:
+        k_minor = sum(1 for r in flagged if r["bump"] in ("minor", "patch"))
+        flagged_block.append(f'<p class="note bumpcount">{k_minor} of {len(flagged)} flagged releases are minor/patch or 0.x bumps ({WINDOW_DAYS} days)</p>')
     flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
     body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>",
@@ -1306,7 +1331,7 @@ def render_legal(built: str) -> str:
 def public_release(r: dict) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
-        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"],
+        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
         "quotes": [{"quote": q["quote"], "match": q["match"]} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
