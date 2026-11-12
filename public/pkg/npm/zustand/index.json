@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-06T14:07:48Z",
   "version": "5.1.0"
  },
- "metadata_fetched": "2026-11-12T00:13:06Z",
+ "metadata_fetched": "2026-11-12T04:16:38Z",
  "package": "zustand",
  "page": "https://releases.formachines.ai/pkg/npm/zustand/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": false,
    "id": "npm/zustand/5.1.0",
    "json": "https://releases.formachines.ai/pkg/npm/zustand/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/b275d2c9ce/",
    "notes_url": "https://github.com/pmndrs/zustand/releases/tag/v5.1.0",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-10T14:07:21Z",
   "version": "25.17.0"
  },
- "metadata_fetched": "2026-11-12T00:12:59Z",
+ "metadata_fetched": "2026-11-12T04:16:31Z",
  "package": "puppeteer",
  "page": "https://releases.formachines.ai/pkg/npm/puppeteer/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": false,
    "id": "npm/puppeteer/25.17.0",
    "json": "https://releases.formachines.ai/pkg/npm/puppeteer/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/6a0d54dfe4/",
    "notes_url": "https://github.com/puppeteer/puppeteer/releases/tag/puppeteer-v25.17.0",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-10-15T02:38:18Z",
   "version": "0.24.0"
  },
- "metadata_fetched": "2026-11-12T00:11:50Z",
+ "metadata_fetched": "2026-11-12T04:15:26Z",
  "package": "openai-agents",
  "page": "https://releases.formachines.ai/pkg/pypi/openai-agents/",
  "prereleases_in_window": 0,

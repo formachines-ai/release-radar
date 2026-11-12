@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-05T09:16:21Z",
   "version": "3.5.45"
  },
- "metadata_fetched": "2026-11-12T00:13:06Z",
+ "metadata_fetched": "2026-11-12T04:16:38Z",
  "package": "vue",
  "page": "https://releases.formachines.ai/pkg/npm/vue/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": false,
    "id": "npm/vue/3.5.45",
    "json": "https://releases.formachines.ai/pkg/npm/vue/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/a22e0b1571/",
    "notes_url": "https://github.com/vuejs/core/releases/tag/v3.5.45",

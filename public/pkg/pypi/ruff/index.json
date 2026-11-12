@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-05T18:51:36Z",
   "version": "0.17.4"
  },
- "metadata_fetched": "2026-11-12T00:12:07Z",
+ "metadata_fetched": "2026-11-12T04:15:42Z",
  "package": "ruff",
  "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": false,
    "id": "pypi/ruff/0.17.4",
    "json": "https://releases.formachines.ai/pkg/pypi/ruff/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/b98d8b356c/",
    "notes_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.4",

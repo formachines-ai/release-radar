@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-05T09:17:02Z",
   "version": "2.14.3"
  },
- "metadata_fetched": "2026-11-12T00:12:07Z",
+ "metadata_fetched": "2026-11-12T04:15:41Z",
  "package": "pydantic",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": true,
    "id": "pypi/pydantic/2.14.3",
    "json": "https://releases.formachines.ai/pkg/pypi/pydantic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/fce0960ea1/",
    "notes_url": "https://github.com/pydantic/pydantic/releases/tag/v2.14.3",

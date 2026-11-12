@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-10-15T19:24:19Z",
   "version": "7.10.1"
  },
- "metadata_fetched": "2026-11-12T00:12:41Z",
+ "metadata_fetched": "2026-11-12T04:16:15Z",
  "package": "@prisma/client",
  "page": "https://releases.formachines.ai/pkg/npm/@prisma/client/",
  "prereleases_in_window": 2,
@@ -25,6 +25,8 @@
    "flagged": false,
    "id": "npm/@prisma/client/8.1.0-dev.11",
    "json": "https://releases.formachines.ai/pkg/npm/@prisma/client/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-12",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ca33dba588/",
    "notes_url": "https://github.com/prisma/orm/releases",
@@ -45,6 +47,8 @@
    "flagged": false,
    "id": "npm/@prisma/client/8.1.0-dev.10",
    "json": "https://releases.formachines.ai/pkg/npm/@prisma/client/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-12",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ca33dba588/",
    "notes_url": "https://github.com/prisma/orm/releases",

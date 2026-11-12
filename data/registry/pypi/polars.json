@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/pola-rs/polars/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T00:12:06Z",
+ "fetched": "2026-11-12T04:15:41Z",
  "homepage": "https://www.pola.rs/",
  "latest": "2.1.0",
  "name": "polars",

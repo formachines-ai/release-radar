@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T02:15:46Z",
+ "built": "2026-11-12T04:15:23Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-11T15:47:07Z",
   "version": "1.5.0"
  },
- "metadata_fetched": "2026-11-12T00:11:48Z",
+ "metadata_fetched": "2026-11-12T04:15:24Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
  "prereleases_in_window": 0,
@@ -25,6 +25,8 @@
    "flagged": true,
    "id": "pypi/langchain/1.5.0",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/1f12e43f88/",
    "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0",
@@ -50,6 +52,8 @@
    "flagged": false,
    "id": "pypi/langchain/1.4.10",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "github_release",
    "notes_redirect": "https://releases.formachines.ai/go/c6f845d088/",
    "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.10",

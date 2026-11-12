@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T00:12:45Z",
+ "fetched": "2026-11-12T04:16:19Z",
  "releases": [
   {
    "body": "### Fixed\r\n\r\n- accept uppercase E exponent in negative number arguments (#2544)\r\n- support Unicode variadic option placeholders (#2615)\r\n- increment node inspector port for `--inspect-wait` when spawn an executable subcommand (#2630)\r\n- increment node inspector port for IPv6 hosts when spawn an executable subcommand (#2636)\r\n- preserve the help option's group when a conflicting flag is hidden (#2637)\r\n- global option values with unknown source should mask local option value source in `cmd.getOptionValueSourceWithGlobals()` (#2653)\r\n\r\n### Changed\r\n\r\n- limit Pull Requests to reduce volume and improve quality (#2646)\r\n- undeprecate `InvalidOptionArgumentError` (#2661)\r\n\r\n### Deprecated\r\n\r\n- `cmd.storeOptionsAsProperties()` (#2561)\r\n- `cmd.combineFlagAndOptionalValue()` (#2660)\r\n",
