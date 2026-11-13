@@ -1,22 +1,9 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "5.7.0",
- "latest_stable": {
-  "date": "2026-11-05T15:14:17Z",
-  "version": "5.7.0"
- },
- "metadata_fetched": "2026-11-12T06:00:21Z",
- "package": "celery",
- "page": "https://releases.formachines.ai/pkg/pypi/celery/",
- "prereleases_in_window": 0,
- "registry": "https://pypi.org/project/celery/",
- "releases": [
+ "history": [
   {
    "bump": "minor",
    "date": "2026-11-05T15:14:17Z",
@@ -53,7 +40,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "5.7.0",
+ "latest_stable": {
+  "date": "2026-11-05T15:14:17Z",
+  "version": "5.7.0"
+ },
+ "metadata_fetched": "2026-11-13T06:00:19Z",
+ "package": "celery",
+ "page": "https://releases.formachines.ai/pkg/pypi/celery/",
+ "prereleases_in_window": 0,
+ "registry": "https://pypi.org/project/celery/",
+ "releases": [],
  "repository": "https://github.com/celery/celery",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Distributed Task Queue."
 }

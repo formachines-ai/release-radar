@@ -4,14 +4,14 @@
   "5x": "5.13.23",
   "6x": "6.13.12",
   "7x": "7.8.13",
-  "8x": "8.24.8",
+  "8x": "8.24.9",
   "latest": "9.12.1",
   "legacy": "6.12.2",
   "next": "9.0.0-rc1",
   "unstable": "3.9.7"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T06:01:10Z",
+ "fetched": "2026-11-13T06:01:12Z",
  "homepage": "https://mongoosejs.com",
  "latest": "9.12.1",
  "name": "mongoose",
@@ -19,6 +19,11 @@
  "repo": "Automattic/mongoose",
  "summary": "Mongoose MongoDB ODM",
  "versions": [
+  {
+   "date": "2026-11-12T17:35:43Z",
+   "deprecated": false,
+   "version": "8.24.9"
+  },
   {
    "date": "2026-11-09T21:01:27Z",
    "deprecated": false,

@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T06:00:25Z",
+ "fetched": "2026-11-13T06:00:21Z",
  "homepage": "https://docs.astral.sh/ruff",
- "latest": "0.17.4",
+ "latest": "0.17.5",
  "name": "ruff",
  "page": "https://pypi.org/project/ruff/",
  "repo": "astral-sh/ruff",
  "summary": "An extremely fast Python linter and code formatter, written in Rust.",
  "versions": [
+  {
+   "date": "2026-11-12T17:54:09Z",
+   "version": "0.17.5",
+   "yanked": false
+  },
   {
    "date": "2026-11-05T18:51:36Z",
    "version": "0.17.4",
@@ -202,11 +207,6 @@
   {
    "date": "2026-02-03T17:52:43Z",
    "version": "0.15.0",
-   "yanked": false
-  },
-  {
-   "date": "2026-01-22T22:29:57Z",
-   "version": "0.14.14",
    "yanked": false
   }
  ]

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -29,18 +29,41 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.2.20",
+ "latest": "1.2.21",
  "latest_stable": {
-  "date": "2026-11-05T02:20:37Z",
-  "version": "1.2.20"
+  "date": "2026-11-12T18:06:30Z",
+  "version": "1.2.21"
  },
- "metadata_fetched": "2026-11-12T06:00:06Z",
+ "metadata_fetched": "2026-11-13T06:00:03Z",
  "package": "langgraph",
  "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/langgraph/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T18:06:30Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langgraph/1.2.21",
+   "json": "https://releases.formachines.ai/pkg/pypi/langgraph/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e485cd9663/",
+   "notes_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.21",
+   "package": "langgraph",
+   "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
+   "prerelease": false,
+   "prev_version": "1.2.20",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.2.21",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/langchain-ai/langgraph",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Building stateful, multi-actor applications with LLMs"
 }

@@ -6,11 +6,11 @@
   "csp": "1.0.28-csp",
   "latest": "3.5.45",
   "legacy": "2.7.16",
-  "rc": "3.6.0-rc.14",
+  "rc": "3.6.0-rc.15",
   "v2-latest": "2.7.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T06:01:22Z",
+ "fetched": "2026-11-13T06:01:24Z",
  "homepage": "https://vuejs.org/",
  "latest": "3.5.45",
  "name": "vue",
@@ -18,6 +18,11 @@
  "repo": "vuejs/core",
  "summary": "The progressive JavaScript framework for building modern web UI.",
  "versions": [
+  {
+   "date": "2026-11-12T08:55:38Z",
+   "deprecated": false,
+   "version": "3.6.0-rc.15"
+  },
   {
    "date": "2026-11-05T09:16:21Z",
    "deprecated": false,
@@ -87,11 +92,6 @@
    "date": "2026-08-21T09:26:13Z",
    "deprecated": false,
    "version": "3.6.0-rc.5"
-  },
-  {
-   "date": "2026-08-14T09:03:56Z",
-   "deprecated": false,
-   "version": "3.6.0-rc.4"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,12 +11,34 @@
   "date": "2026-11-09T21:01:27Z",
   "version": "9.12.1"
  },
- "metadata_fetched": "2026-11-12T06:01:10Z",
+ "metadata_fetched": "2026-11-13T06:01:12Z",
  "package": "mongoose",
  "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/mongoose",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T17:35:43Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/mongoose/8.24.9",
+   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fbbd0480e4/",
+   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/8.24.9",
+   "package": "mongoose",
+   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+   "prerelease": false,
+   "prev_version": "8.24.8",
+   "quotes": [],
+   "variant_of": null,
+   "version": "8.24.9",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-09T21:01:27Z",
@@ -41,6 +63,6 @@
   }
  ],
  "repository": "https://github.com/Automattic/mongoose",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Mongoose MongoDB ODM"
 }

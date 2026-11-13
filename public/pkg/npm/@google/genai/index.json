@@ -1,22 +1,76 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "major",
+   "date": "2026-11-06T04:34:38Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@google/genai/3.0.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/04862a8bda/",
+   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.0.0",
+   "package": "@google/genai",
+   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
+   "prerelease": false,
+   "prev_version": "2.32.0",
+   "quotes": [
+    {
+     "match": "BREAKING",
+     "quote": "### ⚠ BREAKING CHANGES\n* **Default Gemini Developer API version is now `v1` (was `v1beta`)** ([3f477bf](https://github.com/googleapis/js-genai/commit/3f477bfbbf26ba596e4ad0469f8c9663b340c872))"
+    },
+    {
+     "match": "drop support",
+     "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))"
+    }
+   ],
+   "variant_of": null,
+   "version": "3.0.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "3.2.0",
+ "latest": "3.3.0",
  "latest_stable": {
-  "date": "2026-11-11T17:39:57Z",
-  "version": "3.2.0"
+  "date": "2026-11-12T21:19:31Z",
+  "version": "3.3.0"
  },
- "metadata_fetched": "2026-11-12T06:00:34Z",
+ "metadata_fetched": "2026-11-13T06:00:35Z",
  "package": "@google/genai",
  "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@google/genai",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-12T21:19:31Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@google/genai/3.3.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/bac55c34f8/",
+   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.3.0",
+   "package": "@google/genai",
+   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
+   "prerelease": false,
+   "prev_version": "3.2.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.3.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-11T17:39:57Z",
@@ -59,37 +113,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "3.1.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "major",
-   "date": "2026-11-06T04:34:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@google/genai/3.0.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/04862a8bda/",
-   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.0.0",
-   "package": "@google/genai",
-   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
-   "prerelease": false,
-   "prev_version": "2.32.0",
-   "quotes": [
-    {
-     "match": "BREAKING",
-     "quote": "### ⚠ BREAKING CHANGES\n* **Default Gemini Developer API version is now `v1` (was `v1beta`)** ([3f477bf](https://github.com/googleapis/js-genai/commit/3f477bfbbf26ba596e4ad0469f8c9663b340c872))"
-    },
-    {
-     "match": "drop support",
-     "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))"
-    }
-   ],
-   "variant_of": null,
-   "version": "3.0.0",
    "yanked_or_deprecated": false
   }
  ],

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-12T06:01:10Z",
+ "fetched": "2026-11-13T06:01:12Z",
  "releases": [
+  {
+   "body": "8.24.9 / 2026-11-12\r\n===================\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): don't disable autoIndex/autoCreate for a primary ReadPreference instance [mrityunjay-pandey](https://github.com/mrityunjay-pandey)",
+   "date": "2026-11-12T17:31:47Z",
+   "name": "8.24.9",
+   "prerelease": false,
+   "tag": "8.24.9",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/8.24.9"
+  },
   {
    "body": "9.12.1 / 2026-11-09\r\n===================\r\n * perf(update): avoid quadratic ancestor lookup in update validators and validate nested array subdocs once #16586 [https://github.com/Re-cool](https://github.com/Re-cool)\r\n * perf: keep lib/ source within Latin-1 #16681 [orgads](https://github.com/orgads)\r\n * perf(map): avoid quadratic concat() when creating a MongooseMap from an object #16677 [ptweezy](https://github.com/ptweezy)\r\n * fix(array): keep earlier pushed values when push() is called again with $each #16619 #16618 [maxymlyskov](https://github.com/maxymlyskov)\r\n * fix(model+query): handle inherited read preference and read concern on cloned queries #16668 #16632\r\n * fix(timestamps): set timestamps on subdocs pushed via array filters #16615 #8809 [vaidehi-snk](https://github.com/vaidehi-snk)\r\n * fix(model): validate paths under a nested path passed to Model.validate() #16653 [NotAFlightRisk](https://github.com/NotAFlightRisk)\r\n * fix(update): skip array-level validators for $pull with $in #16666 [AnkitKumar61](https://github.com/AnkitKumar61)\r\n * fix(cursor): finish destruction after terminal initialization #16612 [IbrahimHafez1](https://github.com/IbrahimHafez1)",
    "date": "2026-11-09T20:58:53Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "9.3.1",
    "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.1"
-  },
-  {
-   "body": "9.3.0 / 2026-03-10\n==================\n * feat(schema): support `discriminators` option inline for better TypeScript support #16053\n * feat(aggregate): add `pipelineForUnionWith()` helper to allow reusing pipelines with `$unionWith` in TypeScript #16033\n * feat(setDefaultsOnInsert): pass query as context to default functions #16041 #16025\n * fix: resolve deeply nested discriminator paths in arrayFilters #16072 [Yatin81](https://github.com/Yatin81)\n * fix(changeStream): emit ready on next tick to allow stream to initialize\n * fix(connection): handle calling watch() on disconnected connection\n * fix: remove references to mongodb option \"promiseLibrary\" [hasezoey](https://github.com/hasezoey)\n * fix(model+query): backwards compatible validateBeforeSave handling and avoid TypeError in removeUnusedArrayFilters on nullish update\n * perf(model): remove unnecessary overhead when saving new doc\n * types(InferRawDocType): fall back to using InferRawDocType instead of pulling non-raw inferred doc type if EnforcedDocType not set #16053\n * types: add type constraints for `Document#$model()` and `Document#model()` [mrazauskas](https://github.com/mrazauskas)\n * docs: fix broken links and update MongoDB documentation links #16037 [hasezoey](https://github.com/hasezoey)\n * docs(contributing): update issue tracker links to Automattic org [AkaHarshit](https://github.com/AkaHarshit)",
-   "date": "2026-03-10T20:27:13Z",
-   "name": "9.3.0",
-   "prerelease": false,
-   "tag": "9.3.0",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.0"
   }
  ],
  "repo": "Automattic/mongoose"

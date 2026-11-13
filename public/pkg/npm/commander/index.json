@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-07T01:27:22Z",
   "version": "15.1.0"
  },
- "metadata_fetched": "2026-11-12T06:01:01Z",
+ "metadata_fetched": "2026-11-13T06:01:04Z",
  "package": "commander",
  "page": "https://releases.formachines.ai/pkg/npm/commander/",
  "prereleases_in_window": 0,

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T06:00:08Z",
+ "fetched": "2026-11-13T06:00:06Z",
  "releases": [
   {
    "body": "# Patch release v5.22.2\r\n\r\nSome in between patch for security and distributed fixes. See the included commits :hugs: \r\n\r\n- [Distributed] Set device_id only for NCCL (#50281) by @michaelbenayoun  and @3outeille \r\n- Harden our Jinja sandboxing (#50431) by @Rocketknight1\r\n\r\n**Full Changelog**: https://github.com/huggingface/transformers/compare/v5.22.1...v5.22.2",

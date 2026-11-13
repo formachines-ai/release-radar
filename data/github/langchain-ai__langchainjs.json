@@ -1,23 +1,5 @@
 {
- "by_tag": {
-  "@langchain/core@1.3.5": {
-   "body": "### Patch Changes\n\n- [#10961](https://github.com/langchain-ai/langchainjs/pull/10961) [`674b755`](https://github.com/langchain-ai/langchainjs/commit/674b755e17008b3875228feb63eeaec13c21c52a) Thanks [@hntrl](https://github.com/hntrl)! - fix(prompts): enforce maximum prompt template nesting depth\n\n  Add recursion depth guards for mustache template parsing and dict prompt template traversal to prevent stack-exhaustion DoS from deeply nested attacker-controlled templates.\n\n- [#12108](https://github.com/langchain-ai/langchainjs/pull/12108) [`fb61799`](https://github.com/langchain-ai/langchainjs/commit/fb6179926d70c76cc81a238aed4f2ad8c9531d4b) Thanks [@casparb](https://github.com/casparb)! - fix(core): end the `tool()` run when its signal is already aborted",
-   "date": "2026-11-05T20:21:45Z",
-   "name": "@langchain/core@1.3.5",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.5"
-  },
-  "langchain@1.6.2": {
-   "body": "### Patch Changes\n\n- [#11596](https://github.com/langchain-ai/langchainjs/pull/11596) [`db829f1`](https://github.com/langchain-ai/langchainjs/commit/db829f1cf96241215006acbaaa6c9138d6b24b09) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Add `tracePolicy` to `createMiddleware`, applied to the middleware's lifecycle hook runs. It only changes what `LangChainTracer` sends to LangSmith (use `omitPayload` from `@langchain/core/tracers/tracer_langchain`). Requires `@langchain/langgraph` >= 1.6.1.",
-   "date": "2026-11-05T20:21:48Z",
-   "name": "langchain@1.6.2",
-   "prerelease": false,
-   "tag": "langchain@1.6.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.2"
-  }
- },
- "fetched": "2026-11-12T06:00:35Z",
+ "fetched": "2026-11-13T06:00:36Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- [#12183](https://github.com/langchain-ai/langchainjs/pull/12183) [`e220aee`](https://github.com/langchain-ai/langchainjs/commit/e220aeed6fd91ec8a1b91b1e9f25b6d87c856d31) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(langchain): add model router and auto mode middleware\n\n  - Add `modelRouterMiddleware`, which picks the agent's model for each run from a decision model's `Choice` answer\n  - Add `autoModeMiddleware`, which blocks listed tool calls that a decision model judges risky\n\n- [#12192](https://github.com/langchain-ai/langchainjs/pull/12192) [`9920d4b`](https://github.com/langchain-ai/langchainjs/commit/9920d4b33dee5bc0cfb33d859246edf8973c86eb) Thanks [@jkennedyvz](https://github.com/jkennedyvz)! - Require Zod 4.6.6 or newer for installed dependencies to exclude versions affected by GHSA-mrhx-c7xc-m3w5. Zod v3 schemas remain supported through the bundled `zod/v3` entry point.",

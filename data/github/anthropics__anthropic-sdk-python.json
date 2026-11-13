@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T06:00:04Z",
+ "fetched": "2026-11-13T06:00:02Z",
  "releases": [
   {
    "body": "### Features\n\n* **api:** add Claude Tag metrics to the analytics summaries and users reports\n* **api:** add reply_mode to Claude Tag Slack channel settings\n\n\n### Bug Fixes\n\n* **bedrock:** send \";\" in a model ID as is, and refuse a model ID whose part before the first \";\" is empty, \".\" or \"..\"\n* **google-cloud:** percent-encode the project, location and workspace ID in the workspace and organization base URL paths\n* **google-cloud:** refuse an empty project, location or workspace ID that would be written into a derived base URL\n* **vertex:** refuse an empty model, project ID or region instead of writing it into the request path\n* **vertex:** send \";\" in the model as %3B in the request path\n\n\n### Chores\n\n* **docs:** clarify display_name for RBAC Roles created by Anthropic\n* **docs:** clarify plugin delete and skill name conflict descriptions\n* **docs:** clarify when to omit user_profile_id on external keys\n* **docs:** note that Claude Tag settings accept self-hosted runner pools\n* **internal:** make three timing tests tolerate slow test machines\n* **internal:** remove a redundant import from the message types\n\n\n### Documentation\n\n* **examples:** show multiagent when creating a Managed Agents agent",

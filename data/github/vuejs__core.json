@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-12T06:01:23Z",
+ "fetched": "2026-11-13T06:01:25Z",
  "releases": [
+  {
+   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
+   "date": "2026-11-12T08:50:28Z",
+   "name": "v3.6.0-rc.15",
+   "prerelease": true,
+   "tag": "v3.6.0-rc.15",
+   "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.15"
+  },
   {
    "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
    "date": "2026-11-05T09:15:06Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v3.6.0-beta.1",
    "url": "https://github.com/vuejs/core/releases/tag/v3.6.0-beta.1"
-  },
-  {
-   "body": "For stable releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/main/CHANGELOG.md) for details.\nFor pre-releases, please refer to [CHANGELOG.md](https://github.com/vuejs/core/blob/minor/CHANGELOG.md) of the `minor` branch.",
-   "date": "2025-12-18T12:12:36Z",
-   "name": "v3.5.26",
-   "prerelease": false,
-   "tag": "v3.5.26",
-   "url": "https://github.com/vuejs/core/releases/tag/v3.5.26"
   }
  ],
  "repo": "vuejs/core"

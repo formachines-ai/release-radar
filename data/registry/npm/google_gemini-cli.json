@@ -8,7 +8,7 @@
   "staging-tmp": "0.68.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T06:00:33Z",
+ "fetched": "2026-11-13T06:00:34Z",
  "homepage": "https://github.com/google-gemini/gemini-cli#readme",
  "latest": "0.68.0",
  "name": "@google/gemini-cli",
@@ -525,11 +525,6 @@
    "date": "2026-08-16T01:08:40Z",
    "deprecated": false,
    "version": "0.56.0-nightly.20260816.g2a87e7be1"
-  },
-  {
-   "date": "2026-08-15T01:14:50Z",
-   "deprecated": false,
-   "version": "0.56.0-nightly.20260815.g2a87e7be1"
   }
  ]
 }

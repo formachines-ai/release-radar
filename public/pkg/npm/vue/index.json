@@ -1,22 +1,9 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "3.5.45",
- "latest_stable": {
-  "date": "2026-11-05T09:16:21Z",
-  "version": "3.5.45"
- },
- "metadata_fetched": "2026-11-12T06:01:22Z",
- "package": "vue",
- "page": "https://releases.formachines.ai/pkg/npm/vue/",
- "prereleases_in_window": 0,
- "registry": "https://www.npmjs.com/package/vue",
- "releases": [
+ "history": [
   {
    "bump": "patch",
    "date": "2026-11-05T09:16:21Z",
@@ -40,7 +27,43 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "3.5.45",
+ "latest_stable": {
+  "date": "2026-11-05T09:16:21Z",
+  "version": "3.5.45"
+ },
+ "metadata_fetched": "2026-11-13T06:01:24Z",
+ "package": "vue",
+ "page": "https://releases.formachines.ai/pkg/npm/vue/",
+ "prereleases_in_window": 1,
+ "registry": "https://www.npmjs.com/package/vue",
+ "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-12T08:55:38Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/vue/3.6.0-rc.15",
+   "json": "https://releases.formachines.ai/pkg/npm/vue/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7f70e4364b/",
+   "notes_url": "https://github.com/vuejs/core/releases/tag/v3.6.0-rc.15",
+   "package": "vue",
+   "page": "https://releases.formachines.ai/pkg/npm/vue/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.6.0-rc.15",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/vuejs/core",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "The progressive JavaScript framework for building modern web UI."
 }

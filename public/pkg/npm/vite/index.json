@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -34,7 +34,7 @@
   "date": "2026-11-11T02:49:46Z",
   "version": "8.3.8"
  },
- "metadata_fetched": "2026-11-12T06:01:22Z",
+ "metadata_fetched": "2026-11-13T06:01:24Z",
  "package": "vite",
  "page": "https://releases.formachines.ai/pkg/npm/vite/",
  "prereleases_in_window": 0,

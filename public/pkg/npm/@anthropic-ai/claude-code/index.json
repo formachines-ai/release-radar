@@ -1,22 +1,93 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-06T00:58:56Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.319",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/df1346203f/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.318",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Changed auto mode so that a project's settings files or a plugin can no longer switch its server-side check back on once you have switched it off outside the project"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Changed Monitor's WebSocket watch to follow a rule on every Bash command: a deny refuses it, and under an ask rule an allow on Monitor, bypass mode or auto mode no longer skips the prompt"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.319",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.1.322",
+ "latest": "2.1.323",
  "latest_stable": {
-  "date": "2026-11-10T01:58:41Z",
-  "version": "2.1.322"
+  "date": "2026-11-12T20:29:28Z",
+  "version": "2.1.323"
  },
- "metadata_fetched": "2026-11-12T06:00:31Z",
+ "metadata_fetched": "2026-11-13T06:00:32Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T20:29:28Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.323",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1e1f91e95e/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.322",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Fixed the error shown when Amazon Bedrock refuses your account a model: it no longer says to refresh your AWS credentials, it says to enable the model"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Fixed `/export` silently stopping early after a long run of calls to an MCP tool that is no longer loaded"
+    },
+    {
+     "match": "removed",
+     "quote": "- Fixed an MCP server staying disconnected with no tools after an Agent SDK app or `claude -p` caller removed and re-added it, when a tool call had tried to reach it in between"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.323",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-10T01:58:41Z",
@@ -72,41 +143,6 @@
    ],
    "variant_of": null,
    "version": "2.1.321",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-06T00:58:56Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/@anthropic-ai/claude-code/2.1.319",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/df1346203f/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "prev_version": "2.1.318",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "- Changed auto mode so that a project's settings files or a plugin can no longer switch its server-side check back on once you have switched it off outside the project"
-    },
-    {
-     "match": "no longer",
-     "quote": "- Changed Monitor's WebSocket watch to follow a rule on every Bash command: a deny refuses it, and under an ask rule an allow on Monitor, bypass mode or auto mode no longer skips the prompt"
-    },
-    {
-     "match": "no longer",
-     "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
-    }
-   ],
-   "variant_of": null,
-   "version": "2.1.319",
    "yanked_or_deprecated": false
   }
  ],

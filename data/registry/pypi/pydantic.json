@@ -1,7 +1,7 @@
 {
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T06:00:24Z",
+ "fetched": "2026-11-13T06:00:21Z",
  "homepage": "https://github.com/pydantic/pydantic",
  "latest": "2.14.3",
  "name": "pydantic",

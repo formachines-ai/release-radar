@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-12T06:00:34Z",
+ "fetched": "2026-11-13T06:00:35Z",
  "releases": [
+  {
+   "body": "## [3.3.0](https://github.com/googleapis/js-genai/compare/v3.2.0...v3.3.0) (2026-11-12)\n\n\n### Features\n\n* Add `XHIGH` and `xhigh` to `ThinkingLevel` across GenAI SDKs and CLI. ([9f4d0ed](https://github.com/googleapis/js-genai/commit/9f4d0eda4072f8380bc4912aa6db0b91d2c87850))\n* Add missing enum values to FinishReason and ReinforcementTuningThinkingLevel ([3a4907d](https://github.com/googleapis/js-genai/commit/3a4907ddbdde4549d0d7306693ba79c34c6356c4))\n* **interactions:** add gemini-4-hydrogen to Model enum ([a606282](https://github.com/googleapis/js-genai/commit/a6062824e72ad61d08cff66b0b00596b906add19))",
+   "date": "2026-11-12T20:47:03Z",
+   "name": "v3.3.0",
+   "prerelease": false,
+   "tag": "v3.3.0",
+   "url": "https://github.com/googleapis/js-genai/releases/tag/v3.3.0"
+  },
   {
    "body": "## [3.2.0](https://github.com/googleapis/js-genai/compare/v3.1.0...v3.2.0) (2026-11-11)\n\n\n### Features\n\n* add the Decisions API (`client.decisions.create`) to the GenAI SDKs ([3712be2](https://github.com/googleapis/js-genai/commit/3712be237dc9ba6d4d5e3fab9306cf1d74216490))\n* **environments:** introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([ac855bd](https://github.com/googleapis/js-genai/commit/ac855bd788e25a4b14aeacfe49ffa1c0e9d03040))",
    "date": "2026-11-11T17:22:34Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.45.0",
    "url": "https://github.com/googleapis/js-genai/releases/tag/v1.45.0"
-  },
-  {
-   "body": "## [1.44.0](https://github.com/googleapis/js-genai/compare/v1.43.0...v1.44.0) (2026-03-04)\n\n\n### Features\n\n* Add gemini-3.1-flash-image-preview model ([175603b](https://github.com/googleapis/js-genai/commit/175603bacbc593a437264f807a411143cdccbd0a))\n* Support signature for all Interaction tool types ([b79108f](https://github.com/googleapis/js-genai/commit/b79108fdd60d11e45cac916e6ea369eac95ff570))\n* Update data types from discovery doc. ([249b15a](https://github.com/googleapis/js-genai/commit/249b15a3b948d1453719af2a7df32490de20b423))",
-   "date": "2026-03-04T23:40:39Z",
-   "name": "v1.44.0",
-   "prerelease": false,
-   "tag": "v1.44.0",
-   "url": "https://github.com/googleapis/js-genai/releases/tag/v1.44.0"
   }
  ],
  "repo": "googleapis/js-genai"

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-12T06:00:05Z",
+ "fetched": "2026-11-13T06:00:02Z",
  "releases": [
+  {
+   "body": "## [3.3.0](https://github.com/googleapis/python-genai/compare/v3.2.0...v3.3.0) (2026-11-12)\n\n\n### Features\n\n* Add --flavor=interactions-eap packaging and scrub private exports ([39f6abe](https://github.com/googleapis/python-genai/commit/39f6abee7ac9eb917f8b65b38e7f598ec510bfcd))\n* Add `XHIGH` and `xhigh` to `ThinkingLevel` across GenAI SDKs and CLI. ([300f12f](https://github.com/googleapis/python-genai/commit/300f12f060611cb92f2253e3cac31178ec870ca9))\n* Add missing enum values to FinishReason and ReinforcementTuningThinkingLevel ([b07a895](https://github.com/googleapis/python-genai/commit/b07a895b0e152fb2a71fc01c19fc9716a80df883))\n* **interactions:** Add gemini-4-hydrogen to Model enum ([4d868c5](https://github.com/googleapis/python-genai/commit/4d868c58585c1bf06a0d69a08dc7c2f9d706c8a5))\n\n\n### Documentation\n\n* Update README to reflect breaking changes in major version 3 ([9b13424](https://github.com/googleapis/python-genai/commit/9b1342402c931fd96b79636d5fd4e4080a4d7729))",
+   "date": "2026-11-12T19:37:25Z",
+   "name": "v3.3.0",
+   "prerelease": false,
+   "tag": "v3.3.0",
+   "url": "https://github.com/googleapis/python-genai/releases/tag/v3.3.0"
+  },
   {
    "body": "## [3.2.0](https://github.com/googleapis/python-genai/compare/v3.1.0...v3.2.0) (2026-11-11)\n\n\n### Features\n\n* Add the Decisions API (`client.decisions.create`) to the GenAI SDKs ([9efe1e4](https://github.com/googleapis/python-genai/commit/9efe1e4ac8831fd3bc793c0733320e6a0d3cd324))\n* **environments:** Introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([96b79b3](https://github.com/googleapis/python-genai/commit/96b79b3a4434abedfa9953891e77a617acdd7c3f))",
    "date": "2026-11-11T17:22:30Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.72.0",
    "url": "https://github.com/googleapis/python-genai/releases/tag/v1.72.0"
-  },
-  {
-   "body": "## [1.71.0](https://github.com/googleapis/python-genai/compare/v1.70.0...v1.71.0) (2026-04-08)\n\n\n### Features\n\n* Introduce TYPE_L16 audio content and optional fields. ([07e932f](https://github.com/googleapis/python-genai/commit/07e932f9bc8dcb224ced2b35061ede9df25432cb))\n\n\n### Documentation\n\n* Remove deprecated product recontext model samples from docstrings ([aca7dcf](https://github.com/googleapis/python-genai/commit/aca7dcf32b15ef2d945a14fb498be0e9c096c0d8))",
-   "date": "2026-04-08T17:41:11Z",
-   "name": "v1.71.0",
-   "prerelease": false,
-   "tag": "v1.71.0",
-   "url": "https://github.com/googleapis/python-genai/releases/tag/v1.71.0"
   }
  ],
  "repo": "googleapis/python-genai"

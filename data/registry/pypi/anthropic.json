@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-12T06:00:04Z",
+ "fetched": "2026-11-13T06:00:01Z",
  "homepage": "https://github.com/anthropics/anthropic-sdk-python",
  "latest": "2.8.0",
  "name": "anthropic",

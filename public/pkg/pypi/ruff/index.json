@@ -1,22 +1,9 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "0.17.4",
- "latest_stable": {
-  "date": "2026-11-05T18:51:36Z",
-  "version": "0.17.4"
- },
- "metadata_fetched": "2026-11-12T06:00:25Z",
- "package": "ruff",
- "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
- "prereleases_in_window": 0,
- "registry": "https://pypi.org/project/ruff/",
- "releases": [
+ "history": [
   {
    "bump": "patch",
    "date": "2026-11-05T18:51:36Z",
@@ -37,6 +24,51 @@
    "quotes": [],
    "variant_of": null,
    "version": "0.17.4",
+   "yanked_or_deprecated": false
+  }
+ ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "0.17.5",
+ "latest_stable": {
+  "date": "2026-11-12T17:54:09Z",
+  "version": "0.17.5"
+ },
+ "metadata_fetched": "2026-11-13T06:00:21Z",
+ "package": "ruff",
+ "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
+ "prereleases_in_window": 0,
+ "registry": "https://pypi.org/project/ruff/",
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T17:54:09Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/ruff/0.17.5",
+   "json": "https://releases.formachines.ai/pkg/pypi/ruff/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5ff3cb778b/",
+   "notes_url": "https://github.com/astral-sh/ruff/releases/tag/0.17.5",
+   "package": "ruff",
+   "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
+   "prerelease": false,
+   "prev_version": "0.17.4",
+   "quotes": [
+    {
+     "match": "renamed",
+     "quote": "- Redirect renamed rules ([#30081](https://github.com/astral-sh/ruff/pull/30081))"
+    },
+    {
+     "match": "renamed",
+     "quote": "- \\[`ruff`\\] Add `renamed-rule` (`RUF202`) ([#30079](https://github.com/astral-sh/ruff/pull/30079))"
+    }
+   ],
+   "variant_of": null,
+   "version": "0.17.5",
    "yanked_or_deprecated": false
   }
  ],

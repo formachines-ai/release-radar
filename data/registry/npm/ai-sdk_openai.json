@@ -2,22 +2,37 @@
  "changelog": null,
  "dist_tags": {
   "ai-v5": "2.0.143",
-  "ai-v6": "3.0.141",
+  "ai-v6": "3.0.142",
   "alpha": "2.0.0-alpha.15",
   "beta": "4.0.0-beta.77",
   "canary": "4.0.0-canary.73",
-  "latest": "4.0.115",
+  "latest": "4.0.117",
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T06:00:27Z",
+ "fetched": "2026-11-13T06:00:23Z",
  "homepage": "https://ai-sdk.dev/docs",
- "latest": "4.0.115",
+ "latest": "4.0.117",
  "name": "@ai-sdk/openai",
  "page": "https://www.npmjs.com/package/@ai-sdk/openai",
  "repo": "vercel/ai",
  "summary": "",
  "versions": [
+  {
+   "date": "2026-11-13T05:58:20Z",
+   "deprecated": false,
+   "version": "4.0.117"
+  },
+  {
+   "date": "2026-11-12T20:22:25Z",
+   "deprecated": false,
+   "version": "4.0.116"
+  },
+  {
+   "date": "2026-11-12T20:20:02Z",
+   "deprecated": false,
+   "version": "3.0.142"
+  },
   {
    "date": "2026-11-11T18:38:11Z",
    "deprecated": false,
@@ -697,16 +712,6 @@
    "date": "2026-08-18T22:52:26Z",
    "deprecated": false,
    "version": "4.0.43"
-  },
-  {
-   "date": "2026-08-14T19:56:10Z",
-   "deprecated": false,
-   "version": "3.0.97"
-  },
-  {
-   "date": "2026-08-14T19:55:57Z",
-   "deprecated": false,
-   "version": "4.0.42"
   }
  ]
 }

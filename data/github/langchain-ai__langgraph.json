@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-12T00:11:49Z",
+ "fetched": "2026-11-13T06:00:04Z",
  "releases": [
+  {
+   "body": "Changes since 1.2.20\n\n* release(langgraph): 1.2.21 (#9683)\n* chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9530)\n* fix(langgraph): match whole namespace segments in get_subgraphs (#9615)\n* fix(langgraph): read an undeclared subgraph namespace with the parent graph (#9614)\n* docs(langgraph): say each interrupt() call has its own id in UnknownInterruptError (#9600)\n* chore(deps): bump filelock and langgraph-api for security fixes (#9606)",
+   "date": "2026-11-12T18:06:43Z",
+   "name": "langgraph==1.2.21",
+   "prerelease": false,
+   "tag": "1.2.21",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.21"
+  },
+  {
+   "body": "Changes since cli==0.4.42\n\n* release(cli): 0.4.43 (#9682)\n* feat(cli): use Agent Server flags with hidden deployment aliases (#9666)\n* fix(cli): remove discontinued local debugger image (#8543)\n* chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9532)",
+   "date": "2026-11-12T16:20:16Z",
+   "name": "langgraph-cli==0.4.43",
+   "prerelease": false,
+   "tag": "cli==0.4.43",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.43"
+  },
   {
    "body": "Changes since sdk==0.4.13\n\n* release(sdk-py): 0.4.14 (#9610)\n* feat(sdk-py): add strict_resume to runs.create, stream and wait (#9599)\n* feat(sdk-py): add tools and lifecycle to StreamMode (#9601)",
    "date": "2026-11-06T03:03:34Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "cli==0.4.31",
    "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.31"
-  },
-  {
-   "body": "Changes since 1.2.7\n\n* release(langgraph): 1.2.8 (#8292)\n* fix: delta channel bug with updateState on fresh thread will force snapshot instead of stub checkpoint (#8290)\n* chore(deps): bump the minor-and-patch group in /libs/langgraph with 8 updates (#8255)\n* chore(deps): bump websockets from 15.0.1 to 16.0 in /libs/langgraph in the major group (#8256)\n* chore(deps): bump the minor-and-patch group in /libs/sdk-py with 9 updates (#8252)",
-   "date": "2026-07-06T20:40:30Z",
-   "name": "langgraph==1.2.8",
-   "prerelease": false,
-   "tag": "1.2.8",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.8"
-  },
-  {
-   "body": "Changes since 1.2.6\n\n* release(langgraph): 1.2.7 (#8223)\n* fix(langgraph): snapshot `DeltaChannel` overwrite supersteps (#8125)\n* fix(langgraph): Make `Overwrite` survive JSON roundtrips (#8127)\n* chore(deps): bump redis in /libs/langgraph (#7976)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/langgraph (#8176)\n* chore(deps): bump jupyterlab from 4.5.7 to 4.5.9 in /libs/langgraph (#8164)\n* fix(langgraph): emit valid UUIDs for exit-mode delta task_ids for langgraph-api (#8165)\n* chore(deps): bump bleach from 6.3.0 to 6.4.0 in /libs/langgraph (#8107)\n* chore(deps): bump cryptography from 46.0.7 to 48.0.1 in /libs/langgraph (#8106)\n* chore(deps): bump jupyter-server from 2.18.0 to 2.20.0 in /libs/langgraph (#8134)\n* chore(deps): bump tornado from 6.5.6 to 6.5.7 in /libs/langgraph (#8108)\n* chore(deps): bump pyjwt from 2.12.0 to 2.13.0 in /libs/langgraph (#8092)",
-   "date": "2026-06-30T01:24:26Z",
-   "name": "langgraph==1.2.7",
-   "prerelease": false,
-   "tag": "1.2.7",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.7"
   }
  ],
  "repo": "langchain-ai/langgraph"

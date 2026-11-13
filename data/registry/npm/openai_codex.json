@@ -1,19 +1,19 @@
 {
  "changelog": null,
  "dist_tags": {
-  "alpha": "0.170.0-alpha.2",
-  "alpha-darwin-arm64": "0.170.0-alpha.2-darwin-arm64",
-  "alpha-darwin-x64": "0.170.0-alpha.2-darwin-x64",
-  "alpha-linux-arm64": "0.170.0-alpha.2-linux-arm64",
-  "alpha-linux-x64": "0.170.0-alpha.2-linux-x64",
-  "alpha-win32-arm64": "0.170.0-alpha.2-win32-arm64",
-  "alpha-win32-x64": "0.170.0-alpha.2-win32-x64",
+  "alpha": "0.171.0-alpha.1",
+  "alpha-darwin-arm64": "0.171.0-alpha.1-darwin-arm64",
+  "alpha-darwin-x64": "0.171.0-alpha.1-darwin-x64",
+  "alpha-linux-arm64": "0.171.0-alpha.1-linux-arm64",
+  "alpha-linux-x64": "0.171.0-alpha.1-linux-x64",
+  "alpha-win32-arm64": "0.171.0-alpha.1-win32-arm64",
+  "alpha-win32-x64": "0.171.0-alpha.1-win32-x64",
   "beta": "0.1.2505172116",
-  "darwin-arm64": "0.167.2-darwin-arm64",
-  "darwin-x64": "0.167.2-darwin-x64",
-  "latest": "0.167.2",
-  "linux-arm64": "0.167.2-linux-arm64",
-  "linux-x64": "0.167.2-linux-x64",
+  "darwin-arm64": "0.168.0-darwin-arm64",
+  "darwin-x64": "0.168.0-darwin-x64",
+  "latest": "0.168.0",
+  "linux-arm64": "0.168.0-linux-arm64",
+  "linux-x64": "0.168.0-linux-x64",
   "native": "0.1.2505291658",
   "release-0.159.0-alpha.12.1-alpha": "0.159.0-alpha.12.1",
   "release-0.159.0-alpha.12.1-alpha-darwin-arm64": "0.159.0-alpha.12.1-darwin-arm64",
@@ -148,18 +148,158 @@
   "release-0.169.0-alpha.11.1-alpha-linux-x64": "0.169.0-alpha.11.1-linux-x64",
   "release-0.169.0-alpha.11.1-alpha-win32-arm64": "0.169.0-alpha.11.1-win32-arm64",
   "release-0.169.0-alpha.11.1-alpha-win32-x64": "0.169.0-alpha.11.1-win32-x64",
-  "win32-arm64": "0.167.2-win32-arm64",
-  "win32-x64": "0.167.2-win32-x64"
+  "win32-arm64": "0.168.0-win32-arm64",
+  "win32-x64": "0.168.0-win32-x64"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-12T06:00:35Z",
+ "fetched": "2026-11-13T06:00:36Z",
  "homepage": "https://github.com/openai/codex#readme",
- "latest": "0.167.2",
+ "latest": "0.168.0",
  "name": "@openai/codex",
  "page": "https://www.npmjs.com/package/@openai/codex",
  "repo": "openai/codex",
  "summary": "Codex CLI is a coding agent from OpenAI that runs locally on your computer.",
  "versions": [
+  {
+   "date": "2026-11-13T04:30:47Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-win32-x64"
+  },
+  {
+   "date": "2026-11-13T04:29:24Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-win32-arm64"
+  },
+  {
+   "date": "2026-11-13T04:28:58Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-darwin-arm64"
+  },
+  {
+   "date": "2026-11-13T04:28:37Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-linux-arm64"
+  },
+  {
+   "date": "2026-11-13T04:27:09Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-darwin-x64"
+  },
+  {
+   "date": "2026-11-13T04:26:07Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1"
+  },
+  {
+   "date": "2026-11-13T04:25:50Z",
+   "deprecated": false,
+   "version": "0.171.0-alpha.1-linux-x64"
+  },
+  {
+   "date": "2026-11-13T04:06:34Z",
+   "deprecated": false,
+   "version": "0.168.0-win32-arm64"
+  },
+  {
+   "date": "2026-11-13T04:06:07Z",
+   "deprecated": false,
+   "version": "0.168.0-win32-x64"
+  },
+  {
+   "date": "2026-11-13T04:05:48Z",
+   "deprecated": false,
+   "version": "0.168.0-darwin-x64"
+  },
+  {
+   "date": "2026-11-13T04:05:07Z",
+   "deprecated": false,
+   "version": "0.168.0-linux-arm64"
+  },
+  {
+   "date": "2026-11-13T04:04:46Z",
+   "deprecated": false,
+   "version": "0.168.0-linux-x64"
+  },
+  {
+   "date": "2026-11-13T04:04:23Z",
+   "deprecated": false,
+   "version": "0.168.0-darwin-arm64"
+  },
+  {
+   "date": "2026-11-13T04:00:31Z",
+   "deprecated": false,
+   "version": "0.168.0"
+  },
+  {
+   "date": "2026-11-12T23:14:32Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-win32-x64"
+  },
+  {
+   "date": "2026-11-12T23:12:54Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-win32-arm64"
+  },
+  {
+   "date": "2026-11-12T23:11:44Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-darwin-arm64"
+  },
+  {
+   "date": "2026-11-12T23:11:17Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-darwin-x64"
+  },
+  {
+   "date": "2026-11-12T23:11:01Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-linux-x64"
+  },
+  {
+   "date": "2026-11-12T23:08:36Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4-linux-arm64"
+  },
+  {
+   "date": "2026-11-12T23:06:57Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.4"
+  },
+  {
+   "date": "2026-11-12T19:48:14Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-win32-x64"
+  },
+  {
+   "date": "2026-11-12T19:47:35Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-win32-arm64"
+  },
+  {
+   "date": "2026-11-12T19:45:48Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-darwin-arm64"
+  },
+  {
+   "date": "2026-11-12T19:45:32Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-linux-arm64"
+  },
+  {
+   "date": "2026-11-12T19:44:08Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-darwin-x64"
+  },
+  {
+   "date": "2026-11-12T19:43:49Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3-linux-x64"
+  },
+  {
+   "date": "2026-11-12T19:40:37Z",
+   "deprecated": false,
+   "version": "0.170.0-alpha.3"
+  },
   {
    "date": "2026-11-12T01:45:39Z",
    "deprecated": false,
@@ -10239,146 +10379,6 @@
    "date": "2026-08-16T00:27:34Z",
    "deprecated": false,
    "version": "0.148.0-alpha.20-linux-x64"
-  },
-  {
-   "date": "2026-08-15T02:50:48Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-win32-arm64"
-  },
-  {
-   "date": "2026-08-15T02:30:25Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-win32-x64"
-  },
-  {
-   "date": "2026-08-15T02:30:01Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-darwin-arm64"
-  },
-  {
-   "date": "2026-08-15T02:29:06Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-linux-x64"
-  },
-  {
-   "date": "2026-08-15T02:27:43Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-darwin-x64"
-  },
-  {
-   "date": "2026-08-15T02:27:22Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19-linux-arm64"
-  },
-  {
-   "date": "2026-08-15T02:26:43Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.19"
-  },
-  {
-   "date": "2026-08-14T22:43:02Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-win32-arm64"
-  },
-  {
-   "date": "2026-08-14T22:16:59Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-darwin-x64"
-  },
-  {
-   "date": "2026-08-14T22:12:15Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-darwin-arm64"
-  },
-  {
-   "date": "2026-08-14T22:08:36Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-linux-arm64"
-  },
-  {
-   "date": "2026-08-14T22:07:38Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-win32-x64"
-  },
-  {
-   "date": "2026-08-14T22:04:13Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18-linux-x64"
-  },
-  {
-   "date": "2026-08-14T22:03:58Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.18"
-  },
-  {
-   "date": "2026-08-14T19:40:52Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-win32-arm64"
-  },
-  {
-   "date": "2026-08-14T19:37:32Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-win32-x64"
-  },
-  {
-   "date": "2026-08-14T19:36:15Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-linux-x64"
-  },
-  {
-   "date": "2026-08-14T19:34:51Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-darwin-x64"
-  },
-  {
-   "date": "2026-08-14T19:34:29Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-linux-arm64"
-  },
-  {
-   "date": "2026-08-14T19:33:05Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17-darwin-arm64"
-  },
-  {
-   "date": "2026-08-14T19:32:49Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.17"
-  },
-  {
-   "date": "2026-08-14T18:01:51Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-darwin-x64"
-  },
-  {
-   "date": "2026-08-14T17:37:59Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-win32-arm64"
-  },
-  {
-   "date": "2026-08-14T17:37:38Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-win32-x64"
-  },
-  {
-   "date": "2026-08-14T17:31:06Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-linux-x64"
-  },
-  {
-   "date": "2026-08-14T17:29:11Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-darwin-arm64"
-  },
-  {
-   "date": "2026-08-14T17:28:25Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16-linux-arm64"
-  },
-  {
-   "date": "2026-08-14T17:26:03Z",
-   "deprecated": false,
-   "version": "0.148.0-alpha.16"
   }
  ]
 }

@@ -1,9 +1,32 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-06T04:29:46Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/stripe/23.2.0-alpha.2",
+   "json": "https://releases.formachines.ai/pkg/npm/stripe/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/3eb598f89e/",
+   "notes_url": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.2",
+   "package": "stripe",
+   "page": "https://releases.formachines.ai/pkg/npm/stripe/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "23.2.0-alpha.2",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
  "latest": "23.1.0",
@@ -11,10 +34,10 @@
   "date": "2026-10-29T19:58:14Z",
   "version": "23.1.0"
  },
- "metadata_fetched": "2026-11-12T06:01:17Z",
+ "metadata_fetched": "2026-11-13T06:01:19Z",
  "package": "stripe",
  "page": "https://releases.formachines.ai/pkg/npm/stripe/",
- "prereleases_in_window": 2,
+ "prereleases_in_window": 1,
  "registry": "https://www.npmjs.com/package/stripe",
  "releases": [
   {
@@ -37,28 +60,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "23.2.0-alpha.3",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-06T04:29:46Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/stripe/23.2.0-alpha.2",
-   "json": "https://releases.formachines.ai/pkg/npm/stripe/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/3eb598f89e/",
-   "notes_url": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0-alpha.2",
-   "package": "stripe",
-   "page": "https://releases.formachines.ai/pkg/npm/stripe/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "23.2.0-alpha.2",
    "yanked_or_deprecated": false
   }
  ],

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-12T06:00:07Z",
+ "fetched": "2026-11-13T06:00:05Z",
  "releases": [
+  {
+   "body": "## [3.50.0](https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expose reasoning input transformations on responses ([#4268](https://github.com/openai/openai-python/issues/4268)) ([734f75b](https://github.com/openai/openai-python/commit/734f75b5219da0fd74b24afefae81c71af81fcf6))\n\n\n### Chores\n\n* **deps:** bump astral-sh/setup-uv from 10.3.0 to 10.3.3 ([#4261](https://github.com/openai/openai-python/issues/4261)) ([0ebd006](https://github.com/openai/openai-python/commit/0ebd00647f6088fb100b03440c6c4554bbab549d))\n\n\n### Documentation\n\n* simplify review handoff instructions ([#4266](https://github.com/openai/openai-python/issues/4266)) ([141a89a](https://github.com/openai/openai-python/commit/141a89aa7fbb7f13a979bda930831a5fe38bc3a4))",
+   "date": "2026-11-12T19:26:07Z",
+   "name": "v3.50.0",
+   "prerelease": false,
+   "tag": "v3.50.0",
+   "url": "https://github.com/openai/openai-python/releases/tag/v3.50.0"
+  },
   {
    "body": "## [3.49.0](https://github.com/openai/openai-python/compare/v3.48.0...v3.49.0) (2026-11-10)\n\n\n### Features\n\n* **api:** add typed async function tools ([#4264](https://github.com/openai/openai-python/issues/4264)) ([ea07983](https://github.com/openai/openai-python/commit/ea07983f796144835ab3f2cad38fdca04c997a0e))\n\n\n### Bug Fixes\n\n* encode microphone recordings as valid PCM WAV ([#3900](https://github.com/openai/openai-python/issues/3900)) ([13c000d](https://github.com/openai/openai-python/commit/13c000d1f32c1e3e3c4b3e16bc6b956dfd4f5216))",
    "date": "2026-11-10T06:47:04Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v3.11.0",
    "url": "https://github.com/openai/openai-python/releases/tag/v3.11.0"
-  },
-  {
-   "body": "## [3.10.0](https://github.com/openai/openai-python/compare/v3.9.0...v3.10.0) (2026-09-08)\n\n\n### Features\n\n* **api:** add GPT Image 2.5 models and image options ([#3824](https://github.com/openai/openai-python/issues/3824)) ([5b39c45](https://github.com/openai/openai-python/commit/5b39c453ee5ee8f46fba0bd9cb4ae47fa5ee6d51))\n* **api:** add service-account API key expiration fields ([#3802](https://github.com/openai/openai-python/issues/3802)) ([f1cd7f0](https://github.com/openai/openai-python/commit/f1cd7f020210ec3fc71699fc46d90320ddbb411c))",
-   "date": "2026-09-09T00:17:39Z",
-   "name": "v3.10.0",
-   "prerelease": false,
-   "tag": "v3.10.0",
-   "url": "https://github.com/openai/openai-python/releases/tag/v3.10.0"
   }
  ],
  "repo": "openai/openai-python"

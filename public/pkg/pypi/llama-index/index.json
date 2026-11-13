@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-09-21T16:22:20Z",
   "version": "0.14.25"
  },
- "metadata_fetched": "2026-11-12T06:00:07Z",
+ "metadata_fetched": "2026-11-13T06:00:05Z",
  "package": "llama-index",
  "page": "https://releases.formachines.ai/pkg/pypi/llama-index/",
  "prereleases_in_window": 0,

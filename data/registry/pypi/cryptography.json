@@ -1,7 +1,7 @@
 {
  "changelog": "https://cryptography.io/en/latest/changelog/",
  "ecosystem": "pypi",
- "fetched": "2026-11-12T06:00:22Z",
+ "fetched": "2026-11-13T06:00:19Z",
  "homepage": "",
  "latest": "50.0.2",
  "name": "cryptography",

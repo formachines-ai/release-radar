@@ -1,5 +1,5 @@
 {
- "built": "2026-11-12T06:00:04Z",
+ "built": "2026-11-13T06:00:01Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -18,7 +18,7 @@
   "date": "2026-10-02T22:06:52Z",
   "version": "2.3.0"
  },
- "metadata_fetched": "2026-11-12T06:00:07Z",
+ "metadata_fetched": "2026-11-13T06:00:05Z",
  "package": "mcp",
  "page": "https://releases.formachines.ai/pkg/pypi/mcp/",
  "prereleases_in_window": 0,
