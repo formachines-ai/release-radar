@@ -1,9 +1,32 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-07T04:56:44Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/hono/4.13.17",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/bb025bc05e/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.17",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "prev_version": "4.13.16",
+   "quotes": [],
+   "variant_of": null,
+   "version": "4.13.17",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
  "latest": "4.13.18",
@@ -11,7 +34,7 @@
   "date": "2026-11-11T08:54:02Z",
   "version": "4.13.18"
  },
- "metadata_fetched": "2026-11-13T06:01:11Z",
+ "metadata_fetched": "2026-11-14T06:01:20Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,
@@ -43,31 +66,9 @@
    "variant_of": null,
    "version": "4.13.18",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-07T04:56:44Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/hono/4.13.17",
-   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/bb025bc05e/",
-   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.17",
-   "package": "hono",
-   "page": "https://releases.formachines.ai/pkg/npm/hono/",
-   "prerelease": false,
-   "prev_version": "4.13.16",
-   "quotes": [],
-   "variant_of": null,
-   "version": "4.13.17",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/honojs/hono",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Web framework built on Web Standards"
 }

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-13T06:00:05Z",
+ "fetched": "2026-11-14T06:00:06Z",
  "releases": [
+  {
+   "body": "## [3.51.0](https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expand agent, image, Live, and external key support ([#4269](https://github.com/openai/openai-python/issues/4269)) ([59738a2](https://github.com/openai/openai-python/commit/59738a289ee82c7b86bf1e10230cceb6daa9716d))",
+   "date": "2026-11-13T21:12:49Z",
+   "name": "v3.51.0",
+   "prerelease": false,
+   "tag": "v3.51.0",
+   "url": "https://github.com/openai/openai-python/releases/tag/v3.51.0"
+  },
   {
    "body": "## [3.50.0](https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0) (2026-11-12)\n\n\n### Features\n\n* **api:** expose reasoning input transformations on responses ([#4268](https://github.com/openai/openai-python/issues/4268)) ([734f75b](https://github.com/openai/openai-python/commit/734f75b5219da0fd74b24afefae81c71af81fcf6))\n\n\n### Chores\n\n* **deps:** bump astral-sh/setup-uv from 10.3.0 to 10.3.3 ([#4261](https://github.com/openai/openai-python/issues/4261)) ([0ebd006](https://github.com/openai/openai-python/commit/0ebd00647f6088fb100b03440c6c4554bbab549d))\n\n\n### Documentation\n\n* simplify review handoff instructions ([#4266](https://github.com/openai/openai-python/issues/4266)) ([141a89a](https://github.com/openai/openai-python/commit/141a89aa7fbb7f13a979bda930831a5fe38bc3a4))",
    "date": "2026-11-12T19:26:07Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v3.12.0",
    "url": "https://github.com/openai/openai-python/releases/tag/v3.12.0"
-  },
-  {
-   "body": "## [3.11.0](https://github.com/openai/openai-python/compare/v3.10.0...v3.11.0) (2026-09-09)\n\n\n### Features\n\n* **api:** Add expiration controls for service account keys ([#3825](https://github.com/openai/openai-python/issues/3825)) ([f348ec8](https://github.com/openai/openai-python/commit/f348ec87b934c98889102668913e0a3ae7fc303d))",
-   "date": "2026-09-09T15:31:33Z",
-   "name": "v3.11.0",
-   "prerelease": false,
-   "tag": "v3.11.0",
-   "url": "https://github.com/openai/openai-python/releases/tag/v3.11.0"
   }
  ],
  "repo": "openai/openai-python"

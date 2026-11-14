@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -43,7 +43,7 @@
   "date": "2026-11-12T21:19:31Z",
   "version": "3.3.0"
  },
- "metadata_fetched": "2026-11-13T06:00:35Z",
+ "metadata_fetched": "2026-11-14T06:00:41Z",
  "package": "@google/genai",
  "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
  "prereleases_in_window": 0,

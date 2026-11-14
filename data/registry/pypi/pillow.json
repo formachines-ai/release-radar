@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/python-pillow/Pillow/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:20Z",
+ "fetched": "2026-11-14T06:00:20Z",
  "homepage": "https://python-pillow.org",
  "latest": "13.0.0",
  "name": "pillow",

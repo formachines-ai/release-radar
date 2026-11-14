@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-13T06:00:03Z",
+ "fetched": "2026-11-14T06:00:03Z",
  "releases": [
+  {
+   "body": "**`langchain-openai` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain-openai` 1.7.x.\n\nChanges since langchain-openai==1.7.4\n\nrelease(openai): 1.8.0 (#41841)\nfeat(openai): add OpenAIClassifier for the GA Decisions API (#41787)\nchore(model-profiles): refresh model profile data (#41828)\nfeat(partners): Remove EOL'd Python 3.10 from partner packages (#41268)",
+   "date": "2026-11-13T16:48:27Z",
+   "name": "langchain-openai==1.8.0",
+   "prerelease": false,
+   "tag": "langchain-openai==1.8.0",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.0"
+  },
   {
    "body": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain` 1.4.x.\n\nChanges since langchain==1.4.10\n\nrelease(langchain): 1.5.0 (#41798)\nfix(langchain): mark `ModelRouterMiddleware` as beta (#41797)\nfeat(langchain): Remove EOL'd Python 3.10 from langchain_v1 (#41301)\nfeat(langchain): add model router and auto mode middleware (#41766)\ndocs(langchain): explain Baseten minimum version (#41777)",
    "date": "2026-11-11T15:47:22Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "langchain-fireworks==1.6.3",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-fireworks%3D%3D1.6.3"
-  },
-  {
-   "body": "Changes since langchain-core==1.6.4\n\nrelease(core): 1.6.5 (#40816)\nfix(core): abbreviate long tool IDs in XML buffer strings (#40792)",
-   "date": "2026-09-24T18:11:22Z",
-   "name": "langchain-core==1.6.5",
-   "prerelease": false,
-   "tag": "langchain-core==1.6.5",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.5"
   }
  ],
  "repo": "langchain-ai/langchain"

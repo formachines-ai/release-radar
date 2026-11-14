@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T06:01:15Z",
+ "fetched": "2026-11-14T06:01:24Z",
  "releases": [
   {
    "body": "- GraphQL: Fix empty selection set with comments ([#20504](https://github.com/prettier/prettier/pull/20504) by [@fisker](https://github.com/fisker))\r\n\r\n🔗 [Changelog](https://github.com/prettier/prettier/blob/3.10.1/CHANGELOG.md#3101)",

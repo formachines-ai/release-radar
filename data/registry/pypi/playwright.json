@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:20Z",
+ "fetched": "2026-11-14T06:00:20Z",
  "homepage": "",
- "latest": "1.65.1",
+ "latest": "1.65.2",
  "name": "playwright",
  "page": "https://pypi.org/project/playwright/",
  "repo": "microsoft/playwright-python",
  "summary": "A high-level API to automate web browsers",
  "versions": [
+  {
+   "date": "2026-11-14T00:28:39Z",
+   "version": "1.65.2",
+   "yanked": false
+  },
   {
    "date": "2026-11-11T23:48:18Z",
    "version": "1.65.1",
@@ -202,11 +207,6 @@
   {
    "date": "2023-05-03T11:22:22Z",
    "version": "1.33.0",
-   "yanked": false
-  },
-  {
-   "date": "2023-03-29T17:39:00Z",
-   "version": "1.32.1",
    "yanked": false
   }
  ]

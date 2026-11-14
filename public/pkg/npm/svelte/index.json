@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-10-26T18:16:20Z",
   "version": "5.57.3"
  },
- "metadata_fetched": "2026-11-13T06:01:20Z",
+ "metadata_fetched": "2026-11-14T06:01:29Z",
  "package": "svelte",
  "page": "https://releases.formachines.ai/pkg/npm/svelte/",
  "prereleases_in_window": 0,

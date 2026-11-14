@@ -1,23 +1,59 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "0.14.25",
+ "latest": "0.14.26",
  "latest_stable": {
-  "date": "2026-09-21T16:22:20Z",
-  "version": "0.14.25"
+  "date": "2026-11-13T22:38:11Z",
+  "version": "0.14.26"
  },
- "metadata_fetched": "2026-11-13T06:00:05Z",
+ "metadata_fetched": "2026-11-14T06:00:05Z",
  "package": "llama-index",
  "page": "https://releases.formachines.ai/pkg/pypi/llama-index/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/llama-index/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-13T22:38:11Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/llama-index/0.14.26",
+   "json": "https://releases.formachines.ai/pkg/pypi/llama-index/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fcc9057090/",
+   "notes_url": "https://github.com/run-llama/llama_index/releases/tag/v0.14.26",
+   "package": "llama-index",
+   "page": "https://releases.formachines.ai/pkg/pypi/llama-index/",
+   "prerelease": false,
+   "prev_version": "0.14.25",
+   "quotes": [
+    {
+     "match": "BREAKING",
+     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
+    },
+    {
+     "match": "BREAKING",
+     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
+    },
+    {
+     "match": "BREAKING",
+     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
+    }
+   ],
+   "variant_of": null,
+   "version": "0.14.26",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/run-llama/llama_index",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Interface between LLMs and your data"
 }

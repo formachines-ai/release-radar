@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T06:01:12Z",
+ "fetched": "2026-11-14T06:01:21Z",
  "releases": [
   {
    "body": "8.24.9 / 2026-11-12\r\n===================\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): don't disable autoIndex/autoCreate for a primary ReadPreference instance [mrityunjay-pandey](https://github.com/mrityunjay-pandey)",

@@ -1,23 +1,51 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": "https://github.com/pydantic/pydantic-settings/releases",
  "ecosystem": "pypi",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.16.2",
+ "latest": "2.16.3",
  "latest_stable": {
-  "date": "2026-10-28T11:14:26Z",
-  "version": "2.16.2"
+  "date": "2026-11-13T11:18:28Z",
+  "version": "2.16.3"
  },
- "metadata_fetched": "2026-11-13T06:00:21Z",
+ "metadata_fetched": "2026-11-14T06:00:21Z",
  "package": "pydantic-settings",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic-settings/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pydantic-settings/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-13T11:18:28Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/pydantic-settings/2.16.3",
+   "json": "https://releases.formachines.ai/pkg/pypi/pydantic-settings/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7192d982b2/",
+   "notes_url": "https://github.com/pydantic/pydantic-settings/releases/tag/v2.16.3",
+   "package": "pydantic-settings",
+   "page": "https://releases.formachines.ai/pkg/pypi/pydantic-settings/",
+   "prerelease": false,
+   "prev_version": "2.16.2",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "* **`SecretsSettingsSource` no longer follows symlinks that resolve outside `secrets_dir`** ([#1138](https://github.com/pydantic/pydantic-settings/pull/1138), fixes [#1137](https://github.com/pydantic/pydantic-settings/issues/1137)). A secret file that is a symbolic link to a fil…"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.16.3",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pydantic/pydantic-settings",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Settings management using Pydantic"
 }

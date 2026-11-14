@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-13T06:00:20Z",
+ "fetched": "2026-11-14T06:00:20Z",
  "releases": [
+  {
+   "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Fixes\n\n* 🐛 Fix async yield dependency cleanup on cancellation. PR [#16739](https://github.com/fastapi/fastapi/pull/16739) by [@tiangolo](https://github.com/tiangolo).\n\n### Internal\n\n* 🔒️ Generate GH actions workflow lockfile and bump Zizmor. PR [#16736](https://github.com/fastapi/fastapi/pull/16736) by [@YuriiMotov](https://github.com/YuriiMotov).\n",
+   "date": "2026-11-13T17:46:19Z",
+   "name": "0.162.7",
+   "prerelease": false,
+   "tag": "0.162.7",
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.162.7"
+  },
+  {
+   "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Breaking Changes\n\n* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).\n",
+   "date": "2026-11-13T13:34:50Z",
+   "name": "0.162.6",
+   "prerelease": false,
+   "tag": "0.162.6",
+   "url": "https://github.com/fastapi/fastapi/releases/tag/0.162.6"
+  },
   {
    "body": "> FastAPI includes an official skill that helps coding agents use new features and recommended patterns for your installed version. Install it with `uvx library-skills` in your project. See [Develop with AI](https://fastapi.tiangolo.com/ai-development/).\n\n### Fixes\n\n* 🐛 Fix synchronous dependency cleanup on cancellation. PR [#16734](https://github.com/fastapi/fastapi/pull/16734) by [@tiangolo](https://github.com/tiangolo).\n\n### Internal\n\n* ➖ Drop `pydantic-ai` dependency, use `pydantic-ai-slim[openai]` instead. PR [#16526](https://github.com/fastapi/fastapi/pull/16526) by [@YuriiMotov](https://github.com/YuriiMotov).\n",
    "date": "2026-11-11T22:29:35Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "0.141.1",
    "url": "https://github.com/fastapi/fastapi/releases/tag/0.141.1"
-  },
-  {
-   "body": "### Features\r\n\r\n* ✨ Add `app.frontend(check_dir=\"auto\")`, to make local development more convenient with `fastapi dev`. PR [#16102](https://github.com/fastapi/fastapi/pull/16102) by [@tiangolo](https://github.com/tiangolo).\r\n",
-   "date": "2026-07-29T14:47:36Z",
-   "name": "0.141.0",
-   "prerelease": false,
-   "tag": "0.141.0",
-   "url": "https://github.com/fastapi/fastapi/releases/tag/0.141.0"
-  },
-  {
-   "body": "### Fixes\r\n\r\n* 🐛 Fix `status_code` being ignored for SSE and JSONL streaming endpoints. PR [#15937](https://github.com/fastapi/fastapi/pull/15937) by [@SAURABHSALVE](https://github.com/SAURABHSALVE).\r\n\r\n### Docs\r\n\r\n* 📝 Fix `format_sse_event` docstring rendering of `\\n\\n` terminator. PR [#15613](https://github.com/fastapi/fastapi/pull/15613) by [@AshNicolus](https://github.com/AshNicolus).\r\n* 📝 Add API reference page for fastapi.sse. PR [#15930](https://github.com/fastapi/fastapi/pull/15930) by [@SAURABHSALVE](https://github.com/SAURABHSALVE).\r\n",
-   "date": "2026-07-28T15:36:47Z",
-   "name": "0.140.13",
-   "prerelease": false,
-   "tag": "0.140.13",
-   "url": "https://github.com/fastapi/fastapi/releases/tag/0.140.13"
   }
  ],
  "repo": "fastapi/fastapi"

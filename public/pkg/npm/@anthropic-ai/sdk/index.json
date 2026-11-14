@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -34,7 +34,7 @@
   "date": "2026-11-10T16:38:44Z",
   "version": "1.8.0"
  },
- "metadata_fetched": "2026-11-13T06:00:33Z",
+ "metadata_fetched": "2026-11-14T06:00:34Z",
  "package": "@anthropic-ai/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
  "prereleases_in_window": 0,

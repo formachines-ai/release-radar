@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-13T06:00:34Z",
+ "fetched": "2026-11-14T06:00:35Z",
  "releases": [
   {
    "body": "### Bug Fixes\n\n* **vertex:** send a `;` in the model as `%3B`\n* **vertex:** throw an `AnthropicError` for a project ID, region or model such as `;x`, `.;x` or `..;x`",

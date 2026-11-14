@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -29,17 +29,39 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.2.21",
+ "latest": "1.2.22",
  "latest_stable": {
-  "date": "2026-11-12T18:06:30Z",
-  "version": "1.2.21"
+  "date": "2026-11-14T01:43:42Z",
+  "version": "1.2.22"
  },
- "metadata_fetched": "2026-11-13T06:00:03Z",
+ "metadata_fetched": "2026-11-14T06:00:03Z",
  "package": "langgraph",
  "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/langgraph/",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-14T01:43:42Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langgraph/1.2.22",
+   "json": "https://releases.formachines.ai/pkg/pypi/langgraph/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/859ffa3f2f/",
+   "notes_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
+   "package": "langgraph",
+   "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
+   "prerelease": false,
+   "prev_version": "1.2.21",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.2.22",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-12T18:06:30Z",
@@ -64,6 +86,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langgraph",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Building stateful, multi-actor applications with LLMs"
 }

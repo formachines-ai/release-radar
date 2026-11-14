@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-13T06:00:59Z",
+ "fetched": "2026-11-14T06:01:09Z",
  "releases": [
+  {
+   "body": "## [7.57.0](https://github.com/openai/openai-node/compare/v7.56.0...v7.57.0) (2026-11-13)\n\n\n### Features\n\n* **api:** update Agents, Live, Images, and admin types ([#3147](https://github.com/openai/openai-node/issues/3147)) ([543ed94](https://github.com/openai/openai-node/commit/543ed94e6451d2eaf43f1a4a16a0fc8c8f42eade))",
+   "date": "2026-11-13T21:13:16Z",
+   "name": "v7.57.0",
+   "prerelease": false,
+   "tag": "v7.57.0",
+   "url": "https://github.com/openai/openai-node/releases/tag/v7.57.0"
+  },
   {
    "body": "## [7.56.0](https://github.com/openai/openai-node/compare/v7.55.0...v7.56.0) (2026-11-12)\n\n\n### Features\n\n* **api:** type reasoning input transformations on responses ([#3145](https://github.com/openai/openai-node/issues/3145)) ([94e2c6d](https://github.com/openai/openai-node/commit/94e2c6d5d77f633afbce90ad2ba171e0d23b351c))\n\n\n### Bug Fixes\n\n* **deps-dev:** bump @cloudflare/workers-types from 5.20261025.1 to 5.20261101.1 in /ecosystem-tests/cloudflare-worker ([#3127](https://github.com/openai/openai-node/issues/3127)) ([ece9199](https://github.com/openai/openai-node/commit/ece91995999abe8f5dcbc16012ab183e7e33a70a))\n* **deps-dev:** bump webpack from 5.111.1 to 5.112.2 in /ecosystem-tests/ts-browser-webpack ([#3131](https://github.com/openai/openai-node/issues/3131)) ([08cc5e9](https://github.com/openai/openai-node/commit/08cc5e9a83df66a8ab7c88afce444849870b9c01))\n\n\n### Documentation\n\n* simplify review handoff instructions ([#3142](https://github.com/openai/openai-node/issues/3142)) ([b579bcb](https://github.com/openai/openai-node/commit/b579bcb3e586d22269ffe6fe504653a0e05acbe8))",
    "date": "2026-11-12T19:26:48Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v7.11.0",
    "url": "https://github.com/openai/openai-node/releases/tag/v7.11.0"
-  },
-  {
-   "body": "## [7.10.0](https://github.com/openai/openai-node/compare/v7.9.0...v7.10.0) (2026-09-03)\n\n\n### Features\n\n* **api:** add gpt-6-astra and related features ([#2582](https://github.com/openai/openai-node/issues/2582)) ([94ecdc4](https://github.com/openai/openai-node/commit/94ecdc4e4e8d7fb6c2e36e713b7237438267103b))\n\n\n### Documentation\n\n* add canonical SDK security model ([#2566](https://github.com/openai/openai-node/issues/2566)) ([e6a7468](https://github.com/openai/openai-node/commit/e6a746865acf9f836b9b21dbf10afcf81eb160b3))",
-   "date": "2026-09-03T19:50:45Z",
-   "name": "v7.10.0",
-   "prerelease": false,
-   "tag": "v7.10.0",
-   "url": "https://github.com/openai/openai-node/releases/tag/v7.10.0"
   }
  ],
  "repo": "openai/openai-node"

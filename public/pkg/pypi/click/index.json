@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": "https://click.palletsprojects.com/page/changes/",
  "ecosystem": "pypi",
  "errata": {
@@ -10,20 +10,7 @@
   "updated": "2026-11-07",
   "url": "https://formachines.ai/errata/pypi/click/"
  },
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "8.5.1",
- "latest_stable": {
-  "date": "2026-11-06T17:36:59Z",
-  "version": "8.5.1"
- },
- "metadata_fetched": "2026-11-13T06:00:19Z",
- "package": "click",
- "page": "https://releases.formachines.ai/pkg/pypi/click/",
- "prereleases_in_window": 0,
- "registry": "https://pypi.org/project/click/",
- "releases": [
+ "history": [
   {
    "bump": "patch",
    "date": "2026-11-06T17:36:59Z",
@@ -60,7 +47,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "8.5.1",
+ "latest_stable": {
+  "date": "2026-11-06T17:36:59Z",
+  "version": "8.5.1"
+ },
+ "metadata_fetched": "2026-11-14T06:00:19Z",
+ "package": "click",
+ "page": "https://releases.formachines.ai/pkg/pypi/click/",
+ "prereleases_in_window": 0,
+ "registry": "https://pypi.org/project/click/",
+ "releases": [],
  "repository": "https://github.com/pallets/click",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Composable command line interface toolkit"
 }

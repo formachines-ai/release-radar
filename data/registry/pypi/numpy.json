@@ -1,7 +1,7 @@
 {
  "changelog": "https://numpy.org/doc/stable/release",
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:20Z",
+ "fetched": "2026-11-14T06:00:20Z",
  "homepage": "",
  "latest": "2.5.4",
  "name": "numpy",

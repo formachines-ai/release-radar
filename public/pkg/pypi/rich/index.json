@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-04-12T08:24:00Z",
   "version": "15.0.0"
  },
- "metadata_fetched": "2026-11-13T06:00:21Z",
+ "metadata_fetched": "2026-11-14T06:00:21Z",
  "package": "rich",
  "page": "https://releases.formachines.ai/pkg/pypi/rich/",
  "prereleases_in_window": 0,

@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:05Z",
+ "fetched": "2026-11-14T06:00:05Z",
  "homepage": "https://llamaindex.ai",
- "latest": "0.14.25",
+ "latest": "0.14.26",
  "name": "llama-index",
  "page": "https://pypi.org/project/llama-index/",
  "repo": "run-llama/llama_index",
  "summary": "Interface between LLMs and your data",
  "versions": [
+  {
+   "date": "2026-11-13T22:38:11Z",
+   "version": "0.14.26",
+   "yanked": false
+  },
   {
    "date": "2026-09-21T16:22:20Z",
    "version": "0.14.25",
@@ -202,11 +207,6 @@
   {
    "date": "2025-07-01T02:50:24Z",
    "version": "0.12.45",
-   "yanked": false
-  },
-  {
-   "date": "2025-06-26T05:35:33Z",
-   "version": "0.12.44",
    "yanked": false
   }
  ]

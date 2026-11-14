@@ -1,22 +1,9 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "15.1.0",
- "latest_stable": {
-  "date": "2026-11-07T01:27:22Z",
-  "version": "15.1.0"
- },
- "metadata_fetched": "2026-11-13T06:01:04Z",
- "package": "commander",
- "page": "https://releases.formachines.ai/pkg/npm/commander/",
- "prereleases_in_window": 0,
- "registry": "https://www.npmjs.com/package/commander",
- "releases": [
+ "history": [
   {
    "bump": "unknown",
    "date": "2026-11-07T01:27:22Z",
@@ -45,7 +32,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "15.1.0",
+ "latest_stable": {
+  "date": "2026-11-07T01:27:22Z",
+  "version": "15.1.0"
+ },
+ "metadata_fetched": "2026-11-14T06:01:13Z",
+ "package": "commander",
+ "page": "https://releases.formachines.ai/pkg/npm/commander/",
+ "prereleases_in_window": 0,
+ "registry": "https://www.npmjs.com/package/commander",
+ "releases": [],
  "repository": "https://github.com/tj/commander.js",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "the complete solution for node.js command-line programs"
 }

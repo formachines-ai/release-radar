@@ -1,7 +1,7 @@
 {
  "changelog": "https://docs.pytest.org/en/stable/changelog.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:21Z",
+ "fetched": "2026-11-14T06:00:21Z",
  "homepage": "https://docs.pytest.org/en/latest/",
  "latest": "9.2.0",
  "name": "pytest",

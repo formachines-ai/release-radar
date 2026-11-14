@@ -109,7 +109,7 @@
   "experimental--vt-partytown": "0.0.0-vt-partytown-20231212203707",
   "experimental--xray": "0.0.0-xray-20231129021231",
   "incremental-graph-hashing": "0.0.0-incremental-graph-hashing-20260807161014",
-  "latest": "7.4.11",
+  "latest": "7.4.12",
   "legacy": "4.16.19",
   "next--astro-check-fix": "0.0.0-astro-check-fix-20230830133734",
   "next--check-watch": "0.0.0-check-watch-20230303211357",
@@ -189,14 +189,19 @@
   "rc": "3.0.0-rc.11"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-13T06:01:03Z",
+ "fetched": "2026-11-14T06:01:12Z",
  "homepage": "https://astro.build",
- "latest": "7.4.11",
+ "latest": "7.4.12",
  "name": "astro",
  "page": "https://www.npmjs.com/package/astro",
  "repo": "withastro/astro",
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind.",
  "versions": [
+  {
+   "date": "2026-11-13T19:02:02Z",
+   "deprecated": false,
+   "version": "7.4.12"
+  },
   {
    "date": "2026-11-11T17:35:49Z",
    "deprecated": false,

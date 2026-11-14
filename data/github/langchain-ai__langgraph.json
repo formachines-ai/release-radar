@@ -1,6 +1,38 @@
 {
- "fetched": "2026-11-13T06:00:04Z",
+ "fetched": "2026-11-14T06:00:04Z",
  "releases": [
+  {
+   "body": "Changes since 1.2.21\n\n* release(langgraph): 1.2.22 (#9702)\n* release(checkpoint-postgres): 3.2.1 (#9700)\n* release(prebuilt): 1.1.2 (#9701)\n* release(checkpoint): 4.3.2 (#9699)\n* fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs (#9698)\n* perf(langgraph): skip message conversion in add_messages for plain messages (#9631)\n* perf(langgraph): filter pending writes to the given tasks before reading their statuses (#9634)\n* perf(langgraph): match update keys against a set on wide states (#9632)\n* perf(langgraph): check only failed futures for the runner stop condition (#9630)\n* perf(langgraph): find untracked and delta channels once per run (#9629)",
+   "date": "2026-11-14T01:43:55Z",
+   "name": "langgraph==1.2.22",
+   "prerelease": false,
+   "tag": "1.2.22",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22"
+  },
+  {
+   "body": "Changes since prebuilt==1.1.1\n\n* release(langgraph): 1.2.22 (#9702)\n* release(checkpoint-postgres): 3.2.1 (#9700)\n* release(prebuilt): 1.1.2 (#9701)\n* release(checkpoint): 4.3.2 (#9699)\n* perf(prebuilt): only format the call_model error message when raising (#9628)\n* release(langgraph): 1.2.21 (#9683)\n* chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9530)\n* chore(deps-dev): bump the minor-and-patch group across 1 directory with 6 updates (#9527)\n* release(langgraph): 1.2.20 (#9595)\n* release(langgraph): 1.2.19 (#9504)\n* release(checkpoint-sqlite): 3.1.3 (#9505)\n* release(checkpoint): 4.3.1 (#9447)\n* release(langgraph): 1.2.18 (#9445)\n* release(langgraph): 1.2.17 (#9418)\n* chore(deps): remove precautionary third-party upper bounds (#9390)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/prebuilt (#9367)\n* chore(deps-dev): bump the minor-and-patch group in /libs/prebuilt with 6 updates (#9150)\n* release(langgraph): 1.2.16 (#9334)",
+   "date": "2026-11-14T01:33:52Z",
+   "name": "langgraph-prebuilt==1.1.2",
+   "prerelease": false,
+   "tag": "prebuilt==1.1.2",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/prebuilt%3D%3D1.1.2"
+  },
+  {
+   "body": "Changes since checkpointpostgres==3.2.0\n\n* release(checkpoint-postgres): 3.2.1 (#9700)\n* release(checkpoint): 4.3.2 (#9699)\n* perf(checkpoint-postgres): run a lone store read outside a pipeline (#9635)\n* perf(checkpoint-postgres): skip the async saver's lock for connection pools (#9638)\n* perf(checkpoint-postgres): load no pending writes without a thread hop (#9639)\n* release(checkpoint): 4.3.1 (#9447)\n* chore(deps): bump certifi from 2026.1.4 to 2026.10.19 in /libs/checkpoint-postgres (#9369)",
+   "date": "2026-11-14T01:39:04Z",
+   "name": "langgraph-checkpoint-postgres==3.2.1",
+   "prerelease": false,
+   "tag": "checkpointpostgres==3.2.1",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.2.1"
+  },
+  {
+   "body": "Changes since checkpoint==4.3.1\n\n* release(checkpoint): 4.3.2 (#9699)\n* perf(checkpoint): stop InMemoryStore search at the requested page (#9633)\n* perf(checkpoint): dedupe batched store reads with a dict (#9636)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint with 6 updates (#9529)\n* chore(deps-dev): bump pycryptodome from 3.23.0 to 4.2.0 in /libs/checkpoint in the major group (#9531)",
+   "date": "2026-11-14T01:31:16Z",
+   "name": "langgraph-checkpoint==4.3.2",
+   "prerelease": false,
+   "tag": "checkpoint==4.3.2",
+   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpoint%3D%3D4.3.2"
+  },
   {
    "body": "Changes since 1.2.20\n\n* release(langgraph): 1.2.21 (#9683)\n* chore(deps): bump the minor-and-patch group across 1 directory with 9 updates (#9530)\n* fix(langgraph): match whole namespace segments in get_subgraphs (#9615)\n* fix(langgraph): read an undeclared subgraph namespace with the parent graph (#9614)\n* docs(langgraph): say each interrupt() call has its own id in UnknownInterruptError (#9600)\n* chore(deps): bump filelock and langgraph-api for security fixes (#9606)",
    "date": "2026-11-12T18:06:43Z",
@@ -368,38 +400,6 @@
    "prerelease": false,
    "tag": "checkpointsqlite==3.1.1",
    "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointsqlite%3D%3D3.1.1"
-  },
-  {
-   "body": "Changes since checkpointpostgres==3.1.0\n\n* release(checkpoint-postgres): 3.1.1 (#8480)\n* fix(checkpoint-postgres,checkpoint-sqlite): scope namespace matching to segment boundaries (#8478)\n* feat(checkpoint,checkpoint-postgres): add opt-in omit_expired to skip expired rows on read (#8354)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 5 updates (#8250)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/checkpoint-postgres (#8171)\n* docs: standardize package `README.md` structure (#8064)\n* chore: migrate Python type checking to ty (#8002)\n* chore(deps): bump the minor-and-patch group in /libs/checkpoint-postgres with 7 updates (#7965)\n* release(checkpoint): 4.1.1 (#7890)\n* chore(deps): bump idna from 3.11 to 3.15 in /libs/checkpoint-postgres (#7861)\n* chore(deps): bump langsmith from 0.7.31 to 0.8.0 in /libs/checkpoint-postgres (#7785)",
-   "date": "2026-07-30T19:16:01Z",
-   "name": "langgraph-checkpoint-postgres==3.1.1",
-   "prerelease": false,
-   "tag": "checkpointpostgres==3.1.1",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/checkpointpostgres%3D%3D3.1.1"
-  },
-  {
-   "body": "Changes since 1.2.9\n\n* release(langgraph): 1.2.10 (#8462)\n* chore(deps): bump jupyterlab from 4.5.9 to 4.5.10 in /libs/langgraph (#8440)\n* chore(deps): bump setuptools from 80.9.0 to 83.0.0 in /libs/langgraph (#8435)\n* feat(langgraph): type v3 stream_events return and native projections (#8389)\n* revert(langgraph): delete TracePolicy (#8403)\n* feat(langgraph): drop tags from TracePolicy (#8402)\n* feat(langgraph): expose `trace_policy` on `add_node` (#8362)\n* chore(deps): bump mistune from 3.2.1 to 3.3.0 in /libs/langgraph (#8317)\n* chore(deps): bump soupsieve from 2.8.1 to 2.8.4 in /libs/langgraph (#8318)\n* chore(cli): allow langgraph-api versions up to 1.0.0 (#8319)",
-   "date": "2026-07-28T18:34:14Z",
-   "name": "langgraph==1.2.10",
-   "prerelease": false,
-   "tag": "1.2.10",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.10"
-  },
-  {
-   "body": "Changes since 1.2.8\n\n* release(langgraph): 1.2.9 (#8316)\n* fix: updateState metadata/counters for delta channel (#8315)",
-   "date": "2026-07-10T01:30:24Z",
-   "name": "langgraph==1.2.9",
-   "prerelease": false,
-   "tag": "1.2.9",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.9"
-  },
-  {
-   "body": "Changes since cli==0.4.30\n\n* chore(cli): allow langgraph-api versions up to 1.0.0 (#8319)\n* chore(deps): bump the minor-and-patch group in /libs/cli with 5 updates (#8251)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-examples with 6 updates (#8246)\n* chore(deps): bump the minor-and-patch group in /libs/cli/js-monorepo-example with 7 updates (#8245)\n* chore(deps): bump starlette from 1.0.1 to 1.3.1 in /libs/cli (#8105)\n* chore(deps): bump langsmith from 0.8.0 to 0.8.18 in /libs/cli (#8172)\n* feat(cli): allow prebuild images for langgraph deploy (#8100)\n* chore(deps): bump langchain-anthropic from 1.0.0a5 to 1.4.6 in /libs/cli/examples/graph_prerelease_reqs in the pip group across 1 directory (#8145)\n* chore(deps): bump @babel/core from 7.25.2 to 7.29.7 in /libs/cli/js-examples (#8144)\n* chore(deps): bump js-yaml from 4.1.1 to 4.2.0 in /libs/cli/js-monorepo-example (#8143)\n* chore(deps): bump cryptography from 46.0.7 to 48.0.1 in /libs/cli (#8103)\n* chore(deps): bump pyjwt from 2.12.1 to 2.13.0 in /libs/cli (#8093)",
-   "date": "2026-07-10T22:58:04Z",
-   "name": "langgraph-cli==0.4.31",
-   "prerelease": false,
-   "tag": "cli==0.4.31",
-   "url": "https://github.com/langchain-ai/langgraph/releases/tag/cli%3D%3D0.4.31"
   }
  ],
  "repo": "langchain-ai/langgraph"

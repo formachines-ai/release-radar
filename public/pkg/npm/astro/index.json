@@ -1,5 +1,5 @@
 {
- "built": "2026-11-13T06:00:01Z",
+ "built": "2026-11-14T06:00:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -51,17 +51,39 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "7.4.11",
+ "latest": "7.4.12",
  "latest_stable": {
-  "date": "2026-11-11T17:35:49Z",
-  "version": "7.4.11"
+  "date": "2026-11-13T19:02:02Z",
+  "version": "7.4.12"
  },
- "metadata_fetched": "2026-11-13T06:01:03Z",
+ "metadata_fetched": "2026-11-14T06:01:12Z",
  "package": "astro",
  "page": "https://releases.formachines.ai/pkg/npm/astro/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/astro",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-13T19:02:02Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/astro/7.4.12",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/c4bf8beb61/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.12",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "prev_version": "7.4.11",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.4.12",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-11T17:35:49Z",
@@ -157,6 +179,6 @@
   }
  ],
  "repository": "https://github.com/withastro/astro",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

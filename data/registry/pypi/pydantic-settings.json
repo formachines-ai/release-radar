@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/pydantic/pydantic-settings/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-13T06:00:21Z",
+ "fetched": "2026-11-14T06:00:21Z",
  "homepage": "https://github.com/pydantic/pydantic-settings",
- "latest": "2.16.2",
+ "latest": "2.16.3",
  "name": "pydantic-settings",
  "page": "https://pypi.org/project/pydantic-settings/",
  "repo": "pydantic/pydantic-settings",
  "summary": "Settings management using Pydantic",
  "versions": [
+  {
+   "date": "2026-11-13T11:18:28Z",
+   "version": "2.16.3",
+   "yanked": false
+  },
   {
    "date": "2026-10-28T11:14:26Z",
    "version": "2.16.2",
@@ -202,11 +207,6 @@
   {
    "date": "2023-06-02T13:22:42Z",
    "version": "2.0b1",
-   "yanked": false
-  },
-  {
-   "date": "2023-05-04T13:31:54Z",
-   "version": "2.0a4",
    "yanked": false
   }
  ]
