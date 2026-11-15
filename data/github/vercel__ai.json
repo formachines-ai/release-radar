@@ -1,13 +1,5 @@
 {
  "by_tag": {
-  "@ai-sdk/openai@2.0.141": {
-   "body": "### Patch Changes\n\n- 6b6433f: fix(openai): surface Chat Completions refusals as text content\n\n  The Chat Completions model ignored `message.refusal` (non-streaming) and `delta.refusal` (streaming). When the model refused to answer, `content` was `null`, so the AI SDK returned empty text with a `stop` finish reason and silently dropped the refusal. Refusal text is now emitted as text content in both `generateText` and `streamText` results, and it is emitted in addition to content when the API returns both. A refusal with a `stop` finish reason is now reported as a `content-filter` finish reason, matching the Anthropic provider and the Responses API.\n\n- ce27f15: fix(openai,openai-compatible): surface refusal logprobs and openai-compatible refusals\n\n  `@ai-sdk/openai`: Chat Completions responses that contain a refusal can return `logprobs.refusal` next to `logprobs.content`. The provider previously read only `logprobs.content`, so `providerMetadata.openai.logprobs` was empty or missing for refusals. Refusal logprobs are now included in emission order (content logprobs followed by refusal logprobs) in both `generateText` and `streamText`.\n\n  Streaming logprobs are now collected across all chunks in `streamText`: previously only the logprobs of the last streamed chunk were reported. This applies to content logprobs as well, so `providerMetadata.openai.logprobs` now contains the logprobs of every streamed token instead of only the last chunk's tokens. Explicitly empty logprobs (`logprobs: { content: [], refusal: null }`) are reported as an empty array, as before.\n\n  A refusal that arrives in the same streamed chunk as the `finish_reason` is now taken into account: such a response is reported with a `content-filter` finish reason instead of `stop`.\n\n  `@ai-sdk/openai-compatible`: Chat Completions responses that carry `message.refusal` (non-streaming) or `delta.refusal` (streaming) were ignored, so providers such as OpenAI served through `createOpenAICompatible` lost the refusal text and reported an empty `stop` response. Refusals are now returned as text content after any content text, and a non-empty refusal with a `stop` finish reason is reported as a `content-filter` finish reason. This also applies when the refusal and the finish reason arrive in the same streamed chunk. Non-string refusals (for example `refusal: false` from servers that use booleans) are ignored instead of failing the response.\n\n- 0e51536: fix(openai): handle refusal content parts in the Responses API\n\n  The Responses API returns a `refusal` content part instead of `output_text` when the model declines a request. The response schema rejected these parts, so non-streaming calls failed with an `APICallError` (\"Invalid JSON response\"), and streamed `response.refusal.delta` / `response.refusal.done` events were dropped, producing empty text. Refusal content parts and stream events are now parsed: the refusal explanation is surfaced as text and the finish reason is mapped to `content-filter`. When the response also contains a client-side function call, the finish reason stays `tool-calls` so the tools are still executed.\n\n- Updated dependencies [49c554d]\n- Updated dependencies [b753c03]\n  - @ai-sdk/provider-utils@3.0.45",
-   "date": "2026-11-07T19:24:15Z",
-   "name": "@ai-sdk/openai@2.0.141",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@2.0.141",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.141"
-  },
   "@ai-sdk/openai@2.0.142": {
    "body": "### Patch Changes\n\n- Updated dependencies [c31e0a2]\n  - @ai-sdk/provider-utils@3.0.46",
    "date": "2026-11-10T17:41:27Z",
@@ -23,14 +15,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/openai@2.0.143",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%402.0.143"
-  },
-  "@ai-sdk/openai@3.0.139": {
-   "body": "### Patch Changes\n\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65",
-   "date": "2026-11-07T19:27:41Z",
-   "name": "@ai-sdk/openai@3.0.139",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@3.0.139",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.139"
   },
   "@ai-sdk/openai@3.0.140": {
    "body": "### Patch Changes\n\n- e38b209: Avoid repeating the complete parallel-tool wrapper input in every expanded tool call's metadata while preserving wrapper reconstruction for follow-up Responses API requests.\n- Updated dependencies [88bb257]\n  - @ai-sdk/provider-utils@4.0.66",
@@ -63,14 +47,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/openai@3.0.143",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.143"
-  },
-  "@ai-sdk/openai@4.0.111": {
-   "body": "### Patch Changes\n\n- 6400cf8: Add `resolveProviderOptions` to parse provider options that a model accepts under several `providerOptions` keys, either as aliases (`first`) or merged in order (`merge`), and use it for the existing multi-key lookups in the OpenAI, OpenAI-compatible, Anthropic, Google, and Amazon Bedrock models. Resolution behavior for these models is unchanged.\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37",
-   "date": "2026-11-07T19:30:27Z",
-   "name": "@ai-sdk/openai@4.0.111",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.111",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.111"
   },
   "@ai-sdk/openai@4.0.113": {
    "body": "### Patch Changes\n\n- 22b8158: Avoid repeating the complete parallel-tool wrapper input in every expanded tool call's metadata while preserving wrapper reconstruction for follow-up Responses API requests.\n- Updated dependencies [88b9575]\n  - @ai-sdk/provider-utils@5.0.78",
@@ -120,14 +96,6 @@
    "tag": "@ai-sdk/openai@4.0.118",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.118"
   },
-  "ai@5.0.286": {
-   "body": "### Patch Changes\n\n- f15d448: hide provider metadata from telemetry when recordOutputs is false\n- 417a92c: Preserve `toolChoice: 'none'` when SDK tools are omitted or empty so providers can disable native tools configured through provider options.\n\n  For Perplexity native tools, also update `@ai-sdk/perplexity` to `2.1.6` or a later compatible version, which includes the provider-side guard.\n\n- Updated dependencies [c6c7ae0]\n- Updated dependencies [49c554d]\n- Updated dependencies [ebc2cd9]\n- Updated dependencies [b753c03]\n- Updated dependencies [a7ebf30]\n  - @ai-sdk/gateway@2.0.177\n  - @ai-sdk/provider-utils@3.0.45",
-   "date": "2026-11-07T19:22:42Z",
-   "name": "ai@5.0.286",
-   "prerelease": false,
-   "tag": "ai@5.0.286",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.286"
-  },
   "ai@5.0.287": {
    "body": "### Patch Changes\n\n- Updated dependencies [e0eb120]\n- Updated dependencies [5111655]\n  - @ai-sdk/gateway@2.0.178",
    "date": "2026-11-09T19:46:56Z",
@@ -151,14 +119,6 @@
    "prerelease": false,
    "tag": "ai@5.0.289",
    "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.289"
-  },
-  "ai@6.0.325": {
-   "body": "### Patch Changes\n\n- 4ac871e: hide provider metadata from telemetry when recordOutputs is false\n- Updated dependencies [f0dee4b]\n  - @ai-sdk/provider-utils@4.0.65\n  - @ai-sdk/gateway@3.0.231",
-   "date": "2026-11-07T19:25:47Z",
-   "name": "ai@6.0.325",
-   "prerelease": false,
-   "tag": "ai@6.0.325",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.325"
   },
   "ai@6.0.326": {
    "body": "### Patch Changes\n\n- Updated dependencies [706b42a]\n  - @ai-sdk/gateway@3.0.232",
@@ -199,14 +159,6 @@
    "prerelease": false,
    "tag": "ai@6.0.331",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.331"
-  },
-  "ai@7.0.165": {
-   "body": "### Patch Changes\n\n- 883fcde: remove transcription word timings from telemetry when recordOutputs is false\n- 6d21e8e: Sanitize provider request URLs before text generation results reach telemetry integrations and tracing subscribers, preventing endpoint credentials from being exposed.\n- Updated dependencies [6400cf8]\n- Updated dependencies [f608c05]\n- Updated dependencies [cab9c1f]\n- Updated dependencies [c70adf6]\n  - @ai-sdk/provider-utils@5.0.76\n  - @ai-sdk/provider@4.0.37\n  - @ai-sdk/gateway@4.0.138",
-   "date": "2026-11-07T19:27:48Z",
-   "name": "ai@7.0.165",
-   "prerelease": false,
-   "tag": "ai@7.0.165",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165"
   },
   "ai@7.0.166": {
    "body": "### Patch Changes\n\n- Updated dependencies [44db225]\n  - @ai-sdk/gateway@4.0.139",
@@ -249,7 +201,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.171"
   }
  },
- "fetched": "2026-11-14T06:00:24Z",
+ "fetched": "2026-11-15T06:00:25Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 3c09e00: Prevent in-place schema validation or input refinement from changing approved tool arguments during approval replay.\n- f43ee39: fix(workflow): log the default step limit warning when `WorkflowAgent.generate()` stops at the default limit.\n- 7ce7ffc: fix(workflow): log provider warnings in `WorkflowAgent`\n\n  `WorkflowAgent.generate()` and `WorkflowAgent.stream()` now log the warnings of every model call through the AI SDK warning logger, like `ToolLoopAgent`. The `AI_SDK_LOG_WARNINGS` global controls the output.\n\n- f6809e3: fix(workflow): align the `prepareStep` results of `WorkflowAgent` with `ToolLoopAgent`. Returned `instructions` (or the deprecated `system`) replace the instructions of the step and carry forward to later steps, returned `providerOptions` are merged with the agent options, and returned `headers` are merged over the headers of the call.\n- 2559173: feat(workflow): support `toolApproval` in `WorkflowAgent`\n\n  `WorkflowAgent` accepts a `toolApproval` configuration in the constructor and per `generate()` or `stream()` call. The configuration takes precedence over a tool's `needsApproval` setting, and its functions run in workflow context, outside of the durable model steps. Calls that the configuration approves run in the same step, and calls that it denies receive an `execution-denied` tool result without pausing the workflow.\n\n- f1de9cb: feat(workflow): support the `timeout` object in `WorkflowAgent`\n\n  `generate()` and `stream()` accept `timeout: { totalMs, stepMs, firstChunkMs, chunkMs }` in addition to a number. `stepMs` limits each model call. In `stream()`, `firstChunkMs` and `chunkMs` limit the wait for model output. Invalid timeout values are rejected with an `InvalidArgumentError`. A timeout now also ends a model step when the provider stream ignores the abort signal.\n\n- Updated dependencies [9baa2d0]\n  - @ai-sdk/gateway@4.0.146",

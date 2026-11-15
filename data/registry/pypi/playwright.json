@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-14T06:00:20Z",
+ "fetched": "2026-11-15T06:00:20Z",
  "homepage": "",
  "latest": "1.65.2",
  "name": "playwright",

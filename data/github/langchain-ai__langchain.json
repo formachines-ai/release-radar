@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T06:00:03Z",
+ "fetched": "2026-11-15T06:00:04Z",
  "releases": [
   {
    "body": "**`langchain-openai` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain-openai` 1.7.x.\n\nChanges since langchain-openai==1.7.4\n\nrelease(openai): 1.8.0 (#41841)\nfeat(openai): add OpenAIClassifier for the GA Decisions API (#41787)\nchore(model-profiles): refresh model profile data (#41828)\nfeat(partners): Remove EOL'd Python 3.10 from partner packages (#41268)",

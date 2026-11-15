@@ -10,7 +10,7 @@
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-14T06:00:24Z",
+ "fetched": "2026-11-15T06:00:24Z",
  "homepage": "https://ai-sdk.dev/docs",
  "latest": "4.0.118",
  "name": "@ai-sdk/openai",

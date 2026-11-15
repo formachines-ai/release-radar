@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T06:01:09Z",
+ "fetched": "2026-11-15T06:01:02Z",
  "releases": [
   {
    "body": "## [7.57.0](https://github.com/openai/openai-node/compare/v7.56.0...v7.57.0) (2026-11-13)\n\n\n### Features\n\n* **api:** update Agents, Live, Images, and admin types ([#3147](https://github.com/openai/openai-node/issues/3147)) ([543ed94](https://github.com/openai/openai-node/commit/543ed94e6451d2eaf43f1a4a16a0fc8c8f42eade))",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-15T00:16:17Z",
+ "built": "2026-11-15T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -56,7 +56,7 @@
   "date": "2026-11-13T21:27:35Z",
   "version": "7.57.0"
  },
- "metadata_fetched": "2026-11-14T06:01:08Z",
+ "metadata_fetched": "2026-11-15T06:01:01Z",
  "package": "openai",
  "page": "https://releases.formachines.ai/pkg/npm/openai/",
  "prereleases_in_window": 0,
