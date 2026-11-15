@@ -62,7 +62,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/index.json   package data
                                 (T-0118: `history` key = records older than 7 days up to 90, merged from the previous committed index.json, no re-fetch; `history_since` = first date held)
                                 (T-0119: every release record, in `releases` and `history`, has `no_notes` and `no_notes_checked` (build date UTC, null if not checked-empty); history cards restore the "No release notes found … (checked <date>)" label from them)
-  pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (that package's releases in the window; valid empty channel if none)
+  pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (T-0123: that package's releases incl. history, newest first, max 50; flag label + ≤3 verbatim quotes or the no-flag/no-notes line; valid empty channel if none)
   (package page <title>, T-0096: first of `<name> <ver> release notes & breaking changes (<eco>) — Release Radar` → without ` — Release Radar` → without `(<eco>)` → `<name> <ver> breaking changes` that is ≤70 chars)
   (package page <title>/meta description, T-0089: built only from the package's data — latest version, its date, flagged count, start of the first verbatim quote ≤160 chars; plus 4 same-ecosystem alphabetical-neighbour links and a link to /)
   today.json                every release in the window with quotes and links
