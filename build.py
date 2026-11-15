@@ -1212,7 +1212,7 @@ def render_package(p: dict, model: dict) -> str:
         meta.append(("Changelog", f'<a href="{esc(p["changelog"])}" rel="nofollow">{esc(p["changelog"])}</a>'))
     meta.append(("Metadata fetched", esc(fmt_date(p.get("fetched")))))
     meta.append(("Data", f'<a href="{esc(p["path"])}index.json">index.json</a>'))
-    meta.append(("Follow this package", f'<a href="{esc(p["path"])}feed.xml">RSS</a>'))
+    meta.append(("Follow this package", f'<a href="{esc(p["path"])}feed.xml">RSS for this package</a>'))
     body = [f'<h1>{esc(p["name"])} <span class="badge eco">{esc(p["ecosystem"])}</span></h1>']
     if p.get("summary"):
         body.append(f'<p class="lead">{esc(p["summary"])}</p>')
@@ -1396,9 +1396,46 @@ def public_release(r: dict) -> dict:
     }
 
 
+def pkg_feed_description(r: dict, built: datetime) -> str:
+    """Per-package feed item text: the card's flag label + the same verbatim quotes, or its no-flag / no-notes line."""
+    parts = []
+    if r["flagged"]:
+        parts.append("breaking / deprecated wording")
+        if r["bump"] in ("minor", "patch"):
+            parts.append(f'Breaking keyword in a {r["bump"]} release')
+        parts.extend("Quote: " + q["quote"] for q in r["quotes"][:3])
+    elif r.get("no_notes"):
+        parts.append(f'No release notes found on GitHub Releases or in CHANGELOG.md for {r["version"]} '
+                     f'(checked {r.get("no_notes_checked") or built.strftime("%Y-%m-%d")} UTC)')
+    elif r["notes_kind"] != "github_release":
+        parts.append("Release notes not fetched.")
+    else:
+        parts.append(f'No breaking keyword found in the release notes (checked {built.strftime("%Y-%m-%d")} UTC); notes can omit changes.')
+    parts.append(f"Release notes: {r['notes_url']}")
+    return "\n".join(parts)
+
+
 def render_feed(model: dict, releases: list | None = None, pkg: dict | None = None) -> str:
     items = []
-    for r in (model["releases"] if releases is None else releases):
+    built = parse_dt(model["built"]) or utcnow()
+    src = model["releases"] if releases is None else releases
+    if pkg:
+        src = sorted(list(pkg["releases"]) + list(pkg.get("history") or []),
+                     key=lambda r: parse_dt(r["date"]) or utcnow(), reverse=True)[:50]
+    for r in src:
+        if pkg:
+            link = SITE_BASE + (f"/go/{r['notes_go']}/" if r.get("notes_go") else r["pkg_path"])
+            dt = parse_dt(r["date"]) or utcnow()
+            items.append(
+                "<item>"
+                f"<title>{esc(r['name'] + ' ' + r['version'])}</title>"
+                f"<link>{esc(link)}</link>"
+                f"<guid isPermaLink=\"false\">{esc(r['id'])}</guid>"
+                f"<pubDate>{dt.strftime('%a, %d %b %Y %H:%M:%S +0000')}</pubDate>"
+                f"<category>{esc(r['ecosystem'])}</category>"
+                f"<description>{esc(pkg_feed_description(r, built))}</description>"
+                "</item>")
+            continue
         title = f"{r['name']} {r['version']} ({r['ecosystem']})" + (" — breaking/deprecated wording" if r["flagged"] else "")
         desc_parts = []
         for q in r["quotes"]:
@@ -1417,12 +1454,11 @@ def render_feed(model: dict, releases: list | None = None, pkg: dict | None = No
             f"<description>{esc(chr(10).join(desc_parts))}</description>"
             "</item>"
         )
-    built = parse_dt(model["built"]) or utcnow()
     if pkg:
         ctitle = f"{SITE_NAME} — {pkg['name']} ({pkg['ecosystem']})"
         clink = SITE_BASE + pkg["path"]
         self_url = clink + "feed.xml"
-        cdesc = f"Releases of {pkg['name']} ({pkg['ecosystem']}) in the last {WINDOW_DAYS} days; flagged ones carry a verbatim quote. "
+        cdesc = f"Releases of {pkg['name']} ({pkg['ecosystem']}) (newest first, up to 50, incl. earlier history); flagged ones carry a verbatim quote. "
     else:
         ctitle, clink, self_url = SITE_NAME, SITE_BASE + "/", SITE_BASE + "/feed.xml"
         cdesc = f"PyPI and npm releases of the last {WINDOW_DAYS} days with verbatim breaking-change quotes. "
@@ -1477,7 +1513,7 @@ def render_llms(model: dict) -> str:
              f"- [feed-breaking.xml]({SITE_BASE}/feed-breaking.xml): RSS 2.0 with only the flagged releases (regex match + verbatim quotes + notes link); valid empty channel if none",
              f"- [build.json]({SITE_BASE}/build.json): build time, package and release counts, errors",
              f"- Per package: {SITE_BASE}/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)",
-             f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)",
+             f"- Per package RSS: {SITE_BASE}/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases, newest first, max 50, incl. earlier history, each with flag label + the same ≤3 verbatim quotes or the no-flag/no-notes line)",
              "", "## Pages", "",
              f"- [Front page]({SITE_BASE}/): last 24 h, flagged releases, PyPI and npm lists, all packages",
              f"- [MCP server]({SITE_BASE}/mcp/): stdio MCP wrapper (Python stdlib, source {SITE_BASE}/mcp/release_radar_mcp.py) with tools releases_today, get_package_releases and list_flagged over today.json and /pkg/*/index.json",

@@ -1,9 +1,31 @@
 {
- "built": "2026-11-14T06:00:01Z",
+ "built": "2026-11-15T00:16:17Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-07T23:50:55Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/next/16.5.0-canary.44",
+   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fbe0e62934/",
+   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.44",
+   "package": "next",
+   "page": "https://releases.formachines.ai/pkg/npm/next/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "16.5.0-canary.44",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-06T23:51:19Z",
@@ -59,7 +81,7 @@
  "metadata_fetched": "2026-11-14T06:01:22Z",
  "package": "next",
  "page": "https://releases.formachines.ai/pkg/npm/next/",
- "prereleases_in_window": 6,
+ "prereleases_in_window": 5,
  "registry": "https://www.npmjs.com/package/next",
  "releases": [
   {
@@ -192,28 +214,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "16.5.0-canary.45",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-07T23:50:55Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/next/16.5.0-canary.44",
-   "json": "https://releases.formachines.ai/pkg/npm/next/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fbe0e62934/",
-   "notes_url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.44",
-   "package": "next",
-   "page": "https://releases.formachines.ai/pkg/npm/next/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "16.5.0-canary.44",
    "yanked_or_deprecated": false
   }
  ],

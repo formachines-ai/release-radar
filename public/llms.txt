@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-14T06:00:01Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-15T00:16:17Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -13,7 +13,7 @@ Updated: 2026-11-14T06:00:01Z UTC (daily build 06:00 UTC)
 - [feed-breaking.xml](https://releases.formachines.ai/feed-breaking.xml): RSS 2.0 with only the flagged releases (regex match + verbatim quotes + notes link); valid empty channel if none
 - [build.json](https://releases.formachines.ai/build.json): build time, package and release counts, errors
 - Per package: https://releases.formachines.ai/pkg/<ecosystem>/<name>/index.json (ecosystem = pypi | npm; scoped npm names keep the @scope/)
-- Per package RSS: https://releases.formachines.ai/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases in the window; empty channel if none)
+- Per package RSS: https://releases.formachines.ai/pkg/<ecosystem>/<name>/feed.xml (RSS 2.0, that package's releases, newest first, max 50, incl. earlier history, each with flag label + the same ≤3 verbatim quotes or the no-flag/no-notes line)
 
 ## Pages
 
