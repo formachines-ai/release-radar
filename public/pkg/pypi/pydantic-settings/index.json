@@ -1,5 +1,5 @@
 {
- "built": "2026-11-15T06:00:02Z",
+ "built": "2026-11-16T06:00:02Z",
  "changelog": "https://github.com/pydantic/pydantic-settings/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-13T11:18:28Z",
   "version": "2.16.3"
  },
- "metadata_fetched": "2026-11-15T06:00:21Z",
+ "metadata_fetched": "2026-11-16T06:00:24Z",
  "package": "pydantic-settings",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic-settings/",
  "prereleases_in_window": 0,

@@ -42,7 +42,7 @@
   "tui-v2": "0.0.0-tui-v2-202606261840"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:01Z",
+ "fetched": "2026-11-16T06:01:01Z",
  "homepage": "",
  "latest": "1.19.5",
  "name": "opencode-ai",
@@ -1919,51 +1919,6 @@
    "date": "2026-08-18T14:39:13Z",
    "deprecated": false,
    "version": "0.0.0-dev-202608181420"
-  },
-  {
-   "date": "2026-08-18T05:06:10Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608180449"
-  },
-  {
-   "date": "2026-08-18T03:56:19Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608180339"
-  },
-  {
-   "date": "2026-08-18T03:27:21Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608180309"
-  },
-  {
-   "date": "2026-08-17T20:01:40Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171943"
-  },
-  {
-   "date": "2026-08-17T19:43:19Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171920"
-  },
-  {
-   "date": "2026-08-17T19:20:18Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171902"
-  },
-  {
-   "date": "2026-08-17T18:59:33Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171837"
-  },
-  {
-   "date": "2026-08-17T17:35:23Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171704"
-  },
-  {
-   "date": "2026-08-17T11:54:07Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608171132"
   }
  ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-15T06:01:17Z",
+ "fetched": "2026-11-16T06:01:16Z",
  "releases": [
   {
    "body": "### Bug Fixes\r\n\r\n- #43936 [Regression]: decorated class with a static field fails to load in 1.65 (\"_initClass is not a function\") with useDefineForClassFields: false\r\n- #43934 [Bug]: Test locations are one column off under Bun 1.4.4+\r\n\r\n### Browser Versions\r\n\r\n- Chromium 159.0.8154.6\r\n- Mozilla Firefox 159.0\r\n- WebKit 27.2\r\n",

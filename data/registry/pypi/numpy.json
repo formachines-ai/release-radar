@@ -1,14 +1,19 @@
 {
  "changelog": "https://numpy.org/doc/stable/release",
  "ecosystem": "pypi",
- "fetched": "2026-11-15T06:00:20Z",
+ "fetched": "2026-11-16T06:00:22Z",
  "homepage": "",
- "latest": "2.5.4",
+ "latest": "2.5.5",
  "name": "numpy",
  "page": "https://pypi.org/project/numpy/",
  "repo": "numpy/numpy",
  "summary": "Fundamental package for array computing in Python",
  "versions": [
+  {
+   "date": "2026-11-15T21:30:10Z",
+   "version": "2.5.5",
+   "yanked": false
+  },
   {
    "date": "2026-10-10T20:02:40Z",
    "version": "2.5.4",
@@ -202,11 +207,6 @@
   {
    "date": "2023-09-16T19:58:18Z",
    "version": "1.26.0",
-   "yanked": false
-  },
-  {
-   "date": "2023-07-31T14:50:49Z",
-   "version": "1.25.2",
    "yanked": false
   }
  ]

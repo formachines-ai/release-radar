@@ -12,7 +12,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:18Z",
+ "fetched": "2026-11-16T06:01:18Z",
  "homepage": "https://github.com/prisma/prisma-cli#readme",
  "latest": "8.0.0-rc.33",
  "name": "prisma",
@@ -809,36 +809,6 @@
    "date": "2026-08-18T08:23:41Z",
    "deprecated": false,
    "version": "8.0.0-rc.4-dev.57"
-  },
-  {
-   "date": "2026-08-18T05:56:22Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.4"
-  },
-  {
-   "date": "2026-08-17T17:36:38Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.3-dev.54"
-  },
-  {
-   "date": "2026-08-17T13:02:33Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.3-dev.53"
-  },
-  {
-   "date": "2026-08-17T11:58:14Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.3"
-  },
-  {
-   "date": "2026-08-17T10:41:58Z",
-   "deprecated": false,
-   "version": "7.10.0-dev.58"
-  },
-  {
-   "date": "2026-08-17T09:57:12Z",
-   "deprecated": false,
-   "version": "7.10.0-integration-fix-prisma-publish-token.1"
   }
  ]
 }

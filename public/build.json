@@ -1,18 +1,18 @@
 {
- "built": "2026-11-15T06:00:02Z",
- "commit": "a6f68c9",
+ "built": "2026-11-16T06:00:02Z",
+ "commit": "344e568",
  "errors": [],
  "flagged": 24,
  "generator": "build.py",
- "github_remaining": 4846,
- "http_requests": 255,
+ "github_remaining": 4850,
+ "http_requests": 252,
  "notes_coverage": {
   "counts": {
-   "checked_no_notes": 201,
+   "checked_no_notes": 215,
    "no_repo_url": 1,
    "not_fetched": 0
   },
-  "github_release": 137,
+  "github_release": 138,
   "missing": [
    {
     "eco": "npm",
@@ -21,7 +21,7 @@
     "version": "2.1.324"
    },
    {
-    "count": 143,
+    "count": 157,
     "eco": "npm",
     "name": "@openai/codex",
     "reason": "no_matching_tag",
@@ -168,7 +168,21 @@
      "0.171.0-alpha.5-linux-arm64",
      "0.171.0-alpha.5-linux-x64",
      "0.171.0-alpha.5-win32-arm64",
-     "0.171.0-alpha.5-win32-x64"
+     "0.171.0-alpha.5-win32-x64",
+     "0.171.0-alpha.6",
+     "0.171.0-alpha.6-darwin-arm64",
+     "0.171.0-alpha.6-darwin-x64",
+     "0.171.0-alpha.6-linux-arm64",
+     "0.171.0-alpha.6-linux-x64",
+     "0.171.0-alpha.6-win32-arm64",
+     "0.171.0-alpha.6-win32-x64",
+     "0.171.0-alpha.7",
+     "0.171.0-alpha.7-darwin-arm64",
+     "0.171.0-alpha.7-darwin-x64",
+     "0.171.0-alpha.7-linux-arm64",
+     "0.171.0-alpha.7-linux-x64",
+     "0.171.0-alpha.7-win32-arm64",
+     "0.171.0-alpha.7-win32-x64"
     ]
    },
    {
@@ -182,12 +196,6 @@
     "name": "@prisma/client",
     "reason": "no_matching_tag",
     "version": "8.1.0-dev.12"
-   },
-   {
-    "eco": "npm",
-    "name": "dotenv",
-    "reason": "no_matching_tag",
-    "version": "18.0.10"
    },
    {
     "eco": "npm",
@@ -225,13 +233,13 @@
      "1.65.0-beta-1794589053000",
      "1.65.0-beta-1794598453000",
      "1.66.0-alpha-1794252756000",
-     "1.66.0-alpha-2026-11-09",
      "1.66.0-alpha-2026-11-10",
      "1.66.0-alpha-2026-11-11",
      "1.66.0-alpha-2026-11-12",
      "1.66.0-alpha-2026-11-13",
      "1.66.0-alpha-2026-11-14",
-     "1.66.0-alpha-2026-11-15"
+     "1.66.0-alpha-2026-11-15",
+     "1.66.0-alpha-2026-11-16"
     ]
    },
    {
@@ -311,13 +319,13 @@
     "name": "typescript",
     "reason": "no_matching_tag",
     "versions": [
-     "7.1.0-dev.20261108.1",
      "7.1.0-dev.20261109.1",
      "7.1.0-dev.20261110.1",
      "7.1.0-dev.20261111.1",
      "7.1.0-dev.20261112.1",
      "7.1.0-dev.20261113.1",
-     "7.1.0-dev.20261114.1"
+     "7.1.0-dev.20261114.1",
+     "7.1.0-dev.20261115.1"
     ]
    },
    {
@@ -351,9 +359,9 @@
     "version": "1.44.3"
    }
   ],
-  "releases": 340
+  "releases": 354
  },
  "packages": 98,
  "redirects": 158,
- "releases": 340
+ "releases": 354
 }

@@ -30,7 +30,7 @@
   "vertexai-preview": "10.13.2-vertexai-preview.6b035b7d3"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:13Z",
+ "fetched": "2026-11-16T06:01:11Z",
  "homepage": "https://firebase.google.com/",
  "latest": "13.3.0",
  "name": "firebase",

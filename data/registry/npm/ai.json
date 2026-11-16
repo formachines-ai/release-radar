@@ -10,7 +10,7 @@
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:00:55Z",
+ "fetched": "2026-11-16T06:00:55Z",
  "homepage": "https://ai-sdk.dev/docs",
  "latest": "7.0.173",
  "name": "ai",
@@ -1122,16 +1122,6 @@
    "date": "2026-08-18T16:56:41Z",
    "deprecated": false,
    "version": "7.0.67"
-  },
-  {
-   "date": "2026-08-18T03:59:58Z",
-   "deprecated": false,
-   "version": "5.0.238"
-  },
-  {
-   "date": "2026-08-18T03:59:18Z",
-   "deprecated": false,
-   "version": "6.0.257"
   }
  ]
 }

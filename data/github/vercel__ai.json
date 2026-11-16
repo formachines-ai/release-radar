@@ -120,14 +120,6 @@
    "tag": "ai@5.0.289",
    "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.289"
   },
-  "ai@6.0.326": {
-   "body": "### Patch Changes\n\n- Updated dependencies [706b42a]\n  - @ai-sdk/gateway@3.0.232",
-   "date": "2026-11-09T02:57:25Z",
-   "name": "ai@6.0.326",
-   "prerelease": false,
-   "tag": "ai@6.0.326",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.326"
-  },
   "ai@6.0.328": {
    "body": "### Patch Changes\n\n- 6b9a53a: Redact OpenAI MCP authorization and header values, and Code Interpreter and shell domain-secret values, from tool definitions recorded in generateText and streamText telemetry. Preserve the original application and provider arguments.\n- Updated dependencies [88bb257]\n- Updated dependencies [d1c2947]\n  - @ai-sdk/provider-utils@4.0.66\n  - @ai-sdk/gateway@3.0.234",
    "date": "2026-11-10T17:45:39Z",
@@ -159,14 +151,6 @@
    "prerelease": false,
    "tag": "ai@6.0.331",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.331"
-  },
-  "ai@7.0.166": {
-   "body": "### Patch Changes\n\n- Updated dependencies [44db225]\n  - @ai-sdk/gateway@4.0.139",
-   "date": "2026-11-09T02:54:58Z",
-   "name": "ai@7.0.166",
-   "prerelease": false,
-   "tag": "ai@7.0.166",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.166"
   },
   "ai@7.0.168": {
    "body": "### Patch Changes\n\n- 65aa669: add experimental_queue to useChat to queue messages sent while a response is in progress\n- 8585d7e: fix(ai): call `toUIMessageStream` `onError` once per invalid tool call\n- Updated dependencies [5497ff7]\n- Updated dependencies [88b9575]\n  - @ai-sdk/gateway@4.0.141\n  - @ai-sdk/provider-utils@5.0.78",
@@ -201,7 +185,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.171"
   }
  },
- "fetched": "2026-11-15T06:00:25Z",
+ "fetched": "2026-11-16T06:00:27Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 3c09e00: Prevent in-place schema validation or input refinement from changing approved tool arguments during approval replay.\n- f43ee39: fix(workflow): log the default step limit warning when `WorkflowAgent.generate()` stops at the default limit.\n- 7ce7ffc: fix(workflow): log provider warnings in `WorkflowAgent`\n\n  `WorkflowAgent.generate()` and `WorkflowAgent.stream()` now log the warnings of every model call through the AI SDK warning logger, like `ToolLoopAgent`. The `AI_SDK_LOG_WARNINGS` global controls the output.\n\n- f6809e3: fix(workflow): align the `prepareStep` results of `WorkflowAgent` with `ToolLoopAgent`. Returned `instructions` (or the deprecated `system`) replace the instructions of the step and carry forward to later steps, returned `providerOptions` are merged with the agent options, and returned `headers` are merged over the headers of the call.\n- 2559173: feat(workflow): support `toolApproval` in `WorkflowAgent`\n\n  `WorkflowAgent` accepts a `toolApproval` configuration in the constructor and per `generate()` or `stream()` call. The configuration takes precedence over a tool's `needsApproval` setting, and its functions run in workflow context, outside of the durable model steps. Calls that the configuration approves run in the same step, and calls that it denies receive an `execution-denied` tool result without pausing the workflow.\n\n- f1de9cb: feat(workflow): support the `timeout` object in `WorkflowAgent`\n\n  `generate()` and `stream()` accept `timeout: { totalMs, stepMs, firstChunkMs, chunkMs }` in addition to a number. `stepMs` limits each model call. In `stream()`, `firstChunkMs` and `chunkMs` limit the wait for model output. Invalid timeout values are rejected with an `InvalidArgumentError`. A timeout now also ends a model step when the provider stream ignores the abort signal.\n\n- Updated dependencies [9baa2d0]\n  - @ai-sdk/gateway@4.0.146",

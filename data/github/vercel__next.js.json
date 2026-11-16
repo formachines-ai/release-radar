@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-15T06:01:16Z",
+ "fetched": "2026-11-16T06:01:15Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Remove stale .next/dev/types in next typegen and next build: #100612\n- Simplify the code gen that adds deployment ids conditionally: #101785\n\n### Misc Changes\n\n- turbo-tasks-backend: store collectibles dependents in an EdgeSet: #101766\n- turbo-persistence: cover block lengths in CRCs: #100322\n- turbo-persistence: keep used keys across intermediate merges: #101796\n\n### Credits \n\nHuge thanks to @lukesandberg and @sokra for helping!",
+   "date": "2026-11-15T23:49:25Z",
+   "name": "v16.5.0-canary.52",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.52",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.52"
+  },
   {
    "body": "### Misc Changes\n\n- turbo-tasks-backend: release the owner task before the reader side of keyed refinement: #101732\n\n### Credits \n\nHuge thanks to @sokra for helping!",
    "date": "2026-11-14T23:43:37Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.10",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.10"
-  },
-  {
-   "body": "### Core Changes\n\n- Gate upgrade reminder rules with agentUpgrade: #99990\n- Enable network access for Codex upgrades: #100074\n- Make it possible to disable `turbopackGc`: #100067\n- fix: use EntryKeySide in EntryKey side field: #100053\n- fix: use removePathPrefix instead of regex: #100063\n- Fix root params detection on Windows: #100065\n- Durable use cache: exclude context for path and code hashes: #99898\n- Ensure `workStore.page` is unnormalized for generateStaticParams: #99881\n- fix(codemod): find bundled docs via workspace packages in agents-md: #100017\n- fix(codemod): make agents-md docs root relative to the output file: #100016\n- docs: link ensureStatic TypeScript hints to its API reference: #100033\n- fix: scope managed agent-feedback wording so it limits feedback, not verification: #100020\n- Keep dev code frames sized to the terminal after a resize: #99916\n\n### Example Changes\n\n- Add cache-handler-redis-turbo example (Next.js 16 Cache Components + Redis): #96622\n\n### Misc Changes\n\n- Narrow upgrade eval triggers: #100075\n- docs: update links for transferred demo repositories: #100041\n- Expand durable use cache cross-deployment test coverage: #99900\n- [cd] Support non-LTS releases: #99948\n- docs: clarify Cache Components runtime config: #99820\n- fix(next/image): annotate Image export so deprecated props show as deprecated: #98597\n- turbo-tasks: lock-free priority queue for lowest-priority tasks, skip heap lock when empty: #99773\n\n### Credits \n\nHuge thanks to @devjiwonchoi, @aurorascharff, @lukesandberg, @mischnic, @sokra, @eps1lon, @JannikZed, @awss1i, and @franpeza for helping!",
-   "date": "2026-10-12T23:53:03Z",
-   "name": "v16.5.0-canary.9",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.9",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.9"
   }
  ],
  "repo": "vercel/next.js"

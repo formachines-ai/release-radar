@@ -189,7 +189,7 @@
   "rc": "3.0.0-rc.11"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:04Z",
+ "fetched": "2026-11-16T06:01:04Z",
  "homepage": "https://astro.build",
  "latest": "7.4.12",
  "name": "astro",

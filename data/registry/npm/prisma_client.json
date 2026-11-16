@@ -11,7 +11,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:03Z",
+ "fetched": "2026-11-16T06:01:03Z",
  "homepage": "https://www.prisma.io",
  "latest": "7.10.1",
  "name": "@prisma/client",
@@ -88,21 +88,6 @@
    "date": "2026-08-25T12:17:02Z",
    "deprecated": false,
    "version": "8.1.0-dev.1"
-  },
-  {
-   "date": "2026-08-17T10:56:39Z",
-   "deprecated": false,
-   "version": "7.10.0-dev.58"
-  },
-  {
-   "date": "2026-08-17T09:54:51Z",
-   "deprecated": false,
-   "version": "7.10.0-integration-fix-prisma-publish-token.1"
-  },
-  {
-   "date": "2026-08-17T09:15:29Z",
-   "deprecated": false,
-   "version": "7.10.0-integration-prisma7-project-closeout.10"
   }
  ]
 }

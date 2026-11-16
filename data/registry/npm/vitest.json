@@ -8,7 +8,7 @@
   "rc": "5.0.0-rc.4"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-15T06:01:27Z",
+ "fetched": "2026-11-16T06:01:26Z",
  "homepage": "https://vitest.dev",
  "latest": "5.1.0",
  "name": "vitest",
@@ -75,11 +75,6 @@
    "date": "2026-08-18T14:27:07Z",
    "deprecated": false,
    "version": "4.1.11"
-  },
-  {
-   "date": "2026-08-17T13:28:47Z",
-   "deprecated": false,
-   "version": "5.0.0-rc.2"
   }
  ]
 }
