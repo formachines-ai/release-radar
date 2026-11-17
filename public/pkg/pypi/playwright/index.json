@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -24,15 +24,18 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "…xt-cookies) and [api_request_context.cookies()](https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`. [API…"
+     "quote": "…and [api_request_context.cookies()](https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`.…",
+     "quote_incomplete": true
     },
     {
      "match": "no longer",
-     "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/python/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`http_credentials`](https://…"
+     "quote": "- Proxy credentials are no longer sent to websites.",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Text that the browser does not render, such as text that is not assigned to a slot or text directly inside a closed `<details>`, is no longer part of accessible names and aria snapshots. This can change the results of [page.get_by_role()](https://playwright.dev/python/docs/api/…"
+     "quote": "- Text that the browser does not render, such as text that is not assigned to a slot or text directly inside a closed `<details>`, is no longer part of accessible names and aria snapshots.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

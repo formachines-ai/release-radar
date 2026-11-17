@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -46,15 +46,18 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "- Fixed project skills, commands and agents staying missing after their folder was removed and came back mid-session, such as with `git stash`, including after entering a worktree"
+     "quote": "- Fixed project skills, commands and agents staying missing after their folder was removed and came back mid-session, such as with `git stash`, including after entering a worktree",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Fixed remote sessions giving no reply after a restart when a `UserPromptSubmit` hook blocked a replayed permission answer; these hooks no longer run on that replay"
+     "quote": "- Fixed remote sessions giving no reply after a restart when a `UserPromptSubmit` hook blocked a replayed permission answer; these hooks no longer run on that replay",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Fixed Claude not being told when you stop or pause a running workflow, so it no longer says the workflow is still running"
+     "quote": "- Fixed Claude not being told when you stop or pause a running workflow, so it no longer says the workflow is still running",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -81,15 +84,18 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "- Changed auto mode so that a project's settings files or a plugin can no longer switch its server-side check back on once you have switched it off outside the project"
+     "quote": "- Changed auto mode so that a project's settings files or a plugin can no longer switch its server-side check back on once you have switched it off outside the project",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Changed Monitor's WebSocket watch to follow a rule on every Bash command: a deny refuses it, and under an ask rule an allow on Monitor, bypass mode or auto mode no longer skips the prompt"
+     "quote": "- Changed Monitor's WebSocket watch to follow a rule on every Bash command: a deny refuses it, and under an ask rule an allow on Monitor, bypass mode or auto mode no longer skips the prompt",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment"
+     "quote": "- Changed `CLAUDE_CODE_PROXY_RESOLVES_HOSTS` so that settings files can no longer set it where the host manages the network; set it in the process environment",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -130,15 +136,18 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "- Fixed a background session being killed and its request lost when you opened, stopped or removed the older session whose conversation it had resumed"
+     "quote": "- Fixed a background session being killed and its request lost when you opened, stopped or removed the older session whose conversation it had resumed",
+     "quote_incomplete": false
     },
     {
      "match": "removed",
-     "quote": "- Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication"
+     "quote": "- Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication",
+     "quote_incomplete": false
     },
     {
      "match": "removed",
-     "quote": "- Fixed code or a diff pasted into a prompt losing its indentation in the transcript, and a pasted diff's added lines showing as removed"
+     "quote": "- Fixed code or a diff pasted into a prompt losing its indentation in the transcript, and a pasted diff's added lines showing as removed",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -165,15 +174,18 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "- Fixed `/mcp` still listing a plugin's MCP server after a plugin reload removed it while it was connecting"
+     "quote": "- Fixed `/mcp` still listing a plugin's MCP server after a plugin reload removed it while it was connecting",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Fixed relative deny and ask permission rules (e.g. `Read(./.env)`) no longer covering the project after a `cd`; they now also apply in added directories"
+     "quote": "- Fixed relative deny and ask permission rules (e.g. `Read(./.env)`) no longer covering the project after a `cd`; they now also apply in added directories",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Improved the messages shown when a background session can't use its session's API key or token: they no longer suggest adding the key to settings"
+     "quote": "- Improved the messages shown when a background session can't use its session's API key or token: they no longer suggest adding the key to settings",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -188,8 +200,8 @@
    "flagged": false,
    "id": "npm/@anthropic-ai/claude-code/2.1.324",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/478b45419c/",
    "notes_url": "https://github.com/anthropics/claude-code/releases",
@@ -222,15 +234,18 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "- Fixed the error shown when Amazon Bedrock refuses your account a model: it no longer says to refresh your AWS credentials, it says to enable the model"
+     "quote": "- Fixed the error shown when Amazon Bedrock refuses your account a model: it no longer says to refresh your AWS credentials, it says to enable the model",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- Fixed `/export` silently stopping early after a long run of calls to an MCP tool that is no longer loaded"
+     "quote": "- Fixed `/export` silently stopping early after a long run of calls to an MCP tool that is no longer loaded",
+     "quote_incomplete": false
     },
     {
      "match": "removed",
-     "quote": "- Fixed an MCP server staying disconnected with no tools after an Agent SDK app or `claude -p` caller removed and re-added it, when a tool call had tried to reach it in between"
+     "quote": "- Fixed an MCP server staying disconnected with no tools after an Agent SDK app or `claude -p` caller removed and re-added it, when a tool call had tried to reach it in between",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

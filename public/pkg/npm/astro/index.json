@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -148,7 +148,8 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "…stro-factory)! - Fixes duplicate CSS loading for hydrated islands that share modules or are imported through a path alias. The client build no longer emits and preloads stylesheets that are already linked on the page by the server build.…"
+     "quote": "The client build no longer emits and preloads stylesheets that are already linked on the page by the server build.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

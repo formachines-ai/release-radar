@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -60,11 +60,13 @@
    "quotes": [
     {
      "match": "renamed",
-     "quote": "- Redirect renamed rules ([#30081](https://github.com/astral-sh/ruff/pull/30081))"
+     "quote": "- Redirect renamed rules ([#30081](https://github.com/astral-sh/ruff/pull/30081))",
+     "quote_incomplete": false
     },
     {
      "match": "renamed",
-     "quote": "- \\[`ruff`\\] Add `renamed-rule` (`RUF202`) ([#30079](https://github.com/astral-sh/ruff/pull/30079))"
+     "quote": "- \\[`ruff`\\] Add `renamed-rule` (`RUF202`) ([#30079](https://github.com/astral-sh/ruff/pull/30079))",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

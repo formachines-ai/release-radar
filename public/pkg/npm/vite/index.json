@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -170,7 +170,8 @@
    "quotes": [
     {
      "match": "deprecate",
-     "quote": "* stabilize `--configLoader` and deprecate `--configLoader=runner` ([#23714](https://github.com/vitejs/vite/issues/23714)) ([e719122](https://github.com/vitejs/vite/commit/e719122cf6758086c1c228c14ad016358337cf09))"
+     "quote": "* stabilize `--configLoader` and deprecate `--configLoader=runner` ([#23714](https://github.com/vitejs/vite/issues/23714)) ([e719122](https://github.com/vitejs/vite/commit/e719122cf6758086c1c228c14ad016358337cf09))",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

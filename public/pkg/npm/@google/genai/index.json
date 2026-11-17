@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -24,11 +24,13 @@
    "quotes": [
     {
      "match": "BREAKING",
-     "quote": "### ⚠ BREAKING CHANGES\n* **Default Gemini Developer API version is now `v1` (was `v1beta`)** ([3f477bf](https://github.com/googleapis/js-genai/commit/3f477bfbbf26ba596e4ad0469f8c9663b340c872))"
+     "quote": "### ⚠ BREAKING CHANGES\n* **Default Gemini Developer API version is now `v1` (was `v1beta`)** ([3f477bf](https://github.com/googleapis/js-genai/commit/3f477bfbbf26ba596e4ad0469f8c9663b340c872))",
+     "quote_incomplete": false
     },
     {
      "match": "drop support",
-     "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))"
+     "quote": "* drop support for Node 20; Node.js &gt;=22 is now required ([7b9fbf0](https://github.com/googleapis/js-genai/commit/7b9fbf06b4bc729be60e433c458a3b80fffee5f0))",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

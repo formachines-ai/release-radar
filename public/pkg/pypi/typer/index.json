@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
@@ -24,11 +24,13 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "* `click_type` has been removed from `typer.Option()` and `typer.Argument()`. New ways to provide custom types will be provided with Pydantic, with much more flexibility."
+     "quote": "* `click_type` has been removed from `typer.Option()` and `typer.Argument()`. New ways to provide custom types will be provided with Pydantic, with much more flexibility.",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "* Callback parameter objects no longer expose Click's `.type`, `.make_metavar()`, `.human_readable_name`, or `.type_cast_value()`. Custom integrations using these need updating."
+     "quote": "* Callback parameter objects no longer expose Click's `.type`, `.make_metavar()`, `.human_readable_name`, or `.type_cast_value()`. Custom integrations using these need updating.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

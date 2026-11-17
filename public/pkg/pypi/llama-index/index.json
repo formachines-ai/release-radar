@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -37,15 +37,13 @@
    "quotes": [
     {
      "match": "BREAKING",
-     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
+     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))",
+     "quote_incomplete": false
     },
     {
-     "match": "BREAKING",
-     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
-    },
-    {
-     "match": "BREAKING",
-     "quote": "- BREAKING: raise requires-python for security fixes across integrations (stacked on #24039) ([#24040](https://github.com/run-llama/llama_index/pull/24040))"
+     "match": "deprecation",
+     "quote": "- Fix langchain-community deprecation breaking langchain bridge imports ([#22570](https://github.com/run-llama/llama_index/pull/22570))",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
