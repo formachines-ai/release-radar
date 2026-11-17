@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": "https://docs.celeryq.dev/en/stable/changelog.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -24,15 +24,18 @@
    "quotes": [
     {
      "match": "Removed",
-     "quote": "- Removed deprecated arguments from Redis connection calls."
+     "quote": "- Removed deprecated arguments from Redis connection calls.",
+     "quote_incomplete": false
     },
     {
      "match": "deprecated",
-     "quote": "- Replaced deprecated `codecs.open()` usage in the settings upgrade command."
+     "quote": "- Replaced deprecated `codecs.open()` usage in the settings upgrade command.",
+     "quote_incomplete": false
     },
     {
      "match": "removed",
-     "quote": "Python 3.9 support has been removed from the package and its associated development and CI configurations."
+     "quote": "Python 3.9 support has been removed from the package and its associated development and CI configurations.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

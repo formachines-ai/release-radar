@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -55,8 +55,8 @@
    "flagged": false,
    "id": "npm/firebase/13.2.0-eap-sql.b903ef716",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -89,11 +89,8 @@
    "quotes": [
     {
      "match": "deprecated",
-     "quote": "…instrumentation` 0.11.0, `@opentelemetry/instrumentation-document-load` 0.70.0, and `@opentelemetry/semantic-conventions` 1.45.0), removing deprecated `@opentelemetry/api-logs`, `@opentelemetry/sdk-trace-base`, and `@opentelemetry/sdk-trace-web` dependencies, and updated public a…"
-    },
-    {
-     "match": "deprecated",
-     "quote": "…instrumentation` 0.11.0, `@opentelemetry/instrumentation-document-load` 0.70.0, and `@opentelemetry/semantic-conventions` 1.45.0), removing deprecated `@opentelemetry/api-logs`, `@opentelemetry/sdk-trace-base`, and `@opentelemetry/sdk-trace-web` dependencies, and updated public a…"
+     "quote": "…0.11.0, `@opentelemetry/instrumentation-document-load` 0.70.0, and `@opentelemetry/semantic-conventions` 1.45.0), removing deprecated `@opentelemetry/api-logs`, `@opentelemetry/sdk-trace-base`, and `@opentelemetry/sdk-trace-web` dependencies, and updated public…",
+     "quote_incomplete": true
     }
    ],
    "variant_of": null,
@@ -108,8 +105,8 @@
    "flagged": false,
    "id": "npm/firebase/13.4.0-20261116185243",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -130,8 +127,8 @@
    "flagged": false,
    "id": "npm/firebase/13.2.0-eap-sql.a9a137e67",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -164,15 +161,13 @@
    "quotes": [
     {
      "match": "Deprecated",
-     "quote": "…irebase/firebase-js-sdk/commit/1ffc994f68f272f0cea12387a588fffe4c590066) [#10541](https://github.com/firebase/firebase-js-sdk/pull/10541) - Deprecated `RemoteConfigOptions.templateId` and `RemoteConfigOptions.initialFetchResponse`. Remote Config server-side rendering (SSR) hydrat…"
-    },
-    {
-     "match": "Deprecated",
-     "quote": "…irebase/firebase-js-sdk/commit/1ffc994f68f272f0cea12387a588fffe4c590066) [#10541](https://github.com/firebase/firebase-js-sdk/pull/10541) - Deprecated `RemoteConfigOptions.templateId` and `RemoteConfigOptions.initialFetchResponse`. Remote Config server-side rendering (SSR) hydrat…"
+     "quote": "- [`1ffc994`](https://github.com/firebase/firebase-js-sdk/commit/1ffc994f68f272f0cea12387a588fffe4c590066) [#10541](https://github.com/firebase/firebase-js-sdk/pull/10541) - Deprecated `RemoteConfigOptions.templateId` and `RemoteConfigOptions.initialFetchResponse`.",
+     "quote_incomplete": false
     },
     {
      "match": "Removed",
-     "quote": "…irebase/firebase-js-sdk/commit/a61f2f0de86114b58192d1449ec0183ec3dbeeea) [#10593](https://github.com/firebase/firebase-js-sdk/pull/10593) - Removed debug `console.log` overrides on `OTLPLogExporter.forceFlush()` and `OTLPLogExporter.shutdown()` so that flushing and shutting down…"
+     "quote": "…[#10593](https://github.com/firebase/firebase-js-sdk/pull/10593) - Removed debug `console.log` overrides on `OTLPLogExporter.forceFlush()` and `OTLPLogExporter.shutdown()` so that flushing and shutting down…",
+     "quote_incomplete": true
     }
    ],
    "variant_of": null,
@@ -187,8 +182,8 @@
    "flagged": false,
    "id": "npm/firebase/13.3.0-20261111165442",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -209,8 +204,8 @@
    "flagged": false,
    "id": "npm/firebase/13.3.0-20261110194028",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-17",
+   "no_notes": false,
+   "no_notes_checked": null,
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",

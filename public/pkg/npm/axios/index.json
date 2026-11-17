@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -24,7 +24,8 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "…`), because Next.js rejects `Date.now()` while prerendering. The duration is still a whole number of milliseconds, and system clock changes no longer affect it. (__#11411__)…"
+     "quote": "The duration is still a whole number of milliseconds, and system clock changes no longer affect it.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

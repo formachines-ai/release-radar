@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -90,15 +90,18 @@
    "quotes": [
     {
      "match": "deprecated",
-     "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284"
+     "quote": "* refactor(ui): remove the deprecated Old Usage page by @kerry-berri in https://github.com/BerriAI/litellm/pull/49284",
+     "quote_incomplete": false
     },
     {
      "match": "deprecating",
-     "quote": "* feat(model-catalog): read successor_model, the provider's recommended replacement for a deprecating row by @kerry-berri in https://github.com/BerriAI/litellm/pull/49791"
+     "quote": "* feat(model-catalog): read successor_model, the provider's recommended replacement for a deprecating row by @kerry-berri in https://github.com/BerriAI/litellm/pull/49791",
+     "quote_incomplete": false
     },
     {
      "match": "deprecating",
-     "quote": "* feat(cost-map): record the provider's recommended replacement as successor_model on deprecating rows and report it from /model/deprecations by @kerry-berri in https://github.com/BerriAI/litellm/pull/49789"
+     "quote": "* feat(cost-map): record the provider's recommended replacement as successor_model on deprecating rows and report it from /model/deprecations by @kerry-berri in https://github.com/BerriAI/litellm/pull/49789",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -227,15 +230,18 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "138 PRs. 18 added, 69 fixed, 11 changed, 3 improved, 1 removed. 2 need action"
+     "quote": "138 PRs. 18 added, 69 fixed, 11 changed, 3 improved, 1 removed. 2 need action",
+     "quote_incomplete": false
     },
     {
      "match": "deprecations",
-     "quote": "- Fixed shutdown dates on Gemini TTS and Live preview models to match Google's deprecations page (#51657)"
+     "quote": "- Fixed shutdown dates on Gemini TTS and Live preview models to match Google's deprecations page (#51657)",
+     "quote_incomplete": false
     },
     {
      "match": "Removed",
-     "quote": "- Removed Flex prices from three Vertex AI Gemini 4 rows (#51735)"
+     "quote": "- Removed Flex prices from three Vertex AI Gemini 4 rows (#51735)",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -416,15 +422,18 @@
    "quotes": [
     {
      "match": "deprecated",
-     "quote": "* feat(proxy): log keys and teams still on the deprecated empty models defaults at boot by @paveln83 in https://github.com/BerriAI/litellm/pull/50720"
+     "quote": "* feat(proxy): log keys and teams still on the deprecated empty models defaults at boot by @paveln83 in https://github.com/BerriAI/litellm/pull/50720",
+     "quote_incomplete": false
     },
     {
      "match": "deprecations",
-     "quote": "* chore(cost-map): add the openai gpt-image-2 shutdown date from the deprecations page by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/50829"
+     "quote": "* chore(cost-map): add the openai gpt-image-2 shutdown date from the deprecations page by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/50829",
+     "quote_incomplete": false
     },
     {
      "match": "deprecated",
-     "quote": "* refactor(ui): remove the deprecated Learning Resources sidebar link by @yuneng-berri in https://github.com/BerriAI/litellm/pull/51251"
+     "quote": "* refactor(ui): remove the deprecated Learning Resources sidebar link by @yuneng-berri in https://github.com/BerriAI/litellm/pull/51251",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
@@ -583,15 +592,18 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "982 PRs. 144 added, 424 fixed, 60 changed, 17 improved, 9 removed. 5 need action"
+     "quote": "982 PRs. 144 added, 424 fixed, 60 changed, 17 improved, 9 removed. 5 need action",
+     "quote_incomplete": false
     },
     {
      "match": "removed",
-     "quote": "- **Caching:** Switch `cache_params.type` from `disk` to `local` or `redis`, since the `disk` cache backend (diskcache) has been removed (#48114)"
+     "quote": "- **Caching:** Switch `cache_params.type` from `disk` to `local` or `redis`, since the `disk` cache backend (diskcache) has been removed (#48114)",
+     "quote_incomplete": false
     },
     {
      "match": "deprecation",
-     "quote": "- Added a 2026-06-30 deprecation date to `vertex_ai/veo-2.0-generate-001` (#47847)"
+     "quote": "- Added a 2026-06-30 deprecation date to `vertex_ai/veo-2.0-generate-001` (#47847)",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

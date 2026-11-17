@@ -89,7 +89,7 @@ public/                     the site — everything below is generated, do not e
    channel carry the same sentence.
 3. **No judgement about "breaking".** The flag is `BREAKING_RE` applied to the release-notes text, nothing else.
    The quote is the matched line (plus the previous line when the matched line is short), cut at 280 characters with
-   an ellipsis, never paraphrased. No LLM call, no summary, no "probably breaking". False positives are handled by
+   an ellipsis, never paraphrased. (T-0133: a match is widened verbatim to its enclosing bullet/sentence if that fits in 280; otherwise the cut carries `quote_incomplete: true` in JSON and the label «Incomplete excerpt — open the release notes for context» on cards; exact duplicate quotes within a release are dropped.) No LLM call, no summary, no "probably breaking". False positives are handled by
    adding a regex to `config/ignore_patterns.txt`, never by editing the quote. Changelogs are not republished:
    at most 3 quotes per release, each ≤ 280 characters, always with the link to the source.
 4. **No tracking.** No scripts, cookies, forms, pixels, external fonts or third-party embeds. External clicks go

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -60,15 +60,18 @@
    "quotes": [
     {
      "match": "Breaking",
-     "quote": "## Breaking changes\n* 🚨 Remove the `ep_router` expert-parallel style (#49615) by @IlyasMoutawwakil"
+     "quote": "## Breaking changes\n* 🚨 Remove the `ep_router` expert-parallel style (#49615) by @IlyasMoutawwakil",
+     "quote_incomplete": false
     },
     {
      "match": "Deprecate",
-     "quote": "* 🚨 Deprecate Wav2Vec2ProcessorWithLM and pyctcdecode/kenlm LM decoding (#50408) by @eustlb"
+     "quote": "* 🚨 Deprecate Wav2Vec2ProcessorWithLM and pyctcdecode/kenlm LM decoding (#50408) by @eustlb",
+     "quote_incomplete": false
     },
     {
      "match": "breaking",
-     "quote": "* 🚨 [serve][breaking] update attn for mac users  (#49730) by @SunMarc"
+     "quote": "* 🚨 [serve][breaking] update attn for mac users  (#49730) by @SunMarc",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -24,7 +24,8 @@
    "quotes": [
     {
      "match": "breaks",
-     "quote": "…top `streamEvents` v2 from hanging or leaking an unhandled rejection when aborted, and from throwing its own `AbortError` when the consumer breaks early.…"
+     "quote": "…v2 from hanging or leaking an unhandled rejection when aborted, and from throwing its own `AbortError` when the consumer breaks early.",
+     "quote_incomplete": true
     }
    ],
    "variant_of": null,

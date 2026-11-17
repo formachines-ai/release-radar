@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -82,7 +82,8 @@
    "quotes": [
     {
      "match": "removed",
-     "quote": "…no/mount` and `app.mount()` on 4.13.16 and 4.13.17. With a `getPath` that prepends a prefix such as the host name, one segment too many was removed from the forwarded path, so middleware scoped inside the mount prefix could be skipped. The prefix is removed from the routed path a…"
+     "quote": "With a `getPath` that prepends a prefix such as the host name, one segment too many was removed from the forwarded path, so middleware scoped inside the mount prefix could be skipped.",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

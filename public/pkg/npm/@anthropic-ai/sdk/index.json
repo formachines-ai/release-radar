@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -82,15 +82,18 @@
    "quotes": [
     {
      "match": "no longer",
-     "quote": "…kdir` and `allowedRoots`, and passes over a link that leads inside them. A host whose only `tar` or `unzip` is inside those directories can no longer download skills until one is installed outside. Only when no `PATH` entry is outside them, as with a `workdir` of `/`, is all of `…"
+     "quote": "A host whose only `tar` or `unzip` is inside those directories can no longer download skills until one is installed outside.",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "…ir` that holds every `rg` on the host, such as `/`, every search is a built-in search. `rg`, and the `tar` and `unzip` that extract skills, no longer get the `ANTHROPIC_*` variables of the process, like the shell of `bash`.…"
+     "quote": "`rg`, and the `tar` and `unzip` that extract skills, no longer get the `ANTHROPIC_*` variables of the process, like the shell of `bash`.",
+     "quote_incomplete": false
     },
     {
      "match": "deprecate",
-     "quote": "* **api:** deprecate old beta header values"
+     "quote": "* **api:** deprecate old beta header values",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,

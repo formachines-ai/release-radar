@@ -628,32 +628,87 @@ def match_release(releases: list[dict], version: str, pkg_name: str, eco: str = 
 # ----------------------------------------------------------------------------------------------------------
 # Breaking-change detection (regex + verbatim quote; nothing else)
 # ----------------------------------------------------------------------------------------------------------
+BULLET_START_RE = re.compile(r"^\s*(?:[-*+•]\s|\d+[.)]\s|#)")
+SENT_SPLIT_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z`\[(\"'])")
+
+
+def _unit_bounds(lines: list[str], i: int) -> tuple[int, int]:
+    """Line range [a, b) of the bullet / paragraph that holds line i (hard-wrapped notes continue over lines)."""
+    a = i
+    while a > 0 and lines[a].strip() and not BULLET_START_RE.match(lines[a]) and lines[a - 1].strip():
+        a -= 1
+    b = i + 1
+    while b < len(lines) and lines[b].strip() and not BULLET_START_RE.match(lines[b]):
+        b += 1
+    return a, b
+
+
+def _cut(text: str, pos: int, mlen: int) -> str:
+    """Verbatim cut of at most QUOTE_MAX_CHARS around position pos, on word boundaries, with ellipses."""
+    lim = QUOTE_MAX_CHARS - 2  # room for the two ellipses
+    start = max(0, pos + mlen // 2 - lim // 2)
+    end = min(len(text), start + lim)
+    if start > 0:
+        sp = text.find(" ", start)
+        if 0 <= sp < pos:
+            start = sp + 1
+    if end < len(text):
+        sp = text.rfind(" ", start, end)
+        if sp > pos + mlen:
+            end = sp
+    return ("…" if start > 0 else "") + text[start:end].strip() + ("…" if end < len(text) else "")
+
+
 def find_quotes(body: str, ignore: list[re.Pattern]) -> list[dict]:
-    """Verbatim 1–2 line quotes around each regex match. Returns [{quote, match, line_no}]."""
+    """Verbatim quotes around each regex match, widened to the enclosing bullet or sentence when that fits in
+    QUOTE_MAX_CHARS, else a verbatim cut flagged `incomplete`. Returns [{quote, match, line_no, incomplete}]."""
     if not body:
         return []
     lines = body.replace("\r\n", "\n").replace("\r", "\n").split("\n")
     out: list[dict] = []
     seen_lines: set[int] = set()
+    seen_quotes: set[str] = set()
     for i, line in enumerate(lines):
         if i in seen_lines:
             continue
         for m in BREAKING_RE.finditer(line):
             if any(_overlaps(m.span(), ig.span()) for ig in _all_matches(ignore, line)):
                 continue
-            text = line.strip()
-            if len(text) < QUOTE_SHORT_LINE:
+            a, b = _unit_bounds(lines, i)
+            seen_lines.update(range(a, b))
+            parts = [l.strip() for l in lines[a:b]]
+            text = " ".join(parts)
+            pos = sum(len(p) + 1 for p in parts[:i - a]) + max(0, len(line) - len(line.lstrip()) * 0)
+            pos = sum(len(p) + 1 for p in parts[:i - a]) + line.strip().lower().find(m.group(0).lower())
+            incomplete = False
+            if len(text) > QUOTE_MAX_CHARS:
+                # enclosing sentence
+                s0 = 0
+                sentence = text
+                for sm in SENT_SPLIT_RE.finditer(text):
+                    if sm.end() <= pos:
+                        s0 = sm.end()
+                    else:
+                        sentence = text[s0:sm.start()]
+                        break
+                else:
+                    sentence = text[s0:]
+                if len(sentence) <= QUOTE_MAX_CHARS:
+                    text = sentence
+                else:
+                    text = _cut(text, pos, len(m.group(0)))
+                    incomplete = True
+            elif len(text) < QUOTE_SHORT_LINE and a == i and b == i + 1:
                 if text.startswith("#"):
                     nxt = next((l.strip() for l in lines[i + 1:i + 4] if l.strip()), "")
                     text = text + ("\n" + nxt if nxt else "")
                 elif i > 0 and lines[i - 1].strip():
                     text = lines[i - 1].strip() + "\n" + text
-            if len(text) > QUOTE_MAX_CHARS:
-                # keep the matched word inside the cut
-                start = max(0, text.lower().find(m.group(0).lower()) - QUOTE_MAX_CHARS // 2)
-                text = ("…" if start > 0 else "") + text[start:start + QUOTE_MAX_CHARS].rstrip() + "…"
-            out.append({"quote": text, "match": m.group(0), "line_no": i + 1})
-            seen_lines.add(i)
+            key = " ".join(text.split())
+            if key in seen_quotes:
+                break
+            seen_quotes.add(key)
+            out.append({"quote": text, "match": m.group(0), "line_no": i + 1, "incomplete": incomplete})
             break
         if len(out) >= MAX_QUOTES_PER_RELEASE:
             break
@@ -768,13 +823,13 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
         "prerelease": bool(rec.get("prerelease")), "yanked": bool(rec.get("yanked_or_deprecated")),
         "notes_url": rec.get("notes_url"), "notes_kind": rec.get("notes_kind") or "fallback", "notes_go": notes_go,
         "bump": rec.get("bump") or "unknown", "prev_version": rec.get("prev_version"),
-        "flagged": bool(rec.get("flagged")), "quotes": list(rec.get("quotes") or []), "no_notes": bool(rec.get("no_notes")),
+        "flagged": bool(rec.get("flagged")), "quotes": [dict(q, incomplete=bool(q.get("quote_incomplete", q.get("incomplete")))) for q in (rec.get("quotes") or []) if isinstance(q, dict)], "no_notes": bool(rec.get("no_notes")),
         "no_notes_checked": (str(rec.get("no_notes_checked"))[:10] if rec.get("no_notes") and rec.get("no_notes_checked") else None),
         "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
     }
 
 
-def merge_history(pkg: dict, now: datetime, window_start: datetime) -> None:
+def merge_history(pkg: dict, now: datetime, window_start: datetime, ignore: list[re.Pattern]) -> None:
     """T-0118: records older than the 7-day window come only from earlier committed index.json files."""
     old = read_json(PUBLIC_DIR / pkg["path"].strip("/") / "index.json")
     pkg["history"], pkg["history_since"] = [], None
@@ -789,6 +844,14 @@ def merge_history(pkg: dict, now: datetime, window_start: datetime) -> None:
         r = restore_release(rec, pkg)
         if r and r["no_notes"] and not r["no_notes_checked"] and parse_dt(old.get("built")):
             r["no_notes_checked"] = parse_dt(old.get("built")).strftime("%Y-%m-%d")  # legacy record: date it was stored
+        if r and r["quotes"] and r["notes_kind"] == "github_release" and pkg.get("repo"):
+            # same quote rules for history cards: re-extract from the cached notes of that exact release URL
+            cache = read_json(DATA_DIR / "github" / f"{pkg['repo'].replace('/', '__')}.json")
+            if isinstance(cache, dict):
+                pool = list(cache.get("releases") or []) + list((cache.get("by_tag") or {}).values())
+                gh = next((x for x in pool if isinstance(x, dict) and x.get("url") == r["notes_url"] and x.get("body")), None)
+                if gh:
+                    r["quotes"] = find_quotes(gh["body"], ignore) or r["quotes"]
         d = parse_dt(r["date"]) if r else None
         if r and d and cutoff <= d < window_start and r["version"] not in have:
             hist[r["version"]] = r
@@ -880,7 +943,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             }
             pkg["releases"].append(rel)
             releases.append(rel)
-        merge_history(pkg, now, window_start)
+        merge_history(pkg, now, window_start, ignore)
         pkgs.append(pkg)
     releases.sort(key=lambda r: r["date"], reverse=True)
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
@@ -965,7 +1028,9 @@ def render_quote(q: dict) -> str:
     idx = text.lower().find(m.lower())
     if idx >= 0:
         text = text[:idx] + '<span class="m">' + text[idx:idx + len(m)] + "</span>" + text[idx + len(m):]
-    return f'<blockquote class="quote">{text}</blockquote>'
+    note = ('<span class="note incomplete">Incomplete excerpt — open the release notes for context</span>'
+            if q.get("incomplete") else "")
+    return f'<blockquote class="quote">{text}{note}</blockquote>'
 
 
 def vote_id(r: dict) -> str:
@@ -1389,7 +1454,7 @@ def public_release(r: dict) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
         "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
-        "quotes": [{"quote": q["quote"], "match": q["match"]} for q in r["quotes"]],
+        "quotes": [{"quote": q["quote"], "match": q["match"], "quote_incomplete": bool(q.get("incomplete"))} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",

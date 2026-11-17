@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T06:00:02Z",
+ "built": "2026-11-17T08:11:52Z",
  "changelog": "https://click.palletsprojects.com/page/changes/",
  "ecosystem": "pypi",
  "errata": {
@@ -31,15 +31,18 @@
    "quotes": [
     {
      "match": "breaking",
-     "quote": "This is the Click 8.5.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release."
+     "quote": "This is the Click 8.5.1 fix release, which fixes bugs but does not otherwise change behavior and should not result in breaking changes compared to the latest feature release.",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "or while it exits, no longer escapes as an unhandled traceback. The command still"
+     "quote": "- A `KeyboardInterrupt` arriving while `Command.main()` reports an abort or an error, or while it exits, no longer escapes as an unhandled traceback. The command still exits with the intended code; only the message may be lost. #3802",
+     "quote_incomplete": false
     },
     {
      "match": "no longer",
-     "quote": "- A command's short help no longer stops at an abbreviation such as `vs.` or `e.g.`"
+     "quote": "- A command's short help no longer stops at an abbreviation such as `vs.` or `e.g.` inside the first sentence. A period ends the sentence only when it closes the text or the next word does not start in lowercase. #3865",
+     "quote_incomplete": false
     }
    ],
    "variant_of": null,
