@@ -1,9 +1,31 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-09T19:47:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/5.0.287",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4c68e64133/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.287",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "5.0.286",
+   "quotes": [],
+   "variant_of": null,
+   "version": "5.0.287",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-09T03:02:24Z",
@@ -166,7 +188,7 @@
   "date": "2026-11-13T22:35:41Z",
   "version": "7.0.173"
  },
- "metadata_fetched": "2026-11-16T06:00:55Z",
+ "metadata_fetched": "2026-11-17T06:00:57Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
@@ -484,31 +506,9 @@
    "variant_of": null,
    "version": "5.0.288",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-09T19:47:30Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/ai/5.0.287",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4c68e64133/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.287",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "5.0.286",
-   "quotes": [],
-   "variant_of": null,
-   "version": "5.0.287",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 15,
+ "stable_in_window": 14,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

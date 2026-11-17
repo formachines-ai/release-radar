@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T06:00:24Z",
+ "fetched": "2026-11-17T06:00:22Z",
  "releases": [
   {
    "body": "### Highlights\r\n\r\nhttps://github.com/microsoft/playwright/pull/44098 - browser(chromium): roll to r1255, v159.0.8154.6\r\n\r\n## Browser Versions\r\n\r\n- Chromium 159.0.8154.6",

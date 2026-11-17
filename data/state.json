@@ -1,20 +1,20 @@
 {
- "duration_s": 84.7,
+ "duration_s": 90.1,
  "last_build": {
-  "built": "2026-11-16T06:00:02Z",
-  "commit": "344e568",
+  "built": "2026-11-17T06:00:02Z",
+  "commit": "b0f6358",
   "errors": [],
-  "flagged": 24,
+  "flagged": 27,
   "generator": "build.py",
-  "github_remaining": 4850,
-  "http_requests": 252,
+  "github_remaining": 4826,
+  "http_requests": 283,
   "notes_coverage": {
    "counts": {
-    "checked_no_notes": 215,
-    "no_repo_url": 1,
+    "checked_no_notes": 238,
+    "no_repo_url": 0,
     "not_fetched": 0
    },
-   "github_release": 138,
+   "github_release": 132,
    "missing": [
     {
      "eco": "npm",
@@ -23,18 +23,11 @@
      "version": "2.1.324"
     },
     {
-     "count": 157,
+     "count": 171,
      "eco": "npm",
      "name": "@openai/codex",
      "reason": "no_matching_tag",
      "versions": [
-      "0.167.0-alpha.4.1",
-      "0.167.0-alpha.4.1-darwin-arm64",
-      "0.167.0-alpha.4.1-darwin-x64",
-      "0.167.0-alpha.4.1-linux-arm64",
-      "0.167.0-alpha.4.1-linux-x64",
-      "0.167.0-alpha.4.1-win32-arm64",
-      "0.167.0-alpha.4.1-win32-x64",
       "0.167.0-alpha.4.2",
       "0.167.0-alpha.4.2-darwin-arm64",
       "0.167.0-alpha.4.2-darwin-x64",
@@ -88,20 +81,6 @@
       "0.169.0-alpha.11.1-linux-x64",
       "0.169.0-alpha.11.1-win32-arm64",
       "0.169.0-alpha.11.1-win32-x64",
-      "0.169.0-alpha.6",
-      "0.169.0-alpha.6-darwin-arm64",
-      "0.169.0-alpha.6-darwin-x64",
-      "0.169.0-alpha.6-linux-arm64",
-      "0.169.0-alpha.6-linux-x64",
-      "0.169.0-alpha.6-win32-arm64",
-      "0.169.0-alpha.6-win32-x64",
-      "0.169.0-alpha.7",
-      "0.169.0-alpha.7-darwin-arm64",
-      "0.169.0-alpha.7-darwin-x64",
-      "0.169.0-alpha.7-linux-arm64",
-      "0.169.0-alpha.7-linux-x64",
-      "0.169.0-alpha.7-win32-arm64",
-      "0.169.0-alpha.7-win32-x64",
       "0.169.0-alpha.9",
       "0.169.0-alpha.9-darwin-arm64",
       "0.169.0-alpha.9-darwin-x64",
@@ -143,6 +122,13 @@
       "0.170.0-alpha.4-linux-x64",
       "0.170.0-alpha.4-win32-arm64",
       "0.170.0-alpha.4-win32-x64",
+      "0.170.0-alpha.4.1",
+      "0.170.0-alpha.4.1-darwin-arm64",
+      "0.170.0-alpha.4.1-darwin-x64",
+      "0.170.0-alpha.4.1-linux-arm64",
+      "0.170.0-alpha.4.1-linux-x64",
+      "0.170.0-alpha.4.1-win32-arm64",
+      "0.170.0-alpha.4.1-win32-x64",
       "0.171.0-alpha.1",
       "0.171.0-alpha.1-darwin-arm64",
       "0.171.0-alpha.1-darwin-x64",
@@ -150,6 +136,20 @@
       "0.171.0-alpha.1-linux-x64",
       "0.171.0-alpha.1-win32-arm64",
       "0.171.0-alpha.1-win32-x64",
+      "0.171.0-alpha.10",
+      "0.171.0-alpha.10-darwin-arm64",
+      "0.171.0-alpha.10-darwin-x64",
+      "0.171.0-alpha.10-linux-arm64",
+      "0.171.0-alpha.10-linux-x64",
+      "0.171.0-alpha.10-win32-arm64",
+      "0.171.0-alpha.10-win32-x64",
+      "0.171.0-alpha.11",
+      "0.171.0-alpha.11-darwin-arm64",
+      "0.171.0-alpha.11-darwin-x64",
+      "0.171.0-alpha.11-linux-arm64",
+      "0.171.0-alpha.11-linux-x64",
+      "0.171.0-alpha.11-win32-arm64",
+      "0.171.0-alpha.11-win32-x64",
       "0.171.0-alpha.2",
       "0.171.0-alpha.2-darwin-arm64",
       "0.171.0-alpha.2-darwin-x64",
@@ -184,7 +184,21 @@
       "0.171.0-alpha.7-linux-arm64",
       "0.171.0-alpha.7-linux-x64",
       "0.171.0-alpha.7-win32-arm64",
-      "0.171.0-alpha.7-win32-x64"
+      "0.171.0-alpha.7-win32-x64",
+      "0.171.0-alpha.8",
+      "0.171.0-alpha.8-darwin-arm64",
+      "0.171.0-alpha.8-darwin-x64",
+      "0.171.0-alpha.8-linux-arm64",
+      "0.171.0-alpha.8-linux-x64",
+      "0.171.0-alpha.8-win32-arm64",
+      "0.171.0-alpha.8-win32-x64",
+      "0.171.0-alpha.9",
+      "0.171.0-alpha.9-darwin-arm64",
+      "0.171.0-alpha.9-darwin-x64",
+      "0.171.0-alpha.9-linux-arm64",
+      "0.171.0-alpha.9-linux-x64",
+      "0.171.0-alpha.9-win32-arm64",
+      "0.171.0-alpha.9-win32-x64"
      ]
     },
     {
@@ -209,6 +223,12 @@
      "eco": "npm",
      "name": "firebase",
      "reason": "no_matching_tag",
+     "version": "13.2.0-eap-sql.b903ef716"
+    },
+    {
+     "eco": "npm",
+     "name": "firebase",
+     "reason": "no_matching_tag",
      "version": "13.3.0-20261110194028"
     },
     {
@@ -219,12 +239,24 @@
     },
     {
      "eco": "npm",
-     "name": "opencode-ai",
-     "reason": "no_repo_url",
-     "version": "0.0.0-dev-202611092046"
+     "name": "firebase",
+     "reason": "no_matching_tag",
+     "version": "13.4.0-20261116185243"
     },
     {
-     "count": 13,
+     "eco": "npm",
+     "name": "mongoose",
+     "reason": "no_matching_tag",
+     "version": "6.13.13"
+    },
+    {
+     "eco": "npm",
+     "name": "mongoose",
+     "reason": "no_matching_tag",
+     "version": "7.8.14"
+    },
+    {
+     "count": 12,
      "eco": "npm",
      "name": "playwright",
      "reason": "no_matching_tag",
@@ -234,85 +266,78 @@
       "1.65.0-beta-1794421487000",
       "1.65.0-beta-1794589053000",
       "1.65.0-beta-1794598453000",
-      "1.66.0-alpha-1794252756000",
-      "1.66.0-alpha-2026-11-10",
       "1.66.0-alpha-2026-11-11",
       "1.66.0-alpha-2026-11-12",
       "1.66.0-alpha-2026-11-13",
       "1.66.0-alpha-2026-11-14",
       "1.66.0-alpha-2026-11-15",
-      "1.66.0-alpha-2026-11-16"
+      "1.66.0-alpha-2026-11-16",
+      "1.66.0-alpha-2026-11-17"
      ]
     },
     {
+     "count": 6,
      "eco": "npm",
      "name": "prisma",
      "reason": "no_matching_tag",
-     "version": "8.0.0-rc.33-dev.186"
+     "versions": [
+      "8.0.0-rc.33-dev.186",
+      "8.0.0-rc.33-dev.187",
+      "8.0.0-rc.34-dev.188",
+      "8.0.0-rc.34-dev.189",
+      "8.1.0-dev.11",
+      "8.1.0-dev.12"
+     ]
     },
     {
-     "eco": "npm",
-     "name": "prisma",
-     "reason": "no_matching_tag",
-     "version": "8.0.0-rc.33-dev.187"
-    },
-    {
-     "eco": "npm",
-     "name": "prisma",
-     "reason": "no_matching_tag",
-     "version": "8.1.0-dev.11"
-    },
-    {
-     "eco": "npm",
-     "name": "prisma",
-     "reason": "no_matching_tag",
-     "version": "8.1.0-dev.12"
-    },
-    {
-     "count": 8,
+     "count": 6,
      "eco": "npm",
      "name": "react",
      "reason": "no_matching_tag",
      "versions": [
       "0.0.0-experimental-1620f7b9-20261111",
-      "0.0.0-experimental-4ae637b6-20261109",
       "0.0.0-experimental-b05c0b75-20261109",
       "0.0.0-experimental-df6aa4ec-20261112",
       "19.3.0-canary-1620f7b9-20261111",
-      "19.3.0-canary-4ae637b6-20261109",
       "19.3.0-canary-b05c0b75-20261109",
       "19.3.0-canary-df6aa4ec-20261112"
      ]
     },
     {
-     "count": 8,
+     "count": 6,
      "eco": "npm",
      "name": "react-dom",
      "reason": "no_matching_tag",
      "versions": [
       "0.0.0-experimental-1620f7b9-20261111",
-      "0.0.0-experimental-4ae637b6-20261109",
       "0.0.0-experimental-b05c0b75-20261109",
       "0.0.0-experimental-df6aa4ec-20261112",
       "19.3.0-canary-1620f7b9-20261111",
-      "19.3.0-canary-4ae637b6-20261109",
       "19.3.0-canary-b05c0b75-20261109",
       "19.3.0-canary-df6aa4ec-20261112"
      ]
     },
     {
-     "count": 7,
+     "count": 15,
      "eco": "npm",
      "name": "tailwindcss",
      "reason": "no_matching_tag",
      "versions": [
-      "0.0.0-insiders.3603b3a",
+      "0.0.0-insiders.1bea2b0",
+      "0.0.0-insiders.29160dc",
       "0.0.0-insiders.7c22203",
+      "0.0.0-insiders.93d9f24",
+      "0.0.0-insiders.98934ed",
       "0.0.0-insiders.a3cb19c",
+      "0.0.0-insiders.ae63833",
+      "0.0.0-insiders.afddfc5",
       "0.0.0-insiders.bb21271",
+      "0.0.0-insiders.bb3fe16",
+      "0.0.0-insiders.d87d328",
       "0.0.0-insiders.d8ea1da",
       "0.0.0-insiders.f61717d",
-      "0.0.0-insiders.fecba57"
+      "0.0.0-insiders.fecba57",
+      "0.0.0-insiders.ff0bd97"
      ]
     },
     {
@@ -321,20 +346,14 @@
      "name": "typescript",
      "reason": "no_matching_tag",
      "versions": [
-      "7.1.0-dev.20261109.1",
       "7.1.0-dev.20261110.1",
       "7.1.0-dev.20261111.1",
       "7.1.0-dev.20261112.1",
       "7.1.0-dev.20261113.1",
       "7.1.0-dev.20261114.1",
-      "7.1.0-dev.20261115.1"
+      "7.1.0-dev.20261115.1",
+      "7.1.0-dev.20261116.1"
      ]
-    },
-    {
-     "eco": "pypi",
-     "name": "boto3",
-     "reason": "no_matching_tag",
-     "version": "1.43.127"
     },
     {
      "eco": "pypi",
@@ -359,12 +378,18 @@
      "name": "boto3",
      "reason": "no_matching_tag",
      "version": "1.44.3"
+    },
+    {
+     "eco": "pypi",
+     "name": "boto3",
+     "reason": "no_matching_tag",
+     "version": "1.44.4"
     }
    ],
-   "releases": 354
+   "releases": 370
   },
   "packages": 98,
-  "redirects": 158,
-  "releases": 354
+  "redirects": 152,
+  "releases": 370
  }
 }

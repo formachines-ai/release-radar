@@ -1,9 +1,45 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T21:09:30Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/playwright/1.65.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/9f6e27bf42/",
+   "notes_url": "https://github.com/microsoft/playwright-python/releases/tag/v1.65.0",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
+   "prerelease": false,
+   "prev_version": "1.64.1",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…xt-cookies) and [api_request_context.cookies()](https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`. [API…"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/python/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`http_credentials`](https://…"
+    },
+    {
+     "match": "no longer",
+     "quote": "- Text that the browser does not render, such as text that is not assigned to a slot or text directly inside a closed `<details>`, is no longer part of accessible names and aria snapshots. This can change the results of [page.get_by_role()](https://playwright.dev/python/docs/api/…"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.65.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
  "latest": "1.65.2",
@@ -11,7 +47,7 @@
   "date": "2026-11-14T00:28:39Z",
   "version": "1.65.2"
  },
- "metadata_fetched": "2026-11-16T06:00:23Z",
+ "metadata_fetched": "2026-11-17T06:00:21Z",
  "package": "playwright",
  "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
  "prereleases_in_window": 0,
@@ -60,44 +96,9 @@
    "variant_of": null,
    "version": "1.65.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-09T21:09:30Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/playwright/1.65.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/9f6e27bf42/",
-   "notes_url": "https://github.com/microsoft/playwright-python/releases/tag/v1.65.0",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
-   "prerelease": false,
-   "prev_version": "1.64.1",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "…xt-cookies) and [api_request_context.cookies()](https://playwright.dev/python/docs/api/class-apirequestcontext#api-request-context-cookies) no longer return host-only cookies for subdomains or `Path=/api` cookies for `/apiv2`, and a `Path=/foo/` cookie does not match `/foo`. [API…"
-    },
-    {
-     "match": "no longer",
-     "quote": "- Proxy credentials are no longer sent to websites. The credentials in the [`proxy`](https://playwright.dev/python/docs/api/class-browsertype#browser-type-launch-option-proxy) option now answer only proxy challenges. To authenticate on a website, use [`http_credentials`](https://…"
-    },
-    {
-     "match": "no longer",
-     "quote": "- Text that the browser does not render, such as text that is not assigned to a slot or text directly inside a closed `<details>`, is no longer part of accessible names and aria snapshots. This can change the results of [page.get_by_role()](https://playwright.dev/python/docs/api/…"
-    }
-   ],
-   "variant_of": null,
-   "version": "1.65.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/microsoft/playwright-python",
- "stable_in_window": 3,
+ "stable_in_window": 2,
  "summary": "A high-level API to automate web browsers"
 }

@@ -1,9 +1,31 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-09T18:56:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@anthropic-ai/sdk/1.7.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/2c6898ad11/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "prev_version": "1.6.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.7.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-05T19:05:25Z",
@@ -29,17 +51,52 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.8.0",
+ "latest": "1.9.0",
  "latest_stable": {
-  "date": "2026-11-10T16:38:44Z",
-  "version": "1.8.0"
+  "date": "2026-11-16T16:53:24Z",
+  "version": "1.9.0"
  },
- "metadata_fetched": "2026-11-16T06:00:37Z",
+ "metadata_fetched": "2026-11-17T06:00:41Z",
  "package": "@anthropic-ai/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/sdk",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-16T16:53:24Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/sdk/1.9.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/505d77d4c8/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.9.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "prev_version": "1.8.0",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "…kdir` and `allowedRoots`, and passes over a link that leads inside them. A host whose only `tar` or `unzip` is inside those directories can no longer download skills until one is installed outside. Only when no `PATH` entry is outside them, as with a `workdir` of `/`, is all of `…"
+    },
+    {
+     "match": "no longer",
+     "quote": "…ir` that holds every `rg` on the host, such as `/`, every search is a built-in search. `rg`, and the `tar` and `unzip` that extract skills, no longer get the `ANTHROPIC_*` variables of the process, like the shell of `bash`.…"
+    },
+    {
+     "match": "deprecate",
+     "quote": "* **api:** deprecate old beta header values"
+    }
+   ],
+   "variant_of": null,
+   "version": "1.9.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-10T16:38:44Z",
@@ -60,28 +117,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.8.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-09T18:56:57Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@anthropic-ai/sdk/1.7.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/2c6898ad11/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.7.0",
-   "package": "@anthropic-ai/sdk",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
-   "prerelease": false,
-   "prev_version": "1.6.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.7.0",
    "yanked_or_deprecated": false
   }
  ],

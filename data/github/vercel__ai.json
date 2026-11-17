@@ -96,14 +96,6 @@
    "tag": "@ai-sdk/openai@4.0.118",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.118"
   },
-  "ai@5.0.287": {
-   "body": "### Patch Changes\n\n- Updated dependencies [e0eb120]\n- Updated dependencies [5111655]\n  - @ai-sdk/gateway@2.0.178",
-   "date": "2026-11-09T19:46:56Z",
-   "name": "ai@5.0.287",
-   "prerelease": false,
-   "tag": "ai@5.0.287",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.287"
-  },
   "ai@5.0.288": {
    "body": "### Patch Changes\n\n- Updated dependencies [2041794]\n- Updated dependencies [c31e0a2]\n  - @ai-sdk/gateway@2.0.179\n  - @ai-sdk/provider-utils@3.0.46",
    "date": "2026-11-10T17:39:51Z",
@@ -185,7 +177,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.171"
   }
  },
- "fetched": "2026-11-16T06:00:27Z",
+ "fetched": "2026-11-17T06:00:32Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- 3c09e00: Prevent in-place schema validation or input refinement from changing approved tool arguments during approval replay.\n- f43ee39: fix(workflow): log the default step limit warning when `WorkflowAgent.generate()` stops at the default limit.\n- 7ce7ffc: fix(workflow): log provider warnings in `WorkflowAgent`\n\n  `WorkflowAgent.generate()` and `WorkflowAgent.stream()` now log the warnings of every model call through the AI SDK warning logger, like `ToolLoopAgent`. The `AI_SDK_LOG_WARNINGS` global controls the output.\n\n- f6809e3: fix(workflow): align the `prepareStep` results of `WorkflowAgent` with `ToolLoopAgent`. Returned `instructions` (or the deprecated `system`) replace the instructions of the step and carry forward to later steps, returned `providerOptions` are merged with the agent options, and returned `headers` are merged over the headers of the call.\n- 2559173: feat(workflow): support `toolApproval` in `WorkflowAgent`\n\n  `WorkflowAgent` accepts a `toolApproval` configuration in the constructor and per `generate()` or `stream()` call. The configuration takes precedence over a tool's `needsApproval` setting, and its functions run in workflow context, outside of the durable model steps. Calls that the configuration approves run in the same step, and calls that it denies receive an `execution-denied` tool result without pausing the workflow.\n\n- f1de9cb: feat(workflow): support the `timeout` object in `WorkflowAgent`\n\n  `generate()` and `stream()` accept `timeout: { totalMs, stepMs, firstChunkMs, chunkMs }` in addition to a number. `stepMs` limits each model call. In `stream()`, `firstChunkMs` and `chunkMs` limit the wait for model output. Invalid timeout values are rejected with an `InvalidArgumentError`. A timeout now also ends a model step when the provider stream ignores the abort signal.\n\n- Updated dependencies [9baa2d0]\n  - @ai-sdk/gateway@4.0.146",

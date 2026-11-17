@@ -1,6 +1,40 @@
 {
- "fetched": "2026-11-16T06:01:13Z",
+ "by_tag": {
+  "6.13.13": null,
+  "7.8.14": null,
+  "mongoose-6.13.13": null,
+  "mongoose-7.8.14": null,
+  "mongoose-v6.13.13": null,
+  "mongoose-v7.8.14": null,
+  "mongoose@6.13.13": null,
+  "mongoose@7.8.14": null,
+  "mongoose@v6.13.13": null,
+  "mongoose@v7.8.14": null,
+  "rel_6_13_13": null,
+  "rel_7_8_14": null,
+  "rust-v6.13.13": null,
+  "rust-v7.8.14": null,
+  "v6.13.13": null,
+  "v7.8.14": null
+ },
+ "fetched": "2026-11-17T06:01:14Z",
  "releases": [
+  {
+   "body": "9.12.2 / 2026-11-16\r\n===================\r\n * fix(query): make sanitizeFilter catch any fields that start with $ in top-level filter to avoid bypass using $_internalSchemaXor and other MongoDB internal expressions\r\n * fix(query): hardening for sanitizeProjection\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * fix(cursor): propagate error passed to destroy() without re-emitting if error already emitted #16686 #16610 #16609 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(query): throw cast errors and respect strict option in replaceOne() #16629 #16628 [OmBhandwaldar](https://github.com/OmBhandwaldar)\r\n * fix(castArrayFilters): cast $and/$or/$nor wherever they appear in an array filter #16638 #16637 [mtechcave1](https://github.com/mtechcave1)\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): reset document state before retrying after a transient commit error #16640 #16639 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * docs: add EOL date for Mongoose 7 #16719\r\n * docs(mongoose): document missing options for set() #16703 [ragib-mrb](https://github.com/ragib-mrb)",
+   "date": "2026-11-16T19:56:25Z",
+   "name": "9.12.2",
+   "prerelease": false,
+   "tag": "9.12.2",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/9.12.2"
+  },
+  {
+   "body": "8.24.10 / 2026-11-16\r\n====================\r\n * fix(query): make sanitizeFilter catch any fields that start with $ in top-level filter to avoid bypass using $_internalSchemaXor and other MongoDB internal expressions\r\n * fix(query): hardening for sanitizeProjection",
+   "date": "2026-11-16T20:11:14Z",
+   "name": "8.24.10",
+   "prerelease": false,
+   "tag": "8.24.10",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/8.24.10"
+  },
   {
    "body": "8.24.9 / 2026-11-12\r\n===================\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): don't disable autoIndex/autoCreate for a primary ReadPreference instance [mrityunjay-pandey](https://github.com/mrityunjay-pandey)",
    "date": "2026-11-12T17:31:47Z",
@@ -384,22 +418,6 @@
    "prerelease": false,
    "tag": "9.3.3",
    "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.3"
-  },
-  {
-   "body": "9.3.2 / 2026-03-23\n==================\n * fix(mongoose): throw error when trying to set null or undefined as options #16130 #16140\n * fix(cast): include array value in query filter error message #16127 [White-Devil2839](https://github.com/White-Devil2839)\n * fix(cast): replace assert.ok with descriptive Error in castNumber #16110 [mrsandy1965](https://github.com/mrsandy1965)\n * fix(connection): standardize throw new Error to MongooseError #16142 [techcodie](https://github.com/techcodie)\n * fix(query): use MongooseError instead of Error #16132 [ace-tk](https://github.com/ace-tk)\n * docs: add production environment example for autoIndex #16151 [mrsandy1965](https://github.com/mrsandy1965)\n * docs: upgrade self-referencing http:// links to https:// #16150 [mrsandy1965](https://github.com/mrsandy1965)\n * docs: fix incorrect Double cast comment and upgrade insecure plugin link #16148 [mrsandy1965](https://github.com/mrsandy1965)\n * docs: fix redundant text and http link in installation section #16146 [Puxhkar](https://github.com/Puxhkar)\n * docs: fix typo 'mutiple' → 'multiple' in queries.md #16147 [mrsandy1965](https://github.com/mrsandy1965)\n * docs: use HTTPS for external links in docs navigation #16133 [ace-tk](https://github.com/ace-tk)\n * docs: use HTTPS for external links in CONTRIBUTING and homepage #16134 [ace-tk](https://github.com/ace-tk)\n * docs(populate): replace removed mapReduce() API link #16135 [ace-tk](https://github.com/ace-tk)\n * docs(models): replace removed count() and mapReduce() references #16123 [White-Devil2839](https://github.com/White-Devil2839)\n * docs: fix broken count() and update() links in queries docs [White-Devil2839](https://github.com/White-Devil2839)\n * docs: fix broken update() link in validation docs #16121 [White-Devil2839](https://github.com/White-Devil2839)\n * docs: update GitHub link to use https #16120 [White-Devil2839](https://github.com/White-Devil2839)\n * docs(documents): fix incorrect variable name in nullish coalescing example #16119 [White-Devil2839](https://github.com/White-Devil2839)\n * docs: fix missing quotes in populate path examples #16118 [White-Devil2839](https://github.com/White-Devil2839)\n * docs: fix missing comma in populate dynamic ref example #16117 [White-Devil2839](https://github.com/White-Devil2839)\n * docs: clarify that transaction rollback marks fields as modified to allow re-saving #16112 [ramanverse](https://github.com/ramanverse)",
-   "date": "2026-03-23T17:54:23Z",
-   "name": "9.3.2",
-   "prerelease": false,
-   "tag": "9.3.2",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.2"
-  },
-  {
-   "body": "9.3.1 / 2026-03-17\n==================\n * fix(model): handle passing string projection to `hydrate()` #16082\n * fix(model): fix `bulkWrite()` sorting #16079 #16080 [pnkov](https://github.com/pnkov)\n * fix(QueryCursor): fix wrong `this` context in QueryCursor close callback #16104 [techcodie](https://github.com/techcodie)\n * types(schema): infer schema options correctly for model context in statics #16046 #16102\n * types(schema): fix type definition for `HydratedDocType` in `autoTypedVirtuals` #16083\n * types(plugin): allow passing model with custom TStatics into `Schema.prototype.plugin()` #16090 #16086\n * chore: use `MongooseError` instead of `Error` in schema, model, and aggregate #15995 [mahmoodhamdi](https://github.com/mahmoodhamdi)\n * docs(projection): clean up jsdoc for `parseProjection()`",
-   "date": "2026-03-17T15:59:13Z",
-   "name": "9.3.1",
-   "prerelease": false,
-   "tag": "9.3.1",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.1"
   }
  ],
  "repo": "Automattic/mongoose"

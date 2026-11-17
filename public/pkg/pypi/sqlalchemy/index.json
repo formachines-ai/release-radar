@@ -1,23 +1,82 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.1.8",
+ "latest": "2.1.9",
  "latest_stable": {
-  "date": "2026-11-04T01:18:31Z",
-  "version": "2.1.8"
+  "date": "2026-11-16T21:01:00Z",
+  "version": "2.1.9"
  },
- "metadata_fetched": "2026-11-16T06:00:26Z",
+ "metadata_fetched": "2026-11-17T06:00:24Z",
  "package": "sqlalchemy",
  "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/sqlalchemy/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-16T21:01:00Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/sqlalchemy/2.1.9",
+   "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e661194a9b/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_1_9",
+   "package": "sqlalchemy",
+   "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
+   "prerelease": false,
+   "prev_version": "2.1.8",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "the `Column` only, and are no longer used as the Python-side"
+    },
+    {
+     "match": "no longer",
+     "quote": "2.1 series, where `_sql.Select.params()` no longer copies the"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.9",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "date": "2026-11-16T20:40:44Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/sqlalchemy/2.0.58",
+   "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1271af0dcb/",
+   "notes_url": "https://github.com/sqlalchemy/sqlalchemy/releases/tag/rel_2_0_58",
+   "package": "sqlalchemy",
+   "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
+   "prerelease": false,
+   "prev_version": "2.0.57",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "2.1 series, where `_sql.Select.params()` no longer copies the"
+    }
+   ],
+   "variant_of": null,
+   "version": "2.0.58",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/sqlalchemy/sqlalchemy",
- "stable_in_window": 0,
+ "stable_in_window": 2,
  "summary": "Database Abstraction Library"
 }

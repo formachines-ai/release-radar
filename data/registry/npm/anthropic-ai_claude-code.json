@@ -1,19 +1,24 @@
 {
  "changelog": null,
  "dist_tags": {
-  "latest": "2.1.325",
-  "next": "2.1.325",
+  "latest": "2.1.326",
+  "next": "2.1.326",
   "stable": "2.1.311"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-16T06:00:32Z",
+ "fetched": "2026-11-17T06:00:36Z",
  "homepage": "https://github.com/anthropics/claude-code",
- "latest": "2.1.325",
+ "latest": "2.1.326",
  "name": "@anthropic-ai/claude-code",
  "page": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
  "repo": "anthropics/claude-code",
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you.",
  "versions": [
+  {
+   "date": "2026-11-16T18:43:39Z",
+   "deprecated": false,
+   "version": "2.1.326"
+  },
   {
    "date": "2026-11-13T20:07:25Z",
    "deprecated": false,
@@ -398,11 +403,6 @@
    "date": "2026-08-19T18:45:14Z",
    "deprecated": false,
    "version": "2.1.236"
-  },
-  {
-   "date": "2026-08-18T18:24:10Z",
-   "deprecated": false,
-   "version": "2.1.235"
   }
  ]
 }

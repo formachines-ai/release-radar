@@ -1,14 +1,24 @@
 {
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-16T06:00:26Z",
+ "fetched": "2026-11-17T06:00:24Z",
  "homepage": "https://www.sqlalchemy.org",
- "latest": "2.1.8",
+ "latest": "2.1.9",
  "name": "SQLAlchemy",
  "page": "https://pypi.org/project/sqlalchemy/",
  "repo": "sqlalchemy/sqlalchemy",
  "summary": "Database Abstraction Library",
  "versions": [
+  {
+   "date": "2026-11-16T21:01:00Z",
+   "version": "2.1.9",
+   "yanked": false
+  },
+  {
+   "date": "2026-11-16T20:40:44Z",
+   "version": "2.0.58",
+   "yanked": false
+  },
   {
    "date": "2026-11-04T01:18:31Z",
    "version": "2.1.8",
@@ -197,16 +207,6 @@
   {
    "date": "2024-09-05T15:54:10Z",
    "version": "1.4.54",
-   "yanked": false
-  },
-  {
-   "date": "2024-09-04T15:19:39Z",
-   "version": "2.0.34",
-   "yanked": false
-  },
-  {
-   "date": "2024-09-03T17:22:13Z",
-   "version": "2.0.33",
    "yanked": false
   }
  ]

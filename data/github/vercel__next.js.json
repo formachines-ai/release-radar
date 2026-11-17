@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-16T06:01:15Z",
+ "fetched": "2026-11-17T06:01:20Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Lint against new `as any` casts and require a reason to disable it: #101255\n- [no-unsafe-inline] Stop inlining the Turbopack chunk group bootstrap: #97574\n- Omit required-server-files from the Node.js proxy adapter output: #101865\n- Fix duplicate useServerInsertedHTML output in prerendered HTML with cacheComponents: #101147\n- Add experimental native Go proxy support: #101464\n- Point to environment variables in conflicting bundler error: #101826\n- Tolerate dangling symlinks when detecting root convention files: #101827\n\n### Misc Changes\n\n- Fix lint and types CI on uncached @turbopack/nft native builds: #101896\n- turbo-persistence: eagerly open SST files in the background: #101768\n- Fix Rust build regression in bootstrap metadata embedding: #101888\n- test: deflake native-route-go cold Go build tests: #101879\n- turbo-tasks-backend: remove redundant backend field from ExecuteContext: #101849\n- Escalate React internals coupling to the React maintainers: #101878\n- Coalesce Turbopack server component HMR updates reliably: #101877\n- Turbopack: don't read files excluded from output file traces: #101829\n- turbo-tasks: support Vec in keyed cells: #101806\n- docs: align agent PR description guidance with PR template: #101866\n- turbo-tasks-backend: remove keyed dependency edges per task in batches: #101734\n- docs: link cache APIs to distributed tag coordination: #101843\n- docs: clarify view transitions during history navigation: #101863\n- [test] Stabilize cached navigations consistency checks: #101861\n- Turbopack: respect adjustFontFallback: false for next/font/google: #101397\n- Turbopack: skip dangling symlinks when tracing dynamic paths: #101828\n\n### Credits \n\nHuge thanks to @lukesandberg, @wbinnssmith, @sokra, @jamiboym, @eps1lon, @acdlite, @mischnic, @lubieowoce, @timneutkens, @aurorascharff, and @unstubbable for helping!",
+   "date": "2026-11-16T23:44:19Z",
+   "name": "v16.5.0-canary.53",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.53",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.53"
+  },
   {
    "body": "### Core Changes\n\n- Remove stale .next/dev/types in next typegen and next build: #100612\n- Simplify the code gen that adds deployment ids conditionally: #101785\n\n### Misc Changes\n\n- turbo-tasks-backend: store collectibles dependents in an EdgeSet: #101766\n- turbo-persistence: cover block lengths in CRCs: #100322\n- turbo-persistence: keep used keys across intermediate merges: #101796\n\n### Credits \n\nHuge thanks to @lukesandberg and @sokra for helping!",
    "date": "2026-11-15T23:49:25Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v15.5.28",
    "url": "https://github.com/vercel/next.js/releases/tag/v15.5.28"
-  },
-  {
-   "body": "### Core Changes\n\n- docs: make agent feedback command work in npm workspaces: #100135\n- test: install local Next.js sibling packages in CNA tests: #100062\n- Don't blame the Pages Router for next/headers imported through a Client Component: #100087\n- Resolve relative imports in `next.config.ts` from the config directory: #99743\n\n### Misc Changes\n\n- Update evals for stabilized navigation APIs: #100145\n- Turbopack: improve segment config parsing: #98641\n- docs(cache-handlers): explain updateTags durations, fix Redis EX for Infinity: #96517\n- Turbopack: Use the imagesize crate to correctly size AVIF images (still no optimization or encoding): #99966\n- Fix Turbopack lazy dynamic-import chunk-list collisions: #99940\n- Turbopack: de-flake the active Tokio worker count test: #100120\n- Turbopack: preload _app's next/dynamic chunks with _app's own availability: #100091\n- test: deflake app-basepath external redirect test: #100096\n- turbopack-ecmascript-runtime: simplify the shared HMR module instantiation: #99671\n- chore: Make Rust warnings non-fatal unless on CI: #99939\n- Fix rustdoc warnings: #100036\n- Durable use cache: ignore binding usage when traversing: #100128\n- chore: Fix agents instruction about rebuilding test changes: #100116\n- chore: Prevent concurrent pack-for-isolated-tests: #100118\n- Split filesystem-cache e2e test into multiple suites: #100111\n- docs: update links to demos moved to the nextjs org: #100119\n- test: allow custom webpack deployments to complete: #100054\n- Turbopack: fix edge route handlers when cacheHandlers is configured: #100046\n- fix(next-code-frame): snap visible window to char boundaries: #92646\n\n### Credits \n\nHuge thanks to @aurorascharff, @mischnic, @leejpsd, @bgw, @jimmyhmiller, @devjiwonchoi, @sokra, @lukesandberg, @icyJoseph, @mugi-uno, and @dxdc for helping!",
-   "date": "2026-10-13T23:50:28Z",
-   "name": "v16.5.0-canary.10",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.10",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.10"
   }
  ],
  "repo": "vercel/next.js"

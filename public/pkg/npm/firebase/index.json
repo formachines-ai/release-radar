@@ -1,5 +1,5 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -36,17 +36,92 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "13.3.0",
+ "latest": "13.4.0",
  "latest_stable": {
-  "date": "2026-11-11T20:34:37Z",
-  "version": "13.3.0"
+  "date": "2026-11-16T21:13:19Z",
+  "version": "13.4.0"
  },
- "metadata_fetched": "2026-11-16T06:01:11Z",
+ "metadata_fetched": "2026-11-17T06:01:12Z",
  "package": "firebase",
  "page": "https://releases.formachines.ai/pkg/npm/firebase/",
- "prereleases_in_window": 3,
+ "prereleases_in_window": 5,
  "registry": "https://www.npmjs.com/package/firebase",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-16T22:46:58Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": false,
+   "id": "npm/firebase/13.2.0-eap-sql.b903ef716",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-17",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "13.2.0-eap-sql.b903ef716",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "minor",
+   "date": "2026-11-16T21:13:19Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": true,
+   "id": "npm/firebase/13.4.0",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e29d178ee8/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases/tag/firebase%4013.4.0",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": false,
+   "prev_version": "13.3.0",
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "…instrumentation` 0.11.0, `@opentelemetry/instrumentation-document-load` 0.70.0, and `@opentelemetry/semantic-conventions` 1.45.0), removing deprecated `@opentelemetry/api-logs`, `@opentelemetry/sdk-trace-base`, and `@opentelemetry/sdk-trace-web` dependencies, and updated public a…"
+    },
+    {
+     "match": "deprecated",
+     "quote": "…instrumentation` 0.11.0, `@opentelemetry/instrumentation-document-load` 0.70.0, and `@opentelemetry/semantic-conventions` 1.45.0), removing deprecated `@opentelemetry/api-logs`, `@opentelemetry/sdk-trace-base`, and `@opentelemetry/sdk-trace-web` dependencies, and updated public a…"
+    }
+   ],
+   "variant_of": null,
+   "version": "13.4.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "prerelease",
+   "date": "2026-11-16T19:11:57Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": false,
+   "id": "npm/firebase/13.4.0-20261116185243",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-17",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "13.4.0-20261116185243",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-11T23:09:34Z",
@@ -56,7 +131,7 @@
    "id": "npm/firebase/13.2.0-eap-sql.a9a137e67",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-16",
+   "no_notes_checked": "2026-11-17",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -113,7 +188,7 @@
    "id": "npm/firebase/13.3.0-20261111165442",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-16",
+   "no_notes_checked": "2026-11-17",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -135,7 +210,7 @@
    "id": "npm/firebase/13.3.0-20261110194028",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-16",
+   "no_notes_checked": "2026-11-17",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -150,6 +225,6 @@
   }
  ],
  "repository": "https://github.com/firebase/firebase-js-sdk",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Firebase JavaScript library for web and Node.js"
 }

@@ -2,23 +2,43 @@
  "changelog": null,
  "dist_tags": {
   "5x": "5.13.23",
-  "6x": "6.13.12",
-  "7x": "7.8.13",
-  "8x": "8.24.9",
-  "latest": "9.12.1",
+  "6x": "6.13.13",
+  "7x": "7.8.14",
+  "8x": "8.24.10",
+  "latest": "9.12.2",
   "legacy": "6.12.2",
   "next": "9.0.0-rc1",
   "unstable": "3.9.7"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-16T06:01:13Z",
+ "fetched": "2026-11-17T06:01:14Z",
  "homepage": "https://mongoosejs.com",
- "latest": "9.12.1",
+ "latest": "9.12.2",
  "name": "mongoose",
  "page": "https://www.npmjs.com/package/mongoose",
  "repo": "Automattic/mongoose",
  "summary": "Mongoose MongoDB ODM",
  "versions": [
+  {
+   "date": "2026-11-16T20:36:15Z",
+   "deprecated": false,
+   "version": "6.13.13"
+  },
+  {
+   "date": "2026-11-16T20:24:44Z",
+   "deprecated": false,
+   "version": "7.8.14"
+  },
+  {
+   "date": "2026-11-16T20:14:24Z",
+   "deprecated": false,
+   "version": "8.24.10"
+  },
+  {
+   "date": "2026-11-16T20:01:09Z",
+   "deprecated": false,
+   "version": "9.12.2"
+  },
   {
    "date": "2026-11-12T17:35:43Z",
    "deprecated": false,

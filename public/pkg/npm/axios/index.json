@@ -1,22 +1,9 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.21.1",
- "latest_stable": {
-  "date": "2026-11-09T16:17:55Z",
-  "version": "1.21.1"
- },
- "metadata_fetched": "2026-11-16T06:01:05Z",
- "package": "axios",
- "page": "https://releases.formachines.ai/pkg/npm/axios/",
- "prereleases_in_window": 0,
- "registry": "https://www.npmjs.com/package/axios",
- "releases": [
+ "history": [
   {
    "bump": "patch",
    "date": "2026-11-09T16:17:55Z",
@@ -45,7 +32,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "1.21.1",
+ "latest_stable": {
+  "date": "2026-11-09T16:17:55Z",
+  "version": "1.21.1"
+ },
+ "metadata_fetched": "2026-11-17T06:01:07Z",
+ "package": "axios",
+ "page": "https://releases.formachines.ai/pkg/npm/axios/",
+ "prereleases_in_window": 0,
+ "registry": "https://www.npmjs.com/package/axios",
+ "releases": [],
  "repository": "https://github.com/axios/axios",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Promise based HTTP client for the browser and node.js"
 }

@@ -7,7 +7,7 @@
   "public-preview": "23.2.0-beta.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-16T06:01:21Z",
+ "fetched": "2026-11-17T06:01:26Z",
  "homepage": "https://github.com/stripe/stripe-node",
  "latest": "23.1.0",
  "name": "stripe",

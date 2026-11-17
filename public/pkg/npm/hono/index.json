@@ -1,5 +1,5 @@
 {
- "built": "2026-11-16T06:00:02Z",
+ "built": "2026-11-17T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -29,17 +29,39 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "4.13.18",
+ "latest": "4.13.19",
  "latest_stable": {
-  "date": "2026-11-11T08:54:02Z",
-  "version": "4.13.18"
+  "date": "2026-11-16T12:57:55Z",
+  "version": "4.13.19"
  },
- "metadata_fetched": "2026-11-16T06:01:12Z",
+ "metadata_fetched": "2026-11-17T06:01:13Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/hono",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-16T12:57:55Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/hono/4.13.19",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6dd601be7e/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.19",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "prev_version": "4.13.18",
+   "quotes": [],
+   "variant_of": null,
+   "version": "4.13.19",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-11T08:54:02Z",
@@ -69,6 +91,6 @@
   }
  ],
  "repository": "https://github.com/honojs/hono",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Web framework built on Web Standards"
 }

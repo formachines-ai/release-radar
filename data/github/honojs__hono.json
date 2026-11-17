@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-16T06:01:13Z",
+ "fetched": "2026-11-17T06:01:14Z",
  "releases": [
+  {
+   "body": "## What's Changed\r\n\r\n* fix(jsx): render an async component that returns null, a boolean, or a  number in https://github.com/honojs/hono/pull/5594\r\n* fix(jsx/dom): align useActionState with React 19 in https://github.com/honojs/hono/pull/5635\r\n* fix(jsx/dom): reset a form's pending state when its action rejects in https://github.com/honojs/hono/pull/5636\r\n* fix(jsx/dom): keep an ErrorBoundary in sync when its parent re-renders in https://github.com/honojs/hono/pull/5638\r\n* fix(jsx/dom): keep keyed components in order when they update with a reorder in https://github.com/honojs/hono/pull/5637\r\n* fix(bun): pass errors thrown in WebSocket handlers to onError in https://github.com/honojs/hono/pull/5620\r\n* fix(proxy): drop Transfer-Encoding and Keep-Alive from the headers option in https://github.com/honojs/hono/pull/5640\r\n* fix(method-override): drop the body when overriding to GET or HEAD in https://github.com/honojs/hono/pull/5641\r\n* fix(jsx/dom): restore attributes and effects when Suspense children suspend again in https://github.com/honojs/hono/pull/5642\r\n* fix(combine): continue the chain when a Condition returns true in every() in https://github.com/honojs/hono/pull/5392\r\n* docs: fix JSDoc parameter types and missing annotations in middleware and helpers in https://github.com/honojs/hono/pull/5409\r\n* fix(jsx/dom): keep a falsy Suspense fallback in https://github.com/honojs/hono/pull/5644\r\n* fix(lambda-edge): omit body in a 204 result in https://github.com/honojs/hono/pull/5643\r\n* fix(utils/types): stop JSONParsed at a recursive JSON type in https://github.com/honojs/hono/pull/5645\r\n* feat(secure-headers): add an overwrite option in https://github.com/honojs/hono/pull/5634\r\n* feat(jwt): add a typ option to verify the token header in https://github.com/honojs/hono/pull/5639\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.18...v4.13.19",
+   "date": "2026-11-16T12:58:07Z",
+   "name": "v4.13.19",
+   "prerelease": false,
+   "tag": "v4.13.19",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.19"
+  },
   {
    "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### `validator()` skips validation for requests whose `Content-Type` parameters are formatted differently\r\n\r\nAffects: `validator('json')` and `validator('form')` in `hono/validator`. A `Content-Type` with whitespace before `;`, a trailing `;`, or an unusual parameter name was not recognized, so the validator saw an empty object while the handler could read all fields. This completes the fix for GHSA-4h7h-rv7c-7m2v. The validator now decides by the media type alone, as `c.req.parseBody()` does. GHSA-92p4-j3wq-jmqx\r\n\r\n### `bodyLimit()` keeps every transfer chunk of a request body in memory\r\n\r\nAffects: `bodyLimit()` in `hono/body-limit`. A body sent in very small transfer chunks was retained as one object per chunk, so a request within the configured limit could exhaust memory. The body is now buffered in one array bounded by `maxSize`. GHSA-39q9-qp46-w8xg\r\n\r\n### `mount()` and `app.mount()` forward a wrong path when a custom `getPath` adds a prefix\r\n\r\nAffects: `mount()` in `hono/mount` and `app.mount()` on 4.13.16 and 4.13.17. With a `getPath` that prepends a prefix such as the host name, one segment too many was removed from the forwarded path, so middleware scoped inside the mount prefix could be skipped. The prefix is removed from the routed path again. Paths that would change meaning when forwarded now get 400, and an optional regular expression parameter in a mount path throws. GHSA-h25j-2p75-qj33\r\n\r\n### `serveStatic()` serves a path that was decoded twice when `allowPercentInPath` is enabled\r\n\r\nAffects: `serveStatic()` in `hono/serve-static` and the runtime adapters, only with `allowPercentInPath: true`. A malformed percent escape in the request path was decoded a second time, so a path that middleware registered on the encoded form did not see could still reach a static file. The file path must now be the same as the routed path, and otherwise the response is 404. GHSA-74fm-fwc7-3fwp\r\n\r\n---\r\n\r\nUsers who rely on `validator()`, `bodyLimit()`, `mount()` with a custom `getPath`, or `serveStatic()` with `allowPercentInPath` are strongly encouraged to upgrade to this version.\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.17...v4.13.18\r\n\r\n",
    "date": "2026-11-11T09:01:52Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v4.12.17",
    "url": "https://github.com/honojs/hono/releases/tag/v4.12.17"
-  },
-  {
-   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Unvalidated JSX Tag Names in hono/jsx May Allow HTML Injection\r\n\r\nAffects: hono/jsx. Fixes missing validation of JSX tag names when using `jsx()` or `createElement()`, which could allow HTML injection if untrusted input is used as the tag name. GHSA-69xw-7hcm-h432\r\n\r\n### bodyLimit() can be bypassed for chunked / unknown-length requests\r\n\r\nAffects: Body Limit Middleware. Fixes late enforcement for request bodies without a reliable Content-Length (e.g. chunked requests), where oversized requests could reach handlers and return successful responses before being rejected. GHSA-9vqf-7f2p-gf9v",
-   "date": "2026-04-30T09:16:16Z",
-   "name": "v4.12.16",
-   "prerelease": false,
-   "tag": "v4.12.16",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.16"
   }
  ],
  "repo": "honojs/hono"
