@@ -71,6 +71,7 @@ public/                     the site — everything below is generated, do not e
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt
   llms.txt · robots.txt · sitemap.xml · build.json
+                            (T-0141: llms.txt section `For dependency-update review agents`: index.json URL pattern, example, keys to read, /mcp/, limits)
                             (T-0121: sitemap <lastmod> of /pkg/ URLs = date of the package's newest release record shown (7-day list or history), / = build date, /legal/, /brand/ and /mcp/ = fixed dates in build.py; T-0138: /mcp/ listed)
   mcp/ (index.html, release_radar_mcp.py, .py.txt, README.md; T-0106: stdlib MCP server, sources in mcp/, copied by build.py)
   ci-check.py              CI helper script, copied from static/ci-check.py (T-0074)
