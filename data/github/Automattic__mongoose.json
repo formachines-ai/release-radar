@@ -17,7 +17,7 @@
   "v6.13.13": null,
   "v7.8.14": null
  },
- "fetched": "2026-11-17T06:01:14Z",
+ "fetched": "2026-11-18T06:01:20Z",
  "releases": [
   {
    "body": "9.12.2 / 2026-11-16\r\n===================\r\n * fix(query): make sanitizeFilter catch any fields that start with $ in top-level filter to avoid bypass using $_internalSchemaXor and other MongoDB internal expressions\r\n * fix(query): hardening for sanitizeProjection\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * fix(cursor): propagate error passed to destroy() without re-emitting if error already emitted #16686 #16610 #16609 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(query): throw cast errors and respect strict option in replaceOne() #16629 #16628 [OmBhandwaldar](https://github.com/OmBhandwaldar)\r\n * fix(castArrayFilters): cast $and/$or/$nor wherever they appear in an array filter #16638 #16637 [mtechcave1](https://github.com/mtechcave1)\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): reset document state before retrying after a transient commit error #16640 #16639 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * docs: add EOL date for Mongoose 7 #16719\r\n * docs(mongoose): document missing options for set() #16703 [ragib-mrb](https://github.com/ragib-mrb)",

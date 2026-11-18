@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T08:11:52Z",
+ "built": "2026-11-18T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -95,17 +95,61 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "7.57.0",
+ "latest": "7.59.0",
  "latest_stable": {
-  "date": "2026-11-13T21:27:35Z",
-  "version": "7.57.0"
+  "date": "2026-11-17T22:54:03Z",
+  "version": "7.59.0"
  },
- "metadata_fetched": "2026-11-17T06:01:03Z",
+ "metadata_fetched": "2026-11-18T06:01:08Z",
  "package": "openai",
  "page": "https://releases.formachines.ai/pkg/npm/openai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/openai",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-17T22:54:03Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.59.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e79ea23079/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.59.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "prev_version": "7.58.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.59.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "minor",
+   "date": "2026-11-17T18:31:10Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.58.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0b1d0a8bc4/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.58.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "prev_version": "7.57.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.58.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-13T21:27:35Z",
@@ -152,6 +196,6 @@
   }
  ],
  "repository": "https://github.com/openai/openai-node",
- "stable_in_window": 2,
+ "stable_in_window": 4,
  "summary": "The official TypeScript library for the OpenAI API"
 }

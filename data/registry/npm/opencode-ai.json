@@ -4,8 +4,8 @@
   "beta": "0.0.0-beta-202608110357",
   "brendan-cli-codesign": "0.0.0-brendan-cli-codesign-202603250532",
   "ci": "0.0.0-ci-202601291809",
-  "dev": "0.0.0-dev-202611092046",
-  "latest": "1.19.5",
+  "dev": "0.0.0-dev-202611170722",
+  "latest": "1.19.6",
   "latest-0": "1.0.142",
   "latest-1": "1.1.4",
   "next": "0.0.0-next-202606270058",
@@ -42,14 +42,29 @@
   "tui-v2": "0.0.0-tui-v2-202606261840"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-17T06:01:02Z",
+ "fetched": "2026-11-18T06:01:08Z",
  "homepage": "",
- "latest": "1.19.5",
+ "latest": "1.19.6",
  "name": "opencode-ai",
  "page": "https://www.npmjs.com/package/opencode-ai",
  "repo": null,
  "summary": "",
  "versions": [
+  {
+   "date": "2026-11-17T07:46:23Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202611170722"
+  },
+  {
+   "date": "2026-11-17T07:22:20Z",
+   "deprecated": false,
+   "version": "1.19.6"
+  },
+  {
+   "date": "2026-11-17T06:13:07Z",
+   "deprecated": false,
+   "version": "0.0.0-dev-202611170435"
+  },
   {
    "date": "2026-11-09T21:45:22Z",
    "deprecated": false,
@@ -1829,61 +1844,6 @@
    "date": "2026-08-20T06:04:56Z",
    "deprecated": false,
    "version": "0.0.0-dev-202608200548"
-  },
-  {
-   "date": "2026-08-20T05:52:37Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608200529"
-  },
-  {
-   "date": "2026-08-20T05:28:55Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608200513"
-  },
-  {
-   "date": "2026-08-20T04:59:30Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608200443"
-  },
-  {
-   "date": "2026-08-20T03:20:42Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608200302"
-  },
-  {
-   "date": "2026-08-20T00:59:26Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608200041"
-  },
-  {
-   "date": "2026-08-19T19:22:03Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608191904"
-  },
-  {
-   "date": "2026-08-19T17:44:36Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608191727"
-  },
-  {
-   "date": "2026-08-19T17:27:59Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608191710"
-  },
-  {
-   "date": "2026-08-19T13:56:20Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608191337"
-  },
-  {
-   "date": "2026-08-19T07:09:36Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608190652"
-  },
-  {
-   "date": "2026-08-19T06:53:53Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608190636"
   }
  ]
 }

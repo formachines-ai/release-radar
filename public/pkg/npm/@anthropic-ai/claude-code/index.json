@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T08:11:52Z",
+ "built": "2026-11-18T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -105,17 +105,55 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.1.326",
+ "latest": "2.1.327",
  "latest_stable": {
-  "date": "2026-11-16T18:43:39Z",
-  "version": "2.1.326"
+  "date": "2026-11-17T20:33:19Z",
+  "version": "2.1.327"
  },
- "metadata_fetched": "2026-11-17T06:00:36Z",
+ "metadata_fetched": "2026-11-18T06:00:39Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/claude-code",
  "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-17T20:33:19Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.327",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1560056f3e/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.327",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.326",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Fixed a nested `claude` with its own token being refused by `forceLoginOrgUUID`: commands that don't get the session's token no longer get its `CLAUDE_CODE_OAUTH_SCOPES`; set it on any that need it",
+     "quote_incomplete": false
+    },
+    {
+     "match": "breaking",
+     "quote": "- Fixed cloud sessions breaking when a program left thousands of connections open to the session's network proxy",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "- Improved `/plugin`: the question before removing a marketplace now says that its plugins' settings and saved data are deleted, and a marketplace's page no longer shows another marketplace's error",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.327",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-16T18:43:39Z",
@@ -200,8 +238,8 @@
    "flagged": false,
    "id": "npm/@anthropic-ai/claude-code/2.1.324",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
+   "no_notes": true,
+   "no_notes_checked": "2026-11-18",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/478b45419c/",
    "notes_url": "https://github.com/anthropics/claude-code/releases",
@@ -254,6 +292,6 @@
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }

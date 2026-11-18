@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-17T06:00:03Z",
+ "fetched": "2026-11-18T06:00:05Z",
  "releases": [
+  {
+   "body": "Changes since langchain-openai==1.8.0\n\nrelease(openai): 1.8.1 (#41924)\nfix(openai): recover function call args from done events (#41923)",
+   "date": "2026-11-17T20:39:43Z",
+   "name": "langchain-openai==1.8.1",
+   "prerelease": false,
+   "tag": "langchain-openai==1.8.1",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.1"
+  },
+  {
+   "body": "Changes since langchain-core==1.8.1\n\nfeat(core): add `headers` to `langsmith_gateway` and ignore proxies (#41900)\ndocs(core): clarify when to override `aparse_result` (#41894)\nfix(core): avoid warning-filter races during schema creation (#41882)",
+   "date": "2026-11-17T22:42:53Z",
+   "name": "langchain-core==1.8.2",
+   "prerelease": false,
+   "tag": "langchain-core==1.8.2",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.2"
+  },
   {
    "body": "Changes since langchain-xai==1.3.0\n\nfix(groq,mistralai,xai): bump deps (#41884)\nrelease(xai): 1.4.0 (#41857)\nfeat(xai): route `ChatXAI` through LangSmith gateway (#41838)\nfeat(partners): Remove EOL'd Python 3.10 from partner packages (#41268)\nchore(model-profiles): refresh model profile data (#41651)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(deps): bump aiohttp from 3.14.4 to 3.14.5 in /libs/partners/xai (#41374)\nchore(deps): bump certifi from 2025.8.3 to 2026.10.19 in /libs/partners/xai (#41371)\nchore(deps): bump aiohttp from 3.14.3 to 3.14.4 in /libs/partners/xai (#41361)\nchore(model-profiles): refresh model profile data (#41325)\nfix: fix dependencies in some partner packages (#41266)\nchore(model-profiles): refresh model profile data (#41017)\nchore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/partners/xai (#40942)\nchore(model-profiles): refresh model profile data (#40747)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/partners/xai (#40628)\nchore(model-profiles): refresh model profile data (#40600)\nchore(model-profiles): refresh model profile data (#40217)\ndocs(xai): point structured outputs guide link to official xAI docs (#40026)\nfix(xai): recompute total_tokens after adding reasoning tokens to output (#39667)\nchore(model-profiles): refresh model profile data (#39692)\nchore(model-profiles): refresh model profile data (#39625)\nchore: bump aiohttp from 3.14.1 to 3.14.3 in /libs/partners/xai (#39241)\nchore(model-profiles): refresh model profile data (#39166)\nchore(model-profiles): refresh model profile data (#39050)",
    "date": "2026-11-15T21:35:20Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "langchain-core==1.6.7",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.7"
-  },
-  {
-   "body": "Changes since langchain-text-splitters==1.1.2\n\nrelease(text-splitters): 1.1.3 (#41001)\nchore(deps): bump the minor-and-patch group across 3 directories with 4 updates (#40969)\nchore(deps): bump tornado from 6.5.9 to 6.5.10 in /libs/text-splitters (#40971)\nchore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/text-splitters (#40938)\nchore(deps): bump tornado from 6.5.8 to 6.5.9 in /libs/text-splitters (#40940)\nchore(deps): bump anyio from 4.14.2 to 4.15.1 in /libs/text-splitters (#40645)\nchore(deps): bump anyio from 4.11.0 to 4.14.2 in /libs/text-splitters (#40624)\nchore(deps): bump soupsieve from 2.8.4 to 2.9 in /libs/text-splitters (#40579)\nchore(deps): bump the minor-and-patch group across 3 directories with 5 updates (#40566)\nchore(deps): bump types-requests from 2.33.0.20260712 to 2.33.0.20260906 in /libs/text-splitters (#40568)\nchore(deps): update lxml requirement from <7.0,>=6.1.2 to >=6.1.3,<7.0 in /libs/text-splitters (#40569)\nchore(deps): bump mistune from 3.3.0 to 3.3.3 in /libs/text-splitters (#40148)\nchore(deps): bump the minor-and-patch group across 3 directories with 5 updates (#40085)\nchore(deps): update lxml requirement from <7.0,>=6.1.0 to >=6.1.2,<7.0 in /libs/text-splitters (#40087)\nchore(deps): bump tornado from 6.5.7 to 6.5.8 in /libs/text-splitters (#40112)\nchore: bump the minor-and-patch group across 3 directories with 8 updates (#39863)\nchore: bump the major group across 2 directories with 2 updates (#39864)\nchore: bump types-requests from 2.33.0.20260518 to 2.33.0.20260712 in /libs/text-splitters (#39867)\nfix(text-splitters): raise TypeError for non-dict, non-convertible input to RecursiveJsonSplitter (#39238)\nchore: bump the minor-and-patch group across 3 directories with 7 updates (#39187)\nchore(infra): add missing LICENSE files to publishable packages (#39146)\nchore: bump jupyterlab from 4.5.9 to 4.5.10 in /libs/text-splitters (#39028)\nchore: bump setuptools from 80.9.0 to 83.0.0 in /libs/text-splitters (#39029)\nchore: bump torch from 2.12.1 to 2.13.0 in /libs/text-splitters (#38946)\nchore: bump soupsieve from 2.8 to 2.8.4 in /libs/text-splitters (#38748)\nchore: bump nltk from 3.9.4 to 3.10.0 in /libs/text-splitters (#38747)\nchore: bump mistune from 3.2.1 to 3.3.0 in /libs/text-splitters (#38826)\nchore(deps): refresh lockfiles (#38746)\nfix(text-splitters): restore lazy imports for heavy optional dependencies (#35469)\nfeat(text-splitters): replace `mypy` by `ty` for type checking (#38658)\nchore: bump the minor-and-patch group across 3 directories with 11 updates (#38587)\nchore: bump pytest from 9.1.0 to 9.1.1 in /libs/text-splitters (#38299)\nchore: bump jupyterlab from 4.5.7 to 4.5.9 in /libs/text-splitters (#38296)\nchore: bump langsmith from 0.8.5 to 0.8.18 in /libs/text-splitters (#38301)\nchore: bump tornado from 6.5.6 to 6.5.7 in /libs/text-splitters (#38175)\nchore: bump bleach from 6.2.0 to 6.4.0 in /libs/text-splitters (#38195)\nchore: bump torch from 2.9.1 to 2.12.1 in /libs/text-splitters (#38231)\nchore: bump pytest from 9.0.3 to 9.1.0 in /libs/text-splitters (#38232)\nchore: bump jupyter-server from 2.18.0 to 2.20.0 in /libs/text-splitters (#38250)\ndocs: refresh `README` installation and resources (#38119)\nchore: bump tornado from 6.5.5 to 6.5.6 in /libs/text-splitters (#38112)\nrelease(core): 1.4.7 (#38111)\nrelease(core): 1.4.6 (#38061)\nchore(infra): bump mypy to 2.1 and unify type-check config across the monorepo (#36470)\nfix(langchain): tighten structured output model fallbacks (#38042)\nhotfix(core): bump lockfile(s) (#38032)\nchore(core): fix some `any` generics (#34545)\nhotfix(openai): min core dep (#37990)\nchore: unify core versions in text-splitters. (#37523)\nchore: bump idna from 3.10 to 3.15 in /libs/text-splitters (#37535)\nchore: bump the minor-and-patch group across 3 directories with 15 updates (#37515)\nci(infra): harden Dependabot version-bound preservation (#37510)\nchore: bump langsmith from 0.7.31 to 0.8.0 in /libs/text-splitters (#37380)\nchore: bump urllib3 from 2.6.3 to 2.7.0 in /libs/text-splitters (#37326)\nchore: bump mistune from 3.1.4 to 3.2.1 in /libs/text-splitters (#37235)\nchore: bump jupyter-server from 2.17.0 to 2.18.0 in /libs/text-splitters (#37202)\nrefactor(langchain-classic): retarget deprecations to `create_agent`, other chores (#37164)\nchore: update lxml requirement from <7.0,>=4.9.3 to >=6.1.0,<7.0 in /libs/text-splitters (#37126)\nchore: bump notebook from 7.4.7 to 7.5.6 in /libs/text-splitters (#37105)\nchore(docs): update x handle references (#37081)\nfix(text-splitters): remove invalid and duplicate separators in Kotlin, Rust, and Haskell (#37039)\nfix(text-splitters): remove incorrect C# and Elixir separator keywords (#37037)\nhotfix: bump min core versions (#36996)\nrelease(openai): 1.2.1 (#36995)\nfeat(core): add content-block-centric streaming (v2) (#36834)\nfix(fireworks): honor `max_retries` (#36973)\nchore: bump nbconvert from 7.17.0 to 7.17.1 in /libs/text-splitters (#36921)",
-   "date": "2026-10-02T15:46:49Z",
-   "name": "langchain-text-splitters==1.1.3",
-   "prerelease": false,
-   "tag": "langchain-text-splitters==1.1.3",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-text-splitters%3D%3D1.1.3"
-  },
-  {
-   "body": "Changes since langchain-openai==1.6.6\n\nrelease(openai): 1.6.7 (#40933)\nchore(model-profiles): refresh model profile data (#40924)\ntest(openai): drop retired completions live tests (#40910)\nchore(model-profiles): refresh model profile data (#40869)\nfeat(openai): discover Azure workload identity (#40532)",
-   "date": "2026-09-30T15:12:17Z",
-   "name": "langchain-openai==1.6.7",
-   "prerelease": false,
-   "tag": "langchain-openai==1.6.7",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.7"
   }
  ],
  "repo": "langchain-ai/langchain"

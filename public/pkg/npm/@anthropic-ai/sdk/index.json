@@ -1,9 +1,31 @@
 {
- "built": "2026-11-17T08:11:52Z",
+ "built": "2026-11-18T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-10T16:38:44Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@anthropic-ai/sdk/1.8.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7aa9874710/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "prev_version": "1.7.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.8.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-09T18:56:57Z",
@@ -51,17 +73,50 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.9.0",
+ "latest": "1.10.0",
  "latest_stable": {
-  "date": "2026-11-16T16:53:24Z",
-  "version": "1.9.0"
+  "date": "2026-11-17T18:35:29Z",
+  "version": "1.10.0"
  },
- "metadata_fetched": "2026-11-17T06:00:41Z",
+ "metadata_fetched": "2026-11-18T06:00:43Z",
  "package": "@anthropic-ai/sdk",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@anthropic-ai/sdk",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-17T18:35:29Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/sdk/1.10.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d76867356e/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.10.0",
+   "package": "@anthropic-ai/sdk",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
+   "prerelease": false,
+   "prev_version": "1.9.0",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "The runner also stops waiting for a confirmation of these calls and no longer yields them, including a denied call (`confirmation: 'deny'`) and a call to a tool that it does not own.",
+     "quote_incomplete": false
+    },
+    {
+     "match": "deprecating",
+     "quote": "* **api:** rename error data models, deprecating the old names",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "1.10.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-16T16:53:24Z",
@@ -98,28 +153,6 @@
    ],
    "variant_of": null,
    "version": "1.9.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-10T16:38:44Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@anthropic-ai/sdk/1.8.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/7aa9874710/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.8.0",
-   "package": "@anthropic-ai/sdk",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/",
-   "prerelease": false,
-   "prev_version": "1.7.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.8.0",
    "yanked_or_deprecated": false
   }
  ],

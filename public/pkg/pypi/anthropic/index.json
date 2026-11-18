@@ -1,9 +1,31 @@
 {
- "built": "2026-11-17T08:11:52Z",
+ "built": "2026-11-18T06:00:02Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-10T16:33:19Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/anthropic/2.8.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8ffaadf3c0/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "prev_version": "2.7.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "2.8.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-09T18:52:39Z",
@@ -51,17 +73,55 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.9.0",
+ "latest": "2.10.0",
  "latest_stable": {
-  "date": "2026-11-16T16:47:53Z",
-  "version": "2.9.0"
+  "date": "2026-11-17T18:28:48Z",
+  "version": "2.10.0"
  },
- "metadata_fetched": "2026-11-17T06:00:02Z",
+ "metadata_fetched": "2026-11-18T06:00:03Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/anthropic/",
  "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-17T18:28:48Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/anthropic/2.10.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/2d4edb4dc9/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.10.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "prev_version": "2.9.0",
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "* **types:** keep deprecated model aliases and the types nested under them working",
+     "quote_incomplete": false
+    },
+    {
+     "match": "deprecating",
+     "quote": "* **api:** rename error data models, deprecating the old names",
+     "quote_incomplete": false
+    },
+    {
+     "match": "breaking",
+     "quote": "* **internal:** don't report moved classes as breaking changes",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.10.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-16T16:47:53Z",
@@ -98,28 +158,6 @@
    ],
    "variant_of": null,
    "version": "2.9.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-10T16:33:19Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/anthropic/2.8.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/8ffaadf3c0/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.8.0",
-   "package": "anthropic",
-   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
-   "prerelease": false,
-   "prev_version": "2.7.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "2.8.0",
    "yanked_or_deprecated": false
   }
  ],

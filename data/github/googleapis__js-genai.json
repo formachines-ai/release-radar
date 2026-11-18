@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-17T06:00:42Z",
+ "fetched": "2026-11-18T06:00:44Z",
  "releases": [
+  {
+   "body": "## [3.5.0](https://github.com/googleapis/js-genai/compare/v3.4.0...v3.5.0) (2026-11-18)\n\n\n### Features\n\n* **environments:** introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([814b960](https://github.com/googleapis/js-genai/commit/814b960f5700dda333a35fcad94cfa29314bb936))\n* Generate Live Interactions types and auth-token client in the public SDKs. ([5698aa9](https://github.com/googleapis/js-genai/commit/5698aa95be55d73c3a4677073f7efd4c9ee37e4d))\n* **interactions:** add experimental Live Interactions (WebSocket and WebRTC) SDK support ([5e86b32](https://github.com/googleapis/js-genai/commit/5e86b32a45ae20ee5a067ad4bce62a735c63e07a))\n\n\n### Bug Fixes\n\n* return GenerateContentResponse instances for batch inlined responses ([3ee5c10](https://github.com/googleapis/js-genai/commit/3ee5c10ebb002f84ac4743178a76a3cdc8afad5c)), refs [#1433](https://github.com/googleapis/js-genai/issues/1433)",
+   "date": "2026-11-18T02:50:26Z",
+   "name": "v3.5.0",
+   "prerelease": false,
+   "tag": "v3.5.0",
+   "url": "https://github.com/googleapis/js-genai/releases/tag/v3.5.0"
+  },
   {
    "body": "## [3.4.0](https://github.com/googleapis/js-genai/compare/v3.3.0...v3.4.0) (2026-11-16)\n\n\n### Features\n\n* Add tool search types to the Interactions SDKs ([dd109f4](https://github.com/googleapis/js-genai/commit/dd109f4ff4d1fef66c886a69164def4605491a97))\n* **interactions:** expose static file processing options ([9f081ac](https://github.com/googleapis/js-genai/commit/9f081acbfc8dba9ff6edf826cd09f4b2659713db))\n* support batch inputs and usage metadata for Gemini embedding models on Gemini Enterprise API ([2efab95](https://github.com/googleapis/js-genai/commit/2efab9574d810b2b6cbb5eab9abd7f07c08a4e35))\n\n\n### Bug Fixes\n\n* keep the SDK version bump in release imports ([97e941f](https://github.com/googleapis/js-genai/commit/97e941f2d039e9200c1906930fa4a64ab5e470a5))",
    "date": "2026-11-16T20:43:05Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.47.0",
    "url": "https://github.com/googleapis/js-genai/releases/tag/v1.47.0"
-  },
-  {
-   "body": "## [1.46.0](https://github.com/googleapis/js-genai/compare/v1.45.0...v1.46.0) (2026-03-17)\n\n### Breaking changes\n\n* [Interactions] Breaking change to Interactions API to refactor TextContent annotations to use specific citation types ([9fa8b1d](https://github.com/googleapis/js-genai/commit/9fa8b1db3177d6baeab486b667652b639f08bdb1))\n* [Interactions] Breaking change for Interactions, rename ContentDelta unions. ([917f24f](https://github.com/googleapis/js-genai/commit/917f24fe55270d02cb004e6b85f2c090caa9bfe6))\n* [Interactions] Breaking change to Interactions API to rename rendered_content to search_suggestions ([cc6bd38](https://github.com/googleapis/js-genai/commit/cc6bd38a2b2dd7fcea93c561dd5f397433e52393))\n\n\n### Features\n\n* [Interactions] Add and update 'signature' fields for tool call/result content types. ([e73ca5b](https://github.com/googleapis/js-genai/commit/e73ca5be5339dfac04d0b75f20f8656b4b6bf46e))\n* [Interactions] Support Google Maps in Interactions ([d0593e3](https://github.com/googleapis/js-genai/commit/d0593e31bf500a18890dacc4dc2628da051f36af))\n* Support include_server_side_tool_invocations for genai. ([c627d6f](https://github.com/googleapis/js-genai/commit/c627d6f1ce21eddc4beb13c719cbd6dda0c6c58d))\n\n\n### Bug Fixes\n\n* Quote `functionResponses` key in LiveClientMessage ([9740426](https://github.com/googleapis/js-genai/commit/9740426bb076b1f3debaf6ab55b8c17102e5f1ca))",
-   "date": "2026-03-18T04:36:12Z",
-   "name": "v1.46.0",
-   "prerelease": false,
-   "tag": "v1.46.0",
-   "url": "https://github.com/googleapis/js-genai/releases/tag/v1.46.0"
   }
  ],
  "repo": "googleapis/js-genai"

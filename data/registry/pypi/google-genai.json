@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-17T06:00:02Z",
+ "fetched": "2026-11-18T06:00:03Z",
  "homepage": "https://github.com/googleapis/python-genai",
- "latest": "3.4.0",
+ "latest": "3.5.0",
  "name": "google-genai",
  "page": "https://pypi.org/project/google-genai/",
  "repo": "googleapis/python-genai",
  "summary": "GenAI Python SDK",
  "versions": [
+  {
+   "date": "2026-11-18T02:29:49Z",
+   "version": "3.5.0",
+   "yanked": false
+  },
   {
    "date": "2026-11-16T21:45:11Z",
    "version": "3.4.0",
@@ -202,11 +207,6 @@
   {
    "date": "2026-05-22T01:34:31Z",
    "version": "2.6.0",
-   "yanked": false
-  },
-  {
-   "date": "2026-05-20T18:58:58Z",
-   "version": "2.5.0",
    "yanked": false
   }
  ]

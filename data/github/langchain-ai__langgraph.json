@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-17T06:00:04Z",
+ "fetched": "2026-11-18T06:00:05Z",
  "releases": [
   {
    "body": "Changes since 1.2.21\n\n* release(langgraph): 1.2.22 (#9702)\n* release(checkpoint-postgres): 3.2.1 (#9700)\n* release(prebuilt): 1.1.2 (#9701)\n* release(checkpoint): 4.3.2 (#9699)\n* fix(langgraph): stream a child graph on its own thread to a caller streaming subgraphs (#9698)\n* perf(langgraph): skip message conversion in add_messages for plain messages (#9631)\n* perf(langgraph): filter pending writes to the given tasks before reading their statuses (#9634)\n* perf(langgraph): match update keys against a set on wide states (#9632)\n* perf(langgraph): check only failed futures for the runner stop condition (#9630)\n* perf(langgraph): find untracked and delta channels once per run (#9629)",

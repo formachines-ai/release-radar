@@ -1,5 +1,5 @@
 {
- "built": "2026-11-17T08:11:52Z",
+ "built": "2026-11-18T06:00:02Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -34,7 +34,7 @@
   "date": "2026-11-06T14:07:48Z",
   "version": "5.1.0"
  },
- "metadata_fetched": "2026-11-17T06:01:31Z",
+ "metadata_fetched": "2026-11-18T06:01:38Z",
  "package": "zustand",
  "page": "https://releases.formachines.ai/pkg/npm/zustand/",
  "prereleases_in_window": 0,
