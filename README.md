@@ -62,6 +62,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
                                 (T-0140: stable, non-platform-build records have `followed_by` {version, hours} when a newer stable version has a later registry date within 168 h; cards show `Followed by <version> <N> h later (registry dates)`)
+                                (T-0143: the follow-up must be in the same major.minor line and a higher version, earliest such; no such version → no line, no key)
                                 (T-0118: `history` key = records older than 7 days up to 90, merged from the previous committed index.json, no re-fetch; `history_since` = first date held)
                                 (T-0119: every release record, in `releases` and `history`, has `no_notes` and `no_notes_checked` (build date UTC, null if not checked-empty); history cards restore the "No release notes found … (checked <date>)" label from them)
   pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (T-0123: that package's releases incl. history, newest first, max 50; flag label + ≤3 verbatim quotes or the no-flag/no-notes line; valid empty channel if none)

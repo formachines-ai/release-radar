@@ -861,6 +861,20 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
     }
 
 
+def ver_nums(v: str) -> tuple[int, ...] | None:
+    m = re.match(r"^v?(\d+(?:\.\d+)*)", v or "")
+    return tuple(int(p) for p in m.group(1).split(".")) if m else None
+
+
+def same_line_higher(a: str, b: str) -> bool:
+    """T-0143: b is in the same major.minor line as a and has a higher version."""
+    na, nb = ver_nums(a), ver_nums(b)
+    if not na or not nb:
+        return False
+    pad = lambda t: (t + (0, 0, 0))[:max(len(t), 3)]
+    return na[:2] == nb[:2] and len(na) >= 2 and len(nb) >= 2 and pad(nb + (0,) * 5)[:5] > pad(na + (0,) * 5)[:5]
+
+
 def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
     """T-0140: record["followed_by"] = {version, hours} when a newer stable version of the package has a later registry date within 168 h."""
     recs = {r["id"]: r for r in list(pkg["releases"]) + list(pkg.get("history") or [])}.values()
@@ -871,6 +885,7 @@ def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
         if not d0 or r["prerelease"] or (r.get("variant_of") and r["variant_of"] != r["version"]):
             continue  # only stable, non-platform-build records carry the line
         nxt = [(d, x) for d, x in stable if d > d0 and (d - d0) <= timedelta(hours=max_hours)
+               and not x.get("variant_of") and same_line_higher(r["version"], x["version"])
                and x["version"] != r["version"] and (x.get("variant_of") or x["version"]) != (r.get("variant_of") or r["version"])]
         if nxt:
             d, x = min(nxt, key=lambda t: t[0])

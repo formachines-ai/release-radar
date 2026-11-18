@@ -1,10 +1,10 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "counts": {
-  "flagged": 33,
+  "flagged": 31,
   "packages": 98,
   "prereleases": 240,
-  "releases": 353,
+  "releases": 351,
   "with_errata": 16
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -669,10 +669,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 6,
-    "version": "3.55.0"
-   },
    "id": "pypi/openai/3.54.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -827,10 +823,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 3,
-    "version": "1.110.0"
-   },
    "id": "pypi/litellm/1.108.11",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -853,10 +845,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 5,
-    "version": "0.170.0"
-   },
    "id": "npm/@openai/codex/0.169.1",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,
@@ -1035,10 +1023,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.0.175"
-   },
    "id": "npm/ai/5.0.291",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -1069,7 +1053,7 @@
    "flagged": true,
    "followed_by": {
     "hours": 1,
-    "version": "5.0.291"
+    "version": "7.0.175"
    },
    "id": "npm/ai/7.0.174",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -1099,10 +1083,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 4,
-    "version": "3.54.0"
-   },
    "id": "pypi/openai/3.53.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -1151,10 +1131,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "4.0.119"
-   },
    "id": "npm/@ai-sdk/openai/3.0.144",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -1177,10 +1153,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.0.174"
-   },
    "id": "npm/ai/6.0.333",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -1242,10 +1214,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 4,
-    "version": "7.59.0"
-   },
    "id": "npm/openai/7.58.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -1728,10 +1696,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 3,
-    "version": "5.108.0"
-   },
    "id": "npm/@tanstack/react-query/5.107.2",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -2370,10 +2334,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 20,
-    "version": "3.53.0"
-   },
    "id": "pypi/openai/3.52.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -2444,10 +2404,6 @@
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
    "flagged": true,
-   "followed_by": {
-    "hours": 28,
-    "version": "3.5.0"
-   },
    "id": "pypi/google-genai/3.4.0",
    "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
    "no_notes": false,
@@ -2531,10 +2487,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 30,
-    "version": "3.5.0"
-   },
    "id": "npm/@google/genai/3.4.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -2616,10 +2568,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 0,
-    "version": "2.1.9"
-   },
    "id": "pypi/sqlalchemy/2.0.58",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
    "no_notes": false,
@@ -2670,10 +2618,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "6.13.13"
-   },
    "id": "npm/mongoose/7.8.14",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -2696,10 +2640,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.8.14"
-   },
    "id": "npm/mongoose/8.24.10",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -2722,10 +2662,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "8.24.10"
-   },
    "id": "npm/mongoose/9.12.2",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -3186,10 +3122,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 25,
-    "version": "1.10.0"
-   },
    "id": "npm/@anthropic-ai/sdk/1.9.0",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json",
    "no_notes": false,
@@ -3228,10 +3160,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 25,
-    "version": "2.10.0"
-   },
    "id": "pypi/anthropic/2.9.0",
    "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
    "no_notes": false,
@@ -4386,10 +4314,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 21,
-    "version": "1.108.9"
-   },
    "id": "pypi/litellm/1.106.10",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -4487,8 +4411,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.332"
+    "hours": 92,
+    "version": "5.0.291"
    },
    "id": "npm/ai/5.0.290",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -4546,8 +4470,8 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
-    "hours": 1,
-    "version": "5.0.290"
+    "hours": 92,
+    "version": "7.0.174"
    },
    "id": "npm/ai/7.0.173",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -4578,8 +4502,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 1,
-    "version": "3.0.143"
+    "hours": 92,
+    "version": "4.0.119"
    },
    "id": "npm/@ai-sdk/openai/4.0.118",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
@@ -4625,10 +4549,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 93,
-    "version": "7.58.0"
-   },
    "id": "npm/openai/7.57.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -4673,10 +4593,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 73,
-    "version": "3.52.0"
-   },
    "id": "pypi/openai/3.51.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -4700,8 +4616,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 4,
-    "version": "1.106.10"
+    "hours": 25,
+    "version": "1.108.9"
    },
    "id": "pypi/litellm/1.108.8",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
@@ -5149,10 +5065,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 23,
-    "version": "0.163.0"
-   },
    "id": "pypi/fastapi/0.162.7",
    "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
    "no_notes": false,
@@ -6027,10 +5939,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 4,
-    "version": "0.169.0"
-   },
    "id": "npm/@openai/codex/0.168.0",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,
@@ -6273,10 +6181,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 95,
-    "version": "3.4.0"
-   },
    "id": "npm/@google/genai/3.3.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -6420,8 +6324,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 9,
-    "version": "7.0.172"
+    "hours": 27,
+    "version": "6.0.332"
    },
    "id": "npm/ai/6.0.331",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -6446,8 +6350,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.331"
+    "hours": 9,
+    "version": "7.0.172"
    },
    "id": "npm/ai/7.0.171",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -6472,8 +6376,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "4.0.116"
+    "hours": 27,
+    "version": "3.0.143"
    },
    "id": "npm/@ai-sdk/openai/3.0.142",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
@@ -6497,10 +6401,6 @@
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
    "flagged": true,
-   "followed_by": {
-    "hours": 97,
-    "version": "3.4.0"
-   },
    "id": "pypi/google-genai/3.3.0",
    "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
    "no_notes": false,
@@ -6683,10 +6583,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 25,
-    "version": "7.57.0"
-   },
    "id": "npm/openai/7.56.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -6709,10 +6605,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 25,
-    "version": "3.51.0"
-   },
    "id": "pypi/openai/3.50.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -6796,7 +6688,7 @@
    "flagged": false,
    "followed_by": {
     "hours": 98,
-    "version": "9.12.2"
+    "version": "8.24.10"
    },
    "id": "npm/mongoose/8.24.9",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
@@ -7018,10 +6910,6 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 18,
-    "version": "1.108.7"
-   },
    "id": "pypi/litellm/1.109.1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -7199,8 +7087,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "1.109.1"
+    "hours": 19,
+    "version": "1.108.7"
    },
    "id": "pypi/litellm/1.108.6",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
@@ -7225,8 +7113,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "1.108.6"
+    "hours": 47,
+    "version": "1.106.10"
    },
    "id": "pypi/litellm/1.106.9",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
@@ -7606,10 +7494,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 29,
-    "version": "0.168.0"
-   },
    "id": "npm/@openai/codex/0.167.2",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,
@@ -7890,10 +7774,6 @@
    "ecosystem": "npm",
    "errata_url": "https://formachines.ai/errata/npm/firebase/",
    "flagged": true,
-   "followed_by": {
-    "hours": 120,
-    "version": "13.4.0"
-   },
    "id": "npm/firebase/13.3.0",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
    "no_notes": false,
@@ -8105,7 +7985,7 @@
    "flagged": false,
    "followed_by": {
     "hours": 25,
-    "version": "3.0.142"
+    "version": "4.0.116"
    },
    "id": "npm/@ai-sdk/openai/4.0.115",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
@@ -8177,10 +8057,6 @@
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
    "flagged": false,
-   "followed_by": {
-    "hours": 26,
-    "version": "3.3.0"
-   },
    "id": "pypi/google-genai/3.2.0",
    "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
    "no_notes": false,
@@ -8203,10 +8079,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 27,
-    "version": "3.3.0"
-   },
    "id": "npm/@google/genai/3.2.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -8380,69 +8252,9 @@
    "variant_of": null,
    "version": "19.3.0-canary-1620f7b9-20261111",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T15:47:07Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/langchain/1.5.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/1f12e43f88/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.0",
-   "package": "langchain",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
-   "prerelease": false,
-   "prev_version": "1.4.10",
-   "quotes": [
-    {
-     "match": "drops support",
-     "quote": "**`langchain` 1.5.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.0. Users on Python 3.10 will continue to resolve `langchain` 1.4.x.",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "1.5.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T15:21:52Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "hours": 95,
-    "version": "1.8.1"
-   },
-   "id": "pypi/langchain-core/1.8.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/7b5416dbcf/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "prev_version": "1.7.7",
-   "quotes": [
-    {
-     "match": "drops support",
-     "quote": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10 will continue to resolve `langchain-core` 1.7.x.",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "1.8.0",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-11T15:16:54Z"
+ "window_start": "2026-11-11T16:17:06Z"
 }

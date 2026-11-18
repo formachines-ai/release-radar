@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -10,10 +10,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 20,
-    "version": "3.2.0"
-   },
    "id": "npm/@google/genai/3.1.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -36,10 +32,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 112,
-    "version": "3.1.0"
-   },
    "id": "npm/@google/genai/3.0.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -109,10 +101,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 30,
-    "version": "3.5.0"
-   },
    "id": "npm/@google/genai/3.4.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -135,10 +123,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 95,
-    "version": "3.4.0"
-   },
    "id": "npm/@google/genai/3.3.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
@@ -161,10 +145,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 27,
-    "version": "3.3.0"
-   },
    "id": "npm/@google/genai/3.2.0",
    "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
    "no_notes": false,
