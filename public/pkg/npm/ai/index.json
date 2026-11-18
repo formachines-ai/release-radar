@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,8 +11,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 12,
-    "version": "7.0.170"
+    "hours": 38,
+    "version": "6.0.331"
    },
    "id": "npm/ai/6.0.330",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -37,8 +37,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.330"
+    "hours": 65,
+    "version": "5.0.290"
    },
    "id": "npm/ai/5.0.289",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -63,8 +63,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 9,
-    "version": "5.0.289"
+    "hours": 22,
+    "version": "7.0.170"
    },
    "id": "npm/ai/7.0.169",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -89,8 +89,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "7.0.169"
+    "hours": 10,
+    "version": "6.0.330"
    },
    "id": "npm/ai/6.0.329",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -116,7 +116,7 @@
    "flagged": false,
    "followed_by": {
     "hours": 2,
-    "version": "6.0.329"
+    "version": "7.0.169"
    },
    "id": "npm/ai/7.0.168",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -141,8 +141,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "7.0.168"
+    "hours": 2,
+    "version": "6.0.329"
    },
    "id": "npm/ai/6.0.328",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -167,8 +167,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.328"
+    "hours": 12,
+    "version": "5.0.289"
    },
    "id": "npm/ai/5.0.288",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -219,8 +219,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 16,
-    "version": "5.0.287"
+    "hours": 38,
+    "version": "6.0.328"
    },
    "id": "npm/ai/6.0.326",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -245,8 +245,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.326"
+    "hours": 38,
+    "version": "7.0.168"
    },
    "id": "npm/ai/7.0.166",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -297,8 +297,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "7.0.165"
+    "hours": 31,
+    "version": "6.0.326"
    },
    "id": "npm/ai/6.0.325",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -323,8 +323,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.325"
+    "hours": 48,
+    "version": "5.0.287"
    },
    "id": "npm/ai/5.0.286",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -349,8 +349,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 20,
-    "version": "5.0.286"
+    "hours": 21,
+    "version": "6.0.325"
    },
    "id": "npm/ai/6.0.324",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -375,8 +375,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 2,
-    "version": "6.0.324"
+    "hours": 23,
+    "version": "7.0.165"
    },
    "id": "npm/ai/7.0.164",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -462,10 +462,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.0.175"
-   },
    "id": "npm/ai/5.0.291",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -496,7 +492,7 @@
    "flagged": true,
    "followed_by": {
     "hours": 1,
-    "version": "5.0.291"
+    "version": "7.0.175"
    },
    "id": "npm/ai/7.0.174",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -526,10 +522,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.0.174"
-   },
    "id": "npm/ai/6.0.333",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -585,8 +577,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.332"
+    "hours": 92,
+    "version": "5.0.291"
    },
    "id": "npm/ai/5.0.290",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -611,8 +603,8 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
-    "hours": 1,
-    "version": "5.0.290"
+    "hours": 92,
+    "version": "7.0.174"
    },
    "id": "npm/ai/7.0.173",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -669,8 +661,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 9,
-    "version": "7.0.172"
+    "hours": 27,
+    "version": "6.0.332"
    },
    "id": "npm/ai/6.0.331",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
@@ -695,8 +687,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "6.0.331"
+    "hours": 9,
+    "version": "7.0.172"
    },
    "id": "npm/ai/7.0.171",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",

@@ -1,19 +1,47 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T15:21:52Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "hours": 95,
+    "version": "1.8.1"
+   },
+   "id": "pypi/langchain-core/1.8.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7b5416dbcf/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
+   "package": "langchain-core",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
+   "prerelease": false,
+   "prev_version": "1.7.7",
+   "quotes": [
+    {
+     "match": "drops support",
+     "quote": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10 will continue to resolve `langchain-core` 1.7.x.",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "1.8.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-10T04:08:08Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 35,
-    "version": "1.8.0"
-   },
    "id": "pypi/langchain-core/1.7.7",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -91,41 +119,9 @@
    "variant_of": null,
    "version": "1.8.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T15:21:52Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "hours": 95,
-    "version": "1.8.1"
-   },
-   "id": "pypi/langchain-core/1.8.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/7b5416dbcf/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.0",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "prev_version": "1.7.7",
-   "quotes": [
-    {
-     "match": "drops support",
-     "quote": "**`langchain-core` 1.8.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11. Users on Python 3.10 will continue to resolve `langchain-core` 1.7.x.",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "1.8.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 3,
+ "stable_in_window": 2,
  "summary": "Building applications with LLMs through composability"
 }

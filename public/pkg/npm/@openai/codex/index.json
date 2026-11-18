@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -2887,10 +2887,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 5,
-    "version": "0.170.0"
-   },
    "id": "npm/@openai/codex/0.169.1",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,
@@ -5062,10 +5058,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": {
-    "hours": 4,
-    "version": "0.169.0"
-   },
    "id": "npm/@openai/codex/0.168.0",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,
@@ -5842,10 +5834,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 29,
-    "version": "0.168.0"
-   },
    "id": "npm/@openai/codex/0.167.2",
    "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
    "no_notes": false,

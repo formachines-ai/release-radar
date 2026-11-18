@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T15:16:54Z",
+ "built": "2026-11-18T16:17:06Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -32,10 +32,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 39,
-    "version": "8.3.8"
-   },
    "id": "npm/vite/6.4.6",
    "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
    "no_notes": false,
@@ -58,10 +54,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "6.4.6"
-   },
    "id": "npm/vite/8.1.7",
    "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
    "no_notes": false,
@@ -84,10 +76,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "8.1.7"
-   },
    "id": "npm/vite/7.3.8",
    "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
    "no_notes": false,
@@ -110,10 +98,6 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": {
-    "hours": 0,
-    "version": "7.3.8"
-   },
    "id": "npm/vite/8.2.6",
    "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
    "no_notes": false,
@@ -137,8 +121,8 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
-    "hours": 0,
-    "version": "8.2.6"
+    "hours": 40,
+    "version": "8.3.8"
    },
    "id": "npm/vite/8.3.7",
    "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
