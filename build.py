@@ -1630,10 +1630,22 @@ Sitemap: __SITE__/sitemap.xml
 """
 
 
+STATIC_PAGE_LASTMOD = {"/legal/": "2026-11-12", "/brand/": "2026-11-12"}  # T-0121: fixed dates, bump when that page's content changes
+
+
+def pkg_lastmod(p: dict, built_day: str) -> str:
+    """Newest release date the package page shows (7-day list or history); build date if none/unknown, never later than it."""
+    days = [r["date"][:10] for r in list(p.get("releases") or []) + list(p.get("history") or []) if r.get("date")]
+    return min(max(days), built_day) if days else built_day
+
+
 def render_sitemap(model: dict) -> str:
-    urls = [SITE_BASE + "/", SITE_BASE + "/legal/", SITE_BASE + "/brand/"] + [SITE_BASE + p["path"] for p in model["packages"]]
+    day = model["built"][:10]
+    items = [(SITE_BASE + "/", day)]
+    items += [(SITE_BASE + k, min(v, day)) for k, v in STATIC_PAGE_LASTMOD.items()]
+    items += [(SITE_BASE + p["path"], pkg_lastmod(p, day)) for p in model["packages"]]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
-            + "".join(f"<url><loc>{esc(u)}</loc><lastmod>{esc(model['built'][:10])}</lastmod></url>" for u in urls) + "</urlset>\n")
+            + "".join(f"<url><loc>{esc(u)}</loc><lastmod>{esc(d)}</lastmod></url>" for u, d in items) + "</urlset>\n")
 
 
 # ----------------------------------------------------------------------------------------------------------
