@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 68,
+    "version": "8.24.9"
+   },
    "id": "npm/mongoose/9.12.1",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -68,6 +72,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "6.13.13"
+   },
    "id": "npm/mongoose/7.8.14",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -90,6 +98,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "7.8.14"
+   },
    "id": "npm/mongoose/8.24.10",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -112,6 +124,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "8.24.10"
+   },
    "id": "npm/mongoose/9.12.2",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -134,6 +150,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 98,
+    "version": "9.12.2"
+   },
    "id": "npm/mongoose/8.24.9",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,

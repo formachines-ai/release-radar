@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -56,6 +56,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 0,
+    "version": "2.1.9"
+   },
    "id": "pypi/sqlalchemy/2.0.58",
    "json": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/index.json",
    "no_notes": false,

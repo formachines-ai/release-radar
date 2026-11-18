@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -68,6 +68,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 31,
+    "version": "1.2.22"
+   },
    "id": "pypi/langgraph/1.2.21",
    "json": "https://releases.formachines.ai/pkg/pypi/langgraph/index.json",
    "no_notes": false,

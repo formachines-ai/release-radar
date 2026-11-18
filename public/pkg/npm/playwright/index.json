@@ -1,9 +1,31 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-11T12:56:11Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/playwright/1.65.0-beta-1794401539000",
+   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
+   "notes_url": "https://github.com/microsoft/playwright/releases",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.65.0-beta-1794401539000",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-11T05:17:21Z",
@@ -317,7 +339,7 @@
  "metadata_fetched": "2026-11-18T06:01:27Z",
  "package": "playwright",
  "page": "https://releases.formachines.ai/pkg/npm/playwright/",
- "prereleases_in_window": 12,
+ "prereleases_in_window": 11,
  "registry": "https://www.npmjs.com/package/playwright",
  "releases": [
   {
@@ -582,28 +604,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.65.0-beta-1794414684000",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-11T12:56:11Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/playwright/1.65.0-beta-1794401539000",
-   "json": "https://releases.formachines.ai/pkg/npm/playwright/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/ee7ea4c395/",
-   "notes_url": "https://github.com/microsoft/playwright/releases",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/npm/playwright/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.65.0-beta-1794401539000",
    "yanked_or_deprecated": false
   }
  ],

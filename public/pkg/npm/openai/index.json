@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 60,
+    "version": "7.56.0"
+   },
    "id": "npm/openai/7.55.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -32,6 +36,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 14,
+    "version": "7.55.0"
+   },
    "id": "npm/openai/7.54.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -54,6 +62,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 78,
+    "version": "7.54.0"
+   },
    "id": "npm/openai/7.53.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -76,6 +88,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 15,
+    "version": "7.53.0"
+   },
    "id": "npm/openai/7.52.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -134,6 +150,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 4,
+    "version": "7.59.0"
+   },
    "id": "npm/openai/7.58.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -156,6 +176,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 93,
+    "version": "7.58.0"
+   },
    "id": "npm/openai/7.57.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
@@ -178,6 +202,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 25,
+    "version": "7.57.0"
+   },
    "id": "npm/openai/7.56.0",
    "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
    "no_notes": false,
