@@ -1,13 +1,13 @@
 {
  "changelog": null,
  "dist_tags": {
-  "insiders": "0.0.0-insiders.8652341",
+  "insiders": "0.0.0-insiders.e0a9863",
   "latest": "4.3.5",
   "next": "4.0.0",
   "v3-lts": "3.4.19"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T06:01:33Z",
+ "fetched": "2026-11-18T21:11:41Z",
  "homepage": "https://tailwindcss.com",
  "latest": "4.3.5",
  "name": "tailwindcss",
@@ -15,6 +15,11 @@
  "repo": "tailwindlabs/tailwindcss",
  "summary": "A utility-first CSS framework for rapidly building custom user interfaces.",
  "versions": [
+  {
+   "date": "2026-11-18T17:28:33Z",
+   "deprecated": false,
+   "version": "0.0.0-insiders.e0a9863"
+  },
   {
    "date": "2026-11-17T12:48:42Z",
    "deprecated": false,

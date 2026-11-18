@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-18T06:00:44Z",
+ "fetched": "2026-11-18T21:10:48Z",
  "releases": [
+  {
+   "body": "## [3.6.0](https://github.com/googleapis/js-genai/compare/v3.5.0...v3.6.0) (2026-11-18)\n\n\n### Features\n\n* **sdk:** Add tool retrieval and function result schemas in public SDK ([3fb59de](https://github.com/googleapis/js-genai/commit/3fb59de0536ec9db9e17442f85e331eaba7f9bf0))",
+   "date": "2026-11-18T07:18:47Z",
+   "name": "v3.6.0",
+   "prerelease": false,
+   "tag": "v3.6.0",
+   "url": "https://github.com/googleapis/js-genai/releases/tag/v3.6.0"
+  },
   {
    "body": "## [3.5.0](https://github.com/googleapis/js-genai/compare/v3.4.0...v3.5.0) (2026-11-18)\n\n\n### Features\n\n* **environments:** introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([814b960](https://github.com/googleapis/js-genai/commit/814b960f5700dda333a35fcad94cfa29314bb936))\n* Generate Live Interactions types and auth-token client in the public SDKs. ([5698aa9](https://github.com/googleapis/js-genai/commit/5698aa95be55d73c3a4677073f7efd4c9ee37e4d))\n* **interactions:** add experimental Live Interactions (WebSocket and WebRTC) SDK support ([5e86b32](https://github.com/googleapis/js-genai/commit/5e86b32a45ae20ee5a067ad4bce62a735c63e07a))\n\n\n### Bug Fixes\n\n* return GenerateContentResponse instances for batch inlined responses ([3ee5c10](https://github.com/googleapis/js-genai/commit/3ee5c10ebb002f84ac4743178a76a3cdc8afad5c)), refs [#1433](https://github.com/googleapis/js-genai/issues/1433)",
    "date": "2026-11-18T02:50:26Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.48.0",
    "url": "https://github.com/googleapis/js-genai/releases/tag/v1.48.0"
-  },
-  {
-   "body": "## [1.47.0](https://github.com/googleapis/js-genai/compare/v1.46.0...v1.47.0) (2026-03-27)\n\n\n### Features\n\n* Add custom_metadata to FileSearchResult. ([083a1e3](https://github.com/googleapis/js-genai/commit/083a1e3c22731c1712d7caab2f5d1323ca8779ad))\n* Add labels field to Veo configs ([930c9c3](https://github.com/googleapis/js-genai/commit/930c9c351fa7b126401ac8781f333c3647f2eb9b))\n* Add mime type for Audio content ([1ad80c6](https://github.com/googleapis/js-genai/commit/1ad80c6a0ba17359a94cc8e5a21132917faaebc8))\n* Add model_status to GenerateContentResponse (Gemini API only) ([5e1110d](https://github.com/googleapis/js-genai/commit/5e1110d9cb3856116378ab101ad19631043edf8f))\n* Add part_metadata in Part (Gemini API only) ([5e1110d](https://github.com/googleapis/js-genai/commit/5e1110d9cb3856116378ab101ad19631043edf8f))\n* Add service tier for interactions. ([406de38](https://github.com/googleapis/js-genai/commit/406de389d89fc858c87ed0c9109e970eefb0896b))\n* Add service tier to GenerateContent. ([0bfe800](https://github.com/googleapis/js-genai/commit/0bfe8002b3342f7fce6b4e127599244807c0f427))\n* Add support for more image and audio MIME types in Interactions content ([baadbfd](https://github.com/googleapis/js-genai/commit/baadbfdb2e0a88e6817743b94d3c415c65fb7a2b))\n* Add supported models to the ModelOptions ([94642b6](https://github.com/googleapis/js-genai/commit/94642b6cb49b9d256c17bc66ccb8147dd5517d56))\n* **genai:** add TURN_INCLUDES_AUDIO_ACTIVITY_AND_ALL_VIDEO to TurnCoverage ([fdacac2](https://github.com/googleapis/js-genai/commit/fdacac271688ca03d6b942a3eb9440c7f6e272ea))\n* support hyperparameters in distillation tuning ([716e021](https://github.com/googleapis/js-genai/commit/716e02112698f884e6e707286c826b7dcc8453ce))\n* Support rendered_parts in GroundingSupport ([5e1110d](https://github.com/googleapis/js-genai/commit/5e1110d9cb3856116378ab101ad19631043edf8f))\n\n\n### Bug Fixes\n\n* support us region routing ([d391cff](https://github.com/googleapis/js-genai/commit/d391cff084b2fb433ae7f93b808d47f66a2bc488))",
-   "date": "2026-03-28T03:28:41Z",
-   "name": "v1.47.0",
-   "prerelease": false,
-   "tag": "v1.47.0",
-   "url": "https://github.com/googleapis/js-genai/releases/tag/v1.47.0"
   }
  ],
  "repo": "googleapis/js-genai"

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-18T06:00:04Z",
+ "fetched": "2026-11-18T21:10:03Z",
  "releases": [
+  {
+   "body": "## [3.6.0](https://github.com/googleapis/python-genai/compare/v3.5.0...v3.6.0) (2026-11-18)\n\n\n### Features\n\n* **sdk:** Add tool retrieval and function result schemas in public SDK ([34e62b1](https://github.com/googleapis/python-genai/commit/34e62b1c476959d0217fb5d53ec26e75f9fb2751))\n\n\n### Bug Fixes\n\n* **api_client:** Retry google.auth TransportError when retries are enabled ([6fc8357](https://github.com/googleapis/python-genai/commit/6fc835765bc6f16187719aa910dae1e7a0eb1499)), refs [#2869](https://github.com/googleapis/python-genai/issues/2869)\n* Exclude derived parsed field when reparsing merged continuation responses ([bbdca2a](https://github.com/googleapis/python-genai/commit/bbdca2a0d4aff88e4643ee431d7a01bed6e333b6)), refs [#3350](https://github.com/googleapis/python-genai/issues/3350)\n* Keep the response when parsed JSON has an oversized integer ([f32137d](https://github.com/googleapis/python-genai/commit/f32137da9614524430bfbbb363aef57662f38417)), refs [#2542](https://github.com/googleapis/python-genai/issues/2542)",
+   "date": "2026-11-18T07:09:36Z",
+   "name": "v3.6.0",
+   "prerelease": false,
+   "tag": "v3.6.0",
+   "url": "https://github.com/googleapis/python-genai/releases/tag/v3.6.0"
+  },
   {
    "body": "## [3.5.0](https://github.com/googleapis/python-genai/compare/v3.4.0...v3.5.0) (2026-11-18)\n\n\n### Features\n\n* **environments:** Introduce self-hosted BYOS mode, system_instruction, custom_config, and environment_key in SDKs and CLI ([d76a21d](https://github.com/googleapis/python-genai/commit/d76a21dafd22c99206579674222e9b0e0e87b4e8))\n* Generate Live Interactions types and auth-token client in the public SDKs. ([f209666](https://github.com/googleapis/python-genai/commit/f2096662fcfc958d8c30a08a71d812c2da46ca22))\n* **interactions:** Add experimental Live Interactions (WebSocket and WebRTC) SDK support ([8acd4f0](https://github.com/googleapis/python-genai/commit/8acd4f006437325ce917e97c74a10b47778f9686))\n\n\n### Bug Fixes\n\n* Parse datetime, date, time, timedelta and UUID string arguments in automatic function calling ([517fab7](https://github.com/googleapis/python-genai/commit/517fab7b23dbe611721e4c63679c22637e00d348)), refs [#3331](https://github.com/googleapis/python-genai/issues/3331)\n\n\n### Documentation\n\n* Note that the Live API and caches are not available on v1 ([384ef01](https://github.com/googleapis/python-genai/commit/384ef01a55c643cb69bb9ff52eb44b6e5914bfc7))",
    "date": "2026-11-18T02:17:01Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v1.74.0",
    "url": "https://github.com/googleapis/python-genai/releases/tag/v1.74.0"
-  },
-  {
-   "body": "## [1.73.1](https://github.com/googleapis/python-genai/compare/v1.73.0...v1.73.1) (2026-04-14)\n\n\n### Bug Fixes\n\n* Refactor Webhook types in GenAI SDKs for easier useage ([3f36ca1](https://github.com/googleapis/python-genai/commit/3f36ca11b30904c8f82dd3e7e3b59eff3bde6a3b))\n* Rename `webhooks.retrieve` to `webhooks.get`. ([649f4b0](https://github.com/googleapis/python-genai/commit/649f4b06d7bd78a23dd77b06713c6ca5c65321f9))\n\n\n### Documentation\n\n* Update python docs for 1.73.0 ([acd3767](https://github.com/googleapis/python-genai/commit/acd3767bff513524172ddd7726b147d01c245f1c))",
-   "date": "2026-04-14T20:45:04Z",
-   "name": "v1.73.1",
-   "prerelease": false,
-   "tag": "v1.73.1",
-   "url": "https://github.com/googleapis/python-genai/releases/tag/v1.73.1"
   }
  ],
  "repo": "googleapis/python-genai"

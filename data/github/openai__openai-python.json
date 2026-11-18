@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-18T06:00:07Z",
+ "fetched": "2026-11-18T21:10:07Z",
  "releases": [
+  {
+   "body": "## [3.55.1](https://github.com/openai/openai-python/compare/v3.55.0...v3.55.1) (2026-11-18)\n\n\n### Chores\n\n* **api:** document CSAM moderation response fields ([#4290](https://github.com/openai/openai-python/issues/4290)) ([d6b93f3](https://github.com/openai/openai-python/commit/d6b93f36b6ad5a71ef81ebbe08cab72c3d12d7a8))\n* **deps-dev:** bump pytest-asyncio from 1.4.1 to 1.4.1.post1 ([#4274](https://github.com/openai/openai-python/issues/4274)) ([231a92a](https://github.com/openai/openai-python/commit/231a92aa2193cd7525abcca0e46631dad2bbad75))\n* **deps:** bump github/codeql-action/init from 4.39.1 to 4.39.3 ([#4275](https://github.com/openai/openai-python/issues/4275)) ([f777185](https://github.com/openai/openai-python/commit/f7771850934f755ddc9fa46f46058f9fa06edb92))\n* **deps:** bump the python-security group across 1 directory with 2 updates ([#4267](https://github.com/openai/openai-python/issues/4267)) ([ed1d6b6](https://github.com/openai/openai-python/commit/ed1d6b620a08433307bcf238a05ed6faaf6372ad))",
+   "date": "2026-11-18T16:04:26Z",
+   "name": "v3.55.1",
+   "prerelease": false,
+   "tag": "v3.55.1",
+   "url": "https://github.com/openai/openai-python/releases/tag/v3.55.1"
+  },
   {
    "body": "## [3.55.0](https://github.com/openai/openai-python/compare/v3.54.0...v3.55.0) (2026-11-18)\n\n\n### Features\n\n* **api:** add Live MCP server configuration ([#4280](https://github.com/openai/openai-python/issues/4280)) ([f56a67f](https://github.com/openai/openai-python/commit/f56a67f1f0c844135261ece304a90d2ec2571d4b))\n* **api:** hide Managed Agents session budget controls and events ([#4289](https://github.com/openai/openai-python/issues/4289)) ([b78d3eb](https://github.com/openai/openai-python/commit/b78d3ebb54287aebf50b04544a07c4c21f02dd1e))",
    "date": "2026-11-18T05:21:54Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v3.16.0",
    "url": "https://github.com/openai/openai-python/releases/tag/v3.16.0"
-  },
-  {
-   "body": "## [3.15.0](https://github.com/openai/openai-python/compare/v3.14.1...v3.15.0) (2026-09-18)\n\n\n### Features\n\n* **api:** add agent session model settings ([#3882](https://github.com/openai/openai-python/issues/3882)) ([4b15817](https://github.com/openai/openai-python/commit/4b1581771ea97c870187f6ddfc3dbc87ff4fa443))\n* **api:** add audio-mini model choices ([#3886](https://github.com/openai/openai-python/issues/3886)) ([a6eeb3f](https://github.com/openai/openai-python/commit/a6eeb3f5a468ec576d2c911c19ce59c56ac46e43))\n* **api:** add compaction progress events ([#3866](https://github.com/openai/openai-python/issues/3866)) ([98e1d24](https://github.com/openai/openai-python/commit/98e1d24f4902ab58830adf0e2b6a729a5d5429b1))\n* **api:** add managed Responses WebSocket sessions ([#3887](https://github.com/openai/openai-python/issues/3887)) ([3b865af](https://github.com/openai/openai-python/commit/3b865af92e8dc65e14ab6d565304fe778bac1eef))\n* **api:** add prompt-cache prewarming ([#3888](https://github.com/openai/openai-python/issues/3888)) ([8f7cdb8](https://github.com/openai/openai-python/commit/8f7cdb80410434d29daed90895112a39936eb4fe))\n\n\n### Bug Fixes\n\n* preserve chat stream moderation results ([#3864](https://github.com/openai/openai-python/issues/3864)) ([b77076d](https://github.com/openai/openai-python/commit/b77076d23b6f3e34453b0fadd8cd2a001627e365))\n\n\n### Chores\n\n* **api:** clarify incoming SIP call ID usage ([#3885](https://github.com/openai/openai-python/issues/3885)) ([f0457ab](https://github.com/openai/openai-python/commit/f0457aba3403f83e91a369ab55e0e55d5f012372))\n* **api:** update image request examples ([#3889](https://github.com/openai/openai-python/issues/3889)) ([bb79676](https://github.com/openai/openai-python/commit/bb796764118004f8c9b0b0a46e07e5e55cfe34e4))\n\n\n### Documentation\n\n* **realtime:** remove nonexistent type imports ([#3869](https://github.com/openai/openai-python/issues/3869)) ([2971aaf](https://github.com/openai/openai-python/commit/2971aafce5c1966fc56efd00918b16314063284e))",
-   "date": "2026-09-18T00:52:15Z",
-   "name": "v3.15.0",
-   "prerelease": false,
-   "tag": "v3.15.0",
-   "url": "https://github.com/openai/openai-python/releases/tag/v3.15.0"
   }
  ],
  "repo": "openai/openai-python"

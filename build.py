@@ -842,6 +842,22 @@ def miss_reason(http: Http, repo: str | None, gh_releases: list[dict], no_github
     return "no_matching_tag"
 
 
+PR_LINE_RE = re.compile(r"\bby @[\w-]+(?:\[bot\])? in (?:#\d+|https://github\.com/[\w.-]+/[\w.-]+/pull/\d+)\s*$")
+
+
+def notes_format(body: str) -> str | None:
+    """'pr_list' when >=3 bullet lines and >=80 % of them are GitHub autogen '... by @user in #N / pull/N' lines."""
+    bullets = []
+    for ln in (body or "").splitlines():
+        t = ln.strip()
+        if t[:1] in ("*", "-", "+") and t[1:2] in (" ", "\t") and t[1:].strip():
+            bullets.append(t[1:].strip())
+    if len(bullets) < 3:
+        return None
+    hits = sum(1 for b in bullets if PR_LINE_RE.search(b))
+    return "pr_list" if hits * 5 >= len(bullets) * 4 else None
+
+
 def restore_release(rec: dict, pkg: dict) -> dict | None:
     """Rebuild an internal release dict from a stored public record (no re-fetch)."""
     if not rec.get("version") or not parse_dt(rec.get("date")):
@@ -858,6 +874,7 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
         "flagged": bool(rec.get("flagged")), "quotes": [dict(q, incomplete=bool(q.get("quote_incomplete", q.get("incomplete")))) for q in (rec.get("quotes") or []) if isinstance(q, dict)], "no_notes": bool(rec.get("no_notes")),
         "no_notes_checked": (str(rec.get("no_notes_checked"))[:10] if rec.get("no_notes") and rec.get("no_notes_checked") else None),
         "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
+        "notes_format": "pr_list" if rec.get("notes_format") == "pr_list" else None,
     }
 
 
@@ -975,6 +992,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                         break
             notes_url = None
             notes_kind = "fallback"
+            nfmt = None
             quotes: list[dict] = []
             if not (gh and gh.get("url")):
                 missing.append({"eco": eco, "name": name, "version": ver,
@@ -986,6 +1004,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 notes_url = gh["url"]
                 notes_kind = "github_release"
                 quotes = find_quotes(gh.get("body") or "", ignore)
+                nfmt = notes_format(gh.get("body") or "")
             elif pkg["changelog"]:
                 notes_url, notes_kind = pkg["changelog"], "changelog"
             elif pkg["repo"]:
@@ -1002,6 +1021,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "prev_version": None if gh and gh.get("prerelease") else compute_prev(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes,
                 "no_notes_checked": now.strftime("%Y-%m-%d") if no_notes else None, "pkg_path": pkg["path"],
+                "notes_format": nfmt,
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
             pkg["releases"].append(rel)
@@ -1145,6 +1165,8 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     kind = {"github_release": "release notes", "changelog": "changelog", "repo_releases": "releases on GitHub",
             "registry_page": "registry page"}.get(r["notes_kind"], "release notes")
     kind_hint = f' <span class="note">({kind})</span>' if kind != "release notes" else ""
+    if r.get("notes_format") == "pr_list":
+        kind_hint += ' <span class="note prlist">Notes are a PR list (auto-generated format)</span>'
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
     top = ""
     if notes_top:
@@ -1572,6 +1594,7 @@ def public_release(r: dict) -> dict:
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
         **({"followed_by": r["followed_by"]} if r.get("followed_by") else {}),
+        **({"notes_format": "pr_list"} if r.get("notes_format") == "pr_list" else {}),
     }
 
 
@@ -1839,6 +1862,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     build_info = {
         "built": built, "commit": GIT_SHA, "generator": "build.py", "packages": len(model["packages"]),
         "releases": len(model["releases"]), "flagged": len(flagged), "redirects": len(go_map),
+        "pr_list_notes": sum(1 for r in model["releases"] if r.get("notes_format") == "pr_list"),
         "http_requests": http.requests, "github_remaining": http.github_remaining, "errors": http.errors[:50],
         "notes_coverage": {
             "releases": len(model["releases"]),

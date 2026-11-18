@@ -1,14 +1,19 @@
 {
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
- "fetched": "2026-11-18T06:00:33Z",
+ "fetched": "2026-11-18T21:10:37Z",
  "homepage": "https://github.com/fastapi/typer",
- "latest": "0.29.1",
+ "latest": "0.29.2",
  "name": "typer",
  "page": "https://pypi.org/project/typer/",
  "repo": "fastapi/typer",
  "summary": "Typer, build great CLIs. Easy to code. Based on Python type hints.",
  "versions": [
+  {
+   "date": "2026-11-18T11:09:45Z",
+   "version": "0.29.2",
+   "yanked": false
+  },
   {
    "date": "2026-11-11T09:18:38Z",
    "version": "0.29.1",
@@ -202,11 +207,6 @@
   {
    "date": "2025-08-30T11:50:33Z",
    "version": "0.17.1",
-   "yanked": false
-  },
-  {
-   "date": "2025-08-30T11:22:55Z",
-   "version": "0.17.0",
    "yanked": false
   }
  ]

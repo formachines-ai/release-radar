@@ -69,6 +69,7 @@ public/                     the site — everything below is generated, do not e
   pkg/<eco>/<name>/feed.xml     per-package RSS 2.0 (T-0123: that package's releases incl. history, newest first, max 50; flag label + ≤3 verbatim quotes or the no-flag/no-notes line; valid empty channel if none)
   (package page <title>, T-0096: first of `<name> <ver> release notes & breaking changes (<eco>) — Release Radar` → without ` — Release Radar` → without `(<eco>)` → `<name> <ver> breaking changes` that is ≤70 chars)
   (package page <title>/meta description, T-0089: built only from the package's data — latest version, its date, flagged count, start of the first verbatim quote ≤160 chars; plus 4 same-ecosystem alphabetical-neighbour links and a link to /)
+                                (T-0146: `notes_format`: `pr_list` in index.json/today.json records and a label `Notes are a PR list (auto-generated format)` on the card when the GitHub notes have ≥3 non-empty bullet lines and ≥80 % end in `by @user in #N` / `…/pull/N` (headings, Full Changelog ignored); build.json `pr_list_notes` counts them; no effect on the breaking flag)
   today.json                every release in the window with quotes and links
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt

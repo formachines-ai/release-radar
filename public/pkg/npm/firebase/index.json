@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -11,6 +11,39 @@
   "url": "https://formachines.ai/errata/npm/firebase/"
  },
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T20:34:37Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/firebase/",
+   "flagged": true,
+   "id": "npm/firebase/13.3.0",
+   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7ac6e59be6/",
+   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases/tag/firebase%4013.3.0",
+   "package": "firebase",
+   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
+   "prerelease": false,
+   "prev_version": "13.2.0",
+   "quotes": [
+    {
+     "match": "Deprecated",
+     "quote": "- [`1ffc994`](https://github.com/firebase/firebase-js-sdk/commit/1ffc994f68f272f0cea12387a588fffe4c590066) [#10541](https://github.com/firebase/firebase-js-sdk/pull/10541) - Deprecated `RemoteConfigOptions.templateId` and `RemoteConfigOptions.initialFetchResponse`.",
+     "quote_incomplete": false
+    },
+    {
+     "match": "Removed",
+     "quote": "…[#10593](https://github.com/firebase/firebase-js-sdk/pull/10593) - Removed debug `console.log` overrides on `OTLPLogExporter.forceFlush()` and `OTLPLogExporter.shutdown()` so that flushing and shutting down…",
+     "quote_incomplete": true
+    }
+   ],
+   "variant_of": null,
+   "version": "13.3.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-11T17:09:07Z",
@@ -85,7 +118,7 @@
   "date": "2026-11-16T21:13:19Z",
   "version": "13.4.0"
  },
- "metadata_fetched": "2026-11-18T06:01:18Z",
+ "metadata_fetched": "2026-11-18T21:11:24Z",
  "package": "firebase",
  "page": "https://releases.formachines.ai/pkg/npm/firebase/",
  "prereleases_in_window": 3,
@@ -99,8 +132,8 @@
    "flagged": false,
    "id": "npm/firebase/13.2.0-eap-sql.b903ef716",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
+   "no_notes": true,
+   "no_notes_checked": "2026-11-18",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -149,8 +182,8 @@
    "flagged": false,
    "id": "npm/firebase/13.4.0-20261116185243",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
+   "no_notes": true,
+   "no_notes_checked": "2026-11-18",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -171,8 +204,8 @@
    "flagged": false,
    "id": "npm/firebase/13.2.0-eap-sql.a9a137e67",
    "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
+   "no_notes": true,
+   "no_notes_checked": "2026-11-18",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/ebf0f13667/",
    "notes_url": "https://github.com/firebase/firebase-js-sdk/releases",
@@ -184,42 +217,9 @@
    "variant_of": null,
    "version": "13.2.0-eap-sql.a9a137e67",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T20:34:37Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/firebase/",
-   "flagged": true,
-   "id": "npm/firebase/13.3.0",
-   "json": "https://releases.formachines.ai/pkg/npm/firebase/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/7ac6e59be6/",
-   "notes_url": "https://github.com/firebase/firebase-js-sdk/releases/tag/firebase%4013.3.0",
-   "package": "firebase",
-   "page": "https://releases.formachines.ai/pkg/npm/firebase/",
-   "prerelease": false,
-   "prev_version": "13.2.0",
-   "quotes": [
-    {
-     "match": "Deprecated",
-     "quote": "- [`1ffc994`](https://github.com/firebase/firebase-js-sdk/commit/1ffc994f68f272f0cea12387a588fffe4c590066) [#10541](https://github.com/firebase/firebase-js-sdk/pull/10541) - Deprecated `RemoteConfigOptions.templateId` and `RemoteConfigOptions.initialFetchResponse`.",
-     "quote_incomplete": false
-    },
-    {
-     "match": "Removed",
-     "quote": "…[#10593](https://github.com/firebase/firebase-js-sdk/pull/10593) - Removed debug `console.log` overrides on `OTLPLogExporter.forceFlush()` and `OTLPLogExporter.shutdown()` so that flushing and shutting down…",
-     "quote_incomplete": true
-    }
-   ],
-   "variant_of": null,
-   "version": "13.3.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/firebase/firebase-js-sdk",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Firebase JavaScript library for web and Node.js"
 }

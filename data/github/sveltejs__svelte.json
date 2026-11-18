@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-02T17:00:47Z",
+ "fetched": "2026-11-18T21:11:41Z",
  "releases": [
+  {
+   "body": "### Minor Changes\n\n-   feat: include `snippetName` in `render` entries of the dev `__svelte_meta` stack ([#19283](https://github.com/sveltejs/svelte/pull/19283))\n\n-   feat: include the `component` instance an element was rendered in for Svelte devtools to track ([#19286](https://github.com/sveltejs/svelte/pull/19286))\n\n### Patch Changes\n\n-   perf: let the garbage collector free each component's AST after it is compiled ([#19241](https://github.com/sveltejs/svelte/pull/19241))\n\n-   fix: render the same `<title>` on the server as on the client and ignore titles inside failed boundaries ([#19176](https://github.com/sveltejs/svelte/pull/19176))\n\n-   fix: allow `autocorrect` on all elements ([#19105](https://github.com/sveltejs/svelte/pull/19105))\n\n-   fix: parse snippet type parameters containing arrow function types ([#19141](https://github.com/sveltejs/svelte/pull/19141))\n\n-   fix: keep directive values that match the directive name in `print` ([#19229](https://github.com/sveltejs/svelte/pull/19229))\n\n-   fix: correctly assign dev element locations after components during hydration ([#19287](https://github.com/sveltejs/svelte/pull/19287))\n\n-   perf: don't compare the whole template on every expression when a source is parsed again ([#19215](https://github.com/sveltejs/svelte/pull/19215))\n\n-   docs: avoid binding to read-only current values in Spring and Tween examples ([#19226](https://github.com/sveltejs/svelte/pull/19226))\n\n-   fix: keep positions right after optional properties in template type annotations ([#19217](https://github.com/sveltejs/svelte/pull/19217))\n\n-   perf: speed up server rendering of pages with many or deeply nested components ([#19177](https://github.com/sveltejs/svelte/pull/19177))\n\n-   fix: remove all of the server-rendered content when hydrating a different branch that contains a failed boundary ([#19166](https://github.com/sveltejs/svelte/pull/19166))\n\n-   fix: preserve effect tree order across batch traversal passes ([#19132](https://github.com/sveltejs/svelte/pull/19132))\n\n-   fix: reset dev update counters for sources written during batch traversal ([#19092](https://github.com/sveltejs/svelte/pull/19092))\n\n-   chore: bump esrap ([#19290](https://github.com/sveltejs/svelte/pull/19290))\n\n-   fix: don't leak reactive context past nested awaits in production ([#19134](https://github.com/sveltejs/svelte/pull/19134))\n",
+   "date": "2026-11-18T06:54:03Z",
+   "name": "svelte@5.58.0",
+   "prerelease": false,
+   "tag": "svelte@5.58.0",
+   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0"
+  },
   {
    "body": "### Patch Changes\n\n-   fix: use the first valid fallback role in `role` for a11y checks ([#19045](https://github.com/sveltejs/svelte/pull/19045))\n\n-   chore: remove obsolete code ([#19051](https://github.com/sveltejs/svelte/pull/19051))\n\n-   fix: keep creating state sources for property checks during component init ([#18949](https://github.com/sveltejs/svelte/pull/18949))\n\n-   fix: skip redundant attribute writes during hydration ([#18869](https://github.com/sveltejs/svelte/pull/18869))\n\n-   fix: track missing state property checks in unowned deriveds ([#18944](https://github.com/sveltejs/svelte/pull/18944))\n\n-   fix: `devalue` link in `hydratable_serialization_failed` error ([#18999](https://github.com/sveltejs/svelte/pull/18999))\n",
    "date": "2026-10-26T18:15:06Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "svelte@5.51.0",
    "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.51.0"
-  },
-  {
-   "body": "### Patch Changes\n\n-   fix: take into account `nodeName` case sensitivity on XHTML pages ([#17689](https://github.com/sveltejs/svelte/pull/17689))\n\n-   fix: render `multiple` and `selected` attributes as empty strings for XHTML compliance ([#17689](https://github.com/sveltejs/svelte/pull/17689))\n\n-   fix: always lowercase HTML elements, for XHTML compliance ([#17664](https://github.com/sveltejs/svelte/pull/17664))\n\n-   fix: freeze effects-inside-deriveds when disconnecting, unfreeze on reconnect ([#17682](https://github.com/sveltejs/svelte/pull/17682))\n\n-   fix: propagate `$effect` errors to `<svelte:boundary>` ([#17684](https://github.com/sveltejs/svelte/pull/17684))\n",
-   "date": "2026-02-12T22:36:20Z",
-   "name": "svelte@5.50.3",
-   "prerelease": false,
-   "tag": "svelte@5.50.3",
-   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.50.3"
   }
  ],
  "repo": "sveltejs/svelte"

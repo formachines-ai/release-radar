@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-18T06:01:30Z",
+ "fetched": "2026-11-18T21:11:37Z",
  "releases": [
   {
    "body": "## What's Changed\n* Answer Prisma 7 commands with what to run in Prisma 8: engine redirects and the shell's paths by @StevenMcClankerton in https://github.com/prisma/prisma-cli/pull/390\n* Say how to install and run Prisma 7's CLI in every Prisma 7 command error by @StevenMcClankerton in https://github.com/prisma/prisma-cli/pull/391\n* Release 8.0.0-rc.34: follow the products' released versions: @prisma/composer-cli 0.38.0 -> 0.39.0; @prisma/orm-toolchain 8.0.0-rc.23 -> 8.0.0-rc.24; @prisma/composer 0.38.0 -> 0.39.0 by @prisma-bot in https://github.com/prisma/prisma-cli/pull/392\n\n\n**Full Changelog**: https://github.com/prisma/prisma-cli/compare/v8.0.0-rc.33...v8.0.0-rc.34",
