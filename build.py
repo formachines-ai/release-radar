@@ -1651,7 +1651,7 @@ Sitemap: __SITE__/sitemap.xml
 """
 
 
-STATIC_PAGE_LASTMOD = {"/legal/": "2026-11-12", "/brand/": "2026-11-12"}  # T-0121: fixed dates, bump when that page's content changes
+STATIC_PAGE_LASTMOD = {"/legal/": "2026-11-12", "/brand/": "2026-11-12", "/mcp/": "2026-11-18"}  # T-0121: fixed dates, bump when that page's content changes
 
 
 def pkg_lastmod(p: dict, built_day: str) -> str:

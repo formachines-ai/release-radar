@@ -1,9 +1,31 @@
 {
- "built": "2026-11-18T09:23:57Z",
+ "built": "2026-11-18T10:23:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-11T10:20:38Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@openai/codex/0.169.0-alpha.11",
+   "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/a9d2e8f986/",
+   "notes_url": "https://github.com/openai/codex/releases",
+   "package": "@openai/codex",
+   "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.169.0-alpha.11",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-11T03:54:23Z",
@@ -2182,7 +2204,7 @@
  "metadata_fetched": "2026-11-18T06:00:45Z",
  "package": "@openai/codex",
  "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
- "prereleases_in_window": 174,
+ "prereleases_in_window": 173,
  "registry": "https://www.npmjs.com/package/@openai/codex",
  "releases": [
   {
@@ -6122,28 +6144,6 @@
    "quotes": [],
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-darwin-arm64",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-11T10:20:38Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@openai/codex/0.169.0-alpha.11",
-   "json": "https://releases.formachines.ai/pkg/npm/@openai/codex/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/a9d2e8f986/",
-   "notes_url": "https://github.com/openai/codex/releases",
-   "package": "@openai/codex",
-   "page": "https://releases.formachines.ai/pkg/npm/@openai/codex/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.169.0-alpha.11",
    "yanked_or_deprecated": false
   }
  ],
