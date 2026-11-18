@@ -1359,6 +1359,25 @@ def package_seo(p: dict) -> tuple[str, str]:
     return title, desc
 
 
+def package_facts(p: dict, model: dict) -> str:
+    """T-0145: dated facts paragraph, counted from the same records index.json carries (releases + history)."""
+    recs = list(p["releases"]) + list(p.get("history") or [])
+    chk = esc((model["built"] or "")[:10])
+    src = f'<a href="{esc(p["page"])}" rel="nofollow">{esc(p["page"])}</a>'
+    if p.get("repo"):
+        src += f' · <a href="https://github.com/{esc(p["repo"])}/releases" rel="nofollow">GitHub Releases</a>'
+    head = f'{esc(p["name"])} ({esc(p["ecosystem"])}): '
+    if not recs:
+        mid = f'0 release records in the last {HISTORY_DAYS} days'
+    else:
+        stable = sum(1 for r in recs if not r["prerelease"])
+        flagged = sum(1 for r in recs if r["flagged"])
+        new = max(recs, key=lambda r: r["date"])
+        mid = (f'{len(recs)} release{"" if len(recs) == 1 else "s"} in the last {HISTORY_DAYS} days ({stable} stable), '
+               f'{flagged} flagged by regex; latest <code>{esc(new["version"])}</code> on {esc(new["date"][:10])} UTC')
+    return f'<p class="facts">{head}{mid}. Sources: {src}. Checked {chk} UTC.</p>'
+
+
 def render_package(p: dict, model: dict) -> str:
     now = parse_dt(model["built"]) or utcnow()
     e = p.get("errata")
@@ -1374,6 +1393,7 @@ def render_package(p: dict, model: dict) -> str:
     body = [f'<h1>{esc(p["name"])} <span class="badge eco">{esc(p["ecosystem"])}</span></h1>']
     if p.get("summary"):
         body.append(f'<p class="lead">{esc(p["summary"])}</p>')
+    body.append(package_facts(p, model))
     body.append('<dl class="meta">' + "".join(f"<dt>{k}</dt><dd>{v}</dd>" for k, v in meta) + "</dl>")
     if e and e.get("url"):
         body.append(f'<h2>Errata</h2><p><a class="badge errata" href="/go/{esc(go_id(e["url"]))}/" rel="nofollow">Errata: {esc(e.get("errata"))} verified correction(s)</a> '

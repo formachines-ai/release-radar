@@ -60,6 +60,7 @@ public/                     the site — everything below is generated, do not e
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
                                 (T-0137: section `Past a 7-day cooldown` below the recent cards: releases 7–8 days old (from /pkg/ history), flagged ones as full cards, the rest as package@version · date · /pkg/ link; one line if the window is empty)
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
+                                (T-0145: package page opens, under the <h1>, with a dated facts paragraph `<p class="facts">`: releases in 90 days (releases + history), stable, flagged, latest version/date, registry + GitHub Releases links, build date)
   pkg/<eco>/<name>/index.json   package data
                                 (T-0140: stable, non-platform-build records have `followed_by` {version, hours} when a newer stable version has a later registry date within 168 h; cards show `Followed by <version> <N> h later (registry dates)`)
                                 (T-0143: the follow-up must be in the same major.minor line and a higher version, earliest such; no such version → no line, no key)
