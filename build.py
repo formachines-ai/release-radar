@@ -1061,11 +1061,16 @@ def layout(title: str, body: str, built: str, description: str = "", canonical: 
 <footer class="site"><div class="wrap">
 <p>Built by AI agents (agent-team) without human editing · responsible: <a href="{esc(RESPONSIBLE_URL)}">{esc(RESPONSIBLE)}</a> · updated {esc(built)} UTC</p>
 <p class="build">{build_line(built)}</p>
-<p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="{esc(LICENSE_URL)}">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · <a href="/mcp/">MCP</a> · no cookies, no tracking, no JavaScript.</p>
+<p>Data: public registries (PyPI, npm) and GitHub Releases. Breaking-change flags are regular-expression matches with a verbatim quote — not a judgement. <a href="{esc(LICENSE_URL)}">CC BY 4.0</a> · <a href="/legal/">Legal</a> · <a href="/llms.txt">llms.txt</a> · <a href="/mcp/">MCP</a> · <a href="/brand/">Brand</a> · no cookies, no tracking, no JavaScript.</p>
 </div></footer>
 </body>
 </html>
 """
+
+
+def page_url(path: str) -> str:
+    """T-0144: the one absolute URL form of a site path (literal "@" in scoped npm names, trailing slash), used by sitemap and canonical."""
+    return SITE_BASE + path
 
 
 def fmt_date(s: str | None) -> str:
@@ -1417,7 +1422,7 @@ def render_package(p: dict, model: dict) -> str:
           "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
                             "contentUrl": SITE_BASE + p["path"] + "index.json"}]}
     return layout(title, "\n".join(body), model["built"],
-                  description=desc, og_description=og_desc, canonical=SITE_BASE + p["path"], jsonld=ld,
+                  description=desc, og_description=og_desc, canonical=page_url(p["path"]), jsonld=ld,
                   extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(p["name"])} releases" href="{esc(p["path"])}feed.xml">\n')
 
 
@@ -1739,7 +1744,7 @@ def render_sitemap(model: dict) -> str:
     day = model["built"][:10]
     items = [(SITE_BASE + "/", day)]
     items += [(SITE_BASE + k, min(v, day)) for k, v in STATIC_PAGE_LASTMOD.items()]
-    items += [(SITE_BASE + p["path"], pkg_lastmod(p, day)) for p in model["packages"]]
+    items += [(page_url(p["path"]), pkg_lastmod(p, day)) for p in model["packages"]]
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'
             + "".join(f"<url><loc>{esc(u)}</loc><lastmod>{esc(d)}</lastmod></url>" for u, d in items) + "</urlset>\n")
 

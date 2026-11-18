@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T16:17:06Z",
+ "built": "2026-11-18T19:15:07Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -11,6 +11,28 @@
   "url": "https://formachines.ai/errata/pypi/google-genai/"
  },
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T17:49:07Z",
+   "ecosystem": "pypi",
+   "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
+   "flagged": false,
+   "id": "pypi/google-genai/3.2.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f4c8bad7b8/",
+   "notes_url": "https://github.com/googleapis/python-genai/releases/tag/v3.2.0",
+   "package": "google-genai",
+   "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
+   "prerelease": false,
+   "prev_version": "3.1.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.2.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-10T20:30:36Z",
@@ -167,31 +189,9 @@
    "variant_of": null,
    "version": "3.3.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T17:49:07Z",
-   "ecosystem": "pypi",
-   "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
-   "flagged": false,
-   "id": "pypi/google-genai/3.2.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/google-genai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/f4c8bad7b8/",
-   "notes_url": "https://github.com/googleapis/python-genai/releases/tag/v3.2.0",
-   "package": "google-genai",
-   "page": "https://releases.formachines.ai/pkg/pypi/google-genai/",
-   "prerelease": false,
-   "prev_version": "3.1.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "3.2.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/googleapis/python-genai",
- "stable_in_window": 4,
+ "stable_in_window": 3,
  "summary": "GenAI Python SDK"
 }
