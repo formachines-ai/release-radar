@@ -1394,9 +1394,23 @@ def package_facts(p: dict, model: dict) -> str:
     else:
         stable = sum(1 for r in recs if not r["prerelease"])
         flagged = sum(1 for r in recs if r["flagged"])
-        new = max(recs, key=lambda r: r["date"])
+        # T-0147: 'latest' = the page's "Latest version" field; fallback newest non-pre-release, non-platform record
+        lv, ld = p.get("latest"), None
+        if lv:
+            ld = max((r["date"] for r in recs if r["version"] == lv), default=None)
+            ls = p.get("latest_stable") or {}
+            if not ld and ls.get("version") == lv:
+                ld = ls.get("date")
+        else:
+            cand = [r for r in recs if not r["prerelease"] and variant_base(p["ecosystem"], r["version"]) is None]
+            if cand:
+                new = max(cand, key=lambda r: r["date"])
+                lv, ld = new["version"], new["date"]
+        lat = ""
+        if lv:
+            lat = f'; latest <code>{esc(lv)}</code>' + (f' on {esc(ld[:10])} UTC' if ld else '')
         mid = (f'{len(recs)} release{"" if len(recs) == 1 else "s"} in the last {HISTORY_DAYS} days ({stable} stable), '
-               f'{flagged} flagged by regex; latest <code>{esc(new["version"])}</code> on {esc(new["date"][:10])} UTC')
+               f'{flagged} flagged by regex{lat}')
     return f'<p class="facts">{head}{mid}. Sources: {src}. Checked {chk} UTC.</p>'
 
 
