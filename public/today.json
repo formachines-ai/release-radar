@@ -1,11 +1,11 @@
 {
- "built": "2026-11-18T08:25:36Z",
+ "built": "2026-11-18T09:23:57Z",
  "counts": {
-  "flagged": 34,
+  "flagged": 33,
   "packages": 98,
-  "prereleases": 249,
-  "releases": 365,
-  "with_errata": 17
+  "prereleases": 248,
+  "releases": 362,
+  "with_errata": 16
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
@@ -8330,81 +8330,9 @@
    "variant_of": null,
    "version": "0.169.0-alpha.11",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-11T09:18:38Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/typer/0.29.1",
-   "json": "https://releases.formachines.ai/pkg/pypi/typer/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/5924f9b49c/",
-   "notes_url": "https://github.com/fastapi/typer/releases/tag/0.29.1",
-   "package": "typer",
-   "page": "https://releases.formachines.ai/pkg/pypi/typer/",
-   "prerelease": false,
-   "prev_version": "0.29.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.29.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-11T08:54:02Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "id": "npm/hono/4.13.18",
-   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/0b461bb161/",
-   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.18",
-   "package": "hono",
-   "page": "https://releases.formachines.ai/pkg/npm/hono/",
-   "prerelease": false,
-   "prev_version": "4.13.17",
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "With a `getPath` that prepends a prefix such as the host name, one segment too many was removed from the forwarded path, so middleware scoped inside the mount prefix could be skipped.",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "4.13.18",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-11T08:45:28Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261111.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.1.0-dev.20261111.1",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-11T08:25:36Z"
+ "window_start": "2026-11-11T09:23:57Z"
 }

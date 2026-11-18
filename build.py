@@ -1158,6 +1158,26 @@ def render_index(model: dict, errata_count: int) -> str:
                          f'<ul class="nonotes">{_nn_li(nn_pre)}</ul></details>{unchecked_html}')
     else:
         nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note + unchecked_html
+    cd_end, cd_start = now - timedelta(days=WINDOW_DAYS), now - timedelta(days=WINDOW_DAYS + 1)
+    cd_rels = sorted((r for p in model["packages"] for r in (p.get("history") or [])
+                      if (parse_dt(r["date"]) or now) >= cd_start and (parse_dt(r["date"]) or now) < cd_end),
+                     key=lambda r: (not r["flagged"], r["prerelease"], r["date"]), reverse=False)
+    cd_rels = [r for r in cd_rels if not r.get("variant_of")]
+    cd_win = f'{cd_start.strftime("%Y-%m-%d %H:%M")}–{cd_end.strftime("%Y-%m-%d %H:%M")} UTC'
+    cooldown = [f'<h2 id="cooldown">Past a 7-day cooldown <span class="note">(released {cd_win})</span></h2>',
+                '<p class="note">Releases that are now 7 to 8 days old, for teams that wait a week before installing '
+                '(npm min-release-age, pnpm minimumReleaseAge, uv exclude-newer). Same records and verbatim quotes as on the package pages.</p>']
+    if cd_rels:
+        cd_fl = [r for r in cd_rels if r["flagged"]]
+        cd_un = [r for r in cd_rels if not r["flagged"]]
+        if cd_fl:
+            cooldown.append('<ul class="cards">' + render_cards(cd_fl, now) + "</ul>")
+        if cd_un:
+            cooldown.append(f'<p class="note">Without a flag ({len(cd_un)}):</p><ul class="nonotes cooldown-list">' + "".join(
+                f'<li>{esc(r["name"])}@{esc(r["version"])} · {esc(fmt_date(r["date"])[:10])} · '
+                f'<a href="{esc(r["pkg_path"])}">/pkg/ page</a></li>' for r in cd_un) + "</ul>")
+    else:
+        cooldown.append(f'<p class="note">No tracked release was published in {cd_win}.</p>')
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
     if flagged:
         k_minor = sum(1 for r in flagged if r["bump"] in ("minor", "patch"))
@@ -1185,6 +1205,7 @@ def render_index(model: dict, errata_count: int) -> str:
     body.append('<p class="note legend">Flag = regex word match + verbatim quote.</p>')
     body.append('<ul class="cards">' + render_cards(recent, now) + "</ul>" if recent
                 else f'<p class="note">No release in the last {QUIET_HOURS} h among tracked packages. The {WINDOW_DAYS}-day lists below are never empty on purpose.</p>')
+    body.append("\n".join(cooldown))
     body.append(f'<p class="note">How flags work: the last {WINDOW_DAYS} days of releases are read for the exact lines of the release notes that say <em>breaking</em>, <em>deprecated</em>, <em>removed</em>, <em>renamed</em>, '
                 f'<em>dropped support</em> or <em>no longer</em>. Quotes are verbatim; the flag is a regular-expression match, not an opinion. '
                 f'Packages with a sandbox-verified fix on <a href="https://formachines.ai/errata/">Errata</a> ({errata_count} packages there) carry a green badge.</p>')
@@ -1695,6 +1716,10 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     for r in model["releases"]:
         if r["notes_url"]:
             go_map[r["notes_go"]] = r["notes_url"]
+    for p in model["packages"]:
+        for r in p.get("history") or []:
+            if r.get("notes_url") and r.get("notes_go"):
+                go_map[r["notes_go"]] = r["notes_url"]
     for gid, url in go_map.items():
         write_text(PUBLIC_DIR / "go" / gid / "index.html", render_go(url, built))
     for r in model["releases"]:
