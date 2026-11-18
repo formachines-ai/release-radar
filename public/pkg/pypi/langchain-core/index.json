@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 35,
+    "version": "1.8.0"
+   },
    "id": "pypi/langchain-core/1.7.7",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -68,6 +72,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 55,
+    "version": "1.8.2"
+   },
    "id": "pypi/langchain-core/1.8.1",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -90,6 +98,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 95,
+    "version": "1.8.1"
+   },
    "id": "pypi/langchain-core/1.8.0",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,

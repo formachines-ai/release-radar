@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 60,
+    "version": "3.50.0"
+   },
    "id": "pypi/openai/3.49.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -32,6 +36,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 14,
+    "version": "3.49.0"
+   },
    "id": "pypi/openai/3.48.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -90,6 +98,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 6,
+    "version": "3.55.0"
+   },
    "id": "pypi/openai/3.54.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -112,6 +124,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 4,
+    "version": "3.54.0"
+   },
    "id": "pypi/openai/3.53.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -134,6 +150,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 20,
+    "version": "3.53.0"
+   },
    "id": "pypi/openai/3.52.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -156,6 +176,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 73,
+    "version": "3.52.0"
+   },
    "id": "pypi/openai/3.51.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,
@@ -178,6 +202,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 25,
+    "version": "3.51.0"
+   },
    "id": "pypi/openai/3.50.0",
    "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
    "no_notes": false,

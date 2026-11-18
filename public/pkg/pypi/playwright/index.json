@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 50,
+    "version": "1.65.1"
+   },
    "id": "pypi/playwright/1.65.0",
    "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
    "no_notes": false,
@@ -84,6 +88,10 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 48,
+    "version": "1.65.2"
+   },
    "id": "pypi/playwright/1.65.1",
    "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
    "no_notes": false,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 66,
+    "version": "2.1.323"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.322",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -32,6 +36,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 6,
+    "version": "2.1.322"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.321",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -70,6 +78,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 90,
+    "version": "2.1.321"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.319",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -160,6 +172,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 25,
+    "version": "2.1.327"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.326",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -198,6 +214,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 70,
+    "version": "2.1.326"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.325",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -236,6 +256,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 1,
+    "version": "2.1.325"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.324",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -258,6 +282,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 22,
+    "version": "2.1.324"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.323",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,

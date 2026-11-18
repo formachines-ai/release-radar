@@ -1,9 +1,36 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
+ "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T12:30:48Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 18,
+    "version": "3.10.1"
+   },
+   "id": "npm/prettier/3.10.0",
+   "json": "https://releases.formachines.ai/pkg/npm/prettier/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/039525991b/",
+   "notes_url": "https://github.com/prettier/prettier/releases/tag/3.10.0",
+   "package": "prettier",
+   "page": "https://releases.formachines.ai/pkg/npm/prettier/",
+   "prerelease": false,
+   "prev_version": "3.9.10",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.10.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
  "latest": "3.10.1",
@@ -38,31 +65,9 @@
    "variant_of": null,
    "version": "3.10.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T12:30:48Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prettier/3.10.0",
-   "json": "https://releases.formachines.ai/pkg/npm/prettier/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/039525991b/",
-   "notes_url": "https://github.com/prettier/prettier/releases/tag/3.10.0",
-   "package": "prettier",
-   "page": "https://releases.formachines.ai/pkg/npm/prettier/",
-   "prerelease": false,
-   "prev_version": "3.9.10",
-   "quotes": [],
-   "variant_of": null,
-   "version": "3.10.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/prettier/prettier",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Prettier is an opinionated code formatter"
 }

@@ -1,6 +1,6 @@
 {
- "built": "2026-11-18T10:23:03Z",
- "commit": "1197304",
+ "built": "2026-11-18T13:16:13Z",
+ "commit": "2c85b96",
  "errors": [],
  "flagged": 33,
  "generator": "build.py",
@@ -10,9 +10,9 @@
   "counts": {
    "checked_no_notes": 0,
    "no_repo_url": 3,
-   "not_fetched": 234
+   "not_fetched": 227
   },
-  "github_release": 124,
+  "github_release": 123,
   "missing": [
    {
     "eco": "npm",
@@ -21,7 +21,7 @@
     "version": "2.1.324"
    },
    {
-    "count": 173,
+    "count": 167,
     "eco": "npm",
     "name": "@openai/codex",
     "reason": "not_fetched",
@@ -45,12 +45,6 @@
      "0.168.0-linux-x64",
      "0.168.0-win32-arm64",
      "0.168.0-win32-x64",
-     "0.169.0-alpha.11-darwin-arm64",
-     "0.169.0-alpha.11-darwin-x64",
-     "0.169.0-alpha.11-linux-arm64",
-     "0.169.0-alpha.11-linux-x64",
-     "0.169.0-alpha.11-win32-arm64",
-     "0.169.0-alpha.11-win32-x64",
      "0.169.0-alpha.11.1",
      "0.169.0-alpha.11.1-darwin-arm64",
      "0.169.0-alpha.11.1-darwin-x64",
@@ -262,12 +256,11 @@
     "version": "1.19.6"
    },
    {
-    "count": 12,
+    "count": 11,
     "eco": "npm",
     "name": "playwright",
     "reason": "not_fetched",
     "versions": [
-     "1.65.0-beta-1794401539000",
      "1.65.0-beta-1794414684000",
      "1.65.0-beta-1794421487000",
      "1.65.0-beta-1794589053000",
@@ -405,9 +398,9 @@
     "version": "1.44.5"
    }
   ],
-  "releases": 361
+  "releases": 353
  },
  "packages": 98,
  "redirects": 266,
- "releases": 361
+ "releases": 353
 }

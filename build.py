@@ -829,6 +829,22 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
     }
 
 
+def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
+    """T-0140: record["followed_by"] = {version, hours} when a newer stable version of the package has a later registry date within 168 h."""
+    recs = {r["id"]: r for r in list(pkg["releases"]) + list(pkg.get("history") or [])}.values()
+    stable = [(parse_dt(r["date"]), r) for r in recs if not r["prerelease"] and parse_dt(r["date"])]
+    for r in recs:
+        r.pop("followed_by", None)
+        d0 = parse_dt(r["date"])
+        if not d0 or r["prerelease"] or (r.get("variant_of") and r["variant_of"] != r["version"]):
+            continue  # only stable, non-platform-build records carry the line
+        nxt = [(d, x) for d, x in stable if d > d0 and (d - d0) <= timedelta(hours=max_hours)
+               and x["version"] != r["version"] and (x.get("variant_of") or x["version"]) != (r.get("variant_of") or r["version"])]
+        if nxt:
+            d, x = min(nxt, key=lambda t: t[0])
+            r["followed_by"] = {"version": x["version"], "hours": int((d - d0).total_seconds() // 3600)}
+
+
 def merge_history(pkg: dict, now: datetime, window_start: datetime, ignore: list[re.Pattern]) -> None:
     """T-0118: records older than the 7-day window come only from earlier committed index.json files."""
     old = read_json(PUBLIC_DIR / pkg["path"].strip("/") / "index.json")
@@ -944,6 +960,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             pkg["releases"].append(rel)
             releases.append(rel)
         merge_history(pkg, now, window_start, ignore)
+        mark_followed_by(pkg)
         pkgs.append(pkg)
     releases.sort(key=lambda r: r["date"], reverse=True)
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
@@ -1092,11 +1109,13 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     feedback = (f'<span class="feedback">Was this useful? <a href="/go/vote/{vid}/up/" rel="nofollow">useful</a> · '
                 f'<a href="/go/vote/{vid}/down/" rel="nofollow">not useful</a> · '
                 f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
+    fb = r.get("followed_by")
+    fb_html = (f'<p class="note followed">Followed by {esc(fb["version"])} {fb["hours"]} h later (registry dates)</p>' if fb else "")
     return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
-            f'{" ".join(badges)}</div>{top}{bump_step_line(r)}{quotes}{honest}{vhtml}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
+            f'{" ".join(badges)}</div>{top}{bump_step_line(r)}{fb_html}{quotes}{honest}{vhtml}<div class="links">{links}</div><div class="feedback-row">{feedback}</div></li>')
 
 
 def render_index(model: dict, errata_count: int) -> str:
@@ -1175,7 +1194,8 @@ def render_index(model: dict, errata_count: int) -> str:
         if cd_un:
             cooldown.append(f'<p class="note">Without a flag ({len(cd_un)}):</p><ul class="nonotes cooldown-list">' + "".join(
                 f'<li>{esc(r["name"])}@{esc(r["version"])} · {esc(fmt_date(r["date"])[:10])} · '
-                f'<a href="{esc(r["pkg_path"])}">/pkg/ page</a></li>' for r in cd_un) + "</ul>")
+                f'<a href="{esc(r["pkg_path"])}">/pkg/ page</a>'
+                f'{(" · Followed by " + esc(r["followed_by"]["version"]) + " " + str(r["followed_by"]["hours"]) + " h later (registry dates)") if r.get("followed_by") else ""}</li>' for r in cd_un) + "</ul>")
     else:
         cooldown.append(f'<p class="note">No tracked release was published in {cd_win}.</p>')
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
@@ -1479,6 +1499,7 @@ def public_release(r: dict) -> dict:
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
+        **({"followed_by": r["followed_by"]} if r.get("followed_by") else {}),
     }
 
 

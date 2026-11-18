@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -32,6 +32,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 1,
+    "version": "5.107.1"
+   },
    "id": "npm/@tanstack/react-query/5.107.0",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -54,6 +58,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 37,
+    "version": "5.107.0"
+   },
    "id": "npm/@tanstack/react-query/5.106.1",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -112,6 +120,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 3,
+    "version": "5.108.0"
+   },
    "id": "npm/@tanstack/react-query/5.107.2",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T10:23:03Z",
+ "built": "2026-11-18T13:16:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -10,6 +10,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 12,
+    "version": "4.0.115"
+   },
    "id": "npm/@ai-sdk/openai/3.0.141",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -32,6 +36,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "3.0.141"
+   },
    "id": "npm/@ai-sdk/openai/2.0.143",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -54,6 +62,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 9,
+    "version": "2.0.143"
+   },
    "id": "npm/@ai-sdk/openai/4.0.114",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -76,6 +88,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 2,
+    "version": "4.0.114"
+   },
    "id": "npm/@ai-sdk/openai/4.0.113",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -98,6 +114,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "4.0.113"
+   },
    "id": "npm/@ai-sdk/openai/3.0.140",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -120,6 +140,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "3.0.140"
+   },
    "id": "npm/@ai-sdk/openai/2.0.142",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -142,6 +166,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 70,
+    "version": "2.0.142"
+   },
    "id": "npm/@ai-sdk/openai/4.0.111",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -164,6 +192,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "4.0.111"
+   },
    "id": "npm/@ai-sdk/openai/3.0.139",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -186,6 +218,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "3.0.139"
+   },
    "id": "npm/@ai-sdk/openai/2.0.141",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -208,6 +244,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 20,
+    "version": "2.0.141"
+   },
    "id": "npm/@ai-sdk/openai/3.0.138",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -230,6 +270,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 2,
+    "version": "3.0.138"
+   },
    "id": "npm/@ai-sdk/openai/4.0.110",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -288,6 +332,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "4.0.121"
+   },
    "id": "npm/@ai-sdk/openai/4.0.120",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -310,6 +358,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 1,
+    "version": "4.0.120"
+   },
    "id": "npm/@ai-sdk/openai/4.0.119",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -332,6 +384,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "4.0.119"
+   },
    "id": "npm/@ai-sdk/openai/3.0.144",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -354,6 +410,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 90,
+    "version": "3.0.144"
+   },
    "id": "npm/@ai-sdk/openai/3.0.143",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -376,6 +436,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 1,
+    "version": "3.0.143"
+   },
    "id": "npm/@ai-sdk/openai/4.0.118",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -398,6 +462,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 16,
+    "version": "4.0.118"
+   },
    "id": "npm/@ai-sdk/openai/4.0.117",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -420,6 +488,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 9,
+    "version": "4.0.117"
+   },
    "id": "npm/@ai-sdk/openai/4.0.116",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -442,6 +514,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 0,
+    "version": "4.0.116"
+   },
    "id": "npm/@ai-sdk/openai/3.0.142",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -464,6 +540,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 25,
+    "version": "3.0.142"
+   },
    "id": "npm/@ai-sdk/openai/4.0.115",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
