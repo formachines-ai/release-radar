@@ -58,6 +58,7 @@ data/errata/index.json      last successful copy of the Errata package index
 data/state.json             summary of the last build
 public/                     the site — everything below is generated, do not edit by hand
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
+                                (T-0137: section `Past a 7-day cooldown` below the recent cards: releases 7–8 days old (from /pkg/ history), flagged ones as full cards, the rest as package@version · date · /pkg/ link; one line if the window is empty)
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
   pkg/<eco>/<name>/index.json   package data
                                 (T-0118: `history` key = records older than 7 days up to 90, merged from the previous committed index.json, no re-fetch; `history_since` = first date held)
