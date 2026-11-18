@@ -139,7 +139,7 @@ tag, the exact candidate tags are requested one by one (404s are cached). No nea
 npm versions of the form `<base>-(darwin|linux|win32)-(x64|arm64)` (confirmed for `@openai/codex` in `today.json`) get
 `variant_of: "<base>"` in `today.json` and `/pkg/*/index.json`; every entry is kept. In the HTML (home and package pages)
 unflagged variants whose base version is in the same list fold into the base card as an "N platform builds" line with a
-`<details>` list of versions (no JS). Other versions, flagged variants, or variants without a base card stay separate cards.
+`<details>` list of versions · dates (no JS). T-0142: flagged variants fold in too (flag and quotes kept), and variants whose base is not in the list get one `<base> platform builds` group card.
 
 ## Bump label and honest notes on cards
 

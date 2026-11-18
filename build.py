@@ -103,24 +103,56 @@ def variant_base(eco: str, ver: str) -> str | None:
 
 
 def group_variants(rels: list[dict]) -> list[tuple[dict, list[dict]]]:
-    """Fold unflagged platform builds into the card of their base version when that card is in the same list."""
+    """Fold platform builds into the card of their base version when it is in the same list; otherwise a
+    synthetic group entry (`group_base` set, no record of its own) is placed where the first build was."""
     present = {(r["ecosystem"], r["name"], r["version"]) for r in rels}
     groups: dict[tuple, list[dict]] = {}
     for r in rels:
         b = r.get("variant_of")
-        if b and not r["flagged"] and (r["ecosystem"], r["name"], b) in present:
+        if b:
             groups.setdefault((r["ecosystem"], r["name"], b), []).append(r)
     out = []
+    done = set()
     for r in rels:
         b = r.get("variant_of")
-        if b and not r["flagged"] and (r["ecosystem"], r["name"], b) in present:
+        if b:
+            k = (r["ecosystem"], r["name"], b)
+            if k in present:
+                continue
+            if k not in done:
+                done.add(k)
+                out.append(({"group_base": b, "first": r}, groups[k]))
             continue
         out.append((r, groups.get((r["ecosystem"], r["name"], r["version"]), [])))
     return out
 
 
+def render_variant_items(variants: list[dict], now: datetime) -> str:
+    items = []
+    for v in variants:
+        fl = ' <span class="badge flag">breaking / deprecated wording</span>' if v["flagged"] else ""
+        q = "".join(render_quote(x) for x in v["quotes"])
+        items.append(f'<li id="{esc(safe_fs_name(v["id"]))}"><code>{esc(v["version"])}</code> · {esc(fmt_date(v["date"]))}{fl}{q}</li>')
+    return "".join(items)
+
+
+def render_group_card(base: str, first: dict, variants: list[dict], now: datetime, show_pkg_link: bool = True) -> str:
+    name_html = f'<a href="{esc(first["pkg_path"])}">{esc(first["name"])}</a>' if show_pkg_link else esc(first["name"])
+    flagged = " flagged" if any(v["flagged"] for v in variants) else ""
+    return (f'<li class="card group{flagged}"><div class="head"><span class="badge eco">{esc(first["ecosystem"])}</span>'
+            f'<span class="name">{name_html}</span><span class="ver">{esc(base)} platform builds</span></div>'
+            f'<p class="note">The base version {esc(base)} is not in this list.</p>'
+            f'<ul class="variant-list">{render_variant_items(variants, now)}</ul></li>')
+
+
 def render_cards(rels: list[dict], now: datetime, **kw) -> str:
-    return "".join(render_card(r, now, variants=v, **kw) for r, v in group_variants(rels))
+    out = []
+    for r, v in group_variants(rels):
+        if "group_base" in r:
+            out.append(render_group_card(r["group_base"], r["first"], v, now, show_pkg_link=kw.get("show_pkg_link", True)))
+        else:
+            out.append(render_card(r, now, variants=v, **kw))
+    return "".join(out)
 
 
 def notes_counts(missing: list[dict], checked_no_notes: int) -> dict:
@@ -1100,7 +1132,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
         links = ""
     vhtml = ""
     if variants:
-        vs = "".join(f'<li><code>{esc(v["version"])}</code></li>' for v in variants)
+        vs = render_variant_items(variants, now)
         vhtml = f'<details class="variants"><summary>{len(variants)} platform builds</summary><ul>{vs}</ul></details>'
     links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
