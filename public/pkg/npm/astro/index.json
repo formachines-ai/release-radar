@@ -1,9 +1,35 @@
 {
- "built": "2026-11-18T16:17:06Z",
+ "built": "2026-11-18T19:15:07Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T17:35:49Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 49,
+    "version": "7.4.12"
+   },
+   "id": "npm/astro/7.4.11",
+   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/f8dbe20817/",
+   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.11",
+   "package": "astro",
+   "page": "https://releases.formachines.ai/pkg/npm/astro/",
+   "prerelease": false,
+   "prev_version": "7.4.10",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.4.11",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-10T20:11:04Z",
@@ -175,35 +201,9 @@
    "variant_of": null,
    "version": "7.4.12",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-11T17:35:49Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 49,
-    "version": "7.4.12"
-   },
-   "id": "npm/astro/7.4.11",
-   "json": "https://releases.formachines.ai/pkg/npm/astro/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/f8dbe20817/",
-   "notes_url": "https://github.com/withastro/astro/releases/tag/astro%407.4.11",
-   "package": "astro",
-   "page": "https://releases.formachines.ai/pkg/npm/astro/",
-   "prerelease": false,
-   "prev_version": "7.4.10",
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.4.11",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/withastro/astro",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Astro is a modern site builder with web best practices, performance, and DX front-of-mind."
 }

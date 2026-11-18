@@ -1,9 +1,31 @@
 {
- "built": "2026-11-18T16:17:06Z",
+ "built": "2026-11-18T19:15:07Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "date": "2026-11-11T17:39:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@google/genai/3.2.0",
+   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7b898ab8bb/",
+   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.2.0",
+   "package": "@google/genai",
+   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
+   "prerelease": false,
+   "prev_version": "3.1.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.2.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-10T20:47:12Z",
@@ -138,31 +160,9 @@
    "variant_of": null,
    "version": "3.3.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "date": "2026-11-11T17:39:57Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/@google/genai/3.2.0",
-   "json": "https://releases.formachines.ai/pkg/npm/@google/genai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/7b898ab8bb/",
-   "notes_url": "https://github.com/googleapis/js-genai/releases/tag/v3.2.0",
-   "package": "@google/genai",
-   "page": "https://releases.formachines.ai/pkg/npm/@google/genai/",
-   "prerelease": false,
-   "prev_version": "3.1.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "3.2.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/googleapis/js-genai",
- "stable_in_window": 4,
+ "stable_in_window": 3,
  "summary": "[![NPM Downloads](https://img.shields.io/npm/dw/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai) [![Node Current](https://img.shields.io/node/v/%40google%2Fgenai)](https://www.npmjs.com/package/@google/genai)"
 }

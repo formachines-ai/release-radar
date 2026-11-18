@@ -1,9 +1,35 @@
 {
- "built": "2026-11-18T16:17:06Z",
+ "built": "2026-11-18T19:15:07Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T18:38:11Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 25,
+    "version": "4.0.116"
+   },
+   "id": "npm/@ai-sdk/openai/4.0.115",
+   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/76aa5a14f8/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.115",
+   "package": "@ai-sdk/openai",
+   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+   "prerelease": false,
+   "prev_version": "4.0.114",
+   "quotes": [],
+   "variant_of": null,
+   "version": "4.0.115",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-11T06:21:13Z",
@@ -525,35 +551,9 @@
    "variant_of": null,
    "version": "3.0.142",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-11T18:38:11Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 25,
-    "version": "4.0.116"
-   },
-   "id": "npm/@ai-sdk/openai/4.0.115",
-   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/76aa5a14f8/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.115",
-   "package": "@ai-sdk/openai",
-   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
-   "prerelease": false,
-   "prev_version": "4.0.114",
-   "quotes": [],
-   "variant_of": null,
-   "version": "4.0.115",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 10,
+ "stable_in_window": 9,
  "summary": ""
 }
