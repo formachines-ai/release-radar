@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -320,7 +320,7 @@
   "date": "2026-11-17T20:55:57Z",
   "version": "4.0.121"
  },
- "metadata_fetched": "2026-11-18T06:00:34Z",
+ "metadata_fetched": "2026-11-18T21:10:38Z",
  "package": "@ai-sdk/openai",
  "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
  "prereleases_in_window": 0,

@@ -1,23 +1,46 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "5.57.3",
+ "latest": "5.58.0",
  "latest_stable": {
-  "date": "2026-10-26T18:16:20Z",
-  "version": "5.57.3"
+  "date": "2026-11-18T06:56:08Z",
+  "version": "5.58.0"
  },
- "metadata_fetched": "2026-11-18T06:01:33Z",
+ "metadata_fetched": "2026-11-18T21:11:40Z",
  "package": "svelte",
  "page": "https://releases.formachines.ai/pkg/npm/svelte/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/svelte",
- "releases": [],
+ "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-18T06:56:08Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/svelte/5.58.0",
+   "json": "https://releases.formachines.ai/pkg/npm/svelte/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/37cdb0f3a3/",
+   "notes_url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.0",
+   "package": "svelte",
+   "page": "https://releases.formachines.ai/pkg/npm/svelte/",
+   "prerelease": false,
+   "prev_version": "5.57.3",
+   "quotes": [],
+   "variant_of": null,
+   "version": "5.58.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/sveltejs/svelte",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Cybernetically enhanced web apps"
 }

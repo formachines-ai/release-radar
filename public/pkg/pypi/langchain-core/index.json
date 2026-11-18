@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -61,12 +61,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.8.2",
+ "latest": "1.8.3",
  "latest_stable": {
-  "date": "2026-11-17T22:42:39Z",
-  "version": "1.8.2"
+  "date": "2026-11-18T15:38:17Z",
+  "version": "1.8.3"
  },
- "metadata_fetched": "2026-11-18T06:00:05Z",
+ "metadata_fetched": "2026-11-18T21:10:04Z",
  "package": "langchain-core",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
  "prereleases_in_window": 0,
@@ -74,10 +74,36 @@
  "releases": [
   {
    "bump": "patch",
+   "date": "2026-11-18T15:38:17Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langchain-core/1.8.3",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/27c3fe831d/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.3",
+   "package": "langchain-core",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
+   "prerelease": false,
+   "prev_version": "1.8.2",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.8.3",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "date": "2026-11-17T22:42:39Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 16,
+    "version": "1.8.3"
+   },
    "id": "pypi/langchain-core/1.8.2",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -122,6 +148,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "Building applications with LLMs through composability"
 }

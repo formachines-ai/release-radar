@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -423,12 +423,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "7.0.176",
+ "latest": "7.0.177",
  "latest_stable": {
-  "date": "2026-11-17T20:57:53Z",
-  "version": "7.0.176"
+  "date": "2026-11-18T19:03:24Z",
+  "version": "7.0.177"
  },
- "metadata_fetched": "2026-11-18T06:01:03Z",
+ "metadata_fetched": "2026-11-18T21:11:07Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
@@ -436,10 +436,36 @@
  "releases": [
   {
    "bump": "patch",
+   "date": "2026-11-18T19:03:24Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/7.0.177",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/52830d47f4/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.177",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.176",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.0.177",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "date": "2026-11-17T20:57:53Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 22,
+    "version": "7.0.177"
+   },
    "id": "npm/ai/7.0.176",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -734,6 +760,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 11,
+ "stable_in_window": 12,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

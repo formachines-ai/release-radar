@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-18T21:10:01Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -27,15 +27,15 @@ Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
 - [@anthropic-ai/claude-code (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/): latest 2.1.327 · JSON: https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json
 - [@anthropic-ai/sdk (npm)](https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/): latest 1.10.0 · JSON: https://releases.formachines.ai/pkg/npm/@anthropic-ai/sdk/index.json
 - [@google/gemini-cli (npm)](https://releases.formachines.ai/pkg/npm/@google/gemini-cli/): latest 0.68.0 · JSON: https://releases.formachines.ai/pkg/npm/@google/gemini-cli/index.json
-- [@google/genai (npm)](https://releases.formachines.ai/pkg/npm/@google/genai/): latest 3.5.0 · JSON: https://releases.formachines.ai/pkg/npm/@google/genai/index.json
+- [@google/genai (npm)](https://releases.formachines.ai/pkg/npm/@google/genai/): latest 3.6.0 · JSON: https://releases.formachines.ai/pkg/npm/@google/genai/index.json
 - [@langchain/core (npm)](https://releases.formachines.ai/pkg/npm/@langchain/core/): latest 1.4.1 · JSON: https://releases.formachines.ai/pkg/npm/@langchain/core/index.json
 - [@modelcontextprotocol/sdk (npm)](https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/): latest 1.32.2 · JSON: https://releases.formachines.ai/pkg/npm/@modelcontextprotocol/sdk/index.json
 - [@openai/codex (npm)](https://releases.formachines.ai/pkg/npm/@openai/codex/): latest 0.170.0 · JSON: https://releases.formachines.ai/pkg/npm/@openai/codex/index.json
 - [@prisma/client (npm)](https://releases.formachines.ai/pkg/npm/@prisma/client/): latest 7.10.1 · JSON: https://releases.formachines.ai/pkg/npm/@prisma/client/index.json
-- [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.119.0 · JSON: https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json
+- [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.119.1 · JSON: https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json
 - [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.108.0 · JSON: https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json
-- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.176 · JSON: https://releases.formachines.ai/pkg/npm/ai/index.json
-- [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.12 · JSON: https://releases.formachines.ai/pkg/npm/astro/index.json
+- [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.177 · JSON: https://releases.formachines.ai/pkg/npm/ai/index.json
+- [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.13 · JSON: https://releases.formachines.ai/pkg/npm/astro/index.json
 - [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.1 · JSON: https://releases.formachines.ai/pkg/npm/axios/index.json
 - [commander (npm)](https://releases.formachines.ai/pkg/npm/commander/): latest 15.1.0 · JSON: https://releases.formachines.ai/pkg/npm/commander/index.json
 - [dotenv (npm)](https://releases.formachines.ai/pkg/npm/dotenv/): latest 18.0.10 · JSON: https://releases.formachines.ai/pkg/npm/dotenv/index.json
@@ -52,7 +52,7 @@ Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
 - [mongoose (npm)](https://releases.formachines.ai/pkg/npm/mongoose/): latest 9.12.2 · JSON: https://releases.formachines.ai/pkg/npm/mongoose/index.json
 - [next (npm)](https://releases.formachines.ai/pkg/npm/next/): latest 16.4.6 · JSON: https://releases.formachines.ai/pkg/npm/next/index.json
 - [nuxt (npm)](https://releases.formachines.ai/pkg/npm/nuxt/): latest 4.6.4 · JSON: https://releases.formachines.ai/pkg/npm/nuxt/index.json
-- [openai (npm)](https://releases.formachines.ai/pkg/npm/openai/): latest 7.59.0 · JSON: https://releases.formachines.ai/pkg/npm/openai/index.json
+- [openai (npm)](https://releases.formachines.ai/pkg/npm/openai/): latest 7.60.0 · JSON: https://releases.formachines.ai/pkg/npm/openai/index.json
 - [opencode-ai (npm)](https://releases.formachines.ai/pkg/npm/opencode-ai/): latest 1.19.6 · JSON: https://releases.formachines.ai/pkg/npm/opencode-ai/index.json
 - [pg (npm)](https://releases.formachines.ai/pkg/npm/pg/): latest 8.23.1 · JSON: https://releases.formachines.ai/pkg/npm/pg/index.json
 - [playwright (npm)](https://releases.formachines.ai/pkg/npm/playwright/): latest 1.65.1 · JSON: https://releases.formachines.ai/pkg/npm/playwright/index.json
@@ -61,13 +61,13 @@ Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
 - [puppeteer (npm)](https://releases.formachines.ai/pkg/npm/puppeteer/): latest 25.18.1 · JSON: https://releases.formachines.ai/pkg/npm/puppeteer/index.json
 - [react (npm)](https://releases.formachines.ai/pkg/npm/react/): latest 19.3.1 · JSON: https://releases.formachines.ai/pkg/npm/react/index.json
 - [react-dom (npm)](https://releases.formachines.ai/pkg/npm/react-dom/): latest 19.3.1 · JSON: https://releases.formachines.ai/pkg/npm/react-dom/index.json
-- [react-router (npm)](https://releases.formachines.ai/pkg/npm/react-router/): latest 8.5.1 · JSON: https://releases.formachines.ai/pkg/npm/react-router/index.json
+- [react-router (npm)](https://releases.formachines.ai/pkg/npm/react-router/): latest 8.5.2 · JSON: https://releases.formachines.ai/pkg/npm/react-router/index.json
 - [stripe (npm)](https://releases.formachines.ai/pkg/npm/stripe/): latest 23.1.0 · JSON: https://releases.formachines.ai/pkg/npm/stripe/index.json
-- [svelte (npm)](https://releases.formachines.ai/pkg/npm/svelte/): latest 5.57.3 · JSON: https://releases.formachines.ai/pkg/npm/svelte/index.json
+- [svelte (npm)](https://releases.formachines.ai/pkg/npm/svelte/): latest 5.58.0 · JSON: https://releases.formachines.ai/pkg/npm/svelte/index.json
 - [tailwindcss (npm)](https://releases.formachines.ai/pkg/npm/tailwindcss/): latest 4.3.5 · JSON: https://releases.formachines.ai/pkg/npm/tailwindcss/index.json
 - [typescript (npm)](https://releases.formachines.ai/pkg/npm/typescript/): latest 7.0.2 · Errata correction available · JSON: https://releases.formachines.ai/pkg/npm/typescript/index.json
 - [vite (npm)](https://releases.formachines.ai/pkg/npm/vite/): latest 8.3.8 · JSON: https://releases.formachines.ai/pkg/npm/vite/index.json
-- [vitest (npm)](https://releases.formachines.ai/pkg/npm/vitest/): latest 5.1.0 · JSON: https://releases.formachines.ai/pkg/npm/vitest/index.json
+- [vitest (npm)](https://releases.formachines.ai/pkg/npm/vitest/): latest 5.1.1 · JSON: https://releases.formachines.ai/pkg/npm/vitest/index.json
 - [vue (npm)](https://releases.formachines.ai/pkg/npm/vue/): latest 3.5.45 · JSON: https://releases.formachines.ai/pkg/npm/vue/index.json
 - [zod (npm)](https://releases.formachines.ai/pkg/npm/zod/): latest 4.6.7 · JSON: https://releases.formachines.ai/pkg/npm/zod/index.json
 - [zustand (npm)](https://releases.formachines.ai/pkg/npm/zustand/): latest 5.1.0 · JSON: https://releases.formachines.ai/pkg/npm/zustand/index.json
@@ -76,27 +76,27 @@ Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
 - [alembic (pypi)](https://releases.formachines.ai/pkg/pypi/alembic/): latest 1.20.1 · JSON: https://releases.formachines.ai/pkg/pypi/alembic/index.json
 - [anthropic (pypi)](https://releases.formachines.ai/pkg/pypi/anthropic/): latest 2.10.0 · JSON: https://releases.formachines.ai/pkg/pypi/anthropic/index.json
 - [black (pypi)](https://releases.formachines.ai/pkg/pypi/black/): latest 26.10.1 · JSON: https://releases.formachines.ai/pkg/pypi/black/index.json
-- [boto3 (pypi)](https://releases.formachines.ai/pkg/pypi/boto3/): latest 1.44.5 · JSON: https://releases.formachines.ai/pkg/pypi/boto3/index.json
+- [boto3 (pypi)](https://releases.formachines.ai/pkg/pypi/boto3/): latest 1.44.6 · JSON: https://releases.formachines.ai/pkg/pypi/boto3/index.json
 - [celery (pypi)](https://releases.formachines.ai/pkg/pypi/celery/): latest 5.7.0 · JSON: https://releases.formachines.ai/pkg/pypi/celery/index.json
 - [click (pypi)](https://releases.formachines.ai/pkg/pypi/click/): latest 8.5.1 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/click/index.json
 - [cryptography (pypi)](https://releases.formachines.ai/pkg/pypi/cryptography/): latest 50.0.2 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/cryptography/index.json
 - [django (pypi)](https://releases.formachines.ai/pkg/pypi/django/): latest 6.1.3 · JSON: https://releases.formachines.ai/pkg/pypi/django/index.json
-- [fastapi (pypi)](https://releases.formachines.ai/pkg/pypi/fastapi/): latest 0.163.2 · JSON: https://releases.formachines.ai/pkg/pypi/fastapi/index.json
+- [fastapi (pypi)](https://releases.formachines.ai/pkg/pypi/fastapi/): latest 0.165.0 · JSON: https://releases.formachines.ai/pkg/pypi/fastapi/index.json
 - [flask (pypi)](https://releases.formachines.ai/pkg/pypi/flask/): latest 3.1.3 · JSON: https://releases.formachines.ai/pkg/pypi/flask/index.json
 - [google-genai (pypi)](https://releases.formachines.ai/pkg/pypi/google-genai/): latest 3.5.0 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/google-genai/index.json
 - [httpx (pypi)](https://releases.formachines.ai/pkg/pypi/httpx/): latest 0.28.1 · JSON: https://releases.formachines.ai/pkg/pypi/httpx/index.json
 - [huggingface-hub (pypi)](https://releases.formachines.ai/pkg/pypi/huggingface-hub/): latest 2.4.0 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/huggingface-hub/index.json
 - [instructor (pypi)](https://releases.formachines.ai/pkg/pypi/instructor/): latest 1.17.0 · JSON: https://releases.formachines.ai/pkg/pypi/instructor/index.json
 - [jinja2 (pypi)](https://releases.formachines.ai/pkg/pypi/jinja2/): latest 3.1.6 · JSON: https://releases.formachines.ai/pkg/pypi/jinja2/index.json
-- [langchain (pypi)](https://releases.formachines.ai/pkg/pypi/langchain/): latest 1.5.0 · JSON: https://releases.formachines.ai/pkg/pypi/langchain/index.json
-- [langchain-core (pypi)](https://releases.formachines.ai/pkg/pypi/langchain-core/): latest 1.8.2 · JSON: https://releases.formachines.ai/pkg/pypi/langchain-core/index.json
+- [langchain (pypi)](https://releases.formachines.ai/pkg/pypi/langchain/): latest 1.5.1 · JSON: https://releases.formachines.ai/pkg/pypi/langchain/index.json
+- [langchain-core (pypi)](https://releases.formachines.ai/pkg/pypi/langchain-core/): latest 1.8.3 · JSON: https://releases.formachines.ai/pkg/pypi/langchain-core/index.json
 - [langgraph (pypi)](https://releases.formachines.ai/pkg/pypi/langgraph/): latest 1.2.22 · JSON: https://releases.formachines.ai/pkg/pypi/langgraph/index.json
 - [litellm (pypi)](https://releases.formachines.ai/pkg/pypi/litellm/): latest 1.110.0 · JSON: https://releases.formachines.ai/pkg/pypi/litellm/index.json
 - [llama-index (pypi)](https://releases.formachines.ai/pkg/pypi/llama-index/): latest 0.14.26 · JSON: https://releases.formachines.ai/pkg/pypi/llama-index/index.json
 - [mcp (pypi)](https://releases.formachines.ai/pkg/pypi/mcp/): latest 2.3.0 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/mcp/index.json
 - [mypy (pypi)](https://releases.formachines.ai/pkg/pypi/mypy/): latest 2.4.1 · JSON: https://releases.formachines.ai/pkg/pypi/mypy/index.json
 - [numpy (pypi)](https://releases.formachines.ai/pkg/pypi/numpy/): latest 2.5.5 · JSON: https://releases.formachines.ai/pkg/pypi/numpy/index.json
-- [openai (pypi)](https://releases.formachines.ai/pkg/pypi/openai/): latest 3.55.0 · JSON: https://releases.formachines.ai/pkg/pypi/openai/index.json
+- [openai (pypi)](https://releases.formachines.ai/pkg/pypi/openai/): latest 3.55.1 · JSON: https://releases.formachines.ai/pkg/pypi/openai/index.json
 - [openai-agents (pypi)](https://releases.formachines.ai/pkg/pypi/openai-agents/): latest 0.25.0 · JSON: https://releases.formachines.ai/pkg/pypi/openai-agents/index.json
 - [orjson (pypi)](https://releases.formachines.ai/pkg/pypi/orjson/): latest 3.13.0 · JSON: https://releases.formachines.ai/pkg/pypi/orjson/index.json
 - [pandas (pypi)](https://releases.formachines.ai/pkg/pypi/pandas/): latest 3.1.1 · JSON: https://releases.formachines.ai/pkg/pypi/pandas/index.json
@@ -118,7 +118,7 @@ Updated: 2026-11-18T20:12:19Z UTC (daily build 06:00 UTC)
 - [structlog (pypi)](https://releases.formachines.ai/pkg/pypi/structlog/): latest 26.1.0 · JSON: https://releases.formachines.ai/pkg/pypi/structlog/index.json
 - [tiktoken (pypi)](https://releases.formachines.ai/pkg/pypi/tiktoken/): latest 0.14.0 · JSON: https://releases.formachines.ai/pkg/pypi/tiktoken/index.json
 - [transformers (pypi)](https://releases.formachines.ai/pkg/pypi/transformers/): latest 5.23.0 · JSON: https://releases.formachines.ai/pkg/pypi/transformers/index.json
-- [typer (pypi)](https://releases.formachines.ai/pkg/pypi/typer/): latest 0.29.1 · JSON: https://releases.formachines.ai/pkg/pypi/typer/index.json
+- [typer (pypi)](https://releases.formachines.ai/pkg/pypi/typer/): latest 0.29.2 · JSON: https://releases.formachines.ai/pkg/pypi/typer/index.json
 - [uvicorn (pypi)](https://releases.formachines.ai/pkg/pypi/uvicorn/): latest 0.54.0 · JSON: https://releases.formachines.ai/pkg/pypi/uvicorn/index.json
 - [websockets (pypi)](https://releases.formachines.ai/pkg/pypi/websockets/): latest 17.4 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/websockets/index.json
 

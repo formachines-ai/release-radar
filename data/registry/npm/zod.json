@@ -8,7 +8,7 @@
   "next": "3.25.0-beta.20250519T094321"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T06:01:38Z",
+ "fetched": "2026-11-18T21:11:46Z",
  "homepage": "https://zod.dev",
  "latest": "4.6.7",
  "name": "zod",
@@ -250,66 +250,6 @@
    "date": "2026-08-24T17:31:13Z",
    "deprecated": false,
    "version": "4.5.0-canary.20260824T172557"
-  },
-  {
-   "date": "2026-08-20T19:43:58Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260819T210425"
-  },
-  {
-   "date": "2026-08-20T19:41:43Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260819T211159"
-  },
-  {
-   "date": "2026-08-20T19:41:31Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T143231"
-  },
-  {
-   "date": "2026-08-20T19:41:23Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260819T200234"
-  },
-  {
-   "date": "2026-08-20T19:41:16Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260819T191034"
-  },
-  {
-   "date": "2026-08-20T19:41:07Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260819T190527"
-  },
-  {
-   "date": "2026-08-20T16:00:10Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T155656"
-  },
-  {
-   "date": "2026-08-20T15:23:08Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T151954"
-  },
-  {
-   "date": "2026-08-20T14:56:23Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T145307"
-  },
-  {
-   "date": "2026-08-20T14:49:56Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T144642"
-  },
-  {
-   "date": "2026-08-20T14:49:47Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T144632"
-  },
-  {
-   "date": "2026-08-20T14:44:02Z",
-   "deprecated": false,
-   "version": "4.5.0-canary.20260820T143849"
   }
  ]
 }

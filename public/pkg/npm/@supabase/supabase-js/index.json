@@ -1,23 +1,46 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.119.0",
+ "latest": "2.119.1",
  "latest_stable": {
-  "date": "2026-11-04T13:11:11Z",
-  "version": "2.119.0"
+  "date": "2026-11-18T14:42:15Z",
+  "version": "2.119.1"
  },
- "metadata_fetched": "2026-11-18T06:01:11Z",
+ "metadata_fetched": "2026-11-18T21:11:15Z",
  "package": "@supabase/supabase-js",
  "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@supabase/supabase-js",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-18T14:42:15Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@supabase/supabase-js/2.119.1",
+   "json": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0e445a14de/",
+   "notes_url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.1",
+   "package": "@supabase/supabase-js",
+   "page": "https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/",
+   "prerelease": false,
+   "prev_version": "2.119.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "2.119.1",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/supabase/supabase-js",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Isomorphic Javascript SDK for Supabase"
 }

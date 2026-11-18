@@ -1,5 +1,5 @@
 {
- "built": "2026-11-18T20:12:19Z",
+ "built": "2026-11-18T21:10:01Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -166,7 +166,7 @@
   "date": "2026-11-09T20:33:38Z",
   "version": "16.4.6"
  },
- "metadata_fetched": "2026-11-18T06:01:26Z",
+ "metadata_fetched": "2026-11-18T21:11:33Z",
  "package": "next",
  "page": "https://releases.formachines.ai/pkg/npm/next/",
  "prereleases_in_window": 7,

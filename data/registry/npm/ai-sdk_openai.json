@@ -10,7 +10,7 @@
   "snapshot": "0.0.0-f1630544-20260811180950"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T06:00:34Z",
+ "fetched": "2026-11-18T21:10:38Z",
  "homepage": "https://ai-sdk.dev/docs",
  "latest": "4.0.121",
  "name": "@ai-sdk/openai",
@@ -717,16 +717,6 @@
    "date": "2026-08-22T06:01:18Z",
    "deprecated": false,
    "version": "4.0.46"
-  },
-  {
-   "date": "2026-08-20T20:08:09Z",
-   "deprecated": false,
-   "version": "4.0.45"
-  },
-  {
-   "date": "2026-08-20T20:07:21Z",
-   "deprecated": false,
-   "version": "3.0.99"
   }
  ]
 }

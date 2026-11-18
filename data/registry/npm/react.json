@@ -3,14 +3,14 @@
  "dist_tags": {
   "backport": "19.1.10",
   "beta": "19.0.0-beta-26f2496093-20240514",
-  "canary": "19.3.0-canary-a8342585-20261117",
-  "experimental": "0.0.0-experimental-a8342585-20261117",
+  "canary": "19.3.0-canary-6ff25743-20261117",
+  "experimental": "0.0.0-experimental-6ff25743-20261117",
   "latest": "19.3.1",
   "next": "19.3.0-canary-d5736f09-20260507",
   "rc": "19.0.0-rc.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T06:01:31Z",
+ "fetched": "2026-11-18T21:11:38Z",
  "homepage": "https://react.dev/",
  "latest": "19.3.1",
  "name": "react",
@@ -18,6 +18,16 @@
  "repo": "react/react",
  "summary": "React is a JavaScript library for building user interfaces.",
  "versions": [
+  {
+   "date": "2026-11-18T16:21:48Z",
+   "deprecated": false,
+   "version": "0.0.0-experimental-6ff25743-20261117"
+  },
+  {
+   "date": "2026-11-18T16:18:06Z",
+   "deprecated": false,
+   "version": "19.3.0-canary-6ff25743-20261117"
+  },
   {
    "date": "2026-11-17T16:22:04Z",
    "deprecated": false,
@@ -512,16 +522,6 @@
    "date": "2026-08-24T16:22:32Z",
    "deprecated": false,
    "version": "19.3.0-canary-bd6ea412-20260824"
-  },
-  {
-   "date": "2026-08-20T16:23:15Z",
-   "deprecated": false,
-   "version": "19.3.0-canary-eafeac09-20260819"
-  },
-  {
-   "date": "2026-08-20T16:22:54Z",
-   "deprecated": false,
-   "version": "0.0.0-experimental-eafeac09-20260819"
   }
  ]
 }
