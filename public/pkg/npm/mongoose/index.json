@@ -1,9 +1,35 @@
 {
- "built": "2026-11-19T14:26:11Z",
+ "built": "2026-11-19T19:15:36Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T17:35:43Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 98,
+    "version": "8.24.10"
+   },
+   "id": "npm/mongoose/8.24.9",
+   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fbbd0480e4/",
+   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/8.24.9",
+   "package": "mongoose",
+   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+   "prerelease": false,
+   "prev_version": "8.24.8",
+   "quotes": [],
+   "variant_of": null,
+   "version": "8.24.9",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/Automattic/mongoose/compare/8.24.10...9.12.1",
@@ -134,35 +160,9 @@
    "variant_of": null,
    "version": "9.12.2",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-12T17:35:43Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 98,
-    "version": "8.24.10"
-   },
-   "id": "npm/mongoose/8.24.9",
-   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fbbd0480e4/",
-   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/8.24.9",
-   "package": "mongoose",
-   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
-   "prerelease": false,
-   "prev_version": "8.24.8",
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.24.9",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/Automattic/mongoose",
- "stable_in_window": 5,
+ "stable_in_window": 4,
  "summary": "Mongoose MongoDB ODM"
 }

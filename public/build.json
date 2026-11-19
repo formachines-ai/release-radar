@@ -1,8 +1,8 @@
 {
- "built": "2026-11-19T14:26:11Z",
- "commit": "8a7dab6",
+ "built": "2026-11-19T19:15:36Z",
+ "commit": "60ec718",
  "errors": [],
- "flagged": 35,
+ "flagged": 34,
  "generator": "build.py",
  "github_remaining": null,
  "http_requests": 0,
@@ -10,9 +10,9 @@
   "counts": {
    "checked_no_notes": 0,
    "no_repo_url": 3,
-   "not_fetched": 197
+   "not_fetched": 193
   },
-  "github_release": 133,
+  "github_release": 130,
   "missing": [
    {
     "eco": "npm",
@@ -264,32 +264,52 @@
     "version": "8.1.0-dev.12"
    },
    {
-    "count": 6,
     "eco": "npm",
     "name": "react",
     "reason": "not_fetched",
-    "versions": [
-     "0.0.0-experimental-6ff25743-20261117",
-     "0.0.0-experimental-a8342585-20261117",
-     "0.0.0-experimental-df6aa4ec-20261112",
-     "19.3.0-canary-6ff25743-20261117",
-     "19.3.0-canary-a8342585-20261117",
-     "19.3.0-canary-df6aa4ec-20261112"
-    ]
+    "version": "0.0.0-experimental-6ff25743-20261117"
    },
    {
-    "count": 6,
+    "eco": "npm",
+    "name": "react",
+    "reason": "not_fetched",
+    "version": "0.0.0-experimental-a8342585-20261117"
+   },
+   {
+    "eco": "npm",
+    "name": "react",
+    "reason": "not_fetched",
+    "version": "19.3.0-canary-6ff25743-20261117"
+   },
+   {
+    "eco": "npm",
+    "name": "react",
+    "reason": "not_fetched",
+    "version": "19.3.0-canary-a8342585-20261117"
+   },
+   {
     "eco": "npm",
     "name": "react-dom",
     "reason": "not_fetched",
-    "versions": [
-     "0.0.0-experimental-6ff25743-20261117",
-     "0.0.0-experimental-a8342585-20261117",
-     "0.0.0-experimental-df6aa4ec-20261112",
-     "19.3.0-canary-6ff25743-20261117",
-     "19.3.0-canary-a8342585-20261117",
-     "19.3.0-canary-df6aa4ec-20261112"
-    ]
+    "version": "0.0.0-experimental-6ff25743-20261117"
+   },
+   {
+    "eco": "npm",
+    "name": "react-dom",
+    "reason": "not_fetched",
+    "version": "0.0.0-experimental-a8342585-20261117"
+   },
+   {
+    "eco": "npm",
+    "name": "react-dom",
+    "reason": "not_fetched",
+    "version": "19.3.0-canary-6ff25743-20261117"
+   },
+   {
+    "eco": "npm",
+    "name": "react-dom",
+    "reason": "not_fetched",
+    "version": "19.3.0-canary-a8342585-20261117"
    },
    {
     "count": 14,
@@ -358,10 +378,10 @@
     "version": "1.44.6"
    }
   ],
-  "releases": 333
+  "releases": 326
  },
  "packages": 98,
  "pr_list_notes": 9,
  "redirects": 481,
- "releases": 333
+ "releases": 326
 }
