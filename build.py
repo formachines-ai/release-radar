@@ -1818,16 +1818,13 @@ def render_llms(model: dict) -> str:
 ROBOTS_TXT = """# Release Radar — everyone is welcome, including AI crawlers and agents.
 User-agent: *
 Allow: /
-Disallow: /go/
 Disallow: /go/vote/
 
 User-agent: GPTBot
 Allow: /
-Disallow: /go/
 
 User-agent: ClaudeBot
 Allow: /
-Disallow: /go/
 
 User-agent: Google-Extended
 Allow: /
