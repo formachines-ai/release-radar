@@ -1786,6 +1786,7 @@ ROBOTS_TXT = """# Release Radar — everyone is welcome, including AI crawlers a
 User-agent: *
 Allow: /
 Disallow: /go/
+Disallow: /go/vote/
 
 User-agent: GPTBot
 Allow: /
