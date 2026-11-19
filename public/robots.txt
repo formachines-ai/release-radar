@@ -2,6 +2,7 @@
 User-agent: *
 Allow: /
 Disallow: /go/
+Disallow: /go/vote/
 
 User-agent: GPTBot
 Allow: /
