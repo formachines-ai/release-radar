@@ -1,9 +1,35 @@
 {
- "built": "2026-11-18T22:12:05Z",
+ "built": "2026-11-19T00:12:44Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-11T23:48:18Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 48,
+    "version": "1.65.2"
+   },
+   "id": "pypi/playwright/1.65.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d71092ff2e/",
+   "notes_url": "https://github.com/microsoft/playwright-python/releases/tag/v1.65.1",
+   "package": "playwright",
+   "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
+   "prerelease": false,
+   "prev_version": "1.65.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.65.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-09T21:09:30Z",
@@ -81,35 +107,9 @@
    "variant_of": null,
    "version": "1.65.2",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-11T23:48:18Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 48,
-    "version": "1.65.2"
-   },
-   "id": "pypi/playwright/1.65.1",
-   "json": "https://releases.formachines.ai/pkg/pypi/playwright/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/d71092ff2e/",
-   "notes_url": "https://github.com/microsoft/playwright-python/releases/tag/v1.65.1",
-   "package": "playwright",
-   "page": "https://releases.formachines.ai/pkg/pypi/playwright/",
-   "prerelease": false,
-   "prev_version": "1.65.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.65.1",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/microsoft/playwright-python",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "A high-level API to automate web browsers"
 }

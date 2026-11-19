@@ -1471,14 +1471,24 @@ def render_package(p: dict, model: dict) -> str:
     title, desc = package_seo(p)
     og_desc = (f"{p['name']} ({p['ecosystem']}): recent releases and links to their original notes. "
                "Flags mark wording matches, not confirmed breaking changes.")
-    ld = {"@type": ["WebPage", "Dataset"], "name": f"{p['name']} ({p['ecosystem']})", "description": desc,
-          "url": SITE_BASE + p["path"], "dateModified": model["built"], "inLanguage": "en",
-          "license": LICENSE_URL, "keywords": [p["name"], p["ecosystem"]],
+    canon = page_url(p["path"])
+    shown = [r for r, _v in group_variants(p["releases"] + list(p.get("history") or [])) if "group_base" not in r]
+    shown.sort(key=lambda r: r["date"] or "", reverse=True)
+    based = [p["page"]] + ([f'https://github.com/{p["repo"]}/releases'] if p.get("repo") else [])
+    items = []
+    for i, r in enumerate(shown, 1):
+        it = {"@type": "ListItem", "position": i, "name": f'{r["name"]}@{r["version"]}'}
+        if r.get("date"):
+            it["datePublished"] = r["date"]
+        if r.get("notes_url"):
+            it["url"] = r["notes_url"]
+        items.append(it)
+    ld = {"@type": "WebPage", "name": title, "description": desc, "url": canon,
+          "dateModified": model["built"], "inLanguage": "en", "isBasedOn": based,
           "isPartOf": {"@type": "WebSite", "name": SITE_NAME, "url": SITE_BASE + "/"},
-          "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json",
-                            "contentUrl": SITE_BASE + p["path"] + "index.json"}]}
+          "mainEntity": {"@type": "ItemList", "numberOfItems": len(items), "itemListElement": items}}
     return layout(title, "\n".join(body), model["built"],
-                  description=desc, og_description=og_desc, canonical=page_url(p["path"]), jsonld=ld,
+                  description=desc, og_description=og_desc, canonical=canon, jsonld=ld,
                   extra_head=f'<link rel="alternate" type="application/rss+xml" title="{esc(p["name"])} releases" href="{esc(p["path"])}feed.xml">\n')
 
 
