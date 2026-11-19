@@ -1216,7 +1216,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
                 f'<a href="/go/vote/{vid}/down/" rel="nofollow">not useful</a> · '
                 f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
     fb = r.get("followed_by")
-    fb_html = (f'<p class="note followed">Followed by {esc(fb["version"])} {fb["hours"]} h later (registry dates)</p>' if fb else "")
+    fb_html = (f'<p class="note followed">Followed by {esc(fb["version"])} after {fb["hours"]} h (registry dates)</p>' if fb else "")
     return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
@@ -1301,7 +1301,7 @@ def render_index(model: dict, errata_count: int) -> str:
             cooldown.append(f'<p class="note">Without a flag ({len(cd_un)}):</p><ul class="nonotes cooldown-list">' + "".join(
                 f'<li>{esc(r["name"])}@{esc(r["version"])} · {esc(fmt_date(r["date"])[:10])} · '
                 f'<a href="{esc(r["pkg_path"])}">/pkg/ page</a>'
-                f'{(" · Followed by " + esc(r["followed_by"]["version"]) + " " + str(r["followed_by"]["hours"]) + " h later (registry dates)") if r.get("followed_by") else ""}</li>' for r in cd_un) + "</ul>")
+                f'{(" · Followed by " + esc(r["followed_by"]["version"]) + " after " + str(r["followed_by"]["hours"]) + " h (registry dates)") if r.get("followed_by") else ""}</li>' for r in cd_un) + "</ul>")
     else:
         cooldown.append(f'<p class="note">No tracked release was published in {cd_win}.</p>')
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']

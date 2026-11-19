@@ -1,9 +1,52 @@
 {
- "built": "2026-11-19T20:10:47Z",
+ "built": "2026-11-19T21:17:13Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.322...v2.1.323",
+   "date": "2026-11-12T20:29:28Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "hours": 22,
+    "version": "2.1.324"
+   },
+   "id": "npm/@anthropic-ai/claude-code/2.1.323",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1e1f91e95e/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.322",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Fixed the error shown when Amazon Bedrock refuses your account a model: it no longer says to refresh your AWS credentials, it says to enable the model",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "- Fixed `/export` silently stopping early after a long run of calls to an MCP tool that is no longer loaded",
+     "quote_incomplete": false
+    },
+    {
+     "match": "removed",
+     "quote": "- Fixed an MCP server staying disconnected with no tools after an Agent SDK app or `claude -p` caller removed and re-added it, when a tool call had tried to reach it in between",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.323",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.321...v2.1.322",
@@ -323,52 +366,9 @@
    "variant_of": null,
    "version": "2.1.324",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.322...v2.1.323",
-   "date": "2026-11-12T20:29:28Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "hours": 22,
-    "version": "2.1.324"
-   },
-   "id": "npm/@anthropic-ai/claude-code/2.1.323",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/1e1f91e95e/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "prev_version": "2.1.322",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "- Fixed the error shown when Amazon Bedrock refuses your account a model: it no longer says to refresh your AWS credentials, it says to enable the model",
-     "quote_incomplete": false
-    },
-    {
-     "match": "no longer",
-     "quote": "- Fixed `/export` silently stopping early after a long run of calls to an MCP tool that is no longer loaded",
-     "quote_incomplete": false
-    },
-    {
-     "match": "removed",
-     "quote": "- Fixed an MCP server staying disconnected with no tools after an Agent SDK app or `claude -p` caller removed and re-added it, when a tool call had tried to reach it in between",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "2.1.323",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 6,
+ "stable_in_window": 5,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }
