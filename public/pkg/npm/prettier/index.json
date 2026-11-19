@@ -1,9 +1,31 @@
 {
- "built": "2026-11-19T06:00:03Z",
+ "built": "2026-11-19T09:14:58Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-12T07:06:22Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/prettier/3.10.1",
+   "json": "https://releases.formachines.ai/pkg/npm/prettier/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4668f5b96e/",
+   "notes_url": "https://github.com/prettier/prettier/releases/tag/3.10.1",
+   "package": "prettier",
+   "page": "https://releases.formachines.ai/pkg/npm/prettier/",
+   "prerelease": false,
+   "prev_version": "3.10.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.10.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "date": "2026-11-11T12:30:48Z",
@@ -43,31 +65,8 @@
  "page": "https://releases.formachines.ai/pkg/npm/prettier/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/prettier",
- "releases": [
-  {
-   "bump": "patch",
-   "date": "2026-11-12T07:06:22Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prettier/3.10.1",
-   "json": "https://releases.formachines.ai/pkg/npm/prettier/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/4668f5b96e/",
-   "notes_url": "https://github.com/prettier/prettier/releases/tag/3.10.1",
-   "package": "prettier",
-   "page": "https://releases.formachines.ai/pkg/npm/prettier/",
-   "prerelease": false,
-   "prev_version": "3.10.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "3.10.1",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/prettier/prettier",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Prettier is an opinionated code formatter"
 }

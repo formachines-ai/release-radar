@@ -1278,7 +1278,11 @@ def render_index(model: dict, errata_count: int) -> str:
         flagged_block.append(f'<p class="note bumpcount">{k_minor} of {len(flagged)} flagged releases are minor/patch or 0.x bumps ({WINDOW_DAYS} days)</p>')
     flagged_block.append('<ul class="cards">' + render_cards(flagged, now) + "</ul>" if flagged
                 else '<p class="note">Nothing is flagged in the last 7 days: no release notes matched the breaking-change pattern. All releases are listed below.</p>')
-    body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>",
+    n_pk, n_rel, n_fl = len(model["packages"]), len(model["releases"]), len(flagged)
+    facts = (f'<p class="facts">Release Radar tracks {n_pk} PyPI and npm packages. In the {WINDOW_DAYS} days to {esc(model["built"])}: '
+             f'{n_rel} releases, {n_fl} flagged by a regex on release notes, each with a verbatim quote. '
+             f'Sources: PyPI, npm, GitHub Releases, Errata. No LLM judgement.</p>')
+    body = [f"<h1>{esc(SITE_NAME)} — {esc(now.strftime('%Y-%m-%d'))}</h1>", facts,
             '<p class="lead">Updating a Python or JavaScript dependency? Find its recent releases and jump to the original notes. '
             'Highlighted excerpts are word matches in the release notes worth checking; they do not confirm your app will break, '
             'and no flag does not mean a safe update.</p>',
@@ -1325,8 +1329,8 @@ def render_index(model: dict, errata_count: int) -> str:
                 '<a href="/llms.txt">/llms.txt</a> · <a href="/build.json">/build.json</a>. Want a package added? It is one line in '
                 '<code>config/packages.txt</code> of the public repository.</p>')
     title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
-    desc = ("Find recent PyPI and npm releases and open their original notes. "
-            "Flags mark wording matches, not confirmed breaking changes.")
+    desc = (f"{n_pk} PyPI and npm packages tracked: {n_rel} releases in 7 days, {n_fl} flagged by a regex "
+            f"on release notes, each with a verbatim quote. Built {model['built']}.")
     ld = {"@type": ["WebSite", "Dataset"], "name": SITE_NAME, "description": desc, "url": SITE_BASE + "/",
           "dateModified": model["built"], "inLanguage": "en", "license": LICENSE_URL,
           "isAccessibleForFree": True,

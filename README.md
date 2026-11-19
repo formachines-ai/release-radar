@@ -59,6 +59,7 @@ data/state.json             summary of the last build
 public/                     the site — everything below is generated, do not edit by hand
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
                                 (T-0137: section `Past a 7-day cooldown` below the recent cards: releases 7–8 days old (from /pkg/ history), flagged ones as full cards, the rest as package@version · date · /pkg/ link; one line if the window is empty)
+                                (T-0150: home opens, under the <h1>, with a dated `<p class="facts">`: packages (= /pkg/ URLs in sitemap.xml), releases and flagged in the 7 days to build time (= today.json counts), sources; the home meta description carries the same numbers)
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
                                 (T-0145: package page opens, under the <h1>, with a dated facts paragraph `<p class="facts">`: releases in 90 days (releases + history), stable, flagged, latest version/date, registry + GitHub Releases links, build date)
                                 (T-0149: one `<script type="application/ld+json">` block — a data block, not executable script — WebPage + ItemList of the shown release cards (name, datePublished, notes url), isBasedOn registry/GitHub Releases URL, dateModified = build time; home keeps WebSite + Dataset naming /today.json and /feed.xml; values from build data only)
