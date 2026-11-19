@@ -1,8 +1,8 @@
 {
- "built": "2026-11-19T20:10:47Z",
- "commit": "8ec2400",
+ "built": "2026-11-19T21:17:13Z",
+ "commit": "6bd4c2e",
  "errors": [],
- "flagged": 33,
+ "flagged": 32,
  "generator": "build.py",
  "github_remaining": null,
  "http_requests": 0,
@@ -10,9 +10,9 @@
   "counts": {
    "checked_no_notes": 0,
    "no_repo_url": 3,
-   "not_fetched": 186
+   "not_fetched": 185
   },
-  "github_release": 127,
+  "github_release": 121,
   "missing": [
    {
     "eco": "npm",
@@ -344,12 +344,6 @@
     "eco": "pypi",
     "name": "boto3",
     "reason": "not_fetched",
-    "version": "1.44.2"
-   },
-   {
-    "eco": "pypi",
-    "name": "boto3",
-    "reason": "not_fetched",
     "version": "1.44.3"
    },
    {
@@ -371,10 +365,10 @@
     "version": "1.44.6"
    }
   ],
-  "releases": 316
+  "releases": 309
  },
  "packages": 98,
  "pr_list_notes": 9,
  "redirects": 481,
- "releases": 316
+ "releases": 309
 }
