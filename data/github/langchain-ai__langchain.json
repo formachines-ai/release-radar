@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-18T21:10:04Z",
+ "fetched": "2026-11-19T06:00:05Z",
  "releases": [
+  {
+   "body": "Changes since langchain-openai==1.8.2\n\nrelease(openai): 1.8.3 (#41950)\nfix(openai): enable Codex prompt caching on GPT-6.2 (#41949)",
+   "date": "2026-11-19T00:38:57Z",
+   "name": "langchain-openai==1.8.3",
+   "prerelease": false,
+   "tag": "langchain-openai==1.8.3",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.3"
+  },
+  {
+   "body": "Changes since langchain==1.5.1\n\nrelease(langchain): 1.5.2 (#41948)\nfeat(langchain): tag synthetic HITL tool messages with source metadata (#41928)",
+   "date": "2026-11-18T22:30:43Z",
+   "name": "langchain==1.5.2",
+   "prerelease": false,
+   "tag": "langchain==1.5.2",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.2"
+  },
   {
    "body": "Changes since langchain==1.5.0\n\nrelease(langchain): 1.5.1 (#41943)\nfix(core): keep warning suppression context-local (#41881)\nfix(langchain): avoid warning-filter races in provider inference (#41880)\nfix(langchain): avoid warning-filter races in `ModelRequest` (#41879)\nchore(deps): bump opentelemetry-api from 1.45.1 to 1.45.2 in /libs/langchain_v1 (#41845)\nchore(deps): bump dnspython from 2.9.1 to 2.9.2 in /libs/langchain_v1 (#41849)",
    "date": "2026-11-18T15:45:13Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "langchain-openai==1.7.1",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.1"
-  },
-  {
-   "body": "Changes since langchain-core==1.6.9\n\nrelease(core): 1.6.10 (#41220)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)",
-   "date": "2026-10-12T14:14:03Z",
-   "name": "langchain-core==1.6.10",
-   "prerelease": false,
-   "tag": "langchain-core==1.6.10",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.10"
-  },
-  {
-   "body": "Changes since langchain-anthropic==1.7.5\n\nrelease(anthropic): 1.7.6 (#41221)\nchore(model-profiles): refresh model profile data (#41145)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)\nchore(deps): bump langgraph-sdk from 0.4.4 to 0.4.6 in /libs/partners/anthropic (#41101)\nchore(deps): bump langgraph-sdk from 0.4.2 to 0.4.4 in /libs/partners/anthropic (#41080)\nchore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/partners/anthropic (#40964)",
-   "date": "2026-10-12T14:40:14Z",
-   "name": "langchain-anthropic==1.7.6",
-   "prerelease": false,
-   "tag": "langchain-anthropic==1.7.6",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.6"
   }
  ],
  "repo": "langchain-ai/langchain"

@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-18T06:01:33Z",
+ "fetched": "2026-11-19T06:01:36Z",
  "releases": [
+  {
+   "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/beta/CHANGELOG.md#23-3-0-beta-1) for the full release notes.",
+   "date": "2026-11-19T03:52:09Z",
+   "name": "v23.3.0-beta.1",
+   "prerelease": true,
+   "tag": "v23.3.0-beta.1",
+   "url": "https://github.com/stripe/stripe-node/releases/tag/v23.3.0-beta.1"
+  },
+  {
+   "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-3-0-alpha-1) for the full release notes.",
+   "date": "2026-11-19T03:55:15Z",
+   "name": "v23.3.0-alpha.1",
+   "prerelease": true,
+   "tag": "v23.3.0-alpha.1",
+   "url": "https://github.com/stripe/stripe-node/releases/tag/v23.3.0-alpha.1"
+  },
+  {
+   "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/master/CHANGELOG.md#23-2-0) for the full release notes.",
+   "date": "2026-11-19T03:46:48Z",
+   "name": "v23.2.0",
+   "prerelease": false,
+   "tag": "v23.2.0",
+   "url": "https://github.com/stripe/stripe-node/releases/tag/v23.2.0"
+  },
   {
    "body": "See [the changelog](https://github.com/stripe/stripe-node/blob/private-preview/CHANGELOG.md#23-2-0-alpha-3) for the full release notes.",
    "date": "2026-11-11T18:50:12Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "v22.2.0",
    "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0"
-  },
-  {
-   "body": "* [#2719](https://github.com/stripe/stripe-node/pull/2719) Update generated code for private-preview\n  * Add support for new resource `PaymentLocationCapability`\n  * Add support for `list`, `retrieve`, and `update` methods on resource `PaymentLocationCapability`\n  * Add support for `close` and `simulate_network_lifecycle_dispute_response` test helper methods on resource `Issuing.Dispute`\n  * Change type of `DelegatedCheckout.RequestedSessionUpdateParams.discounts.codes` from `array(string)` to `emptyable(array(string))`\n  * ⚠️ Remove support for `credited_items` on `InvoiceItem.proration_details`\n  * Add support for `balance_response` on `Issuing.Authorization`\n  * Add support for `payment_evaluations` on `PaymentAttemptRecordReportCanceledParams`, `PaymentAttemptRecordReportFailedParams`, `PaymentRecordReportPaymentAttemptCanceledParams`, `PaymentRecordReportPaymentAttemptFailedParams`, `PaymentRecordReportPaymentAttemptParams.failed`, and `PaymentRecordReportPaymentParams.failed`\n  * Add support for `enabled` on `PaymentIntentConfirmParams.payment_details.benefit.fr_meal_voucher`, `PaymentIntentCreateParams.payment_details.benefit.fr_meal_voucher`, `PaymentIntentUpdateParams.payment_details.benefit.fr_meal_voucher`, `SetupIntentConfirmParams.setup_details.benefit.fr_meal_voucher`, `SetupIntentCreateParams.setup_details.benefit.fr_meal_voucher`, and `SetupIntentUpdateParams.setup_details.benefit.fr_meal_voucher`\n  * Add support for `advanced_feature_details` and `allowed_payment_method_types` on `PaymentIntent`\n  * Change type of `PaymentLocationUpdateParams.address.city` from `string` to `emptyable(string)`\n  * Change type of `PaymentLocationUpdateParams.address.line1` from `string` to `emptyable(string)`\n  * Change type of `PaymentLocationUpdateParams.address.line2` from `string` to `emptyable(string)`\n  * Change type of `PaymentLocationUpdateParams.address.postal_code` from `string` to `emptyable(string)`\n  * Change type of `PaymentLocationUpdateParams.address.state` from `string` to `emptyable(string)`\n  * Change `SubscriptionPauseParams.type` to be optional\n  * ⚠️ Remove support for `payment_behavior` on `SubscriptionResumeParams`\n  * ⚠️ Remove support for `status_details` on `Subscription`\n\nSee [the changelog for more details](https://github.com/stripe/stripe-node/blob/v22.2.0-alpha.6/CHANGELOG.md).\n",
-   "date": "2026-05-21T00:18:13Z",
-   "name": "v22.2.0-alpha.6",
-   "prerelease": true,
-   "tag": "v22.2.0-alpha.6",
-   "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-alpha.6"
-  },
-  {
-   "body": "* [#2708](https://github.com/stripe/stripe-node/pull/2708) Update generated code for private-preview\n  * Add support for new resources `V2.Core.FeeBatch`, `V2.Core.FeeEntry`, `V2.MoneyManagement.DebitDispute`, and `V2.MoneyManagement.FinancialAccountStatement`\n  * Add support for `simulate_network_lifecycle_pre_arbitration_response` and `simulate_network_lifecycle_pre_arbitration_submission` test helper methods on resource `Issuing.Dispute`\n  * Add support for `list` method on resource `PaymentLocation`\n  * Add support for `list` and `retrieve` methods on resources `V2.Core.FeeBatch`, `V2.Core.FeeEntry`, and `V2.MoneyManagement.FinancialAccountStatement`\n  * Add support for `create`, `list`, and `retrieve` methods on resource `V2.MoneyManagement.DebitDispute`\n  * Add support for `discounts` on `DelegatedCheckout.RequestedSessionCreateParams`, `DelegatedCheckout.RequestedSessionUpdateParams`, and `DelegatedCheckout.RequestedSession`\n  * Add support for `amount_sale` on `DelegatedCheckout.RequestedSession.line_item_details[]` and `DelegatedCheckout.RequestedSession.total_details`\n  * Add support for `amount_discount` and `breakdown` on `DelegatedCheckout.RequestedSession.total_details`\n  * ⚠️ Remove support for `check_deposit_address` on `Invoice.payment_settings.payment_method_options.check_scan`, `InvoiceCreateParams.payment_settings.payment_method_options.check_scan`, `InvoiceUpdateParams.payment_settings.payment_method_options.check_scan`, `QuotePreviewInvoice.payment_settings.payment_method_options.check_scan`, `Subscription.payment_settings.payment_method_options.check_scan`, `SubscriptionCreateParams.payment_settings.payment_method_options.check_scan`, and `SubscriptionUpdateParams.payment_settings.payment_method_options.check_scan`\n  * Add support for `payment_evaluations` on `PaymentAttemptRecordReportGuaranteedParams`, `PaymentRecordReportPaymentAttemptGuaranteedParams`, `PaymentRecordReportPaymentAttemptParams.guaranteed`, and `PaymentRecordReportPaymentParams.guaranteed`\n  * Add support for `location` on `PaymentIntentConfirmParams.payment_details`, `PaymentIntentCreateParams.payment_details`, `PaymentIntentUpdateParams.payment_details`, `SetupIntentConfirmParams.setup_details`, `SetupIntentCreateParams.setup_details`, and `SetupIntentUpdateParams.setup_details`\n  * Add support for `onboarding_data_update_acknowledged` on `PaymentLocationUpdateParams`\n  * Change `PaymentLocationCreateParams.address.country` and `PaymentLocationUpdateParams.address.country` to be optional\n  * Add support for `customer` on `Radar.CustomerEvaluationUpdateParams`\n  * Add support for `status` on `Radar.CustomerEvaluationUpdateParams` and `Radar.CustomerEvaluation`\n  * Change `Radar.CustomerEvaluationUpdateParams.type` to be optional\n  * Add support for `payment_behavior` on `SubscriptionResumeParams`\n  * Add support for `dispute_details` on `V2.MoneyManagement.ReceivedDebit`\n  * ⚠️ Add support for new value `debit_dispute` on enums `V2.MoneyManagement.Transaction.category` and `V2.MoneyManagement.TransactionEntry.transaction_details.category`\n  * Add support for `debit_dispute` on `V2.MoneyManagement.Transaction.flow` and `V2.MoneyManagement.TransactionEntry.transaction_details.flow`\n  * ⚠️ Add support for new value `debit_dispute` on enums `V2.MoneyManagement.Transaction.flow.type` and `V2.MoneyManagement.TransactionEntry.transaction_details.flow.type`\n  * Add support for `payment_attempt_record` on `EventsV2PaymentsOffSessionPaymentAttemptFailedEvent` and `EventsV2PaymentsOffSessionPaymentFailedEvent`\n  * Add support for event notifications `V2MoneyManagementFinancialAccountStatementCreatedEvent` and `V2MoneyManagementFinancialAccountStatementRestatedEvent` with related object `V2.MoneyManagement.FinancialAccountStatement`\n\nSee [the changelog for more details](https://github.com/stripe/stripe-node/blob/v22.2.0-alpha.5/CHANGELOG.md).\n",
-   "date": "2026-05-13T21:59:19Z",
-   "name": "v22.2.0-alpha.5",
-   "prerelease": true,
-   "tag": "v22.2.0-alpha.5",
-   "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-alpha.5"
-  },
-  {
-   "body": "* [#2706](https://github.com/stripe/stripe-node/pull/2706) Merge bug fixes from https://github.com/stripe/stripe-node/releases/tag/v22.1.1 to Public Preview\n\nSee [the changelog for more details](https://github.com/stripe/stripe-node/blob/v22.2.0-beta.3/CHANGELOG.md).\n",
-   "date": "2026-05-07T13:52:33Z",
-   "name": "v22.2.0-beta.3",
-   "prerelease": true,
-   "tag": "v22.2.0-beta.3",
-   "url": "https://github.com/stripe/stripe-node/releases/tag/v22.2.0-beta.3"
   }
  ],
  "repo": "stripe/stripe-node"

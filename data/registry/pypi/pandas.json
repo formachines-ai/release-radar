@@ -1,7 +1,7 @@
 {
  "changelog": "https://pandas.pydata.org/docs/whatsnew/index.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-18T21:10:26Z",
+ "fetched": "2026-11-19T06:00:25Z",
  "homepage": "",
  "latest": "3.1.1",
  "name": "pandas",

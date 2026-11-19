@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-18T21:10:08Z",
+ "fetched": "2026-11-19T06:00:09Z",
  "homepage": "https://github.com/huggingface/transformers",
  "latest": "5.23.0",
  "name": "transformers",

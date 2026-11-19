@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T00:12:44Z",
+ "built": "2026-11-19T06:00:03Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -61,12 +61,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.5.1",
+ "latest": "1.5.2",
  "latest_stable": {
-  "date": "2026-11-18T15:44:56Z",
-  "version": "1.5.1"
+  "date": "2026-11-18T22:30:28Z",
+  "version": "1.5.2"
  },
- "metadata_fetched": "2026-11-18T21:10:03Z",
+ "metadata_fetched": "2026-11-19T06:00:05Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
  "prereleases_in_window": 0,
@@ -74,10 +74,36 @@
  "releases": [
   {
    "bump": "patch",
+   "date": "2026-11-18T22:30:28Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langchain/1.5.2",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d448e05a5f/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.5.2",
+   "package": "langchain",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain/",
+   "prerelease": false,
+   "prev_version": "1.5.1",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.5.2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "date": "2026-11-18T15:44:56Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 6,
+    "version": "1.5.2"
+   },
    "id": "pypi/langchain/1.5.1",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
    "no_notes": false,
@@ -96,6 +122,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Building applications with LLMs through composability"
 }

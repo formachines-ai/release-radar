@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-18T21:11:16Z",
+ "fetched": "2026-11-19T06:01:12Z",
  "releases": [
   {
    "body": "## 2.119.1 (2026-11-18)\n\n### 🩹 Fixes\n\n- **supabase:** report runtime, platform and framework in X-Client-Info per the header spec ([#2837](https://github.com/supabase/supabase-js/pull/2837))\n\n### ❤️ Thank You\n\n- Lukas Klingsbo",

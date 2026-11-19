@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T00:12:44Z",
+ "built": "2026-11-19T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -70,7 +70,7 @@
   "date": "2026-11-16T12:57:55Z",
   "version": "4.13.19"
  },
- "metadata_fetched": "2026-11-18T21:11:25Z",
+ "metadata_fetched": "2026-11-19T06:01:21Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T00:12:44Z",
+ "built": "2026-11-19T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -113,12 +113,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.4.1",
+ "latest": "1.4.2",
  "latest_stable": {
-  "date": "2026-11-13T18:28:47Z",
-  "version": "1.4.1"
+  "date": "2026-11-18T22:28:39Z",
+  "version": "1.4.2"
  },
- "metadata_fetched": "2026-11-18T21:10:48Z",
+ "metadata_fetched": "2026-11-19T06:00:47Z",
  "package": "@langchain/core",
  "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
  "prereleases_in_window": 0,
@@ -126,10 +126,36 @@
  "releases": [
   {
    "bump": "patch",
+   "date": "2026-11-18T22:28:39Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@langchain/core/1.4.2",
+   "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/efcdbf0dfc/",
+   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.4.2",
+   "package": "@langchain/core",
+   "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
+   "prerelease": false,
+   "prev_version": "1.4.1",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.4.2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "date": "2026-11-13T18:28:47Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 123,
+    "version": "1.4.2"
+   },
    "id": "npm/@langchain/core/1.4.1",
    "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
    "no_notes": false,
@@ -148,6 +174,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchainjs",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Core LangChain.js abstractions and schemas"
 }

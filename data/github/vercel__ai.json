@@ -121,7 +121,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.173"
   }
  },
- "fetched": "2026-11-18T21:10:38Z",
+ "fetched": "2026-11-19T06:00:37Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- e403988: add an interrupt option to steering so a steer can cancel a model call that has not produced output yet\n- b792b56: feat(ai): ship the AI SDK skill in the package at `skills/ai-sdk` for pnpm agent skills\n- Updated dependencies [700089c]\n  - @ai-sdk/gateway@4.0.150",

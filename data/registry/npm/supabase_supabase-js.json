@@ -8,7 +8,7 @@
   "rc": "2.100.0-rc.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T21:11:15Z",
+ "fetched": "2026-11-19T06:01:12Z",
  "homepage": "https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js",
  "latest": "2.119.1",
  "name": "@supabase/supabase-js",

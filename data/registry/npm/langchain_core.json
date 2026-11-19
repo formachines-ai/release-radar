@@ -3,19 +3,24 @@
  "dist_tags": {
   "alpha": "1.0.0-alpha.7",
   "dev": "1.1.50-dev-1781580357424",
-  "latest": "1.4.1",
+  "latest": "1.4.2",
   "next": "1.0.0-alpha.7",
   "tag-for-publishing-older-releases": "0.2.36"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-18T21:10:48Z",
+ "fetched": "2026-11-19T06:00:47Z",
  "homepage": "https://github.com/langchain-ai/langchainjs/tree/main/langchain-core/",
- "latest": "1.4.1",
+ "latest": "1.4.2",
  "name": "@langchain/core",
  "page": "https://www.npmjs.com/package/@langchain/core",
  "repo": "langchain-ai/langchainjs",
  "summary": "Core LangChain.js abstractions and schemas",
  "versions": [
+  {
+   "date": "2026-11-18T22:28:39Z",
+   "deprecated": false,
+   "version": "1.4.2"
+  },
   {
    "date": "2026-11-13T18:28:47Z",
    "deprecated": false,

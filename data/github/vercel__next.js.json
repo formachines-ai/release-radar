@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-18T21:11:33Z",
+ "fetched": "2026-11-19T06:01:29Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- fix(ts-plugin): accept quoted prefetch segment config values: #101895\n- Fix Navigation Inspector dark mode contrast: #102008\n- Turbopack: add max_chunk_size to production chunking: #100478\n- refactor: Move minimalMode checks earlier in conditionals: #102004\n- Upgrade React from `df6aa4ec-20261112` to `a8342585-20261117`: #101942\n- Refactor durableUseCacheEntries configuration: #101930\n- Remove unused `didStripLocale` request meta: #101999\n- Widen Turbopack maxDuration to u64: #101116\n- turbo-bincode: remove indexmap/indexset helpers and use OrderedAutoMap/OrderedAutoSet in cells: #101520\n\n### Misc Changes\n\n- [test] Stop using async Client Components: #101948\n- Change REVIEW.md instructions to never at-mention owners: #102001\n- chore: add ast-grep untracked() rule: #101994\n- Add INVALIDATION comments to untracked() calls: #101993\n- chore: switch to ident_string() where possible: #101996\n- docs: clarify Route Handler caching config with Cache Components: #101990\n- Turbopack: detect top-level `this` as CommonJS exports: #101727\n- feat(turbopack): Add EmitOption trait for extensible chunking context configuration: #101001\n- pr-status: look up PR runs by head SHA and load job logs on gh 2.97+: #101707\n- Clarify images.path docs and ungate two routing gate tests: #101582\n- pr-status: flag finished runs that didn't pass but have no failed jobs: #101714\n- Add e2e coverage for next start's HTTP and process behavior: #101710\n- docs: note tsconfig include changes with a custom distDir: #101963\n\n### Credits \n\nHuge thanks to @DominikKoniarz, @samselikoff, @sokra, @lubieowoce, @eps1lon, @mischnic, @aurorascharff, @jamiboym, and @lukesandberg for helping!",
+   "date": "2026-11-18T23:45:54Z",
+   "name": "v16.5.0-canary.55",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.55",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.55"
+  },
   {
    "body": "### Core Changes\n\n- Reject the experimental testing API opt-in without Cache Components: #101952\n- Preserve CSP nonces on static fallback bootstrap scripts: #101953\n- Turbopack: separate file tracing from NFT manifest emission, add dev flag: #101941\n- Clarify the agent handoff for worktree upgrades: #101939\n- refactor: Derive whether PPR is enabled from cacheComponents config in base-server: #101936\n- refactor: Derive whether PPR is enabled from cacheComponents config: #101929\n- perf(build): resolve adapter app page entries via a lookup map: #101880\n- turbo-tasks-backend: stop checking keyed dependencies once a dependent is stale: #101736\n- Run the dev Cache Components validation in an OTel trace of its own: #100690\n- turbo-tasks-backend: delay collectible propagation until tasks are clean: #101748\n- Write short client reference manifest chunk lists as array literals: #101846\n- Fix canary lint: remove `as any` casts in load-manifest.test.ts (@next/internal/no-as-any): #101910\n- Evaluate JS manifests with compileFunction instead of a new context: #101787\n\n### Misc Changes\n\n- turbopack-tracing: sync new vercel/nft unit tests: #101973\n- [test] Cover HTTP methods on prerendered App Pages: #101945\n- docs: clarify instant layout opt-out scope: #101944\n- docs: clarify Vitest Link navigation testing limits: #101943\n- docs: document instant testing in the Playwright guide: #101924\n- Wait for hydration in back-before-hydration third-party write test: #101940\n- review: add [team-members] section to review/OWNERS: #101883\n- fix(routing): prefer exact pathnames after rewrites: #101934\n- chore: don't build tracing-napi by default: #101923\n- Bump to swc 84.1.1: #101860\n- Turbopack: keep mangled compact re-exports in import order: #101920\n- docs: clarify Vitest Node.js compatibility: #101908\n- docs: fix import/export mismatches in API reference snippets: #101921\n- docs: fix BlogNavLink imports in active link examples: #101919\n- Turbopack: list ESM namespace keys in code unit order for the general export registration: #101749\n- docs: clarify native history URL hook update timing: #101907\n- turbopack: narrow chunk group reads on warm rebuilds: #101782\n- turbo-tasks-fs: skip compare-before-write in directories created by the filesystem: #101813\n- Turbopack: opt-in atomic file writes, used for client reference manifests: #101786\n- Turbopack: keep metric-adjusted fallback face for next/font/google when `fallback` is set: #100305\n\n### Credits \n\nHuge thanks to @mischnic, @unstubbable, @aurorascharff, @sokra, @lubieowoce, @jimmyhmiller, @icyJoseph, @0badran, @lukesandberg, and @sleitor for helping!",
    "date": "2026-11-17T23:46:34Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.11",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.11"
-  },
-  {
-   "body": "This release contains security fixes for the following advisories:\r\n\r\nCritical:\r\n- [Unauthenticated Remote Code Execution in `use cache` functions returning typed arrays](https://github.com/vercel/next.js/security/advisories/GHSA-673q-mjm6-r5xr)\r\n- [Unauthenticated Remote Code Execution in Image Optimization API when SVG files are used](https://github.com/vercel/next.js/security/advisories/GHSA-2464-fhr4-w9xw)\r\n\r\nHigh:\r\n- [Denial of Service in App Router using Server Actions](https://github.com/vercel/next.js/security/advisories/GHSA-p3m5-59mp-jv5r)\r\n",
-   "date": "2026-10-14T17:47:59Z",
-   "name": "v16.4.1",
-   "prerelease": false,
-   "tag": "v16.4.1",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.4.1"
   }
  ],
  "repo": "vercel/next.js"

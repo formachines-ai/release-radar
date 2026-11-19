@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-18T21:10:02Z",
+ "fetched": "2026-11-19T06:00:04Z",
  "releases": [
   {
    "body": "### Features\n\n* **api:** add beta support for the billing_policy request parameter\n* **api:** add contract_spend_limit_reached error code to messages\n* **api:** add error codes for linked billing refusals\n* **api:** add the user_profile_billing_not_authorized error code\n* **api:** add webhook events for external key failure and recovery\n\n\n### Bug Fixes\n\n* **client:** stop reporting failed aiohttp connections as timeouts\n* **types:** keep deprecated model aliases and the types nested under them working\n\n\n### Chores\n\n* **api:** rename error data models, deprecating the old names\n* **docs:** clarify which AWS KMS keys a workspace can use on Claude Platform on AWS\n* **docs:** clarify which credential work get, update and list accept\n* **docs:** clarify which uploads a plugin pin holds back\n* **docs:** note that a plugin scan's reason also covers errored scans\n\n  `content_scan.reason` on an errored scan now says why there is no verdict. It is not a security finding, so code that treats any `reason` as a concern should also check `status`.\n\n* **internal:** don't report moved classes as breaking changes\n\n\n### Documentation\n\n* name each SDK's own types in rename deprecations",
