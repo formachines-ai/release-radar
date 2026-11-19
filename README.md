@@ -78,7 +78,7 @@ public/                     the site — everything below is generated, do not e
   feed.xml                  RSS 2.0 (all releases in the window, newest first)
   feed-breaking.xml         RSS 2.0, only flagged releases of the window (T-0073): package@version, date, ≤ 3 verbatim quotes, /go/<id>/ notes link; valid empty channel if none flagged; linked from the home Follow line, <head> and llms.txt
   llms.txt · robots.txt (T-0151: `User-agent: *` also has an explicit `Disallow: /go/vote/` and /go/ as a whole is NOT disallowed (T-0153: crawlers must be able to read the `noindex, nofollow` meta on every /go/ redirect page; every /go/ link on home and /pkg/ pages carries rel="nofollow"); every vote link carries rel="nofollow") · sitemap.xml · build.json
-                            (T-0141: llms.txt section `For dependency-update review agents`: index.json URL pattern, example, keys to read, /mcp/, limits)
+                            (T-0141, T-0154: llms.txt section `For dependency-review agents (Dependabot/Renovate PRs)`: 3 steps over /pkg/<eco>/<name>/index.json (releases/history, flagged, quotes, notes_url, compare_url, notes_format), example URL, no-flag caveat, /mcp/, limits)
                             (T-0121: sitemap <lastmod> of /pkg/ URLs = date of the package's newest release record shown (7-day list or history), / = build date, /legal/, /brand/ and /mcp/ = fixed dates in build.py; T-0138: /mcp/ listed)
                             (T-0144: one function page_url() writes the absolute page URL for sitemap <loc> and canonical, literal "@" kept in scoped npm paths; every page footer links /brand/)
   mcp/ (index.html, release_radar_mcp.py, .py.txt, README.md; T-0106: stdlib MCP server, sources in mcp/, copied by build.py)
