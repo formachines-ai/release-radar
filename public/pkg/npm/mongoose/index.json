@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/8.24.10...9.12.1",
    "date": "2026-11-09T21:01:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -90,6 +91,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/8.24.9...8.24.10",
    "date": "2026-11-16T20:14:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -112,6 +114,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/9.12.1...9.12.2",
    "date": "2026-11-16T20:01:09Z",
    "ecosystem": "npm",
    "errata_url": null,

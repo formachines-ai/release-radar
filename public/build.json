@@ -1,6 +1,6 @@
 {
- "built": "2026-11-19T13:14:50Z",
- "commit": "193af65",
+ "built": "2026-11-19T14:26:11Z",
+ "commit": "8a7dab6",
  "errors": [],
  "flagged": 35,
  "generator": "build.py",
@@ -362,6 +362,6 @@
  },
  "packages": 98,
  "pr_list_notes": 9,
- "redirects": 297,
+ "redirects": 481,
  "releases": 333
 }

@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.54.0...v7.55.0",
    "date": "2026-11-10T06:58:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,6 +29,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.53.0...v7.54.0",
    "date": "2026-11-09T16:15:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -50,6 +52,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.52.0...v7.53.0",
    "date": "2026-11-06T09:20:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -108,6 +111,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.59.0...v7.60.0",
    "date": "2026-11-18T16:16:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -130,6 +134,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.58.0...v7.59.0",
    "date": "2026-11-17T22:54:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -152,6 +157,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.57.0...v7.58.0",
    "date": "2026-11-17T18:31:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -174,6 +180,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.56.0...v7.57.0",
    "date": "2026-11-13T21:27:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -196,6 +203,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.55.0...v7.56.0",
    "date": "2026-11-12T19:37:47Z",
    "ecosystem": "npm",
    "errata_url": null,

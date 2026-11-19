@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -42,6 +42,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/puppeteer/puppeteer/compare/puppeteer-v25.18.0...puppeteer-v25.18.1",
    "date": "2026-11-17T16:26:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -64,6 +65,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/puppeteer/puppeteer/compare/puppeteer-v25.17.0...puppeteer-v25.18.0",
    "date": "2026-11-17T14:37:20Z",
    "ecosystem": "npm",
    "errata_url": null,

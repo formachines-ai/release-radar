@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.7.0...sdk-v1.8.0",
    "date": "2026-11-10T16:38:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,6 +29,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.6.0...sdk-v1.7.0",
    "date": "2026-11-09T18:56:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -86,6 +88,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.9.0...sdk-v1.10.0",
    "date": "2026-11-17T18:35:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -119,6 +122,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-typescript/compare/sdk-v1.8.0...sdk-v1.9.0",
    "date": "2026-11-16T16:53:24Z",
    "ecosystem": "npm",
    "errata_url": null,

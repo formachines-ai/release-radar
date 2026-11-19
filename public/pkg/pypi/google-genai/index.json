@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": {
@@ -13,6 +13,7 @@
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.1.0...v3.2.0",
    "date": "2026-11-11T17:49:07Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
@@ -35,6 +36,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.0.0...v3.1.0",
    "date": "2026-11-10T20:30:36Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
@@ -109,6 +111,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.5.0...v3.6.1",
    "date": "2026-11-18T22:18:46Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
@@ -131,6 +134,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.4.0...v3.5.0",
    "date": "2026-11-18T02:29:49Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
@@ -153,6 +157,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.3.0...v3.4.0",
    "date": "2026-11-16T21:45:11Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",
@@ -186,6 +191,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/python-genai/compare/v3.2.0...v3.3.0",
    "date": "2026-11-12T19:56:59Z",
    "ecosystem": "pypi",
    "errata_url": "https://formachines.ai/errata/pypi/google-genai/",

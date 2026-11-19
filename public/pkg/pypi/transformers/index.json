@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -42,6 +42,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/huggingface/transformers/compare/v5.22.2...v5.23.0",
    "date": "2026-11-13T14:10:36Z",
    "ecosystem": "pypi",
    "errata_url": null,

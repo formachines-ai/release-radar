@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.48.0...v3.49.0",
    "date": "2026-11-10T06:47:52Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -64,6 +65,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.55.0...v3.55.1",
    "date": "2026-11-18T16:05:17Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -86,6 +88,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.54.0...v3.55.0",
    "date": "2026-11-18T05:22:42Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -112,6 +115,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.53.0...v3.54.0",
    "date": "2026-11-17T22:43:49Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -134,6 +138,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.52.0...v3.53.0",
    "date": "2026-11-17T18:41:11Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -156,6 +161,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.51.0...v3.52.0",
    "date": "2026-11-16T22:41:05Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -178,6 +184,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0",
    "date": "2026-11-13T21:13:37Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -200,6 +207,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0",
    "date": "2026-11-12T19:26:52Z",
    "ecosystem": "pypi",
    "errata_url": null,

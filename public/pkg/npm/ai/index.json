@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.169...ai@7.0.170",
    "date": "2026-11-11T18:38:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -32,6 +33,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.329...ai@6.0.330",
    "date": "2026-11-11T06:19:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -58,6 +60,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.288...ai@5.0.289",
    "date": "2026-11-11T06:15:28Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -84,6 +87,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.168...ai@7.0.169",
    "date": "2026-11-10T20:18:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -110,6 +114,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.328...ai@6.0.329",
    "date": "2026-11-10T20:13:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -136,6 +141,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.166...ai@7.0.168",
    "date": "2026-11-10T17:49:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -162,6 +168,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.326...ai@6.0.328",
    "date": "2026-11-10T17:46:40Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -188,6 +195,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.287...ai@5.0.288",
    "date": "2026-11-10T17:42:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -214,6 +222,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.286...ai@5.0.287",
    "date": "2026-11-09T19:47:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -240,6 +249,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.325...ai@6.0.326",
    "date": "2026-11-09T03:02:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -266,6 +276,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.165...ai@7.0.166",
    "date": "2026-11-09T02:55:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -292,6 +303,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.164...ai@7.0.165",
    "date": "2026-11-07T19:27:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -318,6 +330,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.324...ai@6.0.325",
    "date": "2026-11-07T19:25:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -370,6 +383,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.291...ai@6.0.324",
    "date": "2026-11-06T22:24:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -396,6 +410,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.333...ai@7.0.164",
    "date": "2026-11-06T19:44:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -436,6 +451,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.176...ai@7.0.177",
    "date": "2026-11-18T19:03:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -458,6 +474,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.175...ai@7.0.176",
    "date": "2026-11-17T20:57:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -484,6 +501,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.174...ai@7.0.175",
    "date": "2026-11-17T19:55:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -510,6 +528,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.290...ai@5.0.291",
    "date": "2026-11-17T19:55:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -538,6 +557,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.173...ai@7.0.174",
    "date": "2026-11-17T18:41:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -570,6 +590,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.332...ai@6.0.333",
    "date": "2026-11-17T18:39:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -598,6 +619,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.331...ai@6.0.332",
    "date": "2026-11-13T23:46:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -624,6 +646,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.289...ai@5.0.290",
    "date": "2026-11-13T23:44:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -650,6 +673,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.172...ai@7.0.173",
    "date": "2026-11-13T22:35:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -682,6 +706,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.171...ai@7.0.172",
    "date": "2026-11-13T05:59:50Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -708,6 +733,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.330...ai@6.0.331",
    "date": "2026-11-12T20:22:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -734,6 +760,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.170...ai@7.0.171",
    "date": "2026-11-12T20:22:00Z",
    "ecosystem": "npm",
    "errata_url": null,

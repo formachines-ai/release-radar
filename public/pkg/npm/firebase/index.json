@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -170,6 +170,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/firebase/firebase-js-sdk/compare/firebase@13.3.0...firebase@13.4.0",
    "date": "2026-11-16T21:13:19Z",
    "ecosystem": "npm",
    "errata_url": "https://formachines.ai/errata/npm/firebase/",

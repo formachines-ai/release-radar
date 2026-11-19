@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v8.3.7...v8.3.8",
    "date": "2026-11-11T02:49:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -50,6 +51,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v7.3.8...v8.1.7",
    "date": "2026-11-09T11:02:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -72,6 +74,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v6.4.6...v7.3.8",
    "date": "2026-11-09T11:01:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -94,6 +97,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v8.1.7...v8.2.6",
    "date": "2026-11-09T11:00:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -116,6 +120,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v8.3.6...v8.3.7",
    "date": "2026-11-09T10:25:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -142,6 +147,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vitejs/vite/compare/v8.2.6...v8.3.6",
    "date": "2026-11-05T05:40:52Z",
    "ecosystem": "npm",
    "errata_url": null,

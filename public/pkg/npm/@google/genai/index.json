@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.1.0...v3.2.0",
    "date": "2026-11-11T17:39:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,6 +29,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.0.0...v3.1.0",
    "date": "2026-11-10T20:47:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -97,6 +99,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.6.0...v3.6.1",
    "date": "2026-11-18T22:24:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -119,6 +122,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.5.0...v3.6.0",
    "date": "2026-11-18T07:38:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -145,6 +149,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.4.0...v3.5.0",
    "date": "2026-11-18T03:16:50Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -167,6 +172,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.3.0...v3.4.0",
    "date": "2026-11-16T21:04:17Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -189,6 +195,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/googleapis/js-genai/compare/v3.2.0...v3.3.0",
    "date": "2026-11-12T21:19:31Z",
    "ecosystem": "npm",
    "errata_url": null,

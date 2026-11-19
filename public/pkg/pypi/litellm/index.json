@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -28,6 +28,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.109.0...v1.109.1",
    "date": "2026-11-12T01:59:54Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -50,6 +51,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.5...v1.108.6",
    "date": "2026-11-12T01:07:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -76,6 +78,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.106.8...v1.106.9",
    "date": "2026-11-12T00:46:25Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -102,6 +105,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.104.9...v1.106.8",
    "date": "2026-11-11T03:18:23Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -128,6 +132,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.11...v1.109.0",
    "date": "2026-11-11T00:53:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -192,6 +197,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.4...v1.108.5",
    "date": "2026-11-10T22:47:45Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -218,6 +224,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.103.11...v1.104.9",
    "date": "2026-11-10T20:24:16Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -262,6 +269,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.3...v1.108.4",
    "date": "2026-11-09T22:56:38Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -310,6 +318,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.2...v1.108.3",
    "date": "2026-11-07T22:25:38Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -374,6 +383,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.1...v1.108.2",
    "date": "2026-11-06T22:03:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -400,6 +410,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.106.10...v1.108.1",
    "date": "2026-11-05T23:37:04Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -484,6 +495,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.110.0...v1.110.1",
    "date": "2026-11-19T03:47:43Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -513,6 +525,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.109.1...v1.109.2",
    "date": "2026-11-19T02:37:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -575,6 +588,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.109.2...v1.110.0",
    "date": "2026-11-18T01:35:35Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -618,6 +632,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.10...v1.108.11",
    "date": "2026-11-17T22:28:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -640,6 +655,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.9...v1.108.10",
    "date": "2026-11-16T21:56:34Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -770,6 +786,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.8...v1.108.9",
    "date": "2026-11-14T21:54:43Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -796,6 +813,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.106.9...v1.106.10",
    "date": "2026-11-14T00:29:04Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -818,6 +836,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.7...v1.108.8",
    "date": "2026-11-13T20:17:27Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -906,6 +925,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.6...v1.108.7",
    "date": "2026-11-12T20:22:16Z",
    "ecosystem": "pypi",
    "errata_url": null,

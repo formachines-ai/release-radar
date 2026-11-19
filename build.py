@@ -909,6 +909,36 @@ def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
             r["followed_by"] = {"version": x["version"], "hours": int((d - d0).total_seconds() // 3600)}
 
 
+def gh_tag(r: dict, repo: str) -> str | None:
+    """Tag from a GitHub release URL of this repo (…/releases/tag/<tag>), None otherwise."""
+    m = re.match(r"^https://github\.com/([^/]+/[^/]+)/releases/tag/(.+)$", r.get("notes_url") or "")
+    return urllib.parse.unquote(m.group(2)) if m and m.group(1).lower() == repo.lower() else None
+
+
+def mark_compare(pkg: dict) -> None:
+    """T-0152: compare_url to the previous stable tag of the same package (same tag prefix), only if both tags are known."""
+    repo = pkg.get("repo")
+    recs = {r["id"]: r for r in list(pkg["releases"]) + list(pkg.get("history") or [])}.values()
+    for r in recs:
+        for k in ("compare_url", "compare_go", "compare_prev"):
+            r.pop(k, None)
+    if not repo:
+        return
+    tagged = []
+    for r in recs:
+        t = gh_tag(r, repo)
+        n = ver_nums(r["version"])
+        if t and n and not r["prerelease"] and not r.get("variant_of") and t.endswith(r["version"]):
+            tagged.append((n, r, t, t[:len(t) - len(r["version"])]))
+    for n, r, t, pre in tagged:
+        prevs = [x for x in tagged if x[0] < n and x[3] == pre and x[1]["version"] != r["version"]]
+        if not prevs:
+            continue
+        _, pr, pt, _ = max(prevs, key=lambda x: x[0])
+        url = f"https://github.com/{repo}/compare/{urllib.parse.quote(pt, safe='@/.-_')}...{urllib.parse.quote(t, safe='@/.-_')}"
+        r["compare_url"], r["compare_go"], r["compare_prev"] = url, go_id(url), pr["version"]
+
+
 def merge_history(pkg: dict, now: datetime, window_start: datetime, ignore: list[re.Pattern]) -> None:
     """T-0118: records older than the 7-day window come only from earlier committed index.json files."""
     old = read_json(PUBLIC_DIR / pkg["path"].strip("/") / "index.json")
@@ -1028,6 +1058,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             releases.append(rel)
         merge_history(pkg, now, window_start, ignore)
         mark_followed_by(pkg)
+        mark_compare(pkg)
         pkgs.append(pkg)
     releases.sort(key=lambda r: r["date"], reverse=True)
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
@@ -1157,8 +1188,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     elif r["notes_kind"] != "github_release":
         honest = '<p class="note nonote">Release notes not fetched.</p>'
     else:
-        honest = (f'<p class="note nonote">No breaking keyword found in the release notes (checked {now.strftime("%Y-%m-%d")} UTC); '
-                  f'notes can omit changes.</p>')
+        honest = '<p class="note nonote">No breaking keyword matched in the notes (notes may be incomplete)</p>'
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
     name_html = f'<a href="{esc(r["pkg_path"])}">{esc(r["name"])}</a>' if show_pkg_link else esc(r["name"])
     quotes = "".join(render_quote(q) for q in r["quotes"])
@@ -1168,6 +1198,8 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     if r.get("notes_format") == "pr_list":
         kind_hint += ' <span class="note prlist">Notes are a PR list (auto-generated format)</span>'
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
+    cmp_link = (f'<a href="/go/compare/{esc(r["compare_go"])}/" rel="nofollow">compare {esc(r["compare_prev"])}…{esc(r["version"])} →</a>'
+                if r.get("compare_url") else "")
     top = ""
     if notes_top:
         top = f'<p class="notes-top">{links}</p>' if links else '<p class="notes-top note">release notes not fetched</p>'
@@ -1176,7 +1208,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     if variants:
         vs = render_variant_items(variants, now)
         vhtml = f'<details class="variants"><summary>{len(variants)} platform builds</summary><ul>{vs}</ul></details>'
-    links += f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
+    links += cmp_link + f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
     issue_title = urllib.parse.quote(f"Error in entry: {r['ecosystem']}/{r['name']} {r['version']}")
     issue_body = urllib.parse.quote(f"Entry: {SITE_BASE}{r['pkg_path']}#{safe_fs_name(r['id'])}\n\nWhat is wrong (quote / number / link)?\n")
@@ -1621,6 +1653,7 @@ def public_release(r: dict) -> dict:
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
+        **({"compare_url": r["compare_url"]} if r.get("compare_url") else {}),
         **({"followed_by": r["followed_by"]} if r.get("followed_by") else {}),
         **({"notes_format": "pr_list"} if r.get("notes_format") == "pr_list" else {}),
     }
@@ -1872,8 +1905,12 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
         for r in p.get("history") or []:
             if r.get("notes_url") and r.get("notes_go"):
                 go_map[r["notes_go"]] = r["notes_url"]
+    for p in model["packages"]:
+        for r in list(p["releases"]) + list(p.get("history") or []):
+            if r.get("compare_url"):
+                go_map[r["compare_go"]] = r["compare_url"]
     for gid, url in go_map.items():
-        write_text(PUBLIC_DIR / "go" / gid / "index.html", render_go(url, built))
+        write_text(PUBLIC_DIR / "go" / (f"compare/{gid}" if "/compare/" in url and "/releases/" not in url else gid) / "index.html", render_go(url, built))
     for r in model["releases"]:
         for d in ("up", "down"):
             write_text(PUBLIC_DIR / "go" / "vote" / vote_id(r) / d / "index.html", render_go(vote_target(r), built, vote=True))
