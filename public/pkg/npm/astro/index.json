@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.10...astro@7.4.11",
    "date": "2026-11-11T17:35:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -32,6 +33,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.9...astro@7.4.10",
    "date": "2026-11-10T20:11:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -64,6 +66,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.8...astro@7.4.9",
    "date": "2026-11-10T18:35:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -90,6 +93,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.7...astro@7.4.8",
    "date": "2026-11-09T14:51:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -116,6 +120,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.6...astro@7.4.7",
    "date": "2026-11-05T19:59:28Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -182,6 +187,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.12...astro@7.4.13",
    "date": "2026-11-18T17:35:55Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -204,6 +210,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/withastro/astro/compare/astro@7.4.11...astro@7.4.12",
    "date": "2026-11-13T19:02:02Z",
    "ecosystem": "npm",
    "errata_url": null,

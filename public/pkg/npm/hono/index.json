@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/honojs/hono/compare/v4.13.17...v4.13.18",
    "date": "2026-11-11T08:54:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -78,6 +79,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/honojs/hono/compare/v4.13.18...v4.13.19",
    "date": "2026-11-16T12:57:55Z",
    "ecosystem": "npm",
    "errata_url": null,

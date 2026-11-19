@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -446,6 +446,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.167.1...rust-v0.167.2",
    "date": "2026-11-11T22:50:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1524,6 +1525,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.167.0...rust-v0.167.1",
    "date": "2026-11-10T21:39:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3493,6 +3495,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.169.1...rust-v0.170.0",
    "date": "2026-11-18T03:45:45Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3807,6 +3810,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.169.0...rust-v0.169.1",
    "date": "2026-11-17T22:26:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5501,6 +5505,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.168.0...rust-v0.169.0",
    "date": "2026-11-13T08:43:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5978,6 +5983,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/openai/codex/compare/rust-v0.167.2...rust-v0.168.0",
    "date": "2026-11-13T04:00:31Z",
    "ecosystem": "npm",
    "errata_url": null,

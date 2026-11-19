@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0",
    "date": "2026-11-10T16:33:19Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -28,6 +29,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.6.0...v2.7.0",
    "date": "2026-11-09T18:52:39Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -86,6 +88,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.9.0...v2.10.0",
    "date": "2026-11-17T18:28:48Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -124,6 +127,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0",
    "date": "2026-11-16T16:47:53Z",
    "ecosystem": "pypi",
    "errata_url": null,

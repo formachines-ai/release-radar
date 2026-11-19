@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.4...0.162.5",
    "date": "2026-11-11T22:29:51Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -32,6 +33,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.3...0.162.4",
    "date": "2026-11-10T17:51:16Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -58,6 +60,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.2...0.162.3",
    "date": "2026-11-10T14:23:09Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -84,6 +87,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.1...0.162.2",
    "date": "2026-11-07T15:41:38Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -150,6 +154,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.164.0...0.165.0",
    "date": "2026-11-18T19:15:35Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -172,6 +177,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.2...0.164.0",
    "date": "2026-11-18T13:09:07Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -194,6 +200,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.1...0.163.2",
    "date": "2026-11-17T18:29:02Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -216,6 +223,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.0...0.163.1",
    "date": "2026-11-15T09:51:29Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -242,6 +250,7 @@
   },
   {
    "bump": "minor",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.7...0.163.0",
    "date": "2026-11-14T16:53:14Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -268,6 +277,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.6...0.162.7",
    "date": "2026-11-13T17:47:16Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -290,6 +300,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.5...0.162.6",
    "date": "2026-11-13T13:36:38Z",
    "ecosystem": "pypi",
    "errata_url": null,

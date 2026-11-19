@@ -1,11 +1,12 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.114...@ai-sdk/openai@4.0.115",
    "date": "2026-11-11T18:38:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -32,6 +33,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.140...@ai-sdk/openai@3.0.141",
    "date": "2026-11-11T06:21:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -58,6 +60,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@2.0.142...@ai-sdk/openai@2.0.143",
    "date": "2026-11-11T06:15:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -80,6 +83,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.113...@ai-sdk/openai@4.0.114",
    "date": "2026-11-10T20:18:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -106,6 +110,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.111...@ai-sdk/openai@4.0.113",
    "date": "2026-11-10T17:48:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -132,6 +137,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.139...@ai-sdk/openai@3.0.140",
    "date": "2026-11-10T17:47:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -158,6 +164,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@2.0.141...@ai-sdk/openai@2.0.142",
    "date": "2026-11-10T17:41:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -184,6 +191,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.110...@ai-sdk/openai@4.0.111",
    "date": "2026-11-07T19:27:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -210,6 +218,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.138...@ai-sdk/openai@3.0.139",
    "date": "2026-11-07T19:27:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -262,6 +271,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@2.0.143...@ai-sdk/openai@3.0.138",
    "date": "2026-11-06T22:38:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -288,6 +298,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.144...@ai-sdk/openai@4.0.110",
    "date": "2026-11-06T19:43:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -328,6 +339,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.120...@ai-sdk/openai@4.0.121",
    "date": "2026-11-17T20:55:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -350,6 +362,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.119...@ai-sdk/openai@4.0.120",
    "date": "2026-11-17T19:57:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -376,6 +389,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.118...@ai-sdk/openai@4.0.119",
    "date": "2026-11-17T18:40:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -402,6 +416,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.143...@ai-sdk/openai@3.0.144",
    "date": "2026-11-17T18:39:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -424,6 +439,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.142...@ai-sdk/openai@3.0.143",
    "date": "2026-11-13T23:45:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -450,6 +466,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.117...@ai-sdk/openai@4.0.118",
    "date": "2026-11-13T22:34:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -476,6 +493,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.116...@ai-sdk/openai@4.0.117",
    "date": "2026-11-13T05:58:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -502,6 +520,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.115...@ai-sdk/openai@4.0.116",
    "date": "2026-11-12T20:22:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -528,6 +547,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.141...@ai-sdk/openai@3.0.142",
    "date": "2026-11-12T20:20:02Z",
    "ecosystem": "npm",
    "errata_url": null,

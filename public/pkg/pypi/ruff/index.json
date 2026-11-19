@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -46,6 +46,7 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/astral-sh/ruff/compare/0.17.4...0.17.5",
    "date": "2026-11-12T17:54:09Z",
    "ecosystem": "pypi",
    "errata_url": null,

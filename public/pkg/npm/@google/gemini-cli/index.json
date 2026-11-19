@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -64,6 +64,7 @@
  "releases": [
   {
    "bump": "minor",
+   "compare_url": "https://github.com/google-gemini/gemini-cli/compare/v0.68.0...v0.69.0",
    "date": "2026-11-19T01:51:24Z",
    "ecosystem": "npm",
    "errata_url": null,

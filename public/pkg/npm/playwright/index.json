@@ -1,5 +1,5 @@
 {
- "built": "2026-11-19T13:14:50Z",
+ "built": "2026-11-19T14:26:11Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -542,6 +542,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/microsoft/playwright/compare/v1.65.0...v1.65.1",
    "date": "2026-11-13T21:15:10Z",
    "ecosystem": "npm",
    "errata_url": null,
