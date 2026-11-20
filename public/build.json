@@ -1,6 +1,6 @@
 {
- "built": "2026-11-20T18:14:16Z",
- "commit": "f4a22da",
+ "built": "2026-11-20T19:23:15Z",
+ "commit": "ce8cab0",
  "errors": [],
  "flagged": 29,
  "generator": "build.py",
@@ -8,11 +8,11 @@
  "http_requests": 0,
  "notes_coverage": {
   "counts": {
-   "checked_no_notes": 182,
+   "checked_no_notes": 173,
    "no_repo_url": 3,
    "not_fetched": 0
   },
-  "github_release": 137,
+  "github_release": 133,
   "missing": [
    {
     "eco": "npm",
@@ -33,11 +33,11 @@
     "version": "1.19.6"
    }
   ],
-  "releases": 322
+  "releases": 309
  },
- "notes_reused": 182,
+ "notes_reused": 173,
  "packages": 98,
- "pr_list_notes": 15,
+ "pr_list_notes": 14,
  "redirects": 529,
- "releases": 322
+ "releases": 309
 }

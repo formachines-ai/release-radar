@@ -167,6 +167,7 @@ Reuse (T-0164): when a version's notes cannot be fetched in this run (offline, `
 Coverage (T-0115): the home "Versions without release notes" block shows three counts of versions from the same data as build.json: checked-no-notes, not checked because the notes were not fetched (`not_fetched`), not checked because no repo URL is known (`no_repo_url`); the last two are listed in a collapsed "Not checked" details. build.json gets a new key `notes_coverage.counts` (`checked_no_notes`, `not_fetched`, `no_repo_url`, in versions; `missing` groups >5 versions of a package into one entry with `versions`).
 Home "Versions without release notes" (T-0112): a native closed `<details id="no-notes">` whose `<summary>` carries the label and N; with N=0 a plain heading with 0 and no `<details>`. No JavaScript.
 T-0116: the "Versions without release notes" block splits N into S stable and P pre-release/dev (S+P=N; pre-release = `is_prerelease`, a semver hyphen suffix or a PEP 440 a/b/rc/dev marker), each in its own closed `<details id="no-notes-stable">` / `<details id="no-notes-pre">` with its count in the `<summary>`; the heading is now a plain `<h2 id="no-notes">`.
+T-0165: the home heading reads "Versions checked with no release notes (N)", N = `notes_coverage.counts.checked_no_notes` of build.json; the three-count line stays under it.
 
 ## Breaking-change regex
 
