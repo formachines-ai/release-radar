@@ -1210,7 +1210,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
         honest = (f'<p class="note nonote">No release notes found on GitHub Releases or in CHANGELOG.md for '
                   f'{esc(r["version"])} (checked {esc(r.get("no_notes_checked") or now.strftime("%Y-%m-%d"))} UTC)</p>')
     elif r["notes_kind"] != "github_release":
-        honest = '<p class="note nonote">Release notes not fetched.</p>'
+        honest = '<p class="note nonote">Notes not fetched in this build</p>'
     else:
         honest = '<p class="note nonote">No breaking keyword matched in the notes (notes may be incomplete)</p>'
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
@@ -1275,7 +1275,9 @@ def render_index(model: dict, errata_count: int) -> str:
     cov = notes_counts(model["notes_missing"], len(nonotes))
     by_ver = {(r["ecosystem"], r["name"], r["version"]): r for r in rels}
     unchecked = [m for m in model["notes_missing"] if m["reason"] in ("not_fetched", "no_repo_url")]
-    nn_note = (f'<p class="note">No release notes found for {cov["checked_no_notes"]} of the versions checked; '
+    nn_note = (f'<p class="note nn-line" id="nn-line">In this build: notes checked and empty {cov["checked_no_notes"]}, not fetched {cov["not_fetched"]}, '
+               f'no known repository URL {cov["no_repo_url"]}. Not fetched does not mean the release has no notes.</p>'
+               f'<p class="note">No release notes found for {cov["checked_no_notes"]} of the versions checked; '
                f'{cov["not_fetched"]} versions could not be fetched and {cov["no_repo_url"]} have no known repository, '
                f'so they were not checked (build {now.strftime("%Y-%m-%d %H:%M")} UTC). '
                f'Checked = no matching GitHub release and no mention in the repository CHANGELOG.md, last {WINDOW_DAYS} days.</p>'

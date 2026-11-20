@@ -1,9 +1,47 @@
 {
- "built": "2026-11-20T13:13:50Z",
+ "built": "2026-11-20T16:13:18Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.5...0.162.6",
+   "date": "2026-11-13T13:36:38Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "hours": 4,
+    "version": "0.162.7"
+   },
+   "id": "pypi/fastapi/0.162.6",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/e7ca344c2f/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.6",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "prev_version": "0.162.5",
+   "quotes": [
+    {
+     "match": "Breaking",
+     "quote": "### Breaking Changes\n* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
+     "quote_incomplete": false
+    },
+    {
+     "match": "Drop support",
+     "quote": "* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "0.162.6",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.4...0.162.5",
@@ -297,47 +335,9 @@
    "variant_of": null,
    "version": "0.162.7",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.5...0.162.6",
-   "date": "2026-11-13T13:36:38Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "hours": 4,
-    "version": "0.162.7"
-   },
-   "id": "pypi/fastapi/0.162.6",
-   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/e7ca344c2f/",
-   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.6",
-   "package": "fastapi",
-   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
-   "prerelease": false,
-   "prev_version": "0.162.5",
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "### Breaking Changes\n* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
-     "quote_incomplete": false
-    },
-    {
-     "match": "Drop support",
-     "quote": "* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "0.162.6",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/fastapi/fastapi",
- "stable_in_window": 7,
+ "stable_in_window": 6,
  "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 }
