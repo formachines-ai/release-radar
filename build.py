@@ -1004,6 +1004,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
     releases: list[dict] = []
     repo_cache: dict[str, list[dict]] = {}
     missing: list[dict] = []
+    notes_reused = 0
     overrides = load_repo_overrides()
     for n, (eco, name) in enumerate(packages, 1):
         log.info("[%d/%d] %s:%s", n, len(packages), eco, name)
@@ -1030,6 +1031,9 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             stable = next((v for v in vers_all if not is_prerelease(eco, v["version"])), None)
         pkg["latest_stable"] = {"version": stable["version"], "date": stable.get("date")} if stable else None
         recent = [v for v in vers_all if (d := parse_dt(v.get("date"))) and d >= window_start]
+        old_idx = read_json(PUBLIC_DIR / pkg["path"].strip("/") / "index.json")
+        prev_recs = {r["version"]: r for r in list(old_idx.get("releases") or []) + list(old_idx.get("history") or [])
+                     if isinstance(r, dict) and r.get("version")} if isinstance(old_idx, dict) else {}
         gh_releases: list[dict] = []
         if recent and pkg["repo"]:
             if pkg["repo"] not in repo_cache:
@@ -1047,17 +1051,31 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
             notes_kind = "fallback"
             nfmt = None
             quotes: list[dict] = []
+            reused = None
             if not (gh and gh.get("url")):
-                missing.append({"eco": eco, "name": name, "version": ver,
-                                "reason": miss_reason(http, pkg["repo"], gh_releases, no_github)})
-            no_notes = False
-            if not (gh and gh.get("url")) and not no_github:
+                reason = miss_reason(http, pkg["repo"], gh_releases, no_github)
+                # T-0164: notes could not be fetched in this run -> reuse the same version's record from the previous committed index.json
+                if reason in ("not_fetched", "rate_limited", "api_error"):
+                    rec = prev_recs.get(ver)
+                    if rec and ((rec.get("notes_kind") == "github_release" and rec.get("notes_url")) or (rec.get("no_notes") and rec.get("no_notes_checked"))):
+                        reused = restore_release(rec, pkg)
+                if reused and reused["version"] == ver:
+                    notes_reused += 1
+                else:
+                    reused = None
+                    missing.append({"eco": eco, "name": name, "version": ver, "reason": reason})
+            no_notes = bool(reused and reused["no_notes"])
+            if not (gh and gh.get("url")) and not reused and not no_github:
                 no_notes = no_notes_anywhere(http, pkg["repo"], ver)
-            if gh and gh.get("url"):
+            if reused and reused["notes_kind"] == "github_release":
+                notes_url, notes_kind, quotes, nfmt = reused["notes_url"], "github_release", reused["quotes"], reused["notes_format"]
+            elif gh and gh.get("url"):
                 notes_url = gh["url"]
                 notes_kind = "github_release"
                 quotes = find_quotes(gh.get("body") or "", ignore)
                 nfmt = notes_format(gh.get("body") or "")
+            elif reused and reused["notes_url"]:
+                notes_url, notes_kind = reused["notes_url"], reused["notes_kind"]
             elif pkg["changelog"]:
                 notes_url, notes_kind = pkg["changelog"], "changelog"
             elif pkg["repo"]:
@@ -1073,9 +1091,9 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "prev_version": None if gh and gh.get("prerelease") else compute_prev(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes,
-                "no_notes_checked": now.strftime("%Y-%m-%d") if no_notes else None, "pkg_path": pkg["path"],
+                "no_notes_checked": (reused["no_notes_checked"] if reused else now.strftime("%Y-%m-%d")) if no_notes else None, "pkg_path": pkg["path"],
                 "notes_format": nfmt,
-                "notes_pr_list_only": bool(gh and gh.get("url") and notes_pr_list_only(gh.get("body") or "")),
+                "notes_pr_list_only": reused["notes_pr_list_only"] if reused else bool(gh and gh.get("url") and notes_pr_list_only(gh.get("body") or "")),
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
             pkg["releases"].append(rel)
@@ -1088,7 +1106,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
     pkgs.sort(key=lambda p: (p["ecosystem"], p["name"].lower()))
     missing.sort(key=lambda m: (m["eco"], m["name"].lower(), m["version"]))
     return {"built": iso(now), "window_start": iso(window_start), "packages": pkgs, "releases": releases,
-            "notes_missing": missing}
+            "notes_missing": missing, "notes_reused": notes_reused}
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -1964,6 +1982,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     build_info = {
         "built": built, "commit": GIT_SHA, "generator": "build.py", "packages": len(model["packages"]),
         "releases": len(model["releases"]), "flagged": len(flagged), "redirects": len(go_map),
+        "notes_reused": model.get("notes_reused", 0),
         "pr_list_notes": sum(1 for r in model["releases"] if r.get("notes_format") == "pr_list"),
         "http_requests": http.requests, "github_remaining": http.github_remaining, "errors": http.errors[:50],
         "notes_coverage": {
