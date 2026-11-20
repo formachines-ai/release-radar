@@ -858,6 +858,28 @@ def notes_format(body: str) -> str | None:
     return "pr_list" if hits * 5 >= len(bullets) * 4 else None
 
 
+PR_ONLY_LINE_RE = re.compile(r"^[*+-]\s+.*\bby @[\w-]+(?:\[bot\])? in (?:#\d+|https://github\.com/[\w.-]+/[\w.-]+/pull/\d+)\s*$")
+NEW_CONTRIB_RE = re.compile(r"^[*+-]\s+@[\w-]+(?:\[bot\])? made their first contribution in (?:#\d+|https://github\.com/\S+/pull/\d+)\s*$", re.I)
+OTHER_OK_RE = re.compile(r"^(?:#{1,6}\s|\**\s*full changelog\b|\**\s*new contributors\b)", re.I)
+
+
+def notes_pr_list_only(body: str) -> bool:
+    """T-0160: >=3 list lines, every list line is 'by @user in #N / pull URL'; other lines only headings,
+    Full Changelog or New Contributors (the 'made their first contribution' lines under it). Regex only."""
+    n = 0
+    for ln in (body or "").splitlines():
+        t = ln.strip()
+        if not t:
+            continue
+        if PR_ONLY_LINE_RE.match(t):
+            n += 1
+        elif NEW_CONTRIB_RE.match(t) or OTHER_OK_RE.match(t):
+            continue
+        else:
+            return False
+    return n >= 3
+
+
 def restore_release(rec: dict, pkg: dict) -> dict | None:
     """Rebuild an internal release dict from a stored public record (no re-fetch)."""
     if not rec.get("version") or not parse_dt(rec.get("date")):
@@ -875,6 +897,7 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
         "no_notes_checked": (str(rec.get("no_notes_checked"))[:10] if rec.get("no_notes") and rec.get("no_notes_checked") else None),
         "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
         "notes_format": "pr_list" if rec.get("notes_format") == "pr_list" else None,
+        "notes_pr_list_only": bool(rec.get("notes_pr_list_only")),
     }
 
 
@@ -1052,6 +1075,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes,
                 "no_notes_checked": now.strftime("%Y-%m-%d") if no_notes else None, "pkg_path": pkg["path"],
                 "notes_format": nfmt,
+                "notes_pr_list_only": bool(gh and gh.get("url") and notes_pr_list_only(gh.get("body") or "")),
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
             pkg["releases"].append(rel)
@@ -1197,6 +1221,8 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     kind_hint = f' <span class="note">({kind})</span>' if kind != "release notes" else ""
     if r.get("notes_format") == "pr_list":
         kind_hint += ' <span class="note prlist">Notes are a PR list (auto-generated format)</span>'
+    if r.get("notes_pr_list_only"):
+        kind_hint += ' <span class="note prlist">Notes are a PR list only (auto-generated)</span>'
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
     cmp_link = (f'<a href="/go/compare/{esc(r["compare_go"])}/" rel="nofollow">compare {esc(r["compare_prev"])}…{esc(r["version"])} →</a>'
                 if r.get("compare_url") else "")
@@ -1665,6 +1691,7 @@ def public_release(r: dict) -> dict:
         **({"compare_url": r["compare_url"]} if r.get("compare_url") else {}),
         **({"followed_by": r["followed_by"]} if r.get("followed_by") else {}),
         **({"notes_format": "pr_list"} if r.get("notes_format") == "pr_list" else {}),
+        **({"notes_pr_list_only": True} if r.get("notes_pr_list_only") else {}),
     }
 
 
