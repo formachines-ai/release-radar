@@ -1427,29 +1427,28 @@ def related_packages(p: dict, model: dict, n: int = 4) -> list[dict]:
     return sorted(out, key=lambda x: x["name"].lower())
 
 
-def package_seo(p: dict) -> tuple[str, str]:
-    """<title> and meta description of a package page: data and a verbatim quote fragment only."""
-    name, eco, lat = p["name"], p["ecosystem"], p.get("latest")
-    nv = f"{name} {lat}" if lat else name
-    forms = [f"{nv} release notes & breaking changes ({eco}) — {SITE_NAME}",
-             f"{nv} release notes & breaking changes ({eco})",
-             f"{nv} release notes & breaking changes",
-             f"{nv} breaking changes"]
-    title = next((t for t in forms if len(t) <= 70), forms[-1])  # T-0096: first form that fits 70 chars
-    rel = next((r for r in p["releases"] if r["version"] == lat), None)
-    date = rel["date"] if rel else (p["latest_stable"].get("date") if p.get("latest_stable") and p["latest_stable"]["version"] == lat else None)
-    nflag = sum(1 for r in p["releases"] if r["flagged"])
-    head = f"{name} {lat or '?'}" + (f", released {fmt_date(date)}" if date else "") + \
-        f"; {nflag} flagged release{'' if nflag == 1 else 's'} in the last {WINDOW_DAYS} days."
-    fr = next((r for r in ([rel] if rel and rel["flagged"] else []) + [r for r in p["releases"] if r["flagged"]]), None)
-    desc = head
-    if fr:
-        q = " ".join(fr["quotes"][0]["quote"].split())
-        room = 160 - len(head) - len(' Quote: "…"') - 1
-        if room >= 20:
-            frag = q if len(q) <= room else q[:room].rsplit(" ", 1)[0].rstrip(" ,;:.") + "…"
-            desc = f'{head} Quote: "{frag}"'
-    return title, desc
+def package_seo(p: dict, built: str = "") -> tuple[str, str]:
+    """T-0162: <title> and meta description of a package page, from the package's own data only (no quotes, no judgement)."""
+    name, eco = p["name"], p["ecosystem"]
+    elabel = {"pypi": "PyPI", "npm": "npm"}.get(eco, eco)
+    title = f"{name} ({elabel}) releases and breaking-change quotes – {SITE_NAME}"
+    recs = list(p["releases"]) + list(p.get("history") or [])
+    lv = p.get("latest")
+    ld = max((r["date"] for r in recs if r["version"] == lv and r.get("date")), default=None) if lv else None
+    ls = p.get("latest_stable") or {}
+    if lv and not ld and ls.get("version") == lv:
+        ld = ls.get("date")
+    flagged = sum(1 for r in recs if r["flagged"])
+    n = len(recs)
+    if lv:
+        desc = (f"{name} ({elabel}) latest {lv}" + (f", released {ld[:10]} UTC" if ld else "") +
+                f". {n} release{'' if n == 1 else 's'} in the last {HISTORY_DAYS} days, {flagged} flagged by regex.")
+    else:
+        desc = (f"{name} ({elabel}): no release in the last {WINDOW_DAYS} days as of {(built or '')[:10]} UTC. "
+                f"{n} release{'' if n == 1 else 's'} in the last {HISTORY_DAYS} days, {flagged} flagged by regex.")
+    if len(desc) > 160:
+        desc = desc.replace(" UTC", "").replace(" in the last ", " in ")
+    return title, desc[:160]
 
 
 def package_facts(p: dict, model: dict) -> str:
@@ -1539,7 +1538,7 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<h2>Other {esc(p["ecosystem"])} packages tracked</h2><p class="pkg-index">' + " · ".join(
             f'<a href="{esc(x["path"])}">{esc(x["name"])}</a>' for x in sib) + "</p>")
     body.append('<p class="note"><a href="/">← Release Radar home: all tracked packages</a></p>')
-    title, desc = package_seo(p)
+    title, desc = package_seo(p, model["built"])
     og_desc = (f"{p['name']} ({p['ecosystem']}): recent releases and links to their original notes. "
                "Flags mark wording matches, not confirmed breaking changes.")
     canon = page_url(p["path"])
