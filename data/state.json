@@ -1,10 +1,10 @@
 {
- "duration_s": 1.0,
+ "duration_s": 0.9,
  "last_build": {
-  "built": "2026-11-20T08:14:21Z",
-  "commit": "a397ee8",
+  "built": "2026-11-20T13:13:50Z",
+  "commit": "03a2e66",
   "errors": [],
-  "flagged": 33,
+  "flagged": 31,
   "generator": "build.py",
   "github_remaining": null,
   "http_requests": 0,
@@ -12,9 +12,9 @@
    "counts": {
     "checked_no_notes": 0,
     "no_repo_url": 3,
-    "not_fetched": 191
+    "not_fetched": 184
    },
-   "github_release": 142,
+   "github_release": 140,
    "missing": [
     {
      "eco": "npm",
@@ -23,17 +23,11 @@
      "version": "2.1.324"
     },
     {
-     "count": 134,
+     "count": 127,
      "eco": "npm",
      "name": "@openai/codex",
      "reason": "not_fetched",
      "versions": [
-      "0.169.0-darwin-arm64",
-      "0.169.0-darwin-x64",
-      "0.169.0-linux-arm64",
-      "0.169.0-linux-x64",
-      "0.169.0-win32-arm64",
-      "0.169.0-win32-x64",
       "0.169.1-darwin-arm64",
       "0.169.1-darwin-x64",
       "0.169.1-linux-arm64",
@@ -95,7 +89,6 @@
       "0.171.0-alpha.13.1-linux-x64",
       "0.171.0-alpha.13.1-win32-arm64",
       "0.171.0-alpha.13.1-win32-x64",
-      "0.171.0-alpha.2-win32-x64",
       "0.171.0-alpha.4",
       "0.171.0-alpha.4-darwin-arm64",
       "0.171.0-alpha.4-darwin-x64",
@@ -354,11 +347,11 @@
      "version": "1.44.7"
     }
    ],
-   "releases": 336
+   "releases": 327
   },
   "packages": 98,
   "pr_list_notes": 15,
   "redirects": 529,
-  "releases": 336
+  "releases": 327
  }
 }
