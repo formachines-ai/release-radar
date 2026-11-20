@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-19T06:00:04Z",
+ "fetched": "2026-11-20T06:00:03Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add Claude Code managed settings to the Admin API\n* **api:** add the sandbox_egress_restricted error to Admin API plugin methods\n\n\n### Bug Fixes\n\n* **client:** encode spaces in query strings as %20\n\n  The AWS SigV4 signature of a request now matches its query string when a parameter contains a space.\n\n\n### Performance Improvements\n\n* **structured outputs:** build each call's output schema from a cached raw schema\n\n\n### Chores\n\n* **docs:** explain how the input-token rate limit types differ\n* **docs:** name Claude Security in the usage and cost report descriptions\n* **docs:** note that a Google Cloud external key's provider and key_name can't be changed",
+   "date": "2026-11-19T19:14:21Z",
+   "name": "v2.11.0",
+   "prerelease": false,
+   "tag": "v2.11.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.11.0"
+  },
   {
    "body": "### Features\n\n* **api:** add beta support for the billing_policy request parameter\n* **api:** add contract_spend_limit_reached error code to messages\n* **api:** add error codes for linked billing refusals\n* **api:** add the user_profile_billing_not_authorized error code\n* **api:** add webhook events for external key failure and recovery\n\n\n### Bug Fixes\n\n* **client:** stop reporting failed aiohttp connections as timeouts\n* **types:** keep deprecated model aliases and the types nested under them working\n\n\n### Chores\n\n* **api:** rename error data models, deprecating the old names\n* **docs:** clarify which AWS KMS keys a workspace can use on Claude Platform on AWS\n* **docs:** clarify which credential work get, update and list accept\n* **docs:** clarify which uploads a plugin pin holds back\n* **docs:** note that a plugin scan's reason also covers errored scans\n\n  `content_scan.reason` on an errored scan now says why there is no verdict. It is not a security finding, so code that treats any `reason` as a concern should also check `status`.\n\n* **internal:** don't report moved classes as breaking changes\n\n\n### Documentation\n\n* name each SDK's own types in rename deprecations",
    "date": "2026-11-17T18:28:13Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v0.111.0",
    "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.111.0"
-  },
-  {
-   "body": "## 0.110.0 (2026-06-18)\n\nFull Changelog: [v0.109.2...v0.110.0](https://github.com/anthropics/anthropic-sdk-python/compare/v0.109.2...v0.110.0)\n\n### Features\n\n* **api:** add support for new code_execution_20260120 tool ([5e23212](https://github.com/anthropics/anthropic-sdk-python/commit/5e23212dc0883174c879b97ef8e7e33ead4e8da5))\n\n\n### Bug Fixes\n\n* append x-stainless-helper across header merges instead of clobbering ([#105](https://github.com/anthropics/anthropic-sdk-python/issues/105)) ([922558e](https://github.com/anthropics/anthropic-sdk-python/commit/922558e2ce52e18863dab27bcc04067068827364))\n* **bedrock:** preserve stream event type ([#1682](https://github.com/anthropics/anthropic-sdk-python/issues/1682)) ([b27e343](https://github.com/anthropics/anthropic-sdk-python/commit/b27e3439699174dbc41e34e2d6ef5cb1e2930c18))\n* **helpers:** single source of truth for x-stainless-helper key + closed value vocabulary ([#95](https://github.com/anthropics/anthropic-sdk-python/issues/95)) ([e6f7a56](https://github.com/anthropics/anthropic-sdk-python/commit/e6f7a56bb624f4c946cb15ba7973fd6fe052e10f))",
-   "date": "2026-06-18T17:18:34Z",
-   "name": "v0.110.0",
-   "prerelease": false,
-   "tag": "v0.110.0",
-   "url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v0.110.0"
   }
  ],
  "repo": "anthropics/anthropic-sdk-python"

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T02:11:22Z",
+ "built": "2026-11-20T06:00:03Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
@@ -146,7 +146,7 @@
   "date": "2026-11-18T19:15:35Z",
   "version": "0.165.0"
  },
- "metadata_fetched": "2026-11-19T06:00:23Z",
+ "metadata_fetched": "2026-11-20T06:00:22Z",
  "package": "fastapi",
  "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
  "prereleases_in_window": 0,

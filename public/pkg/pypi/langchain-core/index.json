@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T02:11:22Z",
+ "built": "2026-11-20T06:00:03Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -62,12 +62,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.8.3",
+ "latest": "1.8.4",
  "latest_stable": {
-  "date": "2026-11-18T15:38:17Z",
-  "version": "1.8.3"
+  "date": "2026-11-19T22:35:41Z",
+  "version": "1.8.4"
  },
- "metadata_fetched": "2026-11-19T06:00:05Z",
+ "metadata_fetched": "2026-11-20T06:00:05Z",
  "package": "langchain-core",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
  "prereleases_in_window": 0,
@@ -75,11 +75,38 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/langchain-ai/langchain/compare/langchain-core%3D%3D1.8.3...langchain-core%3D%3D1.8.4",
+   "date": "2026-11-19T22:35:41Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/langchain-core/1.8.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ccd04d38aa/",
+   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.4",
+   "package": "langchain-core",
+   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
+   "prerelease": false,
+   "prev_version": "1.8.3",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.8.4",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/langchain-ai/langchain/compare/langchain-core%3D%3D1.8.2...langchain-core%3D%3D1.8.3",
    "date": "2026-11-18T15:38:17Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 30,
+    "version": "1.8.4"
+   },
    "id": "pypi/langchain-core/1.8.3",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -152,6 +179,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchain",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "Building applications with LLMs through composability"
 }

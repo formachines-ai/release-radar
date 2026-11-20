@@ -1,14 +1,19 @@
 {
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
- "fetched": "2026-11-19T06:00:25Z",
+ "fetched": "2026-11-20T06:00:24Z",
  "homepage": "https://github.com/pydantic/pydantic",
- "latest": "2.14.3",
+ "latest": "2.14.4",
  "name": "pydantic",
  "page": "https://pypi.org/project/pydantic/",
  "repo": "pydantic/pydantic",
  "summary": "Data validation using Python type hints",
  "versions": [
+  {
+   "date": "2026-11-19T12:57:37Z",
+   "version": "2.14.4",
+   "yanked": false
+  },
   {
    "date": "2026-11-05T09:17:02Z",
    "version": "2.14.3",
@@ -202,11 +207,6 @@
   {
    "date": "2025-04-03T13:12:47Z",
    "version": "2.11.2",
-   "yanked": false
-  },
-  {
-   "date": "2025-03-28T21:14:55Z",
-   "version": "2.11.1",
    "yanked": false
   }
  ]

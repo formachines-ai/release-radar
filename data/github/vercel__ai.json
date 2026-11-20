@@ -1,13 +1,5 @@
 {
  "by_tag": {
-  "@ai-sdk/openai@3.0.142": {
-   "body": "### Patch Changes\n\n- 5a14668: feat(openai): add positioned additionalTools and accept custom and namespace tools\n- 5a14668: feat(openai): support ordered 'additional_tools' from tool results",
-   "date": "2026-11-12T20:16:39Z",
-   "name": "@ai-sdk/openai@3.0.142",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@3.0.142",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.142"
-  },
   "@ai-sdk/openai@3.0.143": {
    "body": "### Patch Changes\n\n- 61c32d9: feat(openai): support Responses contextManagement and compaction items",
    "date": "2026-11-13T23:44:20Z",
@@ -23,22 +15,6 @@
    "prerelease": false,
    "tag": "@ai-sdk/openai@3.0.144",
    "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.144"
-  },
-  "@ai-sdk/openai@4.0.116": {
-   "body": "### Patch Changes\n\n- 2ebc78b: Forward the provider's configured fetch transport when downloading file inputs. Add a `fetch` option to `createDownload` so core downloads can also use `guarded-fetch` for opt-in DNS validation on Node.js. The function returned by `createDownload` can now also be passed as `experimental_download` to `generateText` and `streamText`, and `experimental_download` now also handles generated file URLs returned by the model, so one hook covers all core downloads. Document that the default URL checks do not resolve DNS and recommend the guarded transport or network egress controls for untrusted URLs.\n\n  Keep Azure image and Vertex tool-result downloads separate from provider authentication wrappers so file hosts never receive Azure bearer tokens or Vertex Express Mode API keys.\n\n  Pass the call's abort signal to custom download requests, including prompt assets and generated files, so `experimental_download: createDownload({ fetch })` preserves cancellation and timeouts.\n\n- 6eff958: feat(openai): add positioned additionalTools and accept custom and namespace tools\n- a279e86: fix(openai): keep tool-result additionalTools for parallel results and openai options\n- Updated dependencies [2ebc78b]\n- Updated dependencies [cb4fa52]\n  - @ai-sdk/provider-utils@5.0.80\n  - @ai-sdk/provider@4.0.38",
-   "date": "2026-11-12T20:22:32Z",
-   "name": "@ai-sdk/openai@4.0.116",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.116",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.116"
-  },
-  "@ai-sdk/openai@4.0.117": {
-   "body": "### Patch Changes\n\n- 6d50947: add experimental extraction models backed by structured language model output\n- Updated dependencies [6d50947]\n  - @ai-sdk/provider-utils@5.0.81",
-   "date": "2026-11-13T06:00:31Z",
-   "name": "@ai-sdk/openai@4.0.117",
-   "prerelease": false,
-   "tag": "@ai-sdk/openai@4.0.117",
-   "url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.117"
   },
   "@ai-sdk/openai@4.0.118": {
    "body": "### Patch Changes\n\n- f5fc6ba: Derive known model ID suggestions from each provider's model catalog declarations so catalog updates automatically update autocomplete, while preserving existing suggestions, endpoint-specific model lists, and support for custom model IDs.",
@@ -80,14 +56,6 @@
    "tag": "ai@5.0.290",
    "url": "https://github.com/vercel/ai/releases/tag/ai%405.0.290"
   },
-  "ai@6.0.331": {
-   "body": "### Patch Changes\n\n- 60dc26c: Keep failed tool call error text consistent with the model's message history by default. Set `redactToolErrors: true` to replace it with the result of `onError`.\n- 9e8f918: Prevent excessive memory and CPU usage when validating malformed UI messages. `validateUIMessages`, `safeValidateUIMessages`, and the agent UI stream helpers reported the issues of every part schema for every invalid part, so a small request with many malformed parts could exhaust memory. Each part is now validated against the schemas for its type only, validation stops at the first invalid message or part, and an invalid JSON value in provider or tool metadata is reported as a single issue.\n- Updated dependencies [271ca50]\n- Updated dependencies [f0a7beb]\n  - @ai-sdk/gateway@3.0.236",
-   "date": "2026-11-12T20:16:12Z",
-   "name": "ai@6.0.331",
-   "prerelease": false,
-   "tag": "ai@6.0.331",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.331"
-  },
   "ai@6.0.332": {
    "body": "### Patch Changes\n\n- Updated dependencies [23ff635]\n  - @ai-sdk/gateway@3.0.237",
    "date": "2026-11-13T23:44:02Z",
@@ -95,22 +63,6 @@
    "prerelease": false,
    "tag": "ai@6.0.332",
    "url": "https://github.com/vercel/ai/releases/tag/ai%406.0.332"
-  },
-  "ai@7.0.171": {
-   "body": "### Patch Changes\n\n- 11323f9: Prevent excessive memory and CPU usage when validating malformed UI messages. `validateUIMessages`, `safeValidateUIMessages`, and the agent UI stream helpers reported the issues of every part schema for every invalid part, so a small request with many malformed parts could exhaust memory. Each part is now validated against the schemas for its type only, validation stops at the first invalid message or part, and an invalid JSON value in provider or tool metadata is reported as a single issue.\n- 2ebc78b: Forward the provider's configured fetch transport when downloading file inputs. Add a `fetch` option to `createDownload` so core downloads can also use `guarded-fetch` for opt-in DNS validation on Node.js. The function returned by `createDownload` can now also be passed as `experimental_download` to `generateText` and `streamText`, and `experimental_download` now also handles generated file URLs returned by the model, so one hook covers all core downloads. Document that the default URL checks do not resolve DNS and recommend the guarded transport or network egress controls for untrusted URLs.\n\n  Keep Azure image and Vertex tool-result downloads separate from provider authentication wrappers so file hosts never receive Azure bearer tokens or Vertex Express Mode API keys.\n\n  Pass the call's abort signal to custom download requests, including prompt assets and generated files, so `experimental_download: createDownload({ fetch })` preserves cancellation and timeouts.\n\n- cb4fa52: add experimental extract api and extraction model spec\n- ceeee29: Warn when a UI message stream sends a tool error text that differs from the text the model received and then sends reasoning from a later step. By default, `toUIMessageStream` sends \"An error occurred.\" to the client for a failed tool call, while the model receives the full error text during a multi-step call. Converting the stored UI messages back with `convertToModelMessages` then changes the tool result, and models that bind reasoning to the preceding messages (for example Anthropic models with preserved thinking) reject the request. The request still fails after this change; the warning and the updated documentation explain the cause and the available options.\n- 1a94af3: Send the error text of failed tool calls to the client as the model received it.\n\n  `toUIMessageStream` and `toUIMessageChunk` replaced the error text of failed tool calls with \"An error occurred.\" by default. The model had already received the full text during a multi-step call, so UI messages that were converted back with `convertToModelMessages` contained a different tool result. Models that bind reasoning to the preceding messages rejected that history (for example Anthropic models with preserved thinking, with HTTP 400 \"The block is bound to a different conversation\"), and other models continued from an error they never received.\n\n  UI messages now keep the model's error text for tool execution errors and invalid tool calls. This text reaches the client. To keep details away from the model and the client, throw an error with a safe message from the tool's `execute` function. The error text of an invalid tool call contains the generated input, the validation messages of the input schema, or the names of the available tools; `execute` does not run for it. To restore the previous behavior, set the new `redactToolErrors: true` option. A provided `onError` keeps handling failed tool calls unless you set `redactToolErrors: false`. Stream errors are still masked by default.\n\n- Updated dependencies [640569d]\n- Updated dependencies [4e43721]\n- Updated dependencies [2ebc78b]\n- Updated dependencies [cb4fa52]\n  - @ai-sdk/gateway@4.0.144\n  - @ai-sdk/provider-utils@5.0.80\n  - @ai-sdk/provider@4.0.38",
-   "date": "2026-11-12T20:20:02Z",
-   "name": "ai@7.0.171",
-   "prerelease": false,
-   "tag": "ai@7.0.171",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.171"
-  },
-  "ai@7.0.172": {
-   "body": "### Patch Changes\n\n- 79d2004: Require an explicit `experimental_download` hook for remote file URLs in `experimental_extract` and `experimental_decide` instead of silently downloading through global fetch. Callers can use `createDownload({ fetch })` with a DNS-protected transport for untrusted URLs; inline file data continues to work without a hook.\n- Updated dependencies [6d50947]\n  - @ai-sdk/provider-utils@5.0.81\n  - @ai-sdk/gateway@4.0.145",
-   "date": "2026-11-13T05:57:52Z",
-   "name": "ai@7.0.172",
-   "prerelease": false,
-   "tag": "ai@7.0.172",
-   "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.172"
   },
   "ai@7.0.173": {
    "body": "### Patch Changes\n\n- 3c09e00: Prevent in-place schema validation or input refinement from changing approved tool arguments during approval replay.\n- f43ee39: fix(workflow): log the default step limit warning when `WorkflowAgent.generate()` stops at the default limit.\n- 7ce7ffc: fix(workflow): log provider warnings in `WorkflowAgent`\n\n  `WorkflowAgent.generate()` and `WorkflowAgent.stream()` now log the warnings of every model call through the AI SDK warning logger, like `ToolLoopAgent`. The `AI_SDK_LOG_WARNINGS` global controls the output.\n\n- f6809e3: fix(workflow): align the `prepareStep` results of `WorkflowAgent` with `ToolLoopAgent`. Returned `instructions` (or the deprecated `system`) replace the instructions of the step and carry forward to later steps, returned `providerOptions` are merged with the agent options, and returned `headers` are merged over the headers of the call.\n- 2559173: feat(workflow): support `toolApproval` in `WorkflowAgent`\n\n  `WorkflowAgent` accepts a `toolApproval` configuration in the constructor and per `generate()` or `stream()` call. The configuration takes precedence over a tool's `needsApproval` setting, and its functions run in workflow context, outside of the durable model steps. Calls that the configuration approves run in the same step, and calls that it denies receive an `execution-denied` tool result without pausing the workflow.\n\n- f1de9cb: feat(workflow): support the `timeout` object in `WorkflowAgent`\n\n  `generate()` and `stream()` accept `timeout: { totalMs, stepMs, firstChunkMs, chunkMs }` in addition to a number. `stepMs` limits each model call. In `stream()`, `firstChunkMs` and `chunkMs` limit the wait for model output. Invalid timeout values are rejected with an `InvalidArgumentError`. A timeout now also ends a model step when the provider stream ignores the abort signal.\n\n- Updated dependencies [9baa2d0]\n  - @ai-sdk/gateway@4.0.146",
@@ -121,7 +73,7 @@
    "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.173"
   }
  },
- "fetched": "2026-11-19T06:00:37Z",
+ "fetched": "2026-11-20T06:00:35Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- e403988: add an interrupt option to steering so a steer can cancel a model call that has not produced output yet\n- b792b56: feat(ai): ship the AI SDK skill in the package at `skills/ai-sdk` for pnpm agent skills\n- Updated dependencies [700089c]\n  - @ai-sdk/gateway@4.0.150",

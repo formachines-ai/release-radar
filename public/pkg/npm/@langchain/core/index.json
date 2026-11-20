@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T02:11:22Z",
+ "built": "2026-11-20T06:00:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -121,7 +121,7 @@
   "date": "2026-11-18T22:28:39Z",
   "version": "1.4.2"
  },
- "metadata_fetched": "2026-11-19T06:00:47Z",
+ "metadata_fetched": "2026-11-20T06:00:44Z",
  "package": "@langchain/core",
  "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
  "prereleases_in_window": 0,

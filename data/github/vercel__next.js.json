@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-19T06:01:29Z",
+ "fetched": "2026-11-20T06:01:23Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- Share trace-style truncation and gzip the Request Insights journal: #102018\n- Preserve agent feedback instructions during temporary telemetry opt-out: #102062\n- Rename the experimental next start front server to Switchyard: #102035\n\n### Example Changes\n\n- examples: inclusion criteria: #93300\n\n### Misc Changes\n\n- docs: clarify Turbopack task inputs and module identity: #102090\n- fix pr-auto-label config members: #102067\n- test: skip service-worker-multiple in deploy mode: #102057\n- Add @samselikoff to team members in OWNERS file: #102023\n- Document instant navigation inspection with browser cookies: #102069\n- docs: explain errors thrown inside use cache: #102064\n\n### Credits \n\nHuge thanks to @wbinnssmith, @mischnic, @icyJoseph, @aurorascharff, @samselikoff, @kassens, and @jamiboym for helping!",
+   "date": "2026-11-19T23:46:02Z",
+   "name": "v16.5.0-canary.57",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.57",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.57"
+  },
+  {
+   "body": "### Core Changes\n\n- Support bot and method-based prerender bypass capabilities: #101911\n- Compute Turbopack route bundle stats in Rust: #101540\n- Avoid full-segment writes without Cache Components: #101832\n- Add an experimental Go front server for next start: #101695\n\n### Misc Changes\n\n- Wait for hydration in external-browser-runtime hydration tests: #102060\n- test: skip instant-testing-api-exposure build-rejection test in deploy mode: #102056\n- turbo-tasks-backend benches: skip keyed_deps setup for benchmarks excluded by the filter: #101933\n- turbopack: replace EcmascriptInputTransforms::extend with new/concat turbo tasks: #102010\n- turbopack-trace-server: support xz compressed trace files: #101956\n- turbo-tasks-malloc: bump mimalloc to v3.7.0: #102029\n- turbo-tasks-backend: deterministic re-execution oracle in recompute_dependency test: #102048\n- test: print running test output when CI cancels run-tests: #101724\n\n### Credits \n\nHuge thanks to @unstubbable, @sokra, @zhengdaodeguL, @jamiboym, @mischnic, and @lukesandberg for helping!",
+   "date": "2026-11-19T16:14:24Z",
+   "name": "v16.5.0-canary.56",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.56",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.56"
+  },
   {
    "body": "### Core Changes\n\n- fix(ts-plugin): accept quoted prefetch segment config values: #101895\n- Fix Navigation Inspector dark mode contrast: #102008\n- Turbopack: add max_chunk_size to production chunking: #100478\n- refactor: Move minimalMode checks earlier in conditionals: #102004\n- Upgrade React from `df6aa4ec-20261112` to `a8342585-20261117`: #101942\n- Refactor durableUseCacheEntries configuration: #101930\n- Remove unused `didStripLocale` request meta: #101999\n- Widen Turbopack maxDuration to u64: #101116\n- turbo-bincode: remove indexmap/indexset helpers and use OrderedAutoMap/OrderedAutoSet in cells: #101520\n\n### Misc Changes\n\n- [test] Stop using async Client Components: #101948\n- Change REVIEW.md instructions to never at-mention owners: #102001\n- chore: add ast-grep untracked() rule: #101994\n- Add INVALIDATION comments to untracked() calls: #101993\n- chore: switch to ident_string() where possible: #101996\n- docs: clarify Route Handler caching config with Cache Components: #101990\n- Turbopack: detect top-level `this` as CommonJS exports: #101727\n- feat(turbopack): Add EmitOption trait for extensible chunking context configuration: #101001\n- pr-status: look up PR runs by head SHA and load job logs on gh 2.97+: #101707\n- Clarify images.path docs and ungate two routing gate tests: #101582\n- pr-status: flag finished runs that didn't pass but have no failed jobs: #101714\n- Add e2e coverage for next start's HTTP and process behavior: #101710\n- docs: note tsconfig include changes with a custom distDir: #101963\n\n### Credits \n\nHuge thanks to @DominikKoniarz, @samselikoff, @sokra, @lubieowoce, @eps1lon, @mischnic, @aurorascharff, @jamiboym, and @lukesandberg for helping!",
    "date": "2026-11-18T23:45:54Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "v16.4.2",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.4.2"
-  },
-  {
-   "body": "### Core Changes\n\n- Upgrade from pnpm v10 to v12: #99827\n\n### Example Changes\n\n- docs(examples): fix typo and update HTTP links to HTTPS in example READMEs: #99924\n\n### Misc Changes\n\n- Turbopack: Avoid `serde_json::RawValue` conversions in a few places: #97713\n- docs: replace unbounded cacheHandler snippets and fix tag handling in examples: #100186\n- Turbopack: don't treat events as relevant because their parent dir is in the watcher batch: #99782\n- Fix CI for react 18.3: #100202\n- docs: clarify ESLint 10 support: #100198\n- ci: remove release eval dispatcher: #100200\n- Copy pnpm store to tmpfs for test fixtures: #99960\n\n### Credits \n\nHuge thanks to @bgw, @karan5028ji, @icyJoseph, @sokra, @lukesandberg, and @aurorascharff for helping!",
-   "date": "2026-10-14T23:49:31Z",
-   "name": "v16.5.0-canary.12",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.12",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.12"
-  },
-  {
-   "body": "### Core Changes\n\n- Upgrade React from `b618bbb4-20261007` to `07dde64d-20261013`: #100194\n- Remove staticInfo.rsc: #100172\n- fix(analyze): use route summaries as the analyzer route index: #100081\n- Reload on missed Turbopack startup CSS updates: #99963\n- Remove unused getParams matcher cache: #100078\n- fix: mark HTTP fetch failures as span errors: #99877\n- docs: explain router.prefetch stages: #99786\n\n### Misc Changes\n\n- docs: fix \"a HTTP\"/\"a SSR\" grammar and Node.js casing: #99542\n- docs: narrow catchError ErrorInfo.error, typed as unknown: #100196\n- docs: update links for newly transferred demos: #100197\n- ci: update release eval workflow pin: #100189\n- ci: run evals for releases and canaries: #100126\n- test: speed up use-cache-cross-deployment even more: #100181\n- Turbopack: only search <head> for existing chunk tags: #100175\n- docs: clarify Server Action dispatch across Mutating Data and the guide: #100144\n- test: speed up use-cache-cross-deployment: #100138\n- Turbopack: avoid document-wide selector scans when probing for chunk tags: #100047\n- Don't optimize the aggregation graph during `connect_child`: #100147\n- Simplify aggregation update queue control flow: #100146\n- [ci] Fix Rspack test manifest update workflow: #100052\n- docs: fix example path regexr: #100084\n\n### Credits \n\nHuge thanks to @deveshasawa28, @icyJoseph, @aurorascharff, @mischnic, @wbinnssmith, @sokra, @kakadiadarpan, @lukesandberg, and @sabrinaluo for helping!",
-   "date": "2026-10-14T18:52:59Z",
-   "name": "v16.5.0-canary.11",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.11",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.11"
   }
  ],
  "repo": "vercel/next.js"

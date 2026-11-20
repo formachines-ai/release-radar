@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-19T06:00:05Z",
+ "fetched": "2026-11-20T06:00:05Z",
  "releases": [
+  {
+   "body": "**`langchain-openrouter` 0.3.0 drops support for Python 3.10**, which has reached end-of-life. The minimum supported version is now Python 3.11, and the minimum `langchain-core` version is now 1.8.3. Users on Python 3.10 will continue to resolve `langchain-openrouter` 0.2.x.\n\nChanges since langchain-openrouter==0.2.9\n\nrelease(openrouter): 0.3.0 (#41957)\nchore(model-profiles): refresh model profile data (#41934)\nchore(model-profiles): refresh model profile data (#41917)\nchore(model-profiles): refresh model profile data (#41893)\nchore(model-profiles): refresh model profile data (#41861)\nchore(model-profiles): refresh model profile data (#41828)\nfeat(partners): Remove EOL'd Python 3.10 from partner packages (#41268)\nchore(model-profiles): refresh model profile data (#41791)\nchore(model-profiles): refresh model profile data (#41781)\nchore(model-profiles): refresh model profile data (#41762)\nchore(model-profiles): refresh model profile data (#41745)\nchore(model-profiles): refresh model profile data (#41725)\nchore(model-profiles): refresh model profile data (#41706)\nchore(model-profiles): refresh model profile data (#41669)\nchore(model-profiles): refresh model profile data (#41651)\nchore(model-profiles): refresh model profile data (#41627)\nchore(model-profiles): refresh model profile data (#41600)\nchore(model-profiles): refresh model profile data (#41573)\nchore(model-profiles): refresh model profile data (#41556)\nchore(model-profiles): refresh model profile data (#41543)\nchore(model-profiles): refresh model profile data (#41520)\nchore(model-profiles): refresh model profile data (#41494)\nchore(model-profiles): refresh model profile data (#41469)\nchore(model-profiles): refresh model profile data (#41451)\nchore(model-profiles): refresh model profile data (#41432)\nchore(infra): relax third-party dependency upper bounds (#41407)\nchore(model-profiles): refresh model profile data (#41415)\nchore(model-profiles): refresh model profile data (#41354)\nchore(deps): bump certifi from 2026.2.25 to 2026.10.19 in /libs/partners/openrouter (#41378)\nchore(model-profiles): refresh model profile data (#41325)\nchore(model-profiles): refresh model profile data (#41298)\nchore(model-profiles): refresh model profile data (#41283)\nchore(model-profiles): refresh model profile data (#41265)\nfix: fix dependencies in some partner packages (#41266)\nchore(model-profiles): refresh model profile data (#41253)\nchore(model-profiles): refresh model profile data (#41242)\nchore(model-profiles): refresh model profile data (#41229)\nchore(model-profiles): refresh model profile data (#41215)\nchore(model-profiles): refresh model profile data (#41145)\nchore(model-profiles): refresh model profile data (#41117)\nchore(model-profiles): refresh model profile data (#41084)\nchore(model-profiles): refresh model profile data (#41045)\nchore(model-profiles): refresh model profile data (#41017)\nchore(model-profiles): refresh model profile data (#40994)\nchore(model-profiles): refresh model profile data (#40974)\nchore(deps): bump urllib3 from 2.7.0 to 2.8.0 in /libs/partners/openrouter (#40949)\nchore(model-profiles): refresh model profile data (#40924)\nchore(model-profiles): refresh model profile data (#40902)\nchore(model-profiles): refresh model profile data (#40869)\nchore(model-profiles): refresh model profile data (#40833)\nchore(model-profiles): refresh model profile data (#40804)\nchore(model-profiles): refresh model profile data (#40780)\nchore(model-profiles): refresh model profile data (#40747)",
+   "date": "2026-11-19T15:03:19Z",
+   "name": "langchain-openrouter==0.3.0",
+   "prerelease": false,
+   "tag": "langchain-openrouter==0.3.0",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.3.0"
+  },
+  {
+   "body": "Changes since langchain-openai==1.8.4\n\nrelease(openai): 1.8.5 (#41969)\nfix(openai): preserve streamed Responses tool call arguments (#41963)\nfeat(core): standardize finish reason on message-finish events (#41926)",
+   "date": "2026-11-19T23:16:20Z",
+   "name": "langchain-openai==1.8.5",
+   "prerelease": false,
+   "tag": "langchain-openai==1.8.5",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.5"
+  },
+  {
+   "body": "Changes since langchain-openai==1.8.3\n\nrelease(openai): 1.8.4 (#41962)\nchore(langchain): require `langgraph` 1.2.16 or newer (#41959)\nfix(openai): classify in-stream server errors as retryable (#41952)",
+   "date": "2026-11-19T21:36:51Z",
+   "name": "langchain-openai==1.8.4",
+   "prerelease": false,
+   "tag": "langchain-openai==1.8.4",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.4"
+  },
   {
    "body": "Changes since langchain-openai==1.8.2\n\nrelease(openai): 1.8.3 (#41950)\nfix(openai): enable Codex prompt caching on GPT-6.2 (#41949)",
    "date": "2026-11-19T00:38:57Z",
@@ -8,6 +32,22 @@
    "prerelease": false,
    "tag": "langchain-openai==1.8.3",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.8.3"
+  },
+  {
+   "body": "Changes since langchain-core==1.8.3\n\nrelease(core): 1.8.4 (#41964)\nfeat(core): standardize finish reason on message-finish events (#41926)\nfeat(langchain): tag synthetic HITL tool messages with source metadata (#41928)",
+   "date": "2026-11-19T22:35:57Z",
+   "name": "langchain-core==1.8.4",
+   "prerelease": false,
+   "tag": "langchain-core==1.8.4",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.4"
+  },
+  {
+   "body": "Changes since langchain-anthropic==1.7.11\n\nrelease(anthropic): 1.7.12 (#41966)\nfeat(core): standardize finish reason on message-finish events (#41926)\nchore(langchain): require `langgraph` 1.2.16 or newer (#41959)\nfix(anthropic): preserve `caller` on `tool_search_tool_result` blocks (#41958)\nfix(anthropic): don't share the async HTTP client between models (#41946)",
+   "date": "2026-11-19T23:00:20Z",
+   "name": "langchain-anthropic==1.7.12",
+   "prerelease": false,
+   "tag": "langchain-anthropic==1.7.12",
+   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-anthropic%3D%3D1.7.12"
   },
   {
    "body": "Changes since langchain==1.5.1\n\nrelease(langchain): 1.5.2 (#41948)\nfeat(langchain): tag synthetic HITL tool messages with source metadata (#41928)",
@@ -360,46 +400,6 @@
    "prerelease": false,
    "tag": "langchain-core==1.6.12",
    "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.12"
-  },
-  {
-   "body": "Changes since langchain-core==1.6.10\n\nrelease(core): 1.6.11 (#41260)\nfeat(core): accept address inside LangChainTracer (#41006)",
-   "date": "2026-10-15T18:32:35Z",
-   "name": "langchain-core==1.6.11",
-   "prerelease": false,
-   "tag": "langchain-core==1.6.11",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.11"
-  },
-  {
-   "body": "Changes since langchain==1.4.5\n\nrelease(langchain): 1.4.6 (#41247)\nfeat(langchain): add opt-in per-call interrupts to HITL middleware (#41062)",
-   "date": "2026-10-14T17:28:06Z",
-   "name": "langchain==1.4.6",
-   "prerelease": false,
-   "tag": "langchain==1.4.6",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.6"
-  },
-  {
-   "body": "Changes since langchain-openai==1.7.1\n\nrelease(openai): 1.7.2 (#41245)\nfix(openai): keep Responses stream items on one block when output_index drifts (#41121)",
-   "date": "2026-10-14T13:51:15Z",
-   "name": "langchain-openai==1.7.2",
-   "prerelease": false,
-   "tag": "langchain-openai==1.7.2",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.2"
-  },
-  {
-   "body": "Changes since langchain==1.4.4\n\nrelease(langchain): 1.4.5 (#41226)\nfeat(langchain): accept `summarizer` in `SummarizationMiddleware` (#41225)",
-   "date": "2026-10-12T19:28:41Z",
-   "name": "langchain==1.4.5",
-   "prerelease": false,
-   "tag": "langchain==1.4.5",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain%3D%3D1.4.5"
-  },
-  {
-   "body": "Changes since langchain-openai==1.7.0\n\nrelease(openai): 1.7.1 (#41222)\nfeat(core,anthropic,openai): declare mid-conversation support in model profiles (#41180)",
-   "date": "2026-10-12T14:33:09Z",
-   "name": "langchain-openai==1.7.1",
-   "prerelease": false,
-   "tag": "langchain-openai==1.7.1",
-   "url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.7.1"
   }
  ],
  "repo": "langchain-ai/langchain"

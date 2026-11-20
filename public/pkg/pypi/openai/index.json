@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T02:11:22Z",
+ "built": "2026-11-20T06:00:03Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -75,17 +75,63 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "3.55.1",
+ "latest": "3.57.0",
  "latest_stable": {
-  "date": "2026-11-18T16:05:17Z",
-  "version": "3.55.1"
+  "date": "2026-11-20T01:28:41Z",
+  "version": "3.57.0"
  },
- "metadata_fetched": "2026-11-19T06:00:07Z",
+ "metadata_fetched": "2026-11-20T06:00:07Z",
  "package": "openai",
  "page": "https://releases.formachines.ai/pkg/pypi/openai/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/openai/",
  "releases": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.56.0...v3.57.0",
+   "date": "2026-11-20T01:28:41Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/openai/3.57.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8cce77f8ab/",
+   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.57.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
+   "prerelease": false,
+   "prev_version": "3.56.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.57.0",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.55.1...v3.56.0",
+   "date": "2026-11-19T20:57:13Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/openai/3.56.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/a5f859415f/",
+   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.56.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
+   "prerelease": false,
+   "prev_version": "3.55.1",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.56.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/openai/openai-python/compare/v3.55.0...v3.55.1",
@@ -230,6 +276,6 @@
   }
  ],
  "repository": "https://github.com/openai/openai-python",
- "stable_in_window": 6,
+ "stable_in_window": 8,
  "summary": "The official Python library for the openai API"
 }

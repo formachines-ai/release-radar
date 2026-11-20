@@ -42,7 +42,7 @@
   "tui-v2": "0.0.0-tui-v2-202606261840"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-19T06:01:08Z",
+ "fetched": "2026-11-20T06:01:04Z",
  "homepage": "",
  "latest": "1.19.6",
  "name": "opencode-ai",
@@ -1649,136 +1649,6 @@
    "date": "2026-08-22T11:52:00Z",
    "deprecated": false,
    "version": "0.0.0-dev-202608221137"
-  },
-  {
-   "date": "2026-08-22T00:42:46Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608220026"
-  },
-  {
-   "date": "2026-08-21T22:39:43Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608212222"
-  },
-  {
-   "date": "2026-08-21T22:24:01Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608212206"
-  },
-  {
-   "date": "2026-08-21T22:06:26Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608212140"
-  },
-  {
-   "date": "2026-08-21T21:38:59Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608212123"
-  },
-  {
-   "date": "2026-08-21T21:25:01Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608212100"
-  },
-  {
-   "date": "2026-08-21T15:26:42Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211508"
-  },
-  {
-   "date": "2026-08-21T15:08:50Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211450"
-  },
-  {
-   "date": "2026-08-21T14:52:07Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211431"
-  },
-  {
-   "date": "2026-08-21T14:51:28Z",
-   "deprecated": false,
-   "version": "1.18.21"
-  },
-  {
-   "date": "2026-08-21T14:02:50Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211346"
-  },
-  {
-   "date": "2026-08-21T13:46:03Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211330"
-  },
-  {
-   "date": "2026-08-21T13:30:16Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211314"
-  },
-  {
-   "date": "2026-08-21T13:15:40Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608211258"
-  },
-  {
-   "date": "2026-08-21T09:29:30Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210909"
-  },
-  {
-   "date": "2026-08-21T09:13:17Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210853"
-  },
-  {
-   "date": "2026-08-21T08:54:13Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210837"
-  },
-  {
-   "date": "2026-08-21T08:39:31Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210822"
-  },
-  {
-   "date": "2026-08-21T08:22:52Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210805"
-  },
-  {
-   "date": "2026-08-21T08:09:54Z",
-   "deprecated": false,
-   "version": "1.18.20"
-  },
-  {
-   "date": "2026-08-21T08:05:38Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210743"
-  },
-  {
-   "date": "2026-08-21T07:44:28Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210727"
-  },
-  {
-   "date": "2026-08-21T07:27:11Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210712"
-  },
-  {
-   "date": "2026-08-21T07:13:54Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210656"
-  },
-  {
-   "date": "2026-08-21T07:04:46Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210640"
-  },
-  {
-   "date": "2026-08-21T06:41:43Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608210625"
   }
  ]
 }

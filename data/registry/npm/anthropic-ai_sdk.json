@@ -2,17 +2,22 @@
  "changelog": null,
  "dist_tags": {
   "alpha": "0.34.0-alpha.0",
-  "latest": "1.10.0"
+  "latest": "1.11.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-19T06:00:45Z",
+ "fetched": "2026-11-20T06:00:42Z",
  "homepage": "https://github.com/anthropics/anthropic-sdk-typescript#readme",
- "latest": "1.10.0",
+ "latest": "1.11.0",
  "name": "@anthropic-ai/sdk",
  "page": "https://www.npmjs.com/package/@anthropic-ai/sdk",
  "repo": "anthropics/anthropic-sdk-typescript",
  "summary": "The official TypeScript library for the Anthropic API",
  "versions": [
+  {
+   "date": "2026-11-19T19:29:02Z",
+   "deprecated": false,
+   "version": "1.11.0"
+  },
   {
    "date": "2026-11-17T18:35:29Z",
    "deprecated": false,

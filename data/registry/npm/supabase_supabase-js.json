@@ -3,19 +3,24 @@
  "dist_tags": {
   "beta": "2.112.0-beta.0",
   "canary": "2.119.0-canary.6",
-  "latest": "2.119.1",
+  "latest": "2.119.2",
   "next": "3.0.0-next.29",
   "rc": "2.100.0-rc.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-19T06:01:12Z",
+ "fetched": "2026-11-20T06:01:07Z",
  "homepage": "https://github.com/supabase/supabase-js/tree/master/packages/core/supabase-js",
- "latest": "2.119.1",
+ "latest": "2.119.2",
  "name": "@supabase/supabase-js",
  "page": "https://www.npmjs.com/package/@supabase/supabase-js",
  "repo": "supabase/supabase-js",
  "summary": "Isomorphic Javascript SDK for Supabase",
  "versions": [
+  {
+   "date": "2026-11-19T10:43:46Z",
+   "deprecated": false,
+   "version": "2.119.2"
+  },
   {
    "date": "2026-11-18T14:42:15Z",
    "deprecated": false,

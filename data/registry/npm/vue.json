@@ -10,7 +10,7 @@
   "v2-latest": "2.7.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-19T06:01:42Z",
+ "fetched": "2026-11-20T06:01:35Z",
  "homepage": "https://vuejs.org/",
  "latest": "3.5.45",
  "name": "vue",
@@ -87,11 +87,6 @@
    "date": "2026-08-27T05:52:49Z",
    "deprecated": false,
    "version": "3.5.42"
-  },
-  {
-   "date": "2026-08-21T09:26:13Z",
-   "deprecated": false,
-   "version": "3.6.0-rc.5"
   }
  ]
 }

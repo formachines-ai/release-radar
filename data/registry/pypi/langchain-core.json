@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
- "fetched": "2026-11-19T06:00:05Z",
+ "fetched": "2026-11-20T06:00:05Z",
  "homepage": "https://docs.langchain.com/",
- "latest": "1.8.3",
+ "latest": "1.8.4",
  "name": "langchain-core",
  "page": "https://pypi.org/project/langchain-core/",
  "repo": "langchain-ai/langchain",
  "summary": "Building applications with LLMs through composability",
  "versions": [
+  {
+   "date": "2026-11-19T22:35:41Z",
+   "version": "1.8.4",
+   "yanked": false
+  },
   {
    "date": "2026-11-18T15:38:17Z",
    "version": "1.8.3",
@@ -202,11 +207,6 @@
   {
    "date": "2026-06-10T21:24:01Z",
    "version": "1.4.4",
-   "yanked": false
-  },
-  {
-   "date": "2026-06-09T20:31:46Z",
-   "version": "1.4.3",
    "yanked": false
   }
  ]

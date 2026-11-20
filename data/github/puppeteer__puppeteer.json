@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-19T06:01:34Z",
+ "fetched": "2026-11-20T06:01:27Z",
  "releases": [
   {
    "body": "## [25.18.1](https://github.com/puppeteer/puppeteer/compare/puppeteer-v25.18.0...puppeteer-v25.18.1) (2026-11-17)\n\n\n### ♻️ Chores\n\n* **puppeteer:** Synchronize puppeteer versions\n\n\n### Dependencies\n\n* The following workspace dependencies were updated\n  * dependencies\n    * puppeteer-core bumped from 25.18.0 to 25.18.1",

@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-19T06:01:12Z",
+ "fetched": "2026-11-20T06:01:08Z",
  "releases": [
+  {
+   "body": "## 2.119.2 (2026-11-19)\n\n### 🩹 Fixes\n\n- **storage:** validate object request URL boundaries ([#2878](https://github.com/supabase/supabase-js/pull/2878))\n\n### ❤️ Thank You\n\n- Yann Braga",
+   "date": "2026-11-19T10:41:13Z",
+   "name": "v2.119.2",
+   "prerelease": false,
+   "tag": "v2.119.2",
+   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.119.2"
+  },
   {
    "body": "## 2.119.1 (2026-11-18)\n\n### 🩹 Fixes\n\n- **supabase:** report runtime, platform and framework in X-Client-Info per the header spec ([#2837](https://github.com/supabase/supabase-js/pull/2837))\n\n### ❤️ Thank You\n\n- Lukas Klingsbo",
    "date": "2026-11-18T14:37:29Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v2.112.0",
    "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0"
-  },
-  {
-   "body": "## 2.112.0-canary.2 (2026-08-03)\n\nThis was a version bump only, there were no code changes.",
-   "date": "2026-08-03T07:15:19Z",
-   "name": "v2.112.0-canary.2",
-   "prerelease": true,
-   "tag": "v2.112.0-canary.2",
-   "url": "https://github.com/supabase/supabase-js/releases/tag/v2.112.0-canary.2"
   }
  ],
  "repo": "supabase/supabase-js"

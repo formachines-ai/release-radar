@@ -1,5 +1,5 @@
 {
- "built": "2026-11-20T02:11:22Z",
+ "built": "2026-11-20T06:00:03Z",
  "changelog": "https://pydantic.dev/docs/validation/latest/get-started/changelog/",
  "ecosystem": "pypi",
  "errata": null,
@@ -35,18 +35,48 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.14.3",
+ "latest": "2.14.4",
  "latest_stable": {
-  "date": "2026-11-05T09:17:02Z",
-  "version": "2.14.3"
+  "date": "2026-11-19T12:57:37Z",
+  "version": "2.14.4"
  },
- "metadata_fetched": "2026-11-19T06:00:25Z",
+ "metadata_fetched": "2026-11-20T06:00:24Z",
  "package": "pydantic",
  "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pydantic/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/pydantic/pydantic/compare/v2.14.3...v2.14.4",
+   "date": "2026-11-19T12:57:37Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/pydantic/2.14.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/pydantic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/021f74f1d1/",
+   "notes_url": "https://github.com/pydantic/pydantic/releases/tag/v2.14.4",
+   "package": "pydantic",
+   "page": "https://releases.formachines.ai/pkg/pypi/pydantic/",
+   "prerelease": false,
+   "prev_version": "2.14.3",
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "* Don't mark subclasses of `@deprecated` classes as deprecated in JSON Schema by @Viicos in [#14325](https://github.com/pydantic/pydantic/pull/14325)",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.14.4",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/pydantic/pydantic",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Data validation using Python type hints"
 }

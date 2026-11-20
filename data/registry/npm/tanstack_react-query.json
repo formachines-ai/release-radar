@@ -3,19 +3,24 @@
  "dist_tags": {
   "alpha": "5.0.0-alpha.91",
   "beta": "5.0.0-beta.35",
-  "latest": "5.108.0",
+  "latest": "5.108.1",
   "previous": "4.44.0",
   "rc": "5.0.0-rc.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-19T06:01:12Z",
+ "fetched": "2026-11-20T06:01:08Z",
  "homepage": "https://tanstack.com/query",
- "latest": "5.108.0",
+ "latest": "5.108.1",
  "name": "@tanstack/react-query",
  "page": "https://www.npmjs.com/package/@tanstack/react-query",
  "repo": "TanStack/query",
  "summary": "Hooks for managing, caching and syncing asynchronous and remote data in React",
  "versions": [
+  {
+   "date": "2026-11-19T14:03:03Z",
+   "deprecated": false,
+   "version": "5.108.1"
+  },
   {
    "date": "2026-11-17T13:45:33Z",
    "deprecated": false,
