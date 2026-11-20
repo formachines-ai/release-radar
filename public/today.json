@@ -1,10 +1,10 @@
 {
- "built": "2026-11-20T13:13:50Z",
+ "built": "2026-11-20T16:13:18Z",
  "counts": {
-  "flagged": 31,
+  "flagged": 29,
   "packages": 98,
   "prereleases": 202,
-  "releases": 327,
+  "releases": 325,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -7776,86 +7776,9 @@
    "variant_of": null,
    "version": "8.0.0-rc.33-dev.186",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/huggingface/transformers/compare/v5.22.2...v5.23.0",
-   "date": "2026-11-13T14:10:36Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "id": "pypi/transformers/5.23.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/c7267c9dcb/",
-   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.23.0",
-   "package": "transformers",
-   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
-   "prerelease": false,
-   "prev_version": "5.22.2",
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "## Breaking changes\n* 🚨 Remove the `ep_router` expert-parallel style (#49615) by @IlyasMoutawwakil",
-     "quote_incomplete": false
-    },
-    {
-     "match": "Deprecate",
-     "quote": "* 🚨 Deprecate Wav2Vec2ProcessorWithLM and pyctcdecode/kenlm LM decoding (#50408) by @eustlb",
-     "quote_incomplete": false
-    },
-    {
-     "match": "breaking",
-     "quote": "* 🚨 [serve][breaking] update attn for mac users  (#49730) by @SunMarc",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "5.23.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.5...0.162.6",
-   "date": "2026-11-13T13:36:38Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "hours": 4,
-    "version": "0.162.7"
-   },
-   "id": "pypi/fastapi/0.162.6",
-   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/e7ca344c2f/",
-   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.162.6",
-   "package": "fastapi",
-   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
-   "prerelease": false,
-   "prev_version": "0.162.5",
-   "quotes": [
-    {
-     "match": "Breaking",
-     "quote": "### Breaking Changes\n* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
-     "quote_incomplete": false
-    },
-    {
-     "match": "Drop support",
-     "quote": "* 💥 Drop support for Python 3.10. PR [#16737](https://github.com/fastapi/fastapi/pull/16737) by [@tiangolo](https://github.com/tiangolo).",
-     "quote_incomplete": false
-    }
-   ],
-   "variant_of": null,
-   "version": "0.162.6",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-13T13:13:50Z"
+ "window_start": "2026-11-13T16:13:18Z"
 }
