@@ -1219,7 +1219,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     kind = {"github_release": "release notes", "changelog": "changelog", "repo_releases": "releases on GitHub",
             "registry_page": "registry page"}.get(r["notes_kind"], "release notes")
     kind_hint = f' <span class="note">({kind})</span>' if kind != "release notes" else ""
-    if r.get("notes_format") == "pr_list":
+    if r.get("notes_format") == "pr_list" and not r.get("notes_pr_list_only"):
         kind_hint += ' <span class="note prlist">Notes are a PR list (auto-generated format)</span>'
     if r.get("notes_pr_list_only"):
         kind_hint += ' <span class="note prlist">Notes are a PR list only (auto-generated)</span>'
