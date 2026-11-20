@@ -1278,11 +1278,11 @@ def render_index(model: dict, errata_count: int) -> str:
     nn_note = (f'<p class="note nn-line" id="nn-line">In this build: notes checked and empty {cov["checked_no_notes"]}, not fetched {cov["not_fetched"]}, '
                f'no known repository URL {cov["no_repo_url"]}. Not fetched does not mean the release has no notes.</p>'
                f'<p class="note">No release notes found for {cov["checked_no_notes"]} of the versions checked; '
-               f'{cov["not_fetched"]} versions could not be fetched and {cov["no_repo_url"]} have no known repository, '
+               f'{cov["not_fetched"]} versions were not fetched and {cov["no_repo_url"]} have no known repository, '
                f'so they were not checked (build {now.strftime("%Y-%m-%d %H:%M")} UTC). '
                f'Checked = no matching GitHub release and no mention in the repository CHANGELOG.md, last {WINDOW_DAYS} days.</p>'
                f'<ul class="note nn-counts"><li>Checked, no notes found: <b>{cov["checked_no_notes"]}</b></li>'
-               f'<li>Not checked, notes fetch failed (not_fetched): <b>{cov["not_fetched"]}</b></li>'
+               f'<li>Not fetched in this build (not_fetched): <b>{cov["not_fetched"]}</b></li>'
                f'<li>Not checked, no repository URL known (no_repo_url): <b>{cov["no_repo_url"]}</b></li></ul>')
     unchecked_html = ""
     if unchecked:

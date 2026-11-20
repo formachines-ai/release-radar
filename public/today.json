@@ -1,10 +1,10 @@
 {
- "built": "2026-11-20T16:13:18Z",
+ "built": "2026-11-20T17:13:35Z",
  "counts": {
   "flagged": 29,
   "packages": 98,
-  "prereleases": 202,
-  "releases": 325,
+  "prereleases": 201,
+  "releases": 324,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -7754,31 +7754,9 @@
    "variant_of": null,
    "version": "1.65.0-beta-1794589053000",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-13T16:32:42Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prisma/8.0.0-rc.33-dev.186",
-   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
-   "notes_url": "https://github.com/prisma/prisma-cli/releases",
-   "package": "prisma",
-   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.0.0-rc.33-dev.186",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-13T16:13:18Z"
+ "window_start": "2026-11-13T17:13:35Z"
 }

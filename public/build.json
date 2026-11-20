@@ -1,6 +1,6 @@
 {
- "built": "2026-11-20T16:13:18Z",
- "commit": "0a37428",
+ "built": "2026-11-20T17:13:35Z",
+ "commit": "9fc7cef",
  "errors": [],
  "flagged": 29,
  "generator": "build.py",
@@ -10,7 +10,7 @@
   "counts": {
    "checked_no_notes": 0,
    "no_repo_url": 3,
-   "not_fetched": 184
+   "not_fetched": 183
   },
   "github_release": 138,
   "missing": [
@@ -224,12 +224,6 @@
     "eco": "npm",
     "name": "prisma",
     "reason": "not_fetched",
-    "version": "8.0.0-rc.33-dev.186"
-   },
-   {
-    "eco": "npm",
-    "name": "prisma",
-    "reason": "not_fetched",
     "version": "8.0.0-rc.33-dev.187"
    },
    {
@@ -345,10 +339,10 @@
     "version": "1.44.7"
    }
   ],
-  "releases": 325
+  "releases": 324
  },
  "packages": 98,
  "pr_list_notes": 15,
  "redirects": 529,
- "releases": 325
+ "releases": 324
 }
