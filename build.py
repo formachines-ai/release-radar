@@ -1353,13 +1353,22 @@ def render_index(model: dict, errata_count: int) -> str:
         rows.append(f'<tr><td>{esc(p["ecosystem"])}</td><td><a href="{esc(p["path"])}">{esc(p["name"])}</a></td>'
                     f'<td><code>{esc(p.get("latest") or "?")}</code></td><td>{len(p["releases"])}</td>'
                     f'<td>{esc(fmt_date(latest_date)) if latest_date else "—"}</td><td>{ebadge}</td></tr>')
-    body.append(f'<h2 id="packages">All tracked packages ({len(model["packages"])})</h2>')
+    body.append(f'<h2 id="packages">Latest versions, all packages ({len(model["packages"])})</h2>')
     body.append('<div class="table-wrap"><table class="table"><thead><tr><th>eco</th><th>package</th><th>latest</th>'
                 f'<th>releases / {WINDOW_DAYS} d</th><th>newest release</th><th>Errata</th></tr></thead><tbody>' + "".join(rows) + "</tbody></table></div>")
     body.append('<h2>For machines</h2><p class="note"><a href="/today.json">/today.json</a> — this page as data · '
                 '<a href="/feed.xml">/feed.xml</a> — RSS · <a href="/feed-breaking.xml">/feed-breaking.xml</a> — RSS, flagged only · <code>/pkg/&lt;eco&gt;/&lt;name&gt;/index.json</code> — per package · '
                 '<a href="/llms.txt">/llms.txt</a> · <a href="/build.json">/build.json</a>. Want a package added? It is one line in '
                 '<code>config/packages.txt</code> of the public repository.</p>')
+    # T-0158: crawlable list; href = the sitemap <loc> string (same page_url(), same esc())
+    lst = [f'<section class="all-pkgs" id="all-packages"><h2>All tracked packages ({len(model["packages"])})</h2>']
+    for eco, label in (("pypi", "PyPI"), ("npm", "npm")):
+        sub = sorted((p for p in model["packages"] if p["ecosystem"] == eco), key=lambda p: p["name"].lower())
+        if sub:
+            lst.append(f'<p><b>{label} ({len(sub)}):</b></p><ul class="pkg-list">' + "".join(
+                f'<li><a href="{esc(page_url(p["path"]))}">{esc(p["name"])}</a></li>' for p in sub) + "</ul>")
+    lst.append("</section>")
+    body.append("\n".join(lst))
     title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
     desc = (f"{n_pk} PyPI and npm packages tracked: {n_rel} releases in 7 days, {n_fl} flagged by a regex "
             f"on release notes, each with a verbatim quote. Built {model['built']}.")

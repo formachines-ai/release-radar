@@ -58,6 +58,7 @@ data/errata/index.json      last successful copy of the Errata package index
 data/state.json             summary of the last build
 public/                     the site — everything below is generated, do not edit by hand
   index.html                front page: header stats, last 24 h (48 h on a quiet day), flagged, PyPI, npm, all packages
+                                (T-0158: bottom of the home page, above the footer: section `All tracked packages (P)` with one plain <a> (no nofollow) per sitemap /pkg/ URL, grouped PyPI/npm, sorted by name; href = the sitemap <loc> string, built with page_url())
                                 (T-0137: section `Past a 7-day cooldown` below the recent cards: releases 7–8 days old (from /pkg/ history), flagged ones as full cards, the rest as package@version · date · /pkg/ link; one line if the window is empty)
                                 (T-0150: home opens, under the <h1>, with a dated `<p class="facts">`: packages (= /pkg/ URLs in sitemap.xml), releases and flagged in the 7 days to build time (= today.json counts), sources; the home meta description carries the same numbers)
   pkg/<eco>/<name>/index.html   package page   (scoped npm packages keep the scope: pkg/npm/@scope/name/)
