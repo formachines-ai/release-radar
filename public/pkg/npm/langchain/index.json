@@ -1,9 +1,36 @@
 {
- "built": "2026-11-20T18:14:16Z",
+ "built": "2026-11-20T19:23:15Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/langchain-ai/langchainjs/compare/langchain@1.6.5...langchain@1.6.6",
+   "date": "2026-11-13T18:28:27Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 124,
+    "version": "1.6.7"
+   },
+   "id": "npm/langchain/1.6.6",
+   "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/cda40e32fe/",
+   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.6",
+   "package": "langchain",
+   "page": "https://releases.formachines.ai/pkg/npm/langchain/",
+   "prerelease": false,
+   "prev_version": "1.6.5",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.6.6",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/langchain-ai/langchainjs/compare/langchain@1.6.4...langchain@1.6.5",
@@ -153,36 +180,9 @@
    "variant_of": null,
    "version": "1.6.7",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/langchain-ai/langchainjs/compare/langchain@1.6.5...langchain@1.6.6",
-   "date": "2026-11-13T18:28:27Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 124,
-    "version": "1.6.7"
-   },
-   "id": "npm/langchain/1.6.6",
-   "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/cda40e32fe/",
-   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.6",
-   "package": "langchain",
-   "page": "https://releases.formachines.ai/pkg/npm/langchain/",
-   "prerelease": false,
-   "prev_version": "1.6.5",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.6.6",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/langchain-ai/langchainjs",
- "stable_in_window": 2,
+ "stable_in_window": 1,
  "summary": "Typescript bindings for langchain"
 }

@@ -1,9 +1,35 @@
 {
- "built": "2026-11-20T18:14:16Z",
+ "built": "2026-11-20T19:23:15Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "date": "2026-11-13T18:42:36Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 1,
+    "version": "2.1.325"
+   },
+   "id": "npm/@anthropic-ai/claude-code/2.1.324",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-20",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/478b45419c/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.323",
+   "quotes": [],
+   "variant_of": null,
+   "version": "2.1.324",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.322...v2.1.323",
@@ -383,35 +409,9 @@
    "variant_of": null,
    "version": "2.1.325",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "date": "2026-11-13T18:42:36Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 1,
-    "version": "2.1.325"
-   },
-   "id": "npm/@anthropic-ai/claude-code/2.1.324",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-20",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/478b45419c/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "prev_version": "2.1.323",
-   "quotes": [],
-   "variant_of": null,
-   "version": "2.1.324",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 6,
+ "stable_in_window": 5,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }

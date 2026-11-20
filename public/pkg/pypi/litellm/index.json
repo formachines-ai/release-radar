@@ -1,9 +1,32 @@
 {
- "built": "2026-11-20T18:14:16Z",
+ "built": "2026-11-20T19:23:15Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-13T19:00:34Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/litellm/1.111.0.dev2",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_format": "pr_list",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/41327f0fe5/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.2",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.111.0.dev2",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-13T03:38:03Z",
@@ -534,7 +557,7 @@
  "metadata_fetched": "2026-11-20T06:00:05Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
- "prereleases_in_window": 9,
+ "prereleases_in_window": 8,
  "registry": "https://pypi.org/project/litellm/",
  "releases": [
   {
@@ -1145,29 +1168,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "1.108.8",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-13T19:00:34Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/litellm/1.111.0.dev2",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_format": "pr_list",
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/41327f0fe5/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.2",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.111.0.dev2",
    "yanked_or_deprecated": false
   }
  ],

@@ -1320,7 +1320,7 @@ def render_index(model: dict, errata_count: int) -> str:
         nn_st = [r for r in nonotes if not _nn_pre(r)]
         def _nn_li(rs):
             return "".join(f'<li><a href="{esc(r["pkg_path"])}#{esc(safe_fs_name(r["id"]))}">{esc(r["name"])} {esc(r["version"])}</a></li>' for r in rs)
-        nonotes_block = (f'<h2 id="no-notes">Versions without release notes ({len(nonotes)})</h2>'
+        nonotes_block = (f'<h2 id="no-notes">Versions checked with no release notes ({cov["checked_no_notes"]})</h2>'
                          f'<p class="note nn-split">No release notes found: {len(nn_st)} stable versions, {len(nn_pre)} pre-release/dev builds (pre-releases often ship without notes)</p>'
                          f'{nn_note}'
                          f'<details id="no-notes-stable" class="nonotes-block"><summary>Stable versions without release notes ({len(nn_st)})</summary>'
@@ -1328,7 +1328,7 @@ def render_index(model: dict, errata_count: int) -> str:
                          f'<details id="no-notes-pre" class="nonotes-block"><summary>Pre-release/dev builds without release notes ({len(nn_pre)})</summary>'
                          f'<ul class="nonotes">{_nn_li(nn_pre)}</ul></details>{unchecked_html}')
     else:
-        nonotes_block = f'<h2 id="no-notes">Versions without release notes (0)</h2>' + nn_note + unchecked_html
+        nonotes_block = f'<h2 id="no-notes">Versions checked with no release notes ({cov["checked_no_notes"]})</h2>' + nn_note + unchecked_html
     cd_end, cd_start = now - timedelta(days=WINDOW_DAYS), now - timedelta(days=WINDOW_DAYS + 1)
     cd_rels = sorted((r for p in model["packages"] for r in (p.get("history") or [])
                       if (parse_dt(r["date"]) or now) >= cd_start and (parse_dt(r["date"]) or now) < cd_end),
