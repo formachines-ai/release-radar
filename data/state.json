@@ -1,8 +1,8 @@
 {
- "duration_s": 1.5,
+ "duration_s": 1.4,
  "last_build": {
-  "built": "2026-11-21T14:46:11Z",
-  "commit": "d73aa79",
+  "built": "2026-11-21T22:29:19Z",
+  "commit": "c435b67",
   "errors": [],
   "flagged": 36,
   "generator": "build.py",
@@ -14,7 +14,7 @@
     "no_repo_url": 3,
     "not_fetched": 0
    },
-   "github_release": 138,
+   "github_release": 136,
    "missing": [
     {
      "eco": "npm",
@@ -35,12 +35,12 @@
      "version": "1.19.6"
     }
    ],
-   "releases": 327
+   "releases": 325
   },
   "notes_reused": 186,
   "packages": 98,
   "pr_list_notes": 9,
   "redirects": 565,
-  "releases": 327
+  "releases": 325
  }
 }

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -11,6 +11,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/transformers/5.23.0",
    "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
    "no_notes": false,
@@ -49,6 +50,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/transformers/5.22.2",
    "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
    "no_notes": false,

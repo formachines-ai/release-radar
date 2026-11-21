@@ -915,6 +915,11 @@ def same_line_higher(a: str, b: str) -> bool:
     return na[:2] == nb[:2] and len(na) >= 2 and len(nb) >= 2 and pad(nb + (0,) * 5)[:5] > pad(na + (0,) * 5)[:5]
 
 
+def followed_text(fb: dict) -> str:
+    """T-0173: 'Followed by X.Y.Z on <date> (N h later)'; registry dates, UTC."""
+    return f'Followed by {esc(fb["version"])} on {esc(fb["date"])} ({fb["hours"]} h later)'
+
+
 def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
     """T-0140: record["followed_by"] = {version, hours} when a newer stable version of the package has a later registry date within 168 h."""
     recs = {r["id"]: r for r in list(pkg["releases"]) + list(pkg.get("history") or [])}.values()
@@ -929,7 +934,7 @@ def mark_followed_by(pkg: dict, max_hours: int = 168) -> None:
                and x["version"] != r["version"] and (x.get("variant_of") or x["version"]) != (r.get("variant_of") or r["version"])]
         if nxt:
             d, x = min(nxt, key=lambda t: t[0])
-            r["followed_by"] = {"version": x["version"], "hours": int((d - d0).total_seconds() // 3600)}
+            r["followed_by"] = {"version": x["version"], "date": d.astimezone(timezone.utc).strftime("%Y-%m-%d"), "hours": int((d - d0).total_seconds() // 3600)}
 
 
 def gh_tag(r: dict, repo: str) -> str | None:
@@ -1260,7 +1265,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
                 f'<a href="/go/vote/{vid}/down/" rel="nofollow">not useful</a> · '
                 f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
     fb = r.get("followed_by")
-    fb_html = (f'<p class="note followed">Followed by {esc(fb["version"])} after {fb["hours"]} h (registry dates)</p>' if fb else "")
+    fb_html = (f'<p class="note followed">{followed_text(fb)}</p>' if fb else "")
     return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
@@ -1347,7 +1352,7 @@ def render_index(model: dict, errata_count: int) -> str:
             cooldown.append(f'<p class="note">Without a flag ({len(cd_un)}):</p><ul class="nonotes cooldown-list">' + "".join(
                 f'<li>{esc(r["name"])}@{esc(r["version"])} · {esc(fmt_date(r["date"])[:10])} · '
                 f'<a href="{esc(r["pkg_path"])}">/pkg/ page</a>'
-                f'{(" · Followed by " + esc(r["followed_by"]["version"]) + " after " + str(r["followed_by"]["hours"]) + " h (registry dates)") if r.get("followed_by") else ""}</li>' for r in cd_un) + "</ul>")
+                f'{(" · " + followed_text(r["followed_by"])) if r.get("followed_by") else ""}</li>' for r in cd_un) + "</ul>")
     else:
         cooldown.append(f'<p class="note">No tracked release was published in {cd_win}.</p>')
     flagged_block = ['<h2 id="flagged">Flagged in the last 7 days</h2>']
@@ -1719,7 +1724,7 @@ def render_legal(built: str) -> str:
 # ----------------------------------------------------------------------------------------------------------
 # Machine-readable outputs
 # ----------------------------------------------------------------------------------------------------------
-def public_release(r: dict) -> dict:
+def public_release(r: dict, with_followed: bool = False) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
         "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
@@ -1728,7 +1733,7 @@ def public_release(r: dict) -> dict:
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
         **({"compare_url": r["compare_url"]} if r.get("compare_url") else {}),
-        **({"followed_by": r["followed_by"]} if r.get("followed_by") else {}),
+        **({"followed_by": r.get("followed_by")} if with_followed else ({"followed_by": r["followed_by"]} if r.get("followed_by") else {})),
         **({"notes_format": "pr_list"} if r.get("notes_format") == "pr_list" else {}),
         **({"notes_pr_list_only": True} if r.get("notes_pr_list_only") else {}),
     }
@@ -1969,8 +1974,8 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
             "latest_stable": p.get("latest_stable"),
             "stable_in_window": sum(1 for r in p["releases"] if not r["prerelease"]),
             "prereleases_in_window": sum(1 for r in p["releases"] if r["prerelease"]),
-            "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r) for r in p["releases"]],
-            "history": [public_release(r) for r in p["history"]],
+            "page": SITE_BASE + p["path"], "built": built, "releases": [public_release(r, True) for r in p["releases"]],
+            "history": [public_release(r, True) for r in p["history"]],
             "history_since": p["history_since"], "history_days": HISTORY_DAYS,
         })
         if p.get("errata") and p["errata"].get("url"):

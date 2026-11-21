@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=tag%3A%22langchain%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -12,6 +12,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 167,
     "version": "1.5.1"
    },
@@ -43,6 +44,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/langchain/1.4.10",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
    "no_notes": false,
@@ -80,6 +82,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/langchain/1.5.2",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain/index.json",
    "no_notes": false,
@@ -104,6 +107,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 6,
     "version": "1.5.2"
    },

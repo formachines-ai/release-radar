@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,6 +11,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@tanstack/react-query/5.107.1",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -35,6 +36,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-06",
     "hours": 1,
     "version": "5.107.1"
    },
@@ -60,6 +62,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@tanstack/react-query/5.106.1",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -97,6 +100,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@tanstack/react-query/5.108.2",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -121,6 +125,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 23,
     "version": "5.108.2"
    },
@@ -148,6 +153,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 48,
     "version": "5.108.1"
    },
@@ -174,6 +180,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@tanstack/react-query/5.107.2",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,

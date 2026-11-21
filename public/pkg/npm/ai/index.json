@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -12,6 +12,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 90,
     "version": "6.0.333"
    },
@@ -39,6 +40,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 92,
     "version": "5.0.291"
    },
@@ -66,6 +68,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 92,
     "version": "7.0.174"
    },
@@ -99,6 +102,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 16,
     "version": "7.0.173"
    },
@@ -126,6 +130,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 27,
     "version": "6.0.332"
    },
@@ -153,6 +158,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 9,
     "version": "7.0.172"
    },
@@ -180,6 +186,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 25,
     "version": "7.0.171"
    },
@@ -207,6 +214,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 38,
     "version": "6.0.331"
    },
@@ -234,6 +242,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 65,
     "version": "5.0.290"
    },
@@ -261,6 +270,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 22,
     "version": "7.0.170"
    },
@@ -288,6 +298,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 10,
     "version": "6.0.330"
    },
@@ -315,6 +326,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 2,
     "version": "7.0.169"
    },
@@ -342,6 +354,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 2,
     "version": "6.0.329"
    },
@@ -369,6 +382,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 12,
     "version": "5.0.289"
    },
@@ -396,6 +410,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 21,
     "version": "5.0.288"
    },
@@ -423,6 +438,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 38,
     "version": "6.0.328"
    },
@@ -450,6 +466,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 38,
     "version": "7.0.168"
    },
@@ -477,6 +494,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-09",
     "hours": 31,
     "version": "7.0.166"
    },
@@ -504,6 +522,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-09",
     "hours": 31,
     "version": "6.0.326"
    },
@@ -530,6 +549,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-09",
     "hours": 48,
     "version": "5.0.287"
    },
@@ -557,6 +577,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 21,
     "version": "6.0.325"
    },
@@ -584,6 +605,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 23,
     "version": "7.0.165"
    },
@@ -624,6 +646,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/ai/7.0.179",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -647,6 +670,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/ai/5.0.292",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -671,6 +695,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 6,
     "version": "7.0.179"
    },
@@ -709,6 +734,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 45,
     "version": "7.0.178"
    },
@@ -736,6 +762,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 22,
     "version": "7.0.177"
    },
@@ -763,6 +790,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "7.0.176"
    },
@@ -790,6 +818,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 68,
     "version": "5.0.292"
    },
@@ -823,6 +852,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "7.0.175"
    },
@@ -855,6 +885,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "npm/ai/6.0.333",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,

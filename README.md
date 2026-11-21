@@ -67,6 +67,7 @@ public/                     the site — everything below is generated, do not e
                                 (T-0147: the facts paragraph's `latest` is the page's `Latest version` field (date from that version's record); if the field is missing, the newest non-pre-release, non-platform-build record; pre-releases and platform builds are never named latest)
   pkg/<eco>/<name>/index.json   package data
                                 (T-0140: stable, non-platform-build records have `followed_by` {version, hours} when a newer stable version has a later registry date within 168 h; cards show `Followed by <version> after <N> h (registry dates)` (T-0155: wording; rule unchanged: earliest later stable record of the same major.minor with a higher patch within 168 h))
+                                (T-0173: `followed_by` is {version, date, hours} or null on every release in pkg index.json; card: `Followed by <version> on <YYYY-MM-DD> (<N> h later)`)
                                 (T-0143: the follow-up must be in the same major.minor line and a higher version, earliest such; no such version → no line, no key)
                                 (T-0118: `history` key = records older than 7 days up to 90, merged from the previous committed index.json, no re-fetch; `history_since` = first date held)
                                 (T-0119: every release record, in `releases` and `history`, has `no_notes` and `no_notes_checked` (build date UTC, null if not checked-empty); history cards restore the "No release notes found … (checked <date>)" label from them)
