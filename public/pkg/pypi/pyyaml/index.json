@@ -1,23 +1,52 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "6.0.3",
+ "latest": "6.0.4",
  "latest_stable": {
-  "date": "2025-09-25T21:31:46Z",
-  "version": "6.0.3"
+  "date": "2026-11-20T23:34:39Z",
+  "version": "6.0.4"
  },
- "metadata_fetched": "2026-11-20T06:00:25Z",
+ "metadata_fetched": "2026-11-21T06:00:31Z",
  "package": "pyyaml",
  "page": "https://releases.formachines.ai/pkg/pypi/pyyaml/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/pyyaml/",
- "releases": [],
+ "releases": [
+  {
+   "bump": "patch",
+   "date": "2026-11-20T23:34:39Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/pyyaml/6.0.4",
+   "json": "https://releases.formachines.ai/pkg/pypi/pyyaml/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/89881577c6/",
+   "notes_url": "https://github.com/yaml/pyyaml/releases/tag/6.0.4",
+   "package": "pyyaml",
+   "page": "https://releases.formachines.ai/pkg/pypi/pyyaml/",
+   "prerelease": false,
+   "prev_version": "6.0.3",
+   "quotes": [
+    {
+     "match": "Dropped support",
+     "quote": "* Added support for Python 3.15.\n* Dropped support for EoL Python 3.8, 3.9.",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "6.0.4",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/yaml/pyyaml",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "YAML parser and emitter for Python"
 }

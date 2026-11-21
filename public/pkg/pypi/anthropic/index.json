@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -75,17 +75,46 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.11.0",
+ "latest": "2.12.0",
  "latest_stable": {
-  "date": "2026-11-19T19:14:57Z",
-  "version": "2.11.0"
+  "date": "2026-11-20T15:57:01Z",
+  "version": "2.12.0"
  },
- "metadata_fetched": "2026-11-20T06:00:03Z",
+ "metadata_fetched": "2026-11-21T06:00:09Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/anthropic/",
  "releases": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.11.0...v2.12.0",
+   "date": "2026-11-20T15:57:01Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "id": "pypi/anthropic/2.12.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7c7a283819/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.12.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "prev_version": "2.11.0",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "Both clients now move it into the body of Messages requests and no longer send the header.",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.12.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.10.0...v2.11.0",
@@ -189,6 +218,6 @@
   }
  ],
  "repository": "https://github.com/anthropics/anthropic-sdk-python",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "The official Python library for the anthropic API"
 }

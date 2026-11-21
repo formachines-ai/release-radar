@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-20T06:01:30Z",
+ "fetched": "2026-11-21T06:01:41Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n-   fix: keep `hydrate` and `mount` type parameters in sync so a union of them is callable ([#19357](https://github.com/sveltejs/svelte/pull/19357))\n",
+   "date": "2026-11-20T19:03:36Z",
+   "name": "svelte@5.59.1",
+   "prerelease": false,
+   "tag": "svelte@5.59.1",
+   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.59.1"
+  },
+  {
+   "body": "### Minor Changes\n\n-   feat: custom renderer api ([#18042](https://github.com/sveltejs/svelte/pull/18042))\n",
+   "date": "2026-11-20T14:28:21Z",
+   "name": "svelte@5.59.0",
+   "prerelease": false,
+   "tag": "svelte@5.59.0",
+   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.59.0"
+  },
+  {
+   "body": "### Patch Changes\n\n-   fix: don't throw when committing a fork whose changes were all superseded by other updates ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: apply the branch changes of blocks that re-run while effects are flushed when the batch with the effects' writes commits ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: keep values computed in a batch's view of the world local to that batch, and don't needlessly re-run deriveds while several batches are pending ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: don't skip sibling listeners added with `on()` when an earlier one calls `stopPropagation()` ([#19317](https://github.com/sveltejs/svelte/pull/19317))\n\n-   fix: update `bind:files` when the form is reset ([#19298](https://github.com/sveltejs/svelte/pull/19298))\n\n-   fix: restore teardown context when destroying effects after outros ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: print raw input text unchanged, respect whitespace rules ([#19292](https://github.com/sveltejs/svelte/pull/19292))\n\n-   breaking: in experimental async mode, `getAbortSignal()` must be called before an `await` ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: remove related comments when effects are removed from server rune modules. ([#19289](https://github.com/sveltejs/svelte/pull/19289))\n\n-   fix: commit the state that hydration ran with, so that updates while hydration is pending don't undo it ([#19347](https://github.com/sveltejs/svelte/pull/19347))\n\n-   fix: don't run `$inspect` and `$state.eager` with the values of a fork before it is committed ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n\n-   fix: read a never-reassigned `$state.raw` declaration tag directly when it shadows reassigned state ([#19294](https://github.com/sveltejs/svelte/pull/19294))\n\n-   fix: revert state changes in effect teardowns based on the currently committing batch ([#19030](https://github.com/sveltejs/svelte/pull/19030))\n",
+   "date": "2026-11-20T11:16:02Z",
+   "name": "svelte@5.58.1",
+   "prerelease": false,
+   "tag": "svelte@5.58.1",
+   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.58.1"
+  },
   {
    "body": "### Minor Changes\n\n-   feat: include `snippetName` in `render` entries of the dev `__svelte_meta` stack ([#19283](https://github.com/sveltejs/svelte/pull/19283))\n\n-   feat: include the `component` instance an element was rendered in for Svelte devtools to track ([#19286](https://github.com/sveltejs/svelte/pull/19286))\n\n### Patch Changes\n\n-   perf: let the garbage collector free each component's AST after it is compiled ([#19241](https://github.com/sveltejs/svelte/pull/19241))\n\n-   fix: render the same `<title>` on the server as on the client and ignore titles inside failed boundaries ([#19176](https://github.com/sveltejs/svelte/pull/19176))\n\n-   fix: allow `autocorrect` on all elements ([#19105](https://github.com/sveltejs/svelte/pull/19105))\n\n-   fix: parse snippet type parameters containing arrow function types ([#19141](https://github.com/sveltejs/svelte/pull/19141))\n\n-   fix: keep directive values that match the directive name in `print` ([#19229](https://github.com/sveltejs/svelte/pull/19229))\n\n-   fix: correctly assign dev element locations after components during hydration ([#19287](https://github.com/sveltejs/svelte/pull/19287))\n\n-   perf: don't compare the whole template on every expression when a source is parsed again ([#19215](https://github.com/sveltejs/svelte/pull/19215))\n\n-   docs: avoid binding to read-only current values in Spring and Tween examples ([#19226](https://github.com/sveltejs/svelte/pull/19226))\n\n-   fix: keep positions right after optional properties in template type annotations ([#19217](https://github.com/sveltejs/svelte/pull/19217))\n\n-   perf: speed up server rendering of pages with many or deeply nested components ([#19177](https://github.com/sveltejs/svelte/pull/19177))\n\n-   fix: remove all of the server-rendered content when hydrating a different branch that contains a failed boundary ([#19166](https://github.com/sveltejs/svelte/pull/19166))\n\n-   fix: preserve effect tree order across batch traversal passes ([#19132](https://github.com/sveltejs/svelte/pull/19132))\n\n-   fix: reset dev update counters for sources written during batch traversal ([#19092](https://github.com/sveltejs/svelte/pull/19092))\n\n-   chore: bump esrap ([#19290](https://github.com/sveltejs/svelte/pull/19290))\n\n-   fix: don't leak reactive context past nested awaits in production ([#19134](https://github.com/sveltejs/svelte/pull/19134))\n",
    "date": "2026-11-18T06:54:03Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "svelte@5.51.3",
    "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.51.3"
-  },
-  {
-   "body": "### Patch Changes\n\n-   fix: take async into consideration for dev delegated handlers ([#17710](https://github.com/sveltejs/svelte/pull/17710))\n\n-   fix: emit state_referenced_locally warning for non-destructured props ([#17708](https://github.com/sveltejs/svelte/pull/17708))\n",
-   "date": "2026-02-15T10:04:50Z",
-   "name": "svelte@5.51.2",
-   "prerelease": false,
-   "tag": "svelte@5.51.2",
-   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.51.2"
-  },
-  {
-   "body": "### Patch Changes\n\n-   fix: don't crash on undefined `document.contentType` ([#17707](https://github.com/sveltejs/svelte/pull/17707))\n\n-   fix: use symbols for encapsulated event delegation ([#17703](https://github.com/sveltejs/svelte/pull/17703))\n",
-   "date": "2026-02-14T20:46:55Z",
-   "name": "svelte@5.51.1",
-   "prerelease": false,
-   "tag": "svelte@5.51.1",
-   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.51.1"
-  },
-  {
-   "body": "### Minor Changes\n\n-   feat: Use `TrustedTypes` for HTML handling where supported ([#16271](https://github.com/sveltejs/svelte/pull/16271))\n\n### Patch Changes\n\n-   fix: sanitize template-literal-special-characters in SSR attribute values ([#17692](https://github.com/sveltejs/svelte/pull/17692))\n\n-   fix: follow-up formatting in `print()` — flush block-level elements into separate sequences ([#17699](https://github.com/sveltejs/svelte/pull/17699))\n\n-   fix: preserve delegated event handlers as long as one or more root components are using them ([#17695](https://github.com/sveltejs/svelte/pull/17695))\n",
-   "date": "2026-02-13T17:07:25Z",
-   "name": "svelte@5.51.0",
-   "prerelease": false,
-   "tag": "svelte@5.51.0",
-   "url": "https://github.com/sveltejs/svelte/releases/tag/svelte%405.51.0"
   }
  ],
  "repo": "sveltejs/svelte"

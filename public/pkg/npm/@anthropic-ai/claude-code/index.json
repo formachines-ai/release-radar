@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -231,12 +231,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.1.329",
+ "latest": "2.1.330",
  "latest_stable": {
-  "date": "2026-11-19T18:40:25Z",
-  "version": "2.1.329"
+  "date": "2026-11-20T19:16:01Z",
+  "version": "2.1.330"
  },
- "metadata_fetched": "2026-11-20T06:00:37Z",
+ "metadata_fetched": "2026-11-21T06:00:44Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
@@ -244,11 +244,49 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.329...v2.1.330",
+   "date": "2026-11-20T19:16:01Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "id": "npm/@anthropic-ai/claude-code/2.1.330",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7ce40af713/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.329",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Windows: Improved Grep and Glob speed by no longer starting a console host for each built-in ripgrep search on a local path",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "- Improved `/resume`: sessions where you only opened a screen such as `/model` and left are no longer listed",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "2.1.330",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.328...v2.1.329",
    "date": "2026-11-19T18:40:25Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 24,
+    "version": "2.1.330"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.329",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -412,6 +450,6 @@
   }
  ],
  "repository": "https://github.com/anthropics/claude-code",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you."
 }

@@ -17,8 +17,16 @@
   "v6.13.13": null,
   "v7.8.14": null
  },
- "fetched": "2026-11-20T06:01:17Z",
+ "fetched": "2026-11-21T06:01:24Z",
  "releases": [
+  {
+   "body": "9.12.3 / 2026-11-20\r\n===================\r\n * fix(model): match pathsToSkip string paths exactly in Model.validate() #16706 [NotAFlightRisk](https://github.com/NotAFlightRisk)\r\n * fix(query): avoid casting $expr $in search value when it is an expression #16709 [kwy404](https://github.com/kwy404)\r\n * fix(update): run update validators on mixed paths in subdocuments #16708 #16707 [lazerg](https://github.com/lazerg)\r\n * fix(documentarray): respect castNonArrays path option on document arrays #16685 [yxshee](https://github.com/yxshee)\r\n * types(schema): add removeVirtual() to Schema #16722 [farisbasha](https://github.com/farisbasha)\r\n * docs(document): correct checkKeys default for save() #16716 [phatstraws](https://github.com/phatstraws)\r\n * docs: fix typos in comments, tests, and typings #16714 [ninglinLiu](https://github.com/ninglinLiu)",
+   "date": "2026-11-20T19:10:27Z",
+   "name": "9.12.3",
+   "prerelease": false,
+   "tag": "9.12.3",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/9.12.3"
+  },
   {
    "body": "9.12.2 / 2026-11-16\r\n===================\r\n * fix(query): make sanitizeFilter catch any fields that start with $ in top-level filter to avoid bypass using $_internalSchemaXor and other MongoDB internal expressions\r\n * fix(query): hardening for sanitizeProjection\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * fix(cursor): propagate error passed to destroy() without re-emitting if error already emitted #16686 #16610 #16609 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(query): throw cast errors and respect strict option in replaceOne() #16629 #16628 [OmBhandwaldar](https://github.com/OmBhandwaldar)\r\n * fix(castArrayFilters): cast $and/$or/$nor wherever they appear in an array filter #16638 #16637 [mtechcave1](https://github.com/mtechcave1)\r\n * fix(document): allow setting dotted paths 3+ levels deep underneath single nested subdocuments #16691 [RagedPanda](https://github.com/RagedPanda)\r\n * fix(connection): reset document state before retrying after a transient commit error #16640 #16639 [IbrahimHafez1](https://github.com/IbrahimHafez1)\r\n * fix(array): avoid converting BigInts to numbers in addToSet() #16693 [luantaraschi](https://github.com/luantaraschi)\r\n * docs: add EOL date for Mongoose 7 #16719\r\n * docs(mongoose): document missing options for set() #16703 [ragib-mrb](https://github.com/ragib-mrb)",
    "date": "2026-11-16T19:56:25Z",
@@ -410,14 +418,6 @@
    "prerelease": false,
    "tag": "9.4.0",
    "url": "https://github.com/Automattic/mongoose/releases/tag/9.4.0"
-  },
-  {
-   "body": "9.3.3 / 2026-03-25\n==================\n * fix(schemaType): standardize to use MongooseError instead of plain Error #16172 [VIPAX-JIT](https://github.com/VIPAX-JIT)\n * types: make MergeType distributive to better support populate on models where the hydrated doc type is a union #16101 #16161\n * docs: upgrade http:// links to https:// in connections.md #16163 [Puxhkar](https://github.com/Puxhkar)\n * docs: fix typographical, grammatical errors & documentation clarity improvements #16175 [yogesh968](https://github.com/yogesh968)\n * docs: clarify multi-mongos support documentation for sharded clusters",
-   "date": "2026-03-25T17:45:15Z",
-   "name": "9.3.3",
-   "prerelease": false,
-   "tag": "9.3.3",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.3.3"
   }
  ],
  "repo": "Automattic/mongoose"

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -67,7 +67,7 @@
   "date": "2026-11-19T22:35:41Z",
   "version": "1.8.4"
  },
- "metadata_fetched": "2026-11-20T06:00:05Z",
+ "metadata_fetched": "2026-11-21T06:00:10Z",
  "package": "langchain-core",
  "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
  "prereleases_in_window": 0,

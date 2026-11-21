@@ -4,20 +4,30 @@
   "alpha": "3.6.0-alpha.7",
   "beta": "3.6.0-beta.17",
   "csp": "1.0.28-csp",
-  "latest": "3.5.45",
+  "latest": "3.5.46",
   "legacy": "2.7.16",
-  "rc": "3.6.0-rc.15",
+  "rc": "3.6.0-rc.16",
   "v2-latest": "2.7.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-20T06:01:35Z",
+ "fetched": "2026-11-21T06:01:48Z",
  "homepage": "https://vuejs.org/",
- "latest": "3.5.45",
+ "latest": "3.5.46",
  "name": "vue",
  "page": "https://www.npmjs.com/package/vue",
  "repo": "vuejs/core",
  "summary": "The progressive JavaScript framework for building modern web UI.",
  "versions": [
+  {
+   "date": "2026-11-20T09:56:51Z",
+   "deprecated": false,
+   "version": "3.6.0-rc.16"
+  },
+  {
+   "date": "2026-11-20T08:21:19Z",
+   "deprecated": false,
+   "version": "3.5.46"
+  },
   {
    "date": "2026-11-12T08:55:38Z",
    "deprecated": false,

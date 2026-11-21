@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -60,17 +60,40 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "9.12.2",
+ "latest": "9.12.3",
  "latest_stable": {
-  "date": "2026-11-16T20:01:09Z",
-  "version": "9.12.2"
+  "date": "2026-11-20T19:13:09Z",
+  "version": "9.12.3"
  },
- "metadata_fetched": "2026-11-20T06:01:17Z",
+ "metadata_fetched": "2026-11-21T06:01:24Z",
  "package": "mongoose",
  "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/mongoose",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/9.12.2...9.12.3",
+   "date": "2026-11-20T19:13:09Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/mongoose/9.12.3",
+   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0cc81729d9/",
+   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/9.12.3",
+   "package": "mongoose",
+   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+   "prerelease": false,
+   "prev_version": "9.12.2",
+   "quotes": [],
+   "variant_of": null,
+   "version": "9.12.3",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "date": "2026-11-16T20:36:15Z",
@@ -80,7 +103,7 @@
    "id": "npm/mongoose/6.13.13",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-20",
+   "no_notes_checked": "2026-11-21",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/14d604494f/",
    "notes_url": "https://github.com/Automattic/mongoose/releases",
@@ -102,7 +125,7 @@
    "id": "npm/mongoose/7.8.14",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-20",
+   "no_notes_checked": "2026-11-21",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/14d604494f/",
    "notes_url": "https://github.com/Automattic/mongoose/releases",
@@ -145,6 +168,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 95,
+    "version": "9.12.3"
+   },
    "id": "npm/mongoose/9.12.2",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -163,6 +190,6 @@
   }
  ],
  "repository": "https://github.com/Automattic/mongoose",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": "Mongoose MongoDB ODM"
 }

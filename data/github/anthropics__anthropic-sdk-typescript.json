@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-20T06:00:42Z",
+ "fetched": "2026-11-21T06:00:45Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add the image_dimensions_too_large error code\n\n\n### Bug Fixes\n\n* **client:** merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in defaultHeaders\n\n\n### Chores\n\n* **docs:** clarify billing_policy in batches and two billing errors",
+   "date": "2026-11-20T16:03:51Z",
+   "name": "sdk-v1.12.0",
+   "prerelease": false,
+   "tag": "sdk-v1.12.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.12.0"
+  },
+  {
+   "body": "### Bug Fixes\n\n* **bedrock:** send the user profile ID in the request body\n\n  Amazon Bedrock reads `user_profile_id` from the request body and ignores the `anthropic-user-profile-id` header, so a profile ID given to `AnthropicBedrock` was not applied. `AnthropicBedrock` now moves it into the body of Messages requests and no longer sends the header. A `user_profile_id` already in the body takes priority over the header.\n\n  Some models on Bedrock do not support user profiles. A request to one of them with a profile ID now fails with a 400 error; before, the ID was ignored. Leave the ID off requests to those models.",
+   "date": "2026-11-20T16:03:53Z",
+   "name": "bedrock-sdk-v1.1.3",
+   "prerelease": false,
+   "tag": "bedrock-sdk-v1.1.3",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v1.1.3"
+  },
   {
    "body": "### Features\n\n* **api:** add Claude Code managed settings to the Admin API\n* **api:** add the sandbox_egress_restricted error to Admin API plugin methods\n\n\n### Performance Improvements\n\n* **client:** speed up streaming of large events\n\n\n### Chores\n\n* **docs:** explain how the input-token rate limit types differ\n* **docs:** name Claude Security in the usage and cost report descriptions\n* **docs:** note that a Google Cloud external key's provider and key_name can't be changed",
    "date": "2026-11-19T19:23:16Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "sdk-v0.133.0",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.133.0"
-  },
-  {
-   "body": "### Chores\n\n* **ci:** check that pull requests update the changelog",
-   "date": "2026-10-08T03:07:03Z",
-   "name": "vertex-sdk-v0.20.4",
-   "prerelease": false,
-   "tag": "vertex-sdk-v0.20.4",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/vertex-sdk-v0.20.4"
-  },
-  {
-   "body": "### Bug Fixes\n\n* **client:** throw before sending a request with an empty path parameter\n\n\n### Chores\n\n* **ci:** check that pull requests update the changelog\n* **ci:** publish every package from the publish workflow\n* **docs:** note that listing Claude Console spend limits is in early access\n\n\n### Documentation\n\n* split CLAUDE.md into shared, TypeScript, and repository rules",
-   "date": "2026-10-08T03:07:00Z",
-   "name": "sdk-v0.132.1",
-   "prerelease": false,
-   "tag": "sdk-v0.132.1",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.132.1"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

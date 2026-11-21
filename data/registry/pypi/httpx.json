@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/encode/httpx/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-20T06:00:22Z",
+ "fetched": "2026-11-21T06:00:29Z",
  "homepage": "https://github.com/encode/httpx",
  "latest": "0.28.1",
  "name": "httpx",

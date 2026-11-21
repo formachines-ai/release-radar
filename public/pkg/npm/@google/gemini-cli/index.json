@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -56,12 +56,34 @@
   "date": "2026-11-19T21:13:43Z",
   "version": "0.70.0"
  },
- "metadata_fetched": "2026-11-20T06:00:42Z",
+ "metadata_fetched": "2026-11-21T06:00:45Z",
  "package": "@google/gemini-cli",
  "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
- "prereleases_in_window": 3,
+ "prereleases_in_window": 4,
  "registry": "https://www.npmjs.com/package/@google/gemini-cli",
  "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-21T01:24:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@google/gemini-cli/0.71.0-nightly.20261121.geecccfcd5",
+   "json": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/13848e1432/",
+   "notes_url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261121.geecccfcd5",
+   "package": "@google/gemini-cli",
+   "page": "https://releases.formachines.ai/pkg/npm/@google/gemini-cli/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.71.0-nightly.20261121.geecccfcd5",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-20T01:18:23Z",

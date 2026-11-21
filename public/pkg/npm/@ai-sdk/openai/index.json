@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -461,12 +461,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "4.0.121",
+ "latest": "4.0.122",
  "latest_stable": {
-  "date": "2026-11-17T20:55:57Z",
-  "version": "4.0.121"
+  "date": "2026-11-20T16:51:44Z",
+  "version": "4.0.122"
  },
- "metadata_fetched": "2026-11-20T06:00:34Z",
+ "metadata_fetched": "2026-11-21T06:00:41Z",
  "package": "@ai-sdk/openai",
  "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
  "prereleases_in_window": 0,
@@ -474,11 +474,38 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.121...@ai-sdk/openai@4.0.122",
+   "date": "2026-11-20T16:51:44Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@ai-sdk/openai/4.0.122",
+   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7b892e23f8/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%404.0.122",
+   "package": "@ai-sdk/openai",
+   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+   "prerelease": false,
+   "prev_version": "4.0.121",
+   "quotes": [],
+   "variant_of": null,
+   "version": "4.0.122",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.120...@ai-sdk/openai@4.0.121",
    "date": "2026-11-17T20:55:57Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 67,
+    "version": "4.0.122"
+   },
    "id": "npm/@ai-sdk/openai/4.0.121",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -574,6 +601,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 4,
+ "stable_in_window": 5,
  "summary": ""
 }

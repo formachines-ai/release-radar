@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-20T06:01:23Z",
+ "fetched": "2026-11-21T06:01:32Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- switchyard: restore 'in front of' in three test comments: #102082\n- Write Turbopack dist dir metadata from Rust: #101638\n\n### Example Changes\n\n- examples: remove examples built on abandoned libraries: #102092\n- examples: Update storage integrations and remove Grafbase and Xata examples: #100454\n\n### Misc Changes\n\n- Turbopack: take next/dynamic loader availability from chunking for the loadable manifest: #101172\n- Turbopack: keep ?server-data on Pages data endpoint _app/_document modules: #102099\n- Turbopack: report unreadable filesystem cache files clearly: #101980\n- docs: remove generic agent workflow guidance: #102071\n- test: wait for destination render in dynamic-param casing navigation test: #102145\n- turbo-tasks: re-check job counters while stopping: #102142\n- Turbopack: shrink slow tests under Miri: #102135\n- Fix NODE_ENV evaluation through default process imports: #102130\n\n### Credits \n\nHuge thanks to @jamiboym, @lukesandberg, @kassens, @sokra, @icyJoseph, and @mischnic for helping!",
+   "date": "2026-11-20T23:42:12Z",
+   "name": "v16.5.0-canary.59",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.59",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.59"
+  },
+  {
+   "body": "### Core Changes\n\n- Replace jest-worker with custom worker pool: #100297\n- Skip \"use cache\" timeout errors where they cannot be thrown, format owner stacks lazily: #102032\n\n### Misc Changes\n\n- review: treat long-standing React behavior as contract, not internals: #102096\n\n### Credits \n\nHuge thanks to @sokra, @lukesandberg, and @acdlite for helping!",
+   "date": "2026-11-20T08:35:54Z",
+   "name": "v16.5.0-canary.58",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.58",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.58"
+  },
   {
    "body": "### Core Changes\n\n- Share trace-style truncation and gzip the Request Insights journal: #102018\n- Preserve agent feedback instructions during temporary telemetry opt-out: #102062\n- Rename the experimental next start front server to Switchyard: #102035\n\n### Example Changes\n\n- examples: inclusion criteria: #93300\n\n### Misc Changes\n\n- docs: clarify Turbopack task inputs and module identity: #102090\n- fix pr-auto-label config members: #102067\n- test: skip service-worker-multiple in deploy mode: #102057\n- Add @samselikoff to team members in OWNERS file: #102023\n- Document instant navigation inspection with browser cookies: #102069\n- docs: explain errors thrown inside use cache: #102064\n\n### Credits \n\nHuge thanks to @wbinnssmith, @mischnic, @icyJoseph, @aurorascharff, @samselikoff, @kassens, and @jamiboym for helping!",
    "date": "2026-11-19T23:46:02Z",
@@ -384,22 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.14",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.14"
-  },
-  {
-   "body": "### Core Changes\n\n- Fix extensionless Google font URLs in both bundlers: #100158\n- Emit the Turbopack shared-runtime bootstrap in the PPR resume so it gets the CSP nonce: #100102\n- Keep requests through middleware in a single OpenTelemetry trace: #100136\n- Write webpack dev manifests atomically: #100112\n\n### Misc Changes\n\n- next-api: isolate dropped entrypoint collectibles in an inner operation: #100187\n- turbo-tasks-backend: optimize aggregated updates outside of the lock: #100165\n- docs: Add turborepo agents rules: #100214\n\n### Credits \n\nHuge thanks to @sokra, @andrewimm, and @bgw for helping!",
-   "date": "2026-10-15T10:00:06Z",
-   "name": "v16.5.0-canary.13",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.13",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.13"
-  },
-  {
-   "body": "## What's Changed\r\n* [lts-active] turbo-tasks snapshot consistency fixes (#99644, #99732, #99649) by @lukesandberg in https://github.com/vercel/next.js/pull/100002\r\n* [lts-active] Turbopack: backport Pages Router dev module graph chaining (#98823, #99910, #100091) by @sokra in https://github.com/vercel/next.js/pull/100008\r\n* [lts-active] fix(next-code-frame): snap visible window to char boundaries by @lukesandberg in https://github.com/vercel/next.js/pull/100212\r\n* [lts-active] [turbopack] Fix two GC paths that leave half-torn-down dependency edges by @lukesandberg in https://github.com/vercel/next.js/pull/100209\r\n* [lts-active] Turbopack: Ignore realpath errors during module resolution, matching node's behavior by @lukesandberg in https://github.com/vercel/next.js/pull/100217\r\n* [lts-active] Backport docs fixes since v16.4.0 by @icyJoseph in https://github.com/vercel/next.js/pull/100246\r\n* [lts-active] Fix Turbopack lazy dynamic-import chunk-list collisions by @lukesandberg in https://github.com/vercel/next.js/pull/100211\r\n* [lts-active] Backport additional documentation fixes since v16.4.0 by @aurorascharff in https://github.com/vercel/next.js/pull/100262\r\n\r\n\r\n**Full Changelog**: https://github.com/vercel/next.js/compare/v16.4.1...v16.4.2",
-   "date": "2026-10-15T20:44:37Z",
-   "name": "v16.4.2",
-   "prerelease": false,
-   "tag": "v16.4.2",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.4.2"
   }
  ],
  "repo": "vercel/next.js"

@@ -1,6 +1,206 @@
 {
- "fetched": "2026-11-20T06:00:44Z",
+ "fetched": "2026-11-21T06:00:47Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:49Z",
+   "name": "@langchain/xai@1.5.7",
+   "prerelease": false,
+   "tag": "@langchain/xai@1.5.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:45Z",
+   "name": "@langchain/together-ai@0.2.26",
+   "prerelease": false,
+   "tag": "@langchain/together-ai@0.2.26",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.26"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` and `normalized_finish_reason` in `response_metadata` on Chat Completions `invoke` and streamed results; unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:52:25Z",
+   "name": "@langchain/perplexity@0.3.1",
+   "prerelease": false,
+   "tag": "@langchain/perplexity@0.3.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/perplexity%400.3.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results (`error` normalizes to `error`); unmapped values normalize to `other`.\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:43Z",
+   "name": "@langchain/openrouter@0.4.26",
+   "prerelease": false,
+   "tag": "@langchain/openrouter@0.4.26",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.26"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `normalized_finish_reason` in `response_metadata` for Chat Completions (a refusal or a forced tool call ending in `stop` maps to `refusal` / `tool_call`), and `finish_reason` (the `status`) plus `normalized_finish_reason` for the Responses API, on `invoke` and streamed results. Responses `message-finish` events carry the same fields.",
+   "date": "2026-11-20T18:52:22Z",
+   "name": "@langchain/openai@1.8.5",
+   "prerelease": false,
+   "tag": "@langchain/openai@1.8.5",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.5"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` (the `done_reason`) and `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results, and emit them on `message-finish`; unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:52:19Z",
+   "name": "@langchain/ollama@1.3.1",
+   "prerelease": false,
+   "tag": "@langchain/ollama@1.3.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/ollama%401.3.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.62",
+   "date": "2026-11-20T18:52:58Z",
+   "name": "@langchain/neo4j@0.1.34",
+   "prerelease": false,
+   "tag": "@langchain/neo4j@0.1.34",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.34"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` and `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results (`model_length` normalizes to `length`, `error` to `error`); unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:52:16Z",
+   "name": "@langchain/mistralai@1.2.1",
+   "prerelease": false,
+   "tag": "@langchain/mistralai@1.2.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/mistralai%401.2.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results (`error` normalizes to `error`); unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:52:13Z",
+   "name": "@langchain/ibm@0.2.2",
+   "prerelease": false,
+   "tag": "@langchain/ibm@0.2.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/ibm%400.2.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results; unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:52:10Z",
+   "name": "@langchain/groq@1.3.2",
+   "prerelease": false,
+   "tag": "@langchain/groq@1.3.2",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/groq%401.3.2"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results for generate content and interactions, and emit it on `message-finish`. `SAFETY`, `PROHIBITED_CONTENT` and `BLOCKLIST` normalize to `refusal`, `MALFORMED_FUNCTION_CALL` and `MALFORMED_RESPONSE` to `error`, and unmapped values to `other`.",
+   "date": "2026-11-20T18:52:01Z",
+   "name": "@langchain/google@0.2.17",
+   "prerelease": false,
+   "tag": "@langchain/google@0.2.17",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google%400.2.17"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/google-common@2.3.7",
+   "date": "2026-11-20T18:52:40Z",
+   "name": "@langchain/google-webauth@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-webauth@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-webauth%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-gauth@2.3.7",
+   "date": "2026-11-20T18:52:51Z",
+   "name": "@langchain/google-vertexai@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/google-webauth@2.3.7",
+   "date": "2026-11-20T18:52:55Z",
+   "name": "@langchain/google-vertexai-web@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-vertexai-web@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai-web%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` and `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results, and emit them on `message-finish`. `SAFETY`, `PROHIBITED_CONTENT` and `BLOCKLIST` normalize to `refusal`, `MALFORMED_FUNCTION_CALL` and `MALFORMED_RESPONSE` to `error`, and unmapped values to `other`.",
+   "date": "2026-11-20T18:52:07Z",
+   "name": "@langchain/google-genai@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-genai@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/google-common@2.3.7",
+   "date": "2026-11-20T18:52:37Z",
+   "name": "@langchain/google-gauth@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-gauth@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` and `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results, and emit them on `message-finish`. `SAFETY`, `PROHIBITED_CONTENT` and `BLOCKLIST` normalize to `refusal`, `MALFORMED_FUNCTION_CALL` and `MALFORMED_RESPONSE` to `error`, and unmapped values to `other`.",
+   "date": "2026-11-20T18:52:04Z",
+   "name": "@langchain/google-common@2.3.7",
+   "prerelease": false,
+   "tag": "@langchain/google-common@2.3.7",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-common%402.3.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:34Z",
+   "name": "@langchain/fireworks@0.2.26",
+   "prerelease": false,
+   "tag": "@langchain/fireworks@0.2.26",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.26"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:31Z",
+   "name": "@langchain/deepseek@1.1.26",
+   "prerelease": false,
+   "tag": "@langchain/deepseek@1.1.26",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.26"
+  },
+  {
+   "body": "### Minor Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Standardize finish reason on `message-finish` events and final `AIMessage`s. Provider integrations set `finish_reason` (raw provider value), `normalized_finish_reason` (`stop | length | tool_call | content_filter | refusal | context_exceeded | error | other`) and, for Anthropic, `finish_state` (`complete | suspended`) in `response_metadata`; events carry them as `finishReason`, `normalizedFinishReason` and `finishState`. Core no longer maps provider values: it passes these fields through and corrects two provider-agnostic cases (a refusal block becomes `refusal`, and `stop` with tool calls becomes `tool_call`). The `FinishReason` type changes from `stop | length | tool_use | content_filter` to the values above (`tool_use` is now `tool_call`). `MessageFinishEvent.reason` is deprecated but still emitted with its old values (`tool_call` maps to `tool_use`, `refusal` to `content_filter`, `context_exceeded` to `length`; left unset for `other` and `error`). `response_metadata.finish_reason` on streamed messages now holds the raw provider value instead of the normalized one.",
+   "date": "2026-11-20T18:51:46Z",
+   "name": "@langchain/core@1.5.0",
+   "prerelease": false,
+   "tag": "@langchain/core@1.5.0",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.5.0"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` and `normalized_finish_reason` in `response_metadata` on `invoke` and streamed results, and emit them on `message-finish`; unmapped values normalize to `other`.",
+   "date": "2026-11-20T18:51:58Z",
+   "name": "@langchain/cohere@1.1.1",
+   "prerelease": false,
+   "tag": "@langchain/cohere@1.1.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/cohere%401.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Stop reporting a `stop` finish reason on `message-finish`, since Cloudflare sends no finish info.",
+   "date": "2026-11-20T18:51:55Z",
+   "name": "@langchain/cloudflare@1.1.1",
+   "prerelease": false,
+   "tag": "@langchain/cloudflare@1.1.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/cloudflare%401.1.1"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
+   "date": "2026-11-20T18:52:28Z",
+   "name": "@langchain/classic@1.0.62",
+   "prerelease": false,
+   "tag": "@langchain/classic@1.0.62",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.62"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` (the `stopReason`) and `normalized_finish_reason` in `response_metadata` on `ChatBedrockConverse` `invoke` and streamed results, and emit them on `message-finish`. `malformed_model_output` and `malformed_tool_use` normalize to `error`; unmapped stop reasons to `other`.",
+   "date": "2026-11-20T18:51:52Z",
+   "name": "@langchain/aws@1.5.3",
+   "prerelease": false,
+   "tag": "@langchain/aws@1.5.3",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/aws%401.5.3"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12252](https://github.com/langchain-ai/langchainjs/pull/12252) [`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Set `finish_reason` (the `stop_reason`), `normalized_finish_reason` and `finish_state` in `response_metadata` on `invoke` and streamed results, and emit them on `message-finish`. `refusal` and `model_context_window_exceeded` map to `refusal` and `context_exceeded`, and `pause_turn` sets `finish_state: \"suspended\"`.",
+   "date": "2026-11-20T18:51:49Z",
+   "name": "@langchain/anthropic@1.6.6",
+   "prerelease": false,
+   "tag": "@langchain/anthropic@1.6.6",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.6"
+  },
   {
    "body": "### Patch Changes\n\n- [#12257](https://github.com/langchain-ai/langchainjs/pull/12257) [`f852414`](https://github.com/langchain-ai/langchainjs/commit/f852414703a7fcaf0332508dbca44eccbebe41c5) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - Mark tool messages that `humanInTheLoopMiddleware` creates for `reject` and `respond` decisions with `lc_source: \"hitl_interrupt_decision\"` and `lc_data: { decision }`, and let `addNotificationMetadata` accept tool messages\n\n- [#12248](https://github.com/langchain-ai/langchainjs/pull/12248) [`9850f1d`](https://github.com/langchain-ai/langchainjs/commit/9850f1d94a2697ef98cb7edd42e5cb054b054045) Thanks [@hntrl](https://github.com/hntrl)! - fix(langchain): make `ConfigurableModel` non-configurable when `configurableFields` is omitted\n\n  `initChatModel` with a model and no `configurableFields` (and direct `new ConfigurableModel(...)` without it) no longer lets `configurable.model` / `configurable.modelProvider` swap the model at invoke time, matching the docs. Pass `configurableFields: [\"model\", \"modelProvider\"]` to keep runtime model swapping.",
    "date": "2026-11-18T22:26:18Z",
@@ -200,206 +400,6 @@
    "prerelease": false,
    "tag": "@langchain/together-ai@0.2.24",
    "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.24"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:49Z",
-   "name": "@langchain/openrouter@0.4.24",
-   "prerelease": false,
-   "tag": "@langchain/openrouter@0.4.24",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.24"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(openai): surface model refusals as `ModelRefusalError`\n\n  Chat Completions keeps `refusal` from responses, refusals are sent back natively on assistant messages (including `v1` messages), and `withStructuredOutput` with `jsonSchema` throws `ModelRefusalError` on a refusal.",
-   "date": "2026-11-10T18:39:37Z",
-   "name": "@langchain/openai@1.8.3",
-   "prerelease": false,
-   "tag": "@langchain/openai@1.8.3",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.60",
-   "date": "2026-11-10T18:39:58Z",
-   "name": "@langchain/neo4j@0.1.32",
-   "prerelease": false,
-   "tag": "@langchain/neo4j@0.1.32",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.32"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(google): surface model refusals as `ModelRefusalError`\n\n  Blocked prompts throw `PromptRefusedError`, which matches `ModelRefusalError.isInstance`, including when streaming. A streamed safety stop keeps the text already streamed and ends with a refusal block, and refusal blocks are dropped when history is sent back.",
-   "date": "2026-11-10T18:39:34Z",
-   "name": "@langchain/google@0.2.14",
-   "prerelease": false,
-   "tag": "@langchain/google@0.2.14",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google%400.2.14"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:46Z",
-   "name": "@langchain/fireworks@0.2.24",
-   "prerelease": false,
-   "tag": "@langchain/fireworks@0.2.24",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.24"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:43Z",
-   "name": "@langchain/deepseek@1.1.24",
-   "prerelease": false,
-   "tag": "@langchain/deepseek@1.1.24",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/deepseek%401.1.24"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12120](https://github.com/langchain-ai/langchainjs/pull/12120) [`a4fb396`](https://github.com/langchain-ai/langchainjs/commit/a4fb396d7b323b9f3f8c7e45875376ec5fb88d72) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - feat(core): add a standard `refusal` content block and `ModelRefusalError`\n\n  Model refusals from OpenAI, Anthropic, and Gemini now appear as a `refusal` content block in `message.contentBlocks`. JSON, tool-call, and structured output parsers throw `ModelRefusalError` (from `@langchain/core/errors`) when the model refuses, instead of a generic parsing error.",
-   "date": "2026-11-10T18:39:25Z",
-   "name": "@langchain/core@1.3.7",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.7",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.7"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:40Z",
-   "name": "@langchain/classic@1.0.60",
-   "prerelease": false,
-   "tag": "@langchain/classic@1.0.60",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/classic%401.0.60"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12122](https://github.com/langchain-ai/langchainjs/pull/12122) [`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a) Thanks [@thushanth-bengre-langchain](https://github.com/thushanth-bengre-langchain)! - fix(anthropic): surface model refusals as `ModelRefusalError`\n\n  A `refusal` stop reason maps to the `content_filter` finish reason in stream events, and `withStructuredOutput` throws `ModelRefusalError` on a refusal, including when thinking is enabled.",
-   "date": "2026-11-10T18:39:31Z",
-   "name": "@langchain/anthropic@1.6.3",
-   "prerelease": false,
-   "tag": "@langchain/anthropic@1.6.3",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- [`9ec213b`](https://github.com/langchain-ai/langchainjs/commit/9ec213b8aba71c3d2870f478b8a18c647957fb7a) Thanks [@afirstenberg](https://github.com/afirstenberg)! - Adds **experimental** support for the Google Interactions API on AI Studio and\n  Google Cloud (Vertex).\n\n  - Add `InteractionsApiHandler` (`apiHandler: \"interactions\"`) supporting `.invoke()`, `.stream()`, and `.streamEvents()` across AI Studio (`gai`) and Vertex AI (`gcp`)\n  - Add Interactions API converters for messages, tools, parameters, and streaming SSE events\n  - Generate Interactions API TypeScript types from the OpenAPI specification (`src/chat_models/api_types/interactions.ts`)\n  - Export `GoogleChatApiHandler`, `GenerateContentApiHandler`, `InteractionsApiHandler`, and Interactions converters\n  - Supports backwards compatibility with the current API.\n  - Parameters for the Integrations API are exposed, but no specific feature changes are included.\n\n- [#12141](https://github.com/langchain-ai/langchainjs/pull/12141) [`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d) Thanks [@hntrl](https://github.com/hntrl)! - Only route Google chat models through the LangSmith gateway when no credentials are passed. Explicit `apiKey`, `authOptions`, `credentials`, or `googleAuthOptions` now go straight to Google.",
-   "date": "2026-11-09T22:43:49Z",
-   "name": "@langchain/google@0.2.13",
-   "prerelease": false,
-   "tag": "@langchain/google@0.2.13",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google%400.2.13"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d)]:\n  - @langchain/google-common@2.3.6",
-   "date": "2026-11-09T22:44:01Z",
-   "name": "@langchain/google-webauth@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-webauth@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-webauth%402.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12141](https://github.com/langchain-ai/langchainjs/pull/12141) [`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d) Thanks [@hntrl](https://github.com/hntrl)! - Only route Google chat models through the LangSmith gateway when no credentials are passed. Explicit `apiKey`, `authOptions`, `credentials`, or `googleAuthOptions` now go straight to Google.\n- Updated dependencies []:\n  - @langchain/google-gauth@2.3.6",
-   "date": "2026-11-09T22:44:04Z",
-   "name": "@langchain/google-vertexai@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-vertexai@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai%402.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12141](https://github.com/langchain-ai/langchainjs/pull/12141) [`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d) Thanks [@hntrl](https://github.com/hntrl)! - Only route Google chat models through the LangSmith gateway when no credentials are passed. Explicit `apiKey`, `authOptions`, `credentials`, or `googleAuthOptions` now go straight to Google.\n- Updated dependencies []:\n  - @langchain/google-webauth@2.3.6",
-   "date": "2026-11-09T22:44:07Z",
-   "name": "@langchain/google-vertexai-web@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-vertexai-web@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-vertexai-web%402.3.6"
-  },
-  {
-   "body": "No changes in this release.",
-   "date": "2026-11-09T22:43:55Z",
-   "name": "@langchain/google-genai@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-genai@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-genai%402.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d)]:\n  - @langchain/google-common@2.3.6",
-   "date": "2026-11-09T22:43:58Z",
-   "name": "@langchain/google-gauth@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-gauth@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-gauth%402.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12141](https://github.com/langchain-ai/langchainjs/pull/12141) [`4585842`](https://github.com/langchain-ai/langchainjs/commit/4585842d7e7d04ca14dc8976569c7984ad97218d) Thanks [@hntrl](https://github.com/hntrl)! - Only route Google chat models through the LangSmith gateway when no credentials are passed. Explicit `apiKey`, `authOptions`, `credentials`, or `googleAuthOptions` now go straight to Google.",
-   "date": "2026-11-09T22:43:52Z",
-   "name": "@langchain/google-common@2.3.6",
-   "prerelease": false,
-   "tag": "@langchain/google-common@2.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/google-common%402.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12140](https://github.com/langchain-ai/langchainjs/pull/12140) [`f054550`](https://github.com/langchain-ai/langchainjs/commit/f054550c61df603c0daf6757a9f3f2076fc06be4) Thanks [@hntrl](https://github.com/hntrl)! - Stop `streamEvents` v2 from hanging or leaking an unhandled rejection when aborted, and from throwing its own `AbortError` when the consumer breaks early.",
-   "date": "2026-11-09T23:53:54Z",
-   "name": "@langchain/core@1.3.6",
-   "prerelease": false,
-   "tag": "@langchain/core@1.3.6",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.3.6"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12145](https://github.com/langchain-ai/langchainjs/pull/12145) [`e662f7c`](https://github.com/langchain-ai/langchainjs/commit/e662f7c00cedc68fb2036f2782a63401937e752c) Thanks [@hntrl](https://github.com/hntrl)! - Report streamed usage from the cumulative `message_delta` usage, as `langchain-anthropic` does, so input and cache tokens from server tool passes (e.g. web search) are counted and output tokens aren't double counted.\n\n- [#12173](https://github.com/langchain-ai/langchainjs/pull/12173) [`203cf6e`](https://github.com/langchain-ai/langchainjs/commit/203cf6e40fde3ffa135528cbfa30b4fdffe30850) Thanks [@hntrl](https://github.com/hntrl)! - Support Claude Fable 5.2 and Mythos 5.2 profiles, always-on adaptive thinking, and the nameless computer toolset. Upgrade the Anthropic SDK and avoid forced tool choice for always-on thinking models.",
-   "date": "2026-11-09T22:43:46Z",
-   "name": "@langchain/anthropic@1.6.2",
-   "prerelease": false,
-   "tag": "@langchain/anthropic@1.6.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/anthropic%401.6.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#11778](https://github.com/langchain-ai/langchainjs/pull/11778) [`a6d1e1b`](https://github.com/langchain-ai/langchainjs/commit/a6d1e1b9e43c36f0e1ef262b568760afedd4641d) Thanks [@yoarajota](https://github.com/yoarajota)! - `modelRetryMiddleware` now retries errors that are subclasses of a class listed in `retryOn`. Previously the array form matched only the exact constructor, so `retryOn: [APIError]` never retried a `RateLimitError`. This matches `toolRetryMiddleware`.\n\n- [#11330](https://github.com/langchain-ai/langchainjs/pull/11330) [`642469d`](https://github.com/langchain-ai/langchainjs/commit/642469d1f384b7b96e1e3e4259c9587e3b4acd07) Thanks [@HDPark95](https://github.com/HDPark95)! - fix(langchain): preserve model errors propagated through middleware",
-   "date": "2026-11-07T04:25:26Z",
-   "name": "langchain@1.6.3",
-   "prerelease": false,
-   "tag": "langchain@1.6.3",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a7c960f`](https://github.com/langchain-ai/langchainjs/commit/a7c960fd1a1fa3d32717965311168667980e77a3)]:\n  - @langchain/openai@1.8.2",
-   "date": "2026-11-07T04:25:50Z",
-   "name": "@langchain/xai@1.5.4",
-   "prerelease": false,
-   "tag": "@langchain/xai@1.5.4",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.4"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a7c960f`](https://github.com/langchain-ai/langchainjs/commit/a7c960fd1a1fa3d32717965311168667980e77a3)]:\n  - @langchain/openai@1.8.2",
-   "date": "2026-11-07T04:25:47Z",
-   "name": "@langchain/together-ai@0.2.23",
-   "prerelease": false,
-   "tag": "@langchain/together-ai@0.2.23",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.23"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a7c960f`](https://github.com/langchain-ai/langchainjs/commit/a7c960fd1a1fa3d32717965311168667980e77a3)]:\n  - @langchain/openai@1.8.2",
-   "date": "2026-11-07T04:25:44Z",
-   "name": "@langchain/openrouter@0.4.23",
-   "prerelease": false,
-   "tag": "@langchain/openrouter@0.4.23",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openrouter%400.4.23"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#11846](https://github.com/langchain-ai/langchainjs/pull/11846) [`a7c960f`](https://github.com/langchain-ai/langchainjs/commit/a7c960fd1a1fa3d32717965311168667980e77a3) Thanks [@devauntea](https://github.com/devauntea)! - Base64-encode binary `Uint8Array` data in image, audio and file content blocks sent through the Chat Completions API, instead of sending comma-separated decimal bytes.",
-   "date": "2026-11-07T04:25:32Z",
-   "name": "@langchain/openai@1.8.2",
-   "prerelease": false,
-   "tag": "@langchain/openai@1.8.2",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/openai%401.8.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @langchain/classic@1.0.59",
-   "date": "2026-11-07T04:25:53Z",
-   "name": "@langchain/neo4j@0.1.31",
-   "prerelease": false,
-   "tag": "@langchain/neo4j@0.1.31",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/neo4j%400.1.31"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`a7c960f`](https://github.com/langchain-ai/langchainjs/commit/a7c960fd1a1fa3d32717965311168667980e77a3)]:\n  - @langchain/openai@1.8.2",
-   "date": "2026-11-07T04:25:41Z",
-   "name": "@langchain/fireworks@0.2.23",
-   "prerelease": false,
-   "tag": "@langchain/fireworks@0.2.23",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/fireworks%400.2.23"
   }
  ],
  "repo": "langchain-ai/langchainjs"

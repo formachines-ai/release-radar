@@ -1,7 +1,7 @@
 {
  "changelog": "https://websockets.readthedocs.io/en/stable/project/changelog.html",
  "ecosystem": "pypi",
- "fetched": "2026-11-20T06:00:34Z",
+ "fetched": "2026-11-21T06:00:41Z",
  "homepage": "https://github.com/python-websockets/websockets",
  "latest": "17.4",
  "name": "websockets",

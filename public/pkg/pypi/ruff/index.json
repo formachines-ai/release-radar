@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
@@ -76,7 +76,7 @@
   "date": "2026-11-19T15:55:52Z",
   "version": "0.17.6"
  },
- "metadata_fetched": "2026-11-20T06:00:25Z",
+ "metadata_fetched": "2026-11-21T06:00:31Z",
  "package": "ruff",
  "page": "https://releases.formachines.ai/pkg/pypi/ruff/",
  "prereleases_in_window": 0,

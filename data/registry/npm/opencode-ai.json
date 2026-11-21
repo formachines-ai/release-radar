@@ -42,7 +42,7 @@
   "tui-v2": "0.0.0-tui-v2-202606261840"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-20T06:01:04Z",
+ "fetched": "2026-11-21T06:01:06Z",
  "homepage": "",
  "latest": "1.19.6",
  "name": "opencode-ai",
@@ -1639,16 +1639,6 @@
    "date": "2026-08-23T14:19:25Z",
    "deprecated": false,
    "version": "0.0.0-dev-202608231400"
-  },
-  {
-   "date": "2026-08-22T13:08:01Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608221251"
-  },
-  {
-   "date": "2026-08-22T11:52:00Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608221137"
   }
  ]
 }

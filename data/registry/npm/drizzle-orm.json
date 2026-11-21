@@ -41,7 +41,7 @@
   "pg-prepare-nameless": "1.0.0-beta.13-4ef3fca",
   "postgres": "1.0.0-rc.4-fb12281",
   "query-comments": "1.0.0-beta.19-dca1773",
-  "rc": "1.0.0-rc.5",
+  "rc": "1.0.0-rc.6",
   "rc1-fixes": "1.0.0-rc.2-8feace6",
   "rc4": "1.0.0-rc.4-5d5b77c",
   "rc5": "1.0.0-rc.5-5935859",
@@ -58,7 +58,7 @@
   "workflows": "1.0.0-beta.1-37e2608"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-20T06:01:14Z",
+ "fetched": "2026-11-21T06:01:19Z",
  "homepage": "https://orm.drizzle.team",
  "latest": "0.45.4",
  "name": "drizzle-orm",
@@ -66,6 +66,11 @@
  "repo": "drizzle-team/drizzle-orm",
  "summary": "Drizzle ORM package for SQL databases",
  "versions": [
+  {
+   "date": "2026-11-20T19:33:38Z",
+   "deprecated": false,
+   "version": "1.0.0-rc.6"
+  },
   {
    "date": "2026-10-21T17:59:58Z",
    "deprecated": false,

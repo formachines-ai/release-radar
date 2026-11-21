@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -79,12 +79,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "5.108.1",
+ "latest": "5.108.2",
  "latest_stable": {
-  "date": "2026-11-19T14:03:03Z",
-  "version": "5.108.1"
+  "date": "2026-11-20T13:37:18Z",
+  "version": "5.108.2"
  },
- "metadata_fetched": "2026-11-20T06:01:08Z",
+ "metadata_fetched": "2026-11-21T06:01:11Z",
  "package": "@tanstack/react-query",
  "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
  "prereleases_in_window": 0,
@@ -92,11 +92,38 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/TanStack/query/compare/@tanstack/react-query@5.108.1...@tanstack/react-query@5.108.2",
+   "date": "2026-11-20T13:37:18Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/@tanstack/react-query/5.108.2",
+   "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b25288efe3/",
+   "notes_url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.2",
+   "package": "@tanstack/react-query",
+   "page": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/",
+   "prerelease": false,
+   "prev_version": "5.108.1",
+   "quotes": [],
+   "variant_of": null,
+   "version": "5.108.2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/TanStack/query/compare/@tanstack/react-query@5.108.0...@tanstack/react-query@5.108.1",
    "date": "2026-11-19T14:03:03Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 23,
+    "version": "5.108.2"
+   },
    "id": "npm/@tanstack/react-query/5.108.1",
    "json": "https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json",
    "no_notes": false,
@@ -165,6 +192,6 @@
   }
  ],
  "repository": "https://github.com/TanStack/query",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "Hooks for managing, caching and syncing asynchronous and remote data in React"
 }

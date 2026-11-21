@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T04:55:42Z",
+ "built": "2026-11-21T06:00:08Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -551,7 +551,7 @@
   },
   {
    "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.291...ai@6.0.324",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.292...ai@6.0.324",
    "date": "2026-11-06T22:24:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -606,12 +606,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "7.0.177",
+ "latest": "7.0.179",
  "latest_stable": {
-  "date": "2026-11-18T19:03:24Z",
-  "version": "7.0.177"
+  "date": "2026-11-20T23:21:52Z",
+  "version": "7.0.179"
  },
- "metadata_fetched": "2026-11-20T06:01:01Z",
+ "metadata_fetched": "2026-11-21T06:01:01Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
@@ -619,11 +619,99 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.178...ai@7.0.179",
+   "date": "2026-11-20T23:21:52Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/7.0.179",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5b28e03ef4/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.179",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.178",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.0.179",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.291...ai@5.0.292",
+   "date": "2026-11-20T16:52:45Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/ai/5.0.292",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/7fbac72b3c/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.292",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "5.0.291",
+   "quotes": [],
+   "variant_of": null,
+   "version": "5.0.292",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.177...ai@7.0.178",
+   "date": "2026-11-20T16:52:25Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "hours": 6,
+    "version": "7.0.179"
+   },
+   "id": "npm/ai/7.0.178",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d6608c13a1/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.178",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.177",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- 6815153: fix(ai): forward the `preliminary` flag on provider-executed tool results in `streamText`, so preliminary results (e.g. OpenAI image generation previews) are no longer recorded as final tool results in step content and response messages",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "Approval requests of automatically denied tool calls are no longer signed, so such a response is rejected with `AI_InvalidToolApprovalSignatureError`.",
+     "quote_incomplete": false
+    }
+   ],
+   "variant_of": null,
+   "version": "7.0.178",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.176...ai@7.0.177",
    "date": "2026-11-18T19:03:24Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": {
+    "hours": 45,
+    "version": "7.0.178"
+   },
    "id": "npm/ai/7.0.177",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -701,6 +789,10 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": {
+    "hours": 68,
+    "version": "5.0.292"
+   },
    "id": "npm/ai/5.0.291",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -787,6 +879,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 6,
+ "stable_in_window": 9,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

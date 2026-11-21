@@ -1,0 +1,38 @@
+{
+ "fetched": "2026-11-21T06:00:31Z",
+ "releases": [
+  {
+   "body": "## What's Changed\r\n* Added support for Python 3.15.\r\n* Dropped support for EoL Python 3.8, 3.9.\r\n* Fixed exponential merge key expansion (#937).\r\n* Exposed libyaml 0.2.6 recursion control API (#1010) - no-op when missing.\r\n* Bumped wheel builds to libyaml 0.2.6.\r\n\r\n**Full Changelog**: https://github.com/yaml/pyyaml/compare/6.0.3...6.0.4",
+   "date": "2026-11-20T23:30:35Z",
+   "name": "6.0.4",
+   "prerelease": false,
+   "tag": "6.0.4",
+   "url": "https://github.com/yaml/pyyaml/releases/tag/6.0.4"
+  },
+  {
+   "body": "## What's Changed\r\n\r\n* Support for Python 3.14 and free-threading (experimental).\r\n\r\n\r\n**Full Changelog**: https://github.com/yaml/pyyaml/compare/6.0.2...6.0.3",
+   "date": "2025-09-25T21:29:27Z",
+   "name": "6.0.3",
+   "prerelease": false,
+   "tag": "6.0.3",
+   "url": "https://github.com/yaml/pyyaml/releases/tag/6.0.3"
+  },
+  {
+   "body": "## What's Changed\r\n* Support for Cython 3.x and Python 3.13.\r\n\r\n**Full Changelog**: https://github.com/yaml/pyyaml/compare/6.0.1...6.0.2",
+   "date": "2024-08-06T20:32:48Z",
+   "name": "6.0.2",
+   "prerelease": false,
+   "tag": "6.0.2",
+   "url": "https://github.com/yaml/pyyaml/releases/tag/6.0.2"
+  },
+  {
+   "body": "* Support for extension build with Cython 3.x\r\n* Support for Python 3.13\r\n* Added PyPI wheels for musllinux on aarch64\r\n",
+   "date": "2024-06-10T23:33:02Z",
+   "name": "6.0.2rc1",
+   "prerelease": true,
+   "tag": "6.0.2rc1",
+   "url": "https://github.com/yaml/pyyaml/releases/tag/6.0.2rc1"
+  }
+ ],
+ "repo": "yaml/pyyaml"
+}
