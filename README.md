@@ -91,6 +91,7 @@ public/                     the site — everything below is generated, do not e
   ci-check.py              CI helper script, copied from static/ci-check.py (T-0074)
   ci-check.txt             byte-identical copy of ci-check.py: nginx serves .py as application/octet-stream (a download), .txt as text/plain, so readers can inspect it first (T-0075)
   go/<id>/index.html        meta-refresh redirect to an external URL; id = sha1(url)[:10]; go/index.json maps ids → URLs
+                                (T-0170: build.py rewrites every retained legacy go/**/index.html through render_go() from its stored target, so every /go/ page has the same head: robots noindex,nofollow + the same redirect; ids and targets never change; test: tests/test_go_pages.py)
   legal/index.html          responsible person, data sources, license, no-tracking statement
   404.html                  with navigation; nginx serves it for unknown paths
   style.css

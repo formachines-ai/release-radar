@@ -1609,6 +1609,22 @@ def render_go(url: str, built: str, vote: bool = False) -> str:
 """
 
 
+def normalise_legacy_go(built: str) -> int:
+    """Rewrite every retained public/go/**/index.html through render_go() from its stored target (T-0170), so old pages share the current head."""
+    n = 0
+    for p in sorted((PUBLIC_DIR / "go").rglob("index.html")):
+        old = p.read_text(encoding="utf-8")
+        m = re.search(r'<meta http-equiv="refresh" content="0;url=([^"]+)">', old)
+        if not m:
+            continue
+        url = html.unescape(m.group(1))
+        new = render_go(url, built, vote="/vote/" in p.as_posix())
+        if re.sub(r"updated [^<]*UTC", "", new) != re.sub(r"updated [^<]*UTC", "", old) or "noindex,nofollow" not in old:
+            write_text(p, new)
+            n += 1
+    return n
+
+
 def render_404(built: str) -> str:
     body = (f"<h1>404 — no such page</h1><p class=\"lead\">Package pages live at <code>/pkg/pypi/&lt;name&gt;/</code> and "
             f"<code>/pkg/npm/&lt;name&gt;/</code> (scoped npm packages keep their scope: <code>/pkg/npm/@scope/name/</code>). "
@@ -1975,6 +1991,7 @@ def write_site(model: dict, errata_count: int, http: Http) -> dict:
     for r in model["releases"]:
         for d in ("up", "down"):
             write_text(PUBLIC_DIR / "go" / "vote" / vote_id(r) / d / "index.html", render_go(vote_target(r), built, vote=True))
+    normalise_legacy_go(built)
     write_json(PUBLIC_DIR / "go" / "index.json", {"built": built, "redirects": go_map})
     flagged = [r for r in model["releases"] if r["flagged"]]
     today = {
