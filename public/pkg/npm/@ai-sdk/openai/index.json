@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -12,6 +12,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 90,
     "version": "3.0.144"
    },
@@ -39,6 +40,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 92,
     "version": "4.0.119"
    },
@@ -66,6 +68,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 16,
     "version": "4.0.118"
    },
@@ -93,6 +96,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 9,
     "version": "4.0.117"
    },
@@ -120,6 +124,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 27,
     "version": "3.0.143"
    },
@@ -147,6 +152,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 25,
     "version": "4.0.116"
    },
@@ -174,6 +180,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 37,
     "version": "3.0.142"
    },
@@ -200,6 +207,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@ai-sdk/openai/2.0.143",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -224,6 +232,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 22,
     "version": "4.0.115"
    },
@@ -251,6 +260,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 2,
     "version": "4.0.114"
    },
@@ -278,6 +288,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 12,
     "version": "3.0.141"
    },
@@ -305,6 +316,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 12,
     "version": "2.0.143"
    },
@@ -332,6 +344,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 70,
     "version": "4.0.113"
    },
@@ -359,6 +372,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 70,
     "version": "3.0.140"
    },
@@ -385,6 +399,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 70,
     "version": "2.0.142"
    },
@@ -412,6 +427,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 20,
     "version": "3.0.139"
    },
@@ -439,6 +455,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 23,
     "version": "4.0.111"
    },
@@ -479,6 +496,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@ai-sdk/openai/4.0.122",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -503,6 +521,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 67,
     "version": "4.0.122"
    },
@@ -530,6 +549,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 0,
     "version": "4.0.121"
    },
@@ -557,6 +577,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "4.0.120"
    },
@@ -583,6 +604,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "npm/@ai-sdk/openai/3.0.144",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,

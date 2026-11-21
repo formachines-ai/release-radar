@@ -1,9 +1,37 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.7...0.163.0",
+   "date": "2026-11-14T16:53:14Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "date": "2026-11-15",
+    "hours": 16,
+    "version": "0.163.1"
+   },
+   "id": "pypi/fastapi/0.163.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/fa38c7b5d5/",
+   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.163.0",
+   "package": "fastapi",
+   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
+   "prerelease": false,
+   "prev_version": "0.162.7",
+   "quotes": [],
+   "variant_of": null,
+   "version": "0.163.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.6...0.162.7",
@@ -11,6 +39,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/fastapi/0.162.7",
    "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
    "no_notes": false,
@@ -35,6 +64,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 4,
     "version": "0.162.7"
    },
@@ -73,6 +103,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 39,
     "version": "0.162.6"
    },
@@ -100,6 +131,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-11",
     "hours": 28,
     "version": "0.162.5"
    },
@@ -127,6 +159,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 3,
     "version": "0.162.4"
    },
@@ -154,6 +187,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 70,
     "version": "0.162.3"
    },
@@ -180,6 +214,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 3,
     "version": "0.162.2"
    },
@@ -220,6 +255,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/fastapi/0.165.0",
    "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
    "no_notes": false,
@@ -243,6 +279,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/fastapi/0.164.0",
    "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
    "no_notes": false,
@@ -266,6 +303,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/fastapi/0.163.2",
    "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
    "no_notes": false,
@@ -290,6 +328,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 56,
     "version": "0.163.2"
    },
@@ -308,36 +347,9 @@
    "variant_of": null,
    "version": "0.163.1",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.7...0.163.0",
-   "date": "2026-11-14T16:53:14Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 16,
-    "version": "0.163.1"
-   },
-   "id": "pypi/fastapi/0.163.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fa38c7b5d5/",
-   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.163.0",
-   "package": "fastapi",
-   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
-   "prerelease": false,
-   "prev_version": "0.162.7",
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.163.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/fastapi/fastapi",
- "stable_in_window": 5,
+ "stable_in_window": 4,
  "summary": "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 }

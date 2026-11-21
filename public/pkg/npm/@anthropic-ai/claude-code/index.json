@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -12,6 +12,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-16",
     "hours": 70,
     "version": "2.1.326"
    },
@@ -54,6 +55,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 1,
     "version": "2.1.325"
    },
@@ -81,6 +83,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 22,
     "version": "2.1.324"
    },
@@ -124,6 +127,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 66,
     "version": "2.1.323"
    },
@@ -151,6 +155,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 6,
     "version": "2.1.322"
    },
@@ -193,6 +198,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-09",
     "hours": 90,
     "version": "2.1.321"
    },
@@ -249,6 +255,7 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "npm/@anthropic-ai/claude-code/2.1.330",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -284,6 +291,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 24,
     "version": "2.1.330"
    },
@@ -327,6 +335,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 19,
     "version": "2.1.329"
    },
@@ -370,6 +379,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 26,
     "version": "2.1.328"
    },
@@ -413,6 +423,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 25,
     "version": "2.1.327"
    },

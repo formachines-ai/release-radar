@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -12,6 +12,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-15",
     "hours": 95,
     "version": "1.8.1"
    },
@@ -43,6 +44,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/langchain-core/1.7.7",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -80,6 +82,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/langchain-core/1.8.4",
    "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
    "no_notes": false,
@@ -104,6 +107,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 30,
     "version": "1.8.4"
    },
@@ -131,6 +135,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 16,
     "version": "1.8.3"
    },
@@ -158,6 +163,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 55,
     "version": "1.8.2"
    },

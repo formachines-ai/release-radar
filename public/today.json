@@ -1,10 +1,10 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "counts": {
   "flagged": 36,
   "packages": 98,
   "prereleases": 207,
-  "releases": 327,
+  "releases": 325,
   "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
@@ -486,6 +486,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-21",
     "hours": 4,
     "version": "1.44.9"
    },
@@ -837,6 +838,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 6,
     "version": "7.0.179"
    },
@@ -972,6 +974,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 4,
     "version": "5.59.1"
    },
@@ -1247,6 +1250,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 19,
     "version": "1.108.14"
    },
@@ -2043,6 +2047,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 24,
     "version": "1.44.8"
    },
@@ -2116,6 +2121,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 24,
     "version": "2.1.330"
    },
@@ -2446,6 +2452,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 23,
     "version": "5.108.2"
    },
@@ -2547,6 +2554,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 21,
     "version": "1.108.13"
    },
@@ -2574,6 +2582,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 23,
     "version": "1.106.12"
    },
@@ -2623,6 +2632,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 19,
     "version": "1.2.24"
    },
@@ -2738,6 +2748,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 24,
     "version": "1.110.2"
    },
@@ -2765,6 +2776,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 25,
     "version": "1.109.3"
    },
@@ -2863,6 +2875,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 19,
     "version": "2.1.329"
    },
@@ -3026,6 +3039,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 23,
     "version": "1.44.7"
    },
@@ -3076,6 +3090,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 45,
     "version": "7.0.178"
    },
@@ -3415,6 +3430,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 6,
     "version": "1.5.2"
    },
@@ -3442,6 +3458,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 30,
     "version": "1.8.4"
    },
@@ -3468,6 +3485,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 20,
     "version": "2.119.2"
    },
@@ -3569,6 +3587,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 14,
     "version": "3.6.1"
    },
@@ -3623,6 +3642,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 52,
     "version": "5.58.1"
    },
@@ -3826,6 +3846,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 10,
     "version": "3.55.1"
    },
@@ -4253,6 +4274,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 26,
     "version": "1.110.1"
    },
@@ -4409,6 +4431,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 16,
     "version": "1.8.3"
    },
@@ -4546,6 +4569,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 32,
     "version": "1.108.12"
    },
@@ -4596,6 +4620,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 22,
     "version": "7.0.177"
    },
@@ -4623,6 +4648,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 67,
     "version": "4.0.122"
    },
@@ -4650,6 +4676,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 26,
     "version": "2.1.328"
    },
@@ -4692,6 +4719,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-18",
     "hours": 24,
     "version": "1.44.6"
    },
@@ -4719,6 +4747,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 0,
     "version": "4.0.121"
    },
@@ -4746,6 +4775,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "7.0.176"
    },
@@ -4773,6 +4803,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 68,
     "version": "5.0.292"
    },
@@ -4806,6 +4837,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "7.0.175"
    },
@@ -4862,6 +4894,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "4.0.120"
    },
@@ -5303,6 +5336,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 1,
     "version": "25.18.1"
    },
@@ -5352,6 +5386,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 48,
     "version": "5.108.1"
    },
@@ -6151,6 +6186,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 24,
     "version": "1.108.11"
    },
@@ -6318,6 +6354,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 23,
     "version": "1.44.5"
    },
@@ -6440,6 +6477,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 95,
     "version": "9.12.3"
    },
@@ -6687,6 +6725,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 25,
     "version": "2.1.327"
    },
@@ -7587,6 +7626,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 55,
     "version": "1.8.2"
    },
@@ -7614,6 +7654,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 56,
     "version": "0.163.2"
    },
@@ -7802,63 +7843,9 @@
    "variant_of": null,
    "version": "1.107.0rc4",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.8...v1.108.9",
-   "date": "2026-11-14T21:54:43Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 48,
-    "version": "1.108.10"
-   },
-   "id": "pypi/litellm/1.108.9",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/13e615b635/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.9",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "prev_version": "1.108.8",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.108.9",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.7...0.163.0",
-   "date": "2026-11-14T16:53:14Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 16,
-    "version": "0.163.1"
-   },
-   "id": "pypi/fastapi/0.163.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/fa38c7b5d5/",
-   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.163.0",
-   "package": "fastapi",
-   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
-   "prerelease": false,
-   "prev_version": "0.162.7",
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.163.0",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-14T14:46:11Z"
+ "window_start": "2026-11-14T22:29:19Z"
 }

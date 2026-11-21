@@ -1,9 +1,37 @@
 {
- "built": "2026-11-21T14:46:11Z",
+ "built": "2026-11-21T22:29:19Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.8...v1.108.9",
+   "date": "2026-11-14T21:54:43Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "date": "2026-11-16",
+    "hours": 48,
+    "version": "1.108.10"
+   },
+   "id": "pypi/litellm/1.108.9",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/13e615b635/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.9",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "prev_version": "1.108.8",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.108.9",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/BerriAI/litellm/compare/v1.106.9...v1.106.10",
@@ -12,6 +40,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 126,
     "version": "1.106.11"
    },
@@ -39,6 +68,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-14",
     "hours": 25,
     "version": "1.108.9"
    },
@@ -64,6 +94,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0.dev2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -87,6 +118,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0.dev1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -128,6 +160,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-13",
     "hours": 23,
     "version": "1.108.8"
    },
@@ -153,6 +186,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.0rc2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -176,6 +210,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.109.1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -200,6 +235,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 19,
     "version": "1.108.7"
    },
@@ -227,6 +263,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-14",
     "hours": 47,
     "version": "1.106.10"
    },
@@ -254,6 +291,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 21,
     "version": "1.106.9"
    },
@@ -281,6 +319,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 25,
     "version": "1.109.1"
    },
@@ -322,6 +361,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.0rc1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -346,6 +386,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-12",
     "hours": 26,
     "version": "1.108.6"
    },
@@ -372,6 +413,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.104.9",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -394,6 +436,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.103.11",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -418,6 +461,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-10",
     "hours": 23,
     "version": "1.108.5"
    },
@@ -443,6 +487,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.0.dev2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -467,6 +512,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-09",
     "hours": 48,
     "version": "1.108.4"
    },
@@ -492,6 +538,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.0.dev1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -532,6 +579,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-07",
     "hours": 24,
     "version": "1.108.3"
    },
@@ -559,6 +607,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-06",
     "hours": 22,
     "version": "1.108.2"
    },
@@ -584,6 +633,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.107.0rc3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -621,6 +671,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.108.14",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -643,6 +694,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0rc3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -672,6 +724,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.106.12",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -695,6 +748,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -725,6 +779,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 19,
     "version": "1.108.14"
    },
@@ -757,6 +812,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.109.3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -779,6 +835,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.112.0.dev1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -820,6 +877,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 21,
     "version": "1.108.13"
    },
@@ -847,6 +905,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 23,
     "version": "1.106.12"
    },
@@ -872,6 +931,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0rc2",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -896,6 +956,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 24,
     "version": "1.110.2"
    },
@@ -923,6 +984,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-20",
     "hours": 25,
     "version": "1.109.3"
    },
@@ -948,6 +1010,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0rc1",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -989,6 +1052,7 @@
    "errata_url": null,
    "flagged": true,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 26,
     "version": "1.110.1"
    },
@@ -1033,6 +1097,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-19",
     "hours": 32,
     "version": "1.108.12"
    },
@@ -1060,6 +1125,7 @@
    "errata_url": null,
    "flagged": false,
    "followed_by": {
+    "date": "2026-11-17",
     "hours": 24,
     "version": "1.108.11"
    },
@@ -1085,6 +1151,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0.dev4",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -1123,6 +1190,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.111.0.dev3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -1145,6 +1213,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.110.0rc3",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -1167,6 +1236,7 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
+   "followed_by": null,
    "id": "pypi/litellm/1.107.0rc4",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -1182,36 +1252,9 @@
    "variant_of": null,
    "version": "1.107.0rc4",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.8...v1.108.9",
-   "date": "2026-11-14T21:54:43Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 48,
-    "version": "1.108.10"
-   },
-   "id": "pypi/litellm/1.108.9",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/13e615b635/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.9",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": false,
-   "prev_version": "1.108.8",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.108.9",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 13,
+ "stable_in_window": 12,
  "summary": "Library to easily interface with LLM API providers"
 }
