@@ -1,22 +1,9 @@
 {
- "built": "2026-11-20T19:23:15Z",
+ "built": "2026-11-21T02:37:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "10.15.0",
- "latest_stable": {
-  "date": "2026-11-13T21:33:34Z",
-  "version": "10.15.0"
- },
- "metadata_fetched": "2026-11-20T06:01:14Z",
- "package": "eslint",
- "page": "https://releases.formachines.ai/pkg/npm/eslint/",
- "prereleases_in_window": 0,
- "registry": "https://www.npmjs.com/package/eslint",
- "releases": [
+ "history": [
   {
    "bump": "minor",
    "date": "2026-11-13T21:33:34Z",
@@ -40,7 +27,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "10.15.0",
+ "latest_stable": {
+  "date": "2026-11-13T21:33:34Z",
+  "version": "10.15.0"
+ },
+ "metadata_fetched": "2026-11-20T06:01:14Z",
+ "package": "eslint",
+ "page": "https://releases.formachines.ai/pkg/npm/eslint/",
+ "prereleases_in_window": 0,
+ "registry": "https://www.npmjs.com/package/eslint",
+ "releases": [],
  "repository": "https://github.com/eslint/eslint",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "An AST-based pattern checker for JavaScript."
 }

@@ -1,9 +1,32 @@
 {
- "built": "2026-11-20T19:23:15Z",
+ "built": "2026-11-21T02:37:32Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0",
+   "date": "2026-11-13T21:13:37Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "id": "pypi/openai/3.51.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/67f7225a3c/",
+   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.51.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
+   "prerelease": false,
+   "prev_version": "3.50.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "3.51.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0",
@@ -250,32 +273,9 @@
    "variant_of": null,
    "version": "3.52.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0",
-   "date": "2026-11-13T21:13:37Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "id": "pypi/openai/3.51.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/openai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/67f7225a3c/",
-   "notes_url": "https://github.com/openai/openai-python/releases/tag/v3.51.0",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/pypi/openai/",
-   "prerelease": false,
-   "prev_version": "3.50.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "3.51.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/openai/openai-python",
- "stable_in_window": 8,
+ "stable_in_window": 7,
  "summary": "The official Python library for the openai API"
 }

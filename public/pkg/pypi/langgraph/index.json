@@ -1,9 +1,36 @@
 {
- "built": "2026-11-20T19:23:15Z",
+ "built": "2026-11-21T02:37:32Z",
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/langchain-ai/langgraph/compare/1.2.21...1.2.22",
+   "date": "2026-11-14T01:43:42Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "hours": 123,
+    "version": "1.2.23"
+   },
+   "id": "pypi/langgraph/1.2.22",
+   "json": "https://releases.formachines.ai/pkg/pypi/langgraph/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/859ffa3f2f/",
+   "notes_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
+   "package": "langgraph",
+   "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
+   "prerelease": false,
+   "prev_version": "1.2.21",
+   "quotes": [],
+   "variant_of": null,
+   "version": "1.2.22",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/langchain-ai/langgraph/compare/1.2.20...1.2.21",
@@ -116,36 +143,9 @@
    "variant_of": null,
    "version": "1.2.23",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/langchain-ai/langgraph/compare/1.2.21...1.2.22",
-   "date": "2026-11-14T01:43:42Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "hours": 123,
-    "version": "1.2.23"
-   },
-   "id": "pypi/langgraph/1.2.22",
-   "json": "https://releases.formachines.ai/pkg/pypi/langgraph/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/859ffa3f2f/",
-   "notes_url": "https://github.com/langchain-ai/langgraph/releases/tag/1.2.22",
-   "package": "langgraph",
-   "page": "https://releases.formachines.ai/pkg/pypi/langgraph/",
-   "prerelease": false,
-   "prev_version": "1.2.21",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.2.22",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/langchain-ai/langgraph",
- "stable_in_window": 3,
+ "stable_in_window": 2,
  "summary": "Building stateful, multi-actor applications with LLMs"
 }
