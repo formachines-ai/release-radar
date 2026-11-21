@@ -1415,7 +1415,7 @@ def render_index(model: dict, errata_count: int) -> str:
                 f'<li><a href="{esc(page_url(p["path"]))}">{esc(p["name"])}</a></li>' for p in sub) + "</ul>")
     lst.append("</section>")
     body.append("\n".join(lst))
-    title = f"{SITE_NAME} – daily PyPI and npm releases with verbatim breaking-change quotes"
+    title = f"{SITE_NAME} – PyPI and npm releases with breaking-change quotes"
     desc = (f"{n_pk} PyPI and npm packages tracked: {n_rel} releases in 7 days, {n_fl} flagged by a regex "
             f"on release notes, each with a verbatim quote. Built {model['built']}.")
     ld = {"@type": ["WebSite", "Dataset"], "name": SITE_NAME, "description": desc, "url": SITE_BASE + "/",
@@ -1452,6 +1452,10 @@ def package_seo(p: dict, built: str = "") -> tuple[str, str]:
     name, eco = p["name"], p["ecosystem"]
     elabel = {"pypi": "PyPI", "npm": "npm"}.get(eco, eco)
     title = f"{name} ({elabel}) releases and breaking-change quotes – {SITE_NAME}"
+    if len(title) > 70:
+        title = f"{name} ({elabel}) breaking-change quotes – {SITE_NAME}"
+    if len(title) > 70:
+        title = f"{name} ({elabel})"
     recs = list(p["releases"]) + list(p.get("history") or [])
     lv = p.get("latest")
     ld = max((r["date"] for r in recs if r["version"] == lv and r.get("date")), default=None) if lv else None
