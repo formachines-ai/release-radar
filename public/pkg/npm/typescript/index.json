@@ -1,5 +1,5 @@
 {
- "built": "2026-11-21T06:00:08Z",
+ "built": "2026-11-21T13:14:23Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": {
@@ -11,6 +11,28 @@
   "url": "https://formachines.ai/errata/npm/typescript/"
  },
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-14T08:10:34Z",
+   "ecosystem": "npm",
+   "errata_url": "https://formachines.ai/errata/npm/typescript/",
+   "flagged": false,
+   "id": "npm/typescript/7.1.0-dev.20261114.1",
+   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-21",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
+   "notes_url": "https://github.com/microsoft/TypeScript/releases",
+   "package": "typescript",
+   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.1.0-dev.20261114.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-13T08:12:43Z",
@@ -220,7 +242,7 @@
  "metadata_fetched": "2026-11-21T06:01:44Z",
  "package": "typescript",
  "page": "https://releases.formachines.ai/pkg/npm/typescript/",
- "prereleases_in_window": 7,
+ "prereleases_in_window": 6,
  "registry": "https://www.npmjs.com/package/typescript",
  "releases": [
   {
@@ -353,28 +375,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "7.1.0-dev.20261115.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-14T08:10:34Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261114.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-21",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.1.0-dev.20261114.1",
    "yanked_or_deprecated": false
   }
  ],
