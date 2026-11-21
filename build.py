@@ -1595,7 +1595,7 @@ def render_go(url: str, built: str, vote: bool = False) -> str:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="noindex,nofollow">
 <meta http-equiv="refresh" content="0;url={u}">
 <title>Redirecting — {esc(SITE_NAME)}</title>
 <link rel="stylesheet" href="/style.css">
@@ -1879,16 +1879,19 @@ def render_llms(model: dict) -> str:
 ROBOTS_TXT = """# Release Radar — everyone is welcome, including AI crawlers and agents.
 User-agent: *
 Allow: /
-Disallow: /go/vote/
+Disallow: /go/
 
 User-agent: GPTBot
 Allow: /
+Disallow: /go/
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /go/
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /go/
 
 Sitemap: __SITE__/sitemap.xml
 """
