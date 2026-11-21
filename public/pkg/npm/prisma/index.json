@@ -1,9 +1,31 @@
 {
- "built": "2026-11-20T19:23:15Z",
+ "built": "2026-11-21T02:37:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-13T19:35:05Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/prisma/8.1.0-dev.12",
+   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
+   "no_notes": true,
+   "no_notes_checked": "2026-11-20",
+   "notes_kind": "repo_releases",
+   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
+   "notes_url": "https://github.com/prisma/prisma-cli/releases",
+   "package": "prisma",
+   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "variant_of": null,
+   "version": "8.1.0-dev.12",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "prerelease",
    "date": "2026-11-13T18:19:03Z",
@@ -323,7 +345,7 @@
  "metadata_fetched": "2026-11-20T06:01:26Z",
  "package": "prisma",
  "page": "https://releases.formachines.ai/pkg/npm/prisma/",
- "prereleases_in_window": 4,
+ "prereleases_in_window": 3,
  "registry": "https://www.npmjs.com/package/prisma",
  "releases": [
   {
@@ -392,28 +414,6 @@
    "quotes": [],
    "variant_of": null,
    "version": "8.0.0-rc.34-dev.188",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-13T19:35:05Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/prisma/8.1.0-dev.12",
-   "json": "https://releases.formachines.ai/pkg/npm/prisma/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-20",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6d152d0eef/",
-   "notes_url": "https://github.com/prisma/prisma-cli/releases",
-   "package": "prisma",
-   "page": "https://releases.formachines.ai/pkg/npm/prisma/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "8.1.0-dev.12",
    "yanked_or_deprecated": false
   }
  ],

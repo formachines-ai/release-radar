@@ -1415,7 +1415,7 @@ def render_index(model: dict, errata_count: int) -> str:
                 f'<li><a href="{esc(page_url(p["path"]))}">{esc(p["name"])}</a></li>' for p in sub) + "</ul>")
     lst.append("</section>")
     body.append("\n".join(lst))
-    title = f"{SITE_NAME} — PyPI and npm releases with breaking-change quotes"
+    title = f"{SITE_NAME} – daily PyPI and npm releases with verbatim breaking-change quotes"
     desc = (f"{n_pk} PyPI and npm packages tracked: {n_rel} releases in 7 days, {n_fl} flagged by a regex "
             f"on release notes, each with a verbatim quote. Built {model['built']}.")
     ld = {"@type": ["WebSite", "Dataset"], "name": SITE_NAME, "description": desc, "url": SITE_BASE + "/",
@@ -1671,7 +1671,7 @@ def render_brand(built: str) -> str:
         "<li>Telegram channel @relesae_radar (to be uploaded by the owner or the duty session)</li>"
         "<li>Site favicon (done)</li></ul>"
         "<p>Other channels from the product plan (Bluesky, Mastodon, X) may reuse it once those accounts need an avatar.</p>")
-    return layout(f"Brand — {SITE_NAME}", body, built, canonical=SITE_BASE + "/brand/",
+    return layout(f"Brand: avatar of {SITE_NAME} (radar sweep, SVG)", body, built, canonical=SITE_BASE + "/brand/",
                   description=f"Avatar concepts and the chosen avatar of {SITE_NAME}.")
 
 
@@ -1692,7 +1692,7 @@ def render_legal(built: str) -> str:
             f"these logs are not shared.</p>"
             f"<p><strong>Removal.</strong> If you maintain a package and do not want it listed or quoted, write to the address on the page above; "
             f"one line in the public configuration removes it.</p>")
-    return layout(f"Legal — {SITE_NAME}", body, built, canonical=SITE_BASE + "/legal/",
+    return layout(f"Legal: responsible person, data sources and license – {SITE_NAME}", body, built, canonical=SITE_BASE + "/legal/",
                   description=f"Responsible person, data sources, license and no-tracking statement of {SITE_NAME}. Built {built[:10]}.")
 
 

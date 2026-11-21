@@ -1,9 +1,32 @@
 {
- "built": "2026-11-20T19:23:15Z",
+ "built": "2026-11-21T02:37:32Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/openai/openai-node/compare/v7.56.0...v7.57.0",
+   "date": "2026-11-13T21:27:35Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "id": "npm/openai/7.57.0",
+   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/b47a08916b/",
+   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.57.0",
+   "package": "openai",
+   "page": "https://releases.formachines.ai/pkg/npm/openai/",
+   "prerelease": false,
+   "prev_version": "7.56.0",
+   "quotes": [],
+   "variant_of": null,
+   "version": "7.57.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/openai/openai-node/compare/v7.55.0...v7.56.0",
@@ -246,32 +269,9 @@
    "variant_of": null,
    "version": "7.58.0",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/openai/openai-node/compare/v7.56.0...v7.57.0",
-   "date": "2026-11-13T21:27:35Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "id": "npm/openai/7.57.0",
-   "json": "https://releases.formachines.ai/pkg/npm/openai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/b47a08916b/",
-   "notes_url": "https://github.com/openai/openai-node/releases/tag/v7.57.0",
-   "package": "openai",
-   "page": "https://releases.formachines.ai/pkg/npm/openai/",
-   "prerelease": false,
-   "prev_version": "7.56.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.57.0",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/openai/openai-node",
- "stable_in_window": 6,
+ "stable_in_window": 5,
  "summary": "The official TypeScript library for the OpenAI API"
 }
