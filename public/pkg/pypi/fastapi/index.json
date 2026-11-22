@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": "https://fastapi.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
   {
-   "bump": "minor",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.7...0.163.0",
    "date": "2026-11-14T16:53:14Z",
    "ecosystem": "pypi",
@@ -33,7 +33,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.6...0.162.7",
    "date": "2026-11-13T17:47:16Z",
    "ecosystem": "pypi",
@@ -57,7 +57,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.5...0.162.6",
    "date": "2026-11-13T13:36:38Z",
    "ecosystem": "pypi",
@@ -96,7 +96,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.4...0.162.5",
    "date": "2026-11-11T22:29:51Z",
    "ecosystem": "pypi",
@@ -124,7 +124,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.3...0.162.4",
    "date": "2026-11-10T17:51:16Z",
    "ecosystem": "pypi",
@@ -152,7 +152,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.2...0.162.3",
    "date": "2026-11-10T14:23:09Z",
    "ecosystem": "pypi",
@@ -180,7 +180,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.162.1...0.162.2",
    "date": "2026-11-07T15:41:38Z",
    "ecosystem": "pypi",
@@ -208,7 +208,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "date": "2026-11-07T11:56:02Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -249,7 +249,7 @@
  "registry": "https://pypi.org/project/fastapi/",
  "releases": [
   {
-   "bump": "minor",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.164.0...0.165.0",
    "date": "2026-11-18T19:15:35Z",
    "ecosystem": "pypi",
@@ -273,7 +273,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "minor",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.2...0.164.0",
    "date": "2026-11-18T13:09:07Z",
    "ecosystem": "pypi",
@@ -297,7 +297,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.1...0.163.2",
    "date": "2026-11-17T18:29:02Z",
    "ecosystem": "pypi",
@@ -321,7 +321,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.0...0.163.1",
    "date": "2026-11-15T09:51:29Z",
    "ecosystem": "pypi",

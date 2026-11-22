@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -194,7 +194,7 @@
  "registry": "https://www.npmjs.com/package/vite",
  "releases": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-16T07:22:57Z",
    "ecosystem": "npm",
    "errata_url": null,

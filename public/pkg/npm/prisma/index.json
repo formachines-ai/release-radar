@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-13T19:35:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,7 +28,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-13T18:19:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -51,7 +51,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-13T16:32:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -74,7 +74,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-10T21:31:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -97,7 +97,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T20:01:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -120,7 +120,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T19:57:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -143,7 +143,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T18:46:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -166,7 +166,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T18:44:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -189,7 +189,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T18:37:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -212,7 +212,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:18:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -235,7 +235,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:14:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -258,7 +258,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:09:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -281,7 +281,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:01:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -304,7 +304,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T09:38:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -327,7 +327,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-05T10:06:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -364,7 +364,7 @@
  "registry": "https://www.npmjs.com/package/prisma",
  "releases": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-16T18:23:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -387,7 +387,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-16T17:14:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -412,7 +412,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-16T17:11:29Z",
    "ecosystem": "npm",
    "errata_url": null,

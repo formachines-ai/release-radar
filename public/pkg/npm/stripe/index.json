@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-11T19:01:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,7 +28,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T04:29:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -65,7 +65,7 @@
  "registry": "https://www.npmjs.com/package/stripe",
  "releases": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-19T04:06:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -88,7 +88,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-19T04:01:10Z",
    "ecosystem": "npm",
    "errata_url": null,
