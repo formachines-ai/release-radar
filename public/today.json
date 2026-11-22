@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T07:50:17Z",
+ "built": "2026-11-22T18:30:40Z",
  "counts": {
   "flagged": 37,
   "packages": 98,
-  "prereleases": 206,
-  "releases": 326,
-  "with_errata": 13
+  "prereleases": 205,
+  "releases": 323,
+  "with_errata": 12
  },
  "disclosure": "Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License: CC BY 4.0.",
  "releases": [
@@ -212,6 +212,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.8...1.44.9",
    "date": "2026-11-21T01:33:34Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -665,6 +666,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.7...1.44.8",
    "date": "2026-11-20T21:09:23Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -2226,6 +2228,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.6...1.44.7",
    "date": "2026-11-19T20:34:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -3218,6 +3221,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.5...1.44.6",
    "date": "2026-11-18T20:45:37Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -4898,6 +4902,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.4...1.44.5",
    "date": "2026-11-17T20:24:21Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -6533,6 +6538,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/boto/boto3/compare/1.44.3...1.44.4",
    "date": "2026-11-16T20:47:37Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -6588,6 +6594,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/6.13.12...6.13.13",
    "date": "2026-11-16T20:36:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6610,6 +6617,7 @@
   },
   {
    "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/7.8.13...7.8.14",
    "date": "2026-11-16T20:24:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7801,87 +7809,9 @@
    "variant_of": null,
    "version": "0.171.0-alpha.6",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/langchain-ai/langchain/compare/langchain-core%3D%3D1.8.0...langchain-core%3D%3D1.8.1",
-   "date": "2026-11-15T14:56:58Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "date": "2026-11-17",
-    "hours": 55,
-    "version": "1.8.2"
-   },
-   "id": "pypi/langchain-core/1.8.1",
-   "json": "https://releases.formachines.ai/pkg/pypi/langchain-core/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/074b98c23f/",
-   "notes_url": "https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.8.1",
-   "package": "langchain-core",
-   "page": "https://releases.formachines.ai/pkg/pypi/langchain-core/",
-   "prerelease": false,
-   "prev_version": "1.8.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "1.8.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/fastapi/fastapi/compare/0.163.0...0.163.1",
-   "date": "2026-11-15T09:51:29Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "date": "2026-11-17",
-    "hours": 56,
-    "version": "0.163.2"
-   },
-   "id": "pypi/fastapi/0.163.1",
-   "json": "https://releases.formachines.ai/pkg/pypi/fastapi/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/6b3d700cf4/",
-   "notes_url": "https://github.com/fastapi/fastapi/releases/tag/0.163.1",
-   "package": "fastapi",
-   "page": "https://releases.formachines.ai/pkg/pypi/fastapi/",
-   "prerelease": false,
-   "prev_version": "0.163.0",
-   "quotes": [],
-   "variant_of": null,
-   "version": "0.163.1",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-15T08:24:00Z",
-   "ecosystem": "npm",
-   "errata_url": "https://formachines.ai/errata/npm/typescript/",
-   "flagged": false,
-   "id": "npm/typescript/7.1.0-dev.20261115.1",
-   "json": "https://releases.formachines.ai/pkg/npm/typescript/index.json",
-   "no_notes": true,
-   "no_notes_checked": "2026-11-22",
-   "notes_kind": "repo_releases",
-   "notes_redirect": "https://releases.formachines.ai/go/6c940723d9/",
-   "notes_url": "https://github.com/microsoft/TypeScript/releases",
-   "package": "typescript",
-   "page": "https://releases.formachines.ai/pkg/npm/typescript/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [],
-   "variant_of": null,
-   "version": "7.1.0-dev.20261115.1",
-   "yanked_or_deprecated": false
   }
  ],
  "site": "https://releases.formachines.ai",
  "window_days": 7,
- "window_start": "2026-11-15T07:50:17Z"
+ "window_start": "2026-11-15T18:30:40Z"
 }
