@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T04:12:59Z",
+ "built": "2026-11-22T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -248,7 +248,7 @@
   "date": "2026-11-20T19:16:01Z",
   "version": "2.1.330"
  },
- "metadata_fetched": "2026-11-21T06:00:44Z",
+ "metadata_fetched": "2026-11-22T06:00:42Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,

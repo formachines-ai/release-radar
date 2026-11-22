@@ -12,7 +12,7 @@
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-21T06:01:36Z",
+ "fetched": "2026-11-22T06:01:26Z",
  "homepage": "https://github.com/prisma/prisma-cli#readme",
  "latest": "8.0.0-rc.34",
  "name": "prisma",

@@ -1,9 +1,49 @@
 {
- "built": "2026-11-22T04:12:59Z",
+ "built": "2026-11-22T06:00:05Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-15T04:16:22Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "pypi/litellm/1.111.0.dev4",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/117633d3df/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "138 PRs. 18 added, 69 fixed, 11 changed, 3 improved, 1 removed. 2 need action",
+     "quote_incomplete": false
+    },
+    {
+     "match": "deprecations",
+     "quote": "- Fixed shutdown dates on Gemini TTS and Live preview models to match Google's deprecations page (#51657)",
+     "quote_incomplete": false
+    },
+    {
+     "match": "Removed",
+     "quote": "- Removed Flex prices from three Vertex AI Gemini 4 rows (#51735)",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": null,
+   "variant_of": null,
+   "version": "1.111.0.dev4",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "unknown",
    "date": "2026-11-15T03:21:21Z",
@@ -396,7 +436,7 @@
   },
   {
    "bump": "minor",
-   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.14...v1.109.0",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.15...v1.109.0",
    "date": "2026-11-11T00:53:12Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -753,7 +793,7 @@
   "date": "2026-11-20T04:05:22Z",
   "version": "1.110.2"
  },
- "metadata_fetched": "2026-11-21T06:00:11Z",
+ "metadata_fetched": "2026-11-22T06:00:08Z",
  "package": "litellm",
  "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
  "prereleases_in_window": 5,
@@ -761,12 +801,72 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.14...v1.108.15",
+   "date": "2026-11-21T21:34:14Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "pypi/litellm/1.108.15",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/cbbf7fdb6e/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.108.15",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": false,
+   "prev_version": "1.108.14",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "1.108.15",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "prerelease",
+   "date": "2026-11-21T20:12:40Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "pypi/litellm/1.112.0.dev2",
+   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_format": "pr_list",
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ddddd43fd6/",
+   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.112.0-dev.2",
+   "package": "litellm",
+   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [
+    {
+     "match": "deprecation",
+     "quote": "* chore(model_prices): move fireworks_ai inkling deprecation date to 2026-11-20 by @devin-ai-integration[bot] in https://github.com/BerriAI/litellm/pull/53303",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": null,
+   "variant_of": null,
+   "version": "1.112.0.dev2",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/BerriAI/litellm/compare/v1.108.13...v1.108.14",
    "date": "2026-11-20T23:42:30Z",
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": false,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-21",
+    "hours": 21,
+    "version": "1.108.15"
+   },
    "id": "pypi/litellm/1.108.14",
    "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
    "no_notes": false,
@@ -1255,49 +1355,9 @@
    "variant_of": null,
    "version": "1.108.10",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "prerelease",
-   "date": "2026-11-15T04:16:22Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": null,
-   "id": "pypi/litellm/1.111.0.dev4",
-   "json": "https://releases.formachines.ai/pkg/pypi/litellm/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/117633d3df/",
-   "notes_url": "https://github.com/BerriAI/litellm/releases/tag/v1.111.0-dev.4",
-   "package": "litellm",
-   "page": "https://releases.formachines.ai/pkg/pypi/litellm/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "138 PRs. 18 added, 69 fixed, 11 changed, 3 improved, 1 removed. 2 need action",
-     "quote_incomplete": false
-    },
-    {
-     "match": "deprecations",
-     "quote": "- Fixed shutdown dates on Gemini TTS and Live preview models to match Google's deprecations page (#51657)",
-     "quote_incomplete": false
-    },
-    {
-     "match": "Removed",
-     "quote": "- Removed Flex prices from three Vertex AI Gemini 4 rows (#51735)",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": null,
-   "variant_of": null,
-   "version": "1.111.0.dev4",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/BerriAI/litellm",
- "stable_in_window": 12,
+ "stable_in_window": 13,
  "summary": "Library to easily interface with LLM API providers"
 }

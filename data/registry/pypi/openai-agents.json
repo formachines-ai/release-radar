@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-21T06:00:12Z",
+ "fetched": "2026-11-22T06:00:10Z",
  "homepage": "https://openai.github.io/openai-agents-python/",
  "latest": "0.25.0",
  "name": "openai-agents",

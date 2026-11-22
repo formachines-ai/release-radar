@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T04:12:59Z",
+ "built": "2026-11-22T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-18T07:35:25Z",
   "version": "5.1.1"
  },
- "metadata_fetched": "2026-11-21T06:01:47Z",
+ "metadata_fetched": "2026-11-22T06:01:35Z",
  "package": "vitest",
  "page": "https://releases.formachines.ai/pkg/npm/vitest/",
  "prereleases_in_window": 0,

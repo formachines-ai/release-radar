@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T06:00:11Z",
+ "fetched": "2026-11-22T06:00:08Z",
  "releases": [
   {
    "body": "Changes since 1.2.23\n\n* release(langgraph): 1.2.24 (#9752)\n* fix(langgraph): handle `REMOVE_ALL_MESSAGES` in `_messages_delta_reducer` and `None` checkpoints in `DeltaChannel` (#9735)",

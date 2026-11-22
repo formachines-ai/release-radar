@@ -17,7 +17,7 @@
   "v6.13.13": null,
   "v7.8.14": null
  },
- "fetched": "2026-11-21T06:01:24Z",
+ "fetched": "2026-11-22T06:01:17Z",
  "releases": [
   {
    "body": "9.12.3 / 2026-11-20\r\n===================\r\n * fix(model): match pathsToSkip string paths exactly in Model.validate() #16706 [NotAFlightRisk](https://github.com/NotAFlightRisk)\r\n * fix(query): avoid casting $expr $in search value when it is an expression #16709 [kwy404](https://github.com/kwy404)\r\n * fix(update): run update validators on mixed paths in subdocuments #16708 #16707 [lazerg](https://github.com/lazerg)\r\n * fix(documentarray): respect castNonArrays path option on document arrays #16685 [yxshee](https://github.com/yxshee)\r\n * types(schema): add removeVirtual() to Schema #16722 [farisbasha](https://github.com/farisbasha)\r\n * docs(document): correct checkKeys default for save() #16716 [phatstraws](https://github.com/phatstraws)\r\n * docs: fix typos in comments, tests, and typings #16714 [ninglinLiu](https://github.com/ninglinLiu)",

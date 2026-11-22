@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T06:00:45Z",
+ "fetched": "2026-11-22T06:00:44Z",
  "releases": [
   {
    "body": "### Features\n\n* **api:** add the image_dimensions_too_large error code\n\n\n### Bug Fixes\n\n* **client:** merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in defaultHeaders\n\n\n### Chores\n\n* **docs:** clarify billing_policy in batches and two billing errors",

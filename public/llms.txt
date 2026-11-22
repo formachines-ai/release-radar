@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-22T04:12:59Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-22T06:00:05Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -117,7 +117,7 @@ Updated: 2026-11-22T04:12:59Z UTC (daily build 06:00 UTC)
 - [starlette (pypi)](https://releases.formachines.ai/pkg/pypi/starlette/): latest 1.10.0 · JSON: https://releases.formachines.ai/pkg/pypi/starlette/index.json
 - [structlog (pypi)](https://releases.formachines.ai/pkg/pypi/structlog/): latest 26.1.0 · JSON: https://releases.formachines.ai/pkg/pypi/structlog/index.json
 - [tiktoken (pypi)](https://releases.formachines.ai/pkg/pypi/tiktoken/): latest 0.14.0 · JSON: https://releases.formachines.ai/pkg/pypi/tiktoken/index.json
-- [transformers (pypi)](https://releases.formachines.ai/pkg/pypi/transformers/): latest 5.23.0 · JSON: https://releases.formachines.ai/pkg/pypi/transformers/index.json
+- [transformers (pypi)](https://releases.formachines.ai/pkg/pypi/transformers/): latest 5.24.0 · JSON: https://releases.formachines.ai/pkg/pypi/transformers/index.json
 - [typer (pypi)](https://releases.formachines.ai/pkg/pypi/typer/): latest 0.29.2 · JSON: https://releases.formachines.ai/pkg/pypi/typer/index.json
 - [uvicorn (pypi)](https://releases.formachines.ai/pkg/pypi/uvicorn/): latest 0.54.0 · JSON: https://releases.formachines.ai/pkg/pypi/uvicorn/index.json
 - [websockets (pypi)](https://releases.formachines.ai/pkg/pypi/websockets/): latest 17.4 · Errata correction available · JSON: https://releases.formachines.ai/pkg/pypi/websockets/index.json

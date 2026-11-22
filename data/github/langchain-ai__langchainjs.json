@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T06:00:47Z",
+ "fetched": "2026-11-22T06:00:46Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-21T06:01:07Z",
+ "fetched": "2026-11-22T06:01:03Z",
  "releases": [
   {
    "body": "## [7.62.0](https://github.com/openai/openai-node/compare/v7.61.0...v7.62.0) (2026-11-19)\n\n\n### Features\n\n* **api:** support Live WebRTC standby ([#3170](https://github.com/openai/openai-node/issues/3170)) ([85d01e6](https://github.com/openai/openai-node/commit/85d01e6bebf223ca0de89eb1ce88912498b750e5))",

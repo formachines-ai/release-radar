@@ -17,7 +17,7 @@
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.0"
   }
  },
- "fetched": "2026-11-21T06:01:11Z",
+ "fetched": "2026-11-22T06:01:07Z",
  "releases": [
   {
    "body": "Release 2026-11-20 13:37\n\n## Changes\n\n### Features\n\n- query-devtools: add a trustedTypesPolicy option (#12643) (fd62c9583) by @schiller-manuel\n\n### Fix\n\n- query-devtools: clear the PiP document without innerHTML (#12629) (f7abc938a) by @schiller-manuel\n- query-devtools: replace goober with a static stylesheet (#12628) (80d6c41fb) by @schiller-manuel\n\n\n## Packages\n\n- @tanstack/angular-query@5.108.2\n- @tanstack/angular-query-devtools@5.108.2\n- @tanstack/angular-query-persist-client@5.108.2\n- @tanstack/eslint-plugin-query@5.108.2\n- @tanstack/lit-query@0.2.42\n- @tanstack/preact-query@5.108.2\n- @tanstack/preact-query-devtools@5.108.2\n- @tanstack/preact-query-persist-client@5.108.2\n- @tanstack/query-async-storage-persister@5.108.2\n- @tanstack/query-broadcast-client-experimental@5.108.2\n- @tanstack/query-core@5.108.2\n- @tanstack/query-devtools@5.108.2\n- @tanstack/query-persist-client-core@5.108.2\n- @tanstack/query-sync-storage-persister@5.108.2\n- @tanstack/react-query@5.108.2\n- @tanstack/react-query-devtools@5.108.2\n- @tanstack/react-query-next-experimental@5.108.2\n- @tanstack/react-query-persist-client@5.108.2\n- @tanstack/solid-query@5.108.2\n- @tanstack/solid-query-devtools@5.108.2\n- @tanstack/solid-query-persist-client@5.108.2\n- @tanstack/svelte-query@6.4.5\n- @tanstack/svelte-query-devtools@6.4.5\n- @tanstack/svelte-query-persist-client@6.4.5\n- @tanstack/vue-query@5.108.2\n- @tanstack/vue-query-devtools@6.4.5\n",
