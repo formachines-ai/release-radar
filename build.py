@@ -1235,7 +1235,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     elif r["notes_kind"] != "github_release":
         honest = '<p class="note nonote">Notes not fetched in this build</p>'
     else:
-        honest = '<p class="note nonote">No breaking keyword matched in the notes (notes may be incomplete)</p>'
+        honest = '<p class="note nonote">No breaking keyword in the release notes (regex match only; changes the notes do not mention are not detected).</p>'
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
     name_html = f'<a href="{esc(r["pkg_path"])}">{esc(r["name"])}</a>' if show_pkg_link else esc(r["name"])
     quotes = "".join(render_quote(q) for q in r["quotes"])
@@ -1383,7 +1383,7 @@ def render_index(model: dict, errata_count: int) -> str:
     idx.append('</details>')
     body.append("\n".join(idx))
     body.append(f'<h2 id="recent">Last {recent_hours} h{quiet_note}</h2>')
-    body.append('<p class="note legend">Flag = regex word match + verbatim quote.</p>')
+    body.append('<p class="note legend">Flag = regex word match + verbatim quote. The flag is a regex match on the release notes; changes the notes do not mention are not detected.</p>')
     body.append('<ul class="cards">' + render_cards(recent, now) + "</ul>" if recent
                 else f'<p class="note">No release in the last {QUIET_HOURS} h among tracked packages. The {WINDOW_DAYS}-day lists below are never empty on purpose.</p>')
     body.append("\n".join(cooldown))
