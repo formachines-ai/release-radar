@@ -943,11 +943,25 @@ def gh_tag(r: dict, repo: str) -> str | None:
     return urllib.parse.unquote(m.group(2)) if m and m.group(1).lower() == repo.lower() else None
 
 
+def nn_compare(rel: dict, repo: str | None, gh_releases: list[dict], name: str) -> None:
+    """T-0180: card without fetched notes, known repo, previous stable version: compare link by the existing tag rule."""
+    if rel.get("notes_kind") == "github_release" or not repo or not rel.get("prev_version") or rel.get("prerelease"):
+        return
+    t, pt = guess_tag(gh_releases, rel["version"], name), guess_tag(gh_releases, rel["prev_version"], name)
+    if not t or not pt:
+        return
+    q = lambda x: urllib.parse.quote(x, safe='@/.-_')
+    url = f"https://github.com/{repo}/compare/{q(pt)}...{q(t)}"
+    rel["compare_url"], rel["compare_go"], rel["compare_prev"] = url, go_id(url), rel["prev_version"]
+
+
 def mark_compare(pkg: dict) -> None:
     """T-0152: compare_url to the previous stable tag of the same package (same tag prefix), only if both tags are known."""
     repo = pkg.get("repo")
     recs = {r["id"]: r for r in list(pkg["releases"]) + list(pkg.get("history") or [])}.values()
     for r in recs:
+        if r.get("notes_kind") != "github_release" and r.get("compare_url") and r.get("prev_version"):
+            continue  # T-0180: no-notes card, link set from the tag rule
         for k in ("compare_url", "compare_go", "compare_prev"):
             r.pop(k, None)
     if not repo:
@@ -1101,6 +1115,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "notes_pr_list_only": reused["notes_pr_list_only"] if reused else bool(gh and gh.get("url") and notes_pr_list_only(gh.get("body") or "")),
                 "errata_url": err["url"] if err else None, "errata_go": go_id(err["url"]) if err and err.get("url") else None,
             }
+            nn_compare(rel, pkg["repo"], gh_releases, name)
             pkg["releases"].append(rel)
             releases.append(rel)
         merge_history(pkg, now, window_start, ignore)
@@ -1264,7 +1279,9 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     if r.get("notes_pr_list_only"):
         kind_hint += ' <span class="note prlist">Notes are a PR list only (auto-generated)</span>'
     links = f'<a href="/go/{esc(r["notes_go"])}/" rel="nofollow">release notes →</a>{kind_hint}' if r.get("notes_go") else ""
-    cmp_link = (f'<a href="/go/compare/{esc(r["compare_go"])}/" rel="nofollow">compare {esc(r["compare_prev"])}…{esc(r["version"])} →</a>'
+    cmp_word = "Compare" if r.get("notes_kind") != "github_release" else "compare"
+    cmp_end = " on GitHub" if cmp_word == "Compare" else " →"
+    cmp_link = (f'<a href="/go/compare/{esc(r["compare_go"])}/" rel="nofollow">{cmp_word} {esc(r["compare_prev"])}…{esc(r["version"])}{cmp_end}</a>'
                 if r.get("compare_url") else "")
     top = ""
     if notes_top:
