@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-12T16:22:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -28,7 +28,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-12T16:20:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -51,7 +51,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-11T16:21:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -74,7 +74,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-11T16:19:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -97,7 +97,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-10T16:20:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -120,7 +120,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-10T16:18:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -143,7 +143,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-09T16:21:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -166,7 +166,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-09T16:18:50Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -189,7 +189,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:19:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -212,7 +212,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-06T16:18:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -235,7 +235,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-05T16:21:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -258,7 +258,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-05T16:20:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -295,7 +295,7 @@
  "registry": "https://www.npmjs.com/package/react",
  "releases": [
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-19T16:21:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -318,7 +318,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-19T16:18:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -341,7 +341,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-18T16:21:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -364,7 +364,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-18T16:18:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -387,7 +387,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-17T16:22:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -410,7 +410,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "prerelease",
+   "bump": null,
    "date": "2026-11-17T16:19:08Z",
    "ecosystem": "npm",
    "errata_url": null,

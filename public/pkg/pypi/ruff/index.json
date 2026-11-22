@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T02:22:29Z",
+ "built": "2026-11-22T03:25:03Z",
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
  "errata": null,
  "history": [
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/astral-sh/ruff/compare/0.17.4...0.17.5",
    "date": "2026-11-12T17:54:09Z",
    "ecosystem": "pypi",
@@ -44,7 +44,7 @@
    "yanked_or_deprecated": false
   },
   {
-   "bump": "patch",
+   "bump": "0.x",
    "date": "2026-11-05T18:51:36Z",
    "ecosystem": "pypi",
    "errata_url": null,
@@ -85,7 +85,7 @@
  "registry": "https://pypi.org/project/ruff/",
  "releases": [
   {
-   "bump": "patch",
+   "bump": "0.x",
    "compare_url": "https://github.com/astral-sh/ruff/compare/0.17.5...0.17.6",
    "date": "2026-11-19T15:55:52Z",
    "ecosystem": "pypi",

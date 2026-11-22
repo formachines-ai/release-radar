@@ -1208,12 +1208,22 @@ def vote_target(r: dict) -> str:
     return f'{r["pkg_path"]}#{safe_fs_name(r["id"])}'
 
 
+def bump_kind(r: dict) -> str | None:
+    """T-0176: major|minor|patch|0.x from version numbers vs the previous stable version; None for pre-releases or no previous version."""
+    if r.get("prerelease") or r.get("bump") not in ("major", "minor", "patch") or not r.get("prev_version"):
+        return None
+    cur, prev = version_tuple(r["version"]), version_tuple(r["prev_version"])
+    if cur and prev and cur[0] == 0 and prev[0] == 0:
+        return "0.x"
+    return r["bump"]
+
+
 def bump_step_line(r: dict) -> str:
-    """Version step of a flagged, stable minor/patch release; empty when the previous stable version is unknown."""
-    if not (r["flagged"] and not r["prerelease"] and r["bump"] in ("minor", "patch") and r.get("prev_version")):
+    """Flagged release whose bump is patch, minor or 0.x: the kind and both versions; nothing otherwise."""
+    kind = bump_kind(r)
+    if not (r["flagged"] and kind in ("patch", "minor", "0.x")):
         return ""
-    kind = "0.x minor" if r["bump"] == "minor" and (version_tuple(r["version"]) or (1,))[0] == 0 else "minor/patch"
-    return f'<p class="note bumpstep">Flagged in a {kind} release ({esc(r["prev_version"])} → {esc(r["version"])})</p>'
+    return f'<p class="note bumpstep">Keyword match in a {kind} release ({esc(r["prev_version"])} → {esc(r["version"])})</p>'
 
 
 def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False, variants: list | None = None) -> str:
@@ -1727,7 +1737,7 @@ def render_legal(built: str) -> str:
 def public_release(r: dict, with_followed: bool = False) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
-        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
+        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": bump_kind(r) if with_followed else r["bump"], "prev_version": r.get("prev_version"),
         "quotes": [{"quote": q["quote"], "match": q["match"], "quote_incomplete": bool(q.get("incomplete"))} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
