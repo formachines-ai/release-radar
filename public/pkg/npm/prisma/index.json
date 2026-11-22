@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:35:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -23,12 +23,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.1.0-dev.12",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T18:19:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -46,12 +47,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.33-dev.187",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T16:32:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -69,12 +71,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.33-dev.186",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:31:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -92,12 +95,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.1.0-dev.11",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T20:01:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -115,12 +119,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.33",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T19:57:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -138,12 +143,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.33-dev.185",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T18:46:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -161,12 +167,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.32",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T18:44:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -184,12 +191,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.32-dev.184",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T18:37:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -207,12 +215,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.31-dev.183",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:18:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -230,12 +239,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.31-dev.182",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:14:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -253,12 +263,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.31",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:09:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -276,12 +287,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.31-dev.181",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:01:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -299,12 +311,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.30-dev.180",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T09:38:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -322,12 +335,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.1.0-dev.10",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T10:06:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -345,6 +359,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.30-dev.179",
    "yanked_or_deprecated": false
@@ -364,7 +379,7 @@
  "registry": "https://www.npmjs.com/package/prisma",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T18:23:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -382,12 +397,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.34-dev.189",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T17:14:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -407,12 +423,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.34",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T17:11:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -430,6 +447,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "8.0.0-rc.34-dev.188",
    "yanked_or_deprecated": false

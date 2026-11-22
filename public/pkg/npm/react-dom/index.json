@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T16:22:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -23,12 +23,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-df6aa4ec-20261112",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T16:20:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -46,12 +47,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-df6aa4ec-20261112",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T16:22:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -69,12 +71,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-1620f7b9-20261111",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T16:20:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -92,12 +95,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-1620f7b9-20261111",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T16:22:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -115,12 +119,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-b05c0b75-20261109",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T16:21:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -138,12 +143,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-b05c0b75-20261109",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T16:21:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -161,12 +167,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-4ae637b6-20261109",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T16:20:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -184,12 +191,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-4ae637b6-20261109",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:19:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -207,12 +215,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-5b610964-20261106",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T16:17:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -230,12 +239,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-5b610964-20261106",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T16:22:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -253,12 +263,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-2363bc2b-20261105",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T16:20:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -276,6 +287,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-2363bc2b-20261105",
    "yanked_or_deprecated": false
@@ -295,7 +307,7 @@
  "registry": "https://www.npmjs.com/package/react-dom",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T16:21:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -313,12 +325,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-e04279e7-20261119",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T16:19:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -336,12 +349,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-e04279e7-20261119",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T16:25:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -359,12 +373,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-6ff25743-20261117",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T16:20:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -382,12 +397,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-6ff25743-20261117",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T16:24:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -405,12 +421,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.0.0-experimental-a8342585-20261117",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T16:22:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -428,6 +445,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "19.3.0-canary-a8342585-20261117",
    "yanked_or_deprecated": false

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": "https://github.com/langchain-ai/langgraph/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -28,6 +28,7 @@
    "prerelease": false,
    "prev_version": "1.2.21",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.2.22",
    "yanked_or_deprecated": false
@@ -56,6 +57,7 @@
    "prerelease": false,
    "prev_version": "1.2.20",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.2.21",
    "yanked_or_deprecated": false
@@ -79,6 +81,7 @@
    "prerelease": false,
    "prev_version": "1.2.19",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.2.20",
    "yanked_or_deprecated": false
@@ -117,6 +120,7 @@
    "prerelease": false,
    "prev_version": "1.2.23",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.2.24",
    "yanked_or_deprecated": false
@@ -145,6 +149,7 @@
    "prerelease": false,
    "prev_version": "1.2.22",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.2.23",
    "yanked_or_deprecated": false

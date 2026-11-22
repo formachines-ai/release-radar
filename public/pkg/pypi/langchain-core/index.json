@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
  "errata": null,
@@ -34,6 +34,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "1.8.0",
    "yanked_or_deprecated": false
@@ -57,6 +58,7 @@
    "prerelease": false,
    "prev_version": "1.7.6",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.7.7",
    "yanked_or_deprecated": false
@@ -95,6 +97,7 @@
    "prerelease": false,
    "prev_version": "1.8.3",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.8.4",
    "yanked_or_deprecated": false
@@ -123,6 +126,7 @@
    "prerelease": false,
    "prev_version": "1.8.2",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.8.3",
    "yanked_or_deprecated": false
@@ -151,6 +155,7 @@
    "prerelease": false,
    "prev_version": "1.8.1",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.8.2",
    "yanked_or_deprecated": false
@@ -179,6 +184,7 @@
    "prerelease": false,
    "prev_version": "1.8.0",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.8.1",
    "yanked_or_deprecated": false

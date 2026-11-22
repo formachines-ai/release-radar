@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -28,6 +28,7 @@
    "prerelease": false,
    "prev_version": "6.0.331",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.332",
    "yanked_or_deprecated": false
@@ -56,6 +57,7 @@
    "prerelease": false,
    "prev_version": "5.0.289",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.290",
    "yanked_or_deprecated": false
@@ -90,6 +92,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.173",
    "yanked_or_deprecated": false
@@ -118,6 +121,7 @@
    "prerelease": false,
    "prev_version": "7.0.171",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.172",
    "yanked_or_deprecated": false
@@ -146,6 +150,7 @@
    "prerelease": false,
    "prev_version": "6.0.330",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.331",
    "yanked_or_deprecated": false
@@ -174,6 +179,7 @@
    "prerelease": false,
    "prev_version": "7.0.170",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.171",
    "yanked_or_deprecated": false
@@ -202,6 +208,7 @@
    "prerelease": false,
    "prev_version": "7.0.169",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.170",
    "yanked_or_deprecated": false
@@ -230,6 +237,7 @@
    "prerelease": false,
    "prev_version": "6.0.329",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.330",
    "yanked_or_deprecated": false
@@ -258,6 +266,7 @@
    "prerelease": false,
    "prev_version": "5.0.288",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.289",
    "yanked_or_deprecated": false
@@ -286,6 +295,7 @@
    "prerelease": false,
    "prev_version": "7.0.168",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.169",
    "yanked_or_deprecated": false
@@ -314,6 +324,7 @@
    "prerelease": false,
    "prev_version": "6.0.328",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.329",
    "yanked_or_deprecated": false
@@ -342,6 +353,7 @@
    "prerelease": false,
    "prev_version": "7.0.166",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.168",
    "yanked_or_deprecated": false
@@ -370,6 +382,7 @@
    "prerelease": false,
    "prev_version": "6.0.326",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.328",
    "yanked_or_deprecated": false
@@ -398,6 +411,7 @@
    "prerelease": false,
    "prev_version": "5.0.287",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.288",
    "yanked_or_deprecated": false
@@ -426,6 +440,7 @@
    "prerelease": false,
    "prev_version": "5.0.286",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.287",
    "yanked_or_deprecated": false
@@ -454,6 +469,7 @@
    "prerelease": false,
    "prev_version": "6.0.325",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.326",
    "yanked_or_deprecated": false
@@ -482,6 +498,7 @@
    "prerelease": false,
    "prev_version": "7.0.165",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.166",
    "yanked_or_deprecated": false
@@ -510,6 +527,7 @@
    "prerelease": false,
    "prev_version": "7.0.164",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.165",
    "yanked_or_deprecated": false
@@ -538,6 +556,7 @@
    "prerelease": false,
    "prev_version": "6.0.324",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.325",
    "yanked_or_deprecated": false
@@ -565,6 +584,7 @@
    "prerelease": false,
    "prev_version": "5.0.285",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.286",
    "yanked_or_deprecated": false
@@ -593,6 +613,7 @@
    "prerelease": false,
    "prev_version": "6.0.323",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.324",
    "yanked_or_deprecated": false
@@ -621,6 +642,7 @@
    "prerelease": false,
    "prev_version": "7.0.163",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.164",
    "yanked_or_deprecated": false
@@ -659,6 +681,7 @@
    "prerelease": false,
    "prev_version": "7.0.178",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.179",
    "yanked_or_deprecated": false
@@ -683,6 +706,7 @@
    "prerelease": false,
    "prev_version": "5.0.291",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.292",
    "yanked_or_deprecated": false
@@ -722,6 +746,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.178",
    "yanked_or_deprecated": false
@@ -750,6 +775,7 @@
    "prerelease": false,
    "prev_version": "7.0.176",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.177",
    "yanked_or_deprecated": false
@@ -778,6 +804,7 @@
    "prerelease": false,
    "prev_version": "7.0.175",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.176",
    "yanked_or_deprecated": false
@@ -806,6 +833,7 @@
    "prerelease": false,
    "prev_version": "7.0.174",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.175",
    "yanked_or_deprecated": false
@@ -840,6 +868,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.0.291",
    "yanked_or_deprecated": false
@@ -874,6 +903,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.0.174",
    "yanked_or_deprecated": false
@@ -904,6 +934,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.0.333",
    "yanked_or_deprecated": false

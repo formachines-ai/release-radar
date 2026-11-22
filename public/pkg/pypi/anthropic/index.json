@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -24,6 +24,7 @@
    "prerelease": false,
    "prev_version": "2.7.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.8.0",
    "yanked_or_deprecated": false
@@ -48,6 +49,7 @@
    "prerelease": false,
    "prev_version": "2.6.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.7.0",
    "yanked_or_deprecated": false
@@ -71,6 +73,7 @@
    "prerelease": false,
    "prev_version": "2.5.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.6.0",
    "yanked_or_deprecated": false
@@ -115,6 +118,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.12.0",
    "yanked_or_deprecated": false
@@ -139,6 +143,7 @@
    "prerelease": false,
    "prev_version": "2.10.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.11.0",
    "yanked_or_deprecated": false
@@ -179,6 +184,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.10.0",
    "yanked_or_deprecated": false
@@ -219,6 +225,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "2.9.0",
    "yanked_or_deprecated": false

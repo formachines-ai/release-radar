@@ -1737,13 +1737,14 @@ def render_legal(built: str) -> str:
 def public_release(r: dict, with_followed: bool = False) -> dict:
     return {
         "id": r["id"], "ecosystem": r["ecosystem"], "package": r["name"], "version": r["version"], "date": r["date"],
-        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": bump_kind(r) if with_followed else r["bump"], "prev_version": r.get("prev_version"),
+        "prerelease": r["prerelease"], "variant_of": r.get("variant_of"), "yanked_or_deprecated": r["yanked"], "flagged": r["flagged"], "bump": r["bump"], "prev_version": r.get("prev_version"),
         "quotes": [{"quote": q["quote"], "match": q["match"], "quote_incomplete": bool(q.get("incomplete"))} for q in r["quotes"]],
         "notes_url": r["notes_url"], "notes_kind": r["notes_kind"], "notes_redirect": f"{SITE_BASE}/go/{r['notes_go']}/" if r["notes_go"] else None,
         "errata_url": r["errata_url"], "no_notes": bool(r.get("no_notes")), "no_notes_checked": r.get("no_notes_checked"),
         "page": f"{SITE_BASE}{r['pkg_path']}", "json": f"{SITE_BASE}{r['pkg_path']}index.json",
         **({"compare_url": r["compare_url"]} if r.get("compare_url") else {}),
         **({"followed_by": r.get("followed_by")} if with_followed else ({"followed_by": r["followed_by"]} if r.get("followed_by") else {})),
+        **({"semver_bump": bump_kind(r)} if with_followed else {}),
         **({"notes_format": "pr_list"} if r.get("notes_format") == "pr_list" else {}),
         **({"notes_pr_list_only": True} if r.get("notes_pr_list_only") else {}),
     }

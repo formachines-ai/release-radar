@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -37,6 +37,7 @@
    "prerelease": false,
    "prev_version": "5.59.0",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.59.1",
    "yanked_or_deprecated": false
@@ -65,6 +66,7 @@
    "prerelease": false,
    "prev_version": "5.58.1",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "5.59.0",
    "yanked_or_deprecated": false
@@ -100,6 +102,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "5.58.1",
    "yanked_or_deprecated": false
@@ -127,6 +130,7 @@
    "prerelease": false,
    "prev_version": "5.57.3",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "5.58.0",
    "yanked_or_deprecated": false

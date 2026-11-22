@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -27,6 +27,7 @@
    "prerelease": false,
    "prev_version": "8.24.8",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "8.24.9",
    "yanked_or_deprecated": false
@@ -55,6 +56,7 @@
    "prerelease": false,
    "prev_version": "9.12.0",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "9.12.1",
    "yanked_or_deprecated": false
@@ -93,6 +95,7 @@
    "prerelease": false,
    "prev_version": "9.12.2",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "9.12.3",
    "yanked_or_deprecated": false
@@ -116,6 +119,7 @@
    "prerelease": false,
    "prev_version": "6.13.12",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "6.13.13",
    "yanked_or_deprecated": false
@@ -139,6 +143,7 @@
    "prerelease": false,
    "prev_version": "7.8.13",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "7.8.14",
    "yanked_or_deprecated": false
@@ -163,6 +168,7 @@
    "prerelease": false,
    "prev_version": "8.24.9",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "8.24.10",
    "yanked_or_deprecated": false
@@ -191,6 +197,7 @@
    "prerelease": false,
    "prev_version": "9.12.1",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "9.12.2",
    "yanked_or_deprecated": false

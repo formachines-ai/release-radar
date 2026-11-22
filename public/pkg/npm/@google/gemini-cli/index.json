@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -23,12 +23,13 @@
    "prerelease": false,
    "prev_version": "0.67.0",
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.68.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:11:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -46,6 +47,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.69.0-preview.0",
    "yanked_or_deprecated": false
@@ -65,7 +67,7 @@
  "registry": "https://www.npmjs.com/package/@google/gemini-cli",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T01:24:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -83,12 +85,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.71.0-nightly.20261121.geecccfcd5",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T01:18:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -108,12 +111,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.71.0-nightly.20261120.gd4cb1713f",
    "yanked_or_deprecated": false
   },
   {
-   "bump": "0.x",
+   "bump": "minor",
    "compare_url": "https://github.com/google-gemini/gemini-cli/compare/v0.69.0...v0.70.0",
    "date": "2026-11-19T21:13:43Z",
    "ecosystem": "npm",
@@ -134,12 +138,13 @@
    "prerelease": false,
    "prev_version": "0.69.0",
    "quotes": [],
+   "semver_bump": "0.x",
    "variant_of": null,
    "version": "0.70.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T20:54:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -159,12 +164,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.71.0-preview.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": "0.x",
+   "bump": "minor",
    "compare_url": "https://github.com/google-gemini/gemini-cli/compare/v0.68.0...v0.69.0",
    "date": "2026-11-19T01:51:24Z",
    "ecosystem": "npm",
@@ -185,12 +191,13 @@
    "prerelease": false,
    "prev_version": "0.68.0",
    "quotes": [],
+   "semver_bump": "0.x",
    "variant_of": null,
    "version": "0.69.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T00:14:38Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -210,6 +217,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.70.0-preview.0",
    "yanked_or_deprecated": false

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": "https://github.com/microsoft/playwright-python/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -24,6 +24,7 @@
    "prerelease": false,
    "prev_version": "1.65.1",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.65.2",
    "yanked_or_deprecated": false
@@ -52,6 +53,7 @@
    "prerelease": false,
    "prev_version": "1.65.0",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.65.1",
    "yanked_or_deprecated": false
@@ -95,6 +97,7 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "1.65.0",
    "yanked_or_deprecated": false

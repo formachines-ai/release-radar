@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -24,6 +24,7 @@
    "prerelease": false,
    "prev_version": "7.56.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.57.0",
    "yanked_or_deprecated": false
@@ -48,6 +49,7 @@
    "prerelease": false,
    "prev_version": "7.55.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.56.0",
    "yanked_or_deprecated": false
@@ -72,6 +74,7 @@
    "prerelease": false,
    "prev_version": "7.54.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.55.0",
    "yanked_or_deprecated": false
@@ -96,6 +99,7 @@
    "prerelease": false,
    "prev_version": "7.53.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.54.0",
    "yanked_or_deprecated": false
@@ -120,6 +124,7 @@
    "prerelease": false,
    "prev_version": "7.52.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.53.0",
    "yanked_or_deprecated": false
@@ -143,6 +148,7 @@
    "prerelease": false,
    "prev_version": "7.51.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.52.0",
    "yanked_or_deprecated": false
@@ -181,6 +187,7 @@
    "prerelease": false,
    "prev_version": "7.61.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.62.0",
    "yanked_or_deprecated": false
@@ -205,6 +212,7 @@
    "prerelease": false,
    "prev_version": "7.60.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.61.0",
    "yanked_or_deprecated": false
@@ -229,6 +237,7 @@
    "prerelease": false,
    "prev_version": "7.59.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.60.0",
    "yanked_or_deprecated": false
@@ -253,6 +262,7 @@
    "prerelease": false,
    "prev_version": "7.58.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.59.0",
    "yanked_or_deprecated": false
@@ -277,6 +287,7 @@
    "prerelease": false,
    "prev_version": "7.57.0",
    "quotes": [],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "7.58.0",
    "yanked_or_deprecated": false

@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T05:17:28Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -23,6 +23,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-14",
    "yanked_or_deprecated": false
@@ -47,12 +48,13 @@
    "prerelease": false,
    "prev_version": "1.65.0",
    "quotes": [],
+   "semver_bump": "patch",
    "variant_of": null,
    "version": "1.65.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:37:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -70,12 +72,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1794598453000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T17:21:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -93,12 +96,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1794589053000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T05:19:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -116,12 +120,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-13",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T05:19:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -139,12 +144,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-12",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T18:35:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -162,12 +168,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1794421487000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T16:34:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -185,12 +192,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1794414684000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T12:56:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -208,12 +216,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1794401539000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T05:17:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -231,12 +240,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-11",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T05:19:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -254,12 +264,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-10",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:23:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -277,12 +288,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-1794252756000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T05:20:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -300,12 +312,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-09",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-08T05:16:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -323,12 +336,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-08",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T05:15:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -346,12 +360,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-07",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:42:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -369,12 +384,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1793921730000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:00:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -392,12 +408,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1793919248000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T22:21:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -415,6 +432,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-1793916328000",
    "yanked_or_deprecated": false
@@ -454,12 +472,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "minor",
    "variant_of": null,
    "version": "1.65.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T17:47:18Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -477,12 +496,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1793900512000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T16:22:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -500,12 +520,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.65.0-beta-1793895462000",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T05:18:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -523,6 +544,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-05",
    "yanked_or_deprecated": false
@@ -542,7 +564,7 @@
  "registry": "https://www.npmjs.com/package/playwright",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T05:18:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -560,12 +582,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-21",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T05:18:17Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -583,12 +606,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-20",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T05:18:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -606,12 +630,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-19",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T05:25:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -629,12 +654,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-18",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T05:18:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -652,12 +678,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-17",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T05:20:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -675,12 +702,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-16",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T05:17:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -698,6 +726,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.66.0-alpha-2026-11-15",
    "yanked_or_deprecated": false
