@@ -31,6 +31,19 @@ class BumpKind(unittest.TestCase):
     def test_unflagged_no_mark(self):
         self.assertEqual(build.bump_step_line(r("1.2.4", "1.2.3", "patch", False)), "")
 
+    def test_semver_bump_key_and_old_bump(self):
+        def rec(v, prev, bump):
+            x = r(v, prev, bump)
+            x.update({"id": "i", "ecosystem": "pypi", "name": "p", "date": "2026-01-01", "yanked": False, "quotes": [],
+                      "notes_url": None, "notes_kind": "none", "notes_go": None, "errata_url": None, "pkg_path": "/pkg/pypi/p/"})
+            return build.public_release(x, True)
+        for v, prev, bump, want in [("1.2.4", "1.2.3", "patch", "patch"), ("1.3.0", "1.2.3", "minor", "minor"),
+                                    ("2.0.0", "1.9.0", "major", "major"), ("0.4.1", "0.4.0", "patch", "0.x"),
+                                    ("1.0.0", None, "unknown", None)]:
+            o = rec(v, prev, bump)
+            self.assertEqual(o["semver_bump"], want)
+            self.assertEqual(o["bump"], bump)
+
     def test_no_previous(self):
         self.assertIsNone(build.bump_kind(r("1.0.0", None, "unknown")))
 

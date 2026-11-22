@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -18,7 +18,7 @@
  "registry": "https://www.npmjs.com/package/drizzle-orm",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T19:33:38Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -52,6 +52,7 @@
      "quote_incomplete": true
     }
    ],
+   "semver_bump": null,
    "variant_of": null,
    "version": "1.0.0-rc.6",
    "yanked_or_deprecated": false

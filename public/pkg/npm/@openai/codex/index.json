@@ -1,11 +1,11 @@
 {
- "built": "2026-11-22T03:25:03Z",
+ "built": "2026-11-22T04:12:59Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:34:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -23,12 +23,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:34:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -46,12 +47,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:34:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -69,12 +71,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:33:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -92,12 +95,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:32:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -115,12 +119,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:31:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -138,12 +143,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.5",
    "version": "0.171.0-alpha.5-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-14T01:28:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -161,12 +167,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.5",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:17:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -184,12 +191,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:13:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -207,12 +215,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:13:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -230,12 +239,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:12:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -253,12 +263,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:10:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -276,12 +287,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:10:40Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -299,12 +311,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.4",
    "version": "0.171.0-alpha.4-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T19:05:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -322,12 +335,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.4",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:59:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -345,12 +359,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:49:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -368,12 +383,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:49:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -391,12 +407,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:48:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -414,12 +431,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:47:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -437,12 +455,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:46:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -460,6 +479,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0",
    "version": "0.169.0-linux-arm64",
    "yanked_or_deprecated": false
@@ -499,12 +519,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:14:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -522,12 +543,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:14:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -545,12 +567,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:13:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -568,12 +591,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:11:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -591,12 +615,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:10:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -614,12 +639,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:09:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -637,12 +663,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.2",
    "version": "0.171.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T08:07:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -660,12 +687,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:30:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -683,12 +711,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:29:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -706,12 +735,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:28:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -729,12 +759,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:28:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -752,12 +783,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:27:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -775,12 +807,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:26:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -798,12 +831,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:25:50Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -821,12 +855,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.1",
    "version": "0.171.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:06:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -844,12 +879,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:06:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -867,12 +903,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:05:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -890,12 +927,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:05:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -913,12 +951,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:04:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -936,12 +975,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-13T04:04:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -959,6 +999,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0",
    "version": "0.168.0-darwin-arm64",
    "yanked_or_deprecated": false
@@ -989,12 +1030,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.168.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:14:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1012,12 +1054,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:12:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1035,12 +1078,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:11:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1058,12 +1102,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:11:17Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1081,12 +1126,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:11:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1104,12 +1150,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:08:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1127,12 +1174,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4",
    "version": "0.170.0-alpha.4-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T23:06:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1150,12 +1198,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.4",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:48:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1173,12 +1222,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:47:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1196,12 +1246,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:45:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1219,12 +1270,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:45:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1242,12 +1294,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:44:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1265,12 +1318,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:43:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1288,12 +1342,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.3",
    "version": "0.170.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T19:40:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1311,12 +1366,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.3",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:45:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1334,12 +1390,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:44:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1357,12 +1414,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:43:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1380,12 +1438,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:43:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1403,12 +1462,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:42:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1426,12 +1486,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:41:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1449,12 +1510,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.2",
    "version": "0.170.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T01:40:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1472,12 +1534,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:09:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1495,12 +1558,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:08:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1518,12 +1582,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:08:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1541,12 +1606,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:07:24Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1564,12 +1630,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:05:55Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1587,12 +1654,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:04:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1610,12 +1678,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.3",
    "version": "0.167.0-alpha.4.3-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-12T00:03:18Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1633,12 +1702,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.0-alpha.4.3",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:57:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1656,12 +1726,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:56:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1679,12 +1750,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:56:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1702,12 +1774,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:56:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1725,12 +1798,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:54:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1748,12 +1822,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:53:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1771,6 +1846,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.2",
    "version": "0.167.2-linux-arm64",
    "yanked_or_deprecated": false
@@ -1795,12 +1871,13 @@
    "prerelease": false,
    "prev_version": "0.167.1",
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:42:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1818,12 +1895,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:38:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1841,12 +1919,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:38:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1864,12 +1943,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:36:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1887,12 +1967,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:34:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1910,12 +1991,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:33:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1933,12 +2015,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11.1",
    "version": "0.169.0-alpha.11.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T22:31:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1956,12 +2039,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.11.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:21:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -1979,12 +2063,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:20:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2002,12 +2087,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:20:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2025,12 +2111,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:19:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2048,12 +2135,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:17:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2071,12 +2159,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:17:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2094,12 +2183,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.1",
    "version": "0.170.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T20:15:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2117,12 +2207,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:43:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2140,12 +2231,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:32:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2163,12 +2255,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:29:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2186,12 +2279,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:25:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2209,12 +2303,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:25:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2232,12 +2327,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:24:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2255,12 +2351,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.11",
    "version": "0.169.0-alpha.11-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T10:20:38Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2278,12 +2375,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.11",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:54:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2301,12 +2399,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:52:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2324,12 +2423,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:51:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2347,12 +2447,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:48:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2370,12 +2471,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:46:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2393,12 +2495,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:45:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2416,12 +2519,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.10",
    "version": "0.169.0-alpha.10-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T03:41:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2439,12 +2543,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.10",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:43:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2462,12 +2567,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:43:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2485,12 +2591,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:42:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2508,12 +2615,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:41:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2531,12 +2639,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:39:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2554,12 +2663,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:39:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2577,12 +2687,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.2",
    "version": "0.167.0-alpha.4.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-11T01:38:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2600,12 +2711,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.0-alpha.4.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:24:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2623,12 +2735,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:23:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2646,12 +2759,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:23:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2669,12 +2783,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:22:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2692,12 +2807,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:20:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2715,12 +2831,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.9",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:20:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2738,12 +2855,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T22:20:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2761,12 +2879,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.9",
    "version": "0.169.0-alpha.9-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:44:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2784,12 +2903,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:44:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2807,12 +2927,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:42:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2830,12 +2951,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:42:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2853,12 +2975,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:42:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2876,12 +2999,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T21:41:38Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2899,6 +3023,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.1",
    "version": "0.167.1-linux-arm64",
    "yanked_or_deprecated": false
@@ -2927,12 +3052,13 @@
    "prerelease": false,
    "prev_version": "0.167.0",
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-10T00:16:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2950,12 +3076,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:59:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2973,12 +3100,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:58:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -2996,12 +3124,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:58:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3019,12 +3148,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:57:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3042,12 +3172,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:57:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3065,12 +3196,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.4.1",
    "version": "0.167.0-alpha.4.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T23:53:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3088,12 +3220,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.0-alpha.4.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:15:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3111,12 +3244,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:14:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3134,12 +3268,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:11:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3157,12 +3292,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:10:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3180,12 +3316,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:08:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3203,12 +3340,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:06:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3226,12 +3364,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.7",
    "version": "0.169.0-alpha.7-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T22:05:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3249,12 +3388,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.7",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:40:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3272,12 +3412,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:39:58Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3295,12 +3436,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:39:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3318,12 +3460,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:39:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3341,12 +3484,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:38:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3364,12 +3508,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:37:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3387,12 +3532,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.6",
    "version": "0.169.0-alpha.6-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-09T19:34:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3410,12 +3556,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.6",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:46:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3433,12 +3580,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:45:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3456,12 +3604,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:44:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3479,12 +3628,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:44:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3502,12 +3652,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:43:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3525,12 +3676,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:43:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3548,12 +3700,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.3",
    "version": "0.169.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-07T19:41:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3571,12 +3724,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.3",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:32:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3594,12 +3748,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:30:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3617,12 +3772,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:27:36Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3640,12 +3796,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:25:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3663,12 +3820,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:25:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3686,12 +3844,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:23:28Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3709,12 +3868,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.0-alpha.2",
    "version": "0.169.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T22:21:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3732,12 +3892,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.169.0-alpha.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:50:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3755,12 +3916,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:50:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3778,12 +3940,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:50:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3801,12 +3964,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:49:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3824,12 +3988,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:49:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3847,12 +4012,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-06T01:48:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3870,6 +4036,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0",
    "version": "0.167.0-linux-arm64",
    "yanked_or_deprecated": false
@@ -3908,12 +4075,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:19:46Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3931,12 +4099,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:09:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3954,12 +4123,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:08:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -3977,12 +4147,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:08:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4000,12 +4171,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:06:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4023,12 +4195,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:06:18Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4046,12 +4219,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.7",
    "version": "0.168.0-alpha.7-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T23:03:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4069,12 +4243,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.168.0-alpha.7",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:12:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4092,12 +4267,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:07:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4115,12 +4291,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:06:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4138,12 +4315,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:05:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4161,12 +4339,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:04:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4184,12 +4363,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:03:57Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4207,12 +4387,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.6",
    "version": "0.168.0-alpha.6-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T20:01:45Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4230,12 +4411,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.168.0-alpha.6",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:34:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4253,12 +4435,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:33:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4276,12 +4459,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:30:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4299,12 +4483,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:29:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4322,12 +4507,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:28:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4345,12 +4531,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:28:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4368,12 +4555,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.167.0-alpha.3.2",
    "version": "0.167.0-alpha.3.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T13:23:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4391,12 +4579,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.167.0-alpha.3.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:49:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4414,12 +4603,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:48:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4437,12 +4627,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:47:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4460,12 +4651,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:47:32Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4483,12 +4675,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:47:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4506,12 +4699,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:45:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4529,12 +4723,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.168.0-alpha.3",
    "version": "0.168.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "unknown",
    "date": "2026-11-05T02:43:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4552,6 +4747,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.168.0-alpha.3",
    "yanked_or_deprecated": false
@@ -4571,7 +4767,7 @@
  "registry": "https://www.npmjs.com/package/@openai/codex",
  "releases": [
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:57:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4589,12 +4785,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:50:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4612,12 +4809,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:49:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4635,12 +4833,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:49:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4658,12 +4857,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:48:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4681,12 +4881,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:46:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4704,12 +4905,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.4",
    "version": "0.173.0-alpha.4-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-21T00:43:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4727,12 +4929,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.173.0-alpha.4",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:53:37Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4750,12 +4953,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:48:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4773,12 +4977,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:38:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4796,12 +5001,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:36:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4819,12 +5025,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:35:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4842,12 +5049,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:35:29Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4865,12 +5073,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.3",
    "version": "0.173.0-alpha.3-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T22:31:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4888,12 +5097,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.173.0-alpha.3",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T21:00:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4911,12 +5121,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:58:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4934,12 +5145,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:58:26Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4957,12 +5169,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:57:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -4980,12 +5193,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:57:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5003,12 +5217,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:56:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5026,12 +5241,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.2",
    "version": "0.173.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T20:54:17Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5049,12 +5265,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.173.0-alpha.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:11:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5072,12 +5289,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:08:27Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5095,12 +5313,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:05:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5118,12 +5337,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:03:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5141,12 +5361,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:02:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5164,12 +5385,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:00:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5187,12 +5409,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.173.0-alpha.1",
    "version": "0.173.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T03:00:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5210,12 +5433,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.173.0-alpha.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T01:00:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5233,12 +5457,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T00:58:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5256,12 +5481,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T00:57:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5279,12 +5505,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T00:54:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5302,12 +5529,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T00:52:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5325,12 +5553,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-20T00:52:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5348,12 +5577,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0",
    "version": "0.171.0-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": "0.x",
+   "bump": "minor",
    "compare_url": "https://github.com/openai/codex/compare/rust-v0.170.0...rust-v0.171.0",
    "date": "2026-11-20T00:51:29Z",
    "ecosystem": "npm",
@@ -5378,12 +5608,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "0.x",
    "variant_of": null,
    "version": "0.171.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:19:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5401,12 +5632,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:18:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5424,12 +5656,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:16:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5447,12 +5680,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:15:55Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5470,12 +5704,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:15:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5493,12 +5728,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:14:03Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5516,12 +5752,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13.1",
    "version": "0.171.0-alpha.13.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T22:11:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5539,12 +5776,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.13.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T16:06:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5562,12 +5800,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T16:00:56Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5585,12 +5824,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T16:00:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5608,12 +5848,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T15:58:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5631,12 +5872,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T15:58:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5654,12 +5896,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T15:56:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5677,12 +5920,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.2",
    "version": "0.172.0-alpha.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-19T15:53:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5700,12 +5944,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.172.0-alpha.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T18:09:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5723,12 +5968,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.1",
    "version": "0.172.0-alpha.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T18:09:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5746,12 +5992,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.1",
    "version": "0.172.0-alpha.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T18:07:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5769,12 +6016,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.1",
    "version": "0.172.0-alpha.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T18:06:55Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5792,12 +6040,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.172.0-alpha.1",
    "version": "0.172.0-alpha.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T06:15:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5815,12 +6064,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T06:03:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5838,12 +6088,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T06:02:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5861,12 +6112,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T05:59:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5884,12 +6136,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T05:59:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5907,12 +6160,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T05:59:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5930,12 +6184,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.13",
    "version": "0.171.0-alpha.13-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T05:58:14Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5953,12 +6208,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.13",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:56:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5976,12 +6232,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:53:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -5999,12 +6256,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:51:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6022,12 +6280,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:51:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6045,12 +6304,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:51:01Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6068,12 +6328,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T03:50:42Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6091,12 +6352,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0",
    "version": "0.170.0-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": "0.x",
+   "bump": "minor",
    "compare_url": "https://github.com/openai/codex/compare/rust-v0.169.1...rust-v0.170.0",
    "date": "2026-11-18T03:45:45Z",
    "ecosystem": "npm",
@@ -6121,12 +6383,13 @@
      "quote_incomplete": false
     }
    ],
+   "semver_bump": "0.x",
    "variant_of": null,
    "version": "0.170.0",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:13:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6144,12 +6407,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:12:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6167,12 +6431,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:12:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6190,12 +6455,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:12:09Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6213,12 +6479,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:09:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6236,12 +6503,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:07:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6259,12 +6527,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.2",
    "version": "0.170.0-alpha.4.2-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-18T02:06:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6282,12 +6551,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.4.2",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T23:20:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6305,12 +6575,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T22:33:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6328,12 +6599,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T22:31:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6351,12 +6623,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T22:31:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6374,12 +6647,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T22:30:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6397,12 +6671,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T22:28:47Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6420,12 +6695,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.169.1",
    "version": "0.169.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": "0.x",
+   "bump": "patch",
    "compare_url": "https://github.com/openai/codex/compare/rust-v0.169.0...rust-v0.169.1",
    "date": "2026-11-17T22:26:21Z",
    "ecosystem": "npm",
@@ -6444,12 +6720,13 @@
    "prerelease": false,
    "prev_version": "0.169.0",
    "quotes": [],
+   "semver_bump": "0.x",
    "variant_of": null,
    "version": "0.169.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:59:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6467,12 +6744,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:55:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6490,12 +6768,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:50:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6513,12 +6792,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:43:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6536,12 +6816,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:42:21Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6559,12 +6840,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:40:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6582,12 +6864,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.12",
    "version": "0.171.0-alpha.12-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T14:36:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6605,12 +6888,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.12",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:39:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6628,12 +6912,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:38:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6651,12 +6936,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:38:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6674,12 +6960,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:38:11Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6697,12 +6984,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:37:53Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6720,12 +7008,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:37:00Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6743,12 +7032,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.11",
    "version": "0.171.0-alpha.11-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T04:33:48Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6766,12 +7056,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.11",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:38:04Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6789,12 +7080,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:37:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6812,12 +7104,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:35:23Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6835,12 +7128,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:32:41Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6858,12 +7152,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:32:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6881,12 +7176,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:30:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6904,12 +7200,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.170.0-alpha.4.1",
    "version": "0.170.0-alpha.4.1-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-17T02:28:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6927,12 +7224,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.170.0-alpha.4.1",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:49:13Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6950,12 +7248,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:47:44Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6973,12 +7272,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:46:31Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -6996,12 +7296,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:46:08Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7019,12 +7320,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:44:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7042,12 +7344,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:44:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7065,12 +7368,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.10",
    "version": "0.171.0-alpha.10-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T23:41:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7088,12 +7392,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.10",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:40:34Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7111,12 +7416,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:29:39Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7134,12 +7440,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:27:02Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7157,12 +7464,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:26:40Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7180,12 +7488,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:26:15Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7203,12 +7512,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:25:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7226,12 +7536,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.9",
    "version": "0.171.0-alpha.9-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T19:22:43Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7249,12 +7560,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.9",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:42:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7272,12 +7584,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:41:51Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7295,12 +7608,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:41:07Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7318,12 +7632,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:39:49Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7341,12 +7656,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:39:16Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7364,12 +7680,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:38:28Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7387,12 +7704,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.8",
    "version": "0.171.0-alpha.8-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-16T16:35:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7410,12 +7728,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.8",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:30:19Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7433,12 +7752,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:29:25Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7456,12 +7776,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:29:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7479,12 +7800,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:27:10Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7502,12 +7824,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:26:54Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7525,12 +7848,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:24:33Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7548,12 +7872,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.7",
    "version": "0.171.0-alpha.7-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T23:21:52Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7571,12 +7896,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.7",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:17:12Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7594,12 +7920,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-darwin-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:12:35Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7617,12 +7944,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-darwin-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:11:59Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7640,12 +7968,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-linux-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:11:40Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7663,12 +7992,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-win32-arm64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:11:20Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7686,12 +8016,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-linux-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:11:05Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7709,12 +8040,13 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": "0.171.0-alpha.6",
    "version": "0.171.0-alpha.6-win32-x64",
    "yanked_or_deprecated": false
   },
   {
-   "bump": null,
+   "bump": "prerelease",
    "date": "2026-11-15T19:06:22Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -7732,6 +8064,7 @@
    "prerelease": true,
    "prev_version": null,
    "quotes": [],
+   "semver_bump": null,
    "variant_of": null,
    "version": "0.171.0-alpha.6",
    "yanked_or_deprecated": false
