@@ -895,7 +895,7 @@ def restore_release(rec: dict, pkg: dict) -> dict | None:
         "bump": rec.get("bump") or "unknown", "prev_version": rec.get("prev_version"),
         "flagged": bool(rec.get("flagged")), "quotes": [dict(q, incomplete=bool(q.get("quote_incomplete", q.get("incomplete")))) for q in (rec.get("quotes") or []) if isinstance(q, dict)], "no_notes": bool(rec.get("no_notes")),
         "no_notes_checked": (str(rec.get("no_notes_checked"))[:10] if rec.get("no_notes") and rec.get("no_notes_checked") else None),
-        "pkg_path": pkg["path"], "errata_url": eu, "errata_go": go_id(eu) if eu else None,
+        "pkg_path": pkg["path"], "gh_repo": pkg.get("repo"), "errata_url": eu, "errata_go": go_id(eu) if eu else None,
         "notes_format": "pr_list" if rec.get("notes_format") == "pr_list" else None,
         "notes_pr_list_only": bool(rec.get("notes_pr_list_only")),
     }
@@ -1095,7 +1095,7 @@ def collect(http: Http, packages: list[tuple[str, str]], ignore: list[re.Pattern
                 "notes_url": notes_url, "notes_kind": notes_kind, "notes_go": go_id(notes_url) if notes_url else None,
                 "bump": "prerelease" if gh and gh.get("prerelease") else compute_bump(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
                 "prev_version": None if gh and gh.get("prerelease") else compute_prev(eco, ver, [x["version"] for x in vers_all] + ([lat] if lat else [])),
-                "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes,
+                "flagged": bool(quotes), "quotes": quotes, "no_notes": no_notes, "gh_repo": pkg["repo"],
                 "no_notes_checked": (reused["no_notes_checked"] if reused else now.strftime("%Y-%m-%d")) if no_notes else None, "pkg_path": pkg["path"],
                 "notes_format": nfmt,
                 "notes_pr_list_only": reused["notes_pr_list_only"] if reused else bool(gh and gh.get("url") and notes_pr_list_only(gh.get("body") or "")),
@@ -1226,6 +1226,16 @@ def bump_step_line(r: dict) -> str:
     return f'<p class="note bumpstep">Keyword match in a {kind} release ({esc(r["prev_version"])} → {esc(r["version"])})</p>'
 
 
+def no_notes_line(r: dict, now: datetime) -> str:
+    """T-0178: card without fetched notes: the source looked at, the tag and the build date (UTC)."""
+    day = esc(now.strftime("%Y-%m-%d"))
+    repo = r.get("gh_repo")
+    if repo:
+        return (f'<p class="note nonote">No release notes found on GitHub Releases for {esc(repo)} at tag {esc(r["version"])} '
+                f'· checked {day} UTC</p>')
+    return f'<p class="note nonote">No GitHub repository known for this package · checked {day} UTC</p>'
+
+
 def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: bool = False, variants: list | None = None) -> str:
     flagged = ' flagged' if r["flagged"] else ""
     badges = []
@@ -1239,11 +1249,8 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
     bump = f'<span class="pre bump">{esc(r["bump"])}</span>'
     if r["flagged"]:
         honest = ""
-    elif r.get("no_notes"):
-        honest = (f'<p class="note nonote">No release notes found on GitHub Releases or in CHANGELOG.md for '
-                  f'{esc(r["version"])} (checked {esc(r.get("no_notes_checked") or now.strftime("%Y-%m-%d"))} UTC)</p>')
     elif r["notes_kind"] != "github_release":
-        honest = '<p class="note nonote">Notes not fetched in this build</p>'
+        honest = no_notes_line(r, now)
     else:
         honest = '<p class="note nonote">No breaking keyword in the release notes (regex match only; changes the notes do not mention are not detected).</p>'
     yanked = '<span class="pre">yanked / deprecated</span>' if r.get("yanked") else ""
