@@ -127,9 +127,19 @@ def group_variants(rels: list[dict]) -> list[tuple[dict, list[dict]]]:
     return out
 
 
-def render_variant_items(variants: list[dict], now: datetime) -> str:
+def version_anchor(version: str) -> str:
+    """T-0182: stable per-version anchor id on /pkg/ pages: `v<version>`, chars other than alnum and dots become '-'."""
+    return "v" + re.sub(r"[^A-Za-z0-9.]", "-", str(version))
+
+
+def render_variant_items(variants: list[dict], now: datetime, pkg_anchor: bool = False) -> str:
     items = []
     for v in variants:
+        if pkg_anchor:
+            fl = ' <span class="badge flag">breaking / deprecated wording</span>' if v["flagged"] else ""
+            q = "".join(render_quote(x) for x in v["quotes"])
+            items.append(f'<li id="{esc(version_anchor(v["version"]))}"><code>{esc(v["version"])}</code> · {esc(fmt_date(v["date"]))}{fl}{q}</li>')
+            continue
         fl = ' <span class="badge flag">breaking / deprecated wording</span>' if v["flagged"] else ""
         q = "".join(render_quote(x) for x in v["quotes"])
         items.append(f'<li id="{esc(safe_fs_name(v["id"]))}"><code>{esc(v["version"])}</code> · {esc(fmt_date(v["date"]))}{fl}{q}</li>')
@@ -137,12 +147,13 @@ def render_variant_items(variants: list[dict], now: datetime) -> str:
 
 
 def render_group_card(base: str, first: dict, variants: list[dict], now: datetime, show_pkg_link: bool = True) -> str:
+    pkg_page = not show_pkg_link
     name_html = f'<a href="{esc(first["pkg_path"])}">{esc(first["name"])}</a>' if show_pkg_link else esc(first["name"])
     flagged = " flagged" if any(v["flagged"] for v in variants) else ""
     return (f'<li class="card group{flagged}"><div class="head"><span class="badge eco">{esc(first["ecosystem"])}</span>'
             f'<span class="name">{name_html}</span><span class="ver">{esc(base)} platform builds</span></div>'
             f'<p class="note">The base version {esc(base)} is not in this list.</p>'
-            f'<ul class="variant-list">{render_variant_items(variants, now)}</ul></li>')
+            f'<ul class="variant-list">{render_variant_items(variants, now, pkg_page)}</ul></li>')
 
 
 def render_cards(rels: list[dict], now: datetime, **kw) -> str:
@@ -1289,7 +1300,7 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
         links = ""
     vhtml = ""
     if variants:
-        vs = render_variant_items(variants, now)
+        vs = render_variant_items(variants, now, not show_pkg_link)
         vhtml = f'<details class="variants"><summary>{len(variants)} platform builds</summary><ul>{vs}</ul></details>'
     links += cmp_link + f'<a href="{esc(r["pkg_path"])}index.json">JSON</a>'
     vid = vote_id(r)
@@ -1300,7 +1311,13 @@ def render_card(r: dict, now: datetime, show_pkg_link: bool = True, notes_top: b
                 f'<a href="{REPO_ISSUES_URL}?title={issue_title}&amp;body={issue_body.replace("&", "&amp;")}" rel="nofollow">Report an error</a></span>')
     fb = r.get("followed_by")
     fb_html = (f'<p class="note followed">{followed_text(fb)}</p>' if fb else "")
-    return (f'<li class="card{flagged}" id="{esc(safe_fs_name(r["id"]))}">'
+    if show_pkg_link:
+        idattr = f'id="{esc(safe_fs_name(r["id"]))}"'
+        old_anchor = ""
+    else:  # T-0182: /pkg/ pages use #v<version>; the old id stays as an anchor inside the card
+        idattr = f'id="{esc(version_anchor(r["version"]))}"'
+        old_anchor = f'<a id="{esc(safe_fs_name(r["id"]))}"></a>'
+    return (f'<li class="card{flagged}" {idattr}>{old_anchor}'
             f'<div class="head"><span class="badge eco">{esc(r["ecosystem"])}</span><span class="name">{name_html}</span>'
             f'<span class="ver">{esc(r["version"])}</span>{bump}{pre}{yanked}'
             f'<span class="when" title="{esc(fmt_date(r["date"]))}">{esc(fmt_date(r["date"]))} · {esc(fmt_ago(r["date"], now))}</span>'
@@ -1547,6 +1564,21 @@ def package_facts(p: dict, model: dict) -> str:
     return f'<p class="facts">{head}{mid}. Sources: {src}. Checked {chk} UTC.</p>'
 
 
+def flagged_across_versions(p: dict) -> str:
+    """T-0182: every flagged record of the package (releases + history), oldest first; existing quotes only."""
+    recs = {r["id"]: r for r in list(p["releases"]) + list(p.get("history") or [])}.values()
+    dates = [r["date"] for r in recs if r.get("date")]
+    since = (p.get("history_since") and fmt_date(p["history_since"])[:10]) or (min(dates)[:10] if dates else "")
+    fl = sorted((r for r in recs if r["flagged"]), key=lambda r: (r["date"] or "", r["version"]))
+    if not fl:
+        return f'<h2 id="flagged-across-versions">Flagged across versions</h2><p class="note">No flagged releases in our history since {esc(since)}</p>'
+    items = "".join(
+        f'<li><a href="#{esc(version_anchor(r["version"]))}"><code>{esc(r["version"])}</code></a> · {esc(fmt_date(r["date"]))}'
+        f'{"".join(render_quote(q) for q in r["quotes"])}</li>' for r in fl)
+    return (f'<h2 id="flagged-across-versions">Flagged across versions (since {esc(since)})</h2>'
+            f'<ul class="flagged-across">{items}</ul>')
+
+
 def render_package(p: dict, model: dict) -> str:
     now = parse_dt(model["built"]) or utcnow()
     e = p.get("errata")
@@ -1574,6 +1606,7 @@ def render_package(p: dict, model: dict) -> str:
         body.append(f'<p class="latest-stable"><b>Latest stable:</b> <code>{esc(ls["version"])}</code> ({esc(ls_date)}, source: registry)</p>')
     else:
         body.append('<p class="latest-stable"><b>Latest stable:</b> unknown (source: registry)</p>')
+    body.append(flagged_across_versions(p))
     n_pre = sum(1 for r in p["releases"] if r["prerelease"])
     n_stable = len(p["releases"]) - n_pre
     body.append(f'<h2>Releases in the last {WINDOW_DAYS} days ({len(p["releases"])}: {n_stable} stable, {n_pre} pre-releases)</h2>')
@@ -1921,6 +1954,7 @@ def render_llms(model: dict) -> str:
               "- semver_bump: `major`, `minor`, `patch`, `0.x` or null; the kind of step from the previous stable version, from version numbers only",
               "- followed_by: `{version, date, hours}` when a later stable version of the same major.minor line appeared within 168 h (registry dates), otherwise null",
               "- bump: older field, `major`, `minor`, `patch`, `prerelease` or `unknown`",
+              f"- Flagged releases with version > X and <= Y: read `releases` and `history` of {SITE_BASE}/pkg/<ecosystem>/<name>/index.json and keep the records with `flagged` true whose `version` lies in that range; the same list, oldest first, is on the /pkg/ page under 'Flagged across versions', with a #v<version> anchor per version.",
               "- The flag is a regex match on the release notes. Changes the notes do not mention are not detected; no flag does not mean safe. The file lists releases per package; there is no version-range query.",
               "", "## today.json release fields", "",
               f"{SITE_BASE}/today.json has top-level keys built, window_start, window_days, counts, site, disclosure and releases. Each item of `releases` has these keys:",

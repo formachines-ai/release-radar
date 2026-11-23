@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-23T06:00:10Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-23T06:54:29Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -149,6 +149,7 @@ For an X → Y bump of one package, read https://releases.formachines.ai/pkg/<ec
 - semver_bump: `major`, `minor`, `patch`, `0.x` or null; the kind of step from the previous stable version, from version numbers only
 - followed_by: `{version, date, hours}` when a later stable version of the same major.minor line appeared within 168 h (registry dates), otherwise null
 - bump: older field, `major`, `minor`, `patch`, `prerelease` or `unknown`
+- Flagged releases with version > X and <= Y: read `releases` and `history` of https://releases.formachines.ai/pkg/<ecosystem>/<name>/index.json and keep the records with `flagged` true whose `version` lies in that range; the same list, oldest first, is on the /pkg/ page under 'Flagged across versions', with a #v<version> anchor per version.
 - The flag is a regex match on the release notes. Changes the notes do not mention are not detected; no flag does not mean safe. The file lists releases per package; there is no version-range query.
 
 ## today.json release fields
