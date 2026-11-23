@@ -10,7 +10,7 @@
   "tag-for-publishing-older-releases": "4.1.6"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-22T06:01:32Z",
+ "fetched": "2026-11-23T06:01:42Z",
  "homepage": "https://www.typescriptlang.org/",
  "latest": "7.0.2",
  "name": "typescript",
@@ -457,11 +457,6 @@
    "date": "2026-08-25T08:53:06Z",
    "deprecated": false,
    "version": "7.1.0-dev.20260825.1"
-  },
-  {
-   "date": "2026-08-24T08:29:46Z",
-   "deprecated": false,
-   "version": "7.1.0-dev.20260824.1"
   },
   {
    "date": "2026-07-08T15:55:18Z",

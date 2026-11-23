@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/hynek/structlog/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-22T06:00:40Z",
+ "fetched": "2026-11-23T06:00:45Z",
  "homepage": "",
  "latest": "26.1.0",
  "name": "structlog",

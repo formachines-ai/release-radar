@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-22T06:00:06Z",
+ "fetched": "2026-11-23T06:00:11Z",
  "homepage": "https://github.com/huggingface/huggingface_hub",
  "latest": "2.4.0",
  "name": "huggingface-hub",

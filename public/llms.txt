@@ -4,7 +4,7 @@
 
 Built by AI agents (agent-team) without human editing; responsible: Dmitry, formachines.ai. License of our data: CC BY 4.0. No tracking.
 
-Updated: 2026-11-22T18:30:40Z UTC (daily build 06:00 UTC)
+Updated: 2026-11-23T06:00:10Z UTC (daily build 06:00 UTC)
 
 ## Data
 
@@ -33,7 +33,7 @@ Updated: 2026-11-22T18:30:40Z UTC (daily build 06:00 UTC)
 - [@openai/codex (npm)](https://releases.formachines.ai/pkg/npm/@openai/codex/): latest 0.171.0 · JSON: https://releases.formachines.ai/pkg/npm/@openai/codex/index.json
 - [@prisma/client (npm)](https://releases.formachines.ai/pkg/npm/@prisma/client/): latest 7.10.1 · JSON: https://releases.formachines.ai/pkg/npm/@prisma/client/index.json
 - [@supabase/supabase-js (npm)](https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/): latest 2.119.2 · JSON: https://releases.formachines.ai/pkg/npm/@supabase/supabase-js/index.json
-- [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.108.2 · JSON: https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json
+- [@tanstack/react-query (npm)](https://releases.formachines.ai/pkg/npm/@tanstack/react-query/): latest 5.108.3 · JSON: https://releases.formachines.ai/pkg/npm/@tanstack/react-query/index.json
 - [ai (npm)](https://releases.formachines.ai/pkg/npm/ai/): latest 7.0.179 · JSON: https://releases.formachines.ai/pkg/npm/ai/index.json
 - [astro (npm)](https://releases.formachines.ai/pkg/npm/astro/): latest 7.4.13 · JSON: https://releases.formachines.ai/pkg/npm/astro/index.json
 - [axios (npm)](https://releases.formachines.ai/pkg/npm/axios/): latest 1.21.1 · JSON: https://releases.formachines.ai/pkg/npm/axios/index.json
@@ -45,7 +45,7 @@ Updated: 2026-11-22T18:30:40Z UTC (daily build 06:00 UTC)
 - [express (npm)](https://releases.formachines.ai/pkg/npm/express/): latest 5.3.0 · JSON: https://releases.formachines.ai/pkg/npm/express/index.json
 - [fastify (npm)](https://releases.formachines.ai/pkg/npm/fastify/): latest 5.12.8 · JSON: https://releases.formachines.ai/pkg/npm/fastify/index.json
 - [firebase (npm)](https://releases.formachines.ai/pkg/npm/firebase/): latest 13.4.0 · Errata correction available · JSON: https://releases.formachines.ai/pkg/npm/firebase/index.json
-- [hono (npm)](https://releases.formachines.ai/pkg/npm/hono/): latest 4.13.19 · JSON: https://releases.formachines.ai/pkg/npm/hono/index.json
+- [hono (npm)](https://releases.formachines.ai/pkg/npm/hono/): latest 4.13.20 · JSON: https://releases.formachines.ai/pkg/npm/hono/index.json
 - [ioredis (npm)](https://releases.formachines.ai/pkg/npm/ioredis/): latest 6.0.0 · JSON: https://releases.formachines.ai/pkg/npm/ioredis/index.json
 - [jest (npm)](https://releases.formachines.ai/pkg/npm/jest/): latest 30.5.2 · JSON: https://releases.formachines.ai/pkg/npm/jest/index.json
 - [langchain (npm)](https://releases.formachines.ai/pkg/npm/langchain/): latest 1.6.7 · JSON: https://releases.formachines.ai/pkg/npm/langchain/index.json

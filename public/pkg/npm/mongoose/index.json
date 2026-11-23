@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -69,7 +69,7 @@
   "date": "2026-11-20T19:13:09Z",
   "version": "9.12.3"
  },
- "metadata_fetched": "2026-11-22T06:01:16Z",
+ "metadata_fetched": "2026-11-23T06:01:25Z",
  "package": "mongoose",
  "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
  "prereleases_in_window": 0,
@@ -111,7 +111,7 @@
    "id": "npm/mongoose/6.13.13",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-22",
+   "no_notes_checked": "2026-11-23",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/14d604494f/",
    "notes_url": "https://github.com/Automattic/mongoose/releases",
@@ -136,7 +136,7 @@
    "id": "npm/mongoose/7.8.14",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": true,
-   "no_notes_checked": "2026-11-22",
+   "no_notes_checked": "2026-11-23",
    "notes_kind": "repo_releases",
    "notes_redirect": "https://releases.formachines.ai/go/14d604494f/",
    "notes_url": "https://github.com/Automattic/mongoose/releases",

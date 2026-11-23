@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T06:00:45Z",
+ "fetched": "2026-11-23T06:00:51Z",
  "releases": [
   {
    "body": "## [3.6.1](https://github.com/googleapis/js-genai/compare/v3.6.0...v3.6.1) (2026-11-18)\n\n\n### Bug Fixes\n\n* update sdk enum ([634630d](https://github.com/googleapis/js-genai/commit/634630d93422c531d7cccc737cd233598effbb75))",

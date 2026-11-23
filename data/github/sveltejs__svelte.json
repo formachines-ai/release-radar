@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T06:01:30Z",
+ "fetched": "2026-11-23T06:01:40Z",
  "releases": [
   {
    "body": "### Patch Changes\n\n-   fix: keep `hydrate` and `mount` type parameters in sync so a union of them is callable ([#19357](https://github.com/sveltejs/svelte/pull/19357))\n",

@@ -5,7 +5,7 @@
   "next": "2.9.0-rc.0"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-22T06:00:44Z",
+ "fetched": "2026-11-23T06:00:51Z",
  "homepage": "https://github.com/googleapis/js-genai#readme",
  "latest": "3.6.1",
  "name": "@google/genai",

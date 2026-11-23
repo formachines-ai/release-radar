@@ -1,6 +1,30 @@
 {
- "fetched": "2026-11-22T06:01:16Z",
+ "fetched": "2026-11-23T06:01:25Z",
  "releases": [
+  {
+   "body": "## What's Changed\r\n* fix(client): keep class instances in the init options as they are in https://github.com/honojs/hono/pull/5650\r\n* fix(compress): send the compressed response headers for HEAD requests in https://github.com/honojs/hono/pull/5651\r\n* fix(cookie): do not accept a lone double quote as a cookie value in https://github.com/honojs/hono/pull/5652\r\n* fix(helper/websocket): do not depend on DOM-only types in https://github.com/honojs/hono/pull/5653\r\n* fix(utils/types): keep JSONParsed cheap for non-recursive types in https://github.com/honojs/hono/pull/5658\r\n* fix(jsx/dom): restore the useActionState changes removed by #5636 in https://github.com/honojs/hono/pull/5656\r\n* fix(jsx): isolate the value of each async Provider in https://github.com/honojs/hono/pull/5660\r\n* fix(utils/types): keep an optional property optional in JSONParsed in https://github.com/honojs/hono/pull/5664\r\n* fix(aws-lambda,lambda-edge): keep a leading UTF-8 BOM in a text body in https://github.com/honojs/hono/pull/5665\r\n\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.19...v4.13.20",
+   "date": "2026-11-22T06:39:39Z",
+   "name": "v4.13.20",
+   "prerelease": false,
+   "tag": "v4.13.20",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.20"
+  },
+  {
+   "body": "## What's Changed\r\n\r\n- fix(aws-lambda,lambda-edge): keep a leading UTF-8 BOM in a text body (#5665)\r\n- fix(lambda-edge): omit body in a 204 result (#5643)",
+   "date": "2026-11-22T06:33:03Z",
+   "name": "@hono/lambda-edge@1.0.2",
+   "prerelease": false,
+   "tag": "@hono/lambda-edge@1.0.2",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/lambda-edge%401.0.2"
+  },
+  {
+   "body": "## What's Changed\r\n\r\n- fix(aws-lambda,lambda-edge): keep a leading UTF-8 BOM in a text body (#5665)\r\n- fix(aws-lambda): sanitize non-ASCII header values in API Gateway v2 events (#5483)",
+   "date": "2026-11-22T06:32:55Z",
+   "name": "@hono/aws-lambda@1.0.2",
+   "prerelease": false,
+   "tag": "@hono/aws-lambda@1.0.2",
+   "url": "https://github.com/honojs/hono/releases/tag/%40hono/aws-lambda%401.0.2"
+  },
   {
    "body": "## What's Changed\r\n\r\n* fix(jsx): render an async component that returns null, a boolean, or a  number in https://github.com/honojs/hono/pull/5594\r\n* fix(jsx/dom): align useActionState with React 19 in https://github.com/honojs/hono/pull/5635\r\n* fix(jsx/dom): reset a form's pending state when its action rejects in https://github.com/honojs/hono/pull/5636\r\n* fix(jsx/dom): keep an ErrorBoundary in sync when its parent re-renders in https://github.com/honojs/hono/pull/5638\r\n* fix(jsx/dom): keep keyed components in order when they update with a reorder in https://github.com/honojs/hono/pull/5637\r\n* fix(bun): pass errors thrown in WebSocket handlers to onError in https://github.com/honojs/hono/pull/5620\r\n* fix(proxy): drop Transfer-Encoding and Keep-Alive from the headers option in https://github.com/honojs/hono/pull/5640\r\n* fix(method-override): drop the body when overriding to GET or HEAD in https://github.com/honojs/hono/pull/5641\r\n* fix(jsx/dom): restore attributes and effects when Suspense children suspend again in https://github.com/honojs/hono/pull/5642\r\n* fix(combine): continue the chain when a Condition returns true in every() in https://github.com/honojs/hono/pull/5392\r\n* docs: fix JSDoc parameter types and missing annotations in middleware and helpers in https://github.com/honojs/hono/pull/5409\r\n* fix(jsx/dom): keep a falsy Suspense fallback in https://github.com/honojs/hono/pull/5644\r\n* fix(lambda-edge): omit body in a 204 result in https://github.com/honojs/hono/pull/5643\r\n* fix(utils/types): stop JSONParsed at a recursive JSON type in https://github.com/honojs/hono/pull/5645\r\n* feat(secure-headers): add an overwrite option in https://github.com/honojs/hono/pull/5634\r\n* feat(jwt): add a typ option to verify the token header in https://github.com/honojs/hono/pull/5639\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.18...v4.13.19",
    "date": "2026-11-16T12:58:07Z",
@@ -376,30 +400,6 @@
    "prerelease": false,
    "tag": "v4.12.20",
    "url": "https://github.com/honojs/hono/releases/tag/v4.12.20"
-  },
-  {
-   "body": "## What's Changed\r\n* ci: pin GitHub Actions to SHAs by @yusukebe in https://github.com/honojs/hono/pull/4932\r\n* fix(serveStatic): make options parameter optional in all adapters by @mixelburg in https://github.com/honojs/hono/pull/4934\r\n* fix(cookie): return the first cookie when there are multiple cookies with the same name by @usualoma in https://github.com/honojs/hono/pull/4922\r\n* feat(bearer-auth): make bearerAuth generic for typed context in verifyToken by @justinnais in https://github.com/honojs/hono/pull/4913\r\n* feat(cache): key cache entries by configured vary headers by @usualoma in https://github.com/honojs/hono/pull/4915\r\n* feat(request): add `bytes()` by @yusukebe in https://github.com/honojs/hono/pull/4921\r\n* fix(stream): upgrade `@hono/node-server` to v2 and fix abort handling by @yusukebe in https://github.com/honojs/hono/pull/4940\r\n\r\n## New Contributors\r\n* @justinnais made their first contribution in https://github.com/honojs/hono/pull/4913\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.18...v4.12.19",
-   "date": "2026-05-16T10:17:09Z",
-   "name": "v4.12.19",
-   "prerelease": false,
-   "tag": "v4.12.19",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.19"
-  },
-  {
-   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### Cache Middleware ignores Vary: Authorization / Vary: Cookie leading to cross-user cache leakage\r\n\r\nAffects: Cache Middleware. Fixes missing cache-skip handling for `Vary: Authorization` and `Vary: Cookie`, where a response cached for one authenticated user could be served to other users. GHSA-p77w-8qqv-26rm\r\n\r\n### CSS Declaration Injection via Style Object Values in JSX SSR\r\n\r\nAffects: hono/jsx. Fixes a missing CSS-context escape for `style` object values and property names, where untrusted input could inject additional CSS declarations. The impact is limited to CSS and does not allow JavaScript execution. GHSA-qp7p-654g-cw7p\r\n\r\n### Improper validation of NumericDate claims (exp, nbf, iat) in JWT verify()\r\n\r\nAffects: `hono/utils/jwt`. Fixes improper validation of `exp`, `nbf`, and `iat` claims, where falsy, non-finite, or non-numeric values could silently bypass time-based checks instead of being rejected per RFC 7519. GHSA-hm8q-7f3q-5f36\r\n\r\n---\r\n\r\nUsers who use the JWT helper, hono/jsx, or the Cache middleware are strongly encouraged to upgrade to this version.",
-   "date": "2026-05-06T11:39:35Z",
-   "name": "v4.12.18",
-   "prerelease": false,
-   "tag": "v4.12.18",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.18"
-  },
-  {
-   "body": "## What's Changed\r\n* fix(jsx): normalize SVG attributes on the <svg> root element by @kfly8 in https://github.com/honojs/hono/pull/4893\r\n* fix(ssg): add `atom+xml` and `rss+xml` to `defaultExtensionMap` by @yuintei in https://github.com/honojs/hono/pull/4899\r\n* fix(cors): make origin optional in CORSOptions by @truffle-dev in https://github.com/honojs/hono/pull/4905\r\n* fix(types): propagate middleware response types to app.on overloads by @T4ko0522 in https://github.com/honojs/hono/pull/4906\r\n\r\n## New Contributors\r\n* @kfly8 made their first contribution in https://github.com/honojs/hono/pull/4893\r\n* @truffle-dev made their first contribution in https://github.com/honojs/hono/pull/4905\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.16...v4.12.17",
-   "date": "2026-05-05T09:31:04Z",
-   "name": "v4.12.17",
-   "prerelease": false,
-   "tag": "v4.12.17",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.17"
   }
  ],
  "repo": "honojs/hono"

@@ -1,22 +1,9 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": "https://numpy.org/doc/stable/release",
  "ecosystem": "pypi",
  "errata": null,
- "history": [],
- "history_days": 90,
- "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.5.5",
- "latest_stable": {
-  "date": "2026-11-15T21:30:10Z",
-  "version": "2.5.5"
- },
- "metadata_fetched": "2026-11-22T06:00:28Z",
- "package": "numpy",
- "page": "https://releases.formachines.ai/pkg/pypi/numpy/",
- "prereleases_in_window": 0,
- "registry": "https://pypi.org/project/numpy/",
- "releases": [
+ "history": [
   {
    "bump": "patch",
    "date": "2026-11-15T21:30:10Z",
@@ -42,7 +29,20 @@
    "yanked_or_deprecated": false
   }
  ],
+ "history_days": 90,
+ "history_since": "2026-11-05T01:15:50Z",
+ "latest": "2.5.5",
+ "latest_stable": {
+  "date": "2026-11-15T21:30:10Z",
+  "version": "2.5.5"
+ },
+ "metadata_fetched": "2026-11-23T06:00:33Z",
+ "package": "numpy",
+ "page": "https://releases.formachines.ai/pkg/pypi/numpy/",
+ "prereleases_in_window": 0,
+ "registry": "https://pypi.org/project/numpy/",
+ "releases": [],
  "repository": "https://github.com/numpy/numpy",
- "stable_in_window": 1,
+ "stable_in_window": 0,
  "summary": "Fundamental package for array computing in Python"
 }

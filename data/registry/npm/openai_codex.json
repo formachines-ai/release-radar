@@ -173,7 +173,7 @@
   "win32-x64": "0.171.0-win32-x64"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-22T06:00:46Z",
+ "fetched": "2026-11-23T06:00:53Z",
  "homepage": "https://github.com/openai/codex#readme",
  "latest": "0.171.0",
  "name": "@openai/codex",
@@ -10420,41 +10420,6 @@
    "date": "2026-08-25T12:58:13Z",
    "deprecated": false,
    "version": "0.150.0-alpha.9-darwin-arm64"
-  },
-  {
-   "date": "2026-08-24T22:30:53Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-darwin-arm64"
-  },
-  {
-   "date": "2026-08-24T22:23:44Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-win32-arm64"
-  },
-  {
-   "date": "2026-08-24T22:21:49Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8"
-  },
-  {
-   "date": "2026-08-24T22:21:21Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-win32-x64"
-  },
-  {
-   "date": "2026-08-24T22:18:24Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-darwin-x64"
-  },
-  {
-   "date": "2026-08-24T22:18:02Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-linux-arm64"
-  },
-  {
-   "date": "2026-08-24T22:17:38Z",
-   "deprecated": false,
-   "version": "0.150.0-alpha.8-linux-x64"
   }
  ]
 }

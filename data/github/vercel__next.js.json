@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-22T06:01:23Z",
+ "fetched": "2026-11-23T06:01:33Z",
  "releases": [
+  {
+   "body": "### Core Changes\n\n- [image-optimizer] Add experimental support for @next/safe-image-optimization: #101254\n\n### Misc Changes\n\n- turbo-tasks-backend: report the caller location for missing-task panics: #102169\n- Turbopack: recover from an unreadable persistent cache at startup: #101954\n- Stop publishing Go endpoint output after its handler is removed: #102166\n\n### Credits \n\nHuge thanks to @lukesandberg and @bgw for helping!",
+   "date": "2026-11-22T23:42:54Z",
+   "name": "v16.5.0-canary.61",
+   "prerelease": true,
+   "tag": "v16.5.0-canary.61",
+   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.61"
+  },
   {
    "body": "### Core Changes\n\n- switchyard: tell Switchyard the app's route.go paths and workers: #102101\n\n### Misc Changes\n\n- Turbopack: resolve app directory entries in a filesystem-independent order: #102186\n- docs: update Route Handler AI SDK streaming examples: #102192\n\n### Credits \n\nHuge thanks to @sokra, @aurorascharff, and @jamiboym for helping!",
    "date": "2026-11-21T23:43:40Z",
@@ -392,14 +400,6 @@
    "prerelease": true,
    "tag": "v16.5.0-canary.16",
    "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.16"
-  },
-  {
-   "body": "### Core Changes\n\n- Hoist app page request URL into render context: #99269\n- Hide overlay editor button labels on smaller screens: #100266\n- Prefer non-partial entries regardless of FetchStrategy: #99705\n- [Partial Prefetching] Don't report vary params in responses that include dynamic data: #99700\n- [Partial Prefetching] Small optimizations and fixes: #99695\n- [Cached Navs] Extract the shell from a fully cached response: #99619\n- Refactor the navigation fetch and decode layering: #99618\n- [Cached Navs] Don't extract static stage: #99617\n- Make error overlay editor actions easier to discover: #100206\n\n### Misc Changes\n\n- Turbopack: don't inherit API route config from parent layouts: #100243\n- test: Add more segment config tests: #100242\n- Add more test coverage for non-Partial Prefetching behavior: #100133\n- chore: Remove package.json#workspaces: #100234\n- docs: Add Pages Router upgrade guides for versions 15 and 16: #100247\n- docs: note that 'use cache: private' results persist across requests in dev: #100252\n- test: unskip tests for Turbopack: #100185\n\n### Credits \n\nHuge thanks to @gnoff, @samselikoff, @mischnic, @acdlite, and @icyJoseph for helping!",
-   "date": "2026-10-15T23:44:24Z",
-   "name": "v16.5.0-canary.15",
-   "prerelease": true,
-   "tag": "v16.5.0-canary.15",
-   "url": "https://github.com/vercel/next.js/releases/tag/v16.5.0-canary.15"
   }
  ],
  "repo": "vercel/next.js"

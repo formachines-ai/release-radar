@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -465,7 +465,7 @@
   },
   {
    "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.144...@ai-sdk/openai@4.0.110",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.145...@ai-sdk/openai@4.0.110",
    "date": "2026-11-06T19:43:30Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -500,12 +500,37 @@
   "date": "2026-11-20T16:51:44Z",
   "version": "4.0.122"
  },
- "metadata_fetched": "2026-11-22T06:00:40Z",
+ "metadata_fetched": "2026-11-23T06:00:46Z",
  "package": "@ai-sdk/openai",
  "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@ai-sdk/openai",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@3.0.144...@ai-sdk/openai@3.0.145",
+   "date": "2026-11-22T22:27:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "npm/@ai-sdk/openai/3.0.145",
+   "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/4d74222987/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/%40ai-sdk/openai%403.0.145",
+   "package": "@ai-sdk/openai",
+   "page": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/",
+   "prerelease": false,
+   "prev_version": "3.0.144",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "3.0.145",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/vercel/ai/compare/@ai-sdk/openai@4.0.121...@ai-sdk/openai@4.0.122",
@@ -625,7 +650,11 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-22",
+    "hours": 123,
+    "version": "3.0.145"
+   },
    "id": "npm/@ai-sdk/openai/3.0.144",
    "json": "https://releases.formachines.ai/pkg/npm/@ai-sdk/openai/index.json",
    "no_notes": false,
@@ -645,6 +674,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 5,
+ "stable_in_window": 6,
  "summary": ""
 }

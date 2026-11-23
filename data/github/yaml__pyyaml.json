@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T06:00:30Z",
+ "fetched": "2026-11-23T06:00:35Z",
  "releases": [
   {
    "body": "## What's Changed\r\n* Added support for Python 3.15.\r\n* Dropped support for EoL Python 3.8, 3.9.\r\n* Fixed exponential merge key expansion (#937).\r\n* Exposed libyaml 0.2.6 recursion control API (#1010) - no-op when missing.\r\n* Bumped wheel builds to libyaml 0.2.6.\r\n\r\n**Full Changelog**: https://github.com/yaml/pyyaml/compare/6.0.3...6.0.4",

@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/astral-sh/ruff/blob/main/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-22T06:00:30Z",
+ "fetched": "2026-11-23T06:00:36Z",
  "homepage": "https://docs.astral.sh/ruff",
  "latest": "0.17.6",
  "name": "ruff",

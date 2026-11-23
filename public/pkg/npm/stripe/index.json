@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -60,7 +60,7 @@
   "date": "2026-11-19T03:55:06Z",
   "version": "23.2.0"
  },
- "metadata_fetched": "2026-11-22T06:01:29Z",
+ "metadata_fetched": "2026-11-23T06:01:39Z",
  "package": "stripe",
  "page": "https://releases.formachines.ai/pkg/npm/stripe/",
  "prereleases_in_window": 2,

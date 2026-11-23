@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/ijl/orjson/blob/master/CHANGELOG.md",
  "ecosystem": "pypi",
- "fetched": "2026-11-22T06:00:29Z",
+ "fetched": "2026-11-23T06:00:34Z",
  "homepage": "",
  "latest": "3.13.0",
  "name": "orjson",

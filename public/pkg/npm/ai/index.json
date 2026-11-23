@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -620,7 +620,7 @@
   },
   {
    "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.333...ai@7.0.164",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.336...ai@7.0.164",
    "date": "2026-11-06T19:44:06Z",
    "ecosystem": "npm",
    "errata_url": null,
@@ -655,12 +655,37 @@
   "date": "2026-11-20T23:21:52Z",
   "version": "7.0.179"
  },
- "metadata_fetched": "2026-11-22T06:00:59Z",
+ "metadata_fetched": "2026-11-23T06:01:06Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/ai",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.333...ai@6.0.336",
+   "date": "2026-11-22T22:27:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "npm/ai/6.0.336",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/abcaec7e24/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.336",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "6.0.333",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "6.0.336",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.178...ai@7.0.179",
@@ -915,7 +940,11 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-22",
+    "hours": 123,
+    "version": "6.0.336"
+   },
    "id": "npm/ai/6.0.333",
    "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
    "no_notes": false,
@@ -941,6 +970,6 @@
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 9,
+ "stable_in_window": 10,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }

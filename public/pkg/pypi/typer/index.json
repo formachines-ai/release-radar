@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": "https://typer.tiangolo.com/release-notes/",
  "ecosystem": "pypi",
  "errata": null,
@@ -101,7 +101,7 @@
   "date": "2026-11-18T11:09:45Z",
   "version": "0.29.2"
  },
- "metadata_fetched": "2026-11-22T06:00:40Z",
+ "metadata_fetched": "2026-11-23T06:00:45Z",
  "package": "typer",
  "page": "https://releases.formachines.ai/pkg/pypi/typer/",
  "prereleases_in_window": 0,

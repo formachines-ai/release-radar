@@ -1,5 +1,5 @@
 {
- "built": "2026-11-22T18:30:40Z",
+ "built": "2026-11-23T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -36,7 +36,7 @@
   "date": "2026-11-13T21:33:34Z",
   "version": "10.15.0"
  },
- "metadata_fetched": "2026-11-22T06:01:14Z",
+ "metadata_fetched": "2026-11-23T06:01:23Z",
  "package": "eslint",
  "page": "https://releases.formachines.ai/pkg/npm/eslint/",
  "prereleases_in_window": 0,

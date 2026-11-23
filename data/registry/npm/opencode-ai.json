@@ -42,7 +42,7 @@
   "tui-v2": "0.0.0-tui-v2-202606261840"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-22T06:01:03Z",
+ "fetched": "2026-11-23T06:01:11Z",
  "homepage": "",
  "latest": "1.19.6",
  "name": "opencode-ai",
@@ -1504,101 +1504,6 @@
    "date": "2026-08-25T06:16:08Z",
    "deprecated": false,
    "version": "0.0.0-dev-202608250555"
-  },
-  {
-   "date": "2026-08-25T03:51:06Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608250334"
-  },
-  {
-   "date": "2026-08-25T03:18:33Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608250302"
-  },
-  {
-   "date": "2026-08-25T02:54:30Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608250233"
-  },
-  {
-   "date": "2026-08-24T22:49:27Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608242231"
-  },
-  {
-   "date": "2026-08-24T22:11:22Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608242154"
-  },
-  {
-   "date": "2026-08-24T21:54:17Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608242136"
-  },
-  {
-   "date": "2026-08-24T21:34:44Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608242116"
-  },
-  {
-   "date": "2026-08-24T20:46:07Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608242026"
-  },
-  {
-   "date": "2026-08-24T16:32:29Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241609"
-  },
-  {
-   "date": "2026-08-24T14:59:58Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241438"
-  },
-  {
-   "date": "2026-08-24T14:37:31Z",
-   "deprecated": false,
-   "version": "1.18.22"
-  },
-  {
-   "date": "2026-08-24T13:31:53Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241310"
-  },
-  {
-   "date": "2026-08-24T13:09:52Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241250"
-  },
-  {
-   "date": "2026-08-24T11:20:12Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241053"
-  },
-  {
-   "date": "2026-08-24T10:44:10Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241023"
-  },
-  {
-   "date": "2026-08-24T10:27:20Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608241003"
-  },
-  {
-   "date": "2026-08-24T08:17:25Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608240755"
-  },
-  {
-   "date": "2026-08-24T07:51:35Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608240735"
-  },
-  {
-   "date": "2026-08-24T07:37:26Z",
-   "deprecated": false,
-   "version": "0.0.0-dev-202608240717"
   }
  ]
 }
