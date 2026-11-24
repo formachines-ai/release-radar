@@ -1,23 +1,64 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "4.6.4",
+ "latest": "4.7.0",
  "latest_stable": {
-  "date": "2026-11-02T20:48:01Z",
-  "version": "4.6.4"
+  "date": "2026-11-23T23:21:35Z",
+  "version": "4.7.0"
  },
- "metadata_fetched": "2026-11-23T06:01:33Z",
+ "metadata_fetched": "2026-11-24T06:01:22Z",
  "package": "nuxt",
  "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/nuxt",
- "releases": [],
+ "releases": [
+  {
+   "bump": "minor",
+   "date": "2026-11-23T23:21:35Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/nuxt/4.7.0",
+   "json": "https://releases.formachines.ai/pkg/npm/nuxt/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/0e0714e827/",
+   "notes_url": "https://github.com/nuxt/nuxt/releases/tag/v4.7.0",
+   "package": "nuxt",
+   "page": "https://releases.formachines.ai/pkg/npm/nuxt/",
+   "prerelease": false,
+   "prev_version": "4.6.4",
+   "quotes": [
+    {
+     "match": "breaks",
+     "quote": "If something breaks for you (and it might), please [open an issue](https://github.com/nuxt/nuxt/issues/new/choose) and mention Nitro v3. ❤️",
+     "quote_incomplete": false
+    },
+    {
+     "match": "breaking",
+     "quote": "…routes in the same way, and ends by suggesting where to deploy. Logs from Nuxt and modules stay inside the build output rather than breaking out of it ([nuxt/cli#1705](https://github.com/nuxt/cli/pull/1705)), and with [nitropack…",
+     "quote_incomplete": true
+    },
+    {
+     "match": "no longer",
+     "quote": "One broken component no longer takes down the page: you get a `200`, the `#error` slot in its place, and the client hydrates into the same state.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "minor",
+   "variant_of": null,
+   "version": "4.7.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/nuxt/nuxt",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "Nuxt is a free and open-source framework with an intuitive and extendable way to create type-safe, performant and production-grade full-stack web applications and websites with Vue.js."
 }

@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-23T06:00:35Z",
+ "fetched": "2026-11-24T06:00:30Z",
  "homepage": "https://github.com/redis/redis-py",
- "latest": "8.1.0",
+ "latest": "8.2.0",
  "name": "redis",
  "page": "https://pypi.org/project/redis/",
  "repo": "redis/redis-py",
  "summary": "Python client for Redis database and key-value store",
  "versions": [
+  {
+   "date": "2026-11-23T08:31:55Z",
+   "version": "8.2.0",
+   "yanked": false
+  },
   {
    "date": "2026-11-04T17:01:53Z",
    "version": "8.2.0b1",
@@ -202,11 +207,6 @@
   {
    "date": "2024-07-30T14:11:49Z",
    "version": "5.0.8",
-   "yanked": false
-  },
-  {
-   "date": "2024-06-26T13:20:12Z",
-   "version": "5.0.7",
    "yanked": false
   }
  ]

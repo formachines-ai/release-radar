@@ -1,14 +1,19 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-23T06:00:17Z",
+ "fetched": "2026-11-24T06:00:11Z",
  "homepage": "https://github.com/boto/boto3",
- "latest": "1.44.9",
+ "latest": "1.44.10",
  "name": "boto3",
  "page": "https://pypi.org/project/boto3/",
  "repo": "boto/boto3",
  "summary": "The AWS SDK for Python (Boto3)",
  "versions": [
+  {
+   "date": "2026-11-23T21:28:44Z",
+   "version": "1.44.10",
+   "yanked": false
+  },
   {
    "date": "2026-11-21T01:33:34Z",
    "version": "1.44.9",
@@ -202,11 +207,6 @@
   {
    "date": "2026-09-21T19:37:16Z",
    "version": "1.43.99",
-   "yanked": false
-  },
-  {
-   "date": "2026-09-18T20:10:04Z",
-   "version": "1.43.98",
    "yanked": false
   }
  ]

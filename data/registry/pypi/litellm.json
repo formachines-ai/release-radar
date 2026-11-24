@@ -1,14 +1,29 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-23T06:00:13Z",
+ "fetched": "2026-11-24T06:00:07Z",
  "homepage": "https://litellm.ai",
- "latest": "1.110.2",
+ "latest": "1.110.3",
  "name": "litellm",
  "page": "https://pypi.org/project/litellm/",
  "repo": "BerriAI/litellm",
  "summary": "Library to easily interface with LLM API providers",
  "versions": [
+  {
+   "date": "2026-11-24T04:14:17Z",
+   "version": "1.109.4",
+   "yanked": false
+  },
+  {
+   "date": "2026-11-24T04:09:58Z",
+   "version": "1.110.3",
+   "yanked": false
+  },
+  {
+   "date": "2026-11-23T22:11:31Z",
+   "version": "1.108.16",
+   "yanked": false
+  },
   {
    "date": "2026-11-21T21:34:14Z",
    "version": "1.108.15",
@@ -192,21 +207,6 @@
   {
    "date": "2026-11-10T20:24:16Z",
    "version": "1.104.9",
-   "yanked": false
-  },
-  {
-   "date": "2026-11-10T20:20:12Z",
-   "version": "1.103.11",
-   "yanked": false
-  },
-  {
-   "date": "2026-11-09T22:56:38Z",
-   "version": "1.108.4",
-   "yanked": false
-  },
-  {
-   "date": "2026-11-08T02:21:46Z",
-   "version": "1.110.0.dev2",
    "yanked": false
   }
  ]

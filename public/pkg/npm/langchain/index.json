@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -151,12 +151,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.6.7",
+ "latest": "1.6.8",
  "latest_stable": {
-  "date": "2026-11-18T22:30:17Z",
-  "version": "1.6.7"
+  "date": "2026-11-24T03:50:43Z",
+  "version": "1.6.8"
  },
- "metadata_fetched": "2026-11-23T06:01:10Z",
+ "metadata_fetched": "2026-11-24T06:01:03Z",
  "package": "langchain",
  "page": "https://releases.formachines.ai/pkg/npm/langchain/",
  "prereleases_in_window": 0,
@@ -164,12 +164,47 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/langchain-ai/langchainjs/compare/langchain@1.6.7...langchain@1.6.8",
+   "date": "2026-11-24T03:50:43Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/langchain/1.6.8",
+   "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/971ac41ace/",
+   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.8",
+   "package": "langchain",
+   "page": "https://releases.formachines.ai/pkg/npm/langchain/",
+   "prerelease": false,
+   "prev_version": "1.6.7",
+   "quotes": [
+    {
+     "match": "Deprecate",
+     "quote": "…Thanks [@eliornl](https://github.com/eliornl)! - Deprecate content-block `streamEvents()` on chat models and `streamEvents(..., { version: \"v3\" })` on agents. `streamEvents` with `version:…",
+     "quote_incomplete": true
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "1.6.8",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/langchain-ai/langchainjs/compare/langchain@1.6.6...langchain@1.6.7",
    "date": "2026-11-18T22:30:17Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-24",
+    "hours": 125,
+    "version": "1.6.8"
+   },
    "id": "npm/langchain/1.6.7",
    "json": "https://releases.formachines.ai/pkg/npm/langchain/index.json",
    "no_notes": false,
@@ -195,6 +230,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchainjs",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Typescript bindings for langchain"
 }

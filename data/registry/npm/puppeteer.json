@@ -25,7 +25,7 @@
   "latest": "25.18.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-23T06:01:36Z",
+ "fetched": "2026-11-24T06:01:27Z",
  "homepage": "https://github.com/puppeteer/puppeteer/tree/main#readme",
  "latest": "25.18.1",
  "name": "puppeteer",
@@ -82,11 +82,6 @@
    "date": "2026-09-03T13:16:42Z",
    "deprecated": false,
    "version": "25.10.0"
-  },
-  {
-   "date": "2026-08-25T07:45:25Z",
-   "deprecated": false,
-   "version": "25.9.0"
   }
  ]
 }

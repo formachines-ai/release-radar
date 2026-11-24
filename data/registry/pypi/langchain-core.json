@@ -1,7 +1,7 @@
 {
  "changelog": "https://github.com/langchain-ai/langchain/releases?q=%22langchain-core%3D%3D1%22",
  "ecosystem": "pypi",
- "fetched": "2026-11-23T06:00:12Z",
+ "fetched": "2026-11-24T06:00:07Z",
  "homepage": "https://docs.langchain.com/",
  "latest": "1.8.4",
  "name": "langchain-core",

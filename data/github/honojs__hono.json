@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-23T06:01:25Z",
+ "fetched": "2026-11-24T06:01:18Z",
  "releases": [
+  {
+   "body": "## Hardening\r\n\r\n- `hono/jwt`: a JWT signature must be in the canonical Base64URL form. A signature with `=` padding, or with non-zero unused bits in the last character, is now rejected. Thanks to @xpcmdshell, @ongteckwu, @ffasterss, and @shirabe0x05 for the reports.\r\n- `hono/client`: a path param can no longer change the host of the request URL when the base URL is relative. Thanks to @ongteckwu for the report.\r\n\r\n## What's Changed\r\n* fix(client): do not change the host with a path param in https://github.com/honojs/hono/pull/5669\r\n* fix(client): remove trailing slashes of the base URL without a regular expression in https://github.com/honojs/hono/pull/5672\r\n* fix(jwt): accept only the canonical encoding of a signature in https://github.com/honojs/hono/pull/5673\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.20...v4.13.21\r\n",
+   "date": "2026-11-23T09:59:17Z",
+   "name": "v4.13.21",
+   "prerelease": false,
+   "tag": "v4.13.21",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.21"
+  },
   {
    "body": "## What's Changed\r\n* fix(client): keep class instances in the init options as they are in https://github.com/honojs/hono/pull/5650\r\n* fix(compress): send the compressed response headers for HEAD requests in https://github.com/honojs/hono/pull/5651\r\n* fix(cookie): do not accept a lone double quote as a cookie value in https://github.com/honojs/hono/pull/5652\r\n* fix(helper/websocket): do not depend on DOM-only types in https://github.com/honojs/hono/pull/5653\r\n* fix(utils/types): keep JSONParsed cheap for non-recursive types in https://github.com/honojs/hono/pull/5658\r\n* fix(jsx/dom): restore the useActionState changes removed by #5636 in https://github.com/honojs/hono/pull/5656\r\n* fix(jsx): isolate the value of each async Provider in https://github.com/honojs/hono/pull/5660\r\n* fix(utils/types): keep an optional property optional in JSONParsed in https://github.com/honojs/hono/pull/5664\r\n* fix(aws-lambda,lambda-edge): keep a leading UTF-8 BOM in a text body in https://github.com/honojs/hono/pull/5665\r\n\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.19...v4.13.20",
    "date": "2026-11-22T06:39:39Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v4.12.21",
    "url": "https://github.com/honojs/hono/releases/tag/v4.12.21"
-  },
-  {
-   "body": "## What's Changed\r\n* fix(route): preserve the base path of the mounted route() app by @usualoma in https://github.com/honojs/hono/pull/4942\r\n* fix(jsx): widen jsx and jsxFn children to Child[] by @ashunar0 in https://github.com/honojs/hono/pull/4947\r\n\r\n## New Contributors\r\n* @ashunar0 made their first contribution in https://github.com/honojs/hono/pull/4947\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.12.19...v4.12.20",
-   "date": "2026-05-19T10:41:30Z",
-   "name": "v4.12.20",
-   "prerelease": false,
-   "tag": "v4.12.20",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.20"
   }
  ],
  "repo": "honojs/hono"

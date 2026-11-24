@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -153,17 +153,48 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "1.5.0",
+ "latest": "1.5.1",
  "latest_stable": {
-  "date": "2026-11-20T18:55:04Z",
-  "version": "1.5.0"
+  "date": "2026-11-24T03:51:37Z",
+  "version": "1.5.1"
  },
- "metadata_fetched": "2026-11-23T06:00:52Z",
+ "metadata_fetched": "2026-11-24T06:00:40Z",
  "package": "@langchain/core",
  "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/@langchain/core",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/langchain-ai/langchainjs/compare/@langchain/core@1.5.0...@langchain/core@1.5.1",
+   "date": "2026-11-24T03:51:37Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/@langchain/core/1.5.1",
+   "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/ae9cdd9ed3/",
+   "notes_url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.5.1",
+   "package": "@langchain/core",
+   "page": "https://releases.formachines.ai/pkg/npm/@langchain/core/",
+   "prerelease": false,
+   "prev_version": "1.5.0",
+   "quotes": [
+    {
+     "match": "Deprecate",
+     "quote": "…Thanks [@eliornl](https://github.com/eliornl)! - Deprecate content-block `streamEvents()` on chat models and `streamEvents(..., { version: \"v3\" })` on agents. `streamEvents` with `version:…",
+     "quote_incomplete": true
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "1.5.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/langchain-ai/langchainjs/compare/@langchain/core@1.4.2...@langchain/core@1.5.0",
@@ -171,7 +202,11 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-24",
+    "hours": 80,
+    "version": "1.5.1"
+   },
    "id": "npm/@langchain/core/1.5.0",
    "json": "https://releases.formachines.ai/pkg/npm/@langchain/core/index.json",
    "no_notes": false,
@@ -222,6 +257,6 @@
   }
  ],
  "repository": "https://github.com/langchain-ai/langchainjs",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "Core LangChain.js abstractions and schemas"
 }

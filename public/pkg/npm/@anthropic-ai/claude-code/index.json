@@ -1,9 +1,54 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.325...v2.1.326",
+   "date": "2026-11-16T18:43:39Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "date": "2026-11-17",
+    "hours": 25,
+    "version": "2.1.327"
+   },
+   "id": "npm/@anthropic-ai/claude-code/2.1.326",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/328f5dc06a/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.325",
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "- Fixed a background session being killed and its request lost when you opened, stopped or removed the older session whose conversation it had resumed",
+     "quote_incomplete": false
+    },
+    {
+     "match": "removed",
+     "quote": "- Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication",
+     "quote_incomplete": false
+    },
+    {
+     "match": "removed",
+     "quote": "- Fixed code or a diff pasted into a prompt losing its indentation in the transcript, and a pasted diff's added lines showing as removed",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "2.1.326",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.323...v2.1.325",
@@ -243,12 +288,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.1.330",
+ "latest": "2.1.331",
  "latest_stable": {
-  "date": "2026-11-20T19:16:01Z",
-  "version": "2.1.330"
+  "date": "2026-11-23T18:36:26Z",
+  "version": "2.1.331"
  },
- "metadata_fetched": "2026-11-23T06:00:48Z",
+ "metadata_fetched": "2026-11-24T06:00:37Z",
  "package": "@anthropic-ai/claude-code",
  "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
  "prereleases_in_window": 0,
@@ -256,12 +301,57 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.330...v2.1.331",
+   "date": "2026-11-23T18:36:26Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/@anthropic-ai/claude-code/2.1.331",
+   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/800aeca2d3/",
+   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.331",
+   "package": "@anthropic-ai/claude-code",
+   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
+   "prerelease": false,
+   "prev_version": "2.1.330",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- Improved start-up time: a session started soon after another no longer waits for the model list, and one outside a git repository without `.claude/settings.local.json` no longer waits on git",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "- [VSCode] Fixed the chat no longer following Claude's reply after the panel was resized, or hidden and shown again",
+     "quote_incomplete": false
+    },
+    {
+     "match": "removed",
+     "quote": "- [VSCode] Improved how fast diffs appear in reopened conversations, and removed diff menu entries that did not work",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "2.1.331",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.329...v2.1.330",
    "date": "2026-11-20T19:16:01Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-23",
+    "hours": 71,
+    "version": "2.1.331"
+   },
    "id": "npm/@anthropic-ai/claude-code/2.1.330",
    "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
    "no_notes": false,
@@ -423,51 +513,6 @@
    "semver_bump": "patch",
    "variant_of": null,
    "version": "2.1.327",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/anthropics/claude-code/compare/v2.1.325...v2.1.326",
-   "date": "2026-11-16T18:43:39Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "date": "2026-11-17",
-    "hours": 25,
-    "version": "2.1.327"
-   },
-   "id": "npm/@anthropic-ai/claude-code/2.1.326",
-   "json": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/328f5dc06a/",
-   "notes_url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.326",
-   "package": "@anthropic-ai/claude-code",
-   "page": "https://releases.formachines.ai/pkg/npm/@anthropic-ai/claude-code/",
-   "prerelease": false,
-   "prev_version": "2.1.325",
-   "quotes": [
-    {
-     "match": "removed",
-     "quote": "- Fixed a background session being killed and its request lost when you opened, stopped or removed the older session whose conversation it had resumed",
-     "quote_incomplete": false
-    },
-    {
-     "match": "removed",
-     "quote": "- Fixed a tool call to an MCP server that an SDK host had just removed reconnecting to it, or reporting that it needs authentication",
-     "quote_incomplete": false
-    },
-    {
-     "match": "removed",
-     "quote": "- Fixed code or a diff pasted into a prompt losing its indentation in the transcript, and a pasted diff's added lines showing as removed",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "2.1.326",
    "yanked_or_deprecated": false
   }
  ],

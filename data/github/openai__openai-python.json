@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-23T06:00:15Z",
+ "fetched": "2026-11-24T06:00:09Z",
  "releases": [
+  {
+   "body": "## [3.58.0](https://github.com/openai/openai-python/compare/v3.57.0...v3.58.0) (2026-11-23)\n\n\n### Features\n\n* **api:** set and read agent session spending limits ([#4315](https://github.com/openai/openai-python/issues/4315)) ([fc36aef](https://github.com/openai/openai-python/commit/fc36aefb8f7809d0b91c65a9c3e424a6e7b8bc77))\n\n\n### Bug Fixes\n\n* **api:** clarify when to omit completion choice count ([#4298](https://github.com/openai/openai-python/issues/4298)) ([f63f14b](https://github.com/openai/openai-python/commit/f63f14b34754fa77fc839ac2cf95da3ef42e1f6a))",
+   "date": "2026-11-23T19:00:21Z",
+   "name": "v3.58.0",
+   "prerelease": false,
+   "tag": "v3.58.0",
+   "url": "https://github.com/openai/openai-python/releases/tag/v3.58.0"
+  },
   {
    "body": "## [3.57.0](https://github.com/openai/openai-python/compare/v3.56.0...v3.57.0) (2026-11-19)\n\n\n### Features\n\n* **api:** support Live WebRTC standby ([#4296](https://github.com/openai/openai-python/issues/4296)) ([18d10c3](https://github.com/openai/openai-python/commit/18d10c381cac674c56620acc3c1b547fb691f5ea))",
    "date": "2026-11-20T01:27:57Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v3.17.0",
    "url": "https://github.com/openai/openai-python/releases/tag/v3.17.0"
-  },
-  {
-   "body": "## [3.16.2](https://github.com/openai/openai-python/compare/v3.16.1...v3.16.2) (2026-09-18)\n\n\n### Bug Fixes\n\n* **parsing:** drop TextFormatT parameterization in parse_response to fix memory leak ([#3084](https://github.com/openai/openai-python/issues/3084)) ([#3088](https://github.com/openai/openai-python/issues/3088)) ([009b7f6](https://github.com/openai/openai-python/commit/009b7f6ae6493e1abfa7583449595f144c8beb5a))",
-   "date": "2026-09-18T21:26:27Z",
-   "name": "v3.16.2",
-   "prerelease": false,
-   "tag": "v3.16.2",
-   "url": "https://github.com/openai/openai-python/releases/tag/v3.16.2"
   }
  ],
  "repo": "openai/openai-python"

@@ -1,24 +1,22 @@
 {
- "by_tag": {
-  "6.13.13": null,
-  "7.8.14": null,
-  "mongoose-6.13.13": null,
-  "mongoose-7.8.14": null,
-  "mongoose-v6.13.13": null,
-  "mongoose-v7.8.14": null,
-  "mongoose@6.13.13": null,
-  "mongoose@7.8.14": null,
-  "mongoose@v6.13.13": null,
-  "mongoose@v7.8.14": null,
-  "rel_6_13_13": null,
-  "rel_7_8_14": null,
-  "rust-v6.13.13": null,
-  "rust-v7.8.14": null,
-  "v6.13.13": null,
-  "v7.8.14": null
- },
- "fetched": "2026-11-23T06:01:26Z",
+ "fetched": "2026-11-24T06:01:20Z",
  "releases": [
+  {
+   "body": "9.13.0 / 2026-11-23\r\n===================\r\n * feat: upgrade MongoDB driver to 7.9 #16724 [oscarmaia](https://github.com/oscarmaia)\r\n * feat(schema+model+query): add defaultSort option to schemas, applies default sort to all queries unless sort explicitly specified #16676 #16577\r\n * perf(documentArray): avoid O(n*m) id() lookup when setting a documentarray to a plain array #16683 #16673\r\n * perf(subdocument): check isNew before isDirectModified() in markModified() #16743 [g4lb](https://github.com/g4lb)\r\n * fix: make ducktyping more rigorous about inherited vs own properties, fix a few cases where user-specified `$__` and `$__isNested` caused confusing errors #16723\r\n * types: handle nested projections in typescript #16678\r\n * docs(mongoose): document the mongoose.mongo property #16712 #16710 [VaibhavBajpaij](https://github.com/VaibhavBajpaij)",
+   "date": "2026-11-23T18:34:54Z",
+   "name": "9.13.0",
+   "prerelease": false,
+   "tag": "9.13.0",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/9.13.0"
+  },
+  {
+   "body": "8.24.11 / 2026-11-23\r\n====================\r\n * fix: set dotted paths through document array elements into nested paths #16691 #16704 #16698 [hassanabrar202](https://github.com/hassanabrar202)",
+   "date": "2026-11-23T15:54:40Z",
+   "name": "8.24.11",
+   "prerelease": false,
+   "tag": "8.24.11",
+   "url": "https://github.com/Automattic/mongoose/releases/tag/8.24.11"
+  },
   {
    "body": "9.12.3 / 2026-11-20\r\n===================\r\n * fix(model): match pathsToSkip string paths exactly in Model.validate() #16706 [NotAFlightRisk](https://github.com/NotAFlightRisk)\r\n * fix(query): avoid casting $expr $in search value when it is an expression #16709 [kwy404](https://github.com/kwy404)\r\n * fix(update): run update validators on mixed paths in subdocuments #16708 #16707 [lazerg](https://github.com/lazerg)\r\n * fix(documentarray): respect castNonArrays path option on document arrays #16685 [yxshee](https://github.com/yxshee)\r\n * types(schema): add removeVirtual() to Schema #16722 [farisbasha](https://github.com/farisbasha)\r\n * docs(document): correct checkKeys default for save() #16716 [phatstraws](https://github.com/phatstraws)\r\n * docs: fix typos in comments, tests, and typings #16714 [ninglinLiu](https://github.com/ninglinLiu)",
    "date": "2026-11-20T19:10:27Z",
@@ -402,22 +400,6 @@
    "prerelease": false,
    "tag": "9.5.0",
    "url": "https://github.com/Automattic/mongoose/releases/tag/9.5.0"
-  },
-  {
-   "body": "9.4.1 / 2026-04-03\n==================\n * Revert \"fix(setDefaultsOnInsert): run setters on default values during upsert\" #16218 #16051",
-   "date": "2026-04-03T19:02:59Z",
-   "name": "9.4.1",
-   "prerelease": false,
-   "tag": "9.4.1",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.4.1"
-  },
-  {
-   "body": "9.4.0 / 2026-04-03\n==================\n * perf(document+model): avoid parallel save error instantiation, simplify resetting atomics, streamline validation and collection handling\n * feat(document): add $getChanges() alias, deprecate getChanges() #15959 [techcodie](https://github.com/techcodie)\n * fix(schema): support toJSONSchema on unions #16179\n * fix(schema): implement validation for Union schemas and subdocuments [techcodie](https://github.com/techcodie)\n * fix(connection): snapshot Date in heartbeat handler and flush queue on recovery #16183 [andreialecu](https://github.com/andreialecu)\n * fix(model): use duck-typing with version check to validate the argument to useConnection() is actually a connection #16098\n * fix(setDefaultsOnInsert): run setters on default values during upsert #16051 [mahmoodhamdi](https://github.com/mahmoodhamdi)\n * fix(utils): properly compare Set objects in deepEqual [KhanjarSingh](https://github.com/KhanjarSingh)\n * fix(utils): wrap discriminator merge check in parentheses to fix precedence [Necro-Rohan](https://github.com/Necro-Rohan)\n * fix(schema): correct template literal in encryptionType error message [Mridul012](https://github.com/Mridul012)\n * fix(schema): correct error when unsupported query operator with number #16062\n * fix(types): make MergeType and UnpackedIntersection distributive over union types [techcodie](https://github.com/techcodie)\n * types: add `id` to HydratedDocument virtuals by default unless explicitly set #16178\n * types(populate): use marker type to track populated vs depopulated type for perf\n * types(populate): retain populated paths in toObject() and toJSON() unless depopulate: true set #16085\n * types(query): make TypeScript error on $and with unrecognized query operator\n * chore: use TSTyche assertions [mrazauskas](https://github.com/mrazauskas)\n * docs(connection): remove references to useUnifiedTopology and fix backtick\n * docs: fix typo 'retreiving' -> 'retrieving' in SchemaType getter JSDoc [yogesh968](https://github.com/yogesh968)\n * docs: fix typos around 'retrieve' in schemaType and tests [ayushshukla1807](https://github.com/ayushshukla1807)\n * docs: fix typos in code comments [Goldyvaiiii](https://github.com/Goldyvaiiii)",
-   "date": "2026-04-03T18:33:32Z",
-   "name": "9.4.0",
-   "prerelease": false,
-   "tag": "9.4.0",
-   "url": "https://github.com/Automattic/mongoose/releases/tag/9.4.0"
   }
  ],
  "repo": "Automattic/mongoose"

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-10-08T10:50:41Z",
   "version": "0.45.4"
  },
- "metadata_fetched": "2026-11-23T06:01:22Z",
+ "metadata_fetched": "2026-11-24T06:01:16Z",
  "package": "drizzle-orm",
  "page": "https://releases.formachines.ai/pkg/npm/drizzle-orm/",
  "prereleases_in_window": 1,

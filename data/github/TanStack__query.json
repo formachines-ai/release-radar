@@ -23,10 +23,234 @@
    "prerelease": false,
    "tag": "@tanstack/react-query@5.108.1",
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.1"
+  },
+  "@tanstack/react-query@5.108.2": {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
+   "date": "2026-11-20T13:36:44Z",
+   "name": "@tanstack/react-query@5.108.2",
+   "prerelease": false,
+   "tag": "@tanstack/react-query@5.108.2",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.2"
   }
  },
- "fetched": "2026-11-23T06:01:15Z",
+ "fetched": "2026-11-24T06:01:09Z",
  "releases": [
+  {
+   "body": "Release 2026-11-23 13:18\n\n## Changes\n\n### Fix\n\n- query-core: clear GC timers for removed cache entries (#12683) (89bb0820d) by @TkDodo\n\n\n## Packages\n\n- @tanstack/angular-query@5.108.4\n- @tanstack/angular-query-devtools@5.108.4\n- @tanstack/angular-query-persist-client@5.108.4\n- @tanstack/eslint-plugin-query@5.108.4\n- @tanstack/lit-query@0.2.44\n- @tanstack/preact-query@5.108.4\n- @tanstack/preact-query-devtools@5.108.4\n- @tanstack/preact-query-persist-client@5.108.4\n- @tanstack/query-async-storage-persister@5.108.4\n- @tanstack/query-broadcast-client-experimental@5.108.4\n- @tanstack/query-core@5.108.4\n- @tanstack/query-devtools@5.108.4\n- @tanstack/query-persist-client-core@5.108.4\n- @tanstack/query-sync-storage-persister@5.108.4\n- @tanstack/react-query@5.108.4\n- @tanstack/react-query-devtools@5.108.4\n- @tanstack/react-query-next-experimental@5.108.4\n- @tanstack/react-query-persist-client@5.108.4\n- @tanstack/solid-query@5.108.4\n- @tanstack/solid-query-devtools@5.108.4\n- @tanstack/solid-query-persist-client@5.108.4\n- @tanstack/svelte-query@6.4.7\n- @tanstack/svelte-query-devtools@6.4.7\n- @tanstack/svelte-query-persist-client@6.4.7\n- @tanstack/vue-query@5.108.4\n- @tanstack/vue-query-devtools@6.4.7\n",
+   "date": "2026-11-23T13:19:00Z",
+   "name": "Release 2026-11-23 13:18",
+   "prerelease": false,
+   "tag": "release-2026-11-23-1318",
+   "url": "https://github.com/TanStack/query/releases/tag/release-2026-11-23-1318"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:18:13Z",
+   "name": "@tanstack/vue-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/vue-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.108.4\n  - @tanstack/vue-query@5.108.4",
+   "date": "2026-11-23T13:18:55Z",
+   "name": "@tanstack/vue-query-devtools@6.4.7",
+   "prerelease": false,
+   "tag": "@tanstack/vue-query-devtools@6.4.7",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query-devtools%406.4.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:18:10Z",
+   "name": "@tanstack/svelte-query@6.4.7",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query@6.4.7",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query%406.4.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.4\n  - @tanstack/svelte-query@6.4.7",
+   "date": "2026-11-23T13:18:52Z",
+   "name": "@tanstack/svelte-query-persist-client@6.4.7",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query-persist-client@6.4.7",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-persist-client%406.4.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.108.4\n  - @tanstack/svelte-query@6.4.7",
+   "date": "2026-11-23T13:18:49Z",
+   "name": "@tanstack/svelte-query-devtools@6.4.7",
+   "prerelease": false,
+   "tag": "@tanstack/svelte-query-devtools@6.4.7",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-devtools%406.4.7"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:18:07Z",
+   "name": "@tanstack/solid-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.4\n  - @tanstack/solid-query@5.108.4",
+   "date": "2026-11-23T13:18:46Z",
+   "name": "@tanstack/solid-query-persist-client@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query-persist-client@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-persist-client%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.108.4\n  - @tanstack/solid-query@5.108.4",
+   "date": "2026-11-23T13:18:43Z",
+   "name": "@tanstack/solid-query-devtools@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/solid-query-devtools@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-devtools%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:18:04Z",
+   "name": "@tanstack/react-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/react-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.4\n  - @tanstack/react-query@5.108.4",
+   "date": "2026-11-23T13:18:40Z",
+   "name": "@tanstack/react-query-persist-client@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-persist-client@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-persist-client%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/react-query@5.108.4",
+   "date": "2026-11-23T13:18:37Z",
+   "name": "@tanstack/react-query-next-experimental@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-next-experimental@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-next-experimental%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-devtools@5.108.4\n  - @tanstack/react-query@5.108.4",
+   "date": "2026-11-23T13:18:34Z",
+   "name": "@tanstack/react-query-devtools@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/react-query-devtools@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-devtools%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4\n  - @tanstack/query-persist-client-core@5.108.4",
+   "date": "2026-11-23T13:18:31Z",
+   "name": "@tanstack/query-sync-storage-persister@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-sync-storage-persister@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-sync-storage-persister%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:18:01Z",
+   "name": "@tanstack/query-persist-client-core@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-persist-client-core@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-persist-client-core%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:17:58Z",
+   "name": "@tanstack/query-devtools@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-devtools@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-devtools%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12683](https://github.com/TanStack/query/pull/12683) [`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db) - Clear garbage collection timers when cache entries are removed and prevent later fetch or observer cleanup from starting new timers for those entries.",
+   "date": "2026-11-23T13:17:43Z",
+   "name": "@tanstack/query-core@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-core@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-core%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:17:55Z",
+   "name": "@tanstack/query-broadcast-client-experimental@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-broadcast-client-experimental@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-broadcast-client-experimental%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4\n  - @tanstack/query-persist-client-core@5.108.4",
+   "date": "2026-11-23T13:18:28Z",
+   "name": "@tanstack/query-async-storage-persister@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/query-async-storage-persister@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-async-storage-persister%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:17:52Z",
+   "name": "@tanstack/preact-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/preact-query@5.108.4\n  - @tanstack/query-persist-client-core@5.108.4",
+   "date": "2026-11-23T13:18:25Z",
+   "name": "@tanstack/preact-query-persist-client@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query-persist-client@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-persist-client%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/preact-query@5.108.4\n  - @tanstack/query-devtools@5.108.4",
+   "date": "2026-11-23T13:18:22Z",
+   "name": "@tanstack/preact-query-devtools@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/preact-query-devtools@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-devtools%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:17:49Z",
+   "name": "@tanstack/lit-query@0.2.44",
+   "prerelease": false,
+   "tag": "@tanstack/lit-query@0.2.44",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/lit-query%400.2.44"
+  },
+  {
+   "body": "No changes in this release.",
+   "date": "2026-11-23T13:17:40Z",
+   "name": "@tanstack/eslint-plugin-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/eslint-plugin-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/eslint-plugin-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies [[`89bb082`](https://github.com/TanStack/query/commit/89bb0820d8cf4b0ffd4819af6534c8c4057607db)]:\n  - @tanstack/query-core@5.108.4",
+   "date": "2026-11-23T13:17:46Z",
+   "name": "@tanstack/angular-query@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/angular-query@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/angular-query@5.108.4\n  - @tanstack/query-persist-client-core@5.108.4",
+   "date": "2026-11-23T13:18:19Z",
+   "name": "@tanstack/angular-query-persist-client@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/angular-query-persist-client@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-persist-client%405.108.4"
+  },
+  {
+   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/angular-query@5.108.4\n  - @tanstack/query-devtools@5.108.4",
+   "date": "2026-11-23T13:18:16Z",
+   "name": "@tanstack/angular-query-devtools@5.108.4",
+   "prerelease": false,
+   "tag": "@tanstack/angular-query-devtools@5.108.4",
+   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-devtools%405.108.4"
+  },
   {
    "body": "Release 2026-11-22 20:09\n\n## Changes\n\n### Fix\n\n- query-core: prevent array matching plain object in partialMatchKey (#12651) (08de6c5a8) by @TbhVishal\n- query-core: release queries replaced by QueriesObserver.setQueries (#12658) (0538c9833) by @duncanhope\n- query-core/queriesObserver: pass query hashes when combining in … (#12633) (78432497d) by @yashhbeladiya\n- query-core: prevent render loops from optimistic query results (#12649) (a1e24973a) by @TkDodo\n- query-core: keep a placeholder that select maps to undefined (#12575) (6b849cff2) by @mooxl\n\n### Refactor\n\n- query-core: share array helper for infinite queries (#12677) (3e36f30e0) by @TkDodo\n\n\n## Packages\n\n- @tanstack/angular-query@5.108.3\n- @tanstack/angular-query-devtools@5.108.3\n- @tanstack/angular-query-persist-client@5.108.3\n- @tanstack/eslint-plugin-query@5.108.3\n- @tanstack/lit-query@0.2.43\n- @tanstack/preact-query@5.108.3\n- @tanstack/preact-query-devtools@5.108.3\n- @tanstack/preact-query-persist-client@5.108.3\n- @tanstack/query-async-storage-persister@5.108.3\n- @tanstack/query-broadcast-client-experimental@5.108.3\n- @tanstack/query-core@5.108.3\n- @tanstack/query-devtools@5.108.3\n- @tanstack/query-persist-client-core@5.108.3\n- @tanstack/query-sync-storage-persister@5.108.3\n- @tanstack/react-query@5.108.3\n- @tanstack/react-query-devtools@5.108.3\n- @tanstack/react-query-next-experimental@5.108.3\n- @tanstack/react-query-persist-client@5.108.3\n- @tanstack/solid-query@5.108.3\n- @tanstack/solid-query-devtools@5.108.3\n- @tanstack/solid-query-persist-client@5.108.3\n- @tanstack/svelte-query@6.4.6\n- @tanstack/svelte-query-devtools@6.4.6\n- @tanstack/svelte-query-persist-client@6.4.6\n- @tanstack/vue-query@5.108.3\n- @tanstack/vue-query-devtools@6.4.6\n",
    "date": "2026-11-22T20:09:25Z",
@@ -210,222 +434,6 @@
    "prerelease": false,
    "tag": "@tanstack/lit-query@0.2.43",
    "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/lit-query%400.2.43"
-  },
-  {
-   "body": "No changes in this release.",
-   "date": "2026-11-22T20:08:01Z",
-   "name": "@tanstack/eslint-plugin-query@5.108.3",
-   "prerelease": false,
-   "tag": "@tanstack/eslint-plugin-query@5.108.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/eslint-plugin-query%405.108.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`7843249`](https://github.com/TanStack/query/commit/78432497d348ca7977c6700a5b0339591bbf8bfe), [`6b849cf`](https://github.com/TanStack/query/commit/6b849cff275dfa1a39d9fd56a47804fbcacdadd0), [`08de6c5`](https://github.com/TanStack/query/commit/08de6c5a88234dc37cd06362e4e23feca3930428), [`0538c98`](https://github.com/TanStack/query/commit/0538c98330f0a78c2d01d7fbc009275aa7215a47), [`3e36f30`](https://github.com/TanStack/query/commit/3e36f30e00530f9dffead1d6fe75c3c49fc9217c), [`a1e2497`](https://github.com/TanStack/query/commit/a1e24973a8d4e540b7f6f48bc9b33131cbe6dc77)]:\n  - @tanstack/query-core@5.108.3",
-   "date": "2026-11-22T20:08:07Z",
-   "name": "@tanstack/angular-query@5.108.3",
-   "prerelease": false,
-   "tag": "@tanstack/angular-query@5.108.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query%405.108.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/angular-query@5.108.3\n  - @tanstack/query-persist-client-core@5.108.3",
-   "date": "2026-11-22T20:08:40Z",
-   "name": "@tanstack/angular-query-persist-client@5.108.3",
-   "prerelease": false,
-   "tag": "@tanstack/angular-query-persist-client@5.108.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-persist-client%405.108.3"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/angular-query@5.108.3\n  - @tanstack/query-devtools@5.108.3",
-   "date": "2026-11-22T20:08:37Z",
-   "name": "@tanstack/angular-query-devtools@5.108.3",
-   "prerelease": false,
-   "tag": "@tanstack/angular-query-devtools@5.108.3",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/angular-query-devtools%405.108.3"
-  },
-  {
-   "body": "Release 2026-11-20 13:37\n\n## Changes\n\n### Features\n\n- query-devtools: add a trustedTypesPolicy option (#12643) (fd62c9583) by @schiller-manuel\n\n### Fix\n\n- query-devtools: clear the PiP document without innerHTML (#12629) (f7abc938a) by @schiller-manuel\n- query-devtools: replace goober with a static stylesheet (#12628) (80d6c41fb) by @schiller-manuel\n\n\n## Packages\n\n- @tanstack/angular-query@5.108.2\n- @tanstack/angular-query-devtools@5.108.2\n- @tanstack/angular-query-persist-client@5.108.2\n- @tanstack/eslint-plugin-query@5.108.2\n- @tanstack/lit-query@0.2.42\n- @tanstack/preact-query@5.108.2\n- @tanstack/preact-query-devtools@5.108.2\n- @tanstack/preact-query-persist-client@5.108.2\n- @tanstack/query-async-storage-persister@5.108.2\n- @tanstack/query-broadcast-client-experimental@5.108.2\n- @tanstack/query-core@5.108.2\n- @tanstack/query-devtools@5.108.2\n- @tanstack/query-persist-client-core@5.108.2\n- @tanstack/query-sync-storage-persister@5.108.2\n- @tanstack/react-query@5.108.2\n- @tanstack/react-query-devtools@5.108.2\n- @tanstack/react-query-next-experimental@5.108.2\n- @tanstack/react-query-persist-client@5.108.2\n- @tanstack/solid-query@5.108.2\n- @tanstack/solid-query-devtools@5.108.2\n- @tanstack/solid-query-persist-client@5.108.2\n- @tanstack/svelte-query@6.4.5\n- @tanstack/svelte-query-devtools@6.4.5\n- @tanstack/svelte-query-persist-client@6.4.5\n- @tanstack/vue-query@5.108.2\n- @tanstack/vue-query-devtools@6.4.5\n",
-   "date": "2026-11-20T13:37:40Z",
-   "name": "Release 2026-11-20 13:37",
-   "prerelease": false,
-   "tag": "release-2026-11-20-1337",
-   "url": "https://github.com/TanStack/query/releases/tag/release-2026-11-20-1337"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:53Z",
-   "name": "@tanstack/vue-query@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies [[`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2), [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0), [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930)]:\n  - @tanstack/query-devtools@5.108.2\n  - @tanstack/vue-query@5.108.2",
-   "date": "2026-11-20T13:37:35Z",
-   "name": "@tanstack/vue-query-devtools@6.4.5",
-   "prerelease": false,
-   "tag": "@tanstack/vue-query-devtools@6.4.5",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/vue-query-devtools%406.4.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:50Z",
-   "name": "@tanstack/svelte-query@6.4.5",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query@6.4.5",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query%406.4.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.2\n  - @tanstack/svelte-query@6.4.5",
-   "date": "2026-11-20T13:37:32Z",
-   "name": "@tanstack/svelte-query-persist-client@6.4.5",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-persist-client@6.4.5",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-persist-client%406.4.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies [[`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2), [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0), [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930)]:\n  - @tanstack/query-devtools@5.108.2\n  - @tanstack/svelte-query@6.4.5",
-   "date": "2026-11-20T13:37:29Z",
-   "name": "@tanstack/svelte-query-devtools@6.4.5",
-   "prerelease": false,
-   "tag": "@tanstack/svelte-query-devtools@6.4.5",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/svelte-query-devtools%406.4.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:47Z",
-   "name": "@tanstack/solid-query@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.2\n  - @tanstack/solid-query@5.108.2",
-   "date": "2026-11-20T13:37:26Z",
-   "name": "@tanstack/solid-query-persist-client@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-persist-client@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-persist-client%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies [[`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2), [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0), [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930)]:\n  - @tanstack/query-devtools@5.108.2\n  - @tanstack/solid-query@5.108.2",
-   "date": "2026-11-20T13:37:23Z",
-   "name": "@tanstack/solid-query-devtools@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/solid-query-devtools@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/solid-query-devtools%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:44Z",
-   "name": "@tanstack/react-query@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-persist-client-core@5.108.2\n  - @tanstack/react-query@5.108.2",
-   "date": "2026-11-20T13:37:20Z",
-   "name": "@tanstack/react-query-persist-client@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-persist-client@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-persist-client%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/react-query@5.108.2",
-   "date": "2026-11-20T13:37:17Z",
-   "name": "@tanstack/react-query-next-experimental@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-next-experimental@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-next-experimental%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies [[`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2), [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0), [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930)]:\n  - @tanstack/query-devtools@5.108.2\n  - @tanstack/react-query@5.108.2",
-   "date": "2026-11-20T13:37:14Z",
-   "name": "@tanstack/react-query-devtools@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/react-query-devtools@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/react-query-devtools%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2\n  - @tanstack/query-persist-client-core@5.108.2",
-   "date": "2026-11-20T13:37:11Z",
-   "name": "@tanstack/query-sync-storage-persister@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-sync-storage-persister@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-sync-storage-persister%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:41Z",
-   "name": "@tanstack/query-persist-client-core@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-persist-client-core@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-persist-client-core%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12629](https://github.com/TanStack/query/pull/12629) [`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2) - The picture-in-picture window no longer clears its document with `innerHTML`, which pages that enforce Trusted Types block.\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:38Z",
-   "name": "@tanstack/query-devtools@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-devtools@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-devtools%405.108.2"
-  },
-  {
-   "body": "No changes in this release.",
-   "date": "2026-11-20T13:36:23Z",
-   "name": "@tanstack/query-core@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-core@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-core%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:35Z",
-   "name": "@tanstack/query-broadcast-client-experimental@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-broadcast-client-experimental@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-broadcast-client-experimental%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2\n  - @tanstack/query-persist-client-core@5.108.2",
-   "date": "2026-11-20T13:37:08Z",
-   "name": "@tanstack/query-async-storage-persister@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/query-async-storage-persister@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/query-async-storage-persister%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:32Z",
-   "name": "@tanstack/preact-query@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/preact-query@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/preact-query@5.108.2\n  - @tanstack/query-persist-client-core@5.108.2",
-   "date": "2026-11-20T13:37:05Z",
-   "name": "@tanstack/preact-query-persist-client@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/preact-query-persist-client@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-persist-client%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- [#12628](https://github.com/TanStack/query/pull/12628) [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0) - The devtools no longer use goober. Their styles are a static stylesheet adopted into the document or shadow root the devtools render in, instead of a `<style>` element in `<head>`. This means:\n\n  - The devtools are styled on pages with a Content Security Policy that blocks inline `<style>` elements. `styleNonce` is no longer needed and is deprecated.\n  - Devtools rendered inside a shadow root are styled without passing `shadowDOMTarget`.\n  - With `shadowDOMTarget`, the settings menu is styled.\n  - The picture-in-picture window gets all styles, including ones the devtools use only after it opened.\n  - The devtools no longer write to the shared `#_goober` style element or set `window.__nonce__`.\n  - Browsers without adoptable stylesheets (before Safari 16.4 and Firefox 101) show the devtools unstyled.\n\n- [#12643](https://github.com/TanStack/query/pull/12643) [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930) - Add a `trustedTypesPolicy` option, so the devtools render on pages that enforce `require-trusted-types-for 'script'`.\n- Updated dependencies [[`f7abc93`](https://github.com/TanStack/query/commit/f7abc938a8a7fe801d78f4cfdb98d65422f276b2), [`80d6c41`](https://github.com/TanStack/query/commit/80d6c41fb8ee27db069874d1be75646bf48a64b0), [`fd62c95`](https://github.com/TanStack/query/commit/fd62c9583ec0e1fe65ae56542876f47184534930)]:\n  - @tanstack/query-devtools@5.108.2\n  - @tanstack/preact-query@5.108.2",
-   "date": "2026-11-20T13:37:02Z",
-   "name": "@tanstack/preact-query-devtools@5.108.2",
-   "prerelease": false,
-   "tag": "@tanstack/preact-query-devtools@5.108.2",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/preact-query-devtools%405.108.2"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies []:\n  - @tanstack/query-core@5.108.2",
-   "date": "2026-11-20T13:36:29Z",
-   "name": "@tanstack/lit-query@0.2.42",
-   "prerelease": false,
-   "tag": "@tanstack/lit-query@0.2.42",
-   "url": "https://github.com/TanStack/query/releases/tag/%40tanstack/lit-query%400.2.42"
   }
  ],
  "repo": "TanStack/query"

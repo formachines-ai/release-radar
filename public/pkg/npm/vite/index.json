@@ -1,9 +1,39 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-16T07:22:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/vite/8.4.0-beta.1",
+   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/deed296e7c/",
+   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.4.0-beta.1",
+   "package": "vite",
+   "page": "https://releases.formachines.ai/pkg/npm/vite/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [
+    {
+     "match": "deprecate",
+     "quote": "* stabilize `--configLoader` and deprecate `--configLoader=runner` ([#23714](https://github.com/vitejs/vite/issues/23714)) ([e719122](https://github.com/vitejs/vite/commit/e719122cf6758086c1c228c14ad016358337cf09))",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": null,
+   "variant_of": null,
+   "version": "8.4.0-beta.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/vitejs/vite/compare/v8.3.7...v8.3.8",
@@ -194,43 +224,12 @@
   "date": "2026-11-11T02:49:46Z",
   "version": "8.3.8"
  },
- "metadata_fetched": "2026-11-23T06:01:46Z",
+ "metadata_fetched": "2026-11-24T06:01:36Z",
  "package": "vite",
  "page": "https://releases.formachines.ai/pkg/npm/vite/",
- "prereleases_in_window": 1,
+ "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/vite",
- "releases": [
-  {
-   "bump": "prerelease",
-   "date": "2026-11-16T07:22:57Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": null,
-   "id": "npm/vite/8.4.0-beta.1",
-   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/deed296e7c/",
-   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.4.0-beta.1",
-   "package": "vite",
-   "page": "https://releases.formachines.ai/pkg/npm/vite/",
-   "prerelease": true,
-   "prev_version": null,
-   "quotes": [
-    {
-     "match": "deprecate",
-     "quote": "* stabilize `--configLoader` and deprecate `--configLoader=runner` ([#23714](https://github.com/vitejs/vite/issues/23714)) ([e719122](https://github.com/vitejs/vite/commit/e719122cf6758086c1c228c14ad016358337cf09))",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": null,
-   "variant_of": null,
-   "version": "8.4.0-beta.1",
-   "yanked_or_deprecated": false
-  }
- ],
+ "releases": [],
  "repository": "https://github.com/vitejs/vite",
  "stable_in_window": 0,
  "summary": "Native-ESM powered web dev build tool"

@@ -1,6 +1,38 @@
 {
- "fetched": "2026-11-23T06:00:51Z",
+ "fetched": "2026-11-24T06:00:39Z",
  "releases": [
+  {
+   "body": "## What's Changed\n* Changelog for v0.70.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30380\n* fix(core): handle nested .gitignore negations under dir/** patterns by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30370\n* fix(cli): expand Windows home-relative paths using tilde and backslash by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30376\n* fix(cli): resume most recently active session instead of most recently started by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30389\n* fix(a2a-server): enforce bearer token authentication and request input validation by @diegogodinezr in https://github.com/google-gemini/gemini-cli/pull/30420\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.71.0-preview.0...v0.72.0-preview.0",
+   "date": "2026-11-24T00:34:15Z",
+   "name": "Release v0.72.0-preview.0",
+   "prerelease": true,
+   "tag": "v0.72.0-preview.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.72.0-preview.0"
+  },
+  {
+   "body": "## What's Changed\n* fix(patch): cherry-pick aafdfdf to release/v0.71.0-pr-30420 to patch version v0.71.0 and create version 0.71.1 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30429\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.71.0...v0.71.1",
+   "date": "2026-11-24T03:50:24Z",
+   "name": "Release v0.71.1",
+   "prerelease": false,
+   "tag": "v0.71.1",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.1"
+  },
+  {
+   "body": "## What's Changed\n* Changelog for v0.70.0-preview.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30361\n* chore(release): bump version to 0.71.0-nightly.20261118.g615d6bc8c by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30366\n* Changelog for v0.69.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30365\n* fix(core,cli): parse PowerShell commands asynchronously to prevent UI spinner freeze by @tadipavan in https://github.com/google-gemini/gemini-cli/pull/30334\n* chore(gcp): push development worker to private artifact registry by @DavidAPierce in https://github.com/google-gemini/gemini-cli/pull/30319\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.70.0...v0.71.0",
+   "date": "2026-11-24T01:16:44Z",
+   "name": "Release v0.71.0",
+   "prerelease": false,
+   "tag": "v0.71.0",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0"
+  },
+  {
+   "body": "## What's Changed\n* fix(a2a-server): enforce bearer token authentication and request input validation by @diegogodinezr in https://github.com/google-gemini/gemini-cli/pull/30420\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.71.0-nightly.20261123.geecccfcd5...v0.71.0-nightly.20261124.gaafdfdfb5",
+   "date": "2026-11-24T01:13:47Z",
+   "name": "Release v0.71.0-nightly.20261124.gaafdfdfb5",
+   "prerelease": true,
+   "tag": "v0.71.0-nightly.20261124.gaafdfdfb5",
+   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.71.0-nightly.20261124.gaafdfdfb5"
+  },
   {
    "body": "**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.71.0-nightly.20261122.geecccfcd5...v0.71.0-nightly.20261123.geecccfcd5",
    "date": "2026-11-23T01:21:53Z",
@@ -368,38 +400,6 @@
    "prerelease": false,
    "tag": "v0.63.0",
    "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.63.0"
-  },
-  {
-   "body": "**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.64.0-nightly.20261003.gfb972b2f8...v0.64.0-nightly.20261005.gfb972b2f8",
-   "date": "2026-10-05T01:39:02Z",
-   "name": "Release v0.64.0-nightly.20261005.gfb972b2f8",
-   "prerelease": true,
-   "tag": "v0.64.0-nightly.20261005.gfb972b2f8",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261005.gfb972b2f8"
-  },
-  {
-   "body": "## What's Changed\n* fix(cli): ensure Enter and Spacebar reliably confirm selection list options by @ugorla-dev in https://github.com/google-gemini/gemini-cli/pull/29502\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.64.0-nightly.20261002.gc9096a847...v0.64.0-nightly.20261003.gfb972b2f8",
-   "date": "2026-10-03T01:29:14Z",
-   "name": "Release v0.64.0-nightly.20261003.gfb972b2f8",
-   "prerelease": true,
-   "tag": "v0.64.0-nightly.20261003.gfb972b2f8",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261003.gfb972b2f8"
-  },
-  {
-   "body": "## What's Changed\n* fix(core): implement append-only delta patching and bounded history windowing in ChatRecordingService by @jvargassanchez-dot in https://github.com/google-gemini/gemini-cli/pull/29568\n* fix(cli): persist state atomically and recover from backup on corruption by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/29558\n* fix(cli): ensure Ctrl+C emergency abort reaches cancellation handler during active operations by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/29586\n* fix(cli): resolve @file:line references and prevent ghost text wrap hang by @jesussamuel-byte in https://github.com/google-gemini/gemini-cli/pull/29581\n* fix(ui): ensure Windows ConPTY forwards IME cursor position by @jesussamuel-byte in https://github.com/google-gemini/gemini-cli/pull/29560\n* fix(cli): retry directory removal on Windows locking errors during extension updates by @jesussamuel-byte in https://github.com/google-gemini/gemini-cli/pull/29540\n* fix(acp): resolve session by exact id and handle listener cleanup on session failure by @diegogodinezr in https://github.com/google-gemini/gemini-cli/pull/29580\n* fix(cli): preserve scroll position and partition pending height budget by @luisfelipe-alt in https://github.com/google-gemini/gemini-cli/pull/29520\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.64.0-nightly.20261001.gc6bccb7ec...v0.64.0-nightly.20261002.gc9096a847",
-   "date": "2026-10-02T01:33:21Z",
-   "name": "Release v0.64.0-nightly.20261002.gc9096a847",
-   "prerelease": true,
-   "tag": "v0.64.0-nightly.20261002.gc9096a847",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261002.gc9096a847"
-  },
-  {
-   "body": "## What's Changed\n* fix(cli): prevent CPU hang and quote swallowing on @ within code (#29434) by @elberthc-byte in https://github.com/google-gemini/gemini-cli/pull/29557\n* fix(core): serialize file tool operations and make writes atomic (#29078) by @elberthc-byte in https://github.com/google-gemini/gemini-cli/pull/29499\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.64.0-nightly.20260930.g38700b4b3...v0.64.0-nightly.20261001.gc6bccb7ec",
-   "date": "2026-10-01T01:34:16Z",
-   "name": "Release v0.64.0-nightly.20261001.gc6bccb7ec",
-   "prerelease": true,
-   "tag": "v0.64.0-nightly.20261001.gc6bccb7ec",
-   "url": "https://github.com/google-gemini/gemini-cli/releases/tag/v0.64.0-nightly.20261001.gc6bccb7ec"
   }
  ],
  "repo": "google-gemini/gemini-cli"

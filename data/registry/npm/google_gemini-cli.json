@@ -2,20 +2,40 @@
  "changelog": null,
  "dist_tags": {
   "false": "0.42.0-nightly.20260512.g11a9edc80",
-  "latest": "0.70.0",
-  "nightly": "0.71.0-nightly.20261123.geecccfcd5",
-  "preview": "0.71.0-preview.0",
-  "staging-tmp": "0.71.0-nightly.20261123.geecccfcd5"
+  "latest": "0.71.1",
+  "nightly": "0.71.0-nightly.20261124.gaafdfdfb5",
+  "preview": "0.72.0-preview.0",
+  "staging-tmp": "0.71.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-23T06:00:50Z",
+ "fetched": "2026-11-24T06:00:38Z",
  "homepage": "https://github.com/google-gemini/gemini-cli#readme",
- "latest": "0.70.0",
+ "latest": "0.71.1",
  "name": "@google/gemini-cli",
  "page": "https://www.npmjs.com/package/@google/gemini-cli",
  "repo": "google-gemini/gemini-cli",
  "summary": "Gemini CLI",
  "versions": [
+  {
+   "date": "2026-11-24T03:57:09Z",
+   "deprecated": false,
+   "version": "0.71.1"
+  },
+  {
+   "date": "2026-11-24T01:21:20Z",
+   "deprecated": false,
+   "version": "0.71.0"
+  },
+  {
+   "date": "2026-11-24T01:19:27Z",
+   "deprecated": false,
+   "version": "0.71.0-nightly.20261124.gaafdfdfb5"
+  },
+  {
+   "date": "2026-11-24T00:38:51Z",
+   "deprecated": false,
+   "version": "0.72.0-preview.0"
+  },
   {
    "date": "2026-11-23T01:27:28Z",
    "deprecated": false,
@@ -485,21 +505,6 @@
    "date": "2026-08-27T02:30:42Z",
    "deprecated": false,
    "version": "0.59.0-nightly.20260827.g3c311beac"
-  },
-  {
-   "date": "2026-08-26T01:07:17Z",
-   "deprecated": false,
-   "version": "0.59.0-nightly.20260826.g64b5b79a6"
-  },
-  {
-   "date": "2026-08-25T18:36:40Z",
-   "deprecated": false,
-   "version": "0.57.0"
-  },
-  {
-   "date": "2026-08-25T18:21:23Z",
-   "deprecated": false,
-   "version": "0.58.0-preview.0"
   }
  ]
 }

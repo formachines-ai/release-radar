@@ -1,26 +1,61 @@
 {
  "changelog": null,
  "dist_tags": {
-  "dev": "8.0.0-rc.34-dev.194",
+  "dev": "8.0.0-rc.35-dev.197",
   "early-access": "5.12.0-dev.21",
   "integration": "7.10.0-integration-fix-prisma-publish-token.1",
-  "latest": "8.0.0-rc.34",
+  "latest": "8.0.0-rc.35",
   "next": "8.0.0-rc.10",
   "patch-dev": "7.9.1-dev.1",
   "prev": "7.10.1",
-  "prev-dev": "7.11.0-dev.1",
+  "prev-dev": "7.11.0-dev.4",
   "turso": "5.4.0-dev.61",
   "typed-sql": "5.19.0-integration-feat-typed-sql.14"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-23T06:01:35Z",
+ "fetched": "2026-11-24T06:01:26Z",
  "homepage": "https://github.com/prisma/prisma-cli#readme",
- "latest": "8.0.0-rc.34",
+ "latest": "8.0.0-rc.35",
  "name": "prisma",
  "page": "https://www.npmjs.com/package/prisma",
  "repo": "prisma/prisma-cli",
  "summary": "The Prisma CLI: one binary for the ORM, Composer, and the Prisma Developer Platform.",
  "versions": [
+  {
+   "date": "2026-11-24T02:06:08Z",
+   "deprecated": false,
+   "version": "7.11.0-dev.4"
+  },
+  {
+   "date": "2026-11-24T01:51:24Z",
+   "deprecated": false,
+   "version": "7.11.0-dev.3"
+  },
+  {
+   "date": "2026-11-23T12:11:29Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.35-dev.197"
+  },
+  {
+   "date": "2026-11-23T11:39:42Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.35"
+  },
+  {
+   "date": "2026-11-23T11:34:27Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.35-dev.196"
+  },
+  {
+   "date": "2026-11-23T11:16:28Z",
+   "deprecated": false,
+   "version": "7.11.0-dev.2"
+  },
+  {
+   "date": "2026-11-23T06:24:49Z",
+   "deprecated": false,
+   "version": "8.0.0-rc.34-dev.195"
+  },
   {
    "date": "2026-11-23T04:24:35Z",
    "deprecated": false,
@@ -690,51 +725,6 @@
    "date": "2026-08-26T07:14:41Z",
    "deprecated": false,
    "version": "8.0.0-rc.10-dev.85"
-  },
-  {
-   "date": "2026-08-25T16:16:04Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10-dev.84"
-  },
-  {
-   "date": "2026-08-25T15:31:35Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10-dev.83"
-  },
-  {
-   "date": "2026-08-25T12:47:51Z",
-   "deprecated": false,
-   "version": "7.10.0"
-  },
-  {
-   "date": "2026-08-25T11:56:48Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10-dev.82"
-  },
-  {
-   "date": "2026-08-25T11:42:22Z",
-   "deprecated": false,
-   "version": "8.1.0-dev.1"
-  },
-  {
-   "date": "2026-08-25T11:15:38Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10-dev.81"
-  },
-  {
-   "date": "2026-08-25T10:55:44Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10"
-  },
-  {
-   "date": "2026-08-25T10:50:19Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.10-dev.80"
-  },
-  {
-   "date": "2026-08-25T07:25:10Z",
-   "deprecated": false,
-   "version": "8.0.0-rc.9-dev.79"
   }
  ]
 }

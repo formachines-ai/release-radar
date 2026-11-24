@@ -1,5 +1,5 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -36,7 +36,7 @@
   "date": "2026-11-09T00:53:33Z",
   "version": "18.0.10"
  },
- "metadata_fetched": "2026-11-23T06:01:17Z",
+ "metadata_fetched": "2026-11-24T06:01:11Z",
  "package": "dotenv",
  "page": "https://releases.formachines.ai/pkg/npm/dotenv/",
  "prereleases_in_window": 0,

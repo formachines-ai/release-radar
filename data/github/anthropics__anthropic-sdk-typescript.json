@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-23T06:00:50Z",
+ "fetched": "2026-11-24T06:00:38Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **api:** type beta batch request params as message create params\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and warn on claude-mythos-preview again\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in usage and cost reports\n* **docs:** describe the user profile endpoints and link to the guide\n* **docs:** use realistic example values in more request bodies\n\n\n### Documentation\n\n* **api:** shorten the human_review description",
+   "date": "2026-11-23T18:35:09Z",
+   "name": "sdk-v1.13.0",
+   "prerelease": false,
+   "tag": "sdk-v1.13.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.13.0"
+  },
   {
    "body": "### Features\n\n* **api:** add the image_dimensions_too_large error code\n\n\n### Bug Fixes\n\n* **client:** merge ANTHROPIC_CUSTOM_HEADERS with Headers or pairs in defaultHeaders\n\n\n### Chores\n\n* **docs:** clarify billing_policy in batches and two billing errors",
    "date": "2026-11-20T16:03:51Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "aws-sdk-v0.8.0",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.8.0"
-  },
-  {
-   "body": "### Features\n\n* **api:** add types for the Chat and Cowork unified analytics metrics\n* **api:** add workflows, multiagent configuration and thread status filtering to Managed Agents\n\n\n### Chores\n\n* **internal:** remove the next branch rule from CLAUDE.md",
-   "date": "2026-10-09T15:35:41Z",
-   "name": "sdk-v0.133.0",
-   "prerelease": false,
-   "tag": "sdk-v0.133.0",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v0.133.0"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

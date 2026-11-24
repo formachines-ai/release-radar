@@ -1,9 +1,38 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/honojs/hono/compare/v4.13.18...v4.13.19",
+   "date": "2026-11-16T12:57:55Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "date": "2026-11-22",
+    "hours": 137,
+    "version": "4.13.20"
+   },
+   "id": "npm/hono/4.13.19",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6dd601be7e/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.19",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "prev_version": "4.13.18",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "4.13.19",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/honojs/hono/compare/v4.13.17...v4.13.18",
@@ -70,12 +99,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "4.13.20",
+ "latest": "4.13.21",
  "latest_stable": {
-  "date": "2026-11-22T06:39:32Z",
-  "version": "4.13.20"
+  "date": "2026-11-23T09:59:10Z",
+  "version": "4.13.21"
  },
- "metadata_fetched": "2026-11-23T06:01:25Z",
+ "metadata_fetched": "2026-11-24T06:01:18Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,
@@ -83,12 +112,47 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/honojs/hono/compare/v4.13.20...v4.13.21",
+   "date": "2026-11-23T09:59:10Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/hono/4.13.21",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/eb29363e3f/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.21",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "prev_version": "4.13.20",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "- `hono/client`: a path param can no longer change the host of the request URL when the base URL is relative. Thanks to @ongteckwu for the report.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "4.13.21",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/honojs/hono/compare/v4.13.19...v4.13.20",
    "date": "2026-11-22T06:39:32Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-23",
+    "hours": 27,
+    "version": "4.13.21"
+   },
    "id": "npm/hono/4.13.20",
    "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
    "no_notes": false,
@@ -110,35 +174,6 @@
    "semver_bump": "patch",
    "variant_of": null,
    "version": "4.13.20",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/honojs/hono/compare/v4.13.18...v4.13.19",
-   "date": "2026-11-16T12:57:55Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "date": "2026-11-22",
-    "hours": 137,
-    "version": "4.13.20"
-   },
-   "id": "npm/hono/4.13.19",
-   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/6dd601be7e/",
-   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.19",
-   "package": "hono",
-   "page": "https://releases.formachines.ai/pkg/npm/hono/",
-   "prerelease": false,
-   "prev_version": "4.13.18",
-   "quotes": [],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "4.13.19",
    "yanked_or_deprecated": false
   }
  ],

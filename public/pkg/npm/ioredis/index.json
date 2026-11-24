@@ -1,23 +1,54 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "6.0.0",
+ "latest": "6.1.0",
  "latest_stable": {
-  "date": "2026-07-31T15:03:15Z",
-  "version": "6.0.0"
+  "date": "2026-11-23T09:11:30Z",
+  "version": "6.1.0"
  },
- "metadata_fetched": "2026-11-23T06:01:25Z",
+ "metadata_fetched": "2026-11-24T06:01:18Z",
  "package": "ioredis",
  "page": "https://releases.formachines.ai/pkg/npm/ioredis/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/ioredis",
- "releases": [],
+ "releases": [
+  {
+   "bump": "unknown",
+   "date": "2026-11-23T09:11:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "npm/ioredis/6.1.0",
+   "json": "https://releases.formachines.ai/pkg/npm/ioredis/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/48850fda80/",
+   "notes_url": "https://github.com/redis/ioredis/releases/tag/v6.1.0",
+   "package": "ioredis",
+   "page": "https://releases.formachines.ai/pkg/npm/ioredis/",
+   "prerelease": false,
+   "prev_version": null,
+   "quotes": [
+    {
+     "match": "removed",
+     "quote": "- Stay ended when nodes removed by `disconnect()` end late ([#2237](https://github.com/redis/ioredis/pull/2237))",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": null,
+   "variant_of": null,
+   "version": "6.1.0",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/redis/ioredis",
- "stable_in_window": 0,
+ "stable_in_window": 1,
  "summary": "A robust, performance-focused and full-featured Redis client for Node.js."
 }

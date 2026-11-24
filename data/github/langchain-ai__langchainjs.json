@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-23T06:00:52Z",
+ "fetched": "2026-11-24T06:00:40Z",
  "releases": [
+  {
+   "body": "### Patch Changes\n\n- [#12290](https://github.com/langchain-ai/langchainjs/pull/12290) [`8650a5b`](https://github.com/langchain-ai/langchainjs/commit/8650a5b08490eb84b3ef396425dc5c954c8882ac) Thanks [@eliornl](https://github.com/eliornl)! - Deprecate content-block `streamEvents()` on chat models and `streamEvents(..., { version: \"v3\" })` on agents. `streamEvents` with `version: \"v2\"` on chat models is no longer marked deprecated.",
+   "date": "2026-11-24T03:46:41Z",
+   "name": "langchain@1.6.8",
+   "prerelease": false,
+   "tag": "langchain@1.6.8",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.8"
+  },
+  {
+   "body": "### Patch Changes\n\n- [#12290](https://github.com/langchain-ai/langchainjs/pull/12290) [`8650a5b`](https://github.com/langchain-ai/langchainjs/commit/8650a5b08490eb84b3ef396425dc5c954c8882ac) Thanks [@eliornl](https://github.com/eliornl)! - Deprecate content-block `streamEvents()` on chat models and `streamEvents(..., { version: \"v3\" })` on agents. `streamEvents` with `version: \"v2\"` on chat models is no longer marked deprecated.",
+   "date": "2026-11-24T03:46:38Z",
+   "name": "@langchain/core@1.5.1",
+   "prerelease": false,
+   "tag": "@langchain/core@1.5.1",
+   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/core%401.5.1"
+  },
   {
    "body": "### Patch Changes\n\n- Updated dependencies [[`bbf8a1a`](https://github.com/langchain-ai/langchainjs/commit/bbf8a1af2c668223fd7ac570f0f5b3a4318e3095)]:\n  - @langchain/openai@1.8.5",
    "date": "2026-11-20T18:52:49Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "langchain@1.6.4",
    "url": "https://github.com/langchain-ai/langchainjs/releases/tag/langchain%401.6.4"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:55Z",
-   "name": "@langchain/xai@1.5.5",
-   "prerelease": false,
-   "tag": "@langchain/xai@1.5.5",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/xai%401.5.5"
-  },
-  {
-   "body": "### Patch Changes\n\n- Updated dependencies [[`e92e44d`](https://github.com/langchain-ai/langchainjs/commit/e92e44d738a394a6b7325978858b3c35d7a7c88a)]:\n  - @langchain/openai@1.8.3",
-   "date": "2026-11-10T18:39:52Z",
-   "name": "@langchain/together-ai@0.2.24",
-   "prerelease": false,
-   "tag": "@langchain/together-ai@0.2.24",
-   "url": "https://github.com/langchain-ai/langchainjs/releases/tag/%40langchain/together-ai%400.2.24"
   }
  ],
  "repo": "langchain-ai/langchainjs"

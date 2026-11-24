@@ -1,9 +1,50 @@
 {
- "built": "2026-11-23T06:54:29Z",
+ "built": "2026-11-24T06:00:05Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
  "history": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0",
+   "date": "2026-11-16T16:47:53Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "pypi/anthropic/2.9.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/5e25e39a6b/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "prev_version": "2.8.0",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "The tool no longer runs an `rg` from a relative or empty `PATH` entry or, on Windows, from the current directory. On Windows it looks for `rg.exe`, so an `rg.cmd`, `rg.bat` or `rg.com` is no longer used. With no other `rg` on `PATH`, the tool uses its built-in search.",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "`rg` no longer gets the `ANTHROPIC_*` variables of the process, like the shell of `bash`.",
+     "quote_incomplete": false
+    },
+    {
+     "match": "no longer",
+     "quote": "For a terminated session, the worker now force-stops the work item right after it retrieves the session, before it downloads skills or memory stores. It no longer raises `SessionMemoryError` for such a session. The API reports an archived session as `terminated`.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "minor",
+   "variant_of": null,
+   "version": "2.9.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.7.0...v2.8.0",
@@ -81,17 +122,53 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "2.12.0",
+ "latest": "2.13.0",
  "latest_stable": {
-  "date": "2026-11-20T15:57:01Z",
-  "version": "2.12.0"
+  "date": "2026-11-23T18:35:01Z",
+  "version": "2.13.0"
  },
- "metadata_fetched": "2026-11-23T06:00:10Z",
+ "metadata_fetched": "2026-11-24T06:00:05Z",
  "package": "anthropic",
  "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/anthropic/",
  "releases": [
+  {
+   "bump": "minor",
+   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.12.0...v2.13.0",
+   "date": "2026-11-23T18:35:01Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": null,
+   "id": "pypi/anthropic/2.13.0",
+   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/cca0357f31/",
+   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.13.0",
+   "package": "anthropic",
+   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
+   "prerelease": false,
+   "prev_version": "2.12.0",
+   "quotes": [
+    {
+     "match": "deprecated",
+     "quote": "* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)",
+     "quote_incomplete": false
+    },
+    {
+     "match": "deprecated",
+     "quote": "* **client:** read deprecated models from generated data and stop warning on retired ones",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "minor",
+   "variant_of": null,
+   "version": "2.13.0",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.11.0...v2.12.0",
@@ -187,47 +264,6 @@
    "semver_bump": "minor",
    "variant_of": null,
    "version": "2.10.0",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "minor",
-   "compare_url": "https://github.com/anthropics/anthropic-sdk-python/compare/v2.8.0...v2.9.0",
-   "date": "2026-11-16T16:47:53Z",
-   "ecosystem": "pypi",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": null,
-   "id": "pypi/anthropic/2.9.0",
-   "json": "https://releases.formachines.ai/pkg/pypi/anthropic/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/5e25e39a6b/",
-   "notes_url": "https://github.com/anthropics/anthropic-sdk-python/releases/tag/v2.9.0",
-   "package": "anthropic",
-   "page": "https://releases.formachines.ai/pkg/pypi/anthropic/",
-   "prerelease": false,
-   "prev_version": "2.8.0",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "The tool no longer runs an `rg` from a relative or empty `PATH` entry or, on Windows, from the current directory. On Windows it looks for `rg.exe`, so an `rg.cmd`, `rg.bat` or `rg.com` is no longer used. With no other `rg` on `PATH`, the tool uses its built-in search.",
-     "quote_incomplete": false
-    },
-    {
-     "match": "no longer",
-     "quote": "`rg` no longer gets the `ANTHROPIC_*` variables of the process, like the shell of `bash`.",
-     "quote_incomplete": false
-    },
-    {
-     "match": "no longer",
-     "quote": "For a terminated session, the worker now force-stops the work item right after it retrieves the session, before it downloads skills or memory stores. It no longer raises `SessionMemoryError` for such a session. The API reports an archived session as `terminated`.",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": "minor",
-   "variant_of": null,
-   "version": "2.9.0",
    "yanked_or_deprecated": false
   }
  ],

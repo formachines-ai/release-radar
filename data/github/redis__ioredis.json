@@ -1,0 +1,406 @@
+{
+ "fetched": "2026-11-24T06:01:19Z",
+ "releases": [
+  {
+   "body": "## v6.1.0\r\n\r\n### ✨ Highlights\r\n\r\nThis release adds smart client handoffs: the client listens for Redis maintenance notifications, relaxes command and socket timeouts while maintenance is in progress and moves connections to the new endpoint, so planned upgrades and failovers on Redis Enterprise and Redis Cloud cause fewer errors. Cluster sharded Pub/Sub gets a health check that detects subscribers which stop receiving messages and reconnects them. The command set grows with the Redis 8.12 set member expiration, sorted set move,`BITRANGEINTARRAY` and `BLESS` commands. Many fixes land for reconnection, the selected database, Cluster pipelines and autopipelining, Sentinel and RESP3 decoding.\r\n\r\n### 🚀 New Features\r\n- client: smart client handoffs, which handle Redis maintenance notifications with the `maintNotifications`, `maintEndpointType`, `maintRelaxedCommandTimeout` and `maintRelaxedSocketTimeout` options ([#2165](https://github.com/redis/ioredis/pull/2165))\r\n- cluster: add a health check for sharded subscribers, configured with `shardedSubscriberHealthCheckInterval` (default `10000` ms, `null` disables it) ([#2268](https://github.com/redis/ioredis/pull/2268))\r\n- cluster: add the `subscriberNodeRole` option to choose the node role for the Pub/Sub subscriber ([#2176](https://github.com/redis/ioredis/pull/2176))\r\n- commands: add the set member expiration commands `SADDEX`, `SEXPIRE`, `SEXPIREAT`, `SEXPIRETIME`, `SPERSIST`, `SPEXPIRE`, `SPEXPIREAT`, `SPEXPIRETIME`, `SPTTL` and `STTL` (Redis 8.12) ([#2261](https://github.com/redis/ioredis/pull/2261))\r\n- commands: add the sorted set move commands `ZMOVE`, `BZMOVE` and `ZMOVEMEMBER` (Redis 8.12), with `BZMOVE` handled as a blocking command ([#2288](https://github.com/redis/ioredis/pull/2288))\r\n- commands: add `BITRANGEINTARRAY` (Redis 8.12) ([#2279](https://github.com/redis/ioredis/pull/2279))\r\n- commands: add the BLESS command family (Redis 8.12) ([#2209](https://github.com/redis/ioredis/pull/2209))\r\n\r\n### 🐛 Bug Fixes\r\n\r\n**Connection and reconnection**\r\n- End the client when `quit()` or `disconnect()` is called while reconnecting ([#2245](https://github.com/redis/ioredis/pull/2245))\r\n- Reset retry attempts when `connect()` is called after the client gave up ([#2204](https://github.com/redis/ioredis/pull/2204))\r\n- Reset the manual close state when `connect()` is called after `end` ([#2250](https://github.com/redis/ioredis/pull/2250))\r\n- Reject unfulfilled commands dropped on reconnect ([#2194](https://github.com/redis/ioredis/pull/2194))\r\n- Handle rejections from auto-resubscribe and `SELECT` on reconnect ([#2187](https://github.com/redis/ioredis/pull/2187))\r\n- Close the monitor connection when `monitor()` rejects ([#2247](https://github.com/redis/ioredis/pull/2247))\r\n\r\n**Selected database**\r\n- Keep the selected database for commands queued while reconnecting ([#2235](https://github.com/redis/ioredis/pull/2235))\r\n- Restore the database selected by a non-lowercase `SELECT` after reconnecting ([#2248](https://github.com/redis/ioredis/pull/2248))\r\n- Handle a rejection from the database-restoring `SELECT` on `reconnectOnError` ([#2229](https://github.com/redis/ioredis/pull/2229))\r\n\r\n**Cluster lifecycle**\r\n- Fix the cluster getting stuck in `close` ([#2217](https://github.com/redis/ioredis/pull/2217))\r\n- End when `quit()` or `disconnect()` is called while reconnecting ([#2240](https://github.com/redis/ioredis/pull/2240))\r\n- Stay ended when nodes removed by `disconnect()` end late ([#2237](https://github.com/redis/ioredis/pull/2237))\r\n- Stop refreshing slots when `disconnect()` is called during a refresh ([#2249](https://github.com/redis/ioredis/pull/2249))\r\n- Do not fall back to a replica when no primary is left ([#2275](https://github.com/redis/ioredis/pull/2275))\r\n- Map every slot when `stringNumbers` is enabled ([#2255](https://github.com/redis/ioredis/pull/2255))\r\n- Pass the retry delay to the `reconnecting` event ([#2291](https://github.com/redis/ioredis/pull/2291))\r\n\r\n**Cluster pipelines and autopipelining**\r\n- Resend only the redirected command in a pipeline ([#2214](https://github.com/redis/ioredis/pull/2214))\r\n- Do not reject pipeline commands for connecting nodes when the offline queue is disabled ([#2277](https://github.com/redis/ioredis/pull/2277))\r\n- Do not throw when autopipelining meets an uncached slot ([#2233](https://github.com/redis/ioredis/pull/2233))\r\n- Bucket autopipelined `MSET` objects by their first key ([#2207](https://github.com/redis/ioredis/pull/2207))\r\n- Hash autopipelined `Buffer` keys by their bytes ([#2208](https://github.com/redis/ioredis/pull/2208))\r\n- Hash lone surrogates as the UTF-8 that Node sends ([#2242](https://github.com/redis/ioredis/pull/2242))\r\n- Vendor `cluster-key-slot` to fix the slot of keys with an empty hash tag ([#2172](https://github.com/redis/ioredis/pull/2172))\r\n- Align autopipeline callbacks for dynamic commands ([#2180](https://github.com/redis/ioredis/pull/2180))\r\n\r\n**Cluster Pub/Sub**\r\n- Keep forwarding sharded messages after reconnecting from `end` ([#2251](https://github.com/redis/ioredis/pull/2251))\r\n- Support a zero-argument `SUNSUBSCRIBE` with sharded subscribers ([#2137](https://github.com/redis/ioredis/pull/2137))\r\n- Match `Buffer` shard channels when unsubscribing ([#2203](https://github.com/redis/ioredis/pull/2203))\r\n- Emit sharded subscriber connect errors silently ([#2241](https://github.com/redis/ioredis/pull/2241))\r\n- Inherit `connectTimeout` for cluster subscribers ([#2220](https://github.com/redis/ioredis/pull/2220))\r\n\r\n**Sentinel**\r\n- Retry unreachable sentinels in a loop instead of recursing ([#2270](https://github.com/redis/ioredis/pull/2270))\r\n- Correct the retry order after node connection failures ([#2246](https://github.com/redis/ioredis/pull/2246))\r\n- Handle errors on failover detector connections ([#2257](https://github.com/redis/ioredis/pull/2257))\r\n- Clean up failover subscriptions after `quit()` ([#2198](https://github.com/redis/ioredis/pull/2198))\r\n\r\n**Pub/Sub**\r\n- Keep subscriber mode while other channel kinds remain subscribed ([#2196](https://github.com/redis/ioredis/pull/2196))\r\n- Resolve an argument-less `UNSUBSCRIBE` / `PUNSUBSCRIBE` once its own kind is empty ([#2238](https://github.com/redis/ioredis/pull/2238))\r\n\r\n**RESP and replies**\r\n- Decode RESP3 attribute replies instead of failing the connection ([#2213](https://github.com/redis/ioredis/pull/2213))\r\n- Decode RESP3 doubles with `Number` ([#2150](https://github.com/redis/ioredis/pull/2150))\r\n- Decode integer replies up to `Number.MAX_SAFE_INTEGER` exactly ([#2164](https://github.com/redis/ioredis/pull/2164))\r\n- Keep `String.prototype` in fast mode after defining `VerbatimString` ([#2206](https://github.com/redis/ioredis/pull/2206))\r\n- Apply the legacy reply shape to uppercase command names ([#2252](https://github.com/redis/ioredis/pull/2252))\r\n\r\n**Commands and errors**\r\n- Redact credentials from the command attached to errors ([#2231](https://github.com/redis/ioredis/pull/2231))\r\n- Keep the `exec()` error out of its own `previousErrors` ([#2218](https://github.com/redis/ioredis/pull/2218))\r\n- Preserve empty keys and `MATCH` patterns in scan streams ([#2199](https://github.com/redis/ioredis/pull/2199))\r\n\r\n**Types**\r\n- Accept field arrays in `hmget` / `hmgetBuffer` ([#2167](https://github.com/redis/ioredis/pull/2167))\r\n- Accept `string | string[]` for `del` ([#2230](https://github.com/redis/ioredis/pull/2230))\r\n- Allow a number for the `zrange` stop argument ([#2163](https://github.com/redis/ioredis/pull/2163))\r\n- Accept the documented TLS profile options ([#2195](https://github.com/redis/ioredis/pull/2195))\r\n- Add event overloads to the `Cluster` interface ([#2201](https://github.com/redis/ioredis/pull/2201))\r\n- Add `smessage` and `smessageBuffer` event overloads ([#2191](https://github.com/redis/ioredis/pull/2191))\r\n\r\n### 🧰 Maintenance\r\n- ci: publish to npm with trusted publishing and staged approval, and run the release job in the `Release` environment ([#2226](https://github.com/redis/ioredis/pull/2226), [#2303](https://github.com/redis/ioredis/pull/2303))\r\n- ci: update the Redis 8.12 test image ([#2273](https://github.com/redis/ioredis/pull/2273), [#2287](https://github.com/redis/ioredis/pull/2287))\r\n- test: run the standard functional suite against an external Redis Enterprise database and skip incompatible suites ([#2140](https://github.com/redis/ioredis/pull/2140), [#2177](https://github.com/redis/ioredis/pull/2177))\r\n- test: add regression coverage for a deeply nested reply, subscribing during connect and `+switch-master` during Sentinel rediscovery ([#2138](https://github.com/redis/ioredis/pull/2138), [#2202](https://github.com/redis/ioredis/pull/2202), [#2293](https://github.com/redis/ioredis/pull/2293))\r\n- test: tolerate early timer firing in timeout relaxation baselines ([#2232](https://github.com/redis/ioredis/pull/2232))\r\n- docs: explain per-master cluster key scanning, fix multi-node cluster examples and correct the `slotsRefreshInterval` default ([#2295](https://github.com/redis/ioredis/pull/2295), [#2271](https://github.com/redis/ioredis/pull/2271), [#2236](https://github.com/redis/ioredis/pull/2236))\r\n- docs: clarify Sentinel TLS options, list all built-in argument transformers and explain custom script inheritance in duplicate connections ([#2292](https://github.com/redis/ioredis/pull/2292), [#2290](https://github.com/redis/ioredis/pull/2290), [#2225](https://github.com/redis/ioredis/pull/2225))\r\n- docs: update the contribution guidelines ([#2188](https://github.com/redis/ioredis/pull/2188))\r\n- chore: remove the `CLAUDE.md` symlink in favour of `AGENTS.md` and remove the maintainer-review agent skill ([#2200](https://github.com/redis/ioredis/pull/2200), [#2244](https://github.com/redis/ioredis/pull/2244))\r\n- deps: bump `undici`, `brace-expansion`, `serialize-javascript`, `mocha`, `handlebars`, `js-yaml`, `browserslist` and `@babel/core` ([#2173](https://github.com/redis/ioredis/pull/2173), [#2175](https://github.com/redis/ioredis/pull/2175), [#2179](https://github.com/redis/ioredis/pull/2179), [#2184](https://github.com/redis/ioredis/pull/2184), [#2185](https://github.com/redis/ioredis/pull/2185), [#2210](https://github.com/redis/ioredis/pull/2210), [#2216](https://github.com/redis/ioredis/pull/2216), [#2224](https://github.com/redis/ioredis/pull/2224), [#2263](https://github.com/redis/ioredis/pull/2263), [#2265](https://github.com/redis/ioredis/pull/2265))\r\n- deps: bump `express`, `body-parser`, `qs`, `morgan` and `proxy-addr` in `examples/express` ([#2174](https://github.com/redis/ioredis/pull/2174), [#2183](https://github.com/redis/ioredis/pull/2183), [#2211](https://github.com/redis/ioredis/pull/2211), [#2223](https://github.com/redis/ioredis/pull/2223), [#2234](https://github.com/redis/ioredis/pull/2234), [#2264](https://github.com/redis/ioredis/pull/2264))\r\n\r\n**Full Changelog**: https://github.com/redis/ioredis/compare/v6.0.0...v6.1.0",
+   "date": "2026-11-23T09:07:07Z",
+   "name": "v6.1.0",
+   "prerelease": false,
+   "tag": "v6.1.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v6.1.0"
+  },
+  {
+   "body": "## ioredis@6.1.0-beta.1\r\n\r\n### ✨ Highlights\r\n\r\nThis beta adds smart client handoffs ([SCH](https://redis.io/docs/latest/develop/clients/sch/)), which let the client ride through planned Redis server maintenance without interrupting service. It also adds the BLESS command family and an option to choose which node role cluster Pub/Sub subscribers connect to. Alongside these are a large set of fixes across cluster auto-pipelining, sharded Pub/Sub, reconnection handling and RESP3 decoding, plus several TypeScript type corrections.\r\n\r\n### 🚀 New Features\r\n- client: add smart client handoffs ([#2165](https://github.com/redis/ioredis/pull/2165))\r\n- client: add the BLESS command family ([#2209](https://github.com/redis/ioredis/pull/2209))\r\n- cluster: allow configuring the node role for the Pub/Sub subscriber ([#2176](https://github.com/redis/ioredis/pull/2176))\r\n\r\n### 🐛 Bug Fixes\r\n\r\n**Connection and reconnection**\r\n- Handle rejections from auto-resubscribe and `SELECT` on reconnect ([#2187](https://github.com/redis/ioredis/pull/2187))\r\n- Reject unfulfilled commands dropped on reconnect ([#2194](https://github.com/redis/ioredis/pull/2194))\r\n- Reset retry attempts when `connect()` is called after giving up ([#2204](https://github.com/redis/ioredis/pull/2204))\r\n\r\n**Cluster**\r\n- Stop the cluster from getting stuck in close ([#2217](https://github.com/redis/ioredis/pull/2217))\r\n- Inherit `connectTimeout` for cluster subscribers ([#2220](https://github.com/redis/ioredis/pull/2220))\r\n- Bucket auto-pipelined `MSET` objects by their first key ([#2207](https://github.com/redis/ioredis/pull/2207))\r\n- Hash auto-pipelined `Buffer` keys by their bytes ([#2208](https://github.com/redis/ioredis/pull/2208))\r\n- Vendor `cluster-key-slot` to fix the slot of keys with an empty hash tag ([#2172](https://github.com/redis/ioredis/pull/2172))\r\n\r\n**Sentinel**\r\n- Clean up Sentinel failover subscriptions after `quit` ([#2198](https://github.com/redis/ioredis/pull/2198))\r\n\r\n**Pub/Sub**\r\n- Keep subscriber mode while other channel kinds remain subscribed ([#2196](https://github.com/redis/ioredis/pull/2196))\r\n- Match `Buffer` shard channels when unsubscribing ([#2203](https://github.com/redis/ioredis/pull/2203))\r\n- Support a zero-argument `SUNSUBSCRIBE` with sharded subscribers ([#2137](https://github.com/redis/ioredis/pull/2137))\r\n\r\n**Pipelines and transactions**\r\n- Align auto-pipeline callbacks for dynamic commands ([#2180](https://github.com/redis/ioredis/pull/2180))\r\n- Keep the `EXEC` error out of its own `previousErrors` ([#2218](https://github.com/redis/ioredis/pull/2218))\r\n\r\n**Command arguments**\r\n- Preserve empty keys and `MATCH` patterns in scan streams ([#2199](https://github.com/redis/ioredis/pull/2199))\r\n\r\n**RESP decoding**\r\n- Decode integer replies up to `MAX_SAFE_INTEGER` exactly ([#2164](https://github.com/redis/ioredis/pull/2164))\r\n- Decode RESP3 doubles with `Number` ([#2150](https://github.com/redis/ioredis/pull/2150))\r\n- Decode RESP3 attribute replies instead of failing the connection ([#2213](https://github.com/redis/ioredis/pull/2213))\r\n- Keep `String.prototype` in fast mode after defining `VerbatimString` ([#2206](https://github.com/redis/ioredis/pull/2206))\r\n\r\n**Types**\r\n- Accept field arrays in `hmget` / `hmgetBuffer` types ([#2167](https://github.com/redis/ioredis/pull/2167))\r\n- Allow a number for the `zrange` stop argument ([#2163](https://github.com/redis/ioredis/pull/2163))\r\n- Accept the documented TLS profile options ([#2195](https://github.com/redis/ioredis/pull/2195))\r\n- Add event overloads to the `Cluster` interface ([#2201](https://github.com/redis/ioredis/pull/2201))\r\n- Add `smessage` and `smessageBuffer` event overloads ([#2191](https://github.com/redis/ioredis/pull/2191))\r\n\r\n**Full Changelog**: https://github.com/redis/ioredis/compare/v6.0.0...v6.1.0-beta.1",
+   "date": "2026-10-12T15:46:52Z",
+   "name": "v6.1.0-beta.1",
+   "prerelease": true,
+   "tag": "v6.1.0-beta.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v6.1.0-beta.1"
+  },
+  {
+   "body": "# [6.0.0](https://github.com/redis/ioredis/compare/v5.11.1...v6.0.0) (2026-07-31)\n\n\n* Add RESP3 ([#2127](https://github.com/redis/ioredis/issues/2127)) ([5d0862e](https://github.com/redis/ioredis/commit/5d0862e078c1252470872fa3a96d7435bb34f078))\n\n\n### Bug Fixes\n\n* clear stale socket timeout on reconnect ([#2148](https://github.com/redis/ioredis/issues/2148)) ([6455dbe](https://github.com/redis/ioredis/commit/6455dbe6c7dbbd801aae112c8be935aa2896d7ac))\n* **cluster:** recreate stale connection on circular MOVED ([#2135](https://github.com/redis/ioredis/issues/2135)) ([08c8967](https://github.com/redis/ioredis/commit/08c89671790d5121853e51ed3465dc6b248e8803))\n* **cluster:** validate MOVED slot to prevent Array.prototype pollution ([#2151](https://github.com/redis/ioredis/issues/2151)) ([9618206](https://github.com/redis/ioredis/commit/9618206b93d7022e9fb76f300503a53e1aefb4bc)), closes [#1267](https://github.com/redis/ioredis/issues/1267)\n* **command:** serialize large integer arguments in decimal notation ([#2136](https://github.com/redis/ioredis/issues/2136)) ([09b8d04](https://github.com/redis/ioredis/commit/09b8d04b62481e68521359a43cb3638e09e92565))\n* **redis:** keep reconnecting when connection closes during client setup ([#2099](https://github.com/redis/ioredis/issues/2099)) ([#2123](https://github.com/redis/ioredis/issues/2123)) ([f9a66bc](https://github.com/redis/ioredis/commit/f9a66bc0d9022bb21c479ef5580c65e544aa6629))\n* **sentinel:** preserve zero preferred slave priority ([#2129](https://github.com/redis/ioredis/issues/2129)) ([a3f9f2d](https://github.com/redis/ioredis/commit/a3f9f2dded99f55a59713a8e8d3e395c015d51c1))\n* **tracing:** redact values for GETSET and PSETEX ([#2134](https://github.com/redis/ioredis/issues/2134)) ([832765d](https://github.com/redis/ioredis/commit/832765dbe8c13d23b57392bdd3d88a0a37131732))\n* **types:** export ScanStreamOptions, RedisStatus and ClusterStatus ([#2158](https://github.com/redis/ioredis/issues/2158)) ([cf3bf71](https://github.com/redis/ioredis/commit/cf3bf7111bc3de71c6556d1d4897868ab0ec827f))\n\n\n### Features\n\n* add LMOVEM and BLMOVEM command support ([#2144](https://github.com/redis/ioredis/issues/2144)) ([c26af46](https://github.com/redis/ioredis/commit/c26af46dc91874b1da58aec9da337822a4851d97))\n* add Redis 8.10 set cardinality commands ([#2143](https://github.com/redis/ioredis/issues/2143)) ([301099b](https://github.com/redis/ioredis/commit/301099b77d059dfc47ec591e7f011790ed475a84))\n* himport managed fieldsets ([#2159](https://github.com/redis/ioredis/issues/2159)) ([729f174](https://github.com/redis/ioredis/commit/729f174fca093641d1788480369d00b64c6cc901))\n* improve default connection resilience ([#2160](https://github.com/redis/ioredis/issues/2160)) ([6d0716e](https://github.com/redis/ioredis/commit/6d0716ef9b3c7c5676c8d866388075e927f6b8b7))\n* support MAXCOUNT and MAXSIZE for stream reads ([#2142](https://github.com/redis/ioredis/issues/2142)) ([ae5e41b](https://github.com/redis/ioredis/commit/ae5e41b231d9c1e6d6289848f58355f01f5ba6ec))\n\n\n### BREAKING CHANGES\n\n* ioredis now requires Node.js 20 or newer and uses RESP3 by default. Set `protocol: 2` to retain the v5 wire protocol.\n",
+   "date": "2026-07-31T15:02:11Z",
+   "name": "v6.0.0",
+   "prerelease": false,
+   "tag": "v6.0.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v6.0.0"
+  },
+  {
+   "body": "# [6.0.0-beta.1](https://github.com/redis/ioredis/compare/v5.11.1...v6.0.0-beta.1) (2026-07-29)\n\n\n* Add RESP3 ([#2127](https://github.com/redis/ioredis/issues/2127)) ([5d0862e](https://github.com/redis/ioredis/commit/5d0862e078c1252470872fa3a96d7435bb34f078))\n\n\n### Bug Fixes\n\n* clear stale socket timeout on reconnect ([#2148](https://github.com/redis/ioredis/issues/2148)) ([6455dbe](https://github.com/redis/ioredis/commit/6455dbe6c7dbbd801aae112c8be935aa2896d7ac))\n* **cluster:** recreate stale connection on circular MOVED ([#2135](https://github.com/redis/ioredis/issues/2135)) ([08c8967](https://github.com/redis/ioredis/commit/08c89671790d5121853e51ed3465dc6b248e8803))\n* **cluster:** validate MOVED slot to prevent Array.prototype pollution ([#2151](https://github.com/redis/ioredis/issues/2151)) ([9618206](https://github.com/redis/ioredis/commit/9618206b93d7022e9fb76f300503a53e1aefb4bc)), closes [#1267](https://github.com/redis/ioredis/issues/1267)\n* **command:** serialize large integer arguments in decimal notation ([#2136](https://github.com/redis/ioredis/issues/2136)) ([09b8d04](https://github.com/redis/ioredis/commit/09b8d04b62481e68521359a43cb3638e09e92565))\n* **redis:** keep reconnecting when connection closes during client setup ([#2099](https://github.com/redis/ioredis/issues/2099)) ([#2123](https://github.com/redis/ioredis/issues/2123)) ([f9a66bc](https://github.com/redis/ioredis/commit/f9a66bc0d9022bb21c479ef5580c65e544aa6629))\n* **sentinel:** preserve zero preferred slave priority ([#2129](https://github.com/redis/ioredis/issues/2129)) ([a3f9f2d](https://github.com/redis/ioredis/commit/a3f9f2dded99f55a59713a8e8d3e395c015d51c1))\n* **tracing:** redact values for GETSET and PSETEX ([#2134](https://github.com/redis/ioredis/issues/2134)) ([832765d](https://github.com/redis/ioredis/commit/832765dbe8c13d23b57392bdd3d88a0a37131732))\n\n\n### Features\n\n* add LMOVEM and BLMOVEM command support ([#2144](https://github.com/redis/ioredis/issues/2144)) ([c26af46](https://github.com/redis/ioredis/commit/c26af46dc91874b1da58aec9da337822a4851d97))\n* add Redis 8.10 set cardinality commands ([#2143](https://github.com/redis/ioredis/issues/2143)) ([301099b](https://github.com/redis/ioredis/commit/301099b77d059dfc47ec591e7f011790ed475a84))\n* support MAXCOUNT and MAXSIZE for stream reads ([#2142](https://github.com/redis/ioredis/issues/2142)) ([ae5e41b](https://github.com/redis/ioredis/commit/ae5e41b231d9c1e6d6289848f58355f01f5ba6ec))\n\n\n### BREAKING CHANGES\n\n* ioredis now requires Node.js 20 or newer and uses RESP3 by default. Set `protocol: 2` to retain the v5 wire protocol.\n",
+   "date": "2026-07-29T14:40:09Z",
+   "name": "v6.0.0-beta.1",
+   "prerelease": true,
+   "tag": "v6.0.0-beta.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v6.0.0-beta.1"
+  },
+  {
+   "body": "## [5.11.1](https://github.com/luin/ioredis/compare/v5.11.0...v5.11.1) (2026-06-04)\n\n\n### Bug Fixes\n\n* **cluster:** reconnect to nodes that restart without slot changes ([#2096](https://github.com/luin/ioredis/issues/2096)) ([c84b2ee](https://github.com/luin/ioredis/commit/c84b2ee97fd7b25d8f6ef8b509c228a602f47cca))\n* parse protocol-relative Redis URLs as TCP connections ([#2125](https://github.com/luin/ioredis/issues/2125)) ([131ee24](https://github.com/luin/ioredis/commit/131ee24173380b986e62ecc428ddde82be12bc40))\n\n\n\n",
+   "date": "2026-06-04T10:15:01Z",
+   "name": "v5.11.1",
+   "prerelease": false,
+   "tag": "v5.11.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.11.1"
+  },
+  {
+   "body": "# [5.11.0](https://github.com/luin/ioredis/compare/v5.10.1...v5.11.0) (2026-05-26)\n\n\n### Bug Fixes\n\n* prevent RangeError from string accumulation in pipeline ([#2088](https://github.com/luin/ioredis/issues/2088)) ([defc077](https://github.com/luin/ioredis/commit/defc07716a9ef10c2077ec4e23ea48cb9ea731fc))\n* replace deprecated url.parse() with WHATWG URL API ([#2081](https://github.com/luin/ioredis/issues/2081)) ([0021a45](https://github.com/luin/ioredis/commit/0021a4590e286aabbf27f4e2fc18f9d2de829ef0)), closes [redis/ioredis#1747](https://github.com/redis/ioredis/issues/1747)\n\n\n### Features\n\n* add array commands, typings and tests ([#2114](https://github.com/luin/ioredis/issues/2114)) ([baf68d6](https://github.com/luin/ioredis/commit/baf68d6d89553672cfac3e08543467b910b561c5))\n* add increx command ([#2115](https://github.com/luin/ioredis/issues/2115)) ([37d0695](https://github.com/luin/ioredis/commit/37d0695b212d865ef24132acff85420ae51dde50))\n* add Redis MSETEX support ([#2111](https://github.com/luin/ioredis/issues/2111)) ([04a4615](https://github.com/luin/ioredis/commit/04a4615e8e96b9c58d017e360b5eaafede8973d0))\n* add typed GCRA command support and functional tests ([#2094](https://github.com/luin/ioredis/issues/2094)) ([468a802](https://github.com/luin/ioredis/commit/468a8023cd2c8f342ec7c55a01bf0c8d17e4b877))\n* add vector set command support ([#2116](https://github.com/luin/ioredis/issues/2116)) ([b7b3def](https://github.com/luin/ioredis/commit/b7b3defbd119d07fb86d071d5eefc255db4920c2))\n* Add xnack command ([#2103](https://github.com/luin/ioredis/issues/2103)) ([187d29b](https://github.com/luin/ioredis/commit/187d29b45000ee46a4baa8ce91eacfa04675aee8))\n* Add zinter zunion count ([#2104](https://github.com/luin/ioredis/issues/2104)) ([0d510bb](https://github.com/luin/ioredis/commit/0d510bbc1cfc8b01d862b76c408f6687f6e77809))\n* Implement `TracingChannel` support ([#2089](https://github.com/luin/ioredis/issues/2089)) ([4760e0a](https://github.com/luin/ioredis/commit/4760e0a19c194f29f4feb703003dcf046e4509cd))\n\n\n\n",
+   "date": "2026-05-26T13:08:17Z",
+   "name": "v5.11.0",
+   "prerelease": false,
+   "tag": "v5.11.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.11.0"
+  },
+  {
+   "body": "## [5.10.1](https://github.com/luin/ioredis/compare/v5.10.0...v5.10.1) (2026-03-19)\n\n\n### Bug Fixes\n\n* **cluster:** lazily start sharded subscribers ([#2090](https://github.com/luin/ioredis/issues/2090)) ([4f167bb](https://github.com/luin/ioredis/commit/4f167bb9f494f0e8200a20dedd8bbdf1810fcd22))\n\n\n\n",
+   "date": "2026-03-19T15:12:29Z",
+   "name": "v5.10.1",
+   "prerelease": false,
+   "tag": "v5.10.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.10.1"
+  },
+  {
+   "body": "# [5.10.0](https://github.com/luin/ioredis/compare/v5.9.3...v5.10.0) (2026-02-27)\n\n\n### Features\n\n* add hash field expiration commands and tests ([5219f9f](https://github.com/luin/ioredis/commit/5219f9f6ae40c5b4e9bc40581d6513da27dbf1c2))\n* add hexpireat & hexpiretime ([#2082](https://github.com/luin/ioredis/issues/2082)) ([b38124f](https://github.com/luin/ioredis/commit/b38124f784cc6d170ff60f508f3bc34269806f47))\n\n\n\n",
+   "date": "2026-02-27T13:52:11Z",
+   "name": "v5.10.0",
+   "prerelease": false,
+   "tag": "v5.10.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.10.0"
+  },
+  {
+   "body": "## [5.9.3](https://github.com/luin/ioredis/compare/v5.9.2...v5.9.3) (2026-02-12)\n\n\n### Bug Fixes\n\n* autopipelining to route writes to masters with scaleReads ([#2072](https://github.com/luin/ioredis/issues/2072)) ([8adb1ae](https://github.com/luin/ioredis/commit/8adb1aeb6f01cb2cf832c1f218033daf2a722925))\n* fix issue with moved command for replicas ([#2064](https://github.com/luin/ioredis/issues/2064)) ([de4eed4](https://github.com/luin/ioredis/commit/de4eed4c88c1222002223b17d6d481c2a12df329))\n* **types:** optional properties on RedisOptions allow explicit undefined ([#2066](https://github.com/luin/ioredis/issues/2066)) ([0a1a898](https://github.com/luin/ioredis/commit/0a1a8982f9c912c78de68295e1f56136b62a645e))\n\n\n\n",
+   "date": "2026-02-12T14:42:40Z",
+   "name": "v5.9.3",
+   "prerelease": false,
+   "tag": "v5.9.3",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.9.3"
+  },
+  {
+   "body": "## [5.9.2](https://github.com/luin/ioredis/compare/v5.9.1...v5.9.2) (2026-01-15)\n\n\n### Bug Fixes\n\n* **cluster:** Cluster reconnect sharded subscribers ([#2060](https://github.com/luin/ioredis/issues/2060)) ([def9804](https://github.com/luin/ioredis/commit/def9804dd44faa13dd57347c7353142ec0bd2d8f))\n* preserve replica slots on MOVED in pipelines ([#2059](https://github.com/luin/ioredis/issues/2059)) ([a1c3e9d](https://github.com/luin/ioredis/commit/a1c3e9d3a1915cf4a699aff9781629e492f75076))\n\n\n### Reverts\n\n* Revert \"fix: preserve replica slots on MOVED in pipelines (#2059)\" (#2062) ([517b932](https://github.com/luin/ioredis/commit/517b93239648c06829c695112223c9f17c2e7f80)), closes [#2059](https://github.com/luin/ioredis/issues/2059) [#2062](https://github.com/luin/ioredis/issues/2062)\n\n\n\n",
+   "date": "2026-01-15T13:44:36Z",
+   "name": "v5.9.2",
+   "prerelease": false,
+   "tag": "v5.9.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.9.2"
+  },
+  {
+   "body": "## [5.9.1](https://github.com/luin/ioredis/compare/v5.9.0...v5.9.1) (2026-01-08)\n\n\n### Bug Fixes\n\n* make client-side blocking timeouts opt-in ([#2058](https://github.com/luin/ioredis/issues/2058)) ([07ed493](https://github.com/luin/ioredis/commit/07ed4939ce4228efa1f85f75c16528aa5f25862e))\n\n\n\n",
+   "date": "2026-01-08T13:27:38Z",
+   "name": "v5.9.1",
+   "prerelease": false,
+   "tag": "v5.9.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.9.1"
+  },
+  {
+   "body": "# [5.9.0](https://github.com/luin/ioredis/compare/v5.8.2...v5.9.0) (2026-01-05)\n\n\n### Bug Fixes\n\n* remove unnecessary case-sensitivity when working with commands ([#2036](https://github.com/luin/ioredis/issues/2036)) ([f33a2c8](https://github.com/luin/ioredis/commit/f33a2c823c8e908eb79cb5dc7f0a68b40c51422a))\n\n\n### Features\n\n* add timeout blocking commands ([#2052](https://github.com/luin/ioredis/issues/2052)) ([6ec78be](https://github.com/luin/ioredis/commit/6ec78bee58be2b2d7be9684e9ea05e897727aa91))\n* **cluster:** refactor sharded pub/sub v5 ([#2043](https://github.com/luin/ioredis/issues/2043)) ([a523f3a](https://github.com/luin/ioredis/commit/a523f3a3007ec4e4f58ff874699365c876da60d8))\n\n\n\n",
+   "date": "2026-01-05T14:07:24Z",
+   "name": "v5.9.0",
+   "prerelease": false,
+   "tag": "v5.9.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.9.0"
+  },
+  {
+   "body": "# [4.31.0](https://github.com/luin/ioredis/compare/v4.30.1...v4.31.0) (2026-01-05)\n\n\n### Features\n\n* **cluster:** refactor sharded pub/sub v4 ([#2042](https://github.com/luin/ioredis/issues/2042)) ([7213d88](https://github.com/luin/ioredis/commit/7213d882b1655b9ebb52ad42f8e8d3b494333b91))\n\n\n\n",
+   "date": "2026-01-05T15:04:01Z",
+   "name": "v4.31.0",
+   "prerelease": false,
+   "tag": "v4.31.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.31.0"
+  },
+  {
+   "body": "## [4.30.2-v4-beta.1](https://github.com/luin/ioredis/compare/v4.30.1...v4.30.2-v4-beta.1) (2025-12-03)\n\n\n### Bug Fixes\n\n* refactor sharded pub/sub ([7503bd3](https://github.com/luin/ioredis/commit/7503bd3796c71ecca26cbc20eeb138f14b5f0e91))\n\n\n\n",
+   "date": "2025-12-03T10:50:06Z",
+   "name": "v4.30.2-v4-beta.1",
+   "prerelease": true,
+   "tag": "v4.30.2-v4-beta.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.30.2-v4-beta.1"
+  },
+  {
+   "body": "## [5.8.2](https://github.com/luin/ioredis/compare/v5.8.1...v5.8.2) (2025-10-21)\n\n\n### Bug Fixes\n\n* default IP family selection to 0 ([#2028](https://github.com/luin/ioredis/issues/2028)) ([fb082d6](https://github.com/luin/ioredis/commit/fb082d6a8ece4b0921379ac449215c7ec7435023)), closes [#2026](https://github.com/luin/ioredis/issues/2026)\n* move CLIENT SETINFO commands to connection handshake ([#2033](https://github.com/luin/ioredis/issues/2033)) ([fcbbbe8](https://github.com/luin/ioredis/commit/fcbbbe898fc2540f5c14ad1f5d301f89bc2e4c22))\n\n\n\n",
+   "date": "2025-10-21T13:33:10Z",
+   "name": "v5.8.2",
+   "prerelease": false,
+   "tag": "v5.8.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.8.2"
+  },
+  {
+   "body": "## [5.8.1](https://github.com/luin/ioredis/compare/v5.8.0...v5.8.1) (2025-10-06)\n\n\n### Bug Fixes\n\n* **ssubscribe:** re-subscribe sharded pubsub channels individually ([#2021](https://github.com/luin/ioredis/issues/2021)) ([f161367](https://github.com/luin/ioredis/commit/f161367e4f2965b1ffe076f7e87e750772f56234))\n\n\n\n",
+   "date": "2025-10-06T08:40:18Z",
+   "name": "v5.8.1",
+   "prerelease": false,
+   "tag": "v5.8.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.8.1"
+  },
+  {
+   "body": "# [5.8.0](https://github.com/luin/ioredis/compare/v5.7.0...v5.8.0) (2025-09-23)\n\n\n### Bug Fixes\n\n* **ssubscribe:** re-subscribe sharded pubsub channels individually on ready ([#2012](https://github.com/luin/ioredis/issues/2012)) ([55a410f](https://github.com/luin/ioredis/commit/55a410fb1d7201d5de90ebb7a18a1c3cbf359b12))\n\n\n### Features\n\n* add more xtrim method overloads and tests ([#2010](https://github.com/luin/ioredis/issues/2010)) ([8a3e052](https://github.com/luin/ioredis/commit/8a3e05205009325c1de417217c3f6156994b7079))\n* implement proper hpexpire command signatures and tests ([#2006](https://github.com/luin/ioredis/issues/2006)) ([95e80af](https://github.com/luin/ioredis/commit/95e80afa3f104a8911610bfeebdfb6c5cfc7a4cc))\n* **stream:** Add XDELEX command ([#2003](https://github.com/luin/ioredis/issues/2003)) ([7be3c8d](https://github.com/luin/ioredis/commit/7be3c8dc23403e247a32472998deff613fd8c9ad))\n* support client setinfo ([#2011](https://github.com/luin/ioredis/issues/2011)) ([a5d808b](https://github.com/luin/ioredis/commit/a5d808bc0bad8beab72ca0e044632a7178db5661))\n\n\n\n",
+   "date": "2025-09-23T08:25:11Z",
+   "name": "v5.8.0",
+   "prerelease": false,
+   "tag": "v5.8.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.8.0"
+  },
+  {
+   "body": "## [4.30.1](https://github.com/luin/ioredis/compare/v4.30.0...v4.30.1) (2025-09-16)\n\n\n### Bug Fixes\n\n* **release:** trigger release ([#2015](https://github.com/luin/ioredis/issues/2015)) ([4d2809a](https://github.com/luin/ioredis/commit/4d2809a8a66a391d460298b4a84cb6505fadf0ea))\n\n\n\n",
+   "date": "2025-09-16T12:06:36Z",
+   "name": "v4.30.1",
+   "prerelease": false,
+   "tag": "v4.30.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.30.1"
+  },
+  {
+   "body": "# [5.7.0](https://github.com/luin/ioredis/compare/v5.6.1...v5.7.0) (2025-07-31)\r\n\r\n\r\n### Bug Fixes\r\n\r\n* xread example for TypeScript ([#1872](https://github.com/luin/ioredis/issues/1872)) ([265ea59](https://github.com/luin/ioredis/commit/265ea5975a0447be12d7dd5e209256ecb42fc797))\r\n\r\n\r\n### Features\r\n\r\n* Implement hexpire for [#1898](https://github.com/luin/ioredis/issues/1898) ([#1918](https://github.com/luin/ioredis/issues/1918)) ([121202c](https://github.com/luin/ioredis/commit/121202ca1a461c627680d2332e60dd8b33feaff8))\r\n\r\n\r\n\r\n",
+   "date": "2025-07-31T10:23:19Z",
+   "name": "v5.7.0",
+   "prerelease": false,
+   "tag": "v5.7.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.7.0"
+  },
+  {
+   "body": "## [5.6.1](https://github.com/luin/ioredis/compare/v5.6.0...v5.6.1) (2025-04-11)\n\n\n### Bug Fixes\n\n* adding debug log on cluster.slots initial connection error ([bedcfb5](https://github.com/luin/ioredis/commit/bedcfb5d4b462c3f0a804ab32152d80029e72710))\n\n\n\n",
+   "date": "2025-04-11T12:27:37Z",
+   "name": "v5.6.1",
+   "prerelease": false,
+   "tag": "v5.6.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.6.1"
+  },
+  {
+   "body": "# [4.30.0](https://github.com/luin/ioredis/compare/v4.29.1...v4.30.0) (2025-04-11)\n\n\n### Features\n\n* added the option for disabling slots refresh, fixed concurrent calls to refreshSlotsCache ([#1972](https://github.com/luin/ioredis/issues/1972)) ([3ef36dc](https://github.com/luin/ioredis/commit/3ef36dc2c28a2a8f6e27401259fadbf561b4ff9f))\n\n\n\n",
+   "date": "2025-04-11T10:35:58Z",
+   "name": "v4.30.0",
+   "prerelease": false,
+   "tag": "v4.30.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.30.0"
+  },
+  {
+   "body": "# [5.6.0](https://github.com/luin/ioredis/compare/v5.5.0...v5.6.0) (2025-03-05)\r\n\r\n\r\n### Features\r\n\r\n* Sharded pub/sub support via dedicated subscribers ([#1956](https://github.com/luin/ioredis/issues/1956)) ([963a395](https://github.com/luin/ioredis/commit/963a395cd52cc12c0aa2b2bd23b55248c5b97d19))\r\n\r\n\r\n\r\n",
+   "date": "2025-03-05T21:25:32Z",
+   "name": "v5.6.0",
+   "prerelease": false,
+   "tag": "v5.6.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.6.0"
+  },
+  {
+   "body": "## [4.29.1](https://github.com/redis/ioredis/compare/v4.28.5...v4.29.1) (2025-03-05)\r\n\r\n### Features\r\n\r\n* Adds support for Redis 7 commands\r\n* Node v20 is now part of the test matrix, but support for Node v6 got removed\r\n* Introduces a cluster subscriber group that enables sharded pub/sub\r\n\r\n### Bug Fixes\r\n\r\n* Fixed the release workflow to be able to release from the v4 branch\r\n* Reviewed several test cases\r\n\r\n\r\n",
+   "date": "2025-03-05T20:46:44Z",
+   "name": "v4.29.1",
+   "prerelease": false,
+   "tag": "v4.29.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.29.1"
+  },
+  {
+   "body": "# [5.5.0](https://github.com/luin/ioredis/compare/v5.4.2...v5.5.0) (2025-02-07)\n\n\n### Features\n\n* Add ability for nat mapping through function ([#1948](https://github.com/luin/ioredis/issues/1948)) ([3a04bee](https://github.com/luin/ioredis/commit/3a04bee10995832303916fe8c7854eb6f3dcb65d))\n* **HscanStream:** adding NOVALUES option ([#1943](https://github.com/luin/ioredis/issues/1943)) ([2f9843d](https://github.com/luin/ioredis/commit/2f9843ddfa8d46cbee6c858fefbf9c2cd3852503))\n\n\n\n",
+   "date": "2025-02-07T10:41:30Z",
+   "name": "v5.5.0",
+   "prerelease": false,
+   "tag": "v5.5.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.5.0"
+  },
+  {
+   "body": "## [5.4.2](https://github.com/luin/ioredis/compare/v5.4.1...v5.4.2) (2024-12-20)\n\n\n### Bug Fixes\n\n* Connection instability when using socketTimeout parameter ([#1937](https://github.com/luin/ioredis/issues/1937)) ([ca5e940](https://github.com/luin/ioredis/commit/ca5e9405f80318ef35c42d23da640df4b88b6670)), closes [#1919](https://github.com/luin/ioredis/issues/1919)\n\n\n\n",
+   "date": "2024-12-20T12:13:19Z",
+   "name": "v5.4.2",
+   "prerelease": false,
+   "tag": "v5.4.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.4.2"
+  },
+  {
+   "body": "## [5.4.1](https://github.com/luin/ioredis/compare/v5.4.0...v5.4.1) (2024-04-17)\n\n\n### Bug Fixes\n\n* remove console.log ([558497c](https://github.com/luin/ioredis/commit/558497cba8dc7487c06c7765ddbe12b479bd9b9b))\n\n\n\n",
+   "date": "2024-04-17T15:50:01Z",
+   "name": "v5.4.1",
+   "prerelease": false,
+   "tag": "v5.4.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.4.1"
+  },
+  {
+   "body": "# [5.4.0](https://github.com/luin/ioredis/compare/v5.3.2...v5.4.0) (2024-04-16)\r\n\r\n\r\n### Bug Fixes\r\n\r\n* when `refreshSlotsCache` is called concurrently, call the callback only when the refresh process is done ([#1881](https://github.com/luin/ioredis/issues/1881)) ([804ee07](https://github.com/luin/ioredis/commit/804ee071cab4326d1d69eec0e9d156aac4aa89f4))\r\n\r\n\r\n### Features\r\n\r\n* add support for `socketTimeout` in `Redis` ([#1882](https://github.com/luin/ioredis/issues/1882)) ([673ac77](https://github.com/luin/ioredis/commit/673ac77d9d88bd461110da7b4a8b2b98fb45f845))\r\n\r\n\r\n\r\n",
+   "date": "2024-04-16T19:19:43Z",
+   "name": "v5.4.0",
+   "prerelease": false,
+   "tag": "v5.4.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.4.0"
+  },
+  {
+   "body": "## [5.3.2](https://github.com/luin/ioredis/compare/v5.3.1...v5.3.2) (2023-04-15)\n\n\n### Bug Fixes\n\n* add types for known events ([#1694](https://github.com/luin/ioredis/issues/1694)) ([1a87b23](https://github.com/luin/ioredis/commit/1a87b237e8f43f1dee44dcab8e9da6855bbf772a))\n\n\n\n",
+   "date": "2023-04-15T14:14:04Z",
+   "name": "v5.3.2",
+   "prerelease": false,
+   "tag": "v5.3.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.3.2"
+  },
+  {
+   "body": "## [5.3.1](https://github.com/luin/ioredis/compare/v5.3.0...v5.3.1) (2023-02-12)\n\n\n### Bug Fixes\n\n* Fix commands not resend on reconnect in edge cases ([#1720](https://github.com/luin/ioredis/issues/1720)) ([fe52ff1](https://github.com/luin/ioredis/commit/fe52ff1c6f4cb1beb0c9e999299248ba380d5cde)), closes [#1718](https://github.com/luin/ioredis/issues/1718)\n* Fix db parameter not working with auto pipelining ([#1721](https://github.com/luin/ioredis/issues/1721)) ([d9b1bf1](https://github.com/luin/ioredis/commit/d9b1bf1a2868344eaff71cc39c790e98043fff53))\n\n\n\n",
+   "date": "2023-02-12T02:14:01Z",
+   "name": "v5.3.1",
+   "prerelease": false,
+   "tag": "v5.3.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.3.1"
+  },
+  {
+   "body": "# [5.3.0](https://github.com/luin/ioredis/compare/v5.2.6...v5.3.0) (2023-01-25)\r\n\r\n\r\n### Bug Fixes\r\n\r\n* Unsubscribe not work with `stringNumbers` ([#1710](https://github.com/luin/ioredis/issues/1710)) ([321f8de](https://github.com/luin/ioredis/commit/321f8def3dff7f996c90af1ef73ffd789e02381e)), closes [#1643](https://github.com/luin/ioredis/issues/1643)\r\n\r\n\r\n### Features\r\n\r\n* Add support for `ssubscribe` ([#1690](https://github.com/luin/ioredis/issues/1690)) ([6285e80](https://github.com/luin/ioredis/commit/6285e80ffb47564dc01d8e9940ff9a103bf70e2d))\r\n\r\n\r\n\r\n",
+   "date": "2023-01-25T16:28:03Z",
+   "name": "v5.3.0",
+   "prerelease": false,
+   "tag": "v5.3.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.3.0"
+  },
+  {
+   "body": "## [5.2.6](https://github.com/luin/ioredis/compare/v5.2.5...v5.2.6) (2023-01-25)\n\n\n### Bug Fixes\n\n* remove extraneous TCP/IPC properties from RedisOptions TS type ([#1707](https://github.com/luin/ioredis/issues/1707)) ([9af7b1c](https://github.com/luin/ioredis/commit/9af7b1c0d0ab4723093d78bc05a142c9d0e3b4a8))\n\n\n\n",
+   "date": "2023-01-25T04:54:57Z",
+   "name": "v5.2.6",
+   "prerelease": false,
+   "tag": "v5.2.6",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.6"
+  },
+  {
+   "body": "## [5.2.5](https://github.com/luin/ioredis/compare/v5.2.4...v5.2.5) (2023-01-14)\r\n\r\n\r\n### Bug Fixes\r\n\r\n* Named export to support ESM imports in Typescript ([#1695](https://github.com/luin/ioredis/issues/1695)) ([cdded57](https://github.com/luin/ioredis/commit/cdded5703ded8dff02d7df3362ae25120bb75e97))\r\n\r\n    With this change, users would be able to import Redis with `import { Redis} from 'ioredis'`. This makes it possible to import Redis in an ESM project. The original way (`import Redis from 'ioredis'`) will still be supported but will be deprecated in the next major version.\r\n\r\n",
+   "date": "2023-01-14T02:53:53Z",
+   "name": "v5.2.5",
+   "prerelease": false,
+   "tag": "v5.2.5",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.5"
+  },
+  {
+   "body": "## [5.2.4](https://github.com/luin/ioredis/compare/v5.2.3...v5.2.4) (2022-11-02)\n\n\n### Bug Fixes\n\n* passing in family parameter in URL in node 18 ([#1673](https://github.com/luin/ioredis/issues/1673)) ([6f1ab9f](https://github.com/luin/ioredis/commit/6f1ab9f374bff2d62cf64ff6bfca1cf9f03d14d5))\n\n\n\n",
+   "date": "2022-11-02T14:40:24Z",
+   "name": "v5.2.4",
+   "prerelease": false,
+   "tag": "v5.2.4",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.4"
+  },
+  {
+   "body": "## [5.2.3](https://github.com/luin/ioredis/compare/v5.2.2...v5.2.3) (2022-08-23)\n\n\n### Bug Fixes\n\n* type of zscore result should be nullable ([#1639](https://github.com/luin/ioredis/issues/1639)) ([a3838ae](https://github.com/luin/ioredis/commit/a3838ae7598c7d9d3aff688923403f6176d7a393))\n* update to latest profile for Redis Cloud ([#1637](https://github.com/luin/ioredis/issues/1637)) ([dccb820](https://github.com/luin/ioredis/commit/dccb8205488d63653e1d157c6e87e28bfcddd3e1))\n\n\n\n",
+   "date": "2022-08-23T14:04:32Z",
+   "name": "v5.2.3",
+   "prerelease": false,
+   "tag": "v5.2.3",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.3"
+  },
+  {
+   "body": "## [5.2.2](https://github.com/luin/ioredis/compare/v5.2.1...v5.2.2) (2022-07-23)\n\n\n### Bug Fixes\n\n* srandmember with count argument should return array of strings ([#1620](https://github.com/luin/ioredis/issues/1620)) ([5f813f3](https://github.com/luin/ioredis/commit/5f813f3327ca9a2ef89fae195a458787f200e34d))\n\n\n\n",
+   "date": "2022-07-23T04:42:54Z",
+   "name": "v5.2.2",
+   "prerelease": false,
+   "tag": "v5.2.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.2"
+  },
+  {
+   "body": "## [5.2.1](https://github.com/luin/ioredis/compare/v5.2.0...v5.2.1) (2022-07-16)\n\n\n### Bug Fixes\n\n* always allow selecting a new node for cluster mode subscriptions when the current one fails ([#1589](https://github.com/luin/ioredis/issues/1589)) ([1c8cb85](https://github.com/luin/ioredis/commit/1c8cb856f31b024195be2c7fc8073bcabd3586a7))\n\n\n\n",
+   "date": "2022-07-16T14:36:10Z",
+   "name": "v5.2.1",
+   "prerelease": false,
+   "tag": "v5.2.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.1"
+  },
+  {
+   "body": "# [5.2.0](https://github.com/luin/ioredis/compare/v5.1.0...v5.2.0) (2022-07-11)\n\n\n### Features\n\n* add mode property to client ([#1618](https://github.com/luin/ioredis/issues/1618)) ([9e6db7d](https://github.com/luin/ioredis/commit/9e6db7d7fc769ddc99d9dee4a943f141d71c0756))\n\n\n\n",
+   "date": "2022-07-11T14:24:57Z",
+   "name": "v5.2.0",
+   "prerelease": false,
+   "tag": "v5.2.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.2.0"
+  },
+  {
+   "body": "# [5.1.0](https://github.com/luin/ioredis/compare/v5.0.6...v5.1.0) (2022-06-25)\n\n\n### Features\n\n* add command typings for Redis 7.0.2. Also fix a typing issue for hgetallBuffer. ([#1611](https://github.com/luin/ioredis/issues/1611)) ([fa77c07](https://github.com/luin/ioredis/commit/fa77c07bdeece59c2b98d670bbd2c069944a988f))\n\n\n\n",
+   "date": "2022-06-25T07:28:03Z",
+   "name": "v5.1.0",
+   "prerelease": false,
+   "tag": "v5.1.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.1.0"
+  },
+  {
+   "body": "## [5.0.6](https://github.com/luin/ioredis/compare/v5.0.5...v5.0.6) (2022-05-31)\n\n\n### Bug Fixes\n\n* Add back Pipeline#length ([#1585](https://github.com/luin/ioredis/issues/1585)) ([63b2ee4](https://github.com/luin/ioredis/commit/63b2ee49c52c8cee326d30f62bc29c64f3ec28b3)), closes [#1584](https://github.com/luin/ioredis/issues/1584)\n\n\n\n",
+   "date": "2022-05-31T16:30:43Z",
+   "name": "v5.0.6",
+   "prerelease": false,
+   "tag": "v5.0.6",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.6"
+  },
+  {
+   "body": "## [5.0.5](https://github.com/luin/ioredis/compare/v5.0.4...v5.0.5) (2022-05-17)\n\n\n### Bug Fixes\n\n* improve typing for redis.multi ([#1580](https://github.com/luin/ioredis/issues/1580)) ([f9f875b](https://github.com/luin/ioredis/commit/f9f875b1972dd2eb87ee6a5011f8f6d7abc7cf75))\n* send correct command during auto-pipelining of .call() operations ([#1579](https://github.com/luin/ioredis/issues/1579)) ([e41c3dc](https://github.com/luin/ioredis/commit/e41c3dc880906e8aad73332837bf233f65d12e67))\n\n\n\n",
+   "date": "2022-05-17T12:54:18Z",
+   "name": "v5.0.5",
+   "prerelease": false,
+   "tag": "v5.0.5",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.5"
+  },
+  {
+   "body": "## [5.0.4](https://github.com/luin/ioredis/compare/v5.0.3...v5.0.4) (2022-04-09)\n\n\n### Bug Fixes\n\n* Expose ChainableCommander and other types ([#1560](https://github.com/luin/ioredis/issues/1560)) ([df04dd8](https://github.com/luin/ioredis/commit/df04dd8d87a44d3b64b385c86581915248554508))\n\n\n\n",
+   "date": "2022-04-09T03:07:26Z",
+   "name": "v5.0.4",
+   "prerelease": false,
+   "tag": "v5.0.4",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.4"
+  },
+  {
+   "body": "## [5.0.3](https://github.com/luin/ioredis/compare/v5.0.2...v5.0.3) (2022-03-31)\n\n\n### Bug Fixes\n\n* add named exports to keep compatible with @types/ioredis ([#1552](https://github.com/luin/ioredis/issues/1552)) ([a89a900](https://github.com/luin/ioredis/commit/a89a9002db70d44c83dfa6aaef81fb40caa5fb19))\n* Fix failover detector with sentinel and tls streams ([ac00a00](https://github.com/luin/ioredis/commit/ac00a005220aa48e9be509f18594bd5e13969ce4))\n* handle NOPERM error for monitor ([93b873d](https://github.com/luin/ioredis/commit/93b873dfaf75baf08e517476bfe54384d144b526)), closes [#1498](https://github.com/luin/ioredis/issues/1498)\n* Hook up the keepAlive after a successful connect ([14f03a4](https://github.com/luin/ioredis/commit/14f03a4d9416b32a912f3ab9eee4c004ccad8acc)), closes [#1339](https://github.com/luin/ioredis/issues/1339)\n\n\n\n",
+   "date": "2022-03-31T13:55:12Z",
+   "name": "v5.0.3",
+   "prerelease": false,
+   "tag": "v5.0.3",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.3"
+  },
+  {
+   "body": "## [5.0.2](https://github.com/luin/ioredis/compare/v5.0.1...v5.0.2) (2022-03-30)\n\n\n### Bug Fixes\n\n* allow option maxRetriesPerRequest to be null ([#1553](https://github.com/luin/ioredis/issues/1553)) ([d62a808](https://github.com/luin/ioredis/commit/d62a8082131389c38a24244ed29a5a9d8b06c4e7)), closes [#1550](https://github.com/luin/ioredis/issues/1550)\n* support TypeScript interface as parameters of hmset and mset ([#1545](https://github.com/luin/ioredis/issues/1545)) ([3444791](https://github.com/luin/ioredis/commit/3444791a7ed807098ab17155e8d498a915f27750)), closes [#1536](https://github.com/luin/ioredis/issues/1536)\n\n\n\n",
+   "date": "2022-03-30T02:13:43Z",
+   "name": "v5.0.2",
+   "prerelease": false,
+   "tag": "v5.0.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.2"
+  },
+  {
+   "body": "## [5.0.1](https://github.com/luin/ioredis/compare/v5.0.0...v5.0.1) (2022-03-26)\n\n\n### Bug Fixes\n\n* improve typing compatibility with @types/ioredis ([#1542](https://github.com/luin/ioredis/issues/1542)) ([3bf300a](https://github.com/luin/ioredis/commit/3bf300a1c99ae4cf8038930c45e19ebd68db222e))\n\n\n\n",
+   "date": "2022-03-26T10:51:22Z",
+   "name": "v5.0.1",
+   "prerelease": false,
+   "tag": "v5.0.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.1"
+  },
+  {
+   "body": "# [5.0.0](https://github.com/luin/ioredis/compare/v4.28.5...v5.0.0) (2022-03-26)\r\n\r\nIn the update of v5, we've made ioredis even more stable and developer-friendly while minimizing the number of breaking changes, so you can spend more time enjoying your life 😄.\r\n\r\nPlease refer to the guideline to upgrade your projects: [🚀 Upgrading from v4 to v5](https://github.com/luin/ioredis/wiki/Upgrading-from-v4-to-v5).\r\n\r\n### Bug Fixes\r\n\r\n* add @ioredis/interface-generator to dev deps ([aa3b3e9](https://github.com/luin/ioredis/commit/aa3b3e91a369526ea2dff39b0619b0c2e0b4153b))\r\n* add missing declaration for callBuffer ([08c9072](https://github.com/luin/ioredis/commit/08c9072b24fa301401d424494c1ec8cde7ccf78b))\r\n* add the missing typing for Redis#call() ([747dd30](https://github.com/luin/ioredis/commit/747dd305696bf3fb661c1d0b4ac376de55e0ec25))\r\n* better support for CJS importing ([687d3eb](https://github.com/luin/ioredis/commit/687d3eb8dd0499fd900ede2f4dff835981999665))\r\n* disable slotsRefreshInterval by default ([370fa62](https://github.com/luin/ioredis/commit/370fa625cd20bfe62f41c38088e596c7a6f0619c))\r\n* Fix the NOSCRIPT behavior when using pipelines ([bc1b168](https://github.com/luin/ioredis/commit/bc1b1680663216ca2cfb1c77622bfa4fec9b2bd4))\r\n* improve typing for auto pipelining ([4e8c567](https://github.com/luin/ioredis/commit/4e8c567d1175de31e2371a9dad308a94fcb5627f))\r\n* improve typing for pipeline ([d18f3fe](https://github.com/luin/ioredis/commit/d18f3fe07ed04da5b7b26981d91bb4aa74b83ca3))\r\n* keyPrefix should work with Buffer ([6942cec](https://github.com/luin/ioredis/commit/6942cecd8a463756468988cf50a94c68298d3bfc)), closes [#1486](https://github.com/luin/ioredis/issues/1486)\r\n* make fields private when possible ([d5c2f20](https://github.com/luin/ioredis/commit/d5c2f203b8f1f617f464402e400655c1f7c0fa08))\r\n* parameter declaration of Redis#duplicate ([a29d9c4](https://github.com/luin/ioredis/commit/a29d9c46f67dc8bcc345de6543a92dd808e8a6c0))\r\n* pipeline fails when cluster is not ready ([af60bb0](https://github.com/luin/ioredis/commit/af60bb082d20a32de1348f049507e6ea8862397f)), closes [#1460](https://github.com/luin/ioredis/issues/1460)\r\n* remove dropBufferSupport option ([04e68ac](https://github.com/luin/ioredis/commit/04e68ac4ade14d68809ca58d7ad8536eceda2b1e))\r\n* remove unused Command#isCustomCommand ([46ade6b](https://github.com/luin/ioredis/commit/46ade6b8732b112cc5cffb641b1bab51eb96df38))\r\n* rename interfaces by dropping prefix I ([d1d9dba](https://github.com/luin/ioredis/commit/d1d9dba9eafc574a9d9041fd4bc7cd04f1584159))\r\n* Reset loaded script hashes to force a reload of scripts after reconnect of redis ([60c2af9](https://github.com/luin/ioredis/commit/60c2af985a994a247d1148bfab122e5c0ecd81d2))\r\n* support passing keyPrefix via redisOptions ([6b0dc1e](https://github.com/luin/ioredis/commit/6b0dc1e0edbaa5f46b7b03629dda20176c7a81b4))\r\n\r\n\r\n### Features\r\n\r\n* add [@since](https://github.com/since) to method comments ([13eff8e](https://github.com/luin/ioredis/commit/13eff8e86a0d08a3aa614f2d8fe7a166f6beb532))\r\n* add declarations for methods ([1e10c95](https://github.com/luin/ioredis/commit/1e10c95eadede949e536f02ca1412ef4383ba654))\r\n* add tests for cluster ([1eba58b](https://github.com/luin/ioredis/commit/1eba58ba3961e477c6502daf05cf4074f728d3cf))\r\n* always parse username passed via URI ([c6f41f6](https://github.com/luin/ioredis/commit/c6f41f692243129dbc952ef8fd2e5c160133d677))\r\n* drop support of Node.js 10 ([f9a5071](https://github.com/luin/ioredis/commit/f9a5071d95519c0f358c4ecf064838824ce8ad62))\r\n* drop support of third-party Promise libraries ([2001ec6](https://github.com/luin/ioredis/commit/2001ec6fafd057eda9111ab858c1c618d939371e))\r\n* expose official declarations ([7a436b1](https://github.com/luin/ioredis/commit/7a436b128c3e97586d2378149beaa2043eb00850))\r\n* improve typings for cluster ([06782e6](https://github.com/luin/ioredis/commit/06782e681500eae6f3ceafcc6385b9be4fdaf4e3))\r\n* improve typings for pipeline ([334242b](https://github.com/luin/ioredis/commit/334242b1adf5399a1ad9d7ba6202d062a0695882))\r\n* improve typings for smismember ([487c3a0](https://github.com/luin/ioredis/commit/487c3a07e6080070d365e09dae75bbbc4267b619))\r\n* improve typings for transformers ([94c1e24](https://github.com/luin/ioredis/commit/94c1e24f09b9e7eaff4181f984f6317acacade94))\r\n* improve typings for xread ([96cc335](https://github.com/luin/ioredis/commit/96cc33590a8c2494b730d33780668a86cdd405cf))\r\n* Pipeline-based script loading ([8df6ee2](https://github.com/luin/ioredis/commit/8df6ee265595f035cc85b52b4d11793bea0318f3))\r\n* prepare v5 stable release ([#1538](https://github.com/luin/ioredis/issues/1538)) ([fe32ce7](https://github.com/luin/ioredis/commit/fe32ce71cbfb49b133834f1c4858ec0ca20ad6e8))\r\n* Refactor code with modern settings ([a8ffa80](https://github.com/luin/ioredis/commit/a8ffa80dd2fb081012222a436d5be2b5325623b9))\r\n* skip ready check on NOPERM error ([b530a0b](https://github.com/luin/ioredis/commit/b530a0b9fe0f987d6786e5cfccbfae8b5b9c9294)), closes [#1293](https://github.com/luin/ioredis/issues/1293)\r\n* support commands added in Redis v7 ([53ca412](https://github.com/luin/ioredis/commit/53ca41264f94f05a9a7a231915a0e852a46079d4))\r\n* support defining custom commands via constructor options ([f293b97](https://github.com/luin/ioredis/commit/f293b978c6023b8ce3477af0076203c7bc2482f8))\r\n* support Redis Functions introduced in Redis 7.0 ([32eb381](https://github.com/luin/ioredis/commit/32eb381c3035ebc70e8e316697c7e0b479ec66a2))\r\n\r\n\r\n### BREAKING CHANGES\r\n\r\n* `slotsRefreshInterval` is disabled by default,\r\npreviously, the default value was 5000.\r\n* `allowUsernameInURI` is removed and ioredis will always\r\nuse the username passed via URI.\r\nPreviously, the `username` part in `new Redis(\"redis://username:authpassword@127.0.0.1:6380/4\")`\r\nwas ignored unless `allowUsernameInURI` is specified: `new Redis(\"redis://username:authpassword@127.0.0.1:6380/4?allowUsernameInURI=true\")`.\r\nNow, if you don't want to send username to Redis, just leave the username part empty:\r\n`new Redis(\"redis://:authpassword@127.0.0.1:6380/4\")`\r\n* `Redis#serverInfo` is removed. This field is never documented so\r\nyou very likely have never used it.\r\n* Support for third-party Promise libraries is dropped. Related methods (`exports.Promise = require('bluebird')`) are kept but they don't take any effects. The native Promise will always be used.\r\n* We now require Node.js v12 or newer.\r\n* `Redis` can't be called as a function anymore as it's now a class.\r\nPlease change `Redis()` to `new Redis()`. Note that `Redis()` was already deprecated\r\nin the previous version.\r\n\r\n\r\n\r\n",
+   "date": "2022-03-26T04:21:25Z",
+   "name": "v5.0.0",
+   "prerelease": false,
+   "tag": "v5.0.0",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.0"
+  },
+  {
+   "body": "# [5.0.0-beta.4](https://github.com/luin/ioredis/compare/v5.0.0-beta.3...v5.0.0-beta.4) (2022-03-19)\n\n\n### Bug Fixes\n\n* add missing declaration for callBuffer ([08c9072](https://github.com/luin/ioredis/commit/08c9072b24fa301401d424494c1ec8cde7ccf78b))\n* keyPrefix should work with Buffer ([6942cec](https://github.com/luin/ioredis/commit/6942cecd8a463756468988cf50a94c68298d3bfc)), closes [#1486](https://github.com/luin/ioredis/issues/1486)\n\n\n\n",
+   "date": "2022-03-19T07:57:50Z",
+   "name": "v5.0.0-beta.4",
+   "prerelease": true,
+   "tag": "v5.0.0-beta.4",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.0-beta.4"
+  },
+  {
+   "body": "# [5.0.0-beta.3](https://github.com/luin/ioredis/compare/v5.0.0-beta.2...v5.0.0-beta.3) (2022-03-19)\n\n\n### Bug Fixes\n\n* pipeline fails when cluster is not ready ([af60bb0](https://github.com/luin/ioredis/commit/af60bb082d20a32de1348f049507e6ea8862397f)), closes [#1460](https://github.com/luin/ioredis/issues/1460)\n\n\n\n",
+   "date": "2022-03-19T07:13:19Z",
+   "name": "v5.0.0-beta.3",
+   "prerelease": true,
+   "tag": "v5.0.0-beta.3",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.0-beta.3"
+  },
+  {
+   "body": "# [5.0.0-beta.2](https://github.com/luin/ioredis/compare/v5.0.0-beta.1...v5.0.0-beta.2) (2022-03-16)\n\n\n### Features\n\n* improve typings for smismember ([487c3a0](https://github.com/luin/ioredis/commit/487c3a07e6080070d365e09dae75bbbc4267b619))\n* improve typings for xread ([96cc335](https://github.com/luin/ioredis/commit/96cc33590a8c2494b730d33780668a86cdd405cf))\n\n\n\n",
+   "date": "2022-03-16T01:42:01Z",
+   "name": "v5.0.0-beta.2",
+   "prerelease": true,
+   "tag": "v5.0.0-beta.2",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.0-beta.2"
+  },
+  {
+   "body": "# [5.0.0-beta.1](https://github.com/luin/ioredis/compare/v4.28.5...v5.0.0-beta.1) (2022-03-14)\r\n\r\n\r\n### Bug Fixes\r\n\r\n* add @ioredis/interface-generator to dev deps ([aa3b3e9](https://github.com/luin/ioredis/commit/aa3b3e91a369526ea2dff39b0619b0c2e0b4153b))\r\n* add the missing typing for Redis#call() ([747dd30](https://github.com/luin/ioredis/commit/747dd305696bf3fb661c1d0b4ac376de55e0ec25))\r\n* better support for CJS importing ([687d3eb](https://github.com/luin/ioredis/commit/687d3eb8dd0499fd900ede2f4dff835981999665))\r\n* disable slotsRefreshInterval by default ([370fa62](https://github.com/luin/ioredis/commit/370fa625cd20bfe62f41c38088e596c7a6f0619c))\r\n* Fix the NOSCRIPT behavior when using pipelines ([bc1b168](https://github.com/luin/ioredis/commit/bc1b1680663216ca2cfb1c77622bfa4fec9b2bd4))\r\n* improve typing for auto pipelining ([4e8c567](https://github.com/luin/ioredis/commit/4e8c567d1175de31e2371a9dad308a94fcb5627f))\r\n* improve typing for pipeline ([d18f3fe](https://github.com/luin/ioredis/commit/d18f3fe07ed04da5b7b26981d91bb4aa74b83ca3))\r\n* make fields private when possible ([d5c2f20](https://github.com/luin/ioredis/commit/d5c2f203b8f1f617f464402e400655c1f7c0fa08))\r\n* parameter declaration of Redis#duplicate ([a29d9c4](https://github.com/luin/ioredis/commit/a29d9c46f67dc8bcc345de6543a92dd808e8a6c0))\r\n* remove dropBufferSupport option ([04e68ac](https://github.com/luin/ioredis/commit/04e68ac4ade14d68809ca58d7ad8536eceda2b1e))\r\n* remove unused Command#isCustomCommand ([46ade6b](https://github.com/luin/ioredis/commit/46ade6b8732b112cc5cffb641b1bab51eb96df38))\r\n* rename interfaces by dropping prefix I ([d1d9dba](https://github.com/luin/ioredis/commit/d1d9dba9eafc574a9d9041fd4bc7cd04f1584159))\r\n* Reset loaded script hashes to force a reload of scripts after reconnect of redis ([60c2af9](https://github.com/luin/ioredis/commit/60c2af985a994a247d1148bfab122e5c0ecd81d2))\r\n* support passing keyPrefix via redisOptions ([6b0dc1e](https://github.com/luin/ioredis/commit/6b0dc1e0edbaa5f46b7b03629dda20176c7a81b4))\r\n\r\n\r\n### Features\r\n\r\n* add [@since](https://github.com/since) to method comments ([13eff8e](https://github.com/luin/ioredis/commit/13eff8e86a0d08a3aa614f2d8fe7a166f6beb532))\r\n* add declarations for methods ([1e10c95](https://github.com/luin/ioredis/commit/1e10c95eadede949e536f02ca1412ef4383ba654))\r\n* add tests for cluster ([1eba58b](https://github.com/luin/ioredis/commit/1eba58ba3961e477c6502daf05cf4074f728d3cf))\r\n* always parse username passed via URI ([c6f41f6](https://github.com/luin/ioredis/commit/c6f41f692243129dbc952ef8fd2e5c160133d677))\r\n* drop support of Node.js 10 ([f9a5071](https://github.com/luin/ioredis/commit/f9a5071d95519c0f358c4ecf064838824ce8ad62))\r\n* drop support of third-party Promise libraries ([2001ec6](https://github.com/luin/ioredis/commit/2001ec6fafd057eda9111ab858c1c618d939371e))\r\n* expose official declarations ([7a436b1](https://github.com/luin/ioredis/commit/7a436b128c3e97586d2378149beaa2043eb00850))\r\n* improve typings for cluster ([06782e6](https://github.com/luin/ioredis/commit/06782e681500eae6f3ceafcc6385b9be4fdaf4e3))\r\n* improve typings for pipeline ([334242b](https://github.com/luin/ioredis/commit/334242b1adf5399a1ad9d7ba6202d062a0695882))\r\n* improve typings for transformers ([94c1e24](https://github.com/luin/ioredis/commit/94c1e24f09b9e7eaff4181f984f6317acacade94))\r\n* Pipeline-based script loading ([8df6ee2](https://github.com/luin/ioredis/commit/8df6ee265595f035cc85b52b4d11793bea0318f3))\r\n* Refactor code with modern settings ([a8ffa80](https://github.com/luin/ioredis/commit/a8ffa80dd2fb081012222a436d5be2b5325623b9))\r\n* skip ready check on NOPERM error ([b530a0b](https://github.com/luin/ioredis/commit/b530a0b9fe0f987d6786e5cfccbfae8b5b9c9294)), closes [#1293](https://github.com/luin/ioredis/issues/1293)\r\n* support commands added in Redis v7 ([53ca412](https://github.com/luin/ioredis/commit/53ca41264f94f05a9a7a231915a0e852a46079d4))\r\n* support defining custom commands via constructor options ([f293b97](https://github.com/luin/ioredis/commit/f293b978c6023b8ce3477af0076203c7bc2482f8))\r\n* support Redis Functions introduced in Redis 7.0 ([32eb381](https://github.com/luin/ioredis/commit/32eb381c3035ebc70e8e316697c7e0b479ec66a2))\r\n\r\n\r\n### BREAKING CHANGES\r\n\r\n* `slotsRefreshInterval` is disabled by default,\r\npreviously, the default value was 5000.\r\n* `allowUsernameInURI` is removed and ioredis will always\r\nuse the username passed via URI.\r\nPreviously, the `username` part in `new Redis(\"redis://username:authpassword@127.0.0.1:6380/4\")`\r\nwas ignored unless `allowUsernameInURI` is specified: `new Redis(\"redis://username:authpassword@127.0.0.1:6380/4?allowUsernameInURI=true\")`.\r\nNow, if you don't want to send username to Redis, just leave the username part empty:\r\n`new Redis(\"redis://:authpassword@127.0.0.1:6380/4\")`\r\n* `Redis#serverInfo` is removed. This field is never documented so\r\nyou very likely have never used it.\r\n* Support for third-party Promise libraries is dropped. Related methods (`exports.Promise = require('bluebird')`) are kept but they don't take any effects. The native Promise will always be used.\r\n* We now require Node.js v12 or newer.\r\n* `Redis` can't be called as a function anymore as it's now a class.\r\nPlease change `Redis()` to `new Redis()`. Note that `Redis()` was already deprecated\r\nin the previous version.\r\n\r\n\r\n\r\n",
+   "date": "2022-03-14T04:50:57Z",
+   "name": "v5.0.0-beta.1",
+   "prerelease": true,
+   "tag": "v5.0.0-beta.1",
+   "url": "https://github.com/redis/ioredis/releases/tag/v5.0.0-beta.1"
+  },
+  {
+   "body": "## [4.28.5](https://github.com/luin/ioredis/compare/v4.28.4...v4.28.5) (2022-02-06)\n\n\n### Bug Fixes\n\n* Reset loaded script hashes to force a reload of scripts after reconnect of redis ([#1497](https://github.com/luin/ioredis/issues/1497)) ([f357a31](https://github.com/luin/ioredis/commit/f357a3145694250bf361827403252b31435afabd))\n\n\n\n",
+   "date": "2022-02-06T02:29:36Z",
+   "name": "v4.28.5",
+   "prerelease": false,
+   "tag": "v4.28.5",
+   "url": "https://github.com/redis/ioredis/releases/tag/v4.28.5"
+  }
+ ],
+ "repo": "redis/ioredis"
+}
