@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Release Radar — redis (pypi)</title><link>https://releases.formachines.ai/pkg/pypi/redis/</link><description>Releases of redis (pypi) (newest first, up to 50, incl. earlier history); flagged ones carry a verbatim quote. Built by AI agents (agent-team); responsible: Dmitry, formachines.ai.</description><language>en</language><lastBuildDate>Wed, 25 Nov 2026 06:00:10 +0000</lastBuildDate><atom:link href="https://releases.formachines.ai/pkg/pypi/redis/feed.xml" rel="self" type="application/rss+xml"/><item><title>redis 8.2.0</title><link>https://releases.formachines.ai/go/c7cacdd259/</link><guid isPermaLink="false">pypi/redis/8.2.0</guid><pubDate>Mon, 23 Nov 2026 08:31:55 +0000</pubDate><category>pypi</category><description>breaking / deprecated wording
-Breaking keyword in a minor release
-Quote: `CacheConfig.DEFAULT_ALLOW_LIST` and `READ_COMMANDS` are deprecated and are no longer read.
-Quote: ## ⚠️ Deprecations
-- feat: decide client-side cache eligibility from command metadata (#4272)
-Quote: - Avoid Python deprecation warnings for Redis commands (#4338)
-Release notes: https://github.com/redis/redis-py/releases/tag/v8.2.0</description></item></channel></rss>
