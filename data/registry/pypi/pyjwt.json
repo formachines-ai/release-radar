@@ -1,7 +1,7 @@
 {
  "changelog": null,
  "ecosystem": "pypi",
- "fetched": "2026-11-24T06:00:29Z",
+ "fetched": "2026-11-25T06:00:44Z",
  "homepage": "https://github.com/jpadilla/pyjwt",
  "latest": "2.15.1",
  "name": "PyJWT",

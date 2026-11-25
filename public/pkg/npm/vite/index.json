@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -224,12 +224,37 @@
   "date": "2026-11-11T02:49:46Z",
   "version": "8.3.8"
  },
- "metadata_fetched": "2026-11-24T06:01:36Z",
+ "metadata_fetched": "2026-11-25T06:02:24Z",
  "package": "vite",
  "page": "https://releases.formachines.ai/pkg/npm/vite/",
- "prereleases_in_window": 0,
+ "prereleases_in_window": 1,
  "registry": "https://www.npmjs.com/package/vite",
- "releases": [],
+ "releases": [
+  {
+   "bump": "prerelease",
+   "date": "2026-11-25T05:16:25Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "npm/vite/8.4.0-beta.2",
+   "json": "https://releases.formachines.ai/pkg/npm/vite/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/6a65c26908/",
+   "notes_url": "https://github.com/vitejs/vite/releases/tag/v8.4.0-beta.2",
+   "package": "vite",
+   "page": "https://releases.formachines.ai/pkg/npm/vite/",
+   "prerelease": true,
+   "prev_version": null,
+   "quotes": [],
+   "semver_bump": null,
+   "variant_of": null,
+   "version": "8.4.0-beta.2",
+   "yanked_or_deprecated": false
+  }
+ ],
  "repository": "https://github.com/vitejs/vite",
  "stable_in_window": 0,
  "summary": "Native-ESM powered web dev build tool"

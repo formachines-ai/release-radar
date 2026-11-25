@@ -3,12 +3,12 @@
  "dist_tags": {
   "beta": "1.65.0-beta-1794598453000",
   "latest": "1.65.1",
-  "next": "1.66.0-alpha-2026-11-23",
-  "next-pending": "1.66.0-alpha-2026-11-24",
+  "next": "1.66.0-alpha-2026-11-24",
+  "next-pending": "1.66.0-alpha-2026-11-25",
   "rc": "1.18.0-rc1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-24T06:01:23Z",
+ "fetched": "2026-11-25T06:02:00Z",
  "homepage": "https://playwright.dev",
  "latest": "1.65.1",
  "name": "playwright",
@@ -16,6 +16,11 @@
  "repo": "microsoft/playwright",
  "summary": "A high-level API to automate web browsers",
  "versions": [
+  {
+   "date": "2026-11-25T05:22:05Z",
+   "deprecated": false,
+   "version": "1.66.0-alpha-2026-11-25"
+  },
   {
    "date": "2026-11-24T05:20:32Z",
    "deprecated": false,
@@ -710,16 +715,6 @@
    "date": "2026-08-27T22:34:48Z",
    "deprecated": false,
    "version": "1.63.0-alpha-1787862056000"
-  },
-  {
-   "date": "2026-08-27T05:39:30Z",
-   "deprecated": false,
-   "version": "1.63.0-alpha-2026-08-27"
-  },
-  {
-   "date": "2026-08-26T06:13:28Z",
-   "deprecated": false,
-   "version": "1.63.0-alpha-2026-08-26"
   }
  ]
 }

@@ -1,6 +1,22 @@
 {
- "fetched": "2026-11-24T06:01:30Z",
+ "fetched": "2026-11-25T06:02:13Z",
  "releases": [
+  {
+   "body": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v853",
+   "date": "2026-11-24T18:38:25Z",
+   "name": "v8.5.3",
+   "prerelease": false,
+   "tag": "react-router@8.5.3",
+   "url": "https://github.com/remix-run/react-router/releases/tag/react-router%408.5.3"
+  },
+  {
+   "body": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/v7/CHANGELOG.md#v7187",
+   "date": "2026-11-24T18:01:03Z",
+   "name": "v7.18.7",
+   "prerelease": false,
+   "tag": "react-router@7.18.7",
+   "url": "https://github.com/remix-run/react-router/releases/tag/react-router%407.18.7"
+  },
   {
    "body": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v852",
    "date": "2026-11-18T16:11:15Z",
@@ -384,22 +400,6 @@
    "prerelease": false,
    "tag": "react-router@7.6.3",
    "url": "https://github.com/remix-run/react-router/releases/tag/react-router%407.6.3"
-  },
-  {
-   "body": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v762",
-   "date": "2025-06-03T20:48:37Z",
-   "name": "v7.6.2",
-   "prerelease": false,
-   "tag": "react-router@7.6.2",
-   "url": "https://github.com/remix-run/react-router/releases/tag/react-router%407.6.2"
-  },
-  {
-   "body": "See the changelog for release notes: https://github.com/remix-run/react-router/blob/main/CHANGELOG.md#v761",
-   "date": "2025-05-25T13:58:14Z",
-   "name": "v7.6.1",
-   "prerelease": false,
-   "tag": "react-router@7.6.1",
-   "url": "https://github.com/remix-run/react-router/releases/tag/react-router%407.6.1"
   }
  ],
  "repo": "remix-run/react-router"

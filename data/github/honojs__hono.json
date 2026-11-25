@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-24T06:01:18Z",
+ "fetched": "2026-11-25T06:01:51Z",
  "releases": [
+  {
+   "body": "This release includes hardening changes. We recommend that you update.\r\n\r\n## What's Changed\r\n\r\n* fix(mount): keep the malformed path guard in the built output in https://github.com/honojs/hono/pull/5675\r\n* fix(basic-auth): throw an error if the username or the password is not a string in https://github.com/honojs/hono/pull/5676\r\n* fix(utils/mime): return undefined for an extension that is an inherited property name in https://github.com/honojs/hono/pull/5677\r\n* fix(jsx): do not treat a plain object child as an array in https://github.com/honojs/hono/pull/5678\r\n* fix(sse): reject line breaks in `retry` in https://github.com/honojs/hono/pull/5679\r\n* fix(streaming): accept a sync onError callback in https://github.com/honojs/hono/pull/5680\r\n* fix(utils/body): skip keys with `constructor.prototype` in `parseBody()` in https://github.com/honojs/hono/pull/5681\r\n\r\n### Basic Auth Middleware throws an error for a value that is not a string\r\n\r\n`basicAuth()` now throws an error at setup if `username` or `password` is not a string. If you pass an env variable, check that it is set.\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.21...v4.13.22",
+   "date": "2026-11-25T00:07:00Z",
+   "name": "v4.13.22",
+   "prerelease": false,
+   "tag": "v4.13.22",
+   "url": "https://github.com/honojs/hono/releases/tag/v4.13.22"
+  },
   {
    "body": "## Hardening\r\n\r\n- `hono/jwt`: a JWT signature must be in the canonical Base64URL form. A signature with `=` padding, or with non-zero unused bits in the last character, is now rejected. Thanks to @xpcmdshell, @ongteckwu, @ffasterss, and @shirabe0x05 for the reports.\r\n- `hono/client`: a path param can no longer change the host of the request URL when the base URL is relative. Thanks to @ongteckwu for the report.\r\n\r\n## What's Changed\r\n* fix(client): do not change the host with a path param in https://github.com/honojs/hono/pull/5669\r\n* fix(client): remove trailing slashes of the base URL without a regular expression in https://github.com/honojs/hono/pull/5672\r\n* fix(jwt): accept only the canonical encoding of a signature in https://github.com/honojs/hono/pull/5673\r\n\r\n**Full Changelog**: https://github.com/honojs/hono/compare/v4.13.20...v4.13.21\r\n",
    "date": "2026-11-23T09:59:17Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "v4.12.22",
    "url": "https://github.com/honojs/hono/releases/tag/v4.12.22"
-  },
-  {
-   "body": "## Security fixes\r\n\r\nThis release includes fixes for the following security issues:\r\n\r\n### app.mount() strips mount prefix using undecoded path, causing incorrect routing for percent-encoded paths\r\n\r\nAffects: `app.mount()`. Fixes prefix stripping using the raw URL pathname instead of the decoded path, where percent-encoded characters in the mount prefix or path could cause the prefix to be removed at the wrong position, resulting in the sub-application receiving an incorrect path. GHSA-2gcr-mfcq-wcc3\r\n\r\n### IP Restriction bypasses static deny rules for non-canonical IPv6\r\n\r\nAffects: `hono/ip-restriction`. Fixes IP address comparison using string equality, where non-canonical IPv6 representations of a denied address — such as compressed forms or hex-notation IPv4-mapped addresses — could bypass static deny rules. GHSA-xrhx-7g5j-rcj5\r\n\r\n### Cookie helper does not sanitize sameSite and priority, allowing Set-Cookie injection\r\n\r\nAffects: `hono/cookie`. Fixes missing validation of `sameSite` and `priority` options against injection characters (`;`, `\\r`, `\\n`), where user-controlled input passed to either option could inject additional attributes into the Set-Cookie response header. GHSA-3hrh-pfw6-9m5x\r\n\r\n### JWT middleware accepts any Authorization scheme, not only Bearer\r\n\r\nAffects: `hono/jwt`, `hono/jwk`. Fixes missing scheme validation in the Authorization header, where any two-part header value was accepted regardless of the scheme name, allowing non-Bearer schemes to pass JWT authentication. GHSA-f577-qrjj-4474\r\n\r\n---\r\n\r\nUsers who use `app.mount()`, `hono/ip-restriction`, `hono/cookie`, or `hono/jwt`/`hono/jwk` are encouraged to upgrade to this version.\r\n",
-   "date": "2026-05-19T11:40:11Z",
-   "name": "v4.12.21",
-   "prerelease": false,
-   "tag": "v4.12.21",
-   "url": "https://github.com/honojs/hono/releases/tag/v4.12.21"
   }
  ],
  "repo": "honojs/hono"

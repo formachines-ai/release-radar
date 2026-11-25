@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-24T06:00:39Z",
+ "fetched": "2026-11-25T06:00:54Z",
  "releases": [
   {
    "body": "## What's Changed\n* Changelog for v0.70.0 by @gemini-cli-robot in https://github.com/google-gemini/gemini-cli/pull/30380\n* fix(core): handle nested .gitignore negations under dir/** patterns by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30370\n* fix(cli): expand Windows home-relative paths using tilde and backslash by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30376\n* fix(cli): resume most recently active session instead of most recently started by @urielefrenvirtusa in https://github.com/google-gemini/gemini-cli/pull/30389\n* fix(a2a-server): enforce bearer token authentication and request input validation by @diegogodinezr in https://github.com/google-gemini/gemini-cli/pull/30420\n\n\n**Full Changelog**: https://github.com/google-gemini/gemini-cli/compare/v0.71.0-preview.0...v0.72.0-preview.0",

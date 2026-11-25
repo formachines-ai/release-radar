@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -170,17 +170,42 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "9.13.0",
+ "latest": "9.13.1",
  "latest_stable": {
-  "date": "2026-11-23T18:39:34Z",
-  "version": "9.13.0"
+  "date": "2026-11-24T20:32:30Z",
+  "version": "9.13.1"
  },
- "metadata_fetched": "2026-11-24T06:01:19Z",
+ "metadata_fetched": "2026-11-25T06:01:52Z",
  "package": "mongoose",
  "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
  "prereleases_in_window": 0,
  "registry": "https://www.npmjs.com/package/mongoose",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/Automattic/mongoose/compare/9.13.0...9.13.1",
+   "date": "2026-11-24T20:32:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "npm/mongoose/9.13.1",
+   "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/744e68fd47/",
+   "notes_url": "https://github.com/Automattic/mongoose/releases/tag/9.13.1",
+   "package": "mongoose",
+   "page": "https://releases.formachines.ai/pkg/npm/mongoose/",
+   "prerelease": false,
+   "prev_version": "9.13.0",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "9.13.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/Automattic/mongoose/compare/9.12.3...9.13.0",
@@ -188,7 +213,11 @@
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": false,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-24",
+    "hours": 25,
+    "version": "9.13.1"
+   },
    "id": "npm/mongoose/9.13.0",
    "json": "https://releases.formachines.ai/pkg/npm/mongoose/index.json",
    "no_notes": false,
@@ -258,6 +287,6 @@
   }
  ],
  "repository": "https://github.com/Automattic/mongoose",
- "stable_in_window": 3,
+ "stable_in_window": 4,
  "summary": "Mongoose MongoDB ODM"
 }

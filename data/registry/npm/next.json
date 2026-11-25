@@ -3,7 +3,7 @@
  "dist_tags": {
   "backport": "15.5.29",
   "beta": "16.0.0-beta.0",
-  "canary": "16.5.0-canary.62",
+  "canary": "16.5.0-canary.65",
   "latest": "16.4.6",
   "next-11": "11.1.4",
   "next-12-2-6": "12.2.6",
@@ -19,7 +19,7 @@
   "rc": "15.0.0-rc.1"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-24T06:01:21Z",
+ "fetched": "2026-11-25T06:01:56Z",
  "homepage": "https://nextjs.org",
  "latest": "16.4.6",
  "name": "next",
@@ -27,6 +27,21 @@
  "repo": "vercel/next.js",
  "summary": "The React Framework",
  "versions": [
+  {
+   "date": "2026-11-25T01:03:22Z",
+   "deprecated": false,
+   "version": "16.5.0-canary.65"
+  },
+  {
+   "date": "2026-11-24T23:58:05Z",
+   "deprecated": false,
+   "version": "16.5.0-canary.64"
+  },
+  {
+   "date": "2026-11-24T20:55:52Z",
+   "deprecated": false,
+   "version": "16.5.0-canary.63"
+  },
   {
    "date": "2026-11-23T23:58:43Z",
    "deprecated": false,
@@ -691,11 +706,6 @@
    "date": "2026-08-28T02:23:26Z",
    "deprecated": false,
    "version": "16.4.0-canary.10"
-  },
-  {
-   "date": "2026-08-27T00:53:45Z",
-   "deprecated": false,
-   "version": "16.4.0-canary.9"
   }
  ]
 }

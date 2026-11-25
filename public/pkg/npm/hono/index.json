@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
@@ -99,12 +99,12 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "4.13.21",
+ "latest": "4.13.22",
  "latest_stable": {
-  "date": "2026-11-23T09:59:10Z",
-  "version": "4.13.21"
+  "date": "2026-11-25T00:06:57Z",
+  "version": "4.13.22"
  },
- "metadata_fetched": "2026-11-24T06:01:18Z",
+ "metadata_fetched": "2026-11-25T06:01:50Z",
  "package": "hono",
  "page": "https://releases.formachines.ai/pkg/npm/hono/",
  "prereleases_in_window": 0,
@@ -112,12 +112,41 @@
  "releases": [
   {
    "bump": "patch",
+   "compare_url": "https://github.com/honojs/hono/compare/v4.13.21...v4.13.22",
+   "date": "2026-11-25T00:06:57Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "npm/hono/4.13.22",
+   "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/1c3fcdd25c/",
+   "notes_url": "https://github.com/honojs/hono/releases/tag/v4.13.22",
+   "package": "hono",
+   "page": "https://releases.formachines.ai/pkg/npm/hono/",
+   "prerelease": false,
+   "prev_version": "4.13.21",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "4.13.22",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
    "compare_url": "https://github.com/honojs/hono/compare/v4.13.20...v4.13.21",
    "date": "2026-11-23T09:59:10Z",
    "ecosystem": "npm",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-25",
+    "hours": 38,
+    "version": "4.13.22"
+   },
    "id": "npm/hono/4.13.21",
    "json": "https://releases.formachines.ai/pkg/npm/hono/index.json",
    "no_notes": false,
@@ -178,6 +207,6 @@
   }
  ],
  "repository": "https://github.com/honojs/hono",
- "stable_in_window": 2,
+ "stable_in_window": 3,
  "summary": "Web framework built on Web Standards"
 }

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-24T06:01:08Z",
+ "fetched": "2026-11-25T06:01:31Z",
  "releases": [
   {
    "body": "## 2.119.2 (2026-11-19)\n\n### 🩹 Fixes\n\n- **storage:** validate object request URL boundaries ([#2878](https://github.com/supabase/supabase-js/pull/2878))\n\n### ❤️ Thank You\n\n- Yann Braga",

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": null,
  "ecosystem": "pypi",
  "errata": null,
@@ -72,17 +72,42 @@
  ],
  "history_days": 90,
  "history_since": "2026-11-05T01:15:50Z",
- "latest": "5.24.0",
+ "latest": "5.24.1",
  "latest_stable": {
-  "date": "2026-11-21T12:24:29Z",
-  "version": "5.24.0"
+  "date": "2026-11-24T16:11:43Z",
+  "version": "5.24.1"
  },
- "metadata_fetched": "2026-11-24T06:00:10Z",
+ "metadata_fetched": "2026-11-25T06:00:17Z",
  "package": "transformers",
  "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
  "prereleases_in_window": 0,
  "registry": "https://pypi.org/project/transformers/",
  "releases": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/huggingface/transformers/compare/v5.24.0...v5.24.1",
+   "date": "2026-11-24T16:11:43Z",
+   "ecosystem": "pypi",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": null,
+   "id": "pypi/transformers/5.24.1",
+   "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/8a36e7b7cb/",
+   "notes_url": "https://github.com/huggingface/transformers/releases/tag/v5.24.1",
+   "package": "transformers",
+   "page": "https://releases.formachines.ai/pkg/pypi/transformers/",
+   "prerelease": false,
+   "prev_version": "5.24.0",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "5.24.1",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "minor",
    "compare_url": "https://github.com/huggingface/transformers/compare/v5.23.0...v5.24.0",
@@ -90,7 +115,11 @@
    "ecosystem": "pypi",
    "errata_url": null,
    "flagged": true,
-   "followed_by": null,
+   "followed_by": {
+    "date": "2026-11-24",
+    "hours": 75,
+    "version": "5.24.1"
+   },
    "id": "pypi/transformers/5.24.0",
    "json": "https://releases.formachines.ai/pkg/pypi/transformers/index.json",
    "no_notes": false,
@@ -126,6 +155,6 @@
   }
  ],
  "repository": "https://github.com/huggingface/transformers",
- "stable_in_window": 1,
+ "stable_in_window": 2,
  "summary": "Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training."
 }

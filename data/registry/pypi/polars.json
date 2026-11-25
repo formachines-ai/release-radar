@@ -1,14 +1,19 @@
 {
  "changelog": "https://github.com/pola-rs/polars/releases",
  "ecosystem": "pypi",
- "fetched": "2026-11-24T06:00:29Z",
+ "fetched": "2026-11-25T06:00:40Z",
  "homepage": "https://www.pola.rs/",
- "latest": "2.1.0",
+ "latest": "2.2.0",
  "name": "polars",
  "page": "https://pypi.org/project/polars/",
  "repo": "pola-rs/polars",
  "summary": "Blazingly fast DataFrame library",
  "versions": [
+  {
+   "date": "2026-11-24T18:15:56Z",
+   "version": "2.2.0",
+   "yanked": false
+  },
   {
    "date": "2026-10-25T17:58:26Z",
    "version": "2.1.0",
@@ -202,11 +207,6 @@
   {
    "date": "2025-08-28T20:02:33Z",
    "version": "1.33.0b1",
-   "yanked": false
-  },
-  {
-   "date": "2025-08-14T17:26:55Z",
-   "version": "1.32.3",
    "yanked": false
   }
  ]

@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": "https://docs.sqlalchemy.org/latest/changelog/index.html",
  "ecosystem": "pypi",
  "errata": null,
@@ -77,7 +77,7 @@
   "date": "2026-11-16T21:01:00Z",
   "version": "2.1.9"
  },
- "metadata_fetched": "2026-11-24T06:00:32Z",
+ "metadata_fetched": "2026-11-25T06:00:48Z",
  "package": "sqlalchemy",
  "page": "https://releases.formachines.ai/pkg/pypi/sqlalchemy/",
  "prereleases_in_window": 0,

@@ -8,7 +8,7 @@
   "rc": "5.0.0-rc.16"
  },
  "ecosystem": "npm",
- "fetched": "2026-11-24T06:01:08Z",
+ "fetched": "2026-11-25T06:01:31Z",
  "homepage": "https://tanstack.com/query",
  "latest": "5.108.4",
  "name": "@tanstack/react-query",
@@ -145,16 +145,6 @@
    "date": "2026-08-27T08:33:25Z",
    "deprecated": false,
    "version": "5.102.7"
-  },
-  {
-   "date": "2026-08-26T18:36:03Z",
-   "deprecated": false,
-   "version": "5.102.6"
-  },
-  {
-   "date": "2026-08-26T08:59:50Z",
-   "deprecated": false,
-   "version": "5.102.5"
   }
  ]
 }

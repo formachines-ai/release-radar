@@ -1,5 +1,5 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": "https://github.com/redis/redis-py/releases",
  "ecosystem": "pypi",
  "errata": null,
@@ -11,7 +11,7 @@
   "date": "2026-11-23T08:31:55Z",
   "version": "8.2.0"
  },
- "metadata_fetched": "2026-11-24T06:00:30Z",
+ "metadata_fetched": "2026-11-25T06:00:44Z",
  "package": "redis",
  "page": "https://releases.formachines.ai/pkg/pypi/redis/",
  "prereleases_in_window": 0,

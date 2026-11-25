@@ -1,6 +1,14 @@
 {
- "fetched": "2026-11-24T06:00:38Z",
+ "fetched": "2026-11-25T06:00:53Z",
  "releases": [
+  {
+   "body": "### Features\n\n* **api:** add Google-managed data controls for Google Cloud projects\n* **api:** add Google-managed data controls for user profiles\n* **api:** add support for compliance review cases, notices, and items\n\n\n### Chores\n\n* **docs:** name both causes of the tool use limit error\n* **docs:** update example workspace and API key IDs",
+   "date": "2026-11-24T21:01:02Z",
+   "name": "sdk-v1.14.0",
+   "prerelease": false,
+   "tag": "sdk-v1.14.0",
+   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/sdk-v1.14.0"
+  },
   {
    "body": "### Features\n\n* **api:** add an error code to Message Batches creation\n* **api:** add External Storage to the Admin API beta\n* **api:** add webhook events for external storage failure and recovery\n\n\n### Bug Fixes\n\n* **api:** type beta batch request params as message create params\n\n\n### Chores\n\n* **api:** mark Claude Opus 4.5 as deprecated (end-of-life January 22, 2027)\n* **client:** read deprecated models from generated data and warn on claude-mythos-preview again\n* **docs:** clarify when plugin archive downloads are recorded and who gave a share\n* **docs:** correct organization-type notes in usage and cost reports\n* **docs:** describe the user profile endpoints and link to the guide\n* **docs:** use realistic example values in more request bodies\n\n\n### Documentation\n\n* **api:** shorten the human_review description",
    "date": "2026-11-23T18:35:09Z",
@@ -392,14 +400,6 @@
    "prerelease": false,
    "tag": "bedrock-sdk-v0.35.0",
    "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/bedrock-sdk-v0.35.0"
-  },
-  {
-   "body": "### Features\n\n* **api:** add execution_identity to Managed Agents agents\n* **client:** add native support for OpenTelemetry tracing\n\n  If your app registers a global tracer provider, the SDK will create spans with it after upgrading, and they'll be exported with the rest of your traces. Requests will also get trace context headers from the global propagator. To disable, pass `openTelemetry: false` to the client or set `ANTHROPIC_OPEN_TELEMETRY=false`. Learn more in the [documentation](https://platform.claude.com/docs/en/manage-claude/opentelemetry/sdk).\n\n\n### Chores\n\n* include the license files in the published packages\n* **internal:** strip `@internal` declarations from published types",
-   "date": "2026-10-14T17:13:22Z",
-   "name": "aws-sdk-v0.8.0",
-   "prerelease": false,
-   "tag": "aws-sdk-v0.8.0",
-   "url": "https://github.com/anthropics/anthropic-sdk-typescript/releases/tag/aws-sdk-v0.8.0"
   }
  ],
  "repo": "anthropics/anthropic-sdk-typescript"

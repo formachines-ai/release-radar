@@ -1,9 +1,172 @@
 {
- "built": "2026-11-24T06:00:05Z",
+ "built": "2026-11-25T06:00:10Z",
  "changelog": null,
  "ecosystem": "npm",
  "errata": null,
  "history": [
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.175...ai@7.0.176",
+   "date": "2026-11-17T20:57:53Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "date": "2026-11-18",
+    "hours": 22,
+    "version": "7.0.177"
+   },
+   "id": "npm/ai/7.0.176",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/d43c0a8069/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.176",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.175",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "7.0.176",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.174...ai@7.0.175",
+   "date": "2026-11-17T19:55:30Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": false,
+   "followed_by": {
+    "date": "2026-11-17",
+    "hours": 1,
+    "version": "7.0.176"
+   },
+   "id": "npm/ai/7.0.175",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/c16d4ee2d7/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.175",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.174",
+   "quotes": [],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "7.0.175",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.290...ai@5.0.291",
+   "date": "2026-11-17T19:55:04Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "date": "2026-11-20",
+    "hours": 68,
+    "version": "5.0.292"
+   },
+   "id": "npm/ai/5.0.291",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/45ade4a596/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.291",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "5.0.290",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "5.0.291",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.173...ai@7.0.174",
+   "date": "2026-11-17T18:41:41Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "date": "2026-11-17",
+    "hours": 1,
+    "version": "7.0.175"
+   },
+   "id": "npm/ai/7.0.174",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/a840f446ba/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.174",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "7.0.173",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "7.0.174",
+   "yanked_or_deprecated": false
+  },
+  {
+   "bump": "patch",
+   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.332...ai@6.0.333",
+   "date": "2026-11-17T18:39:27Z",
+   "ecosystem": "npm",
+   "errata_url": null,
+   "flagged": true,
+   "followed_by": {
+    "date": "2026-11-22",
+    "hours": 123,
+    "version": "6.0.336"
+   },
+   "id": "npm/ai/6.0.333",
+   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
+   "no_notes": false,
+   "no_notes_checked": null,
+   "notes_kind": "github_release",
+   "notes_redirect": "https://releases.formachines.ai/go/599eee22d8/",
+   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.333",
+   "package": "ai",
+   "page": "https://releases.formachines.ai/pkg/npm/ai/",
+   "prerelease": false,
+   "prev_version": "6.0.332",
+   "quotes": [
+    {
+     "match": "no longer",
+     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
+     "quote_incomplete": false
+    }
+   ],
+   "semver_bump": "patch",
+   "variant_of": null,
+   "version": "6.0.333",
+   "yanked_or_deprecated": false
+  },
   {
    "bump": "patch",
    "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.331...ai@6.0.332",
@@ -655,7 +818,7 @@
   "date": "2026-11-23T21:11:23Z",
   "version": "7.0.181"
  },
- "metadata_fetched": "2026-11-24T06:00:57Z",
+ "metadata_fetched": "2026-11-25T06:01:13Z",
  "package": "ai",
  "page": "https://releases.formachines.ai/pkg/npm/ai/",
  "prereleases_in_window": 0,
@@ -862,172 +1025,9 @@
    "variant_of": null,
    "version": "7.0.177",
    "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.175...ai@7.0.176",
-   "date": "2026-11-17T20:57:53Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "date": "2026-11-18",
-    "hours": 22,
-    "version": "7.0.177"
-   },
-   "id": "npm/ai/7.0.176",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/d43c0a8069/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.176",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "7.0.175",
-   "quotes": [],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "7.0.176",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.174...ai@7.0.175",
-   "date": "2026-11-17T19:55:30Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": false,
-   "followed_by": {
-    "date": "2026-11-17",
-    "hours": 1,
-    "version": "7.0.176"
-   },
-   "id": "npm/ai/7.0.175",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/c16d4ee2d7/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.175",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "7.0.174",
-   "quotes": [],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "7.0.175",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@5.0.290...ai@5.0.291",
-   "date": "2026-11-17T19:55:04Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "date": "2026-11-20",
-    "hours": 68,
-    "version": "5.0.292"
-   },
-   "id": "npm/ai/5.0.291",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/45ade4a596/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%405.0.291",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "5.0.290",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "5.0.291",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@7.0.173...ai@7.0.174",
-   "date": "2026-11-17T18:41:41Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "date": "2026-11-17",
-    "hours": 1,
-    "version": "7.0.175"
-   },
-   "id": "npm/ai/7.0.174",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/a840f446ba/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%407.0.174",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "7.0.173",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "7.0.174",
-   "yanked_or_deprecated": false
-  },
-  {
-   "bump": "patch",
-   "compare_url": "https://github.com/vercel/ai/compare/ai@6.0.332...ai@6.0.333",
-   "date": "2026-11-17T18:39:27Z",
-   "ecosystem": "npm",
-   "errata_url": null,
-   "flagged": true,
-   "followed_by": {
-    "date": "2026-11-22",
-    "hours": 123,
-    "version": "6.0.336"
-   },
-   "id": "npm/ai/6.0.333",
-   "json": "https://releases.formachines.ai/pkg/npm/ai/index.json",
-   "no_notes": false,
-   "no_notes_checked": null,
-   "notes_kind": "github_release",
-   "notes_redirect": "https://releases.formachines.ai/go/599eee22d8/",
-   "notes_url": "https://github.com/vercel/ai/releases/tag/ai%406.0.333",
-   "package": "ai",
-   "page": "https://releases.formachines.ai/pkg/npm/ai/",
-   "prerelease": false,
-   "prev_version": "6.0.332",
-   "quotes": [
-    {
-     "match": "no longer",
-     "quote": "These values are now validated in a single pass and are no longer copied, except to remove `__proto__` keys.",
-     "quote_incomplete": false
-    }
-   ],
-   "semver_bump": "patch",
-   "variant_of": null,
-   "version": "6.0.333",
-   "yanked_or_deprecated": false
   }
  ],
  "repository": "https://github.com/vercel/ai",
- "stable_in_window": 12,
+ "stable_in_window": 7,
  "summary": "AI SDK by Vercel - build apps like ChatGPT, Claude, Gemini, and more with a single interface for any model using the Vercel AI Gateway or go direct to OpenAI, Anthropic, Google, or any other model provider."
 }
